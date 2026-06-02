@@ -16,6 +16,14 @@ The data pipeline that produces these results is operated privately. This reposi
 | 04 | [License-driven crypto-infra M&A](04-license-driven-crypto-ma/) | Why does the CLARITY/GENIUS regime make a money-transmitter licence stack the strategic asset, and who holds it? | Maps the public licence landscape + a decade of public licence-driven deals; identifies the pattern, not named targets. |
 | 05 | *News-sentiment signal validation* | *(in progress — awaiting sufficient realised forward-return history)* Does a sentiment × source-trust × recency score predict forward returns out-of-sample? | — |
 | 06 | *Crypto token market structure* | *(linked paper)* How does blockchain infrastructure shape token risk-return and monetary function? | Co-authored, accepted at ICMAIF 2026. |
+| 07 | [Intraday vs close](07-intraday-overnight-decomposition/) | Where does a semi's daily return come from — the overnight gap or the session? | Overnight drives the *leaders* (NVDA +480% vs +130% intraday) but only 56% of names; intraday momentum doesn't replicate; direction is set early (corr 0.6 by 10:00 ET). |
+| 08 | [AI model-launch event study](08-ai-model-launch-event-study/) | Does a frontier model launch reliably move the compute complex? | The bullish "pop" is a coin flip and faded since 2023; only the DeepSeek efficiency shock reliably hit NVDA (−17%, largely retraced), and it rests on one episode. |
+| 09 | [Activist short post-performance](09-activist-short-post-performance/) | Do short reports on AI/quantum names play out, or get bought back? | All four 2024–26 campaigns were faded within 3–6 months; the valuation short (IonQ) roughly doubled. Regime-dependent vs classic fraud shorts. |
+| 10 | [Korea memory cycle + leverage](10-korea-memory-cycle-leverage/) | Why did the DRAM empire move to Korea, and is its retail leverage a 2026 risk? | DRAM is the textbook capital cycle; a record 38tn-won retail-margin base now rides a memory-driven KOSPI — the forced-liquidation cascade is primed. |
+| 11 | [Semiconductor concentration](11-semiconductor-concentration/) | When one stock supplies >40% of an index's gain, what comes next? | NVDA is 37% of a semis proxy and 44% of its 5y gain; concentration peaked in 2024 then resolved by *broadening*, not a crash. Five hypotheses, separated. |
+| 12 | [GOOGL five-year hold](12-googl-five-year-hold/) | What did a five-year GOOGL hold return, and where is it now? | +220% (≈26% CAGR), $10k → ~$32k, but it lagged the +360% NVDA-driven semis complex; −44% drawdown en route. |
+
+*Studies 07–12 form one connected program — is 2026 a 2000 echo for semiconductors?*
 
 ## Method notes
 

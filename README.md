@@ -13,8 +13,9 @@ The data pipeline that produces these results is operated privately. This reposi
 | 01 | [Volume-sweep microstructure](01-volume-sweep-microstructure/) | Do cross-ticker abnormal-volume sweeps predict next-day semi-basket returns? | Pilot signal decayed out-of-sample (p 0.002 → 0.08); a two-sided "MIXED" sweep effect survived (p≈0.008) and warrants follow-up. |
 | 02 | [IPO-anchored VWAP, US + Asia](02-ipo-anchored-vwap/) | Is a VWAP anchored to the IPO date a more meaningful level than a generic anchor, across 202 US & Asian semis? | No significant edge (CIs overlap); the golden cross underperformed its reputation (36% vs predicted 55-65%). Two priors falsified. |
 | 03 | [Due-diligence news hub](03-due-diligence-news-hub/) | Can fragmented, mixed-reliability sources be turned into a verified, source-scored event timeline for a single name? | A single-name DD pipeline with an independent verification gate (confidence > 70) separating verified fact from chatter. |
-| 04 | *News-sentiment signal validation* | *(in progress — awaiting sufficient realised forward-return history)* Does a sentiment × source-trust × recency score predict forward returns out-of-sample? | — |
-| 05 | *Crypto token market structure* | *(linked paper)* How does blockchain infrastructure shape token risk-return and monetary function? | Co-authored, accepted at ICMAIF 2026. |
+| 04 | [License-driven crypto-infra M&A](04-license-driven-crypto-ma/) | Why does the CLARITY/GENIUS regime make a money-transmitter licence stack the strategic asset, and who holds it? | Maps the public licence landscape + a decade of public licence-driven deals; identifies the pattern, not named targets. |
+| 05 | *News-sentiment signal validation* | *(in progress — awaiting sufficient realised forward-return history)* Does a sentiment × source-trust × recency score predict forward returns out-of-sample? | — |
+| 06 | *Crypto token market structure* | *(linked paper)* How does blockchain infrastructure shape token risk-return and monetary function? | Co-authored, accepted at ICMAIF 2026. |
 
 ## Method notes
 

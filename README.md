@@ -22,6 +22,9 @@ The data pipeline that produces these results is operated privately. This reposi
 | 10 | [Korea memory cycle + leverage](10-korea-memory-cycle-leverage/) | Why did the DRAM empire move to Korea, and is its retail leverage a 2026 risk? | DRAM is the textbook capital cycle; a record 38tn-won retail-margin base now rides a memory-driven KOSPI — the forced-liquidation cascade is primed. |
 | 11 | [Semiconductor concentration](11-semiconductor-concentration/) | When one stock supplies >40% of an index's gain, what comes next? | NVDA is 37% of a semis proxy and 44% of its 5y gain; concentration peaked in 2024 then resolved by *broadening*, not a crash. Five hypotheses, separated. |
 | 12 | [GOOGL five-year hold](12-googl-five-year-hold/) | What did a five-year GOOGL hold return, and where is it now? | +220% (≈26% CAGR), $10k → ~$32k, but it lagged the +360% NVDA-driven semis complex; −44% drawdown en route. |
+| 13 | [Gold: collapse insurance?](13-gold-collapse-insurance/) | When equities collapse, does gold rise — or is it driven by something else? | A real-rate trade, not a crash hedge: gold falls ~0.09%/bp on the 10y real yield (t −7.7); median just +3% across 8 Nasdaq drawdowns ≥15%. |
+| 14 | [Alphabet's investment book](14-alphabet-investment-portfolio/) | Is Alphabet's private-stake portfolio material to the equity story? | Yes — mark-ups added ~$24bn (≈18% of 2025 net income); the private book grew $35→$64bn, and the surge is sector-wide across megacaps. |
+| 15 | [Should you chase IPOs?](15-ipo-chase/) | Do new listings pay off if you buy in the aftermarket? | No — ≈+24% first-day pop then −21.6% vs market over 3yr; de-SPACs −75%, tiny deals −52%; the index-inclusion pop has decayed to ~0. |
 
 *Studies 07–12 form one connected program — is 2026 a 2000 echo for semiconductors?*
 

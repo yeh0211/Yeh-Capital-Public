@@ -34,12 +34,25 @@ Correlation between the return-so-far and the full intraday return is already **
 
 ![Time-of-day correlation](a4_time_of_day_correlation.png)
 
+## The answer, in the data
+
+**Q: Where does a semi's daily return come from — overnight or the session — and is the intraday path predictable?**
+**A: Conditional.** The overnight gap drives the *leaders* but not the universe; intraday momentum does not replicate; the day's direction is set in the first 30 minutes.
+
+| Finding | Stat |
+|---|---|
+| Overnight beats intraday | only 56% of 93 names |
+| NVDA overnight vs intraday | +480% vs +130% |
+| Intraday momentum (penult → last ½hr) | β 0.003, t 0.79 (not significant) |
+| Direction set early | corr 0.60 by 10:00 ET, 0.80 by late morning |
+
 ## Caveats
 
-Plain OLS t-stats (not Newey-West); intraday tests use complete sessions only; the overnight result is concentrated in the megacap leaders, not the median name.
+Plain OLS t-stats (not Newey-West) — a robustness check that would tighten, not overturn, an already-null momentum result; intraday tests use complete sessions only; the overnight result is concentrated in the megacap leaders, not the median name.
 
 ## References
 
 - Lou, Polk & Skouras (2019). *A tug of war: overnight versus intraday returns.* JFE.
 - Gao, Han, Li & Zhou (2018). *Market intraday momentum.* JFE.
 - Heston, Korajczyk & Sadka (2010). Intraday return periodicity. Journal of Finance.
+- Community: r/algotrading discussion of the "overnight edge" (buy-close/sell-open) and why naive intraday-momentum bots fail to replicate the index-futures result on single names.

@@ -42,7 +42,7 @@ NVDA's weight rose from 12.9% (2021) to 37.3% (2026); its **cumulative share of 
 ### H1 — Narrowness is bearish (mean-reversion)
 
 - **Claim.** Extreme single-name concentration precedes a correction.
-- **Evidence for.** The precedent the 2026 chart invokes: into March 2000 the semis were led by a handful of names; the PHLX SOX then fell ~82% to its October 2002 trough (the Nasdaq Composite ~78%), and Intel alone warned in September 2000 and dropped ~40% in a single day. In May 2026 Goldman flagged S&P 500 breadth as the narrowest since the dot-com era; BofA's Hartnett likened the semis to the Mississippi bubble.
+- **Evidence for.** The precedent the 2026 chart invokes: into March 2000 the semis were led by a handful of names; the PHLX SOX then fell ~82% to its October 2002 trough (the Nasdaq Composite ~78%), and Intel alone warned in September 2000 and dropped ~40% in a single day. In May 2026 Goldman's Ben Snider flagged S&P 500 breadth as one of the narrowest readings since the dot-com era; BofA's Michael Hartnett warned that AI-stock euphoria and concentration were nearing historic extremes.
 - **Evidence against (in-sample).** Peak narrowness (2024) was followed by broadening and further gains, not reversal.
 - **Literature.** De Bondt & Thaler (1985) on long-horizon overreaction/reversal.
 - **Verdict.** A real historical precedent that did **not** bind this cycle. Narrowness looks necessary-but-not-sufficient for a top.
@@ -75,6 +75,19 @@ NVDA's weight rose from 12.9% (2021) to 37.3% (2026); its **cumulative share of 
 - **Open question.** Whether NVDA's current multiple sits in the 2000 zone is the live, unresolved variable.
 - **Verdict.** The conditioner to watch; it is what would distinguish a 2000 echo from a continuation.
 
+## The answer, in the data
+
+**Q: When one stock supplies >40% of an index's gain, what comes next?**
+**A: Conditional — broadening, not a crash, in this cycle.** Peak narrowness did not bind; the signal is the *conditioner* (an expensive leader), not the concentration level.
+
+| Year | NVDA share of gain | % of names beating index |
+|---|---:|---:|
+| 2024 (peak narrowness) | 69% | 17% |
+| 2025 | 37% | 52% |
+| 2026 YTD | 12% | 78% |
+
+Extreme narrowness (2024) resolved by laggards catching up, with the index still rising — the benign branch.
+
 ## Caveats & reproducibility
 
 A cap-weighted proxy, not the official SOX; current shares held constant; one cycle, not a powered multi-episode test; the 2000 SOX/Nasdaq figures and the 2026 breadth commentary are sourced, not recomputed here. Universe, window, weighting, and metrics are stated above so the result can be challenged.
@@ -84,4 +97,5 @@ A cap-weighted proxy, not the official SOX; current shares held constant; one cy
 - Bessembinder, H. (2018). *Do stocks outperform Treasury bills?* Journal of Financial Economics.
 - Jegadeesh, N. & Titman, S. (1993). *Returns to buying winners and selling losers.* Journal of Finance.
 - De Bondt, W. & Thaler, R. (1985). *Does the stock market overreact?* Journal of Finance.
-- PHLX Semiconductor Index (SOX) drawdown, 2000–2002 (public market data); Goldman Sachs and BofA (Hartnett) market-breadth commentary, 2026.
+- PHLX Semiconductor Index (SOX) drawdown, 2000–2002 (public market data); Goldman Sachs (Ben Snider) and BofA (Michael Hartnett) market-breadth commentary, 2026.
+- Community: r/stocks and r/investing "is NVDA the whole market?" / breadth-and-concentration debate through 2026.

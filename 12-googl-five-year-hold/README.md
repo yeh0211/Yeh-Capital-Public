@@ -1,30 +1,55 @@
-# 12 — GOOGL: a five-year equity hold, brought current
+# 12 — GOOGL: a five-year hold, in the megacap pack
 
-**Question.** If you had bought GOOGL five years ago and held, what is the return — and where does it sit now?
+**Question.** What did a five-year GOOGL hold return — and how does it rank against the other megacaps on return *and* risk?
 
-**Finding.** **+220% total (≈26% CAGR)**: $10,000 became about $32,000. A strong hold, but it *lagged* the NVDA-driven semiconductor complex (+360% over the same window), and it carried a −44% drawdown along the way.
+**Finding.** A strong hold — **+225% (≈27% CAGR), Sharpe 0.92** — but **#2 of five megacaps**, lapped by NVDA (+1,233%), and *beaten by simply holding the five equal-weight* (+335%, Sharpe 1.11). The lesson is less "GOOGL was great" than "the basket beat the pick, and NVDA was the cycle."
 
-> Research / backtested buy-and-hold. Split-adjusted daily closes, extended to the live close (2026-06-01). No live capital, no transaction costs.
+> Research / backtested buy-and-hold; split-adjusted daily closes, 2021-04-30 → 2026-04-30 (5.0y). Benchmark is an equal-weight basket of the five names (SPY/QQQ are not in the warehouse). No live capital, no transaction costs.
 
 ## Data & method
 
-- Buy 2021-04-30 at **$117.67**; mark to 2026-06-01 at **$376.37** (warehouse history extended with the live close). Split-adjusted (the 2022 20:1 split is handled).
-- Total return, CAGR over 5.09 years, annualized volatility, and max drawdown (peak-to-trough on close).
+- `daily_bars` split-adjusted close; GOOGL, MSFT, AAPL, AMZN, NVDA (META is not in the warehouse).
+- Per name: total return, CAGR, annualised volatility, Sharpe (rf = 0), maximum drawdown. An equal-weight buy-and-hold basket of the five is the in-sample benchmark.
 
-## Claim 1 — A five-year hold returned ~+220% (26% CAGR)
+## Claim 1 — GOOGL returned +225% (27% CAGR), Sharpe 0.92
 
-$10,000 invested at the start is worth about **$31,984** today. 2026 year-to-date **+19.4%**; annualized volatility 31.1%.
+$10,000 became about **$32,500**. Annualised volatility 31%; a −44% maximum drawdown (2022) was the price of the ride. A genuinely strong five-year compounding.
 
-![GOOGL five-year hold + drawdown](googl_path.png)
+![GOOGL vs the megacap basket, 2021–2026 (log)](googl_basket.png)
 
-## Claim 2 — It lagged the semiconductor complex
+## Claim 2 — But it was #2 of five, and the basket beat it
 
-GOOGL +220% versus the cap-weighted semis proxy **+360%** (NVDA-driven) over the same window (see study 11). This cycle, the AI-megacap trade was in the chips, not the platform.
+Ranked among the five, GOOGL is **#2 on total return and #2 on Sharpe** — behind NVDA on both. Holding all five equal-weight returned **+335% at a higher Sharpe (1.11)** with the same −44% drawdown: diversifying across the megacaps beat the single pick on return *and* risk-adjusted return.
 
-## Claim 3 — The compounding carried a real drawdown
+| Name | Total | CAGR | Vol | Sharpe | Max DD |
+|---|---:|---:|---:|---:|---:|
+| NVDA | +1,233% | 68% | 52% | 1.27 | −66% |
+| **EW basket** | **+335%** | **34%** | **33%** | **1.11** | **−44%** |
+| **GOOGL** | **+225%** | **27%** | **31%** | **0.92** | **−44%** |
+| AAPL | +108% | 16% | 28% | 0.74 | −33% |
+| MSFT | +59% | 10% | 26% | 0.52 | −38% |
+| AMZN | +50% | 8% | 36% | 0.40 | −56% |
 
-A **−44.3%** peak-to-trough drawdown (trough 2022-11-03) was the price of the return; the position now sits near, but a touch below, its April-2026 high.
+## Claim 3 — NVDA was the cycle
+
+NVDA's +1,233% (Sharpe 1.27, but a −66% drawdown en route) dwarfs the field. It, not the platform names, was the AI-megacap trade of 2021–2026 — consistent with the concentration finding in study 11.
+
+## The answer, in the data
+
+**Q: Was a five-year GOOGL hold a good outcome?**
+**A: Yes — but not the best.** It was #2 of five and was beaten by the equal-weight basket on both return and Sharpe.
+
+| | Total | Sharpe | Rank (of 5) |
+|---|---:|---:|---:|
+| GOOGL | +225% | 0.92 | #2 / #2 |
+| EW basket | +335% | 1.11 | — |
+| NVDA | +1,233% | 1.27 | #1 / #1 |
 
 ## Caveats
 
-A single-name buy-and-hold; no transaction costs; adjustment beyond splits is not modeled. The semis-proxy comparison is from study 11 (a 23-name cap-weighted proxy, not the official PHLX SOX).
+Buy-and-hold, no costs or taxes; rf = 0 for Sharpe. META, SPY and QQQ are not in the warehouse, so the benchmark is an in-sample equal-weight basket of five, not the index. The window ends at the 2026-04-30 data cutoff, so figures differ slightly from a live-close mark.
+
+## References
+
+- Bessembinder, H. (2018). *Do stocks outperform Treasury bills?* Journal of Financial Economics — a few names create most long-run wealth; the basket-beats-the-pick result here is the same phenomenon.
+- Community: the recurring r/investing / Bogleheads debate — index-or-basket vs single-name megacap picking.

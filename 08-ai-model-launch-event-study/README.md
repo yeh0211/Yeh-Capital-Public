@@ -1,37 +1,45 @@
 # 08 — AI model launches: does the stock react, and does it repeat?
 
-**Question.** When a frontier AI model ships, does the compute complex (NVDA and peers) reliably move, and has the reaction held up over time?
+**Question.** When a frontier AI model ships, does the compute complex (NVDA and peers) reliably move — and does the reaction survive an honest significance test?
 
-**Finding.** The compute-bullish "launch pop" is a coin flip and has faded; the only reliable mover was the compute-*efficient* DeepSeek shock (negative), and even that rests on a single episode and largely retraced.
+**Finding.** No. At the true sample size — **19 events, not 152 event-by-ticker pairs** — the bullish-launch reaction is **+0.07% over [0,5], with a bootstrap 95% CI of [−2.6%, +3.0%]** and a **placebo p of 0.95**: statistically indistinguishable from picking random dates. The only large mover was the compute-*efficient* DeepSeek shock (−6% mean), and that rests on a single episode (R1) that largely retraced. "Launch = buy NVDA" is noise.
 
-> Research / backtested. 19 web-verified launches (2022–2025) on an 8-name AI/compute basket; constant-mean event study. No live capital.
+> Research / backtested. 19 web-verified launches (2022–2025) on an 8-name AI/compute basket; constant-mean event study with **event-level aggregation + bootstrap + placebo**. 2026 launches excluded (data ends 2026-04-30). No live capital.
 
 ## Data & method
 
-- **Events:** 19 major launches, each tagged compute-**bullish** (implies more demand) or compute-**efficient** (DeepSeek-style "we did it cheaper").
-- **Basket:** NVDA, AVGO, AMD, TSM, AMAT, ASML, MU, MRVL.
-- **Method:** constant-mean abnormal returns, estimation window [−120, −21] trading days; CAR over [0,0], [−1,1], [0,5], [0,20]; cross-sectional t-stats.
+- **Basket:** NVDA, AVGO, AMD, TSM, AMAT, ASML, MU, MRVL. Constant-mean expected return, estimation window [−120, −21] trading days; [0,5] CAR.
+- **The fix vs a naive event study:** aggregate to **event-level** basket CARs (n=19), because the 8 names co-move on a launch — so the effective sample is the count of *events*, not 152 pairs. Bootstrap the bullish mean (10k resamples); placebo = the null distribution of "mean of k random pseudo-event sets" (2k draws) for an empirical p-value.
 
-## Claim 1 — The bullish launch pop is a coin flip, and it faded
+## Claim 1 — The bullish "pop" is statistically zero
 
-Across bullish launches the basket's [0,5] abnormal return is ~0% (t −0.10; NVDA rose on only **53%** of them). By year the reaction fell from **+3.9% (2023)** to negative in 2024–25 — the 2023 euphoria, when every launch pumped semis, is gone.
+Bullish launches: mean [0,5] basket CAR **+0.07%** (median +0.68%, positive on 52% — a coin flip). The bootstrap 95% CI is **[−2.6%, +3.0%]** (straddles zero); the placebo empirical **p = 0.95**. The actual reaction sits dead-centre of the random-date null — indistinguishable from chance.
 
-![CAAR path: bullish vs efficient](b1_caar_path.png)
-![Mean [0,5] reaction by year (bullish)](b2_by_year.png)
+![Launch effect vs chance: placebo null vs actual](launch_placebo.png)
 
-## Claim 2 — The only reliable mover was the efficiency shock (and it retraced)
+## Claim 2 — And what little there was faded after 2023
 
-Compute-efficient (DeepSeek) releases drew **−5.0%** over [0,5] (t −2.7). DeepSeek-R1 released 2025-01-20 (US market closed); NVDA fell **−17% four trading days later** on 01-27 — the largest one-day market-cap loss in US history — but its [0,20] abnormal return was just **−0.7%**: the shock was largely retraced within a month.
+Mean bullish [0,5] CAR by year: **2022 −4.8%, 2023 +3.5%, 2024 −0.7%, 2025 −0.6%.** The 2023 euphoria, when every launch pumped semis, is gone; NVDA was positive on only 52% of bullish launches.
 
-![NVDA reaction per launch](b3_nvda_per_event.png)
+![Mean basket [0,5] reaction by year (bullish)](launch_by_year.png)
 
-## Claim 3 — The sign depends on the compute implication
+## Claim 3 — The only big mover was the efficiency shock (one episode)
 
-Capability launches imply more compute demand (bullish, but increasingly priced in); efficiency launches imply less GPU demand (bearish). The market now fades the former and punishes the latter — "launch = buy NVDA" is not a strategy.
+Compute-efficient (DeepSeek) launches drew a mean [0,5] of **−6.0%** (n=2 → no CI). DeepSeek-R1 released 2025-01-20 (US market closed, MLK Day); NVDA fell **−17% on 01-27** — about **$589bn**, the largest one-day market-cap loss in US history — but its [0,20] abnormal return was largely retraced. One episode, not a law.
+
+## The answer, in the data
+
+**Q: Does a model launch reliably move the compute complex?**
+**A: No** — the bullish reaction is statistically zero, and only a single efficiency shock moved the tape.
+
+| Group | n | Mean [0,5] | 95% CI / note | Placebo p |
+|---|---:|---:|---|---:|
+| Bullish | 17 | +0.07% | [−2.6%, +3.0%] | 0.95 |
+| Efficient | 2 | −6.0% | single-episode (R1) | — |
 
 ## Caveats
 
-The t-stats treat each event-by-ticker pair as independent, but the 8 names move together on a launch, so the effective sample is the number of *events* (19), not 152 — the efficient-launch result rests on essentially the single DeepSeek-R1 episode. ADRs (TSM, ASML) react with a timezone lag. 2026 launches are excluded (no post-event window yet).
+Event-level n=19 (bullish 17, efficient 2) is small; the efficient result is essentially the single DeepSeek-R1 episode. ADRs (TSM, ASML) react with a timezone lag. Constant-mean model; 2026 launches are excluded (no post-event window before the data cutoff).
 
 ## References
 

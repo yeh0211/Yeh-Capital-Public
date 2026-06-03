@@ -1,24 +1,22 @@
-# A due-diligence news hub: verified event tracking for a fast-moving name
+# 03 — A due-diligence news hub: verified event tracking for one name
 
-**Case study — turning fragmented, mixed-reliability sources into a verified, source-scored event timeline for a single company (Tempus AI, $TEM).**
+**Question.** Can fragmented, mixed-reliability sources — filings, financial press, and social chatter — be turned into a verified, source-scored event timeline for a single fast-moving company, separating fact from rumour reproducibly?
 
-*Hsin Cheng Yeh · independent research tooling · 2026*
+**Finding.** Yes, as a methodology. A single-name pipeline ingests and extracts coverage, then routes every claim through an **independent verification gate** that promotes an item to "fact" only at confidence > 70, producing a clean timeline with unverified chatter quarantined. This is an **engineering / methodology case study** (built on Tempus AI, $TEM) — not a return backtest. Its honest test is the verifier's precision and recall, set out below.
 
----
+> Methodology / tooling case study. Design and approach only — no code, keys, endpoints, or deployment. Not investment advice; not a backtested signal.
 
 ## The problem
 
-Doing diligence on a fast-moving AI-healthcare name means reconciling sources that disagree and vary wildly in reliability:
+Diligence on a fast-moving AI-healthcare name means reconciling sources that disagree and vary wildly in reliability:
 
-- **Primary** — SEC filings (8-K/10-Q), investor-relations releases
+- **Primary** — SEC filings (8-K / 10-Q), investor-relations releases
 - **Secondary** — financial press
-- **Noisy/early** — Reddit, X/Twitter, and other social chatter, where a partnership "rumour" can move the stock days before it's confirmed (or turn out false)
+- **Noisy / early** — Reddit, X, and other social chatter, where a partnership "rumour" can move the stock days before it is confirmed (or turns out false)
 
-The hard part isn't *collecting* this — it's **separating verified fact from unverified chatter**, attaching a reliability weight to each source, and assembling a clean event timeline you can actually reason from. Reading 40 tabs by hand doesn't scale and isn't reproducible.
+The hard part isn't *collecting* this — it's **separating verified fact from unverified chatter**, attaching a reliability weight to each source, and assembling a timeline you can reason from. Reading 40 tabs by hand doesn't scale and isn't reproducible.
 
 ## The approach
-
-I built a single-name diligence pipeline that ingests, analyses, **independently verifies**, scores, and structures coverage of one company end-to-end.
 
 ```
   INGEST                 ANALYSE              VERIFY                  SCORE & STRUCTURE
@@ -27,43 +25,36 @@ I built a single-name diligence pipeline that ingests, analyses, **independently
   Investor relations ┤   LLM extraction   │ claim against an      │ weight per source
   Financial press    ┼─► of entities,  ─► │ independent search ─► ┤ verified flag +
   Reddit             │   events, claims    │ engine; confidence    │ confidence (0-100)
-  X / Twitter        ┘   + sentiment       │ 0-100 + discrepancies │ event timeline,
+  X / social         ┘   + sentiment       │ 0-100 + discrepancies │ event timeline,
                                            └ list                  └ value chain, catalysts
 ```
 
-## The bit that makes it diligence, not a feed reader
+## The gate that makes it diligence, not a feed reader
 
-Every extracted claim is sent to an **independent verification step** (a separate search-grounded model) that returns structured output:
+Every extracted claim is sent to an **independent verification step** (a separate search-grounded model) that returns a structured result: a `verified` flag, a `confidence` score (0–100), a short summary, and an explicit list of `discrepancies`. An item is promoted to **verified** only when the verifier returns `verified = true` **and** `confidence > 70`. Everything else stays flagged and is held out of the "facts" timeline; conflicts between sources are captured explicitly rather than averaged away.
 
-```json
-{ "verified": true/false, "confidence": 0-100, "summary": "...", "discrepancies": ["..."] }
-```
-
-An item is only promoted to **verified** when the verifier returns `verified = true` **and** `confidence > 70`. Everything else stays flagged as unverified and is held out of the "facts" timeline. Discrepancies (where sources conflict) are captured explicitly rather than averaged away.
-
-That single gate is the difference between a diligence tool and a news aggregator: it forces every "fact" to clear an independent, thresholded check before it's treated as one.
+That single thresholded, independent check is the difference between a diligence tool and a news aggregator.
 
 ## What it produces
 
 - **Verified event timeline** — chronological, filing-grounded, with unverified items quarantined
 - **Source-reliability scoring** — each source carries a weight, so a 10-K and a Reddit post are never treated as equal
 - **Value-chain view** — partners, customers, and supply-chain relationships mapped from the coverage
-- **Catalyst tracker** — upcoming/!recent events that could move the thesis
-- **Pipeline console** — run status + error surface, so I can trust the data is fresh and complete
+- **Catalyst tracker** — upcoming and recent events that could move the thesis
 
-Data model (Postgres via Supabase): `articles` (source, url, score, **verified**, verification_notes, tags), `timeline_events`, `catalysts`, `source_reliability`, `network_verification`, plus `pipeline_errors` / `pipeline_schedule` for observability. Row-level security is enabled on every table.
+## How it should be validated (the honest test)
+
+Because this is tooling, the right test is not a P&L but the verifier's accuracy — two measurable checks:
+
+1. **Precision / recall of the gate** against a hand-labelled set of later-confirmed vs later-falsified claims: does `confidence > 70` actually separate true from false, and at what cost in missed true items?
+2. **Lead-time**: do items the gate marks "verified" *precede* the eventual filing or price confirmation, or merely lag it?
+
+Until those are run on a labelled sample, this is a validated *design*, not a validated *signal* — and that distinction is the point of publishing it honestly.
 
 ## Why single-name, not a market scanner
 
-Diligence depth beats breadth. Pointing the whole stack at **one** company (here, Tempus AI — an AI-driven precision-medicine name where the genomics/data narrative and the reported financials need careful reconciliation) means the verification layer can be tuned to that company's people, partners, and claims, instead of producing shallow coverage of hundreds of tickers.
+Diligence depth beats breadth. Pointing the whole stack at **one** company (here Tempus AI — where the genomics/data narrative and the reported financials need careful reconciliation) lets the verification layer be tuned to that company's people, partners, and claims, instead of producing shallow coverage of hundreds of tickers.
 
 ## Honest scope
 
-- Personal research tooling, built on a Vite/React front end with a Supabase (Postgres + edge-function) backend.
-- **Not investment advice.** The output is a verified information layer to support judgement, not a recommendation.
-- Verification quality is bounded by the underlying search model; `confidence > 70` reduces false positives but does not eliminate them — discrepancies are surfaced, not hidden.
-- The live deployment, credentials, and backend endpoints are kept private; this case study describes the design and methodology only.
-
----
-
-*Part of a series of independent research notes. Method and design only — no code, keys, or infrastructure published.*
+Personal research tooling. **Not investment advice** — the output is a verified information layer to support judgement, not a recommendation. Verification quality is bounded by the underlying search model; `confidence > 70` reduces false positives but does not eliminate them, so discrepancies are surfaced rather than hidden.

@@ -2,37 +2,40 @@
 
 **Question.** Slice the semiconductor complex into its **supply-chain layers** — hyperscalers, fabless, foundry, equipment, memory, substrate, ODM, power/cooling, power-gen, neoclouds — and ask three things: which layer *leads*, how does capital *rotate* across them, and when you overlay news / X / Reddit, does **price drive the discussion or the discussion drive price**?
 
-**Finding.** Three answers on 2021–2026 data (universe expanded to **all 83 members ≥$100M**): (1) **leadership sits on the chain's *periphery*** — power/cooling (**+1,902%** EW), power-gen (+1,000%), memory (+813%) and substrate led, while the famous **hyperscalers (+175%) and foundry (+164%) lagged**; (2) the layers **co-move — there's no tradable lead-lag** up or down the chain (upstream vs downstream peaks at lag 0, corr +0.80; Granger ≈ 0 both ways); (3) **price drives the chatter** — posts cluster *after* run-ups (+3–22% prior; curated-X experts post on names already **+35% above their 200-day MA**), but the discussed names keep running (**+2.4% forward 20-day alpha; +7.3% for curated X**) — attention *rides momentum*, it doesn't predict reversals. Two deeper cuts confirm the theme: chasing the top-momentum layer earned more *raw* return (+2,494% vs +686%) but **no better Sharpe** (1.26 vs 1.42), and broad **13F money accumulated every layer** while **ARK rotated from the incumbents into neoclouds**.
+**Finding.** Three answers on 2021–2026 data (complete systematic universe: **133 names ≥$100M across 13 layers**, incl. new Photonics, EMS and Solar layers): (1) **leadership sits on the chain's *periphery*** — power-gen (**+1,000%** EW), EMS/contract-mfg (+681%), photonics (+630%), power/cooling and substrate led, while the famous **hyperscalers (+175%) and foundry (+164%) lagged and solar was the clear loser (+36%)**; (2) the layers **co-move — there's no tradable lead-lag** up or down the chain (upstream vs downstream peaks at lag 0, corr +0.80; Granger ≈ 0 both ways); (3) **price drives the chatter** — posts cluster *after* run-ups (+3–22% prior; curated-X experts post on names already **+35% above their 200-day MA**), but the discussed names keep running (**+2.4% forward 20-day alpha; +7.3% for curated X**) — attention *rides momentum*, it doesn't predict reversals. Two deeper cuts confirm the theme: chasing the top-momentum layer earned more *raw* return (+2,494% vs +686%) but **no better Sharpe** (1.26 vs 1.42), and broad **13F money accumulated every layer** while **ARK rotated from the incumbents into neoclouds**.
 
 > Research / backtested. Layer map from a supply-chain graph; equal-weight layer price indices (US + Taiwan), 2021–2026; ~9k X + 5k news + (thin) Reddit posts, each carrying the ticker's run-up / RSI / %-above-200d **at post time** plus forward 5/20-day alpha vs SPY. Fabricated `x_kimi` excluded. No live capital; data sourced at **$0** (internal warehouse).
 
 ## Data & method
 
-- **Layers & universe:** ten supply-chain layers, expanded to **all 83 members with market cap ≥ $100M** (no upper limit) that we have price history for — US via daily bars, Taiwan via TWSE, each name validated against `market_cap_usd`. Equal-weight daily-return indices (returns clipped at ±50%/day to kill bad ticks). The full roster per layer is listed in Claim 1; Samsung/SK Hynix (Korea) are absent from our data and noted.
+- **Layers & universe:** **13 layers, 133 names, market cap ≥ $100M (no upper limit).** The eight semiconductor-*hardware* layers (fabless, equipment, foundry, memory, substrate, photonics, EMS, solar) are a **systematic sweep** of the relevant industry (SIC) codes — every qualifying name classified into a layer; non-chain SIC matches (networking, security software, lab instruments, defense electronics) are **excluded transparently**. The five demand/power layers (hyperscalers, neoclouds, power/cooling, power-gen, ODM) are curated — there is no clean industry code for them. US via daily bars, Taiwan via TWSE; validated against `market_cap_usd`; equal-weight indices, returns clipped at ±50%/day for bad ticks. Korea (Samsung/SK Hynix) is absent from our data.
 - **Social/news:** ticker-tagged posts (news / X-curated-analysts / Reddit) joined to each ticker's post-time technical state and forward alpha — the **reactive-vs-predictive** test.
 
 ## Claim 1 — Leadership rotates around the periphery, not the famous names
 
-Across all **83 members (mc ≥ $100M)**, equal-weight, 2021–2026, the **picks, shovels and *electricity*** of the AI build-out led; the obvious mega-caps lagged.
+Across the **complete roster of 133 names (mc ≥ $100M, no upper limit)** — a systematic sweep of the semiconductor-hardware universe classified into 13 layers, equal-weight, 2021–2026 — the **picks, shovels and *electricity*** of the AI build-out led; the obvious mega-caps lagged.
 
-| Layer | EW return | # | Members (by return) |
+| Layer | EW return | # | Members (top by return) |
 |---|---:|---:|---|
-| **Power/cooling** (L17) | **+1,902%** | 4 | VRT, MOD, BE, NVT |
 | **Power-gen** (L18) | **+1,000%** | 7 | VST, GEV, OKLO, CEG, NRG, TLN, SMR |
-| **Memory/storage** (L15) | +813% | 3 | STX, MU, WDC |
+| **EMS / contract-mfg** (new) | **+681%** | 9 | CLS (+4,792%), TTMI, FLEX, JBL, SANM, PLXS, BHE, CTS, KE |
+| **Photonics / optical** (new) | +630% | 12 | CIEN, AXTI, LITE, FN, COHR, VIAV, LPTH, LASR, AAOI, KOPN, IPGP, OLED |
+| **Power/cooling** (L17) | +625% | 6 | VRT (+2,153%), MOD, BE, NVT, VICR, KULR |
 | **Substrate** (L12) | +600% | 2 | 3037, 8046 (Taiwan) |
-| **ODM/servers** (L14) | +466% | 7 | SMCI, 6669, DELL, 3231, 2382, HPE, 2317 |
-| **Fabless/design** (L3) | +444% | 26 | NVDA, CRDO, AVGO, SITM, MTSI, RMBS, MPWR, ALAB, MRVL, AMD, ON, ADI, LSCC, SLAB, SMTC, 2454, NXPI, TXN, QCOM, MCHP, MXL, AMBA, QRVO, NVTS, SWKS, INDI |
-| **Equipment** (L6) | +432% | 18 | AEHR, KLAC, CAMT, NVMI, LRCX, ONTO, AMAT, FORM, TER, AEIS, ACMR, ASML, UCTT, KLIC, MKSI, ICHR, COHU, ENTG |
+| **ODM / servers** (L14) | +509% | 8 | SMCI, 6669, DELL, 3231, 2382, 2317, HPE, OSS |
+| **Memory / storage** (L15) | +417% | 6 | STX, MU, WDC, MRAM, PENG, GSIT |
+| **Equipment** (L6) | +382% | 23 | AEHR (+2,484%), KLAC, CAMT, NVMI, LRCX, ONTO, PLAB, ACLS, AMAT, … |
+| **Fabless / design** (L3) | +351% | 38 | NVDA (+1,720%), CRDO, AVGO, SITM, MTSI, RMBS, MPWR, ALAB, MRVL, AMD, … |
+| **Foundry** (L7) | +265% | 5 | TSM, SKYT, UMC, INTC, GFS |
 | **Hyperscalers** (HYPER) | +175% | 5 | GOOGL, ORCL, META, MSFT, AMZN |
-| **Foundry** (L7) | +164% | 4 | TSM, INTC, UMC, GFS |
 | **Neoclouds** (L16) | +160% | 7 | NBIS, CRWV, CIFR, APLD, IREN, WULF, CORZ |
+| **Solar / clean-energy** (new) | **+36%** | 5 | FSLR, ARRY, ENPH, SEDG, SHLS |
 
-The pattern survives the broader roster: **power, power-gen, memory and substrate lead; hyperscalers, foundry and neoclouds lag.** The widened lens also exposes huge *within-layer* dispersion — equipment ranges from AEHR (+2,480%) to ENTG/COHU (~+50%); fabless from NVDA/CRDO (~+1,200–1,700%) to SWKS/INDI (negative). The "leading layer" is rarely the famous fabless; it's the bottleneck tiers (power, substrate, memory).
+The thesis holds and broadens on the full universe: **power-gen, EMS, photonics, power/cooling, substrate and memory lead; hyperscalers, foundry and neoclouds lag; solar is the clear loser** (+36%, the only layer that badly trailed the complex). The widened lens exposes enormous *within-layer* dispersion — EMS spans CLS (+4,792%) to KE (+10%); fabless NVDA (+1,720%) to WOLF (−96%); equipment AEHR (+2,484%) to AZTA (−82%). The "leading layer" is rarely the famous fabless or hyperscaler; it's the bottleneck tiers — *power, the contract manufacturers, the optics*.
 
-![All ten layers, 2021–2026](all_layers.png)
-![Each layer vs the complex](layer_grid.png)
-![All 83 names by layer](all_names.png)
+![All 13 layers, 2021–2026](all_layers.png)
+![Each of the 13 layers vs the complex](layer_grid.png)
+![All 133 names by layer](all_names.png)
 
 ## Claim 2 — The layers co-move; no tradable lead-lag up or down the chain
 
@@ -67,7 +70,7 @@ The discussion is **reactive**: posts arrive *after* a run-up (+4.2% prior 20-da
 
 | Question | Answer | Proof |
 |---|---|---|
-| Which layer leads? | **The periphery** (power / power-gen / memory / substrate) — not hyperscaler/foundry | power +1,902% vs hyperscalers +175% (83 names ≥$100M) |
+| Which layer leads? | **The periphery** (power-gen / EMS / photonics / power / substrate) — not hyperscaler/foundry; solar lags | power-gen +1,000% vs hyperscalers +175%, solar +36% (133 names ≥$100M) |
 | Does money flow up or down the chain? | **Neither — the layers co-move** | corr +0.80 at lag 0; Granger ≈ 0 both ways |
 | Can you *trade* the layer rotation? | **More return, not more Sharpe** | top-1 momentum +2,494% but Sharpe 1.26 < 1.42 (complex) |
 | Where is institutional money going? | Broad 13F **accumulates all layers**; ARK **rotates incumbents → neoclouds** | 13F ~4 adds:1 trim; ARK −$17.7bn hyperscalers, +$1.4bn neoclouds |
@@ -81,7 +84,7 @@ A signal "works" only if it *precedes* the move. We split each post into **befor
 
 ## Caveats
 
-Membership now spans **83 names ≥$100M**, but some layers stay thin (substrate = 2 Taiwan names; memory excludes Korea's Samsung/SK Hynix, absent from our data) and within-layer dispersion is large (equal-weight). The leadership/roster view (Claim 1) uses the full 83-name set; the co-movement, rotation and causality tests use the core liquid members and their conclusions hold on the wider roster. 2021–2026 was a momentum-heavy bull, so "names keep running" is regime-flavoured; co-movement does not mean the layers carry no information about each other, only that it isn't a daily price lead-lag; Reddit coverage is thin (directional only); the curated-X alpha reflects source quality (selection), not causation.
+Membership spans **133 names ≥$100M across 13 layers**. The semiconductor-*hardware* layers are a systematic industry-code sweep (every qualifying name classified); non-chain SIC matches were **excluded transparently** — networking (CSCO, ANET), security software (PANW, FTNT), lab/industrial instruments (TMO, ROK, TRMB, ITRI), defense electronics (MSI, MRCY); the demand/power layers stay curated (no clean code). Some layers are still thin (substrate = 2 Taiwan names; memory excludes Korea's Samsung/SK Hynix, absent from our data) and within-layer dispersion is large (equal-weight). The leadership/roster view (Claim 1) uses the full 133-name set; the co-movement, rotation and causality tests use the core liquid members and their conclusions hold on the wider roster. 2021–2026 was a momentum-heavy bull, so "names keep running" is regime-flavoured; co-movement does not mean the layers carry no information about each other, only that it isn't a daily price lead-lag; Reddit coverage is thin (directional only); the curated-X alpha reflects source quality (selection), not causation.
 
 ## References
 

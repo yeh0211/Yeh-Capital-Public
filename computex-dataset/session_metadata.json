@@ -1,0 +1,4526 @@
+[
+  {
+    "video_id": "MCi8jgALPYA",
+    "year": 2024,
+    "company": "AMD",
+    "summary": "AMD CEO Lisa Su opened Computex 2024 by positioning AI as AMD's top priority and emphasizing an end-to-end AI compute strategy across cloud, data centers, embedded devices and PCs. AMD introduced the Zen 5 CPU core, claiming major gains in bandwidth, AI performance and IPC, and launched Ryzen 9000 desktop processors led by the Ryzen 9 9950X. AMD also announced third-generation Ryzen AI mobile processors, codenamed Strix, combining Zen 5 CPU cores, RDNA 3.5 graphics and an XDNA 2 NPU with 50 TOPS performance for Copilot+ PCs. Microsoft joined the keynote to discuss its collaboration with AMD on AI PCs and the Copilot+ PC category.",
+    "key_numbers": [
+      {
+        "unit": "%",
+        "value": "16",
+        "metric": "Ryzen 9000 IPC uplift versus Zen 4",
+        "period": "Computex 2024 announcement"
+      },
+      {
+        "unit": "cores",
+        "value": "16",
+        "metric": "Ryzen 9 9950X CPU cores",
+        "period": "product specification"
+      },
+      {
+        "unit": "threads",
+        "value": "32",
+        "metric": "Ryzen 9 9950X threads",
+        "period": "product specification"
+      },
+      {
+        "unit": "GHz",
+        "value": "5.67",
+        "metric": "Ryzen 9 9950X boost clock",
+        "period": "product specification"
+      },
+      {
+        "unit": "MB",
+        "value": "80",
+        "metric": "Ryzen 9 9950X cache",
+        "period": "product specification"
+      },
+      {
+        "unit": "W",
+        "value": "170",
+        "metric": "Ryzen 9 9950X TDP",
+        "period": "product specification"
+      },
+      {
+        "unit": "%",
+        "value": "up to 56",
+        "metric": "Ryzen 9 9950X Blender performance uplift versus competition",
+        "period": "Computex 2024 claim"
+      },
+      {
+        "unit": "product families",
+        "value": "11",
+        "metric": "Socket AM4 product families",
+        "period": "since 2016"
+      },
+      {
+        "unit": "products",
+        "value": "145",
+        "metric": "Socket AM4 CPUs and APUs",
+        "period": "since 2016"
+      },
+      {
+        "unit": "years",
+        "value": "approaching 9",
+        "metric": "Socket AM4 platform age",
+        "period": "as of Computex 2024"
+      },
+      {
+        "unit": "timeframe",
+        "value": "through 2027 and beyond",
+        "metric": "Socket AM5 planned support",
+        "period": "platform roadmap"
+      },
+      {
+        "unit": "month",
+        "value": "July",
+        "metric": "Ryzen 9000 availability",
+        "period": "2024"
+      },
+      {
+        "unit": "TOPS",
+        "value": "50",
+        "metric": "Ryzen AI NPU performance",
+        "period": "third-generation Ryzen AI / Strix"
+      },
+      {
+        "unit": "cores",
+        "value": "12",
+        "metric": "Ryzen 9 HX 370 CPU cores",
+        "period": "product specification"
+      },
+      {
+        "unit": "threads",
+        "value": "24",
+        "metric": "Ryzen 9 HX 370 threads",
+        "period": "product specification"
+      },
+      {
+        "unit": "MB",
+        "value": "36",
+        "metric": "Ryzen 9 HX 370 cache",
+        "period": "product specification"
+      },
+      {
+        "unit": "AI tiles",
+        "value": "32",
+        "metric": "XDNA 2 AI tiles",
+        "period": "architecture specification"
+      },
+      {
+        "unit": "x",
+        "value": "2",
+        "metric": "XDNA 2 multitasking performance versus prior generation",
+        "period": "architecture comparison"
+      },
+      {
+        "unit": "x",
+        "value": "up to 2",
+        "metric": "XDNA 2 energy efficiency versus prior generation on Gen AI workloads",
+        "period": "architecture comparison"
+      },
+      {
+        "unit": "x",
+        "value": "2",
+        "metric": "Zen 5 instruction bandwidth versus Zen 4",
+        "period": "architecture comparison"
+      },
+      {
+        "unit": "x",
+        "value": "2",
+        "metric": "Zen 5 data bandwidth between cache and floating point unit versus Zen 4",
+        "period": "architecture comparison"
+      },
+      {
+        "unit": "x",
+        "value": "2",
+        "metric": "Zen 5 AI performance with full AVX-512 throughput versus Zen 4",
+        "period": "architecture comparison"
+      }
+    ],
+    "themes": [
+      "AI PCs",
+      "Zen 5",
+      "Ryzen 9000",
+      "Ryzen AI",
+      "XDNA 2",
+      "NPUs",
+      "Copilot+ PCs",
+      "RDNA 3.5",
+      "desktop CPUs",
+      "mobile CPUs",
+      "gaming PCs",
+      "AI inference",
+      "AI training",
+      "open AI software ecosystem",
+      "high-performance computing",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "AMD"
+    ],
+    "tickers": [
+      "AMD",
+      "AMD US",
+      "MSFT US",
+      "SONY US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "PC_HARDWARE",
+      "SEMICONDUCTORS",
+      "CONSUMER_COMPUTE",
+      "GAMING_HARDWARE"
+    ]
+  },
+  {
+    "video_id": "L-gSPB-WRSs",
+    "year": 2024,
+    "company": "ASUS",
+    "summary": "ASUS opened its Computex 2024 launch event by framing its 35th anniversary around responsible innovation and a new AI strategy called \u201cUbiquitous AI, Incredible Possibilities.\u201d Co-CEO Samson Hu described ASUS\u2019s AI strategy across public cloud, private cloud, connected edge, and personal client devices, with AI PCs positioned as a major new interface shift comparable to the mouse and GUI. Microsoft highlighted Copilot+ PCs, ASUS\u2019s Vivobook S15 launch with Qualcomm Snapdragon X Elite, and requirements such as at least 40 TOPS of NPU performance, while saying 50 million NPU-enabled PCs are expected to ship this year. ASUS also emphasized partnerships with Microsoft, AMD, Intel, NVIDIA, and Qualcomm to deliver AI silicon and AI applications across productivity, creativity, gaming, commercial, and edge use cases.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "35",
+        "metric": "ASUS anniversary",
+        "period": "2024"
+      },
+      {
+        "unit": "years",
+        "value": "40",
+        "metric": "PC industry development referenced",
+        "period": "historical"
+      },
+      {
+        "unit": "years",
+        "value": "30",
+        "metric": "Copilot key keyboard change interval",
+        "period": "historical"
+      },
+      {
+        "unit": "million units",
+        "value": "50",
+        "metric": "Expected NPU-enabled PC shipments",
+        "period": "2024"
+      },
+      {
+        "unit": "TOPS",
+        "value": "40",
+        "metric": "Minimum NPU performance for Copilot+ PCs",
+        "period": "current generation"
+      },
+      {
+        "unit": "date",
+        "value": "May 20",
+        "metric": "ASUS Vivobook S15 Copilot+ PC launch date",
+        "period": "2024"
+      },
+      {
+        "unit": "date",
+        "value": "June 18",
+        "metric": "ASUS Copilot+ PC shipment start date",
+        "period": "2024"
+      }
+    ],
+    "themes": [
+      "AI PC",
+      "Copilot+ PC",
+      "NPU",
+      "edge AI",
+      "cloud AI",
+      "private cloud",
+      "public cloud",
+      "AI agents",
+      "small language models",
+      "large language models",
+      "retrieval augmented generation",
+      "on-device AI",
+      "AI silicon",
+      "OLED laptops",
+      "Snapdragon X Elite",
+      "Ryzen AI",
+      "Computex",
+      "Computex-2024",
+      "press",
+      "ASUS"
+    ],
+    "tickers": [
+      "2357.TW",
+      "MSFT US",
+      "AMD US",
+      "QCOM US",
+      "INTC US",
+      "NVDA US"
+    ],
+    "sectors": [
+      "AI_INFRA",
+      "SEMI_AI",
+      "PC_HARDWARE",
+      "CONSUMER_ELECTRONICS",
+      "EDGE_AI",
+      "CLOUD_COMPUTING",
+      "SOFTWARE_AI"
+    ]
+  },
+  {
+    "video_id": "mbPRLNYqxTs",
+    "year": 2024,
+    "company": "Acer",
+    "summary": "Jerry Kao argued that Taiwan's ICT industry should move beyond hardware manufacturing and focus on commercial AI applications, which he described as 'must have' and potentially make-or-break for companies. He contrasted consumer AI features, such as generating pictures on phones, with enterprise AI use cases that can create sustainable competitive advantage and also drive hardware revenue. Kao was bullish on AI PCs, saying COMPUTEX 2024 marks the 'year zero' for AI PCs and comparing AI's role in PCs to earlier growth catalysts such as the internet and Wi-Fi. He said AI PCs will require upgrades in memory, microphones, cameras, and thermal performance, but that the ultimate upside depends on the emergence of killer applications.",
+    "key_numbers": [
+      {
+        "unit": "minutes",
+        "value": "5",
+        "metric": "Speaking time allotted",
+        "period": "COMPUTEX 2024 forum"
+      },
+      {
+        "unit": "year",
+        "value": "2009",
+        "metric": "PC market growth reference endpoint",
+        "period": "IBM PC structure to 2009"
+      },
+      {
+        "unit": "technologies",
+        "value": "2",
+        "metric": "Major historical PC growth catalysts cited",
+        "period": "Historical PC market"
+      },
+      {
+        "unit": "years",
+        "value": "2",
+        "metric": "PC inventory destocking duration",
+        "period": "Post-COVID period"
+      }
+    ],
+    "themes": [
+      "AI PCs",
+      "commercial AI",
+      "consumer AI",
+      "Taiwan ICT",
+      "hardware upgrades",
+      "PC replacement cycle",
+      "AI applications",
+      "edge AI",
+      "Computex",
+      "Computex-2024",
+      "press",
+      "Acer"
+    ],
+    "tickers": [
+      "2353.TW",
+      "ACEYY US",
+      "AAPL US",
+      "IBM US"
+    ],
+    "sectors": [
+      "PC_HARDWARE",
+      "AI_INFRA",
+      "ENTERPRISE_AI",
+      "CONSUMER_ELECTRONICS",
+      "TAIWAN_TECH"
+    ]
+  },
+  {
+    "video_id": "esAGRF0yiBI",
+    "year": 2024,
+    "company": "Arm",
+    "summary": "Rene Haas described Arm as the world's most pervasive compute architecture, citing over 190 billion Arm-based chips shipped and more than 7 billion shipped in a recent quarter. The keynote introduced Armv9 as the next decade architecture, emphasizing confidential computing, memory tagging extensions, security, and AI/ML workloads across endpoints, networks, cloud, automotive, IoT, and infrastructure. Arm positioned specialized processing and its Total Compute strategy as necessary responses to 5G, AI, and the end of Moore's Law, highlighting new Cortex CPUs, Mali GPUs, and Neoverse platforms. Haas also discussed infrastructure momentum from AWS Graviton2, Alibaba, Tencent, Oracle, NVIDIA Grace, Marvell Octeon GPU acceleration, and an NVIDIA Arm HPC developer kit.",
+    "key_numbers": [
+      {
+        "unit": "billion chips",
+        "value": "nearly 7",
+        "metric": "Arm chips shipped annually by ecosystem",
+        "period": "just over 10 years before 2021"
+      },
+      {
+        "unit": "billion chips",
+        "value": "more than 7",
+        "metric": "Arm chips shipped by ecosystem",
+        "period": "single recent quarter in 2021"
+      },
+      {
+        "unit": "billion chips",
+        "value": "more than 190",
+        "metric": "Cumulative Arm-based chips shipped",
+        "period": "as of 2021"
+      },
+      {
+        "unit": "billion chips",
+        "value": "300",
+        "metric": "Projected Armv9-era chips",
+        "period": "next decade"
+      },
+      {
+        "unit": "survey respondents",
+        "value": "more than half of 500",
+        "metric": "Healthcare executives accelerating or expanding AI deployment timelines",
+        "period": "pandemic period"
+      },
+      {
+        "unit": "survey respondents",
+        "value": "half",
+        "metric": "Enterprise decision makers reporting faster AI adoption",
+        "period": "pandemic period"
+      },
+      {
+        "unit": "percent",
+        "value": "16",
+        "metric": "Cortex-X2 performance improvement versus Cortex-X1",
+        "period": "same process and frequency"
+      },
+      {
+        "unit": "percent",
+        "value": "30",
+        "metric": "Cortex-A710 energy efficiency gain versus Cortex-A78",
+        "period": "new generation"
+      },
+      {
+        "unit": "percent",
+        "value": "35",
+        "metric": "Cortex-A510 performance improvement versus Cortex-A55",
+        "period": "new generation"
+      },
+      {
+        "unit": "cores",
+        "value": "8",
+        "metric": "Maximum Cortex-X2 cores supported by new Dynamic Shared Unit",
+        "period": "Armv9 CPU cluster"
+      },
+      {
+        "unit": "percent",
+        "value": "40",
+        "metric": "Cortex-X2 laptop peak single-thread performance uplift versus 2020 mainstream laptop silicon",
+        "period": "projected laptop solution"
+      },
+      {
+        "unit": "billion GPUs",
+        "value": "more than 1",
+        "metric": "Mali GPUs shipped by partners",
+        "period": "last year"
+      },
+      {
+        "unit": "percent",
+        "value": "20",
+        "metric": "Mali-G710 performance improvement",
+        "period": "versus previous generation"
+      },
+      {
+        "unit": "percent",
+        "value": "35",
+        "metric": "Mali-G710 machine-learning uplift",
+        "period": "versus previous generation"
+      },
+      {
+        "unit": "percent",
+        "value": "40",
+        "metric": "Neoverse N2 single-threaded performance improvement versus N1",
+        "period": "same power and area efficiency"
+      },
+      {
+        "unit": "x",
+        "value": "10",
+        "metric": "NVIDIA Grace performance uplift versus today's fastest server",
+        "period": "complex HPC workloads"
+      },
+      {
+        "unit": "Neoverse cores",
+        "value": "80",
+        "metric": "Ampere Altra CPU cores in NVIDIA Arm HPC developer kit",
+        "period": "developer kit"
+      },
+      {
+        "unit": "GHz",
+        "value": "up to 3.3",
+        "metric": "Ampere Altra CPU frequency in NVIDIA Arm HPC developer kit",
+        "period": "developer kit"
+      },
+      {
+        "unit": "GPUs",
+        "value": "2",
+        "metric": "NVIDIA A100 GPUs in Arm HPC developer kit",
+        "period": "developer kit"
+      },
+      {
+        "unit": "teraflops per GPU",
+        "value": "312",
+        "metric": "NVIDIA A100 deep learning floating point performance",
+        "period": "developer kit"
+      },
+      {
+        "unit": "DPUs",
+        "value": "2",
+        "metric": "NVIDIA BlueField-2 DPUs in Arm HPC developer kit",
+        "period": "developer kit"
+      }
+    ],
+    "themes": [
+      "Armv9",
+      "AI",
+      "machine learning",
+      "ubiquitous intelligence",
+      "confidential computing",
+      "memory tagging",
+      "specialized processing",
+      "SoC customization",
+      "Total Compute",
+      "Cortex CPUs",
+      "Mali GPUs",
+      "Neoverse",
+      "edge-to-cloud infrastructure",
+      "5G",
+      "HPC",
+      "cloud computing",
+      "automotive autonomy",
+      "IoT",
+      "security",
+      "energy efficiency",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "Arm"
+    ],
+    "tickers": [
+      "ARM",
+      "ARM US",
+      "NVDA US",
+      "MRVL US",
+      "AMZN US",
+      "BABA US",
+      "ORCL US",
+      "GOOGL US",
+      "TCEHY US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "SEMICONDUCTOR_IP",
+      "CLOUD_INFRA",
+      "EDGE_COMPUTE",
+      "MOBILE_SEMICONDUCTORS",
+      "AUTOMOTIVE_SEMICONDUCTORS",
+      "HPC",
+      "CYBERSECURITY_HARDWARE"
+    ]
+  },
+  {
+    "video_id": "iiRie4LmiaA",
+    "year": 2024,
+    "company": "Delta",
+    "summary": "Delta Research Center Director General Dr. Tucker Chiu discussed how the AI revolution, accelerated by ChatGPT and large language models, is driving rapid demand for high-performance AI accelerators and modern AI data centers. He emphasized that increasingly power-hungry accelerators such as NVIDIA A100, H100, B100, and GB200 require more efficient power delivery networks, including vertical power delivery for the last stage to the chip. Delta positioned itself as a key supplier of non-IT data center infrastructure, including power delivery and liquid cooling solutions across air-to-liquid, liquid-to-liquid, and immersion cooling. The keynote also highlighted Delta's use of AI beyond data centers, including repurposing Wi-Fi from a communications technology into a sensing and positioning technology.",
+    "key_numbers": [
+      {
+        "unit": "% CAGR",
+        "value": "35",
+        "metric": "AI accelerator demand growth",
+        "period": "current AI infrastructure buildout"
+      },
+      {
+        "unit": "watts",
+        "value": "400",
+        "metric": "NVIDIA A100 power consumption",
+        "period": "current generation referenced"
+      },
+      {
+        "unit": "watts",
+        "value": "700",
+        "metric": "NVIDIA H100 power consumption",
+        "period": "current generation referenced"
+      },
+      {
+        "unit": "watts",
+        "value": "1000",
+        "metric": "NVIDIA B100 power consumption",
+        "period": "current generation referenced"
+      },
+      {
+        "unit": "watts",
+        "value": "2700",
+        "metric": "NVIDIA GB200 power consumption",
+        "period": "latest generation referenced"
+      },
+      {
+        "unit": "volts",
+        "value": "10k-30k",
+        "metric": "Data center grid input voltage",
+        "period": "typical"
+      },
+      {
+        "unit": "volt",
+        "value": "1",
+        "metric": "Target chip/load voltage",
+        "period": "typical"
+      },
+      {
+        "unit": "watts",
+        "value": "2000",
+        "metric": "Example AI accelerator power consumption",
+        "period": "illustrative"
+      },
+      {
+        "unit": "volts",
+        "value": "0.5",
+        "metric": "Example AI accelerator operating voltage",
+        "period": "illustrative"
+      },
+      {
+        "unit": "amperes",
+        "value": "4000",
+        "metric": "Required current for example AI accelerator",
+        "period": "illustrative"
+      },
+      {
+        "unit": "%",
+        "value": "13",
+        "metric": "Vertical power delivery efficiency improvement",
+        "period": "last-lap power delivery"
+      },
+      {
+        "unit": "watts per accelerator",
+        "value": "1000",
+        "metric": "Threshold for liquid cooling requirement",
+        "period": "current AI accelerator trend"
+      },
+      {
+        "unit": "PUE",
+        "value": "1.3",
+        "metric": "PUE with air-to-liquid cooling",
+        "period": "claimed capability"
+      },
+      {
+        "unit": "PUE",
+        "value": "1.1",
+        "metric": "PUE with liquid-to-liquid cooling/CDU",
+        "period": "claimed capability"
+      },
+      {
+        "unit": "PUE",
+        "value": "1.03",
+        "metric": "PUE with immersion cooling",
+        "period": "claimed capability"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "AI accelerators",
+      "data center power delivery",
+      "vertical power delivery",
+      "liquid cooling",
+      "immersion cooling",
+      "coolant distribution unit",
+      "power electronics",
+      "industrial automation",
+      "building automation",
+      "Wi-Fi sensing",
+      "AI automation",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "Delta"
+    ],
+    "tickers": [
+      "2308.TW",
+      "DLTGY US",
+      "NVDA US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER_INFRA",
+      "POWER_ELECTRONICS",
+      "THERMAL_MANAGEMENT",
+      "INDUSTRIAL_AUTOMATION",
+      "BUILDING_AUTOMATION"
+    ]
+  },
+  {
+    "video_id": "Bnw5g6zsw0A",
+    "year": 2024,
+    "company": "Gigabyte",
+    "summary": "GIGABYTE presented AI TOP, a desktop/local AI training solution aimed at small and medium-sized businesses, researchers, students, and creators who want to fine-tune open-source LLMs without relying on public cloud infrastructure. The company argued that AI workloads will shift from public-cloud general AI toward customized private-cloud and local AI use starting in 2025, driven by cost, privacy, and data-security concerns. AI TOP combines AI TOP Utility software, AI TOP Tutor support, and purpose-built PC hardware including TRX50 and W790 motherboards, RTX 4070 Ti SUPER AI TOP GPUs, AMD Radeon Pro W7900/W7800 AI TOP cards, SSDs, and a 1600W PSU. GIGABYTE highlighted configurations ranging from $6,499 to $35,999, with stated support for fine-tuning models from 8B to 70B ideally and up to 236B or larger on the highest-end setup.",
+    "key_numbers": [
+      {
+        "unit": "tokens per watt",
+        "value": "2.63",
+        "metric": "AI TOP solution power efficiency",
+        "period": ""
+      },
+      {
+        "unit": "models",
+        "value": "20",
+        "metric": "Open-source LLMs tested",
+        "period": ""
+      },
+      {
+        "unit": "parameters/model size",
+        "value": "100MB to 236B",
+        "metric": "Tested LLM parameter range",
+        "period": ""
+      },
+      {
+        "unit": "PCIe 5.0 x16 slots",
+        "value": "4",
+        "metric": "TRX50 AI TOP PCIe slots",
+        "period": ""
+      },
+      {
+        "unit": "TB DDR5 R-DIMM",
+        "value": "2",
+        "metric": "TRX50 AI TOP memory support",
+        "period": ""
+      },
+      {
+        "unit": "slots",
+        "value": "4",
+        "metric": "TRX50 AI TOP M.2 slots",
+        "period": ""
+      },
+      {
+        "unit": "GbE LAN",
+        "value": "Dual 10",
+        "metric": "TRX50 AI TOP Ethernet",
+        "period": ""
+      },
+      {
+        "unit": "PCIe 5.0 x16 slots",
+        "value": "5",
+        "metric": "W790 AI TOP PCIe slots",
+        "period": ""
+      },
+      {
+        "unit": "TB R-DIMM",
+        "value": "2",
+        "metric": "W790 AI TOP memory support",
+        "period": ""
+      },
+      {
+        "unit": "slots",
+        "value": "6",
+        "metric": "W790 AI TOP M.2 slots",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "4",
+        "metric": "AI TOP motherboard warranty",
+        "period": ""
+      },
+      {
+        "unit": "GB VRAM per GPU",
+        "value": "16",
+        "metric": "GeForce RTX 4070 Ti SUPER AI TOP memory",
+        "period": ""
+      },
+      {
+        "unit": "GB VRAM",
+        "value": "64",
+        "metric": "Four RTX 4070 Ti SUPER AI TOP aggregate VRAM",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "4",
+        "metric": "GeForce RTX 4070 Ti SUPER AI TOP warranty",
+        "period": ""
+      },
+      {
+        "unit": "GB VRAM per GPU",
+        "value": "48",
+        "metric": "AMD Radeon Pro W7900 AI TOP memory",
+        "period": ""
+      },
+      {
+        "unit": "GB VRAM per GPU",
+        "value": "32",
+        "metric": "AMD Radeon Pro W7800 AI TOP memory",
+        "period": ""
+      },
+      {
+        "unit": "GB VRAM",
+        "value": "192",
+        "metric": "Four W7900 AI TOP aggregate VRAM",
+        "period": ""
+      },
+      {
+        "unit": "TB",
+        "value": "1 and 2",
+        "metric": "AI TOP 100E SSD capacity SKUs",
+        "period": ""
+      },
+      {
+        "unit": "times TBW",
+        "value": "150",
+        "metric": "AI TOP 100E SSD endurance versus regular SSD",
+        "period": ""
+      },
+      {
+        "unit": "MB/s",
+        "value": "7200",
+        "metric": "AI TOP 100E SSD sequential read speed",
+        "period": ""
+      },
+      {
+        "unit": "MB/s",
+        "value": "6500",
+        "metric": "AI TOP 100E SSD sequential write speed",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "5",
+        "metric": "AI TOP 100E SSD warranty",
+        "period": ""
+      },
+      {
+        "unit": "watts",
+        "value": "1600",
+        "metric": "UD1600PM PG5 AI TOP PSU power",
+        "period": ""
+      },
+      {
+        "unit": "hours continued output",
+        "value": "24",
+        "metric": "UD1600PM PG5 AI TOP PSU stress test",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "10",
+        "metric": "UD1600PM PG5 AI TOP PSU warranty",
+        "period": ""
+      },
+      {
+        "unit": "USD",
+        "value": "6499",
+        "metric": "Entry recommended set price",
+        "period": ""
+      },
+      {
+        "unit": "",
+        "value": "2 RTX 4070 Ti SUPER AI TOP and 128 GB RAM",
+        "metric": "Entry recommended set configuration",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "8B",
+        "metric": "Entry recommended set ideal fine-tuning size",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "30B",
+        "metric": "Entry recommended set maximum supported model",
+        "period": ""
+      },
+      {
+        "unit": "hours",
+        "value": "288",
+        "metric": "Entry recommended set 13B/100K dataset fine-tuning time",
+        "period": ""
+      },
+      {
+        "unit": "USD",
+        "value": "11999",
+        "metric": "Intermediate recommended set price",
+        "period": ""
+      },
+      {
+        "unit": "",
+        "value": "2 GeForce RTX 4090 and 256 GB RAM",
+        "metric": "Intermediate recommended set configuration",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "30B",
+        "metric": "Intermediate recommended set ideal fine-tuning size",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "70B",
+        "metric": "Intermediate recommended set maximum supported model",
+        "period": ""
+      },
+      {
+        "unit": "hours",
+        "value": "32",
+        "metric": "Intermediate recommended set 13B/100K dataset fine-tuning time",
+        "period": ""
+      },
+      {
+        "unit": "USD",
+        "value": "16499",
+        "metric": "Higher intermediate recommended set price",
+        "period": ""
+      },
+      {
+        "unit": "",
+        "value": "4 RTX 4070 Ti SUPER AI TOP and 512 GB RAM",
+        "metric": "Higher intermediate recommended set configuration",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "30B",
+        "metric": "Higher intermediate recommended set ideal fine-tuning size",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "110B",
+        "metric": "Higher intermediate recommended set maximum supported model",
+        "period": ""
+      },
+      {
+        "unit": "day",
+        "value": "less than 1",
+        "metric": "Higher intermediate recommended set 100K dataset fine-tuning time",
+        "period": ""
+      },
+      {
+        "unit": "USD",
+        "value": "35999",
+        "metric": "Expert recommended set price",
+        "period": ""
+      },
+      {
+        "unit": "",
+        "value": "4 W7900 AI TOP 48G and 1 TB RAM",
+        "metric": "Expert recommended set configuration",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "70B",
+        "metric": "Expert recommended set ideal model size",
+        "period": ""
+      },
+      {
+        "unit": "parameters",
+        "value": "236B and bigger",
+        "metric": "Expert recommended set maximum capability",
+        "period": ""
+      }
+    ],
+    "themes": [
+      "AI PCs",
+      "local AI training",
+      "private AI",
+      "LLM fine-tuning",
+      "open-source LLMs",
+      "AI infrastructure",
+      "GPU workstations",
+      "data privacy",
+      "edge AI",
+      "AI software utilities",
+      "high-VRAM GPUs",
+      "workstation hardware",
+      "SSD endurance",
+      "Computex",
+      "Computex-2024",
+      "press",
+      "Gigabyte"
+    ],
+    "tickers": [
+      "2376.TW",
+      "AMD US",
+      "NVDA US"
+    ],
+    "sectors": [
+      "AI_INFRA",
+      "SEMI_AI",
+      "PC_HARDWARE",
+      "WORKSTATIONS",
+      "EDGE_AI",
+      "ENTERPRISE_AI"
+    ]
+  },
+  {
+    "video_id": "5imrulocDlY",
+    "year": 2024,
+    "company": "Intel",
+    "summary": "Intel CEO Pat Gelsinger presented Intel's Computex 2024 keynote around the theme of enabling 'AI everywhere' across data centers, edge, PCs and foundry services. He launched Xeon 6 with E-cores, positioning it as a major data-center upgrade with higher core density, better performance per watt and rack consolidation versus older Xeon generations. Intel emphasized its installed base of 130 million Xeons, the role of Xeon plus RAG for enterprise AI using on-prem data, and Gaudi accelerators as open, lower-TCO alternatives for generative AI training and inference. The keynote also highlighted Intel Foundry as a 'system foundry for the AI era' and framed AI as a semiconductor demand driver toward a $1 trillion industry by the end of the decade.",
+    "key_numbers": [
+      {
+        "unit": "year",
+        "value": "1981",
+        "metric": "First Computex",
+        "period": ""
+      },
+      {
+        "unit": "year",
+        "value": "1985",
+        "metric": "Intel Taiwan operations start",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "40",
+        "metric": "Intel-Taiwan anniversary",
+        "period": "2025"
+      },
+      {
+        "unit": "transistors per chip",
+        "value": "100000",
+        "metric": "8086-era transistor count cited",
+        "period": "1982"
+      },
+      {
+        "unit": "transistors per package",
+        "value": "1000000000000",
+        "metric": "Future package transistor target",
+        "period": "by end of decade"
+      },
+      {
+        "unit": "USD",
+        "value": "1000000000000",
+        "metric": "Semiconductor industry revenue target",
+        "period": "by end of decade"
+      },
+      {
+        "unit": "processors",
+        "value": "130000000",
+        "metric": "Xeon installed base",
+        "period": "current"
+      },
+      {
+        "unit": "cores",
+        "value": "144",
+        "metric": "Xeon 6 E-core core count",
+        "period": "Computex 2024 launch"
+      },
+      {
+        "unit": "cores",
+        "value": "28",
+        "metric": "2nd Gen Xeon core count cited",
+        "period": ""
+      },
+      {
+        "unit": "videos at one time",
+        "value": "56",
+        "metric": "2nd Gen Xeon media transcode demo throughput",
+        "period": "demo"
+      },
+      {
+        "unit": "videos at one time",
+        "value": "144",
+        "metric": "Xeon 6 media transcode demo throughput",
+        "period": "demo"
+      },
+      {
+        "unit": "frames per second",
+        "value": "628",
+        "metric": "2nd Gen Xeon media transcode frame rate",
+        "period": "demo"
+      },
+      {
+        "unit": "frames per second",
+        "value": "over 2600",
+        "metric": "Xeon 6 media transcode frame rate",
+        "period": "demo"
+      },
+      {
+        "unit": "x",
+        "value": "up to 4.2",
+        "metric": "Xeon 6 media transcode performance gain",
+        "period": "versus 2nd Gen Xeon"
+      },
+      {
+        "unit": "x",
+        "value": "2.6",
+        "metric": "Xeon 6 performance per watt improvement",
+        "period": ""
+      },
+      {
+        "unit": "ratio",
+        "value": "3:1",
+        "metric": "Xeon 6 rack consolidation",
+        "period": "four-year cycle"
+      },
+      {
+        "unit": "megawatt-hours",
+        "value": "80000",
+        "metric": "Energy savings for one 200-rack data center",
+        "period": ""
+      },
+      {
+        "unit": "data centers",
+        "value": "500",
+        "metric": "Data center upgrade scenario",
+        "period": ""
+      },
+      {
+        "unit": "households for one year",
+        "value": "almost 1400000",
+        "metric": "Taiwan households power-equivalent savings",
+        "period": ""
+      },
+      {
+        "unit": "cars for one year",
+        "value": "3700000",
+        "metric": "Cars off road equivalent",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "500",
+        "metric": "Taipei 101 power equivalent",
+        "period": ""
+      },
+      {
+        "unit": "cores",
+        "value": "288",
+        "metric": "Future Xeon 6 E-core core count",
+        "period": "later 2024"
+      },
+      {
+        "unit": "ratio",
+        "value": "6:1",
+        "metric": "Future Xeon 6 consolidation ratio",
+        "period": "later 2024"
+      },
+      {
+        "unit": "percent",
+        "value": "25",
+        "metric": "eBay performance per watt improvement over competitive solutions",
+        "period": ""
+      },
+      {
+        "unit": "percent",
+        "value": "greater than 90",
+        "metric": "eBay performance per watt improvement over 3rd Gen installed base",
+        "period": ""
+      },
+      {
+        "unit": "percent",
+        "value": "up to 60",
+        "metric": "SAP HANA/SAP HANA Cloud power reduction",
+        "period": "tests"
+      },
+      {
+        "unit": "quarter",
+        "value": "Q3",
+        "metric": "Granite Rapids launch timing",
+        "period": "2024"
+      },
+      {
+        "unit": "percent",
+        "value": "over 60",
+        "metric": "Cloud workload share",
+        "period": "current"
+      },
+      {
+        "unit": "percent",
+        "value": "over 80",
+        "metric": "Data remaining on-prem",
+        "period": "current"
+      }
+    ],
+    "themes": [
+      "AI everywhere",
+      "AI infrastructure",
+      "data center CPUs",
+      "Xeon 6",
+      "E-cores",
+      "P-cores",
+      "Granite Rapids",
+      "Gaudi 2",
+      "RAG",
+      "enterprise AI",
+      "open AI platforms",
+      "Intel Foundry",
+      "semiconductor supply chain",
+      "Moore's Law",
+      "performance per watt",
+      "rack consolidation",
+      "cloud workloads",
+      "on-prem data",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "Intel"
+    ],
+    "tickers": [
+      "INTC",
+      "INTC US",
+      "SAP US",
+      "EBAY US",
+      "NVDA US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "SEMICONDUCTORS",
+      "FOUNDRY",
+      "ENTERPRISE_AI",
+      "CLOUD_INFRA"
+    ]
+  },
+  {
+    "video_id": "wxMh8TH7OF8",
+    "year": 2024,
+    "company": "MediaTek",
+    "summary": "MediaTek CEO Dr. Rick Tsai framed the company\u2019s COMPUTEX keynote around \u201cintelligence everywhere\u201d and the power of ubiquitous AI. He argued that AI will become embedded across daily life, spanning smartphones, smart homes, TVs, PCs, cars, enterprise environments, and cloud infrastructure. Tsai emphasized MediaTek\u2019s role in enabling AI at the edge and in the cloud through what he called hybrid computing. The keynote positioned MediaTek as a major participant in making AI available broadly across consumer and industrial devices.",
+    "key_numbers": [
+      {
+        "unit": "billion devices",
+        "value": "over 2",
+        "metric": "devices powered annually",
+        "period": "annually"
+      },
+      {
+        "unit": "speakers",
+        "value": "3",
+        "metric": "prior COMPUTEX AI speakers referenced",
+        "period": "current event"
+      }
+    ],
+    "themes": [
+      "ubiquitous AI",
+      "edge AI",
+      "hybrid computing",
+      "AI infrastructure",
+      "smartphones",
+      "smart home",
+      "smart TV",
+      "AI PC",
+      "automotive AI",
+      "cloud AI",
+      "connectivity",
+      "semiconductors",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "MediaTek"
+    ],
+    "tickers": [
+      "2454.TW",
+      "MDTKF US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "EDGE_AI",
+      "CONSUMER_SEMICONDUCTORS",
+      "MOBILE_SEMICONDUCTORS",
+      "SMART_HOME",
+      "AUTOMOTIVE_TECH"
+    ]
+  },
+  {
+    "video_id": "pKXDVsWZmUU",
+    "year": 2024,
+    "company": "NVIDIA",
+    "summary": "NVIDIA CEO Jensen Huang argued that the computing industry is entering a major platform shift driven by accelerated computing and generative AI. He said CPU performance scaling has slowed while computing demand continues to grow exponentially, creating \u201ccomputation inflation\u201d in data centers. Huang positioned CUDA, GPUs, and NVIDIA\u2019s domain-specific software libraries as the solution, claiming accelerated computing can deliver large performance, cost, and energy savings. He highlighted applications across AI, data processing, computational lithography, telecom, gene sequencing, combinatorial optimization, and quantum simulation, including TSMC\u2019s use of NVIDIA\u2019s cuLitho and Google Cloud\u2019s integration of cuDF for pandas acceleration.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "60",
+        "metric": "Computer industry age",
+        "period": "current"
+      },
+      {
+        "unit": "year",
+        "value": "1964",
+        "metric": "IBM System/360 introduction year cited",
+        "period": ""
+      },
+      {
+        "unit": "year",
+        "value": "2007",
+        "metric": "iPhone introduction year cited",
+        "period": ""
+      },
+      {
+        "unit": "x",
+        "value": "100",
+        "metric": "Illustrative accelerated computing speedup",
+        "period": ""
+      },
+      {
+        "unit": "x",
+        "value": "3",
+        "metric": "Illustrative power increase for accelerated computing",
+        "period": ""
+      },
+      {
+        "unit": "x",
+        "value": "1.5",
+        "metric": "Illustrative cost increase for accelerated computing",
+        "period": ""
+      },
+      {
+        "unit": "x",
+        "value": "60",
+        "metric": "Illustrative performance per dollar improvement",
+        "period": ""
+      },
+      {
+        "unit": "USD",
+        "value": "500",
+        "metric": "Illustrative PC GPU add-on cost",
+        "period": ""
+      },
+      {
+        "unit": "USD",
+        "value": "1000",
+        "metric": "Illustrative PC cost",
+        "period": ""
+      },
+      {
+        "unit": "billion USD",
+        "value": "1",
+        "metric": "Illustrative data center cost",
+        "period": ""
+      },
+      {
+        "unit": "million USD",
+        "value": "500",
+        "metric": "Illustrative GPU addition to data center",
+        "period": ""
+      },
+      {
+        "unit": "libraries",
+        "value": "350",
+        "metric": "NVIDIA domain-specific libraries",
+        "period": "current"
+      },
+      {
+        "unit": "world records",
+        "value": "23",
+        "metric": "cuOpt world records claimed",
+        "period": "current"
+      },
+      {
+        "unit": "million data scientists",
+        "value": "10",
+        "metric": "Pandas users cited",
+        "period": "current"
+      },
+      {
+        "unit": "million downloads per month",
+        "value": "170",
+        "metric": "Pandas downloads cited",
+        "period": "current"
+      },
+      {
+        "unit": "years",
+        "value": "almost 20",
+        "metric": "CUDA development period cited",
+        "period": "historical"
+      }
+    ],
+    "themes": [
+      "accelerated computing",
+      "generative AI",
+      "AI infrastructure",
+      "CUDA",
+      "GPU computing",
+      "data center power",
+      "computation inflation",
+      "domain-specific libraries",
+      "cuDNN",
+      "cuDF",
+      "cuLitho",
+      "Omniverse",
+      "5G RAN acceleration",
+      "quantum simulation",
+      "gene sequencing",
+      "data processing acceleration",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "NVIDIA"
+    ],
+    "tickers": [
+      "NVDA",
+      "NVDA US",
+      "TSM US",
+      "GOOGL US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "CLOUD_COMPUTING",
+      "SEMICONDUCTORS",
+      "SOFTWARE_INFRASTRUCTURE",
+      "TELECOM_INFRA",
+      "EDA_COMPUTATIONAL_LITHOGRAPHY"
+    ]
+  },
+  {
+    "video_id": "ERhjhZyI358",
+    "year": 2024,
+    "company": "Pegatron",
+    "summary": "TH Tung argued that AI will not be a standalone product but a broad technology trend embedded across hardware, software, services, and every layer of the ICT supply chain. He said Taiwan has strengths in chipmaking, server design, and server modules, but must also fine-tune AI models for local language, accent, and use-case needs. He highlighted edge AI on smartphones and PCs as important for privacy and productivity, while citing medical, biology, security, and astronomy examples where AI can process large datasets effectively. He also emphasized that AI and Taiwan\u2019s industrial structure will require substantial electricity, arguing for a more economical and efficient energy mix to manage future costs.",
+    "key_numbers": [
+      {
+        "unit": "languages",
+        "value": "50",
+        "metric": "Languages recognized by new AI systems mentioned",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": "92.6",
+        "metric": "Google medical AI model accuracy cited",
+        "period": ""
+      },
+      {
+        "unit": "protein shapes",
+        "value": "200 million",
+        "metric": "Protein shapes analyzed by AlphaFold cited",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "3",
+        "metric": "Human research time comparison for protein analysis",
+        "period": ""
+      },
+      {
+        "unit": "graduate students",
+        "value": "500",
+        "metric": "Human research labor comparison for protein analysis",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": "50",
+        "metric": "Japan per-capita energy consumption relative to Taiwan",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": "18",
+        "metric": "Civilian electricity use share of Taiwan total",
+        "period": ""
+      },
+      {
+        "unit": "billion kWh",
+        "value": ">300",
+        "metric": "Projected Taiwan electricity use",
+        "period": "in 10 years"
+      },
+      {
+        "unit": "billion NT dollars",
+        "value": "300",
+        "metric": "Cost impact of NT$1/kWh electricity price increase",
+        "period": "based on 300 billion kWh consumption"
+      },
+      {
+        "unit": "billion NT dollars",
+        "value": "20-30",
+        "metric": "Additional annual funding support needed for Taiwan healthcare system",
+        "period": "annual"
+      },
+      {
+        "unit": "years",
+        "value": "2",
+        "metric": "Expected timing for more edge AI on smartphones and PCs",
+        "period": "next two years"
+      }
+    ],
+    "themes": [
+      "AI",
+      "AI edge computing",
+      "AI smartphones",
+      "AI PCs",
+      "AI software",
+      "AI-native applications",
+      "AI customer service",
+      "speech-to-text",
+      "large language models",
+      "AI localization",
+      "Taiwan ICT supply chain",
+      "server design",
+      "AI servers",
+      "energy demand",
+      "data centers",
+      "healthcare AI",
+      "AlphaFold",
+      "medical AI",
+      "Computex",
+      "Computex-2024",
+      "press",
+      "Pegatron"
+    ],
+    "tickers": [
+      "4938.TW",
+      "GOOGL US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "AI_SOFTWARE",
+      "EDGE_AI",
+      "CONSUMER_ELECTRONICS",
+      "DATA_CENTERS",
+      "TAIWAN_TECH",
+      "POWER_UTILITIES",
+      "HEALTHCARE_AI"
+    ]
+  },
+  {
+    "video_id": "5R3QpKMciEw",
+    "year": 2024,
+    "company": "Qualcomm",
+    "summary": "Qualcomm CEO Cristiano Amon presented Snapdragon X Elite and Snapdragon X Plus as the platforms enabling Microsoft Copilot+ PCs and described the moment as a major transition for the Windows PC ecosystem. He argued that on-device AI, enabled by Qualcomm's NPU, will redefine PC experiences across productivity, creativity, communications, entertainment, personalization, privacy, and battery life. Microsoft CEO Satya Nadella appeared by video, saying Copilot+ PCs are the fastest and most intelligent Windows PCs ever built and highlighting Snapdragon X series' 45 TOPS NPU. Qualcomm emphasized broad OEM support, citing 22 Copilot+ PCs announced from Acer, Asus, Dell, HP, Lenovo, Microsoft, and Samsung, and said Snapdragon X will expand across all PC form factors.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "nearly 40",
+        "metric": "Qualcomm operating history",
+        "period": "company history"
+      },
+      {
+        "unit": "PCs",
+        "value": "22",
+        "metric": "Copilot+ PCs announced in first wave powered by Snapdragon X Elite and Snapdragon X Plus",
+        "period": "Computex 2024 / first wave"
+      },
+      {
+        "unit": "PCs",
+        "value": "more than 20",
+        "metric": "Copilot+ PCs available for pre-order powered by Snapdragon X series",
+        "period": "as of keynote"
+      },
+      {
+        "unit": "TOPS",
+        "value": "45",
+        "metric": "Snapdragon X series laptop NPU performance cited by Satya Nadella",
+        "period": "Copilot+ PC launch"
+      },
+      {
+        "unit": "days",
+        "value": "multiple",
+        "metric": "Battery life claim",
+        "period": "Snapdragon X Copilot+ PCs"
+      }
+    ],
+    "themes": [
+      "AI PC",
+      "on-device AI",
+      "NPU",
+      "Copilot+ PC",
+      "Snapdragon X Elite",
+      "Snapdragon X Plus",
+      "Windows on Arm",
+      "edge AI",
+      "hybrid AI",
+      "battery life",
+      "PC refresh cycle",
+      "OEM ecosystem",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "Qualcomm"
+    ],
+    "tickers": [
+      "QCOM",
+      "QCOM US",
+      "MSFT US",
+      "DELL US",
+      "HPQ US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "PC_HARDWARE",
+      "CONSUMER_COMPUTE",
+      "EDGE_AI",
+      "SOFTWARE_PLATFORM"
+    ]
+  },
+  {
+    "video_id": "HQnNpZFIhpA",
+    "year": 2024,
+    "company": "Supermicro",
+    "summary": "Supermicro CEO Charles Liang said AI infrastructure demand is entering a phase of fast growth and massive adoption, with Supermicro positioning itself as a leading provider of optimized GPU systems for major AI factories. The keynote emphasized direct liquid cooling as a mainstream data center solution that can lower capital costs, reduce operating expenses, cut power requirements, and reduce CO2 emissions versus traditional air cooling. Liang claimed Supermicro is already shipping liquid-cooled rack solutions in volume and targeting rapid industry adoption from less than 1% today to 15% of new data centers within 12 months and up to 30% in following years. The company also highlighted new Intel Xeon 6 and AMD Gen 5 platforms and its long-standing partnership with Nvidia for AI-optimized systems.",
+    "key_numbers": [
+      {
+        "unit": "million trees",
+        "value": "10",
+        "metric": "Sahara tree planting target",
+        "period": "2024"
+      },
+      {
+        "unit": "million trees per year",
+        "value": "50",
+        "metric": "Sahara tree planting target",
+        "period": "later years"
+      },
+      {
+        "unit": "GPUs",
+        "value": "8000",
+        "metric": "H100 GPUs required for cited GPT-4-sized LLM data center",
+        "period": "example data center"
+      },
+      {
+        "unit": "systems",
+        "value": "1000",
+        "metric": "HGX systems required for cited GPT-4-sized LLM data center",
+        "period": "example data center"
+      },
+      {
+        "unit": "percent",
+        "value": "7-8",
+        "metric": "Initial capital cost savings from optimized DLC environment",
+        "period": "initial facility and system acquisition"
+      },
+      {
+        "unit": "percent",
+        "value": "up to 40",
+        "metric": "OpEx savings from DLC",
+        "period": "ongoing operations"
+      },
+      {
+        "unit": "USD million",
+        "value": "up to 60",
+        "metric": "OpEx savings from DLC",
+        "period": "five years"
+      },
+      {
+        "unit": "megawatts",
+        "value": "15",
+        "metric": "Power requirement for air-cooled LLM data center",
+        "period": "example data center"
+      },
+      {
+        "unit": "megawatts",
+        "value": "10",
+        "metric": "Power requirement for liquid-cooled LLM data center",
+        "period": "example data center"
+      },
+      {
+        "unit": "percent",
+        "value": "less than 1",
+        "metric": "Historical DLC market share",
+        "period": "last 30 years / current before ramp"
+      },
+      {
+        "unit": "months",
+        "value": "4-12",
+        "metric": "Traditional DLC lead time",
+        "period": "historical"
+      },
+      {
+        "unit": "weeks",
+        "value": "2-4",
+        "metric": "Supermicro DLC data center scale delivery time",
+        "period": "current target"
+      },
+      {
+        "unit": "percent",
+        "value": "15",
+        "metric": "Target share of global new data center development using Supermicro DLC",
+        "period": "next 12 months"
+      },
+      {
+        "unit": "percent",
+        "value": "up to 30",
+        "metric": "Target DLC adoption",
+        "period": "following years / next one to two years"
+      },
+      {
+        "unit": "kW per rack",
+        "value": "20-30",
+        "metric": "Typical air-cooled rack density",
+        "period": "current typical data center"
+      },
+      {
+        "unit": "kW per rack",
+        "value": "80-100",
+        "metric": "Supermicro DLC rack density",
+        "period": "current"
+      },
+      {
+        "unit": "racks per month",
+        "value": "1000",
+        "metric": "Supermicro DLC shipping capacity",
+        "period": "current"
+      },
+      {
+        "unit": "racks per day",
+        "value": "up to 50",
+        "metric": "Supermicro USA campus DLC shipments",
+        "period": "current"
+      },
+      {
+        "unit": "meetings",
+        "value": "10000",
+        "metric": "Engineering meetings on DLC technology",
+        "period": "past year"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "GPU servers",
+      "direct liquid cooling",
+      "green computing",
+      "data center power efficiency",
+      "generative AI",
+      "AI factories",
+      "H100",
+      "HGX",
+      "large language model training",
+      "server racks",
+      "Intel Xeon 6",
+      "AMD Gen 5",
+      "Nvidia architecture",
+      "Computex",
+      "Computex-2024",
+      "keynote",
+      "Supermicro"
+    ],
+    "tickers": [
+      "SMCI",
+      "SMCI US",
+      "NVDA US",
+      "INTC US",
+      "AMD US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "SERVER_HARDWARE",
+      "LIQUID_COOLING",
+      "GREEN_COMPUTING"
+    ]
+  },
+  {
+    "video_id": "MFXLFXg5niU",
+    "year": 2025,
+    "company": "ASUS",
+    "summary": "ASUS co-CEO Sam Hu argued that explosive growth in LLMs, inference, agentic AI and future physical AI/AGI will drive sustained demand for AI servers and AI data centers. He described cloud AI data centers as four-layer systems spanning GPU-based infrastructure, GPU resource-management software, user portals/AI platforms, and deployment/operations services. Hu highlighted operational challenges including faster GPU generation cycles, heterogeneous accelerators from Nvidia/AMD/Intel/CSP TPUs, x86 versus Arm CPU architectures, and varied workload models such as VM, bare metal and containers. He also emphasized local AI data centers for enterprises and governments, citing privacy, domain-specific fine-tuning, small language models and lower-complexity hardware as drivers of future growth.",
+    "key_numbers": [
+      {
+        "unit": "fold",
+        "value": "256",
+        "metric": "LLM parameter growth",
+        "period": "every 2 years"
+      },
+      {
+        "unit": "billion USD",
+        "value": ">300",
+        "metric": "AI server market/growth estimate",
+        "period": "2030"
+      },
+      {
+        "unit": "% CAGR",
+        "value": "44",
+        "metric": "Inference compute growth",
+        "period": "annual"
+      },
+      {
+        "unit": "% CAGR",
+        "value": "18",
+        "metric": "Training compute growth",
+        "period": "annual"
+      },
+      {
+        "unit": "watts",
+        "value": "5000",
+        "metric": "Eight-GPU server power consumption",
+        "period": "about 3 years ago"
+      },
+      {
+        "unit": "watts",
+        "value": "10000-12500",
+        "metric": "HGX power consumption",
+        "period": "current"
+      },
+      {
+        "unit": "watts",
+        "value": "135000",
+        "metric": "GB300 cluster power consumption",
+        "period": "current/future platform discussed"
+      },
+      {
+        "unit": "year",
+        "value": "1",
+        "metric": "GPU generation cycle",
+        "period": "current"
+      },
+      {
+        "unit": "years",
+        "value": "2",
+        "metric": "Prior GPU generation cycle",
+        "period": "past"
+      },
+      {
+        "unit": "year",
+        "value": "2011",
+        "metric": "ASUS AI center start",
+        "period": ""
+      },
+      {
+        "unit": "data centers",
+        "value": "8",
+        "metric": "Government/enterprise data centers ASUS helped build",
+        "period": "since 2011"
+      },
+      {
+        "unit": "rank",
+        "value": "31",
+        "metric": "Taiwan AI data center TOP500 ranking",
+        "period": "latest ranking referenced"
+      },
+      {
+        "unit": "rank",
+        "value": "44",
+        "metric": "Taiwan AI data center Green500 ranking",
+        "period": "latest ranking referenced"
+      },
+      {
+        "unit": "% CAGR",
+        "value": "33",
+        "metric": "Local AI data center market growth",
+        "period": "by 2033"
+      }
+    ],
+    "themes": [
+      "AI data centers",
+      "AI infrastructure",
+      "GPU servers",
+      "inference compute",
+      "training compute",
+      "LLMs",
+      "small language models",
+      "agentic AI",
+      "physical AI",
+      "AGI",
+      "GPU resource management",
+      "virtualization",
+      "bare metal",
+      "containers",
+      "liquid cooling",
+      "AI data center operations",
+      "local AI",
+      "enterprise AI",
+      "DeepSeek",
+      "Nvidia GB300",
+      "ASUS AIDC",
+      "ASUS Control Center",
+      "Computex",
+      "Computex-2025",
+      "press",
+      "ASUS"
+    ],
+    "tickers": [
+      "2357.TW",
+      "ASUUY US",
+      "NVDA US",
+      "AMD US",
+      "INTC US",
+      "MSFT US",
+      "GOOGL US",
+      "AMZN US",
+      "META US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "SERVER_HARDWARE",
+      "CLOUD_INFRA",
+      "ENTERPRISE_AI",
+      "THERMAL_MANAGEMENT"
+    ]
+  },
+  {
+    "video_id": "mMyOp1sQ4mk",
+    "year": 2025,
+    "company": "Advantech",
+    "summary": "Advantech's embedded sector president Miller Jang discussed the evolution from isolated edge devices to cloud-connected AIoT and now to edge AI devices that can compute, decide, execute, and collaborate locally. He argued that edge AI is already being deployed across factories, healthcare, smart cities, logistics, agriculture, and robotics, with robotics becoming a major growth vector. Advantech highlighted its Autonomous Systems and Robotics unit, its building-block approach for robot solutions, and its edge AI hardware and robotic software suite supporting Intel, Nvidia, and Qualcomm SDKs. The company positioned itself as an ecosystem enabler for edge AI plus robotics through computing platforms, sensor integration, software tools, and safety certification support.",
+    "key_numbers": [
+      {
+        "unit": "USD billion",
+        "value": "143.6",
+        "metric": "Edge AI market size forecast",
+        "period": "2032"
+      },
+      {
+        "unit": "%",
+        "value": "16",
+        "metric": "Robotics market annual growth forecast",
+        "period": "to 2032"
+      },
+      {
+        "unit": "%",
+        "value": "nearly 30",
+        "metric": "Collaborative robots and humanoid robots growth forecast",
+        "period": "not specified"
+      },
+      {
+        "unit": "years",
+        "value": "2-3",
+        "metric": "Recent acceleration period for stronger AI and edge AI",
+        "period": "recent years"
+      },
+      {
+        "unit": "decades ago",
+        "value": "1-2",
+        "metric": "AIoT launch timing referenced",
+        "period": "historical"
+      }
+    ],
+    "themes": [
+      "edge AI",
+      "robotics",
+      "AIoT",
+      "embedded computing",
+      "humanoid robots",
+      "AMR",
+      "collaborative robots",
+      "industrial automation",
+      "smart cities",
+      "healthcare AI",
+      "robotic software",
+      "sensor integration",
+      "Computex",
+      "Computex-2025",
+      "press",
+      "Advantech"
+    ],
+    "tickers": [
+      "2395.TW",
+      "2395 TT",
+      "INTC US",
+      "NVDA US",
+      "QCOM US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "INDUSTRIAL_AUTOMATION",
+      "ROBOTICS",
+      "EDGE_COMPUTING",
+      "AI_SOFTWARE"
+    ]
+  },
+  {
+    "video_id": "z7z4ZJ0KhrM",
+    "year": 2025,
+    "company": "COMPUTEX",
+    "summary": "Computex 2025 organizers framed AI as the central force driving the next wave of technology innovation, with the event theme \"AI Next\" focused on AI and robotics, next-generation technology, and future mobility. Speakers argued that open-source AI has lowered costs, AI is gaining long-term memory, and intelligent robots will become partners in offices, factories, hospitals, and homes. Taiwan was positioned as a key hub for the AI era due to its semiconductor supply chain, hardware-software integration, and advanced computing capabilities. The conference also emphasized Computex and InnoVEX as global B2B platforms connecting technology leaders, startups, buyers, and capital markets.",
+    "key_numbers": [
+      {
+        "unit": "year",
+        "value": "1981",
+        "metric": "Computex founding year",
+        "period": ""
+      },
+      {
+        "unit": "areas",
+        "value": "3",
+        "metric": "Computex 2025 focus areas",
+        "period": "2025"
+      },
+      {
+        "unit": "percent",
+        "value": "over 60",
+        "metric": "AI-related technology share of show floor",
+        "period": "2025"
+      },
+      {
+        "unit": "startups",
+        "value": "450",
+        "metric": "InnoVEX startups",
+        "period": "2025"
+      },
+      {
+        "unit": "countries",
+        "value": "24",
+        "metric": "InnoVEX participating countries",
+        "period": "2025"
+      },
+      {
+        "unit": "years",
+        "value": "10",
+        "metric": "InnoVEX anniversary",
+        "period": "2025"
+      },
+      {
+        "unit": "years ago",
+        "value": "40",
+        "metric": "Historical semiconductor reference",
+        "period": ""
+      }
+    ],
+    "themes": [
+      "AI",
+      "AI and robotics",
+      "open-source AI",
+      "AI long-term memory",
+      "intelligent robots",
+      "semiconductors",
+      "advanced computing",
+      "edge computing",
+      "cloud solutions",
+      "future mobility",
+      "automotive innovation",
+      "startup ecosystem",
+      "capital markets",
+      "hardware-software integration",
+      "Computex",
+      "Computex-2025",
+      "press",
+      "COMPUTEX"
+    ],
+    "tickers": [
+      "NVDA US",
+      "QCOM US",
+      "HNHPF US",
+      "MDTKF US",
+      "NXPI US",
+      "INTC US",
+      "AMD US",
+      "TSM US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "ROBOTICS",
+      "EDGE_COMPUTING",
+      "CLOUD_INFRA",
+      "AUTOMOTIVE_TECH",
+      "ELECTRONICS_MANUFACTURING",
+      "VENTURE_STARTUPS"
+    ]
+  },
+  {
+    "video_id": "NHqGFxdNswE",
+    "year": 2025,
+    "company": "Delta",
+    "summary": "Delta Electronics presented the escalating power and cooling challenges created by AI computing and AI data centers. The speaker argued that AI data center electricity demand is already comparable to Taiwan's annual power consumption and could rise sharply through 2027 and 2030. Delta described end-to-end grid-to-chip power architectures, including UPS, BBU, capacitor shelves for peak shaving, 800V DC distribution, and solid-state transformers to improve efficiency. The presentation also covered liquid-to-air and liquid-to-liquid cooling infrastructure, CDU deployment, cold plates, and vapor chambers as necessary technologies for higher-density AI racks.",
+    "key_numbers": [
+      {
+        "unit": "TWh",
+        "value": "261",
+        "metric": "Global AI data center electricity consumption",
+        "period": "2024"
+      },
+      {
+        "unit": "TWh",
+        "value": "283",
+        "metric": "Taiwan electricity consumption",
+        "period": "2024"
+      },
+      {
+        "unit": "TWh",
+        "value": "500",
+        "metric": "Projected AI data center electricity consumption",
+        "period": "2027"
+      },
+      {
+        "unit": "%",
+        "value": "300",
+        "metric": "AI data center energy consumption growth",
+        "period": "2022-2030"
+      },
+      {
+        "unit": "kW",
+        "value": "2-10",
+        "metric": "Current server power consumption",
+        "period": "current"
+      },
+      {
+        "unit": "kW",
+        "value": "120",
+        "metric": "Current AI rack power consumption",
+        "period": "current"
+      },
+      {
+        "unit": "MW",
+        "value": "120",
+        "metric": "Current AI data center power consumption example",
+        "period": "current"
+      },
+      {
+        "unit": "W",
+        "value": "2000",
+        "metric": "Future chip power consumption",
+        "period": "future"
+      },
+      {
+        "unit": "kW",
+        "value": "15",
+        "metric": "Future server power consumption",
+        "period": "future"
+      },
+      {
+        "unit": "kW",
+        "value": "250-1000",
+        "metric": "Future AI server rack power consumption",
+        "period": "future"
+      },
+      {
+        "unit": "GW",
+        "value": "1",
+        "metric": "Future AI data center power consumption",
+        "period": "future"
+      },
+      {
+        "unit": "households",
+        "value": "100000",
+        "metric": "Household-equivalent power consumption of one data center",
+        "period": "future/example"
+      },
+      {
+        "unit": "MW",
+        "value": "938",
+        "metric": "Nuclear reactor generation capacity comparison",
+        "period": "example"
+      },
+      {
+        "unit": "AI racks",
+        "value": "938",
+        "metric": "AI racks equivalent to one 938MW nuclear reactor",
+        "period": "example"
+      },
+      {
+        "unit": "%",
+        "value": "99.9999",
+        "metric": "Data center reliability target",
+        "period": "six nines"
+      },
+      {
+        "unit": "%",
+        "value": "87.6",
+        "metric": "Traditional grid-to-chip power efficiency",
+        "period": "current architecture"
+      },
+      {
+        "unit": "kW",
+        "value": "137",
+        "metric": "Power loss from 1MW input under traditional architecture",
+        "period": "current architecture"
+      },
+      {
+        "unit": "kW",
+        "value": "72",
+        "metric": "Delta 1U rack power product density",
+        "period": "current product"
+      },
+      {
+        "unit": "kW",
+        "value": "1",
+        "metric": "Historical 1U server power consumption",
+        "period": "three years ago"
+      },
+      {
+        "unit": "V",
+        "value": "50-65",
+        "metric": "Power capacitor shelf voltage range",
+        "period": "current technology"
+      },
+      {
+        "unit": "%",
+        "value": "89.1",
+        "metric": "800V DC architecture efficiency",
+        "period": "proposed architecture"
+      },
+      {
+        "unit": "percentage points",
+        "value": "1.5",
+        "metric": "Efficiency improvement from 800V DC architecture",
+        "period": "versus traditional architecture"
+      },
+      {
+        "unit": "%",
+        "value": "92",
+        "metric": "Solid-state transformer architecture efficiency",
+        "period": "proposed architecture"
+      },
+      {
+        "unit": "percentage points",
+        "value": "4.5",
+        "metric": "Efficiency improvement from solid-state transformer architecture",
+        "period": "versus traditional architecture"
+      },
+      {
+        "unit": "MW",
+        "value": "6",
+        "metric": "Solid-state transformer module capacity",
+        "period": "proposed architecture"
+      },
+      {
+        "unit": "racks",
+        "value": "300",
+        "metric": "Power racks needed for 1GW data center",
+        "period": "example"
+      },
+      {
+        "unit": "cm",
+        "value": ">200",
+        "metric": "Displayed rack height",
+        "period": "product display"
+      }
+    ],
+    "themes": [
+      "AI data centers",
+      "AI-infra",
+      "power distribution",
+      "800V DC",
+      "UPS",
+      "BBU",
+      "capacitor shelf",
+      "peak shaving",
+      "solid-state transformer",
+      "liquid cooling",
+      "CDU",
+      "cold plates",
+      "vapor chambers",
+      "grid-to-chip power",
+      "data center efficiency",
+      "Computex",
+      "Computex-2025",
+      "press",
+      "Delta"
+    ],
+    "tickers": [
+      "2308.TW",
+      "DLELY US",
+      "NVDA US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER_INFRA",
+      "POWER_ELECTRONICS",
+      "THERMAL_MANAGEMENT"
+    ]
+  },
+  {
+    "video_id": "QvnwJqB822c",
+    "year": 2025,
+    "company": "Foxconn",
+    "summary": "Foxconn Chairman Young Liu described the company\u2019s AI strategy as centered on AI-powered manufacturing, or \u201cGenesis,\u201d developed in collaboration with partners including Nvidia and BCG. He said Foxconn is building a future factory model that starts with an Omniverse digital twin, then an AI factory layer, and finally the physical factory, enabling optimization and model training before real-world deployment. The keynote emphasized that generative AI can handle roughly 80% of manufacturing technician work, while skilled humans remain necessary for the most complex 20%. Liu also discussed Foxconn\u2019s smart EV platform, a Mitsubishi-related EV reference design announcement, and a smart city platform intended to connect transportation, hospitals, schools, buildings, governments, enterprises and citizens through shared data and knowledge.",
+    "key_numbers": [
+      {
+        "unit": "%",
+        "value": "80",
+        "metric": "AI agents share of manufacturing technician work handled",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": "20",
+        "metric": "Human technician share of most complex work remaining",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": ">10",
+        "metric": "Cycle time improvement",
+        "period": ""
+      },
+      {
+        "unit": "trials",
+        "value": "2-3",
+        "metric": "Generative AI trials needed to reach around 80% level",
+        "period": ""
+      },
+      {
+        "unit": "simulations",
+        "value": "millions",
+        "metric": "Simulations used to train robotic brains",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "1.5",
+        "metric": "Time since Jensen Huang drawing that inspired initiative",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": "80",
+        "metric": "Customer EV development work potentially eliminated by reference model",
+        "period": ""
+      },
+      {
+        "unit": "%",
+        "value": "20",
+        "metric": "Customer EV development effort still required using reference model",
+        "period": ""
+      },
+      {
+        "unit": "year",
+        "value": "1",
+        "metric": "Expected timing to show smart city platform usefulness",
+        "period": "from keynote"
+      }
+    ],
+    "themes": [
+      "AI factories",
+      "physical AI",
+      "digital twins",
+      "Nvidia Omniverse",
+      "AI manufacturing",
+      "generative AI",
+      "robotics",
+      "smart EV",
+      "EV reference design",
+      "smart city platform",
+      "edge computing",
+      "AI agents",
+      "factory automation",
+      "Computex",
+      "Computex-2025",
+      "keynote",
+      "Foxconn"
+    ],
+    "tickers": [
+      "2317.TW",
+      "HNHPF US",
+      "NVDA US",
+      "MMTOF US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "EMS",
+      "INDUSTRIAL_AUTOMATION",
+      "ROBOTICS",
+      "EV",
+      "SMART_CITY",
+      "EDGE_AI"
+    ]
+  },
+  {
+    "video_id": "zcVOAHDAw7c",
+    "year": 2025,
+    "company": "Gigabyte",
+    "summary": "Gigabyte presented its Computex 2025 product lineup focused on the shift of AI training and inference from cloud to edge devices. The company introduced the AORUS RTX 5090 AI Box, described as the world's fastest eGPU and positioned for gaming, creator workflows, and local AI model deployment. Gigabyte also unveiled the Radeon AI Pro R9700 AI TOP 32G, emphasizing AMD ROCm support, multi-GPU AI workloads, and advanced cooling for sustained performance. The presentation further highlighted AI TOP systems powered by NVIDIA DGX Spark / GB10 Grace Blackwell, AI TOP Utility 4.0, model conversion, local inference, and edge deployment for large language and multimodal AI models.",
+    "key_numbers": [
+      {
+        "unit": "x",
+        "value": "3.1",
+        "metric": "AORUS RTX 5090 AI Box performance vs RTX 4090 Gaming Box",
+        "period": "Computex 2025 product claim"
+      },
+      {
+        "unit": "%",
+        "value": "14",
+        "metric": "AORUS RTX 5090 AI Box gaming performance drop vs desktop native RTX 5090",
+        "period": "typical gaming scenarios"
+      },
+      {
+        "unit": "x",
+        "value": "1.32",
+        "metric": "AORUS RTX 5090 AI Box video editing performance vs previous generation",
+        "period": "Computex 2025 product claim"
+      },
+      {
+        "unit": "x",
+        "value": "13",
+        "metric": "AORUS RTX 5090 AI Box 3D performance vs integrated graphics",
+        "period": "Computex 2025 product claim"
+      },
+      {
+        "unit": "GB",
+        "value": "32",
+        "metric": "AORUS RTX 5090 AI Box VRAM",
+        "period": "product specification"
+      },
+      {
+        "unit": "x",
+        "value": "4",
+        "metric": "Text-to-image generation speed improvement",
+        "period": "FLUX.1 Schnell default workflow test"
+      },
+      {
+        "unit": "images",
+        "value": "20",
+        "metric": "Text-to-image generation workload",
+        "period": "same prompt benchmark"
+      },
+      {
+        "unit": "AI TOPS",
+        "value": "3000+",
+        "metric": "AI Box AI performance",
+        "period": "product claim"
+      },
+      {
+        "unit": "GB",
+        "value": "32",
+        "metric": "Radeon AI Pro R9700 AI TOP memory",
+        "period": "product specification"
+      },
+      {
+        "unit": "TOPS",
+        "value": "1000",
+        "metric": "Nvidia GB10 Grace Blackwell AI performance",
+        "period": "AI TOP A / DGX Spark platform claim"
+      },
+      {
+        "unit": "watts",
+        "value": "170",
+        "metric": "Nvidia GB10 Grace Blackwell power",
+        "period": "AI TOP A / DGX Spark platform claim"
+      },
+      {
+        "unit": "GB",
+        "value": "128",
+        "metric": "AI TOP coherent unified memory",
+        "period": "AI TOP A platform specification"
+      },
+      {
+        "unit": "billion parameters",
+        "value": "70",
+        "metric": "AI TOP supported fine-tuning model size",
+        "period": "product claim"
+      },
+      {
+        "unit": "billion parameters",
+        "value": "200",
+        "metric": "AI TOP supported inference model size",
+        "period": "product claim"
+      },
+      {
+        "unit": "x",
+        "value": "5.8",
+        "metric": "AI TOP Utility v3 fine-tuning acceleration",
+        "period": "version 3 claim"
+      },
+      {
+        "unit": "billion parameters",
+        "value": "27",
+        "metric": "Small-scale AI model size example",
+        "period": "edge inference example"
+      },
+      {
+        "unit": "GB",
+        "value": "60",
+        "metric": "VRAM required for 27B model at FP16",
+        "period": "edge inference example"
+      },
+      {
+        "unit": "GB",
+        "value": "30",
+        "metric": "VRAM required for 27B model at FP8",
+        "period": "edge inference example"
+      },
+      {
+        "unit": "billion parameters",
+        "value": "685",
+        "metric": "Large-scale reasoning AI model size example",
+        "period": "DeepSeek R1 local inference example"
+      },
+      {
+        "unit": "billion parameters",
+        "value": "123",
+        "metric": "Mistral model size referenced",
+        "period": "Quick Transformer example"
+      },
+      {
+        "unit": "billion parameters",
+        "value": "400",
+        "metric": "Llama 4 model size referenced",
+        "period": "Quick Transformer example"
+      },
+      {
+        "unit": "TOPS",
+        "value": "3000+",
+        "metric": "AI TOP systems performance",
+        "period": "AI TOP 100 / 500 systems claim"
+      }
+    ],
+    "themes": [
+      "edge AI",
+      "AI PCs",
+      "local inference",
+      "local fine-tuning",
+      "eGPU",
+      "RTX 50 series",
+      "Blackwell",
+      "Grace Blackwell",
+      "DGX Spark",
+      "ROCm",
+      "generative AI",
+      "LLM",
+      "multimodal AI",
+      "AI agents",
+      "model quantization",
+      "AI TOP",
+      "Thunderbolt 5",
+      "USB4",
+      "gaming AI",
+      "creator workflows",
+      "Computex",
+      "Computex-2025",
+      "press",
+      "Gigabyte"
+    ],
+    "tickers": [
+      "2376.TW",
+      "NVDA US",
+      "AMD US",
+      "META US",
+      "GOOGL US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "PC_HARDWARE",
+      "GPU",
+      "EDGE_AI",
+      "GAMING_HARDWARE",
+      "WORKSTATION"
+    ]
+  },
+  {
+    "video_id": "65rTbTU1Ak8",
+    "year": 2025,
+    "company": "MediaTek",
+    "summary": "MediaTek CEO Rick Tsai framed the company\u2019s strategy around \u201cAI for everyone from the edge and to the cloud,\u201d arguing that MediaTek is one of the few companies able to deliver AI across mobile, IoT, automotive, Chromebook, supercomputer and ASIC/custom silicon markets. He reviewed MediaTek\u2019s 28-year history across optical drives, TVs, smartphones, connectivity, computing and automotive, claiming the company has shipped more than 20 billion chips/devices. Tsai highlighted ongoing work in flagship mobile SoCs, 224G SerDes, 2.5D/3D packaging with TSMC, AI accelerators, RedCap 5G modems, satellite communications and future 6G with AI assistance. He also disclosed that MediaTek is moving to 2nm and expects to tape out its first 2nm high-volume chip in September 2025.",
+    "key_numbers": [
+      {
+        "unit": "year",
+        "value": "1997",
+        "metric": "MediaTek founding year",
+        "period": ""
+      },
+      {
+        "unit": "years",
+        "value": "28",
+        "metric": "Company age",
+        "period": "as of COMPUTEX 2025"
+      },
+      {
+        "unit": "billion",
+        "value": ">20",
+        "metric": "Cumulative chips/devices shipped",
+        "period": "since founding"
+      },
+      {
+        "unit": "devices per person",
+        "value": "2.5",
+        "metric": "Approximate devices per person cited",
+        "period": "cumulative"
+      },
+      {
+        "unit": "product",
+        "value": "Dimensity 9400 / 9400+",
+        "metric": "Flagship SoC generation referenced",
+        "period": "current"
+      },
+      {
+        "unit": "product generations",
+        "value": "9500, 9600",
+        "metric": "Future flagship SoCs referenced",
+        "period": "future annual cadence"
+      },
+      {
+        "unit": "G",
+        "value": "224",
+        "metric": "SerDes capability",
+        "period": "current / next generation"
+      },
+      {
+        "unit": "multiple",
+        "value": "3.1x",
+        "metric": "CPU improvement",
+        "period": "not specified"
+      },
+      {
+        "unit": "multiple",
+        "value": "7.4x",
+        "metric": "GPU improvement",
+        "period": "not specified"
+      },
+      {
+        "unit": "multiple",
+        "value": "29x",
+        "metric": "NPU improvement",
+        "period": "not specified"
+      },
+      {
+        "unit": "%",
+        "value": "25",
+        "metric": "System power reduction for gaming users",
+        "period": "not specified"
+      },
+      {
+        "unit": "%",
+        "value": "26",
+        "metric": "System power reduction for regular users",
+        "period": "not specified"
+      },
+      {
+        "unit": "date",
+        "value": "September 2025",
+        "metric": "First 2nm tapeout timing",
+        "period": "planned"
+      },
+      {
+        "unit": "nanometer",
+        "value": "2",
+        "metric": "Process node roadmap mentioned",
+        "period": "future"
+      }
+    ],
+    "themes": [
+      "edge AI",
+      "cloud AI",
+      "AI-infra",
+      "custom silicon",
+      "ASIC",
+      "mobile SoC",
+      "flagship smartphones",
+      "connectivity",
+      "5G RedCap",
+      "6G",
+      "satellite communications",
+      "224G SerDes",
+      "2nm",
+      "2.5D packaging",
+      "3D packaging",
+      "CoWoS",
+      "design technology co-optimization",
+      "system technology co-optimization",
+      "automotive AI",
+      "IoT",
+      "Chromebook",
+      "NPU",
+      "low-power AI",
+      "Computex",
+      "Computex-2025",
+      "keynote",
+      "MediaTek"
+    ],
+    "tickers": [
+      "2454.TW",
+      "MDTKF US",
+      "TSM US",
+      "ARM US",
+      "NVDA US",
+      "SNPS US",
+      "CDNS US",
+      "GOOGL US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "SEMICONDUCTORS",
+      "MOBILE_SEMI",
+      "CONNECTIVITY_SEMI",
+      "AUTOMOTIVE_SEMI",
+      "CONSUMER_ELECTRONICS",
+      "EDGE_AI"
+    ]
+  },
+  {
+    "video_id": "ly2aznIb3zg",
+    "year": 2025,
+    "company": "NVIDIA",
+    "summary": "Jensen Huang framed NVIDIA as evolving from a chip company into an essential AI infrastructure company, arguing that AI factories will become a new global infrastructure layer comparable to electricity and the internet. He described the modern AI data center as a single computing unit producing valuable output in the form of tokens, with industry opportunity expanding from hundreds of millions to trillions of dollars. Huang emphasized NVIDIA's CUDA and CUDA-X software libraries as the core differentiator behind accelerated computing, spanning graphics, AI, radio signal processing, genomics, medical imaging, weather, quantum, and deep learning. He also showcased real-time ray-traced graphics powered by the new GeForce RTX 5060 and discussed DLSS neural rendering, where AI generates most pixels.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "30",
+        "metric": "NVIDIA presence in Taiwan",
+        "period": "historical"
+      },
+      {
+        "unit": "year",
+        "value": "2006",
+        "metric": "CUDA introduction",
+        "period": "historical"
+      },
+      {
+        "unit": "year",
+        "value": "2006",
+        "metric": "DGX1 announcement",
+        "period": "historical"
+      },
+      {
+        "unit": "year",
+        "value": "2019",
+        "metric": "Melanox acquisition timing referenced",
+        "period": "historical"
+      },
+      {
+        "unit": "years",
+        "value": "5",
+        "metric": "Melanox acquisition elapsed time referenced",
+        "period": "historical"
+      },
+      {
+        "unit": "million USD",
+        "value": "300",
+        "metric": "NVIDIA initial estimated business opportunity",
+        "period": "1993"
+      },
+      {
+        "unit": "trillion USD",
+        "value": "1",
+        "metric": "Traditional data center opportunity referenced",
+        "period": "current/long-term"
+      },
+      {
+        "unit": "USD",
+        "value": "trillions",
+        "metric": "AI factory and AI infrastructure opportunity",
+        "period": "long-term"
+      },
+      {
+        "unit": "pixels",
+        "value": "1 out of 10",
+        "metric": "DLSS neural rendering computed pixels",
+        "period": "demo/current"
+      },
+      {
+        "unit": "pixels",
+        "value": "9 out of 10",
+        "metric": "DLSS neural rendering AI-guessed pixels",
+        "period": "demo/current"
+      },
+      {
+        "unit": "years",
+        "value": "10",
+        "metric": "DLSS development journey",
+        "period": "historical"
+      },
+      {
+        "unit": "years",
+        "value": "30",
+        "metric": "PC gaming age referenced",
+        "period": "historical"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "AI factories",
+      "accelerated computing",
+      "CUDA",
+      "CUDA-X libraries",
+      "data center architecture",
+      "east-west networking",
+      "Melanox",
+      "GeForce",
+      "DLSS",
+      "neural rendering",
+      "ray tracing",
+      "AI inference",
+      "AI training",
+      "tokens",
+      "robotics",
+      "5G",
+      "6G",
+      "medical imaging",
+      "genomics",
+      "weather prediction",
+      "quantum computing",
+      "Computex",
+      "Computex-2025",
+      "keynote",
+      "NVIDIA"
+    ],
+    "tickers": [
+      "NVDA",
+      "NVDA US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "GPU",
+      "GAMING_HARDWARE",
+      "NETWORKING",
+      "AI_SOFTWARE",
+      "HPC"
+    ]
+  },
+  {
+    "video_id": "EdrS3Zq3zFQ",
+    "year": 2025,
+    "company": "Qualcomm",
+    "summary": "Qualcomm CEO Cristiano Amon used the Computex 2025 keynote to frame 2025 as Qualcomm's 40th anniversary and emphasize the company's reinvention beyond mobile into PCs, automotive, edge AI and intelligent devices. The presentation highlighted the first year of Snapdragon X Elite and X Plus in Windows Copilot+ PCs, claiming strong progress in native app availability, AI features, gaming compatibility and Microsoft partnership. Microsoft CEO Satya Nadella appeared by video, describing Copilot+ PCs with Snapdragon silicon as among the fastest and most power-efficient Windows PCs and noting deployments across thousands of organizations. Qualcomm also announced further gaming ecosystem progress, including Fortnite coming to Snapdragon and collaboration with Epic Games on Easy Anti-Cheat for Windows on Snapdragon. Asus joined on stage to promote its Snapdragon-powered Zenbook A14, described as the world's lightest 14-inch Copilot+ PC with up to 32 hours of battery life.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "40",
+        "metric": "Qualcomm company age",
+        "period": "2025"
+      },
+      {
+        "unit": "years",
+        "value": "30",
+        "metric": "Cristiano Amon tenure at Qualcomm",
+        "period": "since 1995"
+      },
+      {
+        "unit": "PC models",
+        "value": "22",
+        "metric": "First wave of Snapdragon Copilot+ PCs",
+        "period": "since Snapdragon X launch"
+      },
+      {
+        "unit": "times",
+        "value": "3",
+        "metric": "Native applications on Snapdragon growth",
+        "period": "since launch"
+      },
+      {
+        "unit": "applications",
+        "value": "750",
+        "metric": "Native applications on Snapdragon",
+        "period": "Computex 2025"
+      },
+      {
+        "unit": "percent",
+        "value": "93",
+        "metric": "User time on native experiences",
+        "period": "Computex 2025"
+      },
+      {
+        "unit": "features/applications",
+        "value": "50+",
+        "metric": "NPU-powered features and applications",
+        "period": "Computex 2025"
+      },
+      {
+        "unit": "applications",
+        "value": "200",
+        "metric": "Top global apps available on Snapdragon",
+        "period": "Computex 2025"
+      },
+      {
+        "unit": "games",
+        "value": "1,400",
+        "metric": "Games running and optimized on Snapdragon",
+        "period": "Computex 2025"
+      },
+      {
+        "unit": "inches",
+        "value": "14",
+        "metric": "Asus Zenbook A14 display class",
+        "period": "Computex 2025"
+      },
+      {
+        "unit": "hours",
+        "value": "up to 32",
+        "metric": "Asus Zenbook A14 battery life",
+        "period": "single charge"
+      },
+      {
+        "unit": "organizations",
+        "value": "thousands",
+        "metric": "Microsoft customer deployments",
+        "period": "past year"
+      }
+    ],
+    "themes": [
+      "AI PC",
+      "edge AI",
+      "on-device AI",
+      "Windows on Arm",
+      "Copilot+ PC",
+      "Snapdragon X Elite",
+      "Snapdragon X Plus",
+      "NPU",
+      "AI applications",
+      "PC gaming",
+      "battery life",
+      "Qualcomm-Microsoft partnership",
+      "OEM partnerships",
+      "Computex",
+      "Computex-2025",
+      "keynote",
+      "Qualcomm"
+    ],
+    "tickers": [
+      "QCOM",
+      "QCOM US",
+      "MSFT US",
+      "ASUUY US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "PC_HARDWARE",
+      "CONSUMER_ELECTRONICS",
+      "EDGE_AI",
+      "SEMICONDUCTORS",
+      "SOFTWARE_PLATFORMS"
+    ]
+  },
+  {
+    "video_id": "VOdVO7qMzZs",
+    "year": 2025,
+    "company": "Supermicro",
+    "summary": "Supermicro CEO Charles Liang presented the company\u2019s COMPUTEX 2025 keynote, emphasizing Supermicro\u2019s history of rapid time-to-market in CPU, GPU, and AI server systems and its role in large AI data center deployments. He said Supermicro revenue grew about fourfold over the prior three years and expects strong growth to continue over the next three years due to optimized solutions and market share expansion. The keynote introduced Supermicro\u2019s DLC2 direct liquid cooling solution, claiming up to 40% savings in power and water consumption, up to 20% lower capex and opex, thermal capture up to 98%, and data center noise as low as 50 dB. Liang also introduced a broader Data Center Building Block Solution intended to accelerate AI data center deployment from years to quarters or months, supported by rack-scale systems, storage, switching, CDU, power, battery backup, networking design, deployment, cabling, and management services.",
+    "key_numbers": [
+      {
+        "unit": "multiple",
+        "value": "about 4x",
+        "metric": "revenue growth",
+        "period": "past three years"
+      },
+      {
+        "unit": "years",
+        "value": "3",
+        "metric": "expected continuation of strong growth",
+        "period": "next three years"
+      },
+      {
+        "unit": "years",
+        "value": "32",
+        "metric": "company operating history",
+        "period": "as of 2025"
+      },
+      {
+        "unit": "racks",
+        "value": "over 4,000",
+        "metric": "DLC H100/H200 AI racks deployed",
+        "period": "last year"
+      },
+      {
+        "unit": "days",
+        "value": "122",
+        "metric": "xAI deployment time",
+        "period": "last year"
+      },
+      {
+        "unit": "percent",
+        "value": "about 10",
+        "metric": "share of global data center deployment",
+        "period": "last year"
+      },
+      {
+        "unit": "percent",
+        "value": "up to 30",
+        "metric": "power savings from prior DLC solution",
+        "period": "last year"
+      },
+      {
+        "unit": "percent",
+        "value": "up to 40",
+        "metric": "DLC2 power and water consumption savings",
+        "period": "2025"
+      },
+      {
+        "unit": "degrees Celsius",
+        "value": "up to 45",
+        "metric": "DLC2 room-temperature water operating limit",
+        "period": "2025"
+      },
+      {
+        "unit": "percent",
+        "value": "up to 98 or higher",
+        "metric": "DLC2 system thermal capture",
+        "period": "2025"
+      },
+      {
+        "unit": "dB",
+        "value": "about 50",
+        "metric": "DLC2 data center noise level",
+        "period": "2025"
+      },
+      {
+        "unit": "percent",
+        "value": "up to 20",
+        "metric": "DLC2 capex and opex reduction",
+        "period": "2025"
+      },
+      {
+        "unit": "times higher",
+        "value": "1,000",
+        "metric": "PG DLC2 electrical impedance improvement",
+        "period": "2025"
+      },
+      {
+        "unit": "platforms",
+        "value": "more than 10",
+        "metric": "storage platforms offered",
+        "period": "2025"
+      },
+      {
+        "unit": "types",
+        "value": "more than 10",
+        "metric": "switch types offered",
+        "period": "2025"
+      },
+      {
+        "unit": "engineers",
+        "value": "more than 1,000",
+        "metric": "software engineers",
+        "period": "2025"
+      },
+      {
+        "unit": "percent",
+        "value": "10-30",
+        "metric": "incremental cost savings from DCBPS",
+        "period": "2025"
+      },
+      {
+        "unit": "racks per month",
+        "value": "5,000",
+        "metric": "global production capacity",
+        "period": "2025"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "GPU servers",
+      "direct liquid cooling",
+      "DLC2",
+      "data center building block solution",
+      "rack-scale AI systems",
+      "green computing",
+      "AI data centers",
+      "H100",
+      "H200",
+      "HGX",
+      "time to market",
+      "power efficiency",
+      "TCO reduction",
+      "data center deployment",
+      "coolant innovation",
+      "Computex",
+      "Computex-2025",
+      "keynote",
+      "Supermicro"
+    ],
+    "tickers": [
+      "SMCI",
+      "SMCI US",
+      "NVDA US",
+      "INTC US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "SERVER_HARDWARE",
+      "LIQUID_COOLING",
+      "HPC"
+    ]
+  },
+  {
+    "video_id": "K9IxCWcc0hU",
+    "year": 2025,
+    "company": "Wiwynn",
+    "summary": "Wiwynn Chair and Chief Strategy Officer Emily Hong argued that Taiwan remains central to the global ICT and AI infrastructure supply chain, producing over 92% of global servers and holding major shares in advanced semiconductor manufacturing. She said AI server demand and data center capex remain strong despite recent concerns, with 2024 marking an inflection point for AI servers as a share of total server revenue. The talk emphasized that rising model complexity is driving exponential increases in compute demand, chip power consumption, and cooling requirements, creating opportunities in cold plates, immersion cooling, and future package-level thermal solutions. Hong also highlighted the emergence of new AI infrastructure buyers beyond traditional hyperscalers, including sovereign AI projects, model providers, AI cloud startups such as Lambda, and regional data center hubs such as Johor, Malaysia.",
+    "key_numbers": [
+      {
+        "unit": "%",
+        "value": "92",
+        "metric": "Taiwan share of global server manufacturing",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "%",
+        "value": "75",
+        "metric": "Taiwan share of global PC manufacturing",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "%",
+        "value": "60",
+        "metric": "Taiwan share of advanced manufacturing capacity",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "%",
+        "value": "78",
+        "metric": "Taiwan share of semiconductor output value",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "%",
+        "value": "5.7",
+        "metric": "Taiwan ODM direct server market share",
+        "period": "2010"
+      },
+      {
+        "unit": "%",
+        "value": "37",
+        "metric": "Taiwan ODM direct server market share",
+        "period": "2024"
+      },
+      {
+        "unit": "% YoY",
+        "value": "56",
+        "metric": "Data center and IT infrastructure capex growth",
+        "period": "2024 vs 2023"
+      },
+      {
+        "unit": "% YoY",
+        "value": "24-25",
+        "metric": "Expected capex growth",
+        "period": "2025"
+      },
+      {
+        "unit": "fold per two years",
+        "value": "8",
+        "metric": "Compute growth before transformer",
+        "period": "pre-transformer era"
+      },
+      {
+        "unit": "fold within two years",
+        "value": "256",
+        "metric": "Compute growth after transformer",
+        "period": "post-transformer era"
+      },
+      {
+        "unit": "watts",
+        "value": "1000",
+        "metric": "Current chip power consumption",
+        "period": "current"
+      },
+      {
+        "unit": "watts",
+        "value": "2000",
+        "metric": "Expected chip power consumption",
+        "period": "next 1-2 years"
+      },
+      {
+        "unit": "fold within two years",
+        "value": "1.2",
+        "metric": "Cooling capacity growth",
+        "period": "past/unspecified"
+      },
+      {
+        "unit": "fold within two years",
+        "value": "2",
+        "metric": "Cooling capacity growth",
+        "period": "current"
+      },
+      {
+        "unit": "fold within two years",
+        "value": "3",
+        "metric": "Projected cooling capacity growth",
+        "period": "future"
+      },
+      {
+        "unit": "entities",
+        "value": "20+",
+        "metric": "Number of sovereign AI players mentioned",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "data centers",
+        "value": "93",
+        "metric": "Johor data centers in operation",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "data centers",
+        "value": "9",
+        "metric": "Johor data centers under construction",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "minutes drive",
+        "value": "60",
+        "metric": "Wiwynn factory distance from Singapore",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "minutes drive",
+        "value": "30-40",
+        "metric": "Wiwynn factory distance from Singapore with smooth customs clearance",
+        "period": "current/unspecified"
+      },
+      {
+        "unit": "minutes drive",
+        "value": "30",
+        "metric": "Wiwynn factory distance from YTL data center site",
+        "period": "current/unspecified"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "AI servers",
+      "data centers",
+      "cloud capex",
+      "Taiwan ODM",
+      "server supply chain",
+      "thermal management",
+      "liquid cooling",
+      "cold plate",
+      "immersion cooling",
+      "sovereign AI",
+      "hyperscalers",
+      "AI cloud",
+      "Johor data center hub",
+      "compute demand",
+      "Computex",
+      "Computex-2025",
+      "press",
+      "Wiwynn"
+    ],
+    "tickers": [
+      "6669.TW",
+      "AMZN US",
+      "INTC US",
+      "NVDA US",
+      "MSFT US",
+      "ORCL US",
+      "GOOGL US",
+      "META US",
+      "AAPL US",
+      "SMCI US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "SERVER_ODM",
+      "CLOUD_INFRA",
+      "THERMAL_MANAGEMENT",
+      "ELECTRONICS_MANUFACTURING"
+    ]
+  },
+  {
+    "video_id": "p0NpoymfgMU",
+    "year": 2026,
+    "company": "ASUS",
+    "summary": "ASUS ROG marked its 20th anniversary at Computex 2026, recounting the brand's origins in gaming motherboards and its expansion into a full gaming ecosystem spanning components, laptops, desktops, displays and peripherals. Management emphasized AI as the next major frontier for ROG, describing AI-driven hardware and future agentic AI gaming experiences with adaptive NPCs and creator tools. Partner messages from AMD, Intel, Microsoft and Nvidia highlighted long-running collaboration around gaming platforms, CPUs, GPUs, Windows and graphics technology. The event introduced multiple ROG Edition 20 products, including lifestyle gear, peripherals, collectibles and the ROG NUC 16 Edition 20 mini PC featuring an Nvidia RTX 5090 laptop GPU.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "20",
+        "metric": "ROG brand anniversary",
+        "period": "2026"
+      },
+      {
+        "unit": "years",
+        "value": "30+",
+        "metric": "ASUS-Nvidia partnership duration",
+        "period": "as of 2026"
+      },
+      {
+        "unit": "date",
+        "value": "May 15",
+        "metric": "ROG Crosshair 2006 motherboard announcement date",
+        "period": "2026"
+      },
+      {
+        "unit": "percent polycarbonate",
+        "value": "100",
+        "metric": "ROG hardcase luggage shell material",
+        "period": ""
+      },
+      {
+        "unit": "inches",
+        "value": "18",
+        "metric": "ROG backpack laptop capacity",
+        "period": ""
+      },
+      {
+        "unit": "karat gold",
+        "value": "24",
+        "metric": "gold-plated peripheral accents",
+        "period": ""
+      },
+      {
+        "unit": "liters",
+        "value": "3",
+        "metric": "ROG NUC 16 Edition 20 volume",
+        "period": "2026 product"
+      },
+      {
+        "unit": "Nvidia laptop GPU",
+        "value": "RTX 5090",
+        "metric": "ROG NUC 16 Edition 20 GPU",
+        "period": "2026 product"
+      }
+    ],
+    "themes": [
+      "gaming hardware",
+      "AI gaming",
+      "agentic AI",
+      "PC gaming ecosystem",
+      "GPU",
+      "CPU",
+      "gaming peripherals",
+      "mini PC",
+      "Windows gaming",
+      "RTX 5090",
+      "ROG 20th anniversary",
+      "Computex",
+      "Computex-2026",
+      "press",
+      "ASUS"
+    ],
+    "tickers": [
+      "2357.TW",
+      "ASUUY US",
+      "AMD US",
+      "INTC US",
+      "MSFT US",
+      "NVDA US"
+    ],
+    "sectors": [
+      "PC_HARDWARE",
+      "GAMING_HARDWARE",
+      "SEMICONDUCTORS",
+      "AI_INFRA",
+      "CONSUMER_ELECTRONICS",
+      "SOFTWARE_PLATFORMS"
+    ]
+  },
+  {
+    "video_id": "aEvEoDJoJQY",
+    "year": 2026,
+    "company": "Arm",
+    "summary": "Arm CEO Rene Haas used the COMPUTEX keynote to emphasize Taiwan\u2019s central role in Arm\u2019s history and supply chain, claiming about 250 billion Arm-based chips have been built in Taiwan and that 100% of Arm server CPUs are built there. He argued that agentic AI workloads are causing CPU demand to accelerate because agents require CPUs to manage, orchestrate, and deliver tokens generated by GPUs and other accelerators. Arm reiterated its view that future AI systems may need roughly 4x or more CPU cores in the same power envelope and said the CPU TAM could exceed prior expectations of $100-$120 billion over five years. The company promoted its Arm AGI CPU, now in production with TSMC, highlighting rack-level performance-per-watt advantages versus comparable x86 systems and naming customers/partners including Meta, OpenAI, Oracle, ByteDance, SAP, Cerebras, SK Telecom, and others.",
+    "key_numbers": [
+      {
+        "unit": "year",
+        "value": "1990",
+        "metric": "Arm company founding year",
+        "period": ""
+      },
+      {
+        "unit": "approximate year",
+        "value": "1993",
+        "metric": "First Arm chip designed in Taiwan",
+        "period": ""
+      },
+      {
+        "unit": "billion chips",
+        "value": "250",
+        "metric": "Arm chips built in Taiwan",
+        "period": "history to date"
+      },
+      {
+        "unit": "percent",
+        "value": "100",
+        "metric": "Arm server CPUs built in Taiwan",
+        "period": "current"
+      },
+      {
+        "unit": "x",
+        "value": "4",
+        "metric": "Expected CPU core increase in same power envelope",
+        "period": "future agentic AI systems"
+      },
+      {
+        "unit": "x",
+        "value": "4, 8, 10",
+        "metric": "Possible CPU core demand multipliers discussed",
+        "period": "future agentic AI systems"
+      },
+      {
+        "unit": "USD billion",
+        "value": "100-120+",
+        "metric": "CPU TAM estimate",
+        "period": "five years"
+      },
+      {
+        "unit": "kW",
+        "value": "36",
+        "metric": "Air-cooled Arm AGI CPU rack power",
+        "period": "current product configuration"
+      },
+      {
+        "unit": "cores",
+        "value": "8000",
+        "metric": "Air-cooled Arm AGI CPU rack cores",
+        "period": "current product configuration"
+      },
+      {
+        "unit": "cores",
+        "value": "45000+",
+        "metric": "Liquid-cooled Arm AGI CPU rack cores",
+        "period": "current product configuration"
+      },
+      {
+        "unit": "kW",
+        "value": "200",
+        "metric": "Liquid-cooled Arm AGI CPU rack power",
+        "period": "current product configuration"
+      },
+      {
+        "unit": "x",
+        "value": "2",
+        "metric": "Arm AGI CPU performance per rack versus comparable x86",
+        "period": "current product"
+      },
+      {
+        "unit": "percent lower power",
+        "value": "50",
+        "metric": "Equivalent performance power reduction versus comparable x86",
+        "period": "current product"
+      },
+      {
+        "unit": "GW",
+        "value": "5",
+        "metric": "SoftBank France data center partnership capacity",
+        "period": "announced"
+      },
+      {
+        "unit": "GW",
+        "value": "10",
+        "metric": "Estimated capacity referenced for savings",
+        "period": ""
+      },
+      {
+        "unit": "USD billion",
+        "value": "10",
+        "metric": "Estimated savings",
+        "period": ""
+      },
+      {
+        "unit": "percent less power",
+        "value": "60",
+        "metric": "Google Axion/Arm Neoverse power reduction at same performance",
+        "period": "TPU 8T and 8i"
+      },
+      {
+        "unit": "share",
+        "value": "more than half",
+        "metric": "AWS Graviton share of design starts",
+        "period": "current"
+      }
+    ],
+    "themes": [
+      "agentic AI",
+      "AI infrastructure",
+      "Arm server CPUs",
+      "CPU demand growth",
+      "data center power efficiency",
+      "Taiwan semiconductor ecosystem",
+      "TSMC manufacturing",
+      "AI inference orchestration",
+      "rack-scale computing",
+      "x86 displacement",
+      "cloud AI",
+      "edge AI",
+      "physical AI",
+      "Neoverse",
+      "Google Axion",
+      "AWS Graviton",
+      "Nvidia Vera",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "Arm"
+    ],
+    "tickers": [
+      "ARM",
+      "ARM US",
+      "TSM US",
+      "NVDA US",
+      "META US",
+      "ORCL US",
+      "SAP US",
+      "GOOGL US",
+      "AMZN US",
+      "MSFT US",
+      "CRM US",
+      "NOW US",
+      "SNOW US",
+      "SMCI US",
+      "SFTBY US",
+      "UMC US",
+      "AAPL US",
+      "TSLA US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "SEMICONDUCTORS",
+      "CLOUD_COMPUTING",
+      "DATA_CENTER",
+      "SERVER_CPU",
+      "FOUNDRY",
+      "HARDWARE_INFRASTRUCTURE"
+    ]
+  },
+  {
+    "video_id": "ztiiTHJfSPM",
+    "year": 2026,
+    "company": "COMPUTEX",
+    "summary": "Computex 2026 opened with organizers emphasizing the theme \"AI together,\" describing AI as moving from cloud-based tools into real-world, embodied systems across robotics, mobility, healthcare, manufacturing, retail, transportation, and urban governance. TAITRA Chairman James Huang said this is the largest Computex in the event's history and highlighted Taiwan's role as an indispensable AI hub, with Nvidia hosting GTC Taipei and major chip CEOs from Qualcomm, Marvell, Intel, and NXP participating. TCA Chairman Jason Chen said global AI competition is shifting from models and computing power toward complete system capacity, including chips, servers, PCs, connectivity, storage, thermal management, energy efficiency, governance, and applications. The event will feature over 1,500 exhibitors, 6,000 booths, nearly 500 startups from 23 countries, a dedicated robotics pavilion, and forums spanning the full AI stack.",
+    "key_numbers": [
+      {
+        "unit": "startups",
+        "value": "nearly 500",
+        "metric": "startups at InnoVEX",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "countries",
+        "value": "23",
+        "metric": "countries represented by startups",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "exhibitors",
+        "value": "more than 1,500",
+        "metric": "exhibitors",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "booths",
+        "value": "6,000",
+        "metric": "booths",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "CEOs",
+        "value": "4",
+        "metric": "global chip CEO keynote participants",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "sections",
+        "value": "4",
+        "metric": "physical AI forum sections",
+        "period": "June 2, 2026"
+      },
+      {
+        "unit": "leaders",
+        "value": "26",
+        "metric": "global forum leaders",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "sections",
+        "value": "28",
+        "metric": "forum sections",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "MIT drones",
+        "value": "1,000",
+        "metric": "drone show scale",
+        "period": "June 2, 2026"
+      }
+    ],
+    "themes": [
+      "AI-infra",
+      "physical AI",
+      "robotics",
+      "edge AI",
+      "AI data centers",
+      "AI chips",
+      "AI servers",
+      "AI PCs",
+      "high-speed connectivity",
+      "storage",
+      "thermal management",
+      "energy efficiency",
+      "data governance",
+      "industrial AI",
+      "smart applications",
+      "startups",
+      "drones",
+      "full-stack AI ecosystem",
+      "Computex",
+      "Computex-2026",
+      "press",
+      "COMPUTEX"
+    ],
+    "tickers": [
+      "NVDA US",
+      "QCOM US",
+      "MRVL US",
+      "INTC US",
+      "NXPI US",
+      "TXN US",
+      "MSFT US",
+      "GOOGL US",
+      "SNPS US",
+      "ABB US",
+      "SIEGY US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "ROBOTICS",
+      "EDGE_AI",
+      "DATA_CENTER",
+      "SEMICONDUCTORS",
+      "CONNECTIVITY",
+      "ENTERPRISE_SOFTWARE",
+      "INDUSTRIAL_TECH",
+      "STARTUPS"
+    ]
+  },
+  {
+    "video_id": "avtpBZH6exw",
+    "year": 2026,
+    "company": "Gigabyte",
+    "summary": "Gigabyte marked its 40th anniversary at Computex 2026 and positioned itself as an AI company spanning cloud-to-client hardware and software, while focusing this event on consumer products. The company introduced new high-end motherboards, including Intel Z890 refresh and AMD X870 AORUS Infinity models, emphasizing memory speed, latency, power delivery, and advanced cooling designs. It also launched or previewed AIO coolers, a compact 1600W AI-focused PSU, MicroATX cases, peripherals, RTX 50-series AORUS Infinity GPUs, and external GPU AI Box products. The tone was highly promotional, centered on setting performance records and enabling local AI, gaming, creator, and enthusiast PC workloads.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "40",
+        "metric": "Gigabyte anniversary",
+        "period": "2026"
+      },
+      {
+        "unit": "MT/s",
+        "value": "8000",
+        "metric": "CQD memory speed with capacity",
+        "period": "Intel Z890 refresh platform"
+      },
+      {
+        "unit": "GB",
+        "value": "256",
+        "metric": "CQD supported system memory",
+        "period": "Intel Z890 refresh platform"
+      },
+      {
+        "unit": "MT/s",
+        "value": "10400",
+        "metric": "Traditional CUDIMM memory speed",
+        "period": "Intel Z890 refresh platform"
+      },
+      {
+        "unit": "CAS latency",
+        "value": "CL24",
+        "metric": "X870 AORUS Infinity memory timing",
+        "period": "product launch"
+      },
+      {
+        "unit": "%",
+        "value": "20",
+        "metric": "Claimed speed advantage from timing",
+        "period": "product launch"
+      },
+      {
+        "unit": "MT/s",
+        "value": "11400",
+        "metric": "X870 AORUS Infinity memory speed",
+        "period": "product launch"
+      },
+      {
+        "unit": "%",
+        "value": "44",
+        "metric": "AI gyroid cooling surface area improvement",
+        "period": "product launch"
+      },
+      {
+        "unit": "phases",
+        "value": "64",
+        "metric": "Power delivery phases",
+        "period": "product launch"
+      },
+      {
+        "unit": "amps",
+        "value": "5120",
+        "metric": "Power delivery current",
+        "period": "product launch"
+      },
+      {
+        "unit": "watts",
+        "value": "1600",
+        "metric": "AORUS P1600 AI TOP power output",
+        "period": "product launch"
+      },
+      {
+        "unit": "mm",
+        "value": "160",
+        "metric": "AORUS P1600 AI TOP length",
+        "period": "product launch"
+      },
+      {
+        "unit": "certification",
+        "value": "80 Plus Titanium",
+        "metric": "PSU efficiency certification",
+        "period": "product launch"
+      },
+      {
+        "unit": "cables",
+        "value": "4",
+        "metric": "Native 16-pin PCIe cables",
+        "period": "product launch"
+      },
+      {
+        "unit": "GPUs",
+        "value": "4",
+        "metric": "Supported graphics cards by PSU",
+        "period": "product launch"
+      },
+      {
+        "unit": "liters",
+        "value": "25",
+        "metric": "AORUS C510 Glass Infinity case volume",
+        "period": "product launch"
+      },
+      {
+        "unit": "inches",
+        "value": "16",
+        "metric": "Integrated case display size",
+        "period": "product launch"
+      },
+      {
+        "unit": "mm",
+        "value": "240",
+        "metric": "Supported AIO radiator size",
+        "period": "product launch"
+      },
+      {
+        "unit": "mm",
+        "value": "4.0",
+        "metric": "K10 keyboard travel distance",
+        "period": "product launch"
+      },
+      {
+        "unit": "mm",
+        "value": "0.1",
+        "metric": "K10 keyboard precision",
+        "period": "product launch"
+      },
+      {
+        "unit": "Hz",
+        "value": "8000",
+        "metric": "K10 keyboard polling rate",
+        "period": "product launch"
+      },
+      {
+        "unit": "million keystrokes",
+        "value": "100",
+        "metric": "K10 keyboard lifespan",
+        "period": "product launch"
+      },
+      {
+        "unit": "inches",
+        "value": "3.1",
+        "metric": "K10 OLED touchscreen size",
+        "period": "product launch"
+      },
+      {
+        "unit": "degrees",
+        "value": "6, 8, 13",
+        "metric": "K10 tilt angles",
+        "period": "product launch"
+      },
+      {
+        "unit": "Hz",
+        "value": "8000",
+        "metric": "M10 mouse polling rate",
+        "period": "product launch"
+      },
+      {
+        "unit": "%",
+        "value": "28",
+        "metric": "RTX 5090 Infinity airflow improvement vs traditional hollow-out backplate",
+        "period": "product launch"
+      },
+      {
+        "unit": "%",
+        "value": "58",
+        "metric": "RTX 5090 Infinity airflow improvement vs sealed backplate",
+        "period": "product launch"
+      },
+      {
+        "unit": "manufacturers",
+        "value": "20+",
+        "metric": "Ecosystem manufacturing partners",
+        "period": "product launch"
+      },
+      {
+        "unit": "models",
+        "value": "50+",
+        "metric": "Compatible ecosystem models",
+        "period": "product launch"
+      }
+    ],
+    "themes": [
+      "AI PC",
+      "local AI workloads",
+      "gaming hardware",
+      "motherboards",
+      "memory overclocking",
+      "DDR5",
+      "GPU cooling",
+      "power delivery",
+      "thermal management",
+      "reverse connector motherboards",
+      "RTX 50-series",
+      "external GPU",
+      "PC peripherals",
+      "Computex",
+      "Computex-2026",
+      "press",
+      "Gigabyte"
+    ],
+    "tickers": [
+      "2376.TW",
+      "GIGBF US",
+      "NVDA US",
+      "AMD US",
+      "INTC US"
+    ],
+    "sectors": [
+      "PC_HARDWARE",
+      "SEMI_AI",
+      "AI_INFRA",
+      "GAMING_HARDWARE",
+      "CONSUMER_ELECTRONICS",
+      "GPU",
+      "COMPONENTS"
+    ]
+  },
+  {
+    "video_id": "SJ-VzWpgQ5s",
+    "year": 2026,
+    "company": "Intel",
+    "summary": "Intel CEO Lip-Bu Tan framed Intel as an engineering-led company refocusing on execution, partnerships, and core compute ecosystems across PCs, edge/physical AI, data centers, and future intelligent systems. Intel said its 18A process is at full scale and that Core Ultra Series 3, its first 18A product, is shipping across more than 300 designs, with Core Series 3 already reaching 70-plus designs after an April introduction. The company highlighted ARC G3 for handheld gaming, claiming over 40% faster performance versus competition and half the power at the same performance, with devices available later in the month. Intel also emphasized edge and physical AI opportunities, citing over 130 edge designs, more than 4,000 edge ecosystem partners, and a projected $25 trillion physical AI market by 2050. Perplexity CEO Aravind Srinivas joined to discuss hybrid agentic inference on Intel Core Ultra Series 3 GPUs, positioning local AI as important for privacy, cost, performance, and token value per watt.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "40",
+        "metric": "Intel partnership in Taiwan",
+        "period": "as of keynote"
+      },
+      {
+        "unit": "months",
+        "value": "14",
+        "metric": "CEO tenure",
+        "period": "as of keynote"
+      },
+      {
+        "unit": "SOCs",
+        "value": "hundreds of millions",
+        "metric": "SOC shipments",
+        "period": "annually"
+      },
+      {
+        "unit": "USD",
+        "value": "trillions",
+        "metric": "Ecosystem value generated",
+        "period": "not specified"
+      },
+      {
+        "unit": "ecosystems",
+        "value": "4",
+        "metric": "Core compute ecosystems",
+        "period": "not specified"
+      },
+      {
+        "unit": "status",
+        "value": "full scale",
+        "metric": "Intel 18A process status",
+        "period": "as of keynote"
+      },
+      {
+        "unit": "designs",
+        "value": "300+",
+        "metric": "Core Ultra Series 3 designs shipping",
+        "period": "as of keynote"
+      },
+      {
+        "unit": "designs",
+        "value": "70+",
+        "metric": "Core Series 3 designs",
+        "period": "since April introduction"
+      },
+      {
+        "unit": "designs",
+        "value": "nearly 400",
+        "metric": "Total Series lineup designs",
+        "period": "within a few months"
+      },
+      {
+        "unit": "percent faster",
+        "value": "40+",
+        "metric": "ARC G3 handheld gaming performance versus competition",
+        "period": "not specified"
+      },
+      {
+        "unit": "percent of competitor power",
+        "value": "50",
+        "metric": "ARC G3 power at same performance",
+        "period": "not specified"
+      },
+      {
+        "unit": "p",
+        "value": "1080",
+        "metric": "AAA game resolution on ARC G3 devices",
+        "period": "not specified"
+      },
+      {
+        "unit": "frames per second",
+        "value": "120+",
+        "metric": "AAA game frame rate on ARC G3 devices",
+        "period": "many games, not specified"
+      },
+      {
+        "unit": "timing",
+        "value": "later this month",
+        "metric": "ARC G3 device availability",
+        "period": "from keynote date"
+      },
+      {
+        "unit": "designs",
+        "value": "130+",
+        "metric": "Series 3 edge designs",
+        "period": "2026"
+      },
+      {
+        "unit": "partners",
+        "value": "4000+",
+        "metric": "Intel edge ecosystem partners",
+        "period": "as of keynote"
+      },
+      {
+        "unit": "trillion USD",
+        "value": "25",
+        "metric": "Projected physical AI market",
+        "period": "by 2050"
+      },
+      {
+        "unit": "models",
+        "value": "up to 20",
+        "metric": "AI models used by Perplexity Computer",
+        "period": "not specified"
+      }
+    ],
+    "themes": [
+      "Intel 18A",
+      "AI PCs",
+      "agentic AI",
+      "on-device AI",
+      "hybrid inference",
+      "edge AI",
+      "physical AI",
+      "handheld gaming",
+      "GPU performance",
+      "NPU",
+      "PC ecosystem",
+      "semiconductor manufacturing",
+      "Taiwan supply chain",
+      "open platforms",
+      "ecosystem partnerships",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "Intel"
+    ],
+    "tickers": [
+      "INTC",
+      "INTC US",
+      "TSM US",
+      "AAPL US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "PC_HARDWARE",
+      "EDGE_AI",
+      "SEMICONDUCTORS",
+      "CONSUMER_COMPUTE",
+      "DATA_CENTER",
+      "AI_SOFTWARE"
+    ]
+  },
+  {
+    "video_id": "1Er0n1pJUgg",
+    "year": 2026,
+    "company": "Marvell",
+    "summary": "Marvell Chairman and CEO Matt Murphy argued that AI infrastructure performance is increasingly defined not only by processors, process nodes, or memory, but by connectivity across tens of thousands and eventually millions of processors. He said the next major wave of AI infrastructure innovation will come from system connectivity, especially as links transition from copper to optical, unlocking new architectures. Murphy reviewed Marvell's decade-long strategic transformation from consumer-exposed semiconductor businesses toward data infrastructure through divestitures, acquisitions, and internal R&D. He highlighted acquisitions including Cavium, Avera, Aquantia, Inphi, Innovium, Celestial AI, and XConn, and said Marvell has invested roughly $36 billion in building its data infrastructure platform.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "10",
+        "metric": "CEO tenure reference",
+        "period": "since 2016"
+      },
+      {
+        "unit": "years",
+        "value": "22",
+        "metric": "Prior career at Maxim Integrated",
+        "period": "before joining Marvell"
+      },
+      {
+        "unit": "percent of revenue",
+        "value": "<10",
+        "metric": "Data center revenue mix",
+        "period": "about 10 years ago"
+      },
+      {
+        "unit": "percent of revenue",
+        "value": ">60",
+        "metric": "Consumer revenue mix",
+        "period": "about 10 years ago"
+      },
+      {
+        "unit": "USD billions",
+        "value": "10",
+        "metric": "Inphi acquisition value",
+        "period": "2021"
+      },
+      {
+        "unit": "USD billions",
+        "value": "22.5",
+        "metric": "Acquisition investment",
+        "period": "over the last decade"
+      },
+      {
+        "unit": "USD billions",
+        "value": "18",
+        "metric": "Organic platform investment",
+        "period": "over the last decade"
+      },
+      {
+        "unit": "USD billions",
+        "value": "4.5",
+        "metric": "Divested assets",
+        "period": "over the last decade"
+      },
+      {
+        "unit": "USD billions",
+        "value": "36",
+        "metric": "Total platform investment",
+        "period": "over the last decade"
+      },
+      {
+        "unit": "nanometer",
+        "value": "14/16 to 5",
+        "metric": "Process node jump",
+        "period": "early 2020 platform transition"
+      },
+      {
+        "unit": "nanometer",
+        "value": "7",
+        "metric": "Skipped process node",
+        "period": "platform transition"
+      },
+      {
+        "unit": "year",
+        "value": "2020",
+        "metric": "First world-class IP platform release",
+        "period": "early 2020"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "data infrastructure",
+      "connectivity",
+      "optical interconnect",
+      "copper-to-optical transition",
+      "custom silicon",
+      "scale-up switching",
+      "data center networking",
+      "advanced process nodes",
+      "photonic fabric",
+      "high bandwidth memory",
+      "XPUs",
+      "AI clusters",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "Marvell"
+    ],
+    "tickers": [
+      "MRVL",
+      "MRVL US",
+      "GOOGL US",
+      "AMZN US",
+      "MSFT US",
+      "META US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "SEMICONDUCTORS",
+      "DATA_CENTER",
+      "NETWORKING",
+      "OPTICAL_INTERCONNECT",
+      "CUSTOM_SILICON"
+    ]
+  },
+  {
+    "video_id": "wSp6AiNIrsY",
+    "year": 2026,
+    "company": "NVIDIA",
+    "summary": "Jensen Huang argued that agentic AI has arrived and is already creating measurable productivity gains, especially in software development, citing a near tripling of GitHub commits in early 2026. He framed tokens as profitable units of revenue and said this is driving demand for more AI factories and compute, benefiting NVIDIA's Taiwan supply-chain ecosystem. Huang described the new agentic computing model as a distributed system involving large language models, harnesses, memory, tools, CPUs, GPUs, DPUs and storage, rather than traditional applications running inside an operating system. He positioned NVIDIA's CUDA-X libraries as tools that agents will increasingly use and introduced Vera Rubin as an end-to-end system designed for this heterogeneous, secure, distributed AI workload.",
+    "key_numbers": [
+      {
+        "unit": "events",
+        "value": "70",
+        "metric": "Taiwan launch parties broadcasting keynote",
+        "period": "GTC Taipei 2026"
+      },
+      {
+        "unit": "%",
+        "value": "almost 10",
+        "metric": "Taiwan GDP growth cited",
+        "period": "annual, 2026"
+      },
+      {
+        "unit": "million",
+        "value": "300",
+        "metric": "GitHub commits",
+        "period": "2023"
+      },
+      {
+        "unit": "million",
+        "value": "400",
+        "metric": "GitHub commits",
+        "period": "2024"
+      },
+      {
+        "unit": "million",
+        "value": "500",
+        "metric": "GitHub commits",
+        "period": "2025"
+      },
+      {
+        "unit": "multiple",
+        "value": "nearly tripled",
+        "metric": "GitHub commits growth",
+        "period": "first few months of 2026"
+      },
+      {
+        "unit": "million people",
+        "value": "30-40",
+        "metric": "Professional software developers",
+        "period": "current"
+      },
+      {
+        "unit": "million people",
+        "value": "couple hundred",
+        "metric": "Students and enthusiast developers",
+        "period": "current"
+      },
+      {
+        "unit": "trillion USD per year",
+        "value": "3",
+        "metric": "Software developer salary GDP contribution",
+        "period": "current"
+      },
+      {
+        "unit": "trillion USD",
+        "value": "100",
+        "metric": "Global industries impacted by software developers",
+        "period": "current"
+      },
+      {
+        "unit": "trillion USD",
+        "value": "9",
+        "metric": "Productivity output enabled by AI",
+        "period": "current/implied"
+      },
+      {
+        "unit": "years",
+        "value": "20",
+        "metric": "CUDA history",
+        "period": "since CUDA launch"
+      },
+      {
+        "unit": "libraries",
+        "value": "1000",
+        "metric": "CUDA-X libraries",
+        "period": "current"
+      },
+      {
+        "unit": "NVL/GPU scale reference",
+        "value": "72",
+        "metric": "Grace Blackwell NVLink rack scale",
+        "period": "current"
+      }
+    ],
+    "themes": [
+      "agentic AI",
+      "AI factories",
+      "tokens",
+      "AI-infra",
+      "GPU compute",
+      "CUDA",
+      "CUDA-X",
+      "developer productivity",
+      "software coding AI",
+      "Vera Rubin",
+      "Grace Blackwell",
+      "NVLink",
+      "NVL72",
+      "DPU",
+      "BlueField",
+      "ConnectX",
+      "confidential computing",
+      "AI memory",
+      "KV cache",
+      "storage infrastructure",
+      "Taiwan supply chain",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "NVIDIA"
+    ],
+    "tickers": [
+      "NVDA",
+      "NVDA US",
+      "MSFT US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "DATA_CENTER",
+      "SEMICONDUCTORS",
+      "ENTERPRISE_SOFTWARE",
+      "CLOUD_INFRA",
+      "NETWORKING",
+      "STORAGE"
+    ]
+  },
+  {
+    "video_id": "6fg2TOX9Pq8",
+    "year": 2026,
+    "company": "NXP",
+    "summary": "NXP CEO Rafael Sotomayor argued that physical AI and robotics require reflex-like intelligence at the edge rather than relying solely on centralized cloud or large reasoning models. He used human biology, especially the cerebrum, cerebellum, and spinal cord, to explain why ultra-low-latency, distributed, energy-efficient control is necessary for drones, software-defined vehicles, and humanoid robots. NXP framed its 'neural axis architecture' as a three-layer model consisting of reasoning, coordination, and reflex layers, with local processing placed near sensors, motors, joints, and actuators. The keynote highlighted NXP's leadership in automotive software-defined vehicle architectures through its S32N 5nm central compute family and S32K family for zonal/reflex functions.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "30",
+        "metric": "CEO industry experience",
+        "period": ""
+      },
+      {
+        "unit": "percent",
+        "value": "over 95",
+        "metric": "Daily tasks done without conscious thought",
+        "period": "daily"
+      },
+      {
+        "unit": "percent",
+        "value": "80",
+        "metric": "Cerebrum share of brain mass",
+        "period": ""
+      },
+      {
+        "unit": "milliseconds",
+        "value": "300",
+        "metric": "Cerebrum response time",
+        "period": ""
+      },
+      {
+        "unit": "milliseconds",
+        "value": "40",
+        "metric": "Spinal cord reflex response time",
+        "period": ""
+      },
+      {
+        "unit": "milliseconds",
+        "value": "20",
+        "metric": "Drone glass-to-glass latency target",
+        "period": ""
+      },
+      {
+        "unit": "nanometer",
+        "value": "5",
+        "metric": "S32N process node",
+        "period": ""
+      }
+    ],
+    "themes": [
+      "edge AI",
+      "physical AI",
+      "robotics",
+      "humanoid robots",
+      "software-defined vehicles",
+      "ADAS",
+      "drones",
+      "distributed control",
+      "ultra-low latency",
+      "motor control",
+      "functional safety",
+      "automotive semiconductors",
+      "industrial AI",
+      "smart infrastructure",
+      "energy-efficient AI",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "NXP"
+    ],
+    "tickers": [
+      "NXPI",
+      "NXPI US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "EDGE_AI",
+      "AUTOMOTIVE_SEMI",
+      "ROBOTICS",
+      "INDUSTRIAL_TECH"
+    ]
+  },
+  {
+    "video_id": "BH6pg0LY8Fw",
+    "year": 2026,
+    "company": "Qualcomm",
+    "summary": "Computex 2026 opened under the theme \u201cAI together,\u201d emphasizing AI\u2019s shift from cloud-based tools to real-world deployment across devices, robotics, mobility, manufacturing, healthcare, retail, transportation, and urban governance. Organizers framed Taiwan and Computex as central to the global AI ecosystem, citing record scale, a new robotics pavilion, major forums, and participation from global technology leaders. Qualcomm CEO Cristiano Amon began the opening keynote by thanking Taiwan partners, especially TSMC, and said his main objective was to explain how AI will evolve across edge devices rather than focus on data centers. He argued that AI is becoming a new form of computing that will change the human-computer interface and the architecture of personal computing devices, with this transition starting to become real in 2026.",
+    "key_numbers": [
+      {
+        "unit": "startups",
+        "value": "500",
+        "metric": "Computex startups",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "countries",
+        "value": "23",
+        "metric": "Countries represented by startups",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "exhibitors",
+        "value": "more than 1,500",
+        "metric": "Computex exhibitors",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "booths",
+        "value": "6,000",
+        "metric": "Computex booths",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "global chip leaders",
+        "value": "4",
+        "metric": "CEO keynote participants",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "global leaders",
+        "value": "26",
+        "metric": "Forum speakers/leaders",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "sections",
+        "value": "28",
+        "metric": "Forum sections",
+        "period": "Computex 2026"
+      },
+      {
+        "unit": "sections",
+        "value": "4",
+        "metric": "Physical AI forum sections",
+        "period": "June 2, 2026"
+      },
+      {
+        "unit": "consecutive years",
+        "value": "3",
+        "metric": "Qualcomm CEO Computex keynote streak",
+        "period": "through Computex 2026"
+      },
+      {
+        "unit": "MIT drones",
+        "value": "1,000",
+        "metric": "Taipei drone show",
+        "period": "June 2, 2026"
+      }
+    ],
+    "themes": [
+      "edge AI",
+      "AI devices",
+      "AI agents",
+      "physical AI",
+      "robotics",
+      "AI PCs",
+      "AI smartphones",
+      "intelligent computing everywhere",
+      "AI ecosystem",
+      "data center connectivity",
+      "chip design",
+      "high-speed connectivity",
+      "thermal management",
+      "energy efficiency",
+      "smart applications",
+      "Taiwan supply chain",
+      "TSMC partnership",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "Qualcomm"
+    ],
+    "tickers": [
+      "QCOM",
+      "QCOM US",
+      "TSM US",
+      "NVDA US",
+      "MRVL US",
+      "INTC US",
+      "NXPI US",
+      "MSFT US",
+      "GOOGL US",
+      "SNPS US",
+      "TXN US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "EDGE_AI",
+      "CONSUMER_DEVICES",
+      "SEMICONDUCTORS",
+      "ROBOTICS",
+      "MOBILITY",
+      "AI_PC",
+      "SMARTPHONE",
+      "DATA_CENTER",
+      "INDUSTRIAL_AI"
+    ]
+  },
+  {
+    "video_id": "FLJHH3ZWEJo",
+    "year": 2026,
+    "company": "Supermicro",
+    "summary": "Supermicro CEO Charles Liang argued that AI infrastructure demand is accelerating and that customers' key metric is reducing time to market, time to deploy, and time to online. He emphasized Supermicro's modular building-block architecture, pre-tested rack-scale systems, and liquid-cooling/power solutions as ways to shorten deployment cycles and improve performance, efficiency, and cost. Liang said Supermicro has shipped more than 8,000 racks over the last nine months/three quarters, is a major provider of Nvidia Blackwell GB300/B300 HGX solutions, and is preparing Vera Rubin NVL72 and Rubin HGX platforms for sampling and production. He also highlighted rapid manufacturing expansion, including 1.4 million square feet added in San Jose and a global footprint now at about 6 million square feet, while suggesting revenue could reach $40 billion this year and exceed that next year.",
+    "key_numbers": [
+      {
+        "unit": "years",
+        "value": "33",
+        "metric": "Supermicro operating history",
+        "period": "since early 1990s"
+      },
+      {
+        "unit": "months",
+        "value": "less than 5",
+        "metric": "DLC AI data center build time",
+        "period": "two years ago"
+      },
+      {
+        "unit": "months",
+        "value": "about 3",
+        "metric": "Recent gigawatt data center completion time",
+        "period": "recently"
+      },
+      {
+        "unit": "racks",
+        "value": "more than 8,000",
+        "metric": "Rack shipments",
+        "period": "last nine months / last three quarters"
+      },
+      {
+        "unit": "GPUs",
+        "value": "64, 128, 144",
+        "metric": "Rubin HGX supported GPU configurations",
+        "period": "upcoming platform"
+      },
+      {
+        "unit": "USD billions",
+        "value": "15",
+        "metric": "Revenue",
+        "period": "two years ago"
+      },
+      {
+        "unit": "USD billions",
+        "value": "22",
+        "metric": "Revenue",
+        "period": "prior period referenced"
+      },
+      {
+        "unit": "USD billions",
+        "value": "40",
+        "metric": "Revenue outlook/commentary",
+        "period": "this year"
+      },
+      {
+        "unit": "USD billions",
+        "value": "much more than 40",
+        "metric": "Revenue outlook/commentary",
+        "period": "next year"
+      },
+      {
+        "unit": "million square feet",
+        "value": "1.4",
+        "metric": "Manufacturing capacity added in San Jose",
+        "period": "last three quarters"
+      },
+      {
+        "unit": "buildings",
+        "value": "2",
+        "metric": "Buildings added in Taiwan",
+        "period": "recent expansion"
+      },
+      {
+        "unit": "million square feet",
+        "value": "2 to 3",
+        "metric": "Historical global capacity",
+        "period": "three years ago"
+      },
+      {
+        "unit": "million square feet",
+        "value": "6",
+        "metric": "Current global capacity",
+        "period": "today"
+      },
+      {
+        "unit": "pounds",
+        "value": "5,000",
+        "metric": "Rack load capacity",
+        "period": "current integrated rack"
+      },
+      {
+        "unit": "kW",
+        "value": "250, 500",
+        "metric": "Air-to-liquid cooling capacity",
+        "period": "current solution"
+      },
+      {
+        "unit": "MW",
+        "value": "1, 3, 5",
+        "metric": "CDU capacity",
+        "period": "current solutions"
+      },
+      {
+        "unit": "kW",
+        "value": "125, 250",
+        "metric": "In-row CDU capacity",
+        "period": "current solutions"
+      }
+    ],
+    "themes": [
+      "AI infrastructure",
+      "rack-scale systems",
+      "modular building blocks",
+      "time to market",
+      "time to deploy",
+      "time to online",
+      "Nvidia Blackwell",
+      "GB300",
+      "B300 HGX",
+      "Vera Rubin",
+      "NVL72",
+      "Rubin HGX",
+      "liquid cooling",
+      "direct liquid cooling",
+      "CDU",
+      "battery backup",
+      "power shelf",
+      "data center deployment",
+      "AI data centers",
+      "agentic AI",
+      "HPC",
+      "Computex",
+      "Computex-2026",
+      "keynote",
+      "Supermicro"
+    ],
+    "tickers": [
+      "SMCI",
+      "SMCI US",
+      "NVDA US",
+      "AMD US",
+      "INTC US"
+    ],
+    "sectors": [
+      "SEMI_AI",
+      "AI_INFRA",
+      "SERVER_HARDWARE",
+      "DATA_CENTER",
+      "LIQUID_COOLING",
+      "ACCELERATED_COMPUTE"
+    ]
+  }
+]

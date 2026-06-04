@@ -31,6 +31,10 @@ The data pipeline that produces these results is operated privately. This reposi
 
 *Studies 07–12 form one connected program — is 2026 a 2000 echo for semiconductors?*
 
+## Data
+
+- [**Computex Data Library** (2024–2026)](computex-dataset/) — 33 keynote / press sessions and **373 structured product announcements** (company · ticker · product · ship quarter · grounding quote · source video), as CSV + JSON under CC-BY. Derived data and links only; rebuild the transcripts from the public videos with the included script. Backs [study 18](18-computex-event-study/).
+
 ## Method notes
 
 - **Validation:** out-of-sample / walk-forward splits, bootstrap confidence intervals, Spearman information coefficient, hit-rate, t-tests with reported p-values; multiple-comparison adjustment where relevant.

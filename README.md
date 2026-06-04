@@ -25,6 +25,7 @@ The data pipeline that produces these results is operated privately. This reposi
 | 13 | [Gold: collapse insurance?](13-gold-collapse-insurance/) | When equities collapse, does gold rise — or is it driven by something else? | A real-rate trade, not a crash hedge: gold falls ~0.09%/bp on the 10y real yield (t −7.7); median just +3% across 8 Nasdaq drawdowns ≥15%. |
 | 14 | [Alphabet's investment book](14-alphabet-investment-portfolio/) | Is Alphabet's private-stake portfolio material to the equity story? | Yes — mark-ups added ~$24bn (≈18% of 2025 net income); the private book grew $35→$64bn, and the surge is sector-wide across megacaps. |
 | 15 | [Should you chase IPOs?](15-ipo-chase/) | Do new listings pay off if you buy in the aftermarket? | No — ≈+24% first-day pop then −21.6% vs market over 3yr; de-SPACs −75%, tiny deals −52%; the index-inclusion pop has decayed to ~0. |
+| 16 | [Narrow leadership & the index](16-narrow-leadership-and-the-index/) | When mega-caps carry the index and breadth thins, is that bearish — and can you time it? | No, on all counts (10y, OOS): MAG7-leadership IC +0.01; only 3/13 sectors beat the S&P; "narrow at highs" isn't bearish (fwd +4.0% vs +3.3%); a drawdown model fails OOS (AUC 0.14). Concentration is a risk-management issue, not a timing signal. |
 
 *Studies 07–12 form one connected program — is 2026 a 2000 echo for semiconductors?*
 

@@ -2,7 +2,7 @@
 
 **Question.** Slice the semiconductor complex into its **supply-chain layers** — hyperscalers, fabless, foundry, equipment, memory, substrate, ODM, power/cooling, power-gen, neoclouds — and ask three things: which layer *leads*, how does capital *rotate* across them, and when you overlay news / X / Reddit, does **price drive the discussion or the discussion drive price**?
 
-**Finding.** Three answers on 2021–2026 data: (1) **leadership rotates around the chain's *periphery*** — power/cooling (**VRT +2,165%**), substrate, power-gen and memory led, while the famous **hyperscalers (+146%) and foundry (+211%) lagged**; (2) the layers **co-move — there's no tradable lead-lag** up or down the chain (upstream vs downstream peaks at lag 0, corr +0.80; Granger ≈ 0 both ways); (3) **price drives the chatter** — posts cluster *after* run-ups (+3–22% prior; curated-X experts post on names already **+35% above their 200-day MA**), but the discussed names keep running (**+2.4% forward 20-day alpha; +7.3% for curated X**) — attention *rides momentum*, it doesn't predict reversals.
+**Finding.** Three answers on 2021–2026 data: (1) **leadership rotates around the chain's *periphery*** — power/cooling (**VRT +2,165%**), substrate, power-gen and memory led, while the famous **hyperscalers (+146%) and foundry (+211%) lagged**; (2) the layers **co-move — there's no tradable lead-lag** up or down the chain (upstream vs downstream peaks at lag 0, corr +0.80; Granger ≈ 0 both ways); (3) **price drives the chatter** — posts cluster *after* run-ups (+3–22% prior; curated-X experts post on names already **+35% above their 200-day MA**), but the discussed names keep running (**+2.4% forward 20-day alpha; +7.3% for curated X**) — attention *rides momentum*, it doesn't predict reversals. Two deeper cuts confirm the theme: chasing the top-momentum layer earned more *raw* return (+2,494% vs +686%) but **no better Sharpe** (1.26 vs 1.42), and broad **13F money accumulated every layer** while **ARK rotated from the incumbents into neoclouds**.
 
 > Research / backtested. Layer map from a supply-chain graph; equal-weight layer price indices (US + Taiwan), 2021–2026; ~9k X + 5k news + (thin) Reddit posts, each carrying the ticker's run-up / RSI / %-above-200d **at post time** plus forward 5/20-day alpha vs SPY. Fabricated `x_kimi` excluded. No live capital; data sourced at **$0** (internal warehouse).
 
@@ -33,7 +33,23 @@ Do equipment/foundry (upstream) lead fabless/hyperscalers (downstream), or vice 
 
 ![Upstream vs downstream lead-lag](layer_leadlag.png)
 
-## Claim 3 — Price drives the chatter — and the chatter rides momentum
+Why so tightly coupled? The supply-chain graph shows it: a dense dependency web centred on **TSM** (foundry) and **NVDA** (fabless), with equipment/substrate/memory feeding in and ODM/hyperscalers/neoclouds/power hanging off the demand side. When the layers are this interlocked, a common AI-capex shock hits them all at once — which is exactly the +0.80 contemporaneous correlation.
+
+![Semiconductor supply-chain dependency graph](semi_network.png)
+
+## Claim 3 — Can you *trade* the rotation? More return, not more Sharpe
+
+A monthly strategy that holds the top-momentum layer(s) — net of 20bps/turnover — earned far more *raw* return than the complex (top-1 **+2,494%** vs SEMI_COMPLEX +686% over 2021–2026), but **not better risk-adjusted return**: top-1 Sharpe **1.26 < 1.42** for simply holding the complex (it just ran 74% volatility and a −48% drawdown). Top-3 momentum matched the complex on Sharpe (1.41 vs 1.42). So layer-timing buys *more upside*, not *more efficiency* — the same "no free lunch" the co-movement implies (and the same verdict as study 16's sector test).
+
+![Layer-rotation vs the complex, net of costs](rotation.png)
+
+## Claim 4 — Where the money flows: institutions accumulate the whole complex; ARK rotates to challengers
+
+Two very different "smart money" reads. Broad **13F** filers net-*added* every covered AI-semi layer over the last year (~4 adds per trim — hyperscalers, fabless, memory, foundry, equipment all accumulated). One prominent growth manager, **ARK**, did the opposite: net-*sold* the incumbents (−$17.7bn hyperscalers, −$13.4bn fabless) and *bought* the **neoclouds** (+$1.4bn) — an early-stage tilt against the crowd. (Coverage caveat: tickered 13F/ARK data covers only the large-cap US members, so this is directional, not a full-stack flow; precise 13F dollar-sizing is unreliable from our partial set, so 13F is shown as breadth, not dollars.)
+
+![ARK net flow by layer](inst_flow.png)
+
+## Claim 5 — Price drives the chatter — and the chatter rides momentum
 
 The discussion is **reactive**: posts arrive *after* a run-up (+4.2% prior 20-day for news, +5.4% for X — on names already **+35% above their 200-day MA**). But it isn't a dead end — the discussed names keep outperforming: forward 20-day alpha **+1.5% (news), +7.3% (curated X)** (t = 11.5, 68% positive). So **price leads attention, and attention then rides continued momentum** (Da-Engelberg-Gao) rather than signalling a top. Layer exceptions: hyperscaler (−1.2%) and power-gen (−5.1%) chatter preceded mild *under*performance.
 
@@ -46,6 +62,8 @@ The discussion is **reactive**: posts arrive *after* a run-up (+4.2% prior 20-da
 |---|---|---|
 | Which layer leads? | **The periphery** (power / substrate / memory / neoclouds) — not hyperscaler/foundry | VRT +2,165% vs HYPER +146% |
 | Does money flow up or down the chain? | **Neither — the layers co-move** | corr +0.80 at lag 0; Granger ≈ 0 both ways |
+| Can you *trade* the layer rotation? | **More return, not more Sharpe** | top-1 momentum +2,494% but Sharpe 1.26 < 1.42 (complex) |
+| Where is institutional money going? | Broad 13F **accumulates all layers**; ARK **rotates incumbents → neoclouds** | 13F ~4 adds:1 trim; ARK −$17.7bn hyperscalers, +$1.4bn neoclouds |
 | Price → chatter, or chatter → price? | **Price → chatter** (reactive), which then rides momentum | posts after +3–22% run-up; +2.4% (X +7.3%) forward alpha |
 
 **Verdict:** to read the semis, watch the *periphery* (power, substrate, memory) for leadership, treat the layers as one co-moving complex (no chain-timing edge), and read social/news as **confirmation of momentum, not a leading or contrarian signal** — the curated expert accounts are the ones whose discussed names keep running.
@@ -64,4 +82,5 @@ Layer membership is small (substrate = a single name; memory excludes Korea's Sa
 - Tetlock (2007, *JF*). *Giving Content to Investor Sentiment* — media tone moves prices temporarily.
 - Antweiler & Frank (2004, *JF*). *Is All That Talk Just Noise?* — message-board volume vs returns/volatility.
 - Granger (1969). Investigating causal relations by econometric models (lead-lag testing).
+- Jegadeesh & Titman (1993, *JF*); Moskowitz, Ooi & Pedersen (2012, *JFE*). Momentum / time-series momentum — the layer-rotation backtest is a momentum strategy.
 - Community: curated semi analysts on X (supply-chain specialists); r/hardware, r/wallstreetbets semi threads (thin in-sample).

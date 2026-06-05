@@ -44,7 +44,7 @@ The much-cited A/D-line bearish-divergence *event* (price at a 20-day high while
 
 ## Claim 3 — Acting on the warnings loses to just holding the index
 
-The honest test is out-of-sample: go to cash on warning days, walk forward, compare to buy-and-hold. **Five of six** overlays make both Sharpe and total return *worse* than simply holding the index. Only the %above-200dma overlay improves risk-adjusted return — and that one fails the robustness check (see Caveats).
+The honest test is out-of-sample: go to cash on warning days, walk forward, compare to buy-and-hold. Every one of the six overlays lowers total return versus simply holding the index, and **four of six** also make Sharpe worse. Only two — %above-200dma and %above-50dma — improve risk-adjusted return (Sharpe 1.06 and 0.96 vs 0.78), and both still give up CAGR; the %above-200dma residue then fails the robustness check (see Caveats).
 
 ![Walk-forward OOS — acting on breadth warnings vs buy-and-hold; most overlays trail the index](breadth_walkforward_oos.png)
 
@@ -64,7 +64,7 @@ The honest test is out-of-sample: go to cash on warning days, walk forward, comp
 | Does a low breadth reading predict lower forward returns? | **No — wrong sign** | breadth ICs all ≤ 0; high breadth weakly precedes *lower* returns |
 | When the warning is on, are forward returns worse? | **No — if anything higher, never significant** | 63d diffs all positive; every 95% CI crosses 0 |
 | Does the bearish A/D-divergence event carry an edge? | **No** | event vs all-days diff ≈ 0 at 21/63/126d, all ns |
-| Can you trade these warnings profitably? | **No** | 5 of 6 OOS overlays beaten by buy-and-hold |
+| Can you trade these warnings profitably? | **No** | all 6 trail B&H on total return; only 2 improve Sharpe (one-crash) |
 
 **Verdict: NO.** The popular breadth warnings do not work as directional signals on forward S&P returns in this sample — wrong sign, tiny magnitude, no significance. The single thing that looks helpful (% above 200dma as a *de-risking* overlay, not a directional bet) is one-crash evidence that largely duplicates plain price-trend-following and has no significance test behind it. Concentration / narrow leadership is a **risk-management** matter — own the exposure knowingly, size positions — not a market-timing signal.
 

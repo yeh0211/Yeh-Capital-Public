@@ -1,0 +1,8 @@
+{
+  "number": 7,
+  "slug": "07-intraday-overnight-decomposition",
+  "title": "Intraday decision-time",
+  "question": "How early in the day can you call the close — and can you trade it?",
+  "finding": "Describe, don't trade. By 11:30 ET the morning move calls the close ~80% of the time, but that hit-rate is a mechanical-overlap artifact; the tradable rest-of-day leg is a 50.4% coin flip (+3.4 bp gross, CI on zero, sub-cost, only 2022 positive).",
+  "status": "published"
+}

@@ -1,55 +1,69 @@
-# 02 — Is IPO-anchored VWAP a "real" level? 202 semiconductors, US + Asia
+# 02 — Buying the IPO-anchored VWAP touch has no win-rate edge
 
-**Question.** A common technical claim: for a recently-IPO'd stock, a VWAP *anchored to the first trading day* marks a more meaningful support/resistance level than a generic anchor. Does it — and do classical EMA crossovers carry standalone edge in this universe?
+**Question.** A popular technical claim: on a recently-IPO'd stock, buying when price pulls back to (or reclaims) the VWAP *anchored to the first trading day* is a high-probability entry. Across a large IPO cohort, is the win-rate any better than a random entry in the same names? **Answer: no — it's a coin flip.**
 
-**Finding.** Both priors were falsified. IPO-anchored reclaims bounced 55.6% vs 44.8% for a 10-year anchor — but with only n=27 the **95% confidence intervals overlap heavily**, so the honest verdict is "unproven at this sample," not "confirmed." And across **57,136 EMA crossovers in 48 cells, not one** had a 95%-CI lower bound above 50%; the golden cross bounced just **36%** (vs the 55–65% folklore).
-
-> Research / backtested. 202 semiconductors (124 US + 78 Asia), 463,621 daily bars, ~5 years; bootstrap 95% CIs, Bonferroni considered. No live capital, no costs.
+> Research / backtested. No live capital, no audited track record, no transaction costs. The cohort is young IPOs only (2022-10 onward), an unusual regime — treat as a tested-and-failed technique, not a law.
 
 ## Data & method
 
-- **Universe:** 202 tickers — 36 *true-IPO* names (first listed post-2016: CRWD, DDOG, NET, SNOW, PLTR, ARM, ALAB …) vs 166 *long-anchor* names (pre-2016).
-- **Reclaim event:** a high-volume, strong-close day closing back above the anchored VWAP after 60+ days below (152 events).
-- **EMA stack** (0–6 score) and **57,136 crossover events** across 8 cross-types × sector clusters. **Outcome:** 20-day bounce rate; bootstrap 95% CIs; Bonferroni for the 48-cell grid.
+- **Universe.** 881 IPOs since 2022-10; 188 cleared a liquidity gate (≥60 trading days, median dollar-volume > $1M, median price ≥ $4). Split-adjusted daily prices with per-bar VWAP.
+- **Anchored VWAP.** Cumulative Σ(vwap·volume)/Σ(volume) from the first trading day — the average cost basis of every holder since the IPO.
+- **Two signals tested.** (1) *Pullback* — buy when price touches the AVWAP from above. (2) *Reclaim* — buy when price crosses back above the AVWAP. Win = positive return at 30 / 60 / 90 / 365 days.
+- **Validation.** Compared to a random-entry baseline in the same tickers; block bootstrap (block=21) for 95% CIs; walk-forward split (in-sample <2025 vs out-of-sample ≥2025); per-sector breakdown.
 
-## Claim 1 — IPO anchor does not beat a generic anchor
+## Claim 1 — The pullback "buy the touch" win-rate sits on 50%
 
-![Anchor-type bounce comparison](anchor-type-bounce.png)
+![Win-rate by horizon vs a random-entry baseline in the same names](fig2_winrate_horizon.png)
 
-| Anchor type | n | 20d bounce | 95% CI | mean 30d return |
-|---|---:|---:|---|---:|
-| True-IPO | 27 | 55.6% | [37.0, 74.1] | +26.2% |
-| 10-year | 125 | 44.8% | [36.8, 53.6] | +7.5% |
+Across every horizon the signal win-rate hugs 50% and is indistinguishable from a random entry in the same universe.
 
-True-IPO reclaims *look* better (+10.8pp bounce, +18.7pp return) — but the CIs overlap heavily and the lower bounds nearly coincide. With n=27 I cannot reject that the two are the same distribution; the return gap is driven by a few AI-cycle winners.
+| Horizon | n | % Positive (win) | Median | Mean | Edge vs random |
+|---|---:|---:|---:|---:|---:|
+| 30d | 316 | 49.7% | −0.08% | +13.2% | −1.6 pts |
+| 60d | 303 | 49.8% | −0.03% | +4.2% | −0.5 pts |
+| 90d | 277 | 48.7% | −0.34% | +4.5% | +1.7 pts |
+| 365d | 142 | 53.5% | +2.11% | +25.4% | +1.2 pts |
 
-## Claim 2 — The "trend-confirmation filter" was already baked in
+The block bootstrap confirms it: the 90d mean is +4.45% with a 95% CI of **[−0.79%, +10.04%]** — it spans zero, so the result is not statistically distinguishable from no edge.
 
-Filtering reclaims to EMA-stack ≥ 4 was meant to lift the hit rate — but **all 152 reclaim events already had stack ≥ 4**, because the reclaim definition (high volume + strong close + back above VWAP) mechanically forces price above its short EMAs. The filter added nothing because it was implicit in the event.
+## Claim 2 — The reclaim variant is no better
 
-## Claim 3 — Classical EMA crossovers carry no standalone edge here
+Buying the cross back *above* the AVWAP — the "trend-confirmation" version of the trade — also lands on a coin flip, and actually underperforms the random baseline at the shorter horizons.
 
-![Best crossover signal per cluster](crossover-by-cluster.png)
+| Horizon | n | % Positive (win) | Median | Mean | Edge vs random |
+|---|---:|---:|---:|---:|---:|
+| 30d | 467 | 48.4% | −0.48% | +6.4% | −2.9 pts |
+| 60d | 433 | 48.7% | −0.51% | +8.5% | −1.6 pts |
+| 90d | 415 | 50.6% | +0.09% | +10.8% | +3.6 pts |
 
-Across 57,136 crossovers and 48 (cross-type × cluster) cells, **not one cell has a 95%-CI lower bound above 50%**; the best tops out at 37–42%. The **golden cross (50×200 up) bounced 36.3%** in the AI-capex cluster (n=832) — far below its 55–65% reputation. Several *down*-crosses outperformed *up*-crosses on the 20-day window, consistent with short-term mean-reversion after sharp breakdowns, not trend-following.
+## Claim 3 — Sector dispersion exists but is too thin to trade
+
+![VWAP-touch win-rate by sector](fig3_sector_heatmap.png)
+
+Sector cells scatter widely (Utilities 60% / REIT 62% at 90d vs Healthcare 30%), but every cell holds only n=15–32 — small enough that the spread is consistent with noise. No sector shows a robust, repeatable edge, and the walk-forward split agrees: 90d win-rate was 49.1% in-sample (<2025) versus 48.5% out-of-sample (≥2025) — there was never an edge to overfit.
+
+![IPO-anchored VWAP as a support level — worked example](fig1_example_avwap.png)
 
 ## The answer, in the data
 
-**Q: Is IPO-anchored VWAP a real edge, and does the golden cross work here?**
-**A: No on both.** The anchor is unproven at n=27 (CIs overlap); the golden cross underperformed badly.
+**Q: If I buy when price touches the IPO-anchored VWAP, is the win-rate an edge?**
+**A: No.** It is ~49% — a coin flip — confirmed two ways (pullback and reclaim), consistent out-of-sample, with a bootstrap CI that includes zero. The anchored VWAP is a useful *descriptive* level (the cohort's average cost basis) but not a *predictive* entry signal.
 
-| Signal | n | 20d bounce | Verdict |
-|---|---:|---:|---|
-| True-IPO anchor reclaim | 27 | 55.6% | CI [37,74] overlaps 10y [37,54] → unproven |
-| 10-year anchor reclaim | 125 | 44.8% | baseline |
-| Golden cross (AI-capex) | 832 | 36.3% | far below 55–65% folklore |
+| Signal (90d) | n | % Positive | Edge vs random | Verdict |
+|---|---:|---:|---:|---|
+| Pullback to AVWAP | 277 | 48.7% | +1.7 pts | Coin flip (CI spans zero) |
+| Reclaim of AVWAP | 415 | 50.6% | +3.6 pts | Coin flip |
+| Best sector cell | 15–32 | 60–62% | — | n too small to be real |
 
 ## Caveats
 
-Small true-IPO sample (n=27) and multiple comparisons (48 cells) — treat any single positive as a lead. Survivorship / regime bias (the true-IPO cohort rode the AI cycle). No costs; bounce rates are gross. Daily bars and a close-vs-open side proxy are coarse. The right move on the true-IPO cohort is to re-test in 1–2 years as it grows, not to trade it now.
+- Sample is young IPOs only (2022-10 onward) — an unusual cohort that rode a specific regime; no pre-2022 IPOs were available.
+- Gated on traded price, not the original offer price (offer prices were unavailable), so the very first-day fill is approximated.
+- Tests the *IPO* anchor specifically. A VWAP anchored to a later major high or low is a different question and is not addressed here.
+- Returns are gross of costs and slippage; bounce/win rates are point-in-time on daily bars.
 
 ## References
 
-- Sullivan, Timmermann & White (1999). *Data-snooping, technical trading rule performance, and the bootstrap.* Journal of Finance — why "obvious" rules vanish out-of-sample.
+- Sullivan, Timmermann & White (1999). *Data-snooping, technical trading rule performance, and the bootstrap.* Journal of Finance — why "obvious" technical rules tend to vanish once tested out-of-sample.
 - Brock, Lakonishok & LeBaron (1992). *Simple technical trading rules and the stochastic properties of stock returns.* Journal of Finance.
-- Community: r/Daytrading and r/TechnicalAnalysis on anchored-VWAP and golden-cross belief — the priors this note tests and falsifies.
+- Practitioner communities (r/Daytrading, r/TechnicalAnalysis) on anchored-VWAP entries — the prior this note tests and falsifies.

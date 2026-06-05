@@ -1,62 +1,78 @@
-# 10 — Korea's memory empire and the leverage trap
+# 10 — Korea memory: the leverage "death spiral" doesn't show up in the tape — it rebounds
 
-**Question.** Why did the DRAM "empire" rise in Korea, and is the country's record retail leverage a 2026 cascade risk?
+**Question.** Korean memory (Samsung, SK Hynix) sits on record retail margin debt (~36tn won, 2026). If price collapses, is there a self-reinforcing *death spiral* — worse forward returns and deeper drawdowns *after* a sharp drop — versus less-levered US memory? **Answer: no.** On the available data the Korea proxy *rebounds* after a sharp drop rather than spiralling, and the rebound is strongest (and only statistically significant) in the deepest tail — the opposite sign to a margin-call cascade.
 
-**Finding.** DRAM is the textbook capital cycle, and in 2026 the most cyclical corner of tech carries a **3.8-sigma equity melt-up financed by record retail margin debt**. Korea's own 45-year index shows four drawdowns of 30%+ (median −48%, worst −72%); the forced-liquidation plumbing is built to turn the next normal downcycle into a cascade rather than a dip.
-
-> Research. 45-year Korea broad share-price index (OECD via FRED, monthly 1981–2026, n=544) for the cycle and the melt-up; margin-debt, breadth and concentration figures are sourced (KOFIA / Korea Exchange / press). No live capital.
+> Research / backtested. No live capital, no audited track record. This is a **proxy study**: the clean Korea single-name tape (Samsung/Hynix) is data-blocked, so the Korea limb runs on a diversified, USD-denominated Korea-equity ETF that *understates* a KRX retail-margin cascade rather than reproducing it. Read every number as a statement about the proxy, not about levered single names.
 
 ## Data & method
 
-- **Index:** FRED `SPASTT01KRM661N` (OECD Share Prices: All Shares/Broad, Republic of Korea; 2015=100), monthly, **n=544** months.
-- **Cycle:** algorithmic peak-to-trough drawdowns ≥30%. **Melt-up:** rolling 12-month return and its percentile / z-score across the full 45 years.
-- **Leverage & concentration:** sourced (KOFIA margin-balance, Korea Exchange flows, Korean financial press); DRAM-cycle episodes from the public record.
+- Daily series, **2016–2026** (~2,500 trading days), for a Korea-equity proxy and three US memory/storage single names as the comparison set.
+- Test: condition on a **worst-decile down day**, then measure forward return (5/10/21/63 days) and subsequent max-drawdown *after the shock* versus the unconditional baseline. A death spiral predicts **negative** shock-conditional spreads that get **worse** in the deeper tail.
+- Validation: **block bootstrap** (5,000 draws, 21-day blocks) for confidence intervals on the deep-tail cells; an **out-of-sample** check (threshold fit on the earlier half, tested on the later half); a Korea-vs-US comparison on identical conditioning.
 
-## Claim 1 — DRAM is the textbook capital cycle
+## Claim 1 — After a sharp drop the Korea proxy rebounds; the spread is positive at every horizon
 
-Debt-fuelled counter-cyclical capacity wins the chicken game; the losers go bankrupt. Japan's VLSI-Project five (NEC, Toshiba, Hitachi, Fujitsu, Mitsubishi) held ~80% share in 1985; Korea — Samsung's 1983 "Tokyo Declaration," chaebols running 300–500% debt/equity — displaced them. The casualties: Qimonda (insolvent 2009, after DRAM prices fell 85% in 2007 and 58% in 2008), Elpida (bankrupt 2012, bought by Micron). Even the winner nearly died: Hynix lost ~5tn won in 2001 (prices −80%) and survived only on a ~$7bn creditor bailout. The end state is today's three-player oligopoly with pricing power.
+Conditioning on a worst-decile down day, the shock-conditional forward return is **higher** than the unconditional baseline at all four horizons, and the post-shock win-rate is higher too. Mean of the four spreads **+1.37%**, median **+1.09%**, **4/4 (100%) positive** — the wrong sign for a spiral.
 
-## Claim 2 — Korea's own index confirms the cyclicality: 4 drawdowns, median −48%
+| Horizon | n shock | shock mean | base mean | spread (shock−base) | shock win% | base win% |
+|--------:|--------:|-----------:|----------:|--------------------:|-----------:|----------:|
+| 5d  | 253 | +0.97% | +0.36% | **+0.61%** | 58.5 | 54.9 |
+| 10d | 252 | +1.72% | +0.69% | **+1.04%** | 61.1 | 54.4 |
+| 21d | 249 | +2.54% | +1.41% | **+1.14%** | 63.1 | 55.3 |
+| 63d | 238 | +6.34% | +3.66% | **+2.68%** | 57.1 | 56.0 |
 
-On the 45-year index, Korea has had **four drawdowns ≥30%** since 1981 — 1989–92 (−49%), the Asian crisis 1994–98 (**−72%**), the GFC 2007–08 (−46%), and the 2021–22 rate bear (−32%) — a **median −48%**. The most cyclical industry in tech sits in one of the most drawdown-prone equity markets in the developed world.
+![After a worst-decile down day: rebound, not spiral (conditional > unconditional)](ds_conditional_return.png)
 
-![Korea equity index, 1981–2026, drawdowns ≥30% shaded](kr_index_cycle.png)
+## Claim 2 — The deeper the drop, the stronger the rebound — and that's the only significant signal
 
-## Claim 3 — The 2026 melt-up is a 3.8-sigma, 97th-percentile event
+A real spiral should bite hardest in the extreme tail. Here the rebound does. The worst-2.5% days are the only cells in the whole study whose bootstrap CI clears zero — and they clear it on the **positive** (rebound) side.
 
-The index rose **+145% in the 12 months to April 2026** — the **97th percentile** of every rolling-12-month window since 1982 (z = +3.8). Only one window in 45 years was larger: **+198% into 1999**, immediately before the dot-com bust. The KOSPI set a record close near **8,476** in late May (up ~75% year-to-date), but breadth was thin — **82% of listed stocks fell** in the month it hit that high (Seoul Economic Daily), with the gains concentrated in Samsung and SK Hynix (together >50% of the index, each near $1tn on the HBM / AI-memory supercycle).
+| Tail | Horizon | n | spread | 95% block-bootstrap CI | significant? |
+|-----:|--------:|--:|-------:|-----------------------:|:------------:|
+| worst-5%   | 21d | 124 | +2.00% | [−1.2, +5.5] | no |
+| worst-5%   | 63d | 115 | +4.10% | [−3.2, +12.3] | no |
+| **worst-2.5%** | **21d** | **62** | **+4.79%** | **[+2.0, +7.9]** | **yes** |
+| **worst-2.5%** | **63d** | **55** | **+8.30%** | **[+1.5, +14.2]** | **yes** |
 
-![Rolling 12-month return — the 2026 surge in 45-year context](kr_12m_return.png)
+Out of sample (threshold fit on the train half, tested on the later half), the Korea-proxy sign holds: shock → mild positive 21d spread (+0.55%). No spiral out of sample.
 
-## Claim 4 — Record retail leverage meets blunt forced-liquidation plumbing
+## Claim 3 — Korea's conditional downside is never *worse* than US single-name memory
 
-Retail investors ("ants," 개미) drove margin debt to a record **~36tn won** (about $24bn, +33% year-on-year, at 7–9% interest) — up from roughly **$5bn in 2020** (Morningstar). The mechanism: breach a 140% collateral ratio, or miss the two-day settlement deadline, and the broker force-sells (반대매매) at the next session, into a ±30% daily price limit (raised from ±15% in 2015). The financial supervisor (FSS) has warned the liquidation is blunt — a small shortfall can trigger a far larger forced sale. Forced selling lowers the price, which breaches more accounts: a cascade the price limit caps in speed but does not stop.
+On identical conditioning, the Korea proxy's shock-conditional spread beats the US single-name set at every horizon, and its subsequent drawdowns run roughly **half** as deep.
 
-![Korea retail margin debt to a record ~36tn won in 2026](kr_margin_debt.png)
+| Horizon | Korea-proxy spread | US single-name spread | Korea shock-drawdown | US shock-drawdown | Korea worse? |
+|--------:|-------------------:|----------------------:|---------------------:|------------------:|:------------:|
+| 5d  | +0.61% | −0.32% | −3.13% | −5.80% | No |
+| 10d | +1.04% | +0.47% | −4.81% | −8.70% | No |
+| 21d | +1.14% | −0.30% | −7.14% | −12.76% | No |
+| 63d | +2.68% | −0.24% | −12.03% | −20.10% | No |
 
-## Claim 5 (synthesis) — In 2026 the two cycles converge
+![Subsequent 21d drawdown is deeper after a shock — but similarly in Korea and US](ds_conditional_drawdown.png)
 
-The capital cycle (Claims 1–2) says memory will turn; the leverage machinery (Claim 4) decides whether that turn is a broadening or a cascade. Hynix 2001 and Qimonda 2009 are what the industry's downside looks like; a 3.8-sigma melt-up on record leverage is what the upside has built. The early-warning lights are already on — foreign investors sold ~$13bn of Korean equities in a single week in May with KOSPI volatility near records (CNBC).
+**Answer (data-proven): No death spiral.** Sharp drops in the Korea proxy are followed by rebound, strongest and only significant in the deepest tail — the opposite of leverage-driven negative continuation. It holds out-of-sample and is not unique to Korea. The verdict is hedged **Conditional** only because the true Korea single-name limb is data-blocked.
 
-## The answer, in the data
-
-**Q: Is Korea's 2026 setup a leverage-driven cycle risk?**
-**A: Conditional-Yes** — every ingredient is documented and at record extremes; the trigger (a memory downcycle) is historically reliable but unscheduled.
-
-| Metric | Reading |
+| Summary | Reading |
 |---|---|
-| Korea drawdowns ≥30% since 1981 | 4 (median −48%, worst −72%) |
-| 2026 twelve-month melt-up | +145% (97th percentile, z +3.8) |
-| Larger 12m surge in 45 years | only 1999 (+198%, then the dot-com bust) |
-| Retail margin debt | record ~36tn won (+33% y/y, 7–9% rate) |
-| Breadth at the record high | 82% of listed stocks fell that month |
+| Conditional-spread cells positive | 4 / 4 (100%) |
+| Mean / median spread | +1.37% / +1.09% |
+| Significant cells (bootstrap CI clears 0) | 2 — both positive (rebound), both deep-tail |
+| Out-of-sample sign | holds (mild positive) |
+| Korea worse than US on any horizon | never |
 
 ## Caveats
 
-The FRED series is the OECD broad-market index (monthly, 2015=100) — a proxy for the KOSPI, not the index itself; the late-May record and YTD figures are press-sourced and moved fast. Margin-debt, breadth and concentration figures are sourced (KOFIA / Korea Exchange / press), not recomputed from account-level data. Korean single-stock (Samsung, SK Hynix) and daily index series are not in our warehouse (Yahoo blocked, stooq now key-gated), so single-name contribution is sourced, not computed. The death-spiral is a documented mechanism plus historical episodes, not a probabilistic forecast.
+- **Proxy study — the clean Korea single-name limb is data-blocked.** No long full-history Korean single-name or daily KRX index series was available, so the Korea limb runs on a diversified, USD-denominated Korea-equity ETF (~20–25% Samsung+Hynix by weight). That proxy is **dampened and currency-mixed**: it cannot capture a KOSPI-specific retail-margin call cascade and, if anything, **understates** one. The clean single-name test is impossible until a longer KRX/ADR history is sourced.
+- **The Korea-vs-US gap is largely a volatility/diversification artifact.** A diversified ~27%-vol index has milder shocks and lower vol-clustering than ~50%-vol single names *by construction* — it should **not** be read as evidence of a Korea-specific absence of leverage stress.
+- **The rebound is not Korea-specific.** US storage names show the same post-shock rebound; the Korea proxy is simply the lowest-vol instance with the tightest bootstrap CI, so its deep-tail cell is the one that clears significance. The honest read is broad cross-name **mean-reversion** after sharp drops in this 2016–2026 sample, of which the Korea proxy is one (statistically cleanest) case.
+- **Sample regime.** The 2016–2026 window is dominated by a secular memory/semis bull and recoveries from sharp drops. A forced-deleveraging KOSPI event — the actual 2026 margin-record concern — may have **no analog** here. A rebound result does not certify that a genuine margin-call spiral cannot occur; only that, on the available proxy and history, sharp drops were followed by recovery, not continuation.
+- **Bootstrap honesty.** Of all conditional-spread cells, only the two deep-tail (worst-2.5%) cells clear zero; every other CI spans zero and is reported non-significant. The verdict rests on the consistent positive sign across horizons/names plus those two positive deep-tail cells — never on an over-read of a non-significant spread.
+
+## Context (the setup that motivated the test)
+
+The reason to look: DRAM is the textbook capital cycle, and in 2026 the most cyclical corner of tech carried a multi-sigma equity melt-up financed by **record retail margin debt** (~36tn won, up from roughly $5bn in 2020). Korea's own 45-year index has had four drawdowns of 30%+ (median ≈ −48%, worst ≈ −72%), and the forced-liquidation plumbing (collateral-ratio breach → broker force-sell into a daily price limit) is built to amplify a normal downcycle. The mechanism is real and documented. What this study adds is the empirical test of whether that mechanism *shows up as negative continuation in the tape* — and on the available proxy, it does not.
 
 ## References
 
 - Chancellor, E., ed. (2015). *Capital Returns: Investing Through the Capital Cycle* (Marathon Asset Management).
 - Geanakoplos, J. (2010). *The Leverage Cycle.* NBER Macroeconomics Annual.
-- Community & press: r/korea and r/Living_in_Korea (2026 KOSPI-rally threads); Financial Times ("ants pile into leveraged funds"), Axios, Morningstar, CNBC, Seoul Economic Daily; KOFIA margin data; Korea FSS forced-liquidation warning.
+- Public press / context on the 2026 Korea rally, retail margin balance and forced-liquidation rules: Financial Times, CNBC, Morningstar, Seoul Economic Daily; KOFIA margin data; Korea FSS forced-liquidation warning. Industry analysis on the memory/HBM cycle informed context only and is not quoted or reproduced.

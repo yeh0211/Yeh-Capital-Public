@@ -1,55 +1,66 @@
-# 12 — GOOGL: a five-year hold, in the megacap pack
+# 12 — Google was never the laggard the tape implied
 
-**Question.** What did a five-year GOOGL hold return — and how does it rank against the other megacaps on return *and* risk?
+**Question.** Was GOOGL a severe megacap laggard over 2022–2026 that then re-rated on identifiable catalysts? **Answer: no — the "severe laggard" was a data-quality artifact.** On clean prices GOOGL returned **+148%**, beating the clean ex-NVDA megacap basket, QQQ, and every individual megacap except NVDA. It "lagged" only against an equal-weight basket loaded with NVDA's +613%. And of five named catalysts, only the September-2025 antitrust-remedies decision survives as a real abnormal move.
 
-**Finding.** A strong hold — **+225% (≈27% CAGR), Sharpe 0.92** — but **#2 of five megacaps**, lapped by NVDA (+1,233%), and *beaten by simply holding the five equal-weight* (+335%, Sharpe 1.11). The lesson is less "GOOGL was great" than "the basket beat the pick, and NVDA was the cycle."
-
-> Research / backtested buy-and-hold; split-adjusted daily closes, 2021-04-30 → 2026-04-30 (5.0y). Benchmark is an equal-weight basket of the five names (SPY/QQQ are not in the warehouse). No live capital, no transaction costs.
+> Research / backtested. No live capital, no audited track record. The original "laggard-to-leader" conclusion was wrong — it came from a corrupted price series; this is the corrected study, and the corrected verdict is more boring than the first one.
 
 ## Data & method
 
-- `daily_bars` split-adjusted close; GOOGL, MSFT, AAPL, AMZN, NVDA (META is not in the warehouse).
-- Per name: total return, CAGR, annualised volatility, Sharpe (rf = 0), maximum drawdown. An equal-weight buy-and-hold basket of the five is the in-sample benchmark.
+Daily prices for GOOGL and five megacap peers, 2022-01-03 → 2026-06-03 (n = 1,108 trading days). The first pass mis-loaded a corrupted peer series (one name read as ~$15 in early 2022 versus a true ~$338), which inflated the equal-weight peer basket roughly twelvefold mid-2022 and manufactured a fake relative-strength collapse. The fix stitches each name's clean half-window into one continuous, sanity-checked series, then recomputes relative strength against three benchmarks (clean ex-NVDA peers, the full NVDA-inclusive basket, and QQQ). Catalysts are tested with an event study: cumulative abnormal return (CAR) of GOOGL minus QQQ, significance from a 10,000-draw permutation null over random contiguous windows.
 
-## Claim 1 — GOOGL returned +225% (27% CAGR), Sharpe 0.92
+## Claim 1 — On clean data, GOOGL led the field (+148%), not lagged it
 
-$10,000 became about **$32,500**. Annualised volatility 31%; a −44% maximum drawdown (2022) was the price of the ride. A genuinely strong five-year compounding.
+With the corrupted series replaced, GOOGL returned **+148%** over the full window — ahead of the clean ex-NVDA basket (+57%), QQQ (+85%), and every individual peer. The only name to beat it was NVDA. The dramatic "RS 100 → 11 collapse" in the original was entirely the bad-data inflation; the clean GOOGL/peers relative-strength line dips to a trough of just **83** (a mild −17%), not 11.
 
-![GOOGL vs the megacap basket, 2021–2026 (log)](googl_basket.png)
+| Name | Total return (2022-01 → 2026-06) | Beats GOOGL? |
+|---|---:|:--:|
+| **GOOGL** | **+148%** | — |
+| Meta (stitched clean) | +84% | no |
+| AAPL | +71% | no |
+| AMZN | +47% | no |
+| MSFT | +28% | no |
+| NVDA | +613% | yes |
 
-## Claim 2 — But it was #2 of five, and the basket beat it
+GOOGL beats **5 of 6** megacaps. The "laggard" label only holds against an equal-weight basket that includes NVDA's +613% — i.e. it is benchmark-dependent, not a property of GOOGL.
 
-Ranked among the five, GOOGL is **#2 on total return and #2 on Sharpe** — behind NVDA on both. Holding all five equal-weight returned **+335% at a higher Sharpe (1.11)** with the same −44% drawdown: diversifying across the megacaps beat the single pick on return *and* risk-adjusted return.
+![Relative strength is benchmark-dependent; only the DOJ-remedies catalyst is significant](googl_timeline.png)
 
-| Name | Total | CAGR | Vol | Sharpe | Max DD |
-|---|---:|---:|---:|---:|---:|
-| NVDA | +1,233% | 68% | 52% | 1.27 | −66% |
-| **EW basket** | **+335%** | **34%** | **33%** | **1.11** | **−44%** |
-| **GOOGL** | **+225%** | **27%** | **31%** | **0.92** | **−44%** |
-| AAPL | +108% | 16% | 28% | 0.74 | −33% |
-| MSFT | +59% | 10% | 26% | 0.52 | −38% |
-| AMZN | +50% | 8% | 36% | 0.40 | −56% |
+## Claim 2 — Only one catalyst is real; most of the re-rating is diffuse alpha
 
-## Claim 3 — NVDA was the cycle
+Of five widely-cited catalysts, four are noise once dated and windowed honestly. Only the **DOJ search-remedies decision (2025-09-02)** clears significance, with a **+11.0%** CAR versus QQQ (permutation p = 0.007). Notably, "Gemini 2.0" looked significant in a naive window only because the window swallowed a separate quantum-chip pop the day before; isolating the actual Gemini 2.0 days collapses it to +0.7% (p = 0.69).
 
-NVDA's +1,233% (Sharpe 1.27, but a −66% drawdown en route) dwarfs the field. It, not the platform names, was the AI-megacap trade of 2021–2026 — consistent with the concentration finding in study 11.
+| Catalyst | Date | Phase | CAR vs QQQ | perm p | Significant? |
+|---|---|---|---:|---:|:--:|
+| Gemini 1.0 | 2023-12-06 | laggard | +0.9% | 0.74 | no |
+| First dividend | 2024-04-25 | laggard | +3.5% | 0.24 | no |
+| DOJ search ruling | 2024-08-05 | laggard | −2.7% | 0.34 | no |
+| Gemini 2.0 | 2024-12-11 | laggard | +0.7% | 0.69 | no |
+| **DOJ remedies** | **2025-09-02** | **leader** | **+11.0%** | **0.007** | **yes** |
+
+Named catalysts explain only about **24%** of the post-2025-07-16 leader-phase re-rating; the rest is diffuse alpha (leader-phase annualised alpha +58% vs QQQ at beta ≈ 1.0). The "leader phase" is real, but it is mostly broad outperformance, not event pops.
 
 ## The answer, in the data
 
-**Q: Was a five-year GOOGL hold a good outcome?**
-**A: Yes — but not the best.** It was #2 of five and was beaten by the equal-weight basket on both return and Sharpe.
+**Q: Was GOOGL a severe laggard that re-rated on clear catalysts?**
+**A: No (benchmark-dependent at best).** On clean prices it led the clean megacap basket and QQQ and beat 5 of 6 peers; it trails only an NVDA-loaded equal-weight basket. Of five named catalysts, exactly one (DOJ remedies, +11.0%, p = 0.007) is statistically real.
 
-| | Total | Sharpe | Rank (of 5) |
-|---|---:|---:|---:|
-| GOOGL | +225% | 0.92 | #2 / #2 |
-| EW basket | +335% | 1.11 | — |
-| NVDA | +1,233% | 1.27 | #1 / #1 |
+| | Value | Verdict |
+|---|---:|---|
+| GOOGL full-window total | +148% | led 5 of 6 megacaps |
+| Clean ex-NVDA basket / QQQ | +57% / +85% | GOOGL beats both |
+| "Laggard" only vs NVDA-loaded basket | yes | benchmark-dependent |
+| Significant catalysts (of 5) | 1 | DOJ remedies only |
+| Catalyst share of re-rating | 24% | rest is diffuse alpha |
 
 ## Caveats
 
-Buy-and-hold, no costs or taxes; rf = 0 for Sharpe. META, SPY and QQQ are not in the warehouse, so the benchmark is an in-sample equal-weight basket of five, not the index. The window ends at the 2026-04-30 data cutoff, so figures differ slightly from a live-close mark.
+- **The "laggard" call is entirely benchmark choice.** Against clean megacaps and QQQ, GOOGL led; against an NVDA-loaded equal-weight, it trailed. Neither is wrong — they answer different questions. We default to the clean ex-NVDA peer set as the fairer comparison.
+- **The whole original conclusion was a data bug.** Two price series were each clean on only half the window; using either alone corrupts part of the study. This is the corrected version — a cautionary tale about trusting a single vendor series end-to-end.
+- **Descriptive event study, not a tradeable signal.** Five events, one survivor, in-sample phase split (the laggard/leader pivot is the trough of the same RS line). No out-of-sample forward test is claimed for the catalysts or the leader-phase alpha.
+- **Event-date precision.** Rulings can land after-hours; the ±1-day window absorbs that, which is exactly what made the Gemini 2.0 read fragile. The DOJ-remedies move is on the event day itself and large relative to the null, so it is robust.
 
 ## References
 
-- Bessembinder, H. (2018). *Do stocks outperform Treasury bills?* Journal of Financial Economics — a few names create most long-run wealth; the basket-beats-the-pick result here is the same phenomenon.
-- Community: the recurring r/investing / Bogleheads debate — index-or-basket vs single-name megacap picking.
+- Public market price history for GOOGL and megacap peers, 2022–2026.
+- Public event dates: Gemini 1.0/2.0 launch announcements, Alphabet's first dividend declaration, and the DOJ antitrust search rulings (2024 liability finding; 2025 remedies decision).
+- General market context informed by industry analysis (e.g. specialist sector research); no third-party material is quoted or reproduced.

@@ -1,54 +1,64 @@
-# 13 — Is gold collapse insurance? It's a real-rate trade, not a crash hedge
+# 13 — Bitcoin is a risk asset, not digital gold
 
-**Question.** Anchored on the 2000 dot-com top: when equities collapse, does gold rise — is it insurance you can hold *through* a crash? Today gold looks toppy, yet if a collapse is feared it "should" be bid. Which reading is right?
+**Question.** In equity selloffs, does Bitcoin behave like GOLD (a safe haven with low or negative crash beta) or like a RISK ASSET — and over time, is its behavior converging toward equities or toward gold? **Answer:** Bitcoin is a high-beta risk asset converging toward equities. Gold is the better crash diversifier, though not the always-up haven its reputation implies.
 
-**Finding.** Gold is **not** a clean intra-crash hedge. What actually drives it is the **real interest rate**: monthly gold returns fall about **0.09% for every basis point** the 10-year real yield rises (t = −7.7, p ≈ 3e-13, n = 281). Across all eight Nasdaq drawdowns ≥15% since 1990, gold's median return *during* the decline was only **+3%**, and it fell in three of them. Gold is a post-easing, falling-real-rate reflation trade — not collapse insurance. Today (real 10y ≈ +2%, VIX ≈ 16) is the macro *opposite* of the 2000–02 and 2008 setups in which gold worked.
-
-> Research / backtested. Monthly LBMA gold vs US Treasury real yields (TIPS, 2003+) and a CPI-based real-rate proxy (1995+); algorithmic drawdown detection on the Nasdaq Composite. No live capital.
+> Research / backtested. No live capital, no audited track record. The per-selloff read rests on only eight episodes; the statistical weight is in the ~2,500-day daily-beta and rolling-correlation tests.
 
 ## Data & method
 
-- **Gold:** LBMA PM fix (USD), month-end. **Real yield:** US Treasury 10-year TIPS (DFII10); pre-2003 proxy = nominal 10y (DGS10) − trailing CPI YoY (BLS). **Equity:** Nasdaq Composite. **Volatility:** CBOE VIX.
-- **Regression:** OLS of monthly gold return on the monthly change in the real yield; reported with t-stat, R², p-value.
-- **Drawdowns:** programmatic detection of every Nasdaq peak-to-trough ≥15% since 1990 (8 episodes); gold's return and worst intra-episode drawdown measured over each window.
+- **Panel:** a single aligned daily series for SPY, gold, and Bitcoin from 2016-05-18 to 2026-06-03 — about **2,525 trading-day rows / 2,524 daily-return observations**. The window is **data-availability-limited, not chosen**: it is simply the full overlap for which all three series exist, so it is not a cherry-picked regime.
+- **Selloff episodes:** every SPY peak-to-trough drawdown of **8% or more** (walk the running peak; open on the first 8% breach, close on a new high). Eight episodes. For each, gold's and Bitcoin's contemporaneous peak-to-trough return.
+- **Crash beta:** OLS beta of each asset's daily return on SPY's — computed full-sample, on down-days only, and on the worst-5% SPY tail days. Returns winsorized at ±50% as a bad-tick guard.
+- **Convergence test:** 90-day rolling correlation of daily returns for BTC-SPY, BTC-gold, and gold-SPY, with a per-year OLS slope and a first-half vs second-half split. Significance of the shift checked with **block-bootstrap confidence intervals** (63-day blocks) on the half-means.
 
-## Claim 1 — Gold is priced off the real rate (t = −7.7)
+## Claim 1 — In selloffs, gold cushions and Bitcoin amplifies
 
-Monthly gold return regressed on the change in the 10-year real yield: slope **−0.093%/bp** (t **−7.7**, R² 0.17, p ≈ 2.5e-13, n = 281). A CPI-proxy real rate back to 1995 agrees in sign (slope −0.019, t −3.5, n = 365). Real rates, not equity fear, set the trend.
+Across eight SPY selloffs (≥8% peak-to-trough), gold beat SPY (fell less or rose) in **7 of 8**; Bitcoin fell in **8 of 8** and fell *more than SPY* in **7 of 8**. In the COVID and 2022 episodes Bitcoin amplified the equity drawdown rather than cushioning it. Gold is the better diversifier — but not a clean always-up haven: it was outright positive in only 2 of 8 selloffs (median −3.0%).
 
-![Monthly gold return vs change in the 10y real yield](gold_realrate_scatter.png)
+| Asset | n | % positive | % beat SPY | Median | Mean |
+|---|--:|--:|--:|--:|--:|
+| **Gold** | 8 | 25% (2/8) | 88% (7/8) | **−3.0%** | −3.0% |
+| **Bitcoin** | 8 | 0% (0/8) | 12% (1/8) | **−28.8%** | −29.9% |
+| (SPY, ref.) | 8 | 0% | — | −14.6% | −17.0% |
 
-## Claim 2 — It does not move *against* equities
+![Crash behaviour: gold cushions, Bitcoin amplifies, across eight SPY selloffs](fig_selloffs.png)
 
-The monthly gold–Nasdaq return correlation is **+0.03** (n = 377) — essentially zero, not negative. On a rolling 24-month basis it swings from roughly −0.4 to +0.6 depending on the regime; there is no stable hedge to lean on.
+## Claim 2 — Bitcoin's crash beta is equity-like and rises into stress
 
-![Rolling 24-month gold–Nasdaq correlation](gold_rolling_corr.png)
+On daily returns, gold's beta to SPY is statistically indistinguishable from zero, while Bitcoin's is equity-like and *grows* as conditions worsen.
 
-## Claim 3 — Through the crashes, gold's record is mixed (median +3%)
+| Asset | beta (all) | 95% CI | beta (down-days) | beta (tail-5%) |
+|---|--:|--:|--:|--:|
+| **Gold** | 0.08 | [−0.02, 0.15] | 0.09 | **+0.37** |
+| **Bitcoin** | 0.94 | [0.70, 1.14] | 1.19 | **1.68** |
 
-Across all eight Nasdaq drawdowns ≥15% since 1990, gold's median return during the decline was **+3%** — positive in **5/8** but negative in three (incl. COVID-2020 −5% and the 2022 rate bear −3%), and it drew down more than 5% intra-episode in five of eight (−20% in 2022). Where gold *did* work — 2000–02 (+10%) and 2008 (+17% over the full window) — real rates were falling hard. Where real rates rose (2022), gold fell alongside stocks.
+n = 2,524 daily-return observations; down-days n = 1,124; worst-5% tail n = 127. Gold's *tail* beta is **positive (+0.37)** — in the worst equity days it tends to slip *with* equities, not rally against them, so "negative-beta hedge" overstates it; "low beta, falls far less" is the honest framing. Bitcoin's beta climbs from ~0.94 all-days to ~1.19 on down-days to ~1.68 in the tail. The popular "3× Nasdaq" label overstates typical co-movement: average crash beta is ~0.9–1.2, and even the tail is ~2×, not 3×.
 
-| Nasdaq drawdown | equity DD | gold during | gold max DD |
-|---|---|---|---|
-| 1996 | −17% | −1% | −2% |
-| 1998 | −30% | +2% | −7% |
-| 2000–02 | −78% | +10% | −12% |
-| 2015–16 | −18% | +12% | −11% |
-| 2018 | −24% | +4% | −3% |
-| 2020 (COVID) | −30% | −5% | −12% |
-| 2021–22 (rate bear) | −36% | −3% | −20% |
-| 2024–25 | −24% | +14% | −4% |
-| **median** | **−27%** | **+3%** | **−9%** |
+![Daily co-movement with SPY: gold is flat, Bitcoin slopes up like a risk asset](fig_scatter_beta.png)
 
-## Claim 4 — Today is the inverse of the setups where gold worked
+## Claim 3 — Bitcoin is converging toward equities, away from gold
 
-Gold sits near its multi-decade real highs but about 18% below its 52-week peak, with the 10-year real yield near **+2%** and VIX near **16**. The conditions that powered gold in 2000–02 and 2008 — deeply falling real rates and panic-level volatility — are absent. The "topping vs. should-be-bid" tension resolves toward the real rate: absent a real-rate decline, an equity wobble alone has not historically been sufficient to bid gold. Own it as a real-rate / debasement position, most useful *after* easing begins — not as first-leg-down insurance.
+Splitting the panel in half by time, Bitcoin's 90-day correlation to SPY roughly **quadruples**, from **0.08 [0.00, 0.18]** to **0.37 [0.30, 0.45]** — the two bootstrap CIs are **disjoint**, so the rise is a real shift, not noise. Over the same horizon its correlation to gold drifts the *other* way, down toward ~0.04.
+
+| Pair | Mean | 1st half | 2nd half | Slope/yr |
+|---|--:|--:|--:|--:|
+| **BTC vs SPY** | 0.23 | 0.08 | **0.37** | +0.057 |
+| BTC vs Gold | 0.09 | 0.13 | 0.04 | −0.003 |
+| Gold vs SPY | 0.01 | −0.01 | 0.03 | +0.020 |
+
+![Convergence: Bitcoin's correlation drifts toward equities, not gold](fig_rolling_corr.png)
+
+**Answer — No, Bitcoin is not digital gold.** It is a high-beta risk asset whose equity correlation is rising over time. Gold remains the better (if imperfect) crash diversifier — it falls far less than equities and beats SPY in most selloffs, without reliably rallying. A **conditional No**: gold cushions, Bitcoin amplifies, and Bitcoin is converging toward equities.
 
 ## Caveats
 
-Monthly frequency misses sharp intra-month spikes (gold often catches a bid in the first days of a panic, then fades — see COVID). The TIPS real series starts in 2003; the pre-2003 proxy is coarser (R² 0.03). "Safe haven" here is a monthly-horizon, USD-denominated test; in non-USD terms the picture differs.
+- **Small episode count.** Eight selloffs is the natural sample over ~10 years of joint data; the per-episode read (medians, % positive) is directional, not high-power. The daily-beta and rolling-correlation results (n ≈ 2,500) carry the statistical weight.
+- **Gold is not a clean always-up haven.** Positive in only 2 of 8 selloffs, median −3.0%, with a positive tail beta. It failed outright in the most recent episode (down more than SPY). "Falls far less, beats SPY in 7/8" is the defensible claim, not "always rallies."
+- **"3× Nasdaq" is a tail descriptor only.** It captures the direction (amplification into stress) but overstates the magnitude of typical co-movement.
+- **Survivorship / regime risk.** Bitcoin's history is one asset over one decade of mostly ultra-loose then tightening policy. The convergence trend is consistent with maturation into a macro/risk asset, but a single-asset history cannot rule out a future regime decoupling it again.
 
 ## References
 
 - Baur & Lucey (2010). Is gold a hedge or a safe haven? An analysis of stocks, bonds and gold. *Financial Review.*
 - Erb & Harvey (2013). The Golden Dilemma. *Financial Analysts Journal.*
+- Price data: public daily closes for SPY (split-adjusted), the LBMA London gold fix, and BTC-USD.

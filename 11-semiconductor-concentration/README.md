@@ -1,101 +1,68 @@
-# 11 — Semiconductor concentration: when one stock carries the index
+# 11 — One stock is half the semis index, and winners do NOT keep winning
 
-**Question.** When a single mega-cap supplies more than 40% of an index's gain, has it happened, and what comes after? Set against the chart everyone is passing around in 2026: is this a 2000 echo for semiconductors?
+When a cap-weighted semiconductor index is rebuilt from the ground up, a single name (NVDA) supplies half its entire gain and sits at ~46% weight — yet which name leads in one year tells you essentially nothing about which leads the next.
 
-**Finding.** On a 23-name cap-weighted semis proxy (2021–2026), NVDA is **37% of the index by weight** and supplied **44% of its entire five-year gain**. Concentration peaked in 2024 (NVDA = 69% of that year's gain; only 17% of names beat the index, the narrowest year in the sample) and then resolved **by broadening, not by a crash** — by 2026, 78% of names beat the index with the index still rising.
-
-> Research / backtested. No live capital, no audited track record. This is a **23-name cap-weighted proxy, not the official PHLX SOX** — no keyless constituent-weight history exists, so the proxy stands in for the index and the multi-decade comparison is sourced, not recomputed. Read this as one cycle, not a powered multi-episode test.
+> Research / backtested. No live capital, no audited track record. Cap-weight is a closes-times-shares proxy, not an official index, and the window is one regime (2022–2026), so read concentration as a risk fact, not a timing signal.
 
 ## Data & method
 
-- **Universe:** 23 large semiconductors with full 2021–2026 history (NVDA, TSM, AVGO, AMD, QCOM, TXN, AMAT, MU, ADI, LRCX, KLAC, INTC, MRVL, NXPI, MCHP, MPWR, ON, ASML, TER, ENTG, AMKR, STM, UMC).
-- **Window:** 2021-04-30 → 2026-06-01, split-adjusted daily closes.
-- **Index:** cap-weighted, `weight_i,t = shares_i × adjusted_close_i,t`, current shares held constant (so weight moves with price; minor error from buybacks/issuance and dividend adjustment).
-- **Top-1 share of gain:** `Δ(NVDA market cap) / Δ(index market cap)` over the window or year.
-- **Breadth:** the fraction of the 23 names whose return beat the cap-weighted index over the period.
+- **Universe:** 69 US-listed semiconductors with full history over the window (semiconductor SIC classes, market cap above ~$300M), rebuilt from scratch rather than a hand-picked basket.
+- **Window:** 2022-01 → 2026-06, split-adjusted daily closes; the common panel starts when the last constituent began trading.
+- **Index:** cap-weighted proxy, weight ∝ implied shares × price; compared against an equal-weighted version of the same 69 names.
+- **Persistence test:** rank each name by calendar-year return, then measure the relationship between this-year rank and next-year return (Spearman rank correlation plus next-year outcomes by prior-year quintile). Concentration is also benchmarked against the Nasdaq-100 (cap-minus-equal gap, top-N share, Herfindahl).
 
-## The concentration is real, and it is the base case
+## Claim 1 — One name is half the gain; the index is a bet on three stocks
 
-NVDA's weight rose from 12.9% (2021) to 37.3% (2026); its **cumulative share of the proxy's gain is 44%**. Cap-weighted, the proxy returned **+360%**; equal-weighted, **+252%** — the 108-point gap *is* the concentration: the index went up far more than the average semiconductor did.
+NVDA alone supplied **50.1%** of the index's entire gain and sits at **46.4%** current weight. The top three (NVDA, AVGO, MU) account for **76%** of the gain; the top five, **85%**. Cap-weighted the proxy returned **+493%** versus **+302%** equal-weighted — and that **191-point gap is the concentration**: the index rose far more than the average semiconductor did.
 
-![Annual cumulative-return paths](e1_annual_spaghetti.png)
+| Bucket | Share of total gain | Current index weight |
+|---|---:|---:|
+| NVDA (top-1) | **50.1%** | 46.4% |
+| Top-3 (NVDA, AVGO, MU) | 76% | 70% |
+| Top-5 | 85% | 81% |
 
-![NVDA weight and share of the gain](e2_nvda_share.png)
+![Cap-weighted vs equal-weighted — the gap is the concentration](f1_cap_vs_equal.png)
 
-| Year | Proxy return | NVDA share of gain | % of names beating index |
-|---|---:|---:|---:|
-| 2021 | +28.7% | 43% | 43% |
-| 2022 | −39.3% | 26% | 52% |
-| 2023 | +86.5% | 44% | 26% |
-| 2024 | +75.0% | **69%** | **17%** |
-| 2025 | +43.8% | 37% | 52% |
-| 2026 (YTD) | +21.7% | 12% | 78% |
+## Claim 2 — Winners do NOT keep winning (year over year)
 
-![Cap-weight vs equal-weight](e3_cap_vs_equal.png)
+Year-over-year leadership is effectively random: the Spearman rank IC between one year's return rank and the next year's return is **−0.001**. Sorting names into prior-year return quintiles, the prior *losers* (Q1) slightly out-returned the prior *winners* (Q5) the following year — mild reversal, no persistence.
 
-## What happened after peak concentration
+| Prior-year quintile | n | Mean next-yr | Median next-yr | Win-rate |
+|---|---:|---:|---:|---:|
+| Q1 (losers) | 56 | **+65.8%** | +25.6% | 69.6% |
+| Q2 | 56 | +50.5% | +23.1% | 62.5% |
+| Q3 | 52 | +45.1% | +26.3% | 69.2% |
+| Q4 | 56 | +51.4% | +37.1% | 76.8% |
+| Q5 (winners) | 56 | +54.1% | +34.0% | 67.9% |
 
-2024 was the narrowest year on record here: NVDA supplied 69% of the gain while only 17% of names beat the index. What followed was **not a crash but a broadening** — in 2025 and 2026 the share of names beating the index rose to 52% then 78%, NVDA's share of the gain fell to 37% then 12%, and the index kept rising. In this one cycle, extreme narrowness resolved through the benign branch (laggards catching up), not the leader rolling over.
+![Next-year return by prior-year quintile](f4_winners.png)
 
-## Five hypotheses for "narrow leadership, then what?"
+**Answer: No.** At the annual rebalance horizon, "who carried the index last year" does not predict "who carries it next." (This is the calendar-year horizon — distinct from the 3–12 month intra-year momentum effect in the academic literature, which is a different measurement.)
 
-### H1 — Narrowness is bearish (mean-reversion)
+## Claim 3 — Semis are MORE concentrated than the Nasdaq
 
-- **Claim.** Extreme single-name concentration precedes a correction.
-- **Evidence for.** The precedent the 2026 chart invokes: into March 2000 the semis were led by a handful of names; the PHLX SOX then fell ~82% to its October 2002 trough (the Nasdaq Composite ~78%), and Intel alone warned in September 2000 and dropped ~40% in a single day. In May 2026 Goldman's Ben Snider flagged S&P 500 breadth as one of the narrowest readings since the dot-com era; BofA's Michael Hartnett warned that AI-stock euphoria and concentration were nearing historic extremes.
-- **Evidence against (in-sample).** Peak narrowness (2024) was followed by broadening and further gains, not reversal.
-- **Literature.** De Bondt & Thaler (1985) on long-horizon overreaction/reversal.
-- **Verdict.** A real historical precedent that did **not** bind this cycle. Narrowness looks necessary-but-not-sufficient for a top.
+Top-1 weight is **46%**, top-3 **70%**, top-5 **81%**, Herfindahl **0.258**. The cap-minus-equal cumulative gap is **+106 points for semis** (SOXX − XSD) versus **+80 points for the Nasdaq-100** (QQQ − QQEW) — semis lean harder on their giants than the broad large-cap tech index does.
 
-### H2 — Leadership persists (momentum)
-
-- **Claim.** Concentration is a feature of powerful secular trends, not a timing signal; the leader keeps leading until it doesn't.
-- **Evidence for (in-sample).** NVDA's share of the gain was extreme through 2023–2024 (peaking near 69%) and the index kept rising the whole time.
-- **Literature.** Jegadeesh & Titman (1993) on momentum.
-- **Evidence against.** Momentum regimes end abruptly and the framework says nothing about *when*.
-- **Verdict.** The best in-sample description of 2021–2026 so far, but not a risk signal.
-
-### H3 — The bimodal fork (catch-up vs roll-over)
-
-- **Claim.** Extreme concentration resolves one of two ways: laggards broaden in (healthy continuation) or the leader rolls over and concentration unwinds violently.
-- **Evidence (in-sample).** This cycle took the **catch-up branch** — breadth went from 17% (2024) to 78% (2026).
-- **Proposed selector.** Which branch is taken is plausibly read off the leader's own trend (e.g., NVDA breaking its 21-day EMA) and valuation, rather than the concentration level itself.
-- **Verdict.** The most useful framing; 2026 chose the benign branch, but the selector, not the concentration, is what to monitor.
-
-### H4 — Concentration is normal (Bessembinder base-rate)
-
-- **Claim.** A tiny minority of stocks create all long-run wealth, so "a few names drive everything" is the historical norm and has weak stand-alone predictive power.
-- **Literature.** Bessembinder (2018, *JFE*), "Do stocks outperform Treasury bills?"
-- **Verdict.** A caution to the bears: a 44% top-1 share of the gain is extreme, but extreme is closer to normal than the alarm suggests; concentration alone is not a sell signal.
-
-### H5 — Bearish only when the leader is expensive (the conditioner)
-
-- **Claim.** The interaction term — concentration **×** an expensively-valued leader — carries the signal, not concentration alone.
-- **Evidence for.** 2000's leaders (Cisco, Intel) rolled over from extreme multiples; concentration with a reasonably-valued leader can persist.
-- **Open question.** Whether NVDA's current multiple sits in the 2000 zone is the live, unresolved variable.
-- **Verdict.** The conditioner to watch; it is what would distinguish a 2000 echo from a continuation.
+![Semis concentration over time, and the cap-vs-equal gap vs Nasdaq](f5_concentration.png)
 
 ## The answer, in the data
 
-**Q: When one stock supplies >40% of an index's gain, what comes next?**
-**A: Conditional — broadening, not a crash, in this cycle.** Peak narrowness did not bind; the signal is the *conditioner* (an expensive leader), not the concentration level.
+- **Is one stock half the index?** **Yes** — NVDA is 50.1% of the gain, 46.4% of weight; three names are 76% of the gain.
+- **Do winners keep winning year to year?** **No** — Spearman IC = −0.001; prior losers slightly beat prior winners next year.
+- **Are semis more concentrated than the Nasdaq?** **Yes** — Herfindahl 0.258, and a wider cap-vs-equal gap than QQQ.
 
-| Year | NVDA share of gain | % of names beating index |
-|---|---:|---:|
-| 2024 (peak narrowness) | 69% | 17% |
-| 2025 | 37% | 52% |
-| 2026 YTD | 12% | 78% |
+Net: the semis index is a concentrated bet on a handful of names, that concentration is a **risk-management fact, not a timing signal**, and you cannot predict next year's leader from this year's.
 
-Extreme narrowness (2024) resolved by laggards catching up, with the index still rising — the benign branch.
+## Caveats
 
-## Caveats & reproducibility
-
-A cap-weighted proxy, not the official SOX; current shares held constant; one cycle, not a powered multi-episode test; the 2000 SOX/Nasdaq figures and the 2026 breadth commentary are sourced, not recomputed here. Universe, window, weighting, and metrics are stated above so the result can be challenged.
+- Cap-weight is a closes-times-shares proxy with shares held at last close — minor error from buybacks, issuance, and dividend adjustment; it is not the official PHLX SOX or any vendor index.
+- One regime (2022–2026), a single AI-driven bull leg; the persistence null is annual-horizon only and says nothing about intra-year momentum.
+- Survivorship: the 69-name common panel requires full-window history, so names that delisted or IPO'd mid-window are excluded, which can bias the cross-section of returns upward.
+- The Nasdaq comparison uses liquid ETF pairs as stand-ins for cap- vs equal-weight, not reconstructed constituent weights.
 
 ## References
 
-- Bessembinder, H. (2018). *Do stocks outperform Treasury bills?* Journal of Financial Economics.
-- Jegadeesh, N. & Titman, S. (1993). *Returns to buying winners and selling losers.* Journal of Finance.
-- De Bondt, W. & Thaler, R. (1985). *Does the stock market overreact?* Journal of Finance.
-- PHLX Semiconductor Index (SOX) drawdown, 2000–2002 (public market data); Goldman Sachs (Ben Snider) and BofA (Michael Hartnett) market-breadth commentary, 2026.
-- Community: r/stocks and r/investing "is NVDA the whole market?" / breadth-and-concentration debate through 2026.
+- Bessembinder, H. (2018). *Do stocks outperform Treasury bills?* Journal of Financial Economics — base rate that a few names drive most long-run wealth.
+- Jegadeesh, N. & Titman, S. (1993). *Returns to buying winners and selling losers.* Journal of Finance — the 3–12 month momentum horizon, distinct from the annual-rebalance test here.
+- Public market data for SOXX / XSD / QQQ / QQEW and the constituent price histories.
+- Industry analysis (e.g., specialist sector research) informed sector context only; no third-party material is reproduced.

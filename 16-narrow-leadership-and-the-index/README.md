@@ -1,70 +1,85 @@
-# 16 — Narrow leadership and the index: does concentration predict the market?
+# 16 — No popular breadth warning survives an honest test
 
-**Question.** When a handful of mega-caps carry the index — MAG7 outrunning the market, one sector dominating, breadth thinning while price makes new highs — is that bullish, bearish, or just noise for forward returns?
+**Question.** Narrow leadership, a weak advance-decline line, the McClellan oscillator rolling over, new-high/new-low deterioration, cap-over-equal momentum, a bearish A/D divergence — does *any* of the breadth "warnings" that get cited every cycle actually predict forward S&P returns? **Answer: no.** Across the whole battery, the signs are mostly the *opposite* of the folklore, the magnitudes are economically small, and every conditional difference has a confidence interval that crosses zero.
 
-**Finding.** Mostly noise. Concentration is a **risk-management** issue, not a **timing** signal. Tested three ways over 10 years (2016–2026, current to 2026-06-03): (1) MAG7 relative strength has **no forward-predictive edge** for the index (3-month IC +0.01, bootstrap CI [−0.20, +0.22]); (2) betting on a single sector beats the index only **3 times in 13**, with **zero winner-persistence**; (3) "index near highs while most stocks sit below their 200-day trend" is **not bearish** — forward returns ran *slightly higher* than baseline (not significant), and a model stacking the canonical recession/drawdown flags **failed out-of-sample** (AUC 0.14, Brier worse than the base rate). A textbook Goyal-Welch result.
-
-> Research / backtested. Daily data 2016–2026 (current to 2026-06-03) from a ~24,700-ticker warehouse; breadth from a 2,312-name liquid universe; macro from US Treasury + CBOE + FRED. Block-bootstrap CIs, walk-forward out-of-sample, calibration. No live capital, no costs.
+> Research / backtested. No live capital, no audited track record. The one faint residue (a de-risking overlay) rests on a single crash, so it cannot be called a robust, repeatable edge.
 
 ## Data & method
 
-- **Prices:** SPY / QQQ / RSP + MAG7 + 13 sector/semis ETFs, 10 years. **Breadth:** % of 2,312 liquid names above their own 200-day SMA. **Macro flags, each with an academic anchor:** trend (price < 200-day MA — Faber; Moskowitz-Ooi-Pedersen), yield-curve term spread 10y−3m (Estrella-Mishkin), credit spread (HY OAS — Gilchrist-Zakrajšek, recent-window only), breadth divergence.
-- **Discipline:** features are point-in-time (no look-ahead); overlapping forward windows handled with a 63-day **block-bootstrap**; the drawdown model uses **walk-forward out-of-sample** + a calibration check; every conditional result is shown against the unconditional base rate.
+- **Sample.** ~10 years of daily data (2016–2026, current to 2026-06). Forward returns measured on the S&P at 21 / 63 / 126-day horizons. Breadth gauges built from a broad liquid-name panel; index-level momentum from a cap-weight-vs-equal-weight pair.
+- **Indicators tested** (each oriented so a *low* reading is the bearish warning): % of stocks above their 200-day average, % above 50-day, advance-decline line, new-high/new-low index, McClellan oscillator, cap-vs-equal-weight 63-day momentum, and the classic A/D-line bearish-divergence event (price at a 20-day high while the A/D line is not).
+- **Tests.** (a) Spearman information coefficient of each level vs forward return; (b) conditional forward return when the warning is on (bottom-quintile reading) vs the rest, with a **95% block-bootstrap CI** on the difference to handle overlapping windows; (c) a **walk-forward, no-look-ahead out-of-sample** overlay that goes to cash on warning days, benchmarked against buy-and-hold.
 
-## Claim 1 — MAG7 leadership doesn't predict the index
+## Claim 1 — The breadth level points the *wrong way* (or nowhere)
 
-MAG7 (equal-weight) returned **+3,788%** over the decade versus the S&P's +268% — but its *relative strength* carries no forward signal: the 3-month information coefficient of MAG7-RS vs forward S&P return is **+0.01** (bootstrap 95% CI [−0.20, +0.22]; top-minus-bottom quintile +0.1pp, t 0.2). A strong −0.49 reading on a 2-year window evaporated on the full decade — it was a 2024–25 regime artifact, not a law.
+If "narrow breadth is a warning," a *high* breadth reading should precede *higher* returns. It does the opposite, weakly: the information coefficients for every breadth gauge are tiny and **negative** — high breadth weakly precedes *lower* forward returns, because breadth is high precisely when the market has already run. The only positive-IC series is cap-vs-equal momentum, and it is near zero. None of these is a usable directional signal.
 
-![MAG7 vs S&P 500 vs equal-weight S&P, 2016–2026](mag7_vs_index.png)
+![Spearman IC of each breadth level vs forward S&P return — near-zero, mostly the wrong sign](breadth_ic_heatmap.png)
 
-## Claim 2 — One sector: huge upside if right, but the index wins the base rate
+| Indicator | IC 21d | IC 63d | IC 126d |
+|---|---:|---:|---:|
+| % above 200dma | −0.14 | −0.10 | −0.09 |
+| % above 50dma | −0.13 | −0.06 | −0.03 |
+| A/D line (63d dev) | −0.13 | −0.05 | −0.07 |
+| NH-NL Hi-Lo index | −0.13 | −0.09 | −0.12 |
+| McClellan oscillator | −0.07 | −0.01 | −0.06 |
+| Cap-vs-equal 63d momentum | +0.06 | +0.05 | +0.00 |
 
-Over 10 years only **3 of 13** sectors beat the S&P (SMH +2,005%, SOXX, XLK); the *average* sector trailed on risk-adjusted return (Sharpe **0.61 vs 0.81**). The best-minus-worst single-window spread is wide (+32 / −25pp at 12 months), but winner **persistence is ~zero** (quarter-to-quarter rank IC +0.04) — the upside is a timing bet, not a capturable edge.
+## Claim 2 — When the warning is ON, forward returns are if anything *higher* — and never significant
 
-![Single-sector return vs S&P 500, 10 years](sector_vs_spy.png)
+Conditioning on the warning being on (bottom-quintile reading), the 63-day forward S&P return is on average **higher** than the rest of the sample, not lower — the diffs are *positive*. And every single one is statistically insignificant: the 95% block-bootstrap CI on the warning-minus-rest difference crosses zero in all six cases. The warnings do not even point the right way, let alone clear the bar.
 
-## Claim 3 — "Narrow at highs" is not bearish (it cries wolf)
+![Conditional 63-day return, warning-ON minus rest, with 95% bootstrap CIs — every interval crosses zero](breadth_conditional_63d.png)
 
-Conditioning on the divergence state — S&P within 5% of its 52-week high while **more than half of stocks are below their 200-day MA** (124 such days) — forward returns were *slightly higher* than baseline, not lower: 3-month **+4.0% vs +3.3%** base (median +6.9% vs +4.2%), and forward drawdown was identical (−4.9% vs −4.5%). The block-bootstrapped mean-difference is **not significant** at any horizon (3-month +0.7pp, 95% CI [−4.1, +3.5]). This matches the Hindenburg-Omen evidence (~20% accuracy, false-positive-prone) and the "narrow markets aren't a bad omen" research.
+| Indicator (warning = low reading) | n_warn | % positive | mean fwd 63d | vs rest | diff [95% CI] | significant? |
+|---|---:|---:|---:|---:|---:|:--|
+| % above 200dma | 473 | 68.5% | +5.2% | +2.9% | +2.3pp [−2.9, +7.5] | No (ns) |
+| % above 50dma | 475 | 73.9% | +5.3% | +2.9% | +2.5pp [−1.2, +6.0] | No (ns) |
+| A/D line (63d dev) | 483 | 69.4% | +4.5% | +3.1% | +1.4pp [−3.2, +5.9] | No (ns) |
+| NH-NL Hi-Lo index | 453 | 68.2% | +3.9% | +3.2% | +0.7pp [−2.8, +4.2] | No (ns) |
+| McClellan oscillator | 487 | 76.4% | +4.3% | +3.1% | +1.2pp [−1.4, +3.8] | No (ns) |
+| Cap-vs-equal 63d momentum | 474 | 81.6% | +5.7% | +2.8% | +2.9pp [−0.5, +6.3] | No (ns) |
 
-![Forward 3-month S&P return by breadth state](hyp_dist.png)
+The much-cited A/D-line bearish-divergence *event* (price at a 20-day high while the A/D line is not) fares no better — its forward return is statistically indistinguishable from an ordinary day at every horizon (63d: +2.8% on event days vs +3.3% on all days, diff −0.6pp [−2.3, +1.2], ns).
 
-## Claim 4 — Stacking the canonical risk flags failed out-of-sample
+## Claim 3 — Acting on the warnings loses to just holding the index
 
-Counterintuitively, the *more* risk flags that were on (trend-below-200, curve-inverted, breadth-divergent, VIX-elevated), the **lower** the forward drawdown rate — because those flags fire near oversold lows, not tops. A walk-forward logistic model for P(S&P down >10% over 3 months) **underperformed the base rate** out-of-sample (Brier 0.074 vs 0.034; **AUC 0.14** — the in-sample relationship inverted). This is the Goyal-Welch lesson made concrete: most timing predictors do not survive honest out-of-sample testing.
+The honest test is out-of-sample: go to cash on warning days, walk forward, compare to buy-and-hold. **Five of six** overlays make both Sharpe and total return *worse* than simply holding the index. Only the %above-200dma overlay improves risk-adjusted return — and that one fails the robustness check (see Caveats).
 
-![Risk-flag composite vs drawdown rate](hyp_composite.png)
-![Out-of-sample calibration](hyp_calibration.png)
+![Walk-forward OOS — acting on breadth warnings vs buy-and-hold; most overlays trail the index](breadth_walkforward_oos.png)
+
+| Overlay (cash on warning days) | Sharpe (strat vs B&H) | Max drawdown (strat vs B&H) | CAGR (strat vs B&H) |
+|---|---:|---:|---:|
+| % above 200dma *(only residue, see caveat)* | 1.06 vs 0.78 | −12% vs −25% | +11.7% vs +12.7% |
+| % above 50dma | 0.96 vs 0.78 | −20% vs −25% | +11.2% vs +12.7% |
+| A/D line (63d dev) | 0.76 vs 0.78 | −30% vs −25% | +8.8% vs +12.7% |
+| NH-NL Hi-Lo index | 0.57 vs 0.78 | −27% vs −25% | +6.7% vs +12.7% |
+| McClellan oscillator | 0.33 vs 0.78 | −26% vs −25% | +3.7% vs +12.7% |
+| Cap-vs-equal 63d momentum | 0.71 vs 0.78 | −23% vs −25% | +10.6% vs +12.7% |
 
 ## The answer, in the data
 
 | Question | Answer | Proof |
 |---|---|---|
-| Does MAG7 leadership predict the index? | **No** | 3m IC +0.01, boot CI [−0.20, +0.22] |
-| Is one sector worth concentrating in? | **No — a timing bet** | 3/13 beat S&P; avg Sharpe 0.61 < 0.81; persistence +0.04 |
-| Index up + majority below trend — bearish? | **No — a false alarm** | fwd 3m +4.0% vs +3.3% base; diff ns |
-| Can a model time drawdowns off these signals? | **No — fails OOS** | AUC 0.14; Brier 0.074 vs 0.034 base |
+| Does a low breadth reading predict lower forward returns? | **No — wrong sign** | breadth ICs all ≤ 0; high breadth weakly precedes *lower* returns |
+| When the warning is on, are forward returns worse? | **No — if anything higher, never significant** | 63d diffs all positive; every 95% CI crosses 0 |
+| Does the bearish A/D-divergence event carry an edge? | **No** | event vs all-days diff ≈ 0 at 21/63/126d, all ns |
+| Can you trade these warnings profitably? | **No** | 5 of 6 OOS overlays beaten by buy-and-hold |
 
-**Verdict: narrow breadth / concentration is a risk-management concern, not a market-timing signal.** Own the exposure knowingly — diversify, size positions — but don't sell the index *because* leadership is narrow. On a decade of data, that's a false alarm.
-
-## How to read this (and why "narrow-market" warnings cry wolf)
-
-A state with a scary name only matters if it beats the **unconditional base rate** — the market is up ~75% of 3-month windows regardless, so a bearish signal has to do better than that, and "narrow at highs" doesn't. Overlapping daily windows make ordinary t-stats look far more significant than they are, so we use a **block-bootstrap**. And the real test of any timing rule is **out-of-sample** (fit on the past, predict the untouched future) with a **calibration** check — the bar Goyal-Welch showed most published predictors fail. A handful of historical "analogs" is a story, not a probability, until it has the sample size and confidence interval to back it.
-
-## Current reading (2026-06-03)
-
-S&P near highs, breadth **57% above the 200-day** (so *not* a divergence today), yield curve un-inverted (+0.69), VIX ~16, composite risk score 0 — benign on this framework. The only mild caution: the 20 nearest historical analogs to today's full macro/breadth state averaged −4% over the next quarter (n=20, low confidence).
+**Verdict: NO.** The popular breadth warnings do not work as directional signals on forward S&P returns in this sample — wrong sign, tiny magnitude, no significance. The single thing that looks helpful (% above 200dma as a *de-risking* overlay, not a directional bet) is one-crash evidence that largely duplicates plain price-trend-following and has no significance test behind it. Concentration / narrow leadership is a **risk-management** matter — own the exposure knowingly, size positions — not a market-timing signal.
 
 ## Caveats
 
-The breadth/MAG7 window is 10 years and **recovery-heavy** — it spans 2018, 2020 and 2022, all V-shaped, but not a 2000- or 2008-style grinding bear, so "distress flags marked buying opportunities" may be regime-specific. Full-universe breadth exists only from 2016; the credit spread is recent-window only. The divergence sample is 124 (overlapping) days. This is a base-rate framework, not a forecast.
+1. **The one residue is one-crash evidence.** The %above-200dma de-risking benefit is concentrated in a single bear market: the in-cash days cluster overwhelmingly in 2022 (172 days, vs 38 in 2023 and 14 in 2024). Re-running the overlay with 2022 excluded collapses the edge — the Sharpe gap shrinks from +0.28 to a negligible +0.09 — and there is no significance test on a sample of essentially one drawdown. It cannot be called a repeatable overlay.
+2. **It is mostly trend-following, not a distinct breadth edge.** A dumb price-only rule (cash when the index is below its own 200-day average) gets a comparable Sharpe with no breadth panel at all, and overlaps the breadth overlay's risk-off days heavily. Both rules are really just "step aside in a sustained downtrend"; the breadth panel adds little.
+3. **Survivorship bias overstates past breadth.** The breadth panel is a survivor roster backfilled in time, with essentially no delistings before 2024 — a true point-in-time panel would show a steady trickle of failures. This makes breadth (especially new-low counts) look *better* in past busts than it really was, so the bias works *for* the warnings and still leaves them with no edge; a clean panel would only weaken them further.
+4. **Overlapping-window inference is anti-conservative.** Forward windows overlap across adjacent days, so the effective sample is far smaller than the row counts and ordinary significance stars overstate significance. The block-bootstrap CIs partly correct for this — and they already cross zero. The honest p-values are *larger* than nominal, which deepens the null.
+5. **Single index, limited regime mix.** Forward returns are measured on one index over one ~10-year window (2016–2026) that contains only a handful of true bear episodes (2018Q4, 2020, 2022), all relatively V-shaped. Absence of evidence here is strong but is not a claim that breadth is useless across all future regimes — especially a 2000- or 2008-style grinding bear.
 
 ## References
 
-- Welch & Goyal (2008, RFS; 2024 update). *A Comprehensive Look at the Empirical Performance of Equity Premium Prediction* — most predictors fail out-of-sample.
-- Estrella & Mishkin (1996, 1998). The yield curve as a recession predictor (the NY Fed model).
-- Gilchrist & Zakrajšek (2012, AER). *Credit Spreads and Business Cycle Fluctuations* (the excess bond premium).
-- Faber (2013); Moskowitz, Ooi & Pedersen (2012, JFE). Trend / time-series momentum for drawdown control.
-- Bessembinder (2018, JFE). *Do stocks outperform Treasury bills?* — concentration of returns is the historical norm.
-- Hindenburg-Omen reliability studies (~20% accuracy); "Market breadth and the cross-section of global equity returns" (breadth predicts the cross-section, not index timing).
-- Community: r/stocks & r/investing (equal-weight vs MAG7 debate); VanEck and Commonfund framing narrow leadership as a concentration risk, not a timing signal.
+- Welch & Goyal (2008, RFS; 2024 update). *A Comprehensive Look at the Empirical Performance of Equity Premium Prediction* — most timing predictors fail out-of-sample.
+- Faber (2013); Moskowitz, Ooi & Pedersen (2012, JFE). Trend / time-series momentum for drawdown control (the price-only benchmark in Caveat 2).
+- Bessembinder (2018, JFE). *Do stocks outperform Treasury bills?* — extreme concentration of returns is the historical norm, not an anomaly.
+- Hindenburg-Omen reliability studies (~20% accuracy, false-positive-prone) and breadth research showing breadth predicts the *cross-section*, not index timing.
+- General market-technician sources for the canonical breadth gauges (advance-decline line, McClellan oscillator, new-high/new-low index); concentration-as-risk framing from broad industry commentary, used for context only.

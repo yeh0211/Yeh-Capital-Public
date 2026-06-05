@@ -1,47 +1,60 @@
-# 15 — Should you chase IPOs? First-day pop, then years of underperformance
+# 15 — Chasing IPOs loses to the market by ~28% a year
 
-**Question.** New listings are exciting and often "pop" on day one. Does buying IPOs — in the aftermarket, as a retail investor — actually pay over the following years?
+**Question.** New listings are exciting and often "pop" on day one. If you chase them on the tape — buying at the first day's close, the price retail can actually get — does it pay over the next year?
 
-**Finding.** **No.** Across thousands of US IPOs (Jay Ritter's dataset), the average first-day pop is large (≈ +24% for 2012–21) but the *three-year* return is **−21.6% versus the market**. The worst cohorts — tiny-revenue deals (−52%) and de-SPACs (−75%) — are exactly the ones retail can actually buy. And the old "get in before index inclusion" trade has decayed to roughly **zero**.
+**Finding.** **No.** Across 760 US IPOs since late 2022, buying the day-1 close and holding one year delivered a median **−28.4% excess return versus SPY**, and only **19% of names beat the market**. The chase is a base-rate loser; the only buckets that survived were REITs and profitable software, while biotech and sub-dollar micro-caps were wealth destroyers.
 
-> Reference study. First-day and long-run buy-and-hold figures from Jay Ritter (University of Florida) IPO statistics; three-year returns are market-adjusted (vs the CRSP value-weighted index). No live capital.
+> Research / backtested. No live capital, no audited track record. Sample is the 2022-10-onward IPO vintage only — an unusual, mostly-poor cohort — so treat the magnitude as period-specific even though the direction matches decades of published IPO research.
 
 ## Data & method
 
-- **Source:** Jay Ritter's *Initial Public Offerings: Updated Statistics* — first-day return and three-year buy-and-hold market-adjusted return by cohort (2012–21 issuance; de-SPACs 2012–22).
-- **Index effect:** Greenwood & Sammon, *The Disappearing Index Effect.*
+- **Sample:** 760 US IPOs priced since October 2022 with sufficient post-listing price history (entry filtered to ≥ $2 to exclude un-tradeable names).
+- **Entry:** day-1 close — you can't get the offer allocation, so you chase it on the tape. The first-day pop accrues to allocation holders, not to you.
+- **Tested:** absolute and SPY-excess returns at 30 / 60 / 90 / 180 / 365 days; win-rate, median, mean, and share beating SPY at each horizon. Cut by vintage and by sector.
+- **Validation:** the headline 365-day excess return carries a block-bootstrap 95% CI of **[−42.9%, −25.3%]** — firmly negative, never crossing zero. The result reproduces Ritter's long-run IPO-underperformance puzzle on an independently assembled name-level sample.
 
-## Claim 1 — Pop on day one, lag the market for three years
+## Claim 1 — The longer you hold the chase, the worse it gets
 
-| Cohort | n | first-day pop | 3-yr vs market |
-|---|---|---|---|
-| All IPOs '12–21 | 1,479 | +23.6% | −21.6% |
-| VC-backed '12–21 | 909 | +25.4% | −16.5% |
-| Low float ≤10% | 186 | +32.4% | −5.3% |
-| Small sales <$10mm | 1,739 | +23.6% | −52.3% |
-| Direct listings | 12 | +2.1% | −36.4% |
-| de-SPACs '12–22 | 451 | −0.0% | −74.7% |
+Win-rate stays near a coin-flip in absolute terms but the share beating SPY collapses monotonically with horizon — from 39% at 30 days to 19% at one year.
 
-![First-day pop vs 3-year market-adjusted return, by cohort](ritter_cohorts.png)
+| Horizon | n | % positive | Median | Mean | Median excess vs SPY | % beating SPY |
+|---|---|---|---|---|---|---|
+| 30d | 760 | 53.2% | +0.2% | −2.1% | −1.9% | 39% |
+| 90d | 731 | 52.8% | +0.3% | −1.6% | −6.6% | 29% |
+| 180d | 641 | 47.6% | −1.1% | −11.3% | −15.4% | 25% |
+| 365d | 474 | 45.6% | −4.1% | −16.2% | **−28.4%** | **19%** |
 
-## Claim 2 — The pop is mostly unreachable; the underperformance is not
+At one year the median IPO is down 4% outright and down 28% relative to simply owning the index. The mean is even worse (−34.4%) because the right tail of occasional winners cannot offset a long left tail of names that lost most of their value.
 
-The first-day pop accrues to allocation holders at the *offer* price — which retail rarely gets. Buying in the aftermarket (the realistic path) means paying the popped price and then riding the multi-year fade. The lowest-float deals pop hardest (+32%) precisely because float is scarce — a microstructure squeeze, not a quality signal.
+![IPO chase: win-rate by horizon (left) and the distribution of 1-year returns (right)](ipo_chase.png)
 
-## Claim 3 — The index-inclusion trade has died
+## Claim 2 — "IPOs lose" is really "everything except REITs and software loses"
 
-The classic "buy before S&P / Nasdaq inclusion" pop has faded from roughly **+7% abnormal return in the 1990s to under +1% in 2010–20** (Greenwood-Sammon), as passive AUM made the event crowded and pre-positioned. Nasdaq's 2026 "fast-entry" rule (a large IPO can enter the Nasdaq-100 after roughly 15 trading days) and its 2025 listing-standard tightening (higher public-float minimums) further compress any inclusion edge.
+The class average hides a sharp split. Stable-income listings (REITs) and profitable software held up; biotech and the large "micro-cap / unclassified" bucket were the destroyers.
 
-## Claim 4 — What to do instead
+| Sector | n | win 90d | Median 90d | Median 365d |
+|---|---|---|---|---|
+| Software / IT | 30 | 65.5% | +3.4% | **+9.1%** |
+| Real Estate / REIT | 192 | 79.8% | +1.0% | **+4.9%** |
+| Biotech / Pharma | 53 | 32.1% | −13.0% | −30.3% |
+| Industrials | 21 | 47.4% | −4.7% | −63.4% |
+| Micro-cap / unclassified | 324 | 43.8% | −8.3% | −63.7% |
 
-Don't chase the open. If a name interests you, let the lock-up expire and the float normalize, judge it on fundamentals once there is public trading history, and treat the first-day pop as someone else's allocation rather than your edge. As a class, IPOs are a sell-the-pop, not a buy-and-hold; regime and cohort (size, float, vintage) dominate, and the occasional positive headline is outlier-driven.
+Vintage matters too: the 2023 cohort was brutal (−53.5% median at one year), 2024 was −13.2%, and the 2025–26 listings are still too young to judge (positive medians, but small one-year samples).
+
+## Answer
+
+**Should you chase IPOs at the open for a one-year hold? No.** The base rate is roughly −28% versus SPY with only a one-in-five chance of beating the index, and the bootstrap CI never touches zero. If you must participate, the only survivable buckets historically were REITs and profitable software — not biotech and not sub-dollar micro-caps. As a class, IPOs are a sell-the-pop, not a buy-and-hold.
 
 ## Caveats
 
-Returns are buy-and-hold from the first close (not the offer price) and market-adjusted versus the CRSP value-weighted index; cohorts overlap (a deal can be both VC-backed and small-sales). Survivorship is handled in Ritter's construction. This is a base-rate statement about the class — individual names vary widely.
+- **Period.** Coverage starts 2022-10, an unusual and mostly-poor IPO vintage. The direction is consistent with decades of academic work, but the −28% magnitude is specific to this window.
+- **No offer price.** Offer prices were not available, so there is no first-day-pop cut; entry is the day-1 close (the realistic retail path) rather than the allocation price.
+- **Survivorship.** Price coverage of delisted names is imperfect; missing dead names would make the true result *worse*, not better — so the finding is, if anything, conservative.
+- **Small sub-samples.** Sector and vintage cells (e.g. Software n=30, 2022 n=9) are thin; read those as directional, not precise.
 
 ## References
 
-- Ritter, J. *Initial Public Offerings: Updated Statistics* (University of Florida).
+- Ritter, J. *Initial Public Offerings: Updated Statistics* (University of Florida) — for the long-run underperformance benchmark this sample reproduces.
 - Loughran & Ritter (1995). The New Issues Puzzle. *Journal of Finance.*
-- Greenwood & Sammon. *The Disappearing Index Effect.*
+- Greenwood & Sammon. *The Disappearing Index Effect* — context on why the related "buy before index inclusion" trade has decayed toward zero.

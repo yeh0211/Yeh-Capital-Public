@@ -42,9 +42,3 @@ The data pipeline that produces these results is operated privately. This reposi
 - **Validation:** out-of-sample / walk-forward splits, bootstrap confidence intervals, Spearman information coefficient, hit-rate, t-tests with reported p-values; baseline (random-entry) comparisons so market drift is never mistaken for signal.
 - **Honesty first:** null and decayed results are published, not hidden — most of the studies here are nulls. A signal only graduates to "interesting" after it survives a larger, out-of-sample test.
 - **Reproducibility:** each note states its universe, window, thresholds, and metric so the result can be challenged.
-
-## About
-
-Final-year BSc Business with Finance, Bayes Business School (City St George's, University of London). Research analyst experience in cross-border capital markets. Interested in systematic strategy, market microstructure, and the boundary between fundamental and quantitative research.
-
-*Contact details on request.*

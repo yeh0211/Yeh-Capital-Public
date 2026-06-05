@@ -1,0 +1,17 @@
+company,grade,headline
+GIGABYTE,A,"Clean announcement-to-shelf record across 2024-2025 (TRX50, W7900, AI BOX, AI TOP ATOM all on time); 2026 reveals too new to judge."
+MediaTek,A,Every dated SoC shipped on or ahead of schedule (9300+/9400/9400+); GB10 co-design delivered with DGX Spark; 2nm tape-out hit on the stated month.
+Advantech,A,Narrow but clean — MIC-743 went from live demo to orderable one day after Jetson Thor GA; every dated 2025 promise that came due was met.
+Delta Electronics,A,"Ships what it shows — 2024 power/cooling all in production and design-won into GB200/GB300 racks; delivery proven by record AI-power revenue, not vaporware."
+AMD,A-,Ships what it announces roughly on time; one date-met-spec-cut episode (MI325X shipped Q4'24 but at 256GB not the announced 288GB HBM3E) and a minor ~1-2 week Ryzen 9000 slip are the only asterisks.
+Intel,A-,"Clean on every Computex-specific commitment audited (Lunar Lake, Sierra Forest, Gaudi 3, Granite Rapids, same-day Clearwater Forest on 18A) — but the broader data-center AI roadmap (Gaudi/Falcon Shores) collapsed off-stage."
+Qualcomm,A-,"Shipped Copilot+ silicon to the day (June 18, 2024) and X2 on schedule in 1H26; only the 2025 SD1 Oryon server CPU quietly drifted with no product."
+ASUS,A-,"All 2024 items shipped on/near window; one genuine slip (Ascent GX10/DGX Spark to Oct 2025, an industry-wide GB10 delay); 2026 halo SKUs not yet due."
+Supermicro,A-,Strong shipping cadence tightly coupled to silicon partners; only the top-end 4-socket Xeon 6 P-core X14 slipped (2024 preview -> July 2025 ship).
+Wiwynn,A-,"ODM that shipped racks on its silicon partners' timelines (GB300 NVL72, HGX B300, MI350); only novel in-house cooling IP (Fabric8Labs ECAM) not yet in volume."
+NVIDIA,B+,"Held the annual data-center cadence product-for-product (Blackwell->Ultra->Rubin) and ships to real hyperscalers, but dinged for the Blackwell GB200 ramp slip and a clear DGX Spark miss (shipped Oct 2025 vs implied summer)."
+Foxconn,B,"Platforms/builds tracking to plan (Genesis live, FoxBrain released, K-1 supercomputer on schedule); downgraded because the headline 100MW figure narrowed to ~27MW and full go-live unproven."
+Pegatron,B,"Shipped its GB200 NVL72/NVL36 racks but ~one quarter late (4Q24 hope -> Q1 2025 first delivery to Lambda); the slip was NVIDIA-platform-wide, not Pegatron-specific."
+Arm Holdings,B,"No slips but nothing delivered yet — AGI CPU early systems orderable as promised, but the real volume test is Q4 2026; B reflects credible-but-unproven."
+Marvell,B,"Entirely forward-looking 2026 silicon (T100, COLORZ 1600, 51.2T CPO) all not-yet-due; credibility rests on roadmap commitments still in flight, and it trails Broadcom to the 100T+ tier."
+NXP Semiconductors,C+,"Not gradeable on hardware — Computex 2026 was a software/vision keynote (Neural Axis, eIQ); software commitments on time but no trackable hardware promises to score."

@@ -1,0 +1,884 @@
+[
+ {
+  "company": "AMD",
+  "year": 2024,
+  "announcement": "Ryzen AI 300 Series / Strix Point with XDNA 2 NPU (50 TOPS) \u2014 the central PC-AI reveal",
+  "verified": "yes",
+  "source": "https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-extends-ai-and-high-performance-leadership-in-.html"
+ },
+ {
+  "company": "AMD",
+  "year": 2024,
+  "announcement": "Ryzen 9000 desktop CPUs on Zen 5",
+  "verified": "yes",
+  "source": "https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-extends-ai-and-high-performance-leadership-in-.html"
+ },
+ {
+  "company": "AMD",
+  "year": 2024,
+  "announcement": "5th Gen EPYC 'Turin' (Zen 5, 2H 2024)",
+  "verified": "yes",
+  "source": "https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-extends-ai-and-high-performance-leadership-in-.html"
+ },
+ {
+  "company": "AMD",
+  "year": 2024,
+  "announcement": "Instinct MI325X (288GB HBM3E, Q4 2024); MI350 (2025) and MI400 (2026) roadmap; annual cadence",
+  "verified": "yes",
+  "source": "https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-extends-ai-and-high-performance-leadership-in-.html"
+ },
+ {
+  "company": "ASUS",
+  "year": 2024,
+  "announcement": "Zenbook S 16 (UM5606) \u2014 ultra-slim Ceraluminum OLED, AMD Ryzen AI 9 HX 370, from $1,399",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/always-incredible-computex-2024/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2024,
+  "announcement": "ProArt P16 (H7606) \u2014 creator clamshell, Ryzen AI 9 HX 370 + up to RTX 4070, from $1,899",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/always-incredible-computex-2024/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2024,
+  "announcement": "ESC AI POD with rack-scale NVIDIA GB200 NVL72",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/always-incredible-computex-2024/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2024,
+  "announcement": "Full Copilot+ AI PC lineup (Vivobook S / ProArt / Zenbook with Snapdragon X)",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/always-incredible-computex-2024/"
+ },
+ {
+  "company": "Delta Electronics",
+  "year": 2024,
+  "announcement": "Keynote 'How AI Revolutionizes Automation Applications' (drone bridge inspection, automated ADAS corner-case testing)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/delta-to-deliver-keynote-speech-at-computex-2024-sharing-ai-driven-automation-innovations-302147612.html"
+ },
+ {
+  "company": "Delta Electronics",
+  "year": 2024,
+  "announcement": "Vertical power delivery for AI accelerators (48V-to-12V vertical/chip power, ~5-15% lower loss vs lateral)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/delta-to-deliver-keynote-speech-at-computex-2024-sharing-ai-driven-automation-innovations-302147612.html"
+ },
+ {
+  "company": "Delta Electronics",
+  "year": 2024,
+  "announcement": "Liquid cooling portfolio (cold-plate modules, in-rack CDU for 100kW+ racks, AALC)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/delta-to-deliver-keynote-speech-at-computex-2024-sharing-ai-driven-automation-innovations-302147612.html"
+ },
+ {
+  "company": "Delta Electronics",
+  "year": 2024,
+  "announcement": "ORV3-compliant 66kW/33kW server power shelves (PSU efficiency up to 97.5%)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/delta-to-deliver-keynote-speech-at-computex-2024-sharing-ai-driven-automation-innovations-302147612.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2024,
+  "announcement": "AI TOP local AI training platform ('Train Your Own AI on Your Desk'; Utility + Hardware + Tutor)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-unveils-ai-top-as-solution-to-local-ai-training-at-computex-2024-302161675.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2024,
+  "announcement": "TRX50 AI TOP motherboard (flagship AI TOP board for AMD Threadripper)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-unveils-ai-top-as-solution-to-local-ai-training-at-computex-2024-302161675.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2024,
+  "announcement": "Radeon PRO W7900 AI TOP 48G and W7800 32G workstation GPUs (first/only AMD Radeon PRO partner)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-unveils-ai-top-as-solution-to-local-ai-training-at-computex-2024-302161675.html"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Lunar Lake AI-PC client architecture (up to 40% lower SoC power, ~3x AI compute, Q3 2024)",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Xeon 6 with E-cores (Sierra Forest) available from June 4; up to 4.2x rack-level performance",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Gaudi 3 accelerator 8-kit at $125,000; Gaudi 2 kit at $65,000",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Xeon 6 P-cores (Granite Rapids) previewed; 40M+ Core Ultra projected for 2024",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Lunar Lake AI-PC client architecture (up to 40% lower SoC power, ~3x AI compute, shipping Q3 2024)",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Xeon 6 with E-cores (Sierra Forest), available from June 4, 2024",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Gaudi 3 AI accelerator: 8-accelerator kit at $125,000; Gaudi 2 kit at $65,000",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "Intel",
+  "year": 2024,
+  "announcement": "Core Ultra partner design momentum (40M+ Core Ultra projected for 2024)",
+  "verified": "yes",
+  "source": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2024,
+  "announcement": "Custom networking chip with 70B+ transistors and in-house 224G SerDes (400G+ roadmap) \u2014 the marquee data-center reveal",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/computex-2024-keynote-intelligence-everywhere-the-power-of-ubiquitous-ai"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2024,
+  "announcement": "Custom AI accelerators for the cloud (~$45B custom-compute data-center TAM)",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/computex-2024-keynote-intelligence-everywhere-the-power-of-ubiquitous-ai"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2024,
+  "announcement": "Dimensity 9300/9300+ as the current flagship (68 TOPS NPU); Dimensity 9400 previewed (~3 months out, launched Oct 9)",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/computex-2024-keynote-intelligence-everywhere-the-power-of-ubiquitous-ai"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2024,
+  "announcement": "Dimensity Auto Cockpit co-developed with NVIDIA; Jensen Huang + Rene Haas on stage",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/computex-2024-keynote-intelligence-everywhere-the-power-of-ubiquitous-ai"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2024,
+  "announcement": "First public reveal of the 'Rubin'/Rubin Ultra platform and a one-year (annual) product cadence (Blackwell -> Blackwell Ultra -> Rubin -> Rubin Ultra)",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/huang-computex-keynote-taipei-2024/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2024,
+  "announcement": "Blackwell shown heading into production; framed datacenters as 'AI factories'",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/huang-computex-keynote-taipei-2024/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2024,
+  "announcement": "Spectrum-X Ethernet AI networking (SN5600 switch + BlueField-3 SuperNIC; CX9 1600G on roadmap)",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/huang-computex-keynote-taipei-2024/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2024,
+  "announcement": "NIM inference microservices; RTX AI PCs (Project G-Assist); ACE/digital humans",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/huang-computex-keynote-taipei-2024/"
+ },
+ {
+  "company": "Pegatron",
+  "year": 2024,
+  "announcement": "GB200 NVL72 liquid-cooled rack AI server (up to 72 GPU nodes), co-developed with NVIDIA, shipping 4Q24",
+  "verified": "yes",
+  "source": "https://www.digitimes.com/news/a20240604PD209/pegatron-ai-server-nvidia-blackwell-4q24-computex-2024.html"
+ },
+ {
+  "company": "Pegatron",
+  "year": 2024,
+  "announcement": "GB200 NVL36 enterprise AI server",
+  "verified": "yes",
+  "source": "https://www.digitimes.com/news/a20240604PD209/pegatron-ai-server-nvidia-blackwell-4q24-computex-2024.html"
+ },
+ {
+  "company": "Pegatron",
+  "year": 2024,
+  "announcement": "MGX 4U server developed with Intel",
+  "verified": "yes",
+  "source": "https://www.digitimes.com/news/a20240604PD209/pegatron-ai-server-nvidia-blackwell-4q24-computex-2024.html"
+ },
+ {
+  "company": "Pegatron",
+  "year": 2024,
+  "announcement": "Holley L11 liquid-cooling solution (65kW capacity, ~40% energy savings)",
+  "verified": "yes",
+  "source": "https://www.digitimes.com/news/a20240604PD209/pegatron-ai-server-nvidia-blackwell-4q24-computex-2024.html"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2024,
+  "announcement": "Snapdragon X Elite / X Plus Copilot+ PC first wave (Acer/HP/Lenovo, retail from June 18, 2024)",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2024/06/qualcomm-computex-2024-keynote-unveils--the-pc-reborn--with-snap"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2024,
+  "announcement": "Qualcomm AI Hub expanded to PCs (>2,000 developers)",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2024/06/qualcomm-computex-2024-keynote-unveils--the-pc-reborn--with-snap"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2024,
+  "announcement": "Hexagon NPU 45 TOPS positioned ahead of Apple M3 and Intel Core Ultra 7 155H",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2024/06/qualcomm-computex-2024-keynote-unveils--the-pc-reborn--with-snap"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2024,
+  "announcement": "Oryon CPU up to 51% faster at ISO power; on-stage jabs at Apple",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2024/06/qualcomm-computex-2024-keynote-unveils--the-pc-reborn--with-snap"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2024,
+  "announcement": "X14 Intel Xeon 6 server platforms (Hyper, SuperBlade, FlexTwin, GrandTwin; up to 576 E-cores/server)",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/pressreleases/supermicro-ceo-charles-liang-once-again-deliver-ceo-keynote-computex-2024"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2024,
+  "announcement": "Direct Liquid Cooling (DLC) rack-scale solution in mass production (~1,000 DLC racks/month; install cut to 2-4 weeks; 100kW/rack)",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/pressreleases/supermicro-ceo-charles-liang-once-again-deliver-ceo-keynote-computex-2024"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2024,
+  "announcement": "Up to ~40% datacenter TCO/energy reduction (Green-IT)",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/pressreleases/supermicro-ceo-charles-liang-once-again-deliver-ceo-keynote-computex-2024"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2024,
+  "announcement": "Jensen Huang appeared on stage to endorse Supermicro DLC (called himself Supermicro's 'best sales guy')",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/pressreleases/supermicro-ceo-charles-liang-once-again-deliver-ceo-keynote-computex-2024"
+ },
+ {
+  "company": "AMD",
+  "year": 2025,
+  "announcement": "Radeon RX 9060 XT (RDNA 4; 8GB $299 / 16GB $349)",
+  "verified": "yes",
+  "source": "https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025"
+ },
+ {
+  "company": "AMD",
+  "year": 2025,
+  "announcement": "Radeon AI PRO R9700 (32GB) workstation card",
+  "verified": "yes",
+  "source": "https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025"
+ },
+ {
+  "company": "AMD",
+  "year": 2025,
+  "announcement": "Ryzen Threadripper 9000 / 9000 Pro (up to 96 Zen 5 cores)",
+  "verified": "yes",
+  "source": "https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025"
+ },
+ {
+  "company": "AMD",
+  "year": 2025,
+  "announcement": "Strongest hardware showing of the week; AMD was the sole x86 vendor with a major stage event",
+  "verified": "yes",
+  "source": "https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025"
+ },
+ {
+  "company": "ASUS",
+  "year": 2025,
+  "announcement": "ASUS AI POD powered by NVIDIA GB300 NVL72 (headline 2025 data-center product) \u2014 OMITTED from dataset",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/asus-computex-2025-ai-ecosystem/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2025,
+  "announcement": "ASUS AI Hub \u2014 flagship turnkey agentic AI solution (the lead 2025 announcement) \u2014 OMITTED",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/asus-computex-2025-ai-ecosystem/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2025,
+  "announcement": "Ascent GX10 compact AI 'supercomputer' on NVIDIA GB10 Grace Blackwell (1,000 AI TOPS, models up to 200B params)",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/asus-computex-2025-ai-ecosystem/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2025,
+  "announcement": "ASUS Infrastructure Deployment Center (AIDC) and ASUS Control Center (ACC) software stack",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/asus-computex-2025-ai-ecosystem/"
+ },
+ {
+  "company": "Advantech",
+  "year": 2025,
+  "announcement": "MIC-743 Edge AI platform with live full-stack NVIDIA Jetson Thor integration (the COMPUTEX 2025 headline)",
+  "verified": "yes",
+  "source": "https://www.advantech.com/en-eu/resources/news/advantech-launches-%E2%80%9Cedge-computing--wise-edge-in-action%E2%80%9D-series-of-conferences-exhibits-and-livestreams-at-computex-2025"
+ },
+ {
+  "company": "Advantech",
+  "year": 2025,
+  "announcement": "'Edge Computing & WISE-Edge in Action' conference/exhibition/livestream series",
+  "verified": "yes",
+  "source": "https://www.advantech.com/en-eu/resources/news/advantech-launches-%E2%80%9Cedge-computing--wise-edge-in-action%E2%80%9D-series-of-conferences-exhibits-and-livestreams-at-computex-2025"
+ },
+ {
+  "company": "Advantech",
+  "year": 2025,
+  "announcement": "Autonomous Systems & Robotics (AS&R) showcase theme; Qualcomm Dragonwing edge-AI robotics partnership",
+  "verified": "yes",
+  "source": "https://www.advantech.com/en-eu/resources/news/advantech-launches-%E2%80%9Cedge-computing--wise-edge-in-action%E2%80%9D-series-of-conferences-exhibits-and-livestreams-at-computex-2025"
+ },
+ {
+  "company": "Advantech",
+  "year": 2025,
+  "announcement": "Miller Chang COMPUTEX Forum keynote 'Edge AI-Powered Robotics in Action' (May 21)",
+  "verified": "yes",
+  "source": "https://www.advantech.com/en-eu/resources/news/advantech-launches-%E2%80%9Cedge-computing--wise-edge-in-action%E2%80%9D-series-of-conferences-exhibits-and-livestreams-at-computex-2025"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2025,
+  "announcement": "COMPUTEX 2025 'AI Next' theme (AI & Robotics, Next-Gen Tech, Future Mobility)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2025-gathers-global-tech-minds-to-explore-ai-driven-industrial-evolution-302458760.html"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2025,
+  "announcement": "InnoVEX 2025 startup platform (10th anniversary; ~450 startups from 24 countries)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2025-gathers-global-tech-minds-to-explore-ai-driven-industrial-evolution-302458760.html"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2025,
+  "announcement": "Presenters James C.F. Huang (TAITRA) and Paul S.L. Peng (TCA)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2025-gathers-global-tech-minds-to-explore-ai-driven-industrial-evolution-302458760.html"
+ },
+ {
+  "company": "Foxconn (Hon Hai Technology Group)",
+  "year": 2025,
+  "announcement": "Foxconn Genesis AI/robotics manufacturing platform (built with NVIDIA Omniverse)",
+  "verified": "yes",
+  "source": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1601"
+ },
+ {
+  "company": "Foxconn (Hon Hai Technology Group)",
+  "year": 2025,
+  "announcement": "FoxBrain domain-specific AI foundation model (FoxBrain AI Factory on NVIDIA DGX SuperPOD; fine-tuned on Llama)",
+  "verified": "yes",
+  "source": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1601"
+ },
+ {
+  "company": "Foxconn (Hon Hai Technology Group)",
+  "year": 2025,
+  "announcement": "First NVIDIA Cloud Partner (NCP) in Taiwan via Big Innovation Company \u2014 AI factory with 10,000 NVIDIA Blackwell GPUs",
+  "verified": "yes",
+  "source": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1601"
+ },
+ {
+  "company": "Foxconn (Hon Hai Technology Group)",
+  "year": 2025,
+  "announcement": "100-megawatt AI data center with NVIDIA (GB300 NVL72 infrastructure)",
+  "verified": "yes",
+  "source": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1601"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2025,
+  "announcement": "AORUS RTX 5090 AI BOX \u2014 world's first/fastest RTX 5090 Thunderbolt 5 liquid-cooled eGPU (32GB, ~3000 AI TOPS)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-to-set-the-leading-edge-at-computex-2025-showcasing-the-future-of-ai-innovation-302448644.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2025,
+  "announcement": "AI TOP ATOM personal AI supercomputer (NVIDIA GB10 Grace Blackwell / DGX Spark box, 128GB LPDDR5X)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-to-set-the-leading-edge-at-computex-2025-showcasing-the-future-of-ai-innovation-302448644.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2025,
+  "announcement": "AI TOP Utility 4.0 and GiMATE AI agent",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-to-set-the-leading-edge-at-computex-2025-showcasing-the-future-of-ai-innovation-302448644.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2025,
+  "announcement": "AORUS MASTER 18/16, AERO X16 / GAMING A16 AI laptops, OLED/Mini-LED monitors",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/gigabyte-to-set-the-leading-edge-at-computex-2025-showcasing-the-future-of-ai-innovation-302448644.html"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2025,
+  "announcement": "First 2nm high-volume chip to tape out September 2025 (~15% better perf / ~25% lower power vs 3nm)",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/our-vision-for-the-future-ai-for-everyone-from-edge-to-cloud-at-computex-2025"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2025,
+  "announcement": "Participation in NVIDIA NVLink Fusion (custom AI silicon for data centers)",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/our-vision-for-the-future-ai-for-everyone-from-edge-to-cloud-at-computex-2025"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2025,
+  "announcement": "Co-designed CPU for the NVIDIA DGX Spark GB10 Grace Blackwell Superchip (20-core Arm Grace CPU)",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/our-vision-for-the-future-ai-for-everyone-from-edge-to-cloud-at-computex-2025"
+ },
+ {
+  "company": "MediaTek",
+  "year": 2025,
+  "announcement": "Dimensity 9400/9400+ with on-device agentic AI; Genio 720/520 edge platforms; 6G-with-AI roadmap; Jensen Huang on stage",
+  "verified": "yes",
+  "source": "https://www.mediatek.com/tek-talk-blogs/our-vision-for-the-future-ai-for-everyone-from-edge-to-cloud-at-computex-2025"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2025,
+  "announcement": "NVLink Fusion \u2014 semi-custom AI infrastructure mixing NVLink with partners' CPUs/accelerators (MediaTek, Marvell, Fujitsu, Qualcomm)",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/computex-2025-jensen-huang/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2025,
+  "announcement": "Grace Blackwell GB300 / GB300 NVL72 rack-scale systems",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/computex-2025-jensen-huang/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2025,
+  "announcement": "DGX Spark personal AI supercomputer in full production (ASUS, Dell, Gigabyte, Lenovo, MSI)",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/computex-2025-jensen-huang/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2025,
+  "announcement": "Taiwan AI supercomputer with Foxconn + Taiwan government (~10,000 Blackwell GPUs); NVIDIA 'Constellation' Taiwan HQ",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/computex-2025-jensen-huang/"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2025,
+  "announcement": "Re-entry into the data-center market: custom Oryon-based data-center CPUs linking to NVIDIA chips via NVLink Fusion",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2025/05/qualcomm-president-and-ceo-cristiano-amon-to-deliver-keynote-spe"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2025,
+  "announcement": "85+ Snapdragon X Series PC designs on sale or in development",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2025/05/qualcomm-president-and-ceo-cristiano-amon-to-deliver-keynote-spe"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2025,
+  "announcement": "Fortnite on Snapdragon X Elite (Epic / Easy Anti-Cheat for Windows on Arm)",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2025/05/qualcomm-president-and-ceo-cristiano-amon-to-deliver-keynote-spe"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2025,
+  "announcement": "Teased a new PC chip for the September Snapdragon Summit",
+  "verified": "yes",
+  "source": "https://www.qualcomm.com/news/releases/2025/05/qualcomm-president-and-ceo-cristiano-amon-to-deliver-keynote-spe"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2025,
+  "announcement": "DLC-2 next-gen Direct Liquid Cooling (cools CPU/GPU + PSU/memory/VRMs; PGDLC2 fluid; up to 40% electricity / 20% TCO savings)",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/event/computex/innovate-2025-keynote-signup"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2025,
+  "announcement": "DCBBS (Data Center Building Block Solutions) \u2014 full GPU-to-rack datacenter blueprint (the keynote's headline framework)",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/event/computex/innovate-2025-keynote-signup"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2025,
+  "announcement": "B300 DLC-2 systems on NVIDIA HGX B300 NVL16 and GB300 NVL72 (Blackwell Ultra)",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/event/computex/innovate-2025-keynote-signup"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2025,
+  "announcement": "Charles Liang on stage with Jensen Huang",
+  "verified": "yes",
+  "source": "https://www.supermicro.com/en/event/computex/innovate-2025-keynote-signup"
+ },
+ {
+  "company": "Wiwynn",
+  "year": 2025,
+  "announcement": "NVIDIA GB300 NVL72 fully liquid-cooled rack (72 Blackwell Ultra GPUs), co-developed with Wistron \u2014 the flagship reveal",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html"
+ },
+ {
+  "company": "Wiwynn",
+  "year": 2025,
+  "announcement": "NVIDIA HGX B300 10U system; AMD Instinct MI350 platforms; NVIDIA RTX PRO 6000 servers",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html"
+ },
+ {
+  "company": "Wiwynn",
+  "year": 2025,
+  "announcement": "Direct liquid cooling portfolio: Fabric8Labs ECAM cold plates, Shinwa 200kW AALC Sidecar, nVent in-rack CDU",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html"
+ },
+ {
+  "company": "Wiwynn",
+  "year": 2025,
+  "announcement": "Networking: NVIDIA Spectrum-X Ethernet, Broadcom Tomahawk 5 / 102T 1.6Tbps switch",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html"
+ },
+ {
+  "company": "ASUS",
+  "year": 2026,
+  "announcement": "Ascent QN10 Mini PC with Snapdragon X2 Elite (claimed world-first 80 TOPS NPU)",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/rog-20th-anniversary-computex-event/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2026,
+  "announcement": "ROG NUC 16 Edition 20 (flagship gaming in ~3-liter form factor)",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/rog-20th-anniversary-computex-event/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2026,
+  "announcement": "ROG Astral GeForce RTX 5090 Edition 20 (curved AMOLED, up to 800W)",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/rog-20th-anniversary-computex-event/"
+ },
+ {
+  "company": "ASUS",
+  "year": 2026,
+  "announcement": "ROG Xbox Ally X20 bundle (7.4-inch ROG Nebula HDR OLED + ROG XREAL R1 Edition 20 AR glasses); ROG Edition 20 line (20th anniversary)",
+  "verified": "yes",
+  "source": "https://press.asus.com/news/press-releases/rog-20th-anniversary-computex-event/"
+ },
+ {
+  "company": "Arm",
+  "year": 2026,
+  "announcement": "Arm AGI CPU mass production announced (up-to-136-core data-center CPU on TSMC 3nm; Meta lead customer)",
+  "verified": "yes",
+  "source": "https://www.arm.com/company/events/computex"
+ },
+ {
+  "company": "Arm",
+  "year": 2026,
+  "announcement": "Oracle Cloud Infrastructure and ByteDance join the Arm AGI CPU family",
+  "verified": "yes",
+  "source": "https://www.arm.com/company/events/computex"
+ },
+ {
+  "company": "Arm",
+  "year": 2026,
+  "announcement": "NVIDIA RTX Spark powered by an Arm-based Grace CPU (10x Cortex-X925 + 10x Cortex-A725, built with MediaTek) + Blackwell GPU",
+  "verified": "yes",
+  "source": "https://www.arm.com/company/events/computex"
+ },
+ {
+  "company": "Arm",
+  "year": 2026,
+  "announcement": "AGI CPU multi-generation roadmap; $15B in-house chip target ahead of schedule (~$20B 2027/2028); Windows-on-Arm 'ready'",
+  "verified": "yes",
+  "source": "https://www.arm.com/company/events/computex"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2026,
+  "announcement": "COMPUTEX 2026 'AI Together' record-scale exhibition (1,500 companies, 33 countries, ~6,000 booths, multi-venue)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2026-opens-amid-surging-global-demand-for-ai-infrastructure-302788497.html"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2026,
+  "announcement": "GTC Taipei at COMPUTEX 2026 (NVIDIA co-located event; Jensen Huang keynote June 1, Taipei Music Center)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2026-opens-amid-surging-global-demand-for-ai-infrastructure-302788497.html"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2026,
+  "announcement": "New dedicated Robotics & TechXperience pavilion (first time); InnoVEX 2026 (~500 startups, 23 countries)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2026-opens-amid-surging-global-demand-for-ai-infrastructure-302788497.html"
+ },
+ {
+  "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+  "year": 2026,
+  "announcement": "Presenters James C.F. Huang (TAITRA) and Jason Chen (TCA)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/computex-2026-opens-amid-surging-global-demand-for-ai-infrastructure-302788497.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2026,
+  "announcement": "AORUS RTX 5090 INFINITY (Red Dot Award, WINDFORCE Hyperburst) + RTX 5080/5070 Ti/5070 INFINITY STEALTH",
+  "verified": "yes",
+  "source": "https://www.prnewswire.co.uk/news-releases/gigabyte-event-unveils-the-full-stack-of-new-products-with-enter-infinity-at-computex-2026-302785637.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2026,
+  "announcement": "AORUS RTX 5080 INFINITY WOOD (AERO WOOD aesthetic into graphics cards)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.co.uk/news-releases/gigabyte-event-unveils-the-full-stack-of-new-products-with-enter-infinity-at-computex-2026-302785637.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2026,
+  "announcement": "CQDIMM technology (Z890 Plus, 256GB dual-DIMM) and D5 DUO X BIOS tuning",
+  "verified": "yes",
+  "source": "https://www.prnewswire.co.uk/news-releases/gigabyte-event-unveils-the-full-stack-of-new-products-with-enter-infinity-at-computex-2026-302785637.html"
+ },
+ {
+  "company": "GIGABYTE",
+  "year": 2026,
+  "announcement": "X870/X870E AORUS INFINITY motherboards; AI TOP 100 B850 supercomputer; AORUS RTX 5060 Ti AI BOX",
+  "verified": "yes",
+  "source": "https://www.prnewswire.co.uk/news-releases/gigabyte-event-unveils-the-full-stack-of-new-products-with-enter-infinity-at-computex-2026-302785637.html"
+ },
+ {
+  "company": "Intel",
+  "year": 2026,
+  "announcement": "Intel 18A process at full scale (130+ edge designs on 18A)",
+  "verified": "yes",
+  "source": "https://newsroom.intel.com/artificial-intelligence/computex-2026-an-intelligent-world-built-on-silicon"
+ },
+ {
+  "company": "Intel",
+  "year": 2026,
+  "announcement": "Arc G3 / Arc G3 Extreme handheld gaming chip (Panther Lake + Xe3); OEM handhelds from June 2026 (MSI Claw 8 EX AI+, Acer Predator Atlas 8, OneXPlayer)",
+  "verified": "yes",
+  "source": "https://newsroom.intel.com/artificial-intelligence/computex-2026-an-intelligent-world-built-on-silicon"
+ },
+ {
+  "company": "Intel",
+  "year": 2026,
+  "announcement": "Xeon 6+ \u2014 up to 288 E-cores, 576MB L3, on Intel 18A (~150k agents/rack)",
+  "verified": "yes",
+  "source": "https://newsroom.intel.com/artificial-intelligence/computex-2026-an-intelligent-world-built-on-silicon"
+ },
+ {
+  "company": "Intel",
+  "year": 2026,
+  "announcement": "Foxconn MOU on rackscale AI infrastructure; live demo with Perplexity's Aravind Srinivas; SambaNova inference collaboration",
+  "verified": "yes",
+  "source": "https://newsroom.intel.com/artificial-intelligence/computex-2026-an-intelligent-world-built-on-silicon"
+ },
+ {
+  "company": "Marvell",
+  "year": 2026,
+  "announcement": "102.4 Tbps 'Teralynx T100' Ethernet switch silicon (industry-lowest power; sampling this quarter) \u2014 the lead product OMITTED from the dataset",
+  "verified": "yes",
+  "source": "https://www.marvell.com/company/newsroom/marvell-keynote-computex-2026-future-of-scaling-ai-depends-on-connectivity.html"
+ },
+ {
+  "company": "Marvell",
+  "year": 2026,
+  "announcement": "1.6T 2nm coherent optical solution (COLORZ 1600 pluggable + Electra 2nm 1.6T ZR/ZR+ DSP; samples 2H2026)",
+  "verified": "yes",
+  "source": "https://www.marvell.com/company/newsroom/marvell-keynote-computex-2026-future-of-scaling-ai-depends-on-connectivity.html"
+ },
+ {
+  "company": "Marvell",
+  "year": 2026,
+  "announcement": "51.2T CPO-based switch with sixteen 3.2T optical engines shown on stage",
+  "verified": "yes",
+  "source": "https://www.marvell.com/company/newsroom/marvell-keynote-computex-2026-future-of-scaling-ai-depends-on-connectivity.html"
+ },
+ {
+  "company": "Marvell",
+  "year": 2026,
+  "announcement": "Restated NVIDIA $2B investment and expanded NVLink Fusion / optics partnership (basis for Jensen Huang's on-stage appearance)",
+  "verified": "yes",
+  "source": "https://www.marvell.com/company/newsroom/marvell-keynote-computex-2026-future-of-scaling-ai-depends-on-connectivity.html"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2026,
+  "announcement": "Vera Rubin in full production ('supply chain twice as large as Grace Blackwell')",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2026,
+  "announcement": "Vera Rubin NVL72 five-rack platform (Vera CPU + Spectrum-6 SPX Ethernet + BlueField-4 STX storage)",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2026,
+  "announcement": "Spectrum-X Ethernet Photonics \u2014 world's first 200Gb/s SerDes switch with co-packaged optics, in production (CoreWeave, Lambda, Oracle Cloud)",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+ },
+ {
+  "company": "NVIDIA",
+  "year": 2026,
+  "announcement": "RTX Spark \u2014 Arm-based Windows-on-Arm consumer superchip (20-core Grace CPU co-developed with MediaTek + Blackwell RTX GPU) \u2014 the consumer headline OMITTED from the dataset",
+  "verified": "yes",
+  "source": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+ },
+ {
+  "company": "NXP Semiconductors",
+  "year": 2026,
+  "announcement": "Neural Axis Architecture \u2014 distributed physical-AI framework with Reasoning, Coordination, and Reflexive Intelligence layers",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/03154256AFE07A02/info.html"
+ },
+ {
+  "company": "NXP Semiconductors",
+  "year": 2026,
+  "announcement": "eIQ Toolkit for optimizing/compressing/deploying AI workloads on edge devices",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/03154256AFE07A02/info.html"
+ },
+ {
+  "company": "NXP Semiconductors",
+  "year": 2026,
+  "announcement": "World Models and Vision-Language-Action (VLA) systems for humanoid robots / drones / software-defined vehicles",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/03154256AFE07A02/info.html"
+ },
+ {
+  "company": "NXP Semiconductors",
+  "year": 2026,
+  "announcement": "'Physical AI' theme \u2014 low latency, low power, trust at the edge (presenter Rafael Sotomayor, President & CEO)",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/03154256AFE07A02/info.html"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2026,
+  "announcement": "'Dragonfly' new data-center product brand (CPUs, AI inference accelerators, custom ASICs)",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/F75E2DAF53BB3573/info.html"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2026,
+  "announcement": "Framed 2026 as 'the year of agents' with distributed on-device + cloud AI",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/F75E2DAF53BB3573/info.html"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2026,
+  "announcement": "Snapdragon X2 Elite (80 TOPS) / X2 Plus and Snapdragon C ~$300 entry AI-PC platform (omitted from dataset)",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/F75E2DAF53BB3573/info.html"
+ },
+ {
+  "company": "Qualcomm",
+  "year": 2026,
+  "announcement": "Dragonwing IQ10 robotics reference design, up to 700 TOPS (omitted from dataset)",
+  "verified": "yes",
+  "source": "https://www.computextaipei.com.tw/en/news/F75E2DAF53BB3573/info.html"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2026,
+  "announcement": "DCBBS Blueprints for NVIDIA Vera Rubin NVL72 and HGX Rubin NVL8, scaling 5MW to 1GW (deployments H2 2026)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/supermicro-introduces-dcbbs-blueprints-for-nvidia-vera-rubin-nvl72-and-nvidia-hgx-rubin-nvl8-built-to-scale-from-5mw-to-1gw-as-an-end-to-end-total-solution-302786517.html"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2026,
+  "announcement": "SMC PG25-A proprietary dielectric coolant claiming ~1,000x higher electrical impedance than standard coolant (the most-covered 2026 headline)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/supermicro-introduces-dcbbs-blueprints-for-nvidia-vera-rubin-nvl72-and-nvidia-hgx-rubin-nvl8-built-to-scale-from-5mw-to-1gw-as-an-end-to-end-total-solution-302786517.html"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2026,
+  "announcement": "Arm AGI CPU-based Supermicro systems for agentic-AI rack-scale deployments",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/supermicro-introduces-dcbbs-blueprints-for-nvidia-vera-rubin-nvl72-and-nvidia-hgx-rubin-nvl8-built-to-scale-from-5mw-to-1gw-as-an-end-to-end-total-solution-302786517.html"
+ },
+ {
+  "company": "Supermicro",
+  "year": 2026,
+  "announcement": "AMD Helios next-gen rack-scale platform; 12 new Intel Xeon 6+ platforms (up to 288 E-cores/socket)",
+  "verified": "yes",
+  "source": "https://www.prnewswire.com/news-releases/supermicro-introduces-dcbbs-blueprints-for-nvidia-vera-rubin-nvl72-and-nvidia-hgx-rubin-nvl8-built-to-scale-from-5mw-to-1gw-as-an-end-to-end-total-solution-302786517.html"
+ }
+]

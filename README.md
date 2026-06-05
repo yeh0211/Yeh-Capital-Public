@@ -33,7 +33,7 @@ The data pipeline that produces these results is operated privately. This reposi
 
 ## Data
 
-- [**Computex Data Library** (2024–2026)](computex-dataset/) — 33 keynote / press sessions and **373 structured product announcements** (company · ticker · product · ship quarter · grounding quote · source video), as CSV + JSON under CC-BY. Derived data and links only; rebuild the transcripts from the public videos with the included script. Backs [study 18](18-computex-event-study/).
+- [**Computex Data Library** (2024–2026)](computex-dataset/) — **44 independently-verified sessions** and **126 cited announcements** (plus a 366-row transcript-extracted tier) covering the Computex keynote/press program. Every session and headline is cross-checked against the official program and the live tech press, with a source URL on each row; the full cited audit (18 corrected errors, 8 gaps) is in `verification_report.json`. CSV + JSON, CC-BY. Backs [study 18](18-computex-event-study/).
 
 ## Method notes
 

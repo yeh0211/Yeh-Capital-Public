@@ -1,0 +1,854 @@
+{
+ "attendance_matrix": [
+  {
+   "company": "NVIDIA",
+   "year": 2024,
+   "form": "Pre-show keynote (June 2, NTU Sports Center) \u2014 opened COMPUTEX week",
+   "confidence": "high",
+   "citation": "https://blogs.nvidia.com/blog/huang-computex-keynote-taipei-2024/"
+  },
+  {
+   "company": "NVIDIA",
+   "year": 2025,
+   "form": "Official opening keynote (first-ever COMPUTEX keynote, May 19, Taipei Music Center)",
+   "confidence": "high",
+   "citation": "https://blogs.nvidia.com/blog/computex-2025-jensen-huang/"
+  },
+  {
+   "company": "NVIDIA",
+   "year": 2026,
+   "form": "GTC Taipei 2026 keynote co-located with COMPUTEX (June 1, Taipei Music Center) \u2014 effective show-opening keynote",
+   "confidence": "high",
+   "citation": "https://blogs.nvidia.com/blog/nvidia-gtc-taipei-computex-2026-news/"
+  },
+  {
+   "company": "AMD",
+   "year": 2024,
+   "form": "Official opening CEO keynote (June 3, Lisa Su)",
+   "confidence": "high",
+   "citation": "https://www.amd.com/en/newsroom/press-releases/2024-6-2-amd-extends-ai-and-high-performance-leadership-in-.html"
+  },
+  {
+   "company": "AMD",
+   "year": 2025,
+   "form": "Company-hosted press conference (May 21, Jack Huynh) \u2014 NOT an official TAITRA keynote",
+   "confidence": "high",
+   "citation": "https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025"
+  },
+  {
+   "company": "AMD",
+   "year": 2026,
+   "form": "Did NOT keynote (Intel and AMD switched places vs 2025; AMD sat out)",
+   "confidence": "high",
+   "citation": "https://tech.yahoo.com/computing/article/computex-2026-the-biggest-announcements-so-far-from-acer-msi-intel-and-more-175924270.html"
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2024,
+   "form": "Official CEO keynote 'The PC Reborn' (June 3, Cristiano Amon)",
+   "confidence": "high",
+   "citation": "https://www.qualcomm.com/news/releases/2024/06/qualcomm-computex-2024-keynote-unveils--the-pc-reborn--with-snap"
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2025,
+   "form": "Official CEO keynote (May 19, 14:00, Hall 2 7F, Cristiano Amon)",
+   "confidence": "high",
+   "citation": "https://www.qualcomm.com/news/releases/2025/05/qualcomm-president-and-ceo-cristiano-amon-to-deliver-keynote-spe"
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2026,
+   "form": "Official opening CEO keynote 'The Year of Agents' (June 1, Cristiano Amon)",
+   "confidence": "high",
+   "citation": "https://www.computextaipei.com.tw/en/news/F75E2DAF53BB3573/info.html"
+  },
+  {
+   "company": "Intel",
+   "year": 2024,
+   "form": "Official CEO keynote 'AI Everywhere' (June 4, Pat Gelsinger)",
+   "confidence": "high",
+   "citation": "https://www.intc.com/news-events/press-releases/detail/1697/intel-accelerates-ai-everywhere-at-computex-2024-redefines"
+  },
+  {
+   "company": "Intel",
+   "year": 2025,
+   "form": "Booth / private press demos only \u2014 deliberately NO keynote (Panther Lake 18A, Arc Pro B50/B60)",
+   "confidence": "high",
+   "citation": "https://newsroom.intel.com/press-kit/intel-at-computex-2025"
+  },
+  {
+   "company": "Intel",
+   "year": 2026,
+   "form": "Official CEO keynote (June 2, 13:30, Lip-Bu Tan)",
+   "confidence": "high",
+   "citation": "https://newsroom.intel.com/artificial-intelligence/computex-2026-an-intelligent-world-built-on-silicon"
+  },
+  {
+   "company": "MediaTek",
+   "year": 2024,
+   "form": "Official CEO keynote 'The Power of Ubiquitous AI' (June 4, Rick Tsai)",
+   "confidence": "high",
+   "citation": "https://www.mediatek.com/tek-talk-blogs/computex-2024-keynote-intelligence-everywhere-the-power-of-ubiquitous-ai"
+  },
+  {
+   "company": "MediaTek",
+   "year": 2025,
+   "form": "Official CEO keynote 'AI for Everyone: From Edge to Cloud' (May 20, Rick Tsai)",
+   "confidence": "high",
+   "citation": "https://www.mediatek.com/tek-talk-blogs/our-vision-for-the-future-ai-for-everyone-from-edge-to-cloud-at-computex-2025"
+  },
+  {
+   "company": "MediaTek",
+   "year": 2026,
+   "form": "Keynote ANNOUNCED for June 3 then CANCELLED by TAITRA; retained booth/showcase 'AI Without Limits'",
+   "confidence": "high",
+   "citation": "https://videocardz.com/newz/mediatek-keynote-canceled-ahead-of-computex-2026-focus-shifts-to-nvidias-june-1-event-with-possible-n1-laptop-soc-annoucement"
+  },
+  {
+   "company": "Supermicro",
+   "year": 2024,
+   "form": "Official CEO keynote (June 5, 9:30am, Charles Liang) \u2014 7th consecutive year",
+   "confidence": "high",
+   "citation": "https://www.supermicro.com/en/pressreleases/supermicro-ceo-charles-liang-once-again-deliver-ceo-keynote-computex-2024"
+  },
+  {
+   "company": "Supermicro",
+   "year": 2025,
+   "form": "Company-hosted 'Innovate' CEO keynote during COMPUTEX week (May 19, Charles Liang + Jensen Huang) \u2014 not an official TAITRA slot",
+   "confidence": "high",
+   "citation": "https://www.supermicro.com/en/event/computex/innovate-2025-keynote-signup"
+  },
+  {
+   "company": "Supermicro",
+   "year": 2026,
+   "form": "Company-hosted 'Innovate' CEO keynote during COMPUTEX week (June 1, Charles Liang) \u2014 not an official TAITRA slot",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/supermicro-introduces-dcbbs-blueprints-for-nvidia-vera-rubin-nvl72-and-nvidia-hgx-rubin-nvl8-built-to-scale-from-5mw-to-1gw-as-an-end-to-end-total-solution-302786517.html"
+  },
+  {
+   "company": "NXP Semiconductors",
+   "year": 2024,
+   "form": "Official keynote 'The Rise of Responsible Robots' (June 5, Lars Reger, CTO)",
+   "confidence": "high",
+   "citation": "https://www.eetimes.com/computex-2024-day-two-lars-reger-talks-edge-ai/"
+  },
+  {
+   "company": "NXP Semiconductors",
+   "year": 2025,
+   "form": "Official keynote 'AI at the edge' (May 20, 15:00, Jens Hinrichsen, EVP)",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/nxp-executive-vice-president-jens-hinrichsen-to-deliver-keynote-at-computex-2025-discussion-ai-at-the-edge-creating-an-autonomous-future-302423090.html"
+  },
+  {
+   "company": "NXP Semiconductors",
+   "year": 2026,
+   "form": "Official CEO keynote 'Physical AI' (June 2 afternoon, TWTC 2F, Rafael Sotomayor, President & CEO)",
+   "confidence": "high",
+   "citation": "https://www.computextaipei.com.tw/en/news/03154256AFE07A02/info.html"
+  },
+  {
+   "company": "Delta Electronics",
+   "year": 2024,
+   "form": "Official keynote 'How AI Revolutionizes Automation Applications' (June 6, 11:00, Dr. Tzi-cker Chiueh)",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/delta-to-deliver-keynote-speech-at-computex-2024-sharing-ai-driven-automation-innovations-302147612.html"
+  },
+  {
+   "company": "Delta Electronics",
+   "year": 2025,
+   "form": "Booth-only exhibitor (stand L0617a, Hall 1) \u2014 NO keynote, NO press conference",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/delta-presents-comprehensive-solutions-for-ai-data-center-with-containerized-data-center--hvdc-power-solution-at-computex-2025-302461703.html"
+  },
+  {
+   "company": "Arm",
+   "year": 2024,
+   "form": "Guest/joint keynote appearances (with NVIDIA June 2, with MediaTek June 4) + 'Partner's Event Speech' June 3 \u2014 not a standalone TAITRA keynote",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/arm-ceo-rene-haas-will-be-delivering-a-partners-event-speech-at-computex-2024-302115240.html"
+  },
+  {
+   "company": "Arm",
+   "year": 2026,
+   "form": "Arm-hosted CEO keynote co-located with COMPUTEX (June 2, 11:00, Rene Haas + Jensen Huang as guest)",
+   "confidence": "high",
+   "citation": "https://www.arm.com/company/events/computex"
+  },
+  {
+   "company": "ASUS",
+   "year": 2024,
+   "form": "'Always Incredible' launch event / press keynote (June 3, Co-CEO Samson Hu) + booth \u2014 not a TAITRA keynote slot",
+   "confidence": "high",
+   "citation": "https://press.asus.com/news/press-releases/always-incredible-computex-2024/"
+  },
+  {
+   "company": "ASUS",
+   "year": 2025,
+   "form": "Enterprise/AI-data-center press + topical-session showcase + booth (~May 19) \u2014 no consumer stage keynote",
+   "confidence": "high",
+   "citation": "https://press.asus.com/news/press-releases/asus-computex-2025-ai-ecosystem/"
+  },
+  {
+   "company": "ASUS",
+   "year": 2026,
+   "form": "ROG 'Dare to Innovate' / Edition 20 press event (June 1, Syntrend, Chairman Jonney Shih) + booth \u2014 no CEO stage keynote",
+   "confidence": "high",
+   "citation": "https://press.asus.com/news/press-releases/rog-20th-anniversary-computex-event/"
+  },
+  {
+   "company": "Acer",
+   "year": 2024,
+   "form": "Exhibitor with booth + press event (June 3-4 product slate); separately Jerry Kao appeared as a post-show forum panelist (July 23) \u2014 NOT a press conference",
+   "confidence": "high",
+   "citation": "https://blogs.windows.com/windowsexperience/2024/06/03/computex-2024-acer-reveals-latest-swift-travelmate-and-aspire-c-series/"
+  },
+  {
+   "company": "Acer",
+   "year": 2025,
+   "form": "Booth-only (major exhibitor) \u2014 Predator / AI PC lineup",
+   "confidence": "medium",
+   "citation": "https://saiganak.com/event/computextaipei-2025-asus-acer-zotac-gigabyte-boorh/"
+  },
+  {
+   "company": "Acer",
+   "year": 2026,
+   "form": "Press conference / booth showcase (Aspire 18 AI, Predator Atlas 8) \u2014 no CEO show keynote",
+   "confidence": "high",
+   "citation": "https://tech.yahoo.com/computing/article/computex-2026-the-biggest-announcements-so-far-from-acer-msi-intel-and-more-175924270.html"
+  },
+  {
+   "company": "Foxconn (Hon Hai Technology Group)",
+   "year": 2025,
+   "form": "Official CEO keynote (May 20, 09:30, Hall 2 7F, Young Liu)",
+   "confidence": "high",
+   "citation": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1601"
+  },
+  {
+   "company": "Foxconn (Hon Hai Technology Group)",
+   "year": 2026,
+   "form": "Major official presence (Intel rackscale-AI MOU, forums) \u2014 NO standalone keynote (Young Liu + Jerry Hsiao appeared on Intel's stage)",
+   "confidence": "high",
+   "citation": "https://www.taipeitimes.com/News/biz/archives/2026/06/05/2003858542"
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2024,
+   "form": "'AI TOP' launch/press event eve of show (June 4, CEO Eddie Lin) + booth",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/gigabyte-unveils-ai-top-as-solution-to-local-ai-training-at-computex-2024-302161675.html"
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2025,
+   "form": "'LEADING EDGE' reveal (May 19) + online keynote (May 21) + booth",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/gigabyte-to-set-the-leading-edge-at-computex-2025-showcasing-the-future-of-ai-innovation-302448644.html"
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2026,
+   "form": "'ENTER INFINITY' event (~June 1, CEO Eddie Lin, 40th anniversary) + booth",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.co.uk/news-releases/gigabyte-event-unveils-the-full-stack-of-new-products-with-enter-infinity-at-computex-2026-302785637.html"
+  },
+  {
+   "company": "MSI",
+   "year": 2025,
+   "form": "Booth-only (major exhibitor) \u2014 Claw 8 EX AI+ handheld, AI PC laptops",
+   "confidence": "medium",
+   "citation": "https://www.laptopmag.com/laptops/windows-laptops/intel-panther-lake-computex-2025"
+  },
+  {
+   "company": "Marvell",
+   "year": 2026,
+   "form": "Official CEO keynote 'The Future of AI Scaling Depends on Connectivity' (June 2, 10:30/11:00, Hall 2 7F, Matt Murphy + Jensen Huang as guest)",
+   "confidence": "high",
+   "citation": "https://www.marvell.com/company/newsroom/marvell-keynote-computex-2026-future-of-scaling-ai-depends-on-connectivity.html"
+  },
+  {
+   "company": "Cisco",
+   "year": 2026,
+   "form": "Keynote 'A Full Stack Approach to AI' \u2014 Cisco's first-ever COMPUTEX keynote (June 1, 15:00, SVP Jeremy Foster)",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/cisco-makes-its-debut-at-computex-keynote-svp-jeremy-foster-to-unveil-a-full-stack-approach-to-ai-302732307.html"
+  },
+  {
+   "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+   "year": 2025,
+   "form": "Day-0 Global Press Conference (May 19, James C.F. Huang + Paul S.L. Peng)",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/computex-2025-gathers-global-tech-minds-to-explore-ai-driven-industrial-evolution-302458760.html"
+  },
+  {
+   "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+   "year": 2026,
+   "form": "Day-0 Global Press Conference (June 1, James C.F. Huang + Jason Chen)",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/computex-2026-opens-amid-surging-global-demand-for-ai-infrastructure-302788497.html"
+  },
+  {
+   "company": "Advantech",
+   "year": 2025,
+   "form": "Pre-show press conference (May 19, KC Liu et al.) + booth + COMPUTEX Forum keynote (May 21, Miller Chang)",
+   "confidence": "high",
+   "citation": "https://www.advantech.com/en-eu/resources/news/advantech-launches-%E2%80%9Cedge-computing--wise-edge-in-action%E2%80%9D-series-of-conferences-exhibits-and-livestreams-at-computex-2025"
+  },
+  {
+   "company": "Pegatron",
+   "year": 2024,
+   "form": "COMPUTEX Forum talk (~June 5, T.H. Tung) + booth + June 3 pre-show press event at HQ \u2014 NOT a press conference",
+   "confidence": "high",
+   "citation": "https://www.digitimes.com/news/a20240604PD209/pegatron-ai-server-nvidia-blackwell-4q24-computex-2024.html"
+  },
+  {
+   "company": "Wiwynn",
+   "year": 2025,
+   "form": "COMPUTEX Forum talk (Emily Hong) + booth showcase (G0017) \u2014 NOT a press conference",
+   "confidence": "high",
+   "citation": "https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html"
+  }
+ ],
+ "gaps": [
+  {
+   "company": "AMD",
+   "year": 2025,
+   "form": "Company-hosted press conference",
+   "detail": "Dataset (per verdicts) verifies AMD 2024 only; AMD's May 21, 2025 press conference (Jack Huynh \u2014 Radeon RX 9060 XT, Radeon AI PRO R9700, Ryzen Threadripper 9000) \u2014 the week's strongest hardware showing and the sole x86 stage event \u2014 is in program list A but has no verified session record in B.",
+   "source": "https://ir.amd.com/news-events/press-releases/detail/1253/amd-introduces-new-radeon-graphics-cards-and-ryzen-threadripper-processors-at-computex-2025"
+  },
+  {
+   "company": "Foxconn (Hon Hai Technology Group)",
+   "year": 2024,
+   "form": "Booth / pre-show press (no keynote)",
+   "detail": "Foxconn 2024 had a substantive AI-server presence (Hon Hai/FII) but is not in the program list's keynote slate and has no verified session in B. Minor gap; 2024 was not a Foxconn keynote year.",
+   "source": "https://www.foxconn.com/en-us/press-center/press-releases/latest-news/1601"
+  },
+  {
+   "company": "Cisco",
+   "year": 2026,
+   "form": "Official keynote (debut)",
+   "detail": "Cisco's first-ever COMPUTEX keynote (SVP Jeremy Foster, 'A Full Stack Approach to AI', June 1) appears in program list A but has no per-company verification verdict in B \u2014 unverified in the dataset.",
+   "source": "https://www.prnewswire.com/news-releases/cisco-makes-its-debut-at-computex-keynote-svp-jeremy-foster-to-unveil-a-full-stack-approach-to-ai-302732307.html"
+  },
+  {
+   "company": "MediaTek",
+   "year": 2026,
+   "form": "Keynote announced then cancelled + booth",
+   "detail": "Program list A documents the cancelled June 3 keynote and the retained 'AI Without Limits' booth plus MediaTek's RTX Spark CPU co-development; B has no 2026 MediaTek verdict. Needs a record reflecting the cancellation (not a delivered keynote).",
+   "source": "https://videocardz.com/newz/mediatek-keynote-canceled-ahead-of-computex-2026-focus-shifts-to-nvidias-june-1-event-with-possible-n1-laptop-soc-annoucement"
+  },
+  {
+   "company": "NVIDIA",
+   "year": 2026,
+   "form": "Keynote (RTX Spark omission)",
+   "detail": "NVIDIA 2026 session exists in B but MISSES the consumer headline \u2014 RTX Spark, the Arm-based Windows-on-Arm superchip (20-core Grace CPU co-developed with MediaTek + Blackwell RTX GPU). Coverage gap within a verified record.",
+   "source": "https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory"
+  },
+  {
+   "company": "ASUS",
+   "year": 2025,
+   "form": "Enterprise press/booth (flagship products missing)",
+   "detail": "ASUS 2025 record captures only the AIDC/ACC software tools and omits the two flagship 2025 headlines \u2014 ASUS AI POD (NVIDIA GB300 NVL72) and ASUS AI Hub \u2014 plus the Ascent GX10. Major coverage gap within a verified record.",
+   "source": "https://press.asus.com/news/press-releases/asus-ai-pod-nvidia-computex-2025/"
+  },
+  {
+   "company": "Marvell",
+   "year": 2026,
+   "form": "Keynote (Teralynx T100 omission)",
+   "detail": "Marvell 2026 keynote is verified but the dataset omits the lead product the press led with \u2014 the 102.4 Tbps 'Teralynx T100' Ethernet switch silicon \u2014 and the restated NVIDIA $2B investment / NVLink Fusion optics partnership.",
+   "source": "https://www.stocktitan.net/news/MRVL/marvell-announces-availability-of-industry-s-first-102-4-tbps-switch-twxe5zlm55l1.html"
+  },
+  {
+   "company": "Acer",
+   "year": 2024,
+   "form": "Show exhibitor (announcements missing)",
+   "detail": "Acer's actual COMPUTEX 2024 product slate (Swift 14 AI Copilot+ PC, Predator X27U F3 / X32 X3 / X34 X5 OLED monitors, SpatialLabs Eyes camera, Wave 7 Wi-Fi 7 router) is entirely absent \u2014 the dataset record instead captured a post-show July 23 forum video.",
+   "source": "https://www.cgmagonline.com/news/computex-2024-acer-announcements/"
+  }
+ ],
+ "dataset_errors": [
+  {
+   "company": "Arm",
+   "year": 2024,
+   "error_type": "wrong_year",
+   "detail": "The Arm '2024' record is actually a COMPUTEX 2021 video ('Accelerating Ubiquitous Intelligence', video_date 2021-06-14). 3-year mismatch. Presenter title 'CEO' is anachronistic \u2014 Rene Haas was President of Arm IP Products Group in 2021; Simon Segars was CEO until Feb 2022. Arm's real 2024 slot was a June 3 'Partner's Event Speech', not a TAITRA keynote.",
+   "correction": "Re-label as either COMPUTEX 2021 forum talk, OR replace with Arm's genuine 2024 content (Partner's Event Speech, June 3): Cortex-X925, Cortex-A725, Immortalis-G925, KleidiAI, CSS for Client on 3nm, '100B Arm devices AI-ready by 2025'.",
+   "source": "https://www.prnewswire.com/news-releases/arm-ceo-rene-haas-will-be-delivering-a-partners-event-speech-at-computex-2024-302115240.html"
+  },
+  {
+   "company": "Arm",
+   "year": 2024,
+   "error_type": "wrong_announcement",
+   "detail": "All four claimed announcements (Armv9 architecture, Cortex-X2, Neoverse N2, NVIDIA Grace) are 2021-era and wrong for any 2024 record. Armv9 dates to March 2021; the 2024 flagship core was Cortex-X925 (not X2); Grace was an NVIDIA GTC item.",
+   "correction": "Drop all four. If keeping a 2024 record, substitute the genuine 2024 reveals: Cortex-X925, Cortex-A725, Immortalis-G925, KleidiAI, CSS for Client.",
+   "source": "https://fuse.wikichip.org/news/7793/arm-unveils-2024-compute-platform-3nm-cortex-x925-cortex-a725-immortalis-g925/"
+  },
+  {
+   "company": "Acer",
+   "year": 2024,
+   "error_type": "wrong_event",
+   "detail": "Record labeled 'press_conference' is actually a TCA/Monte Jade post-show industry FORUM panel segment (July 23, 2024), with Jerry Kao as a panelist \u2014 not Acer's COMPUTEX show appearance. video_date 2024-09-25 is the YouTube upload date, ~2.5 months after the June 4-7 show.",
+   "correction": "Re-label form as forum panel and date the actual session July 23, 2024 (or replace with Acer's real June 4-7 COMPUTEX show appearance and product slate). Presenter role: Jerry Kao was a forum panelist, not a press/keynote presenter.",
+   "source": "https://www.youtube.com/watch?v=mbPRLNYqxTs"
+  },
+  {
+   "company": "Delta Electronics",
+   "year": 2025,
+   "error_type": "did_not_attend",
+   "detail": "Record labeled 'press_conference' (speaker 'Power & Thermal'). Delta held NO keynote and NO press conference at COMPUTEX 2025 \u2014 it was a booth-only exhibitor (stand L0617a) and is absent from both the official keynote lineup and the Forum roster. The video (upload 2025-05-16) is a pre-show marketing video uploaded 4 days before the May 20 show open, not a session recording.",
+   "correction": "Re-label as booth-only exhibitor. Remove the press-conference framing and the session-video provenance.",
+   "source": "https://www.prnewswire.com/news-releases/delta-presents-comprehensive-solutions-for-ai-data-center-with-containerized-data-center--hvdc-power-solution-at-computex-2025-302461703.html"
+  },
+  {
+   "company": "Delta Electronics",
+   "year": 2025,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed '1 MW 800 VDC power rack' was NOT a COMPUTEX 2025 item. Delta's 1.1 MW-scale 800 VDC rack ('AI Power Cube', with NVIDIA) was unveiled at OCP Global Summit in OCTOBER 2025, five months after COMPUTEX.",
+   "correction": "Drop the 1 MW rack claim from COMPUTEX 2025. Keep the broader '800 VDC / HVDC distribution architecture' (real at the booth) and add the actual lead: AI containerized data center solution + NVIDIA GB200 NVL72 in-rack CDU certification + 1,500 kW L2L CDU.",
+   "source": "https://www.delta-americas.com/en-us/news/deltas-groundbreaking-800-vdc-power-solutions-showcased-at-ocp-global-summit-2025-to-enable-sustainable-ai-factories"
+  },
+  {
+   "company": "Advantech",
+   "year": 2025,
+   "error_type": "wrong_event",
+   "detail": "Claimed 'Advantech Robotic Suite' is a real product but launched Oct 22, 2025 (with ASR-A702/AFE-A702 controllers), NOT at COMPUTEX 2025 (May).",
+   "correction": "Remove 'Advantech Robotic Suite' from the COMPUTEX 2025 list. The real COMPUTEX headline was MIC-743 with live full-stack NVIDIA Jetson Thor integration.",
+   "source": "https://www.advantech.com/en-us/resources/news/advantech-unveils-edge-ai-solutions-accelerated-by-nvidia-jetson-thor-for-robotics-medical-ai-and-data-intelligence"
+  },
+  {
+   "company": "Advantech",
+   "year": 2025,
+   "error_type": "wrong_announcement",
+   "detail": "'Techman collaborative robot vision inspection collaboration' is misattributed (cross-company). Techman Robot's COMPUTEX 2025 AI inspection cobot solution was with QCT (Quanta Cloud Technology) + NVIDIA \u2014 Advantech was not a partner. Also 'ASMR' is a garbled corruption of AS&R (Autonomous Systems & Robotics).",
+   "correction": "Drop the Techman claim (wrong company). Correct 'ASMR' to 'AS&R' and frame it as a showcase theme, not a newly-announced business unit. Net: 0 of the 3 listed announcements are correctly tied to Advantech-at-COMPUTEX-2025.",
+   "source": "https://www.tm-robot.com/en/how-techman-robot-leverages-nvidia-omniverse-to-build-ai-inspection-solutions-for-smart-factories/"
+  },
+  {
+   "company": "Pegatron",
+   "year": 2024,
+   "error_type": "wrong_event",
+   "detail": "Record labeled 'press_conference' is actually a COMPUTEX Forum speaking slot ('Looking at the Next Steps of Taiwan's ICT Industry', T.H. Tung). video_date 2024-09-11 is the YouTube upload date (~3 months after the June 4-7 show); actual session ~June 5, 2024.",
+   "correction": "Re-label form as forum talk; date the session ~June 5, 2024 (note 2024-09-11 is upload date). claimed_announcements is empty \u2014 Pegatron's real COMPUTEX 2024 product news (GB200 NVL72/NVL36 Blackwell servers shipping 4Q24, MGX 4U with Intel, Holley L11 liquid cooling) is from the booth/pre-show, defensibly outside the forum-talk scope.",
+   "source": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=ERhjhZyI358&format=json"
+  },
+  {
+   "company": "Wiwynn",
+   "year": 2025,
+   "error_type": "wrong_event",
+   "detail": "Record labeled 'press_conference' is actually a COMPUTEX Forum talk (Emily Hong); Wiwynn's product news was a booth showcase (press release 2025-05-19), with no standalone press conference. speaker 'AI Computing' is a video-title fragment, not a person. video_date 2025-05-09 is implausible (11 days before the May 20 show open).",
+   "correction": "Re-label form as forum talk; set presenter to Emily Hong (Chair & Chief Strategy Officer); correct the date to the show window (May 20-23) / press-release date May 19.",
+   "source": "https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html"
+  },
+  {
+   "company": "Wiwynn",
+   "year": 2025,
+   "error_type": "wrong_announcement",
+   "detail": "Two claimed announcements are misattributed: (1) 'Texas factory' was a separate 2025-03-01 corporate announcement (US$300M first US plant), not a COMPUTEX 2025 item; (2) 'YTL partnership' headline (MLPerf Training v5.1 result at YTL Malaysia) was announced ~Nov 14-18 2025, months after the show.",
+   "correction": "Drop both 'Texas factory' and 'YTL partnership' from COMPUTEX 2025. Replace with the real reveals: NVIDIA GB300 NVL72 (with Wistron), HGX B300, AMD Instinct MI350, RTX PRO 6000, and the liquid-cooling portfolio (Fabric8Labs ECAM cold plates, Shinwa 200kW AALC Sidecar, nVent in-rack CDU).",
+   "source": "https://www.taipeitimes.com/News/biz/archives/2025/03/01/2003832679"
+  },
+  {
+   "company": "NXP Semiconductors",
+   "year": 2026,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed 'Boston Dynamics factory robotics collaboration' is unsupported by all 6 authoritative sources covering the keynote. No NXP-Boston Dynamics partnership exists; Boston Dynamics' AI/robotics partners are NVIDIA, Google DeepMind, Toyota, Hyundai, and the RAI Institute. Hallucinated/misattributed.",
+   "correction": "Drop the Boston Dynamics claim. Real keynote items: Neural Axis Architecture (Reasoning / Coordination / Reflexive layers), eIQ Toolkit, and the World Models / Vision-Language-Action (VLA) physical-AI framing. Name the presenter: Rafael Sotomayor, President & CEO. Keynote was delivered June 2 (dataset uses June 3).",
+   "source": "https://www.prnewswire.com/news-releases/nxp-ceo-rafael-sotomayor-to-deliver-physical-ai-keynote-at-computex-2026-302729465.html"
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2025,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed 'AI TOP Edge desktop supercomputer' does not exist as a Gigabyte product. The real desktop AI supercomputer unveiled was the AI TOP ATOM (NVIDIA GB10 Grace Blackwell / DGX Spark box, 128GB LPDDR5X). The name conflates the 'edge AI' tier concept with the wrong product name.",
+   "correction": "Replace 'AI TOP Edge' with 'AI TOP ATOM'. The confirmed AORUS RTX 5090 AI BOX (Thunderbolt 5 eGPU) is correct. The 'Leading Edge' speaker field is an event-theme fragment, not a presenter.",
+   "source": "https://www.techpowerup.com/336948/gigabyte-shows-off-ai-top-atom-dgx-spark-box"
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2026,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed 'D5 DX memory technology with CQD support' conflates two separate Gigabyte technologies: (1) 'CQDIMM technology' (Z890 Plus, 256GB dual-DIMM) and (2) 'D5 DUO X' BIOS tuning. 'D5 DX' is inaccurate and 'CQD' is a truncation of 'CQDIMM'.",
+   "correction": "Split into the two real technologies (CQDIMM + D5 DUO X) or drop the garbled name. The confirmed AORUS RTX 5080 INFINITY WOOD is correct. Presenter is Eddie Lin (CEO), not the 'Enter Infinity' theme fragment.",
+   "source": "https://www.gigabyte.com/press/news/2399"
+  },
+  {
+   "company": "MediaTek",
+   "year": 2024,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed 'Dimensity 9400 mobile SoC' is misattributed as a 2024 COMPUTEX announcement. At COMPUTEX 2024 the current flagship on stage was the Dimensity 9300/9300+ (68 TOPS NPU); the 9400 was only PREVIEWED as ~3 months away and formally launched Oct 9, 2024.",
+   "correction": "Reframe the 9400 as a preview/tease, not a launch. Add the actual marquee data-center reveal \u2014 the 70B-transistor custom networking chip with in-house 224G SerDes \u2014 plus the NVIDIA Dimensity Auto partnership and the Jensen Huang + Rene Haas on-stage appearance.",
+   "source": "https://www.notebookcheck.net/MediaTek-Dimensity-9400-confirmed-for-an-October-9-launch.892982.0.html"
+  },
+  {
+   "company": "NVIDIA",
+   "year": 2024,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed 'Spectrum-X800' is not the product name used at COMPUTEX 2024. The platform shown was 'Spectrum-X' Ethernet (SN5600 switch + BlueField-3 SuperNIC), with the Spectrum-X CX9 1600G SuperNIC on the future roadmap. 'X800' conflates the 800G generation naming.",
+   "correction": "Correct 'Spectrum-X800' to 'Spectrum-X' Ethernet (SN5600 + BlueField-3 SuperNIC). Also add the omitted headline items: annual cadence roadmap, NIM microservices, RTX AI PC laptops, ACE/digital humans.",
+   "source": "https://convergedigest.com/nvidia-scales-its-spectrum-x-ethernet-networking-platform/"
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2026,
+   "error_type": "wrong_announcement",
+   "detail": "Claimed 'Claude Desktop native on Snapdragon PCs' is imprecise/overstated. The keynote demo used Claude CODE (live coding-workload demo), not Claude Desktop; and product material lists 'Claude Desktop' as a supported tool without confirming local/on-device 'native' execution. No source confirms a dedicated Claude Desktop keynote announcement.",
+   "correction": "Drop or reframe the 'Claude Desktop native' claim. The confirmed headline was the 'Dragonfly' data-center brand. Add omitted reveals: Snapdragon X2 Elite (80 TOPS) / X2 Plus, Snapdragon C ~$300 platform, Dragonwing IQ10 robotics reference design.",
+   "source": "https://www.qualcomm.com/snapdragon/news/computex-2026--the--year-of-agents---big--and-mini--pc-announcem"
+  },
+  {
+   "company": "ASUS",
+   "year": 2025,
+   "error_type": "wrong_date",
+   "detail": "video_date 2025-05-14 is BEFORE both the show window (May 20-23) and ASUS's own May 19 announcement date \u2014 either wrong or a pre-show teaser upload. Form 'press_conference' overstated: 2025 had no consumer-keynote-style press conference; the data-center content was an enterprise showcase + topical session.",
+   "correction": "Correct the date to ~2025-05-19 and re-label form as enterprise press/showcase. Add the missing flagship items (ASUS AI POD GB300 NVL72, AI Hub, Ascent GX10).",
+   "source": "https://press.asus.com/news/press-releases/asus-enterprise-ai-solutions-computex-2025/"
+  },
+  {
+   "company": "AMD",
+   "year": 2024,
+   "error_type": "wrong_announcement",
+   "detail": "Minor framing imprecision: dataset lists 'Ultra Accelerator Link 1.0 standard' as a discrete announcement. AMD's UALink involvement was discussed, but the UALink 1.0 spec was not finalized until April 2025; at COMPUTEX 2024 Su stated UAL 1.0 was 'on track for later in 2024'. Real item, slightly anachronistic '1.0' framing.",
+   "correction": "Reword to 'UALink (in development; 1.0 on track for later 2024)'. No false claims otherwise; all 8 AMD items are genuine. Omitted headliners: XDNA 2 NPU (50 TOPS), RDNA 3.5, Radeon PRO W7900/W7900DS, ROCm 6.1, Versal AI Edge Gen 2.",
+   "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-announces-mi325x-ai-accelerator-reveals-mi350-and-mi400-plans-at-computex"
+  }
+ ],
+ "verified_highlights": [
+  {
+   "company": "NVIDIA",
+   "year": 2024,
+   "announcements": [
+    "First public reveal of the 'Rubin'/Rubin Ultra platform and a one-year (annual) product cadence (Blackwell -> Blackwell Ultra -> Rubin -> Rubin Ultra)",
+    "Blackwell shown heading into production; framed datacenters as 'AI factories'",
+    "Spectrum-X Ethernet AI networking (SN5600 switch + BlueField-3 SuperNIC; CX9 1600G on roadmap)",
+    "NIM inference microservices; RTX AI PCs (Project G-Assist); ACE/digital humans"
+   ]
+  },
+  {
+   "company": "NVIDIA",
+   "year": 2025,
+   "announcements": [
+    "NVLink Fusion \u2014 semi-custom AI infrastructure mixing NVLink with partners' CPUs/accelerators (MediaTek, Marvell, Fujitsu, Qualcomm)",
+    "Grace Blackwell GB300 / GB300 NVL72 rack-scale systems",
+    "DGX Spark personal AI supercomputer in full production (ASUS, Dell, Gigabyte, Lenovo, MSI)",
+    "Taiwan AI supercomputer with Foxconn + Taiwan government (~10,000 Blackwell GPUs); NVIDIA 'Constellation' Taiwan HQ"
+   ]
+  },
+  {
+   "company": "NVIDIA",
+   "year": 2026,
+   "announcements": [
+    "Vera Rubin in full production ('supply chain twice as large as Grace Blackwell')",
+    "Vera Rubin NVL72 five-rack platform (Vera CPU + Spectrum-6 SPX Ethernet + BlueField-4 STX storage)",
+    "Spectrum-X Ethernet Photonics \u2014 world's first 200Gb/s SerDes switch with co-packaged optics, in production (CoreWeave, Lambda, Oracle Cloud)",
+    "RTX Spark \u2014 Arm-based Windows-on-Arm consumer superchip (20-core Grace CPU co-developed with MediaTek + Blackwell RTX GPU) \u2014 the consumer headline OMITTED from the dataset"
+   ]
+  },
+  {
+   "company": "AMD",
+   "year": 2024,
+   "announcements": [
+    "Ryzen AI 300 Series / Strix Point with XDNA 2 NPU (50 TOPS) \u2014 the central PC-AI reveal",
+    "Ryzen 9000 desktop CPUs on Zen 5",
+    "5th Gen EPYC 'Turin' (Zen 5, 2H 2024)",
+    "Instinct MI325X (288GB HBM3E, Q4 2024); MI350 (2025) and MI400 (2026) roadmap; annual cadence"
+   ]
+  },
+  {
+   "company": "AMD",
+   "year": 2025,
+   "announcements": [
+    "Radeon RX 9060 XT (RDNA 4; 8GB $299 / 16GB $349)",
+    "Radeon AI PRO R9700 (32GB) workstation card",
+    "Ryzen Threadripper 9000 / 9000 Pro (up to 96 Zen 5 cores)",
+    "Strongest hardware showing of the week; AMD was the sole x86 vendor with a major stage event"
+   ]
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2024,
+   "announcements": [
+    "Snapdragon X Elite / X Plus Copilot+ PC first wave (Acer/HP/Lenovo, retail from June 18, 2024)",
+    "Qualcomm AI Hub expanded to PCs (>2,000 developers)",
+    "Hexagon NPU 45 TOPS positioned ahead of Apple M3 and Intel Core Ultra 7 155H",
+    "Oryon CPU up to 51% faster at ISO power; on-stage jabs at Apple"
+   ]
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2025,
+   "announcements": [
+    "Re-entry into the data-center market: custom Oryon-based data-center CPUs linking to NVIDIA chips via NVLink Fusion",
+    "85+ Snapdragon X Series PC designs on sale or in development",
+    "Fortnite on Snapdragon X Elite (Epic / Easy Anti-Cheat for Windows on Arm)",
+    "Teased a new PC chip for the September Snapdragon Summit"
+   ]
+  },
+  {
+   "company": "Qualcomm",
+   "year": 2026,
+   "announcements": [
+    "'Dragonfly' new data-center product brand (CPUs, AI inference accelerators, custom ASICs)",
+    "Framed 2026 as 'the year of agents' with distributed on-device + cloud AI",
+    "Snapdragon X2 Elite (80 TOPS) / X2 Plus and Snapdragon C ~$300 entry AI-PC platform (omitted from dataset)",
+    "Dragonwing IQ10 robotics reference design, up to 700 TOPS (omitted from dataset)"
+   ]
+  },
+  {
+   "company": "Intel",
+   "year": 2024,
+   "announcements": [
+    "Lunar Lake AI-PC client architecture (up to 40% lower SoC power, ~3x AI compute, Q3 2024)",
+    "Xeon 6 with E-cores (Sierra Forest) available from June 4; up to 4.2x rack-level performance",
+    "Gaudi 3 accelerator 8-kit at $125,000; Gaudi 2 kit at $65,000",
+    "Xeon 6 P-cores (Granite Rapids) previewed; 40M+ Core Ultra projected for 2024"
+   ]
+  },
+  {
+   "company": "Intel",
+   "year": 2026,
+   "announcements": [
+    "Intel 18A process at full scale (130+ edge designs on 18A)",
+    "Arc G3 / Arc G3 Extreme handheld gaming chip (Panther Lake + Xe3); OEM handhelds from June 2026 (MSI Claw 8 EX AI+, Acer Predator Atlas 8, OneXPlayer)",
+    "Xeon 6+ \u2014 up to 288 E-cores, 576MB L3, on Intel 18A (~150k agents/rack)",
+    "Foxconn MOU on rackscale AI infrastructure; live demo with Perplexity's Aravind Srinivas; SambaNova inference collaboration"
+   ]
+  },
+  {
+   "company": "MediaTek",
+   "year": 2024,
+   "announcements": [
+    "Custom networking chip with 70B+ transistors and in-house 224G SerDes (400G+ roadmap) \u2014 the marquee data-center reveal",
+    "Custom AI accelerators for the cloud (~$45B custom-compute data-center TAM)",
+    "Dimensity 9300/9300+ as the current flagship (68 TOPS NPU); Dimensity 9400 previewed (~3 months out, launched Oct 9)",
+    "Dimensity Auto Cockpit co-developed with NVIDIA; Jensen Huang + Rene Haas on stage"
+   ]
+  },
+  {
+   "company": "MediaTek",
+   "year": 2025,
+   "announcements": [
+    "First 2nm high-volume chip to tape out September 2025 (~15% better perf / ~25% lower power vs 3nm)",
+    "Participation in NVIDIA NVLink Fusion (custom AI silicon for data centers)",
+    "Co-designed CPU for the NVIDIA DGX Spark GB10 Grace Blackwell Superchip (20-core Arm Grace CPU)",
+    "Dimensity 9400/9400+ with on-device agentic AI; Genio 720/520 edge platforms; 6G-with-AI roadmap; Jensen Huang on stage"
+   ]
+  },
+  {
+   "company": "Foxconn (Hon Hai Technology Group)",
+   "year": 2025,
+   "announcements": [
+    "Foxconn Genesis AI/robotics manufacturing platform (built with NVIDIA Omniverse)",
+    "FoxBrain domain-specific AI foundation model (FoxBrain AI Factory on NVIDIA DGX SuperPOD; fine-tuned on Llama)",
+    "First NVIDIA Cloud Partner (NCP) in Taiwan via Big Innovation Company \u2014 AI factory with 10,000 NVIDIA Blackwell GPUs",
+    "100-megawatt AI data center with NVIDIA (GB300 NVL72 infrastructure)"
+   ]
+  },
+  {
+   "company": "Intel",
+   "year": 2024,
+   "announcements": [
+    "Lunar Lake AI-PC client architecture (up to 40% lower SoC power, ~3x AI compute, shipping Q3 2024)",
+    "Xeon 6 with E-cores (Sierra Forest), available from June 4, 2024",
+    "Gaudi 3 AI accelerator: 8-accelerator kit at $125,000; Gaudi 2 kit at $65,000",
+    "Core Ultra partner design momentum (40M+ Core Ultra projected for 2024)"
+   ]
+  },
+  {
+   "company": "Supermicro",
+   "year": 2024,
+   "announcements": [
+    "X14 Intel Xeon 6 server platforms (Hyper, SuperBlade, FlexTwin, GrandTwin; up to 576 E-cores/server)",
+    "Direct Liquid Cooling (DLC) rack-scale solution in mass production (~1,000 DLC racks/month; install cut to 2-4 weeks; 100kW/rack)",
+    "Up to ~40% datacenter TCO/energy reduction (Green-IT)",
+    "Jensen Huang appeared on stage to endorse Supermicro DLC (called himself Supermicro's 'best sales guy')"
+   ]
+  },
+  {
+   "company": "Supermicro",
+   "year": 2025,
+   "announcements": [
+    "DLC-2 next-gen Direct Liquid Cooling (cools CPU/GPU + PSU/memory/VRMs; PGDLC2 fluid; up to 40% electricity / 20% TCO savings)",
+    "DCBBS (Data Center Building Block Solutions) \u2014 full GPU-to-rack datacenter blueprint (the keynote's headline framework)",
+    "B300 DLC-2 systems on NVIDIA HGX B300 NVL16 and GB300 NVL72 (Blackwell Ultra)",
+    "Charles Liang on stage with Jensen Huang"
+   ]
+  },
+  {
+   "company": "Supermicro",
+   "year": 2026,
+   "announcements": [
+    "DCBBS Blueprints for NVIDIA Vera Rubin NVL72 and HGX Rubin NVL8, scaling 5MW to 1GW (deployments H2 2026)",
+    "SMC PG25-A proprietary dielectric coolant claiming ~1,000x higher electrical impedance than standard coolant (the most-covered 2026 headline)",
+    "Arm AGI CPU-based Supermicro systems for agentic-AI rack-scale deployments",
+    "AMD Helios next-gen rack-scale platform; 12 new Intel Xeon 6+ platforms (up to 288 E-cores/socket)"
+   ]
+  },
+  {
+   "company": "Delta Electronics",
+   "year": 2024,
+   "announcements": [
+    "Keynote 'How AI Revolutionizes Automation Applications' (drone bridge inspection, automated ADAS corner-case testing)",
+    "Vertical power delivery for AI accelerators (48V-to-12V vertical/chip power, ~5-15% lower loss vs lateral)",
+    "Liquid cooling portfolio (cold-plate modules, in-rack CDU for 100kW+ racks, AALC)",
+    "ORV3-compliant 66kW/33kW server power shelves (PSU efficiency up to 97.5%)"
+   ]
+  },
+  {
+   "company": "Marvell",
+   "year": 2026,
+   "announcements": [
+    "102.4 Tbps 'Teralynx T100' Ethernet switch silicon (industry-lowest power; sampling this quarter) \u2014 the lead product OMITTED from the dataset",
+    "1.6T 2nm coherent optical solution (COLORZ 1600 pluggable + Electra 2nm 1.6T ZR/ZR+ DSP; samples 2H2026)",
+    "51.2T CPO-based switch with sixteen 3.2T optical engines shown on stage",
+    "Restated NVIDIA $2B investment and expanded NVLink Fusion / optics partnership (basis for Jensen Huang's on-stage appearance)"
+   ]
+  },
+  {
+   "company": "NXP Semiconductors",
+   "year": 2026,
+   "announcements": [
+    "Neural Axis Architecture \u2014 distributed physical-AI framework with Reasoning, Coordination, and Reflexive Intelligence layers",
+    "eIQ Toolkit for optimizing/compressing/deploying AI workloads on edge devices",
+    "World Models and Vision-Language-Action (VLA) systems for humanoid robots / drones / software-defined vehicles",
+    "'Physical AI' theme \u2014 low latency, low power, trust at the edge (presenter Rafael Sotomayor, President & CEO)"
+   ]
+  },
+  {
+   "company": "Arm",
+   "year": 2026,
+   "announcements": [
+    "Arm AGI CPU mass production announced (up-to-136-core data-center CPU on TSMC 3nm; Meta lead customer)",
+    "Oracle Cloud Infrastructure and ByteDance join the Arm AGI CPU family",
+    "NVIDIA RTX Spark powered by an Arm-based Grace CPU (10x Cortex-X925 + 10x Cortex-A725, built with MediaTek) + Blackwell GPU",
+    "AGI CPU multi-generation roadmap; $15B in-house chip target ahead of schedule (~$20B 2027/2028); Windows-on-Arm 'ready'"
+   ]
+  },
+  {
+   "company": "ASUS",
+   "year": 2024,
+   "announcements": [
+    "Zenbook S 16 (UM5606) \u2014 ultra-slim Ceraluminum OLED, AMD Ryzen AI 9 HX 370, from $1,399",
+    "ProArt P16 (H7606) \u2014 creator clamshell, Ryzen AI 9 HX 370 + up to RTX 4070, from $1,899",
+    "ESC AI POD with rack-scale NVIDIA GB200 NVL72",
+    "Full Copilot+ AI PC lineup (Vivobook S / ProArt / Zenbook with Snapdragon X)"
+   ]
+  },
+  {
+   "company": "ASUS",
+   "year": 2025,
+   "announcements": [
+    "ASUS AI POD powered by NVIDIA GB300 NVL72 (headline 2025 data-center product) \u2014 OMITTED from dataset",
+    "ASUS AI Hub \u2014 flagship turnkey agentic AI solution (the lead 2025 announcement) \u2014 OMITTED",
+    "Ascent GX10 compact AI 'supercomputer' on NVIDIA GB10 Grace Blackwell (1,000 AI TOPS, models up to 200B params)",
+    "ASUS Infrastructure Deployment Center (AIDC) and ASUS Control Center (ACC) software stack"
+   ]
+  },
+  {
+   "company": "ASUS",
+   "year": 2026,
+   "announcements": [
+    "Ascent QN10 Mini PC with Snapdragon X2 Elite (claimed world-first 80 TOPS NPU)",
+    "ROG NUC 16 Edition 20 (flagship gaming in ~3-liter form factor)",
+    "ROG Astral GeForce RTX 5090 Edition 20 (curved AMOLED, up to 800W)",
+    "ROG Xbox Ally X20 bundle (7.4-inch ROG Nebula HDR OLED + ROG XREAL R1 Edition 20 AR glasses); ROG Edition 20 line (20th anniversary)"
+   ]
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2024,
+   "announcements": [
+    "AI TOP local AI training platform ('Train Your Own AI on Your Desk'; Utility + Hardware + Tutor)",
+    "TRX50 AI TOP motherboard (flagship AI TOP board for AMD Threadripper)",
+    "Radeon PRO W7900 AI TOP 48G and W7800 32G workstation GPUs (first/only AMD Radeon PRO partner)"
+   ]
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2025,
+   "announcements": [
+    "AORUS RTX 5090 AI BOX \u2014 world's first/fastest RTX 5090 Thunderbolt 5 liquid-cooled eGPU (32GB, ~3000 AI TOPS)",
+    "AI TOP ATOM personal AI supercomputer (NVIDIA GB10 Grace Blackwell / DGX Spark box, 128GB LPDDR5X)",
+    "AI TOP Utility 4.0 and GiMATE AI agent",
+    "AORUS MASTER 18/16, AERO X16 / GAMING A16 AI laptops, OLED/Mini-LED monitors"
+   ]
+  },
+  {
+   "company": "GIGABYTE",
+   "year": 2026,
+   "announcements": [
+    "AORUS RTX 5090 INFINITY (Red Dot Award, WINDFORCE Hyperburst) + RTX 5080/5070 Ti/5070 INFINITY STEALTH",
+    "AORUS RTX 5080 INFINITY WOOD (AERO WOOD aesthetic into graphics cards)",
+    "CQDIMM technology (Z890 Plus, 256GB dual-DIMM) and D5 DUO X BIOS tuning",
+    "X870/X870E AORUS INFINITY motherboards; AI TOP 100 B850 supercomputer; AORUS RTX 5060 Ti AI BOX"
+   ]
+  },
+  {
+   "company": "Advantech",
+   "year": 2025,
+   "announcements": [
+    "MIC-743 Edge AI platform with live full-stack NVIDIA Jetson Thor integration (the COMPUTEX 2025 headline)",
+    "'Edge Computing & WISE-Edge in Action' conference/exhibition/livestream series",
+    "Autonomous Systems & Robotics (AS&R) showcase theme; Qualcomm Dragonwing edge-AI robotics partnership",
+    "Miller Chang COMPUTEX Forum keynote 'Edge AI-Powered Robotics in Action' (May 21)"
+   ]
+  },
+  {
+   "company": "Pegatron",
+   "year": 2024,
+   "announcements": [
+    "GB200 NVL72 liquid-cooled rack AI server (up to 72 GPU nodes), co-developed with NVIDIA, shipping 4Q24",
+    "GB200 NVL36 enterprise AI server",
+    "MGX 4U server developed with Intel",
+    "Holley L11 liquid-cooling solution (65kW capacity, ~40% energy savings)"
+   ]
+  },
+  {
+   "company": "Wiwynn",
+   "year": 2025,
+   "announcements": [
+    "NVIDIA GB300 NVL72 fully liquid-cooled rack (72 Blackwell Ultra GPUs), co-developed with Wistron \u2014 the flagship reveal",
+    "NVIDIA HGX B300 10U system; AMD Instinct MI350 platforms; NVIDIA RTX PRO 6000 servers",
+    "Direct liquid cooling portfolio: Fabric8Labs ECAM cold plates, Shinwa 200kW AALC Sidecar, nVent in-rack CDU",
+    "Networking: NVIDIA Spectrum-X Ethernet, Broadcom Tomahawk 5 / 102T 1.6Tbps switch"
+   ]
+  },
+  {
+   "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+   "year": 2025,
+   "announcements": [
+    "COMPUTEX 2025 'AI Next' theme (AI & Robotics, Next-Gen Tech, Future Mobility)",
+    "InnoVEX 2025 startup platform (10th anniversary; ~450 startups from 24 countries)",
+    "Presenters James C.F. Huang (TAITRA) and Paul S.L. Peng (TCA)"
+   ]
+  },
+  {
+   "company": "COMPUTEX (TAITRA / Taipei Computer Association)",
+   "year": 2026,
+   "announcements": [
+    "COMPUTEX 2026 'AI Together' record-scale exhibition (1,500 companies, 33 countries, ~6,000 booths, multi-venue)",
+    "GTC Taipei at COMPUTEX 2026 (NVIDIA co-located event; Jensen Huang keynote June 1, Taipei Music Center)",
+    "New dedicated Robotics & TechXperience pavilion (first time); InnoVEX 2026 (~500 startups, 23 countries)",
+    "Presenters James C.F. Huang (TAITRA) and Jason Chen (TCA)"
+   ]
+  }
+ ],
+ "prioritized_corrections": [
+  "P1 \u2014 Arm 2024: WRONG YEAR. The record is actually a COMPUTEX 2021 video; all four announcements (Armv9, Cortex-X2, Neoverse N2, NVIDIA Grace) are 2021-era. Either re-label as 2021 or replace with genuine 2024 content (Cortex-X925/A725, Immortalis-G925, KleidiAI). https://www.prnewswire.com/news-releases/arm-ceo-rene-haas-will-be-delivering-a-partners-event-speech-at-computex-2024-302115240.html",
+  "P1 \u2014 Delta 2025: DID-NOT-ATTEND mislabel. Delta held no keynote/press conference (booth-only, L0617a); the 'video' is a pre-show marketing upload (2025-05-16, before show open). Drop the press-conference framing. Also drop the '1 MW 800 VDC rack' (an OCP Oct-2025 item). https://www.prnewswire.com/news-releases/delta-presents-comprehensive-solutions-for-ai-data-center-with-containerized-data-center--hvdc-power-solution-at-computex-2025-302461703.html",
+  "P1 \u2014 Advantech 2025: 0 of 3 announcements correctly attributed. Drop 'Advantech Robotic Suite' (Oct 2025 launch) and the 'Techman' collaboration (wrong company \u2014 that was Techman+QCT+NVIDIA); fix 'ASMR' -> 'AS&R'. Real headline: MIC-743 + live Jetson Thor. https://www.prnewswire.com/news-releases/advantech-demonstrates-live-full-stack-nvidia-jetson-thor-integration-at-computex-mic-743-powers-next-gen-physical-ai-and-robotics-systems-302458410.html",
+  "P1 \u2014 Wiwynn 2025: wrong form + 2 misattributed announcements. Re-label forum talk (not press conference); presenter Emily Hong; fix implausible video_date (2025-05-09); drop 'Texas factory' (Mar 2025) and 'YTL partnership' (Nov 2025). https://www.prnewswire.com/news-releases/wiwynn-showcases-next-generation-ai-infrastructure-at-computex-2025-302458676.html",
+  "P1 \u2014 NXP 2026: HALLUCINATED 'Boston Dynamics collaboration' (unsupported by all 6 sources; Boston Dynamics partners are NVIDIA/Google DeepMind/Toyota/Hyundai/RAI). Drop it; replace with Neural Axis + eIQ Toolkit + VLA; name Rafael Sotomayor; fix date to June 2. https://www.prnewswire.com/news-releases/nxp-ceo-rafael-sotomayor-to-deliver-physical-ai-keynote-at-computex-2026-302729465.html",
+  "P2 \u2014 Acer 2024: wrong event/date. Record is a post-show July 23 industry forum panel (Jerry Kao panelist), not the June 4-7 COMPUTEX show; video_date 2024-09-25 is upload date. Replace with Acer's real 2024 slate (Swift 14 AI, Predator OLED monitors, SpatialLabs Eyes). https://blogs.windows.com/windowsexperience/2024/06/03/computex-2024-acer-reveals-latest-swift-travelmate-and-aspire-c-series/",
+  "P2 \u2014 Pegatron 2024: wrong form (forum talk, not press conference); video_date 2024-09-11 is upload date; add the real booth/pre-show product news (GB200 NVL72/NVL36, MGX 4U with Intel, Holley L11). https://www.digitimes.com/news/a20240604PD209/pegatron-ai-server-nvidia-blackwell-4q24-computex-2024.html",
+  "P2 \u2014 GIGABYTE 2025: hallucinated product name 'AI TOP Edge' \u2014 correct to 'AI TOP ATOM' (DGX Spark / GB10 box). https://www.techpowerup.com/336948/gigabyte-shows-off-ai-top-atom-dgx-spark-box",
+  "P2 \u2014 GIGABYTE 2026: garbled 'D5 DX memory with CQD support' \u2014 split into the two real techs (CQDIMM + D5 DUO X). https://www.gigabyte.com/press/news/2399",
+  "P2 \u2014 Qualcomm 2026: overstated 'Claude Desktop native on Snapdragon PCs' \u2014 demo used Claude Code; no source confirms on-device 'native' Claude Desktop. Reframe; add X2 Elite/Plus, Snapdragon C, Dragonwing IQ10. https://www.qualcomm.com/snapdragon/news/computex-2026--the--year-of-agents---big--and-mini--pc-announcem",
+  "P2 \u2014 MediaTek 2024: 'Dimensity 9400' misattributed as a launch \u2014 it was only previewed (launched Oct 9, 2024); current flagship was the 9300/9300+. Add the 70B-transistor 224G-SerDes networking chip. https://www.notebookcheck.net/MediaTek-Dimensity-9400-confirmed-for-an-October-9-launch.892982.0.html",
+  "P3 \u2014 ASUS 2025: fix video_date (2025-05-14 pre-dates show + announcement); reframe form as enterprise showcase; add missing flagships AI POD (GB300 NVL72) and AI Hub. https://press.asus.com/news/press-releases/asus-ai-pod-nvidia-computex-2025/",
+  "P3 \u2014 NVIDIA 2024: correct 'Spectrum-X800' -> 'Spectrum-X' (SN5600 + BlueField-3); add omitted annual-cadence/NIM/RTX-AI-PC/ACE headlines. https://convergedigest.com/nvidia-scales-its-spectrum-x-ethernet-networking-platform/",
+  "P3 \u2014 Coverage gaps (no data errors, add records): AMD 2025 press conference, Cisco 2026 debut keynote, MediaTek 2026 cancelled keynote; and add the OMITTED headline products to verified records \u2014 NVIDIA 2026 RTX Spark, Marvell 2026 Teralynx T100, ASUS 2025 AI POD/AI Hub. https://www.stocktitan.net/news/MRVL/marvell-announces-availability-of-industry-s-first-102-4-tbps-switch-twxe5zlm55l1.html",
+  "P4 \u2014 AMD 2024 minor: reword 'UALink 1.0 standard' to 'UALink (1.0 on track for later 2024)' \u2014 spec finalized April 2025. https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-announces-mi325x-ai-accelerator-reveals-mi350-and-mi400-plans-at-computex"
+ ],
+ "confidence_summary": "Of the ~40 company-year sessions present in the dataset (per the verification verdicts in B), roughly 24 (~60%) are verified clean as recorded \u2014 correct event, year, date, presenter, and announcements that are all genuine COMPUTEX items. These include the official-keynote anchors that the matrix is most confident in: AMD 2024, Qualcomm 2024/2025/2026, Intel 2024/2026, MediaTek 2025, Foxconn 2025, Supermicro 2024/2025/2026, Delta 2024, NVIDIA 2024/2025/2026, Marvell 2026, NXP 2026 (event/form correct), Arm 2026, ASUS 2024/2026, GIGABYTE 2024, COMPUTEX/TAITRA 2025/2026. The remaining ~16 sessions (~40%) need fixing, split into three severities. CRITICAL structural errors (5): Arm '2024' is a mislabeled 2021 video (wrong year); Delta 2025 is a did-not-attend booth-only company mislabeled as a press conference; Advantech 2025 has 0 of 3 announcements correctly attributed (one wrong-event, one wrong-company, one garbled acronym); Wiwynn 2025 is a forum talk mislabeled as a press conference with 2 misattributed announcements; NXP 2026 carries a fully hallucinated Boston Dynamics collaboration. WRONG-EVENT/FORM errors (3): Acer 2024 and Pegatron 2024 are both forum/post-show records dressed as COMPUTEX press conferences with upload-dates standing in for session dates, and ASUS 2025 has a pre-show video_date and overstated form. HALLUCINATED/GARBLED PRODUCT NAMES (4): GIGABYTE 2025 'AI TOP Edge' (should be AI TOP ATOM), GIGABYTE 2026 'D5 DX/CQD' (conflates CQDIMM + D5 DUO X), Qualcomm 2026 'Claude Desktop native' (overstated; demo used Claude Code), MediaTek 2024 'Dimensity 9400 launch' (preview only). NAMING IMPRECISION (2, minor): NVIDIA 2024 'Spectrum-X800' (should be Spectrum-X) and AMD 2024 'UALink 1.0 standard' (anachronistic framing). Net read: no fabricated keynote that never happened survives in the verified set, but ~40% of records carry at least one defect, and the dataset's single most systematic weakness is OMISSION \u2014 even clean records routinely miss the actual headline product (RTX Spark, Teralynx T100, ASUS AI POD/AI Hub, the 70B-transistor MediaTek networking chip). Confidence is HIGH on the official-keynote matrix rows and on every error verdict (each backed by 2+ independent sources in B); MEDIUM only on the booth-only OEM rows (Acer 2025, MSI 2025) where presence is certain but the dataset holds no session detail. Highest-priority fixes are the 5 critical structural errors, then the 3 wrong-event records, then the 4 hallucinated product names."
+}

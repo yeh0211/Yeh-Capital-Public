@@ -21,7 +21,7 @@ With the corrupted series replaced, GOOGL returned **+148%** over the full windo
 | MSFT | +28% | no |
 | NVDA | +613% | yes |
 
-GOOGL beats **5 of 6** megacaps. The "laggard" label only holds against an equal-weight basket that includes NVDA's +613% — i.e. it is benchmark-dependent, not a property of GOOGL.
+GOOGL beats **4 of its 5** megacap peers (2nd of six, behind only NVDA). The "laggard" label only holds against an equal-weight basket that includes NVDA's +613% — i.e. it is benchmark-dependent, not a property of GOOGL.
 
 ![Relative strength is benchmark-dependent; only the DOJ-remedies catalyst is significant](googl_timeline.png)
 
@@ -42,11 +42,11 @@ Named catalysts explain only about **24%** of the post-2025-07-16 leader-phase r
 ## The answer, in the data
 
 **Q: Was GOOGL a severe laggard that re-rated on clear catalysts?**
-**A: No (benchmark-dependent at best).** On clean prices it led the clean megacap basket and QQQ and beat 5 of 6 peers; it trails only an NVDA-loaded equal-weight basket. Of five named catalysts, exactly one (DOJ remedies, +11.0%, p = 0.007) is statistically real.
+**A: No (benchmark-dependent at best).** On clean prices it led the clean megacap basket and QQQ and beat 4 of its 5 peers; it trails only an NVDA-loaded equal-weight basket. Of five named catalysts, exactly one (DOJ remedies, +11.0%, p = 0.007) is statistically real.
 
 | | Value | Verdict |
 |---|---:|---|
-| GOOGL full-window total | +148% | led 5 of 6 megacaps |
+| GOOGL full-window total | +148% | 2nd of 6 (beat 4 of 5 peers) |
 | Clean ex-NVDA basket / QQQ | +57% / +85% | GOOGL beats both |
 | "Laggard" only vs NVDA-loaded basket | yes | benchmark-dependent |
 | Significant catalysts (of 5) | 1 | DOJ remedies only |

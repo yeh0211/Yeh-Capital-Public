@@ -35,7 +35,7 @@ The data pipeline that produces these results is operated privately. This reposi
 ## Data
 
 - [**Computex 2024–2026 dossier — the AI build-out, read from the keynote floor**](computex-dossier/) — a six-part analysis: the three-year arc (silicon → system → agent), compute-cadence fidelity, a **promise-vs-delivery scorecard** grading who actually shipped what they showed on stage, the cooling/power/optics arms race, the AI-PC→agents shift, and the investment read — with charts, built on the verified dataset + tech-press cross-checks.
-- [**Computex Data Library** (2024–2026)](computex-dataset/) — **44 independently-verified sessions** and **126 cited announcements** (plus a 366-row transcript-extracted tier) covering the Computex keynote/press program. Every session and headline is cross-checked against the official program and the live tech press, with a source URL on each row; the full cited audit (18 corrected errors, 8 gaps) is in `verification_report.json`. CSV + JSON, CC-BY. Backs [study 18](18-computex-event-study/).
+- [**Computex Data Library** (2024–2026)](computex-dataset/) — the full official record in two layers: a **complete-coverage** layer (**871 official Computex videos** across every series + the **complete 1,444-company exhibitor directory** with hall/zone/booth/products) and a **verified-depth** layer (**44 cited sessions** + **126 verified announcements**, each cross-checked against the official program and the live tech press with a source URL). The coverage layer is the full participant universe beyond the famous names; the verified layer is the hand-checked marquee detail (full cited audit in `verification_report.json`). CSV + JSON, CC-BY. Backs [study 18](18-computex-event-study/).
 
 ## Method notes
 

@@ -1,0 +1,333 @@
+company,n_videos,major_brand
+NVIDIA,29,True
+Intel,20,True
+ATEN,16,True
+Phison,15,True
+Acer,13,True
+Delta,13,True
+PLANET,13,True
+MSI,11,True
+ADATA,10,True
+Advantech,9,True
+AMD,9,True
+Antec,9,True
+ASRock,9,True
+ASUS,8,True
+Cooler Master,8,True
+Patriot,8,True
+Seasonic,8,True
+Acer Predator,7,True
+G.Skill,7,True
+Gigabyte,7,True
+InWin,7,True
+MediaTek,7,True
+Wiwynn,7,True
+FSP,6,True
+Gamdias,6,True
+ACON Holding Inc,5,False
+Pegatron,5,True
+AAEON,4,True
+Flytech,4,False
+Foxconn,4,True
+Portwell,4,True
+Qualcomm,4,True
+Compal,3,True
+EVERBRITE,3,False
+TeamGroup,3,True
+The AI Era,3,False
+Andes,2,True
+"AURAS Technology Co., Ltd.",2,False
+be quiet!,2,True
+Cat,2,False
+Chenbro,2,True
+Cupola360,2,False
+Elan,2,True
+Formula,2,False
+Industrial,2,False
+Lite-On,2,True
+Meet Pascari,2,False
+Premium Windows Touch,2,False
+Synology,2,True
+Transcend,2,True
+Vertiv,2,False
+Accelerate Factory Automation,1,False
+ACLAS,1,False
+ACON Holding,1,False
+AecoPost,1,False
+AeroCool,1,True
+AEWIN,1,True
+AHRS,1,False
+AI,1,False
+AI & environment-friendly : smart mobili,1,False
+AI Innovation in Action,1,False
+AI Kickoff Journey,1,False
+AI Smart,1,False
+AI Smart Access,1,False
+AI Smart City,1,False
+AI Surveillance,1,False
+"AI, Technology, and party: a brand new e",1,False
+AI-Driven Intelligent Energy,1,False
+AIoT Non-contact,1,False
+AiQ.Synertial G6,1,False
+AITA -Driving Innovation with AI on Chip,1,False
+AMAX IoT,1,False
+An Inside Look,1,False
+APLEX PhanTAM Series,1,False
+APNX LC1-D,1,False
+APNX V2,1,False
+Arm,1,True
+ASPEED Technology Inc.,1,False
+AST2700,1,False
+Astera Lab Scorpio,1,False
+Astera Labs,1,False
+ATEX,1,False
+Athena Orchestrator,1,False
+AUO,1,True
+Auras,1,False
+Auras Liquid Cooling,1,False
+Automation Rugged Windows,1,False
+AVerMedia AIClear Mic,1,False
+AVerMedia MultiStudio Core,1,False
+AWS,1,False
+Beauty Device Pro,1,False
+Biostar,1,True
+Break,1,False
+BT Series POS,1,False
+Build,1,False
+Build Confidence,1,False
+Build Enterprise AI,1,False
+Built,1,False
+CasHUB,1,False
+CEO,1,False
+Charge Up Your,1,False
+CircuitFAB Circuit Fabric,1,False
+Claw Product Video,1,False
+Complete FPGA Prototyping,1,False
+Comprehensive Solution,1,False
+Converged,1,False
+"COOLEST AND LATEST TECH, ft. BC Award, G",1,False
+Corsair,1,True
+CUT593 Case,1,False
+DeepCool,1,True
+Defining Moments in AI,1,False
+DFI,1,True
+Discover APNX,1,False
+Discover APNX AP1-V,1,False
+Discover SilverStone,1,False
+Driving,1,False
+Dual Transformation Through,1,False
+Dual-Band Wi-Fi Monitoring,1,False
+Dual-Interface Speed,1,False
+Ducky One,1,False
+E Ink Holdings Inc.,1,False
+EAZE Unleashed,1,False
+Edge AI Data,1,False
+Edge Computing,1,False
+Edgecore,1,False
+Edgecore AGS8200,1,False
+Edgecore Total AI,1,False
+Eigen Engineering,1,False
+Elevate Edge AI,1,False
+Enabling,1,False
+Energy Storage System,1,False
+Enermax,1,True
+Etron Tech,1,False
+Exploring the Future of AI,1,False
+Fast,1,False
+FLEX Pro Mesh,1,False
+Formos Geofencing,1,False
+Front-Access Patch Panel,1,False
+Game with PNY,1,False
+GAMING ART IN MOTION,1,False
+GB200,1,False
+GeForce RTX,1,False
+Genius,1,False
+Genius AI Copilot,1,False
+Global Press Conference - June 1,1,False
+Global Press Conference - May 19th,1,False
+GMSL,1,False
+Google,1,True
+"Green & Tech, From Concept to Reality",1,False
+GreenAI Nexus,1,False
+Groundbreaking AI & AI PC Innovations. f,1,False
+GT Series,1,False
+HDRE,1,False
+Health Care Circuit,1,False
+High Speed Optics,1,False
+High-Performance Rugged Edge,1,False
+High-Privacy AI Caregiver,1,False
+How V2X,1,False
+HPRT Home Printer,1,False
+Human-Robot Interaction Solutions Pavili,1,False
+Hydan ZT Series,1,False
+Hydro Ti PRO,1,False
+IC TAIWAN GRAND CHALLENGE,1,False
+ICP DAS Cloud,1,False
+ICP DAS Environmental,1,False
+Industrial Flat-type Touch,1,False
+InnoVEX2025,1,False
+Introduction,1,False
+Inventec,1,True
+ITRI,1,True
+JCD3199 USB-C,1,False
+JCH462 Wormhole Switch,1,False
+JCHSD31,1,False
+Just Screen,1,False
+KBox E-120-EKL,1,False
+KBox E-430-EKL,1,False
+KBox E-430-TGL,1,False
+KCO,1,False
+Keysight AD1012A Radar,1,False
+Keysight Charging Discovery,1,False
+Keysight PD1500A Dynamic,1,False
+KIOXIA BiCS,1,False
+KIOXIA CD8P Data,1,False
+KIOXIA EXCERIA Plus,1,False
+Kneron,1,False
+KS-Y121,1,False
+L310-The,1,False
+L701,1,False
+LEX System,1,False
+LLM-1U-RPL Series,1,False
+Low,1,False
+Low-Carbon Smart Fishing,1,False
+Manta XFinity,1,False
+Marvell,1,True
+McKinsey,1,False
+Meet TrendAI,1,False
+META-aivi,1,False
+MH-0616,1,False
+Microsoft,1,True
+Mid-Range AI Edge,1,False
+MMS1016,1,False
+MoboLink,1,False
+More than AI: the real global technology,1,False
+MS-C918,1,False
+MS-Challenger H810ITX WIFI,1,False
+MS-iCraft,1,False
+MS-iCraft Z890 ARCTIC,1,False
+MS-iCraft Z890 Vertex,1,False
+MS-Terminator Z890-A WIFI,1,False
+MTG Business Commercial,1,False
+MTG Industrial Automation,1,False
+MTG Medical Healthcare,1,False
+Multitask,1,False
+Navigating Sovereign AI,1,False
+Navilock GNSS,1,False
+Nexis,1,False
+Next Gen. AMR,1,False
+Next Generation,1,False
+Next-Gen,1,False
+Nienyi Group,1,False
+Noctua,1,True
+Novilock GNSS Receiver,1,False
+Official Teaser,1,False
+Opera MT Series,1,False
+Optimize,1,False
+Optimizing AI Infrastructure,1,False
+Pascari D205V,1,False
+Pascari X201,1,False
+PD20M Mag,1,False
+PEGAVERSE,1,False
+PEGAVERSE JEDI,1,False
+Perovskite X-ray Panel,1,False
+Personnel Positioning System,1,False
+PNY VelocityX,1,False
+Poised,1,False
+Power Meets Innovation,1,False
+Power Supply,1,False
+Powering,1,False
+Powering Al,1,False
+PowerWalker UPS,1,False
+Pro Gamers Group,1,False
+Pro Gamersware,1,False
+Professional Patch Cord,1,False
+Project Zero Series,1,False
+PYMCORE SFX GOLD,1,False
+QCT AI POD,1,False
+QCT Cutting Edge,1,False
+QCT Cutting-Edge Infrastructures,1,False
+QCT General Purpose,1,False
+QCT New,1,False
+QCT OmniPOD,1,False
+QCT QoolRack,1,False
+QCT QoolRack Integrated,1,False
+QCT Server Systems,1,False
+QCT Servers Powered,1,False
+QCT Systems Based,1,False
+QNAP,1,True
+Realtek,1,True
+Red Dot,1,False
+Retail Machine Upgrade,1,False
+Revolutionary Lidar Test,1,False
+Revolutionize Your Video,1,False
+Revolutionizing Automotive Manufacturing,1,False
+S1F4 PRO,1,False
+S1U2-M4,1,False
+See-Through ADAS,1,False
+Shuttle DN11H,1,False
+Shuttle Embedded Box,1,False
+Shuttle Mini-Workstation,1,False
+Shuttle NA10H,1,False
+Shuttle SPCNV03,1,False
+Shuttle-Mini Edge,1,False
+Silent Wings,1,False
+Silicon Motion,1,True
+SIMATIC Robot Pick,1,False
+Smart Agriculture,1,False
+Smart Mall,1,False
+SmartVDO Edge AGX,1,False
+SPATIUM M580 PCIe,1,False
+Supermicro,1,True
+Switch,1,False
+SYLUX,1,False
+T-CREATE CinemaPr P31,1,False
+TagAccess-Powerful RFID,1,False
+Taiwan Automotive Pavilion,1,False
+Taiwan Smart Textiles Association,1,False
+Taiwan-Belgium（Wallonia）Innovation,1,False
+TDRI,1,False
+The,1,False
+The AI Tools,1,False
+The First Hardware,1,False
+The Future,1,False
+The Future is Here,1,False
+Titan,1,False
+To,1,False
+Toward the EV Era,1,False
+True 4K HDMI Switch,1,False
+TRUSTA AI,1,False
+Unitech AIDC Technology,1,False
+Unitech MS852P Wireless,1,False
+Unitech PA768,1,False
+Unitech RT112,1,False
+Unitech SL220,1,False
+Unitech Unveils,1,False
+Unleash,1,False
+Unleash AI Magic,1,False
+Unleash Precision,1,False
+Unleashing,1,False
+Unlocking,1,False
+Unveiling,1,False
+UTC-300S Series AIO,1,False
+VALOR AIR PRO,1,False
+VERTEX SAKURA,1,False
+"Vertiv (Taiwan) Co., Ltd.",1,False
+Vertiv™ CoolPhase CDU,1,False
+Vertiv™ SmartRun,1,False
+Viper Elite,1,False
+Viper Xtreme,1,False
+Windows,1,False
+Windows Mobile Tablet,1,False
+WISE-Edge Developer Architecture,1,False
+WMP2157,1,False
+Wonderful Hi-Tech,1,False
+Workflow Canvas,1,False
+World,1,False
+YonBIP Enterprise AI,1,False
+YonBIP Premium Edition,1,False
+YonSuite Global HR,1,False
+Yonyou YonBIP,1,False
+YUAN Leads Next-Gen,1,False
+Zerova MCS Series,1,False
+Zotac,1,True

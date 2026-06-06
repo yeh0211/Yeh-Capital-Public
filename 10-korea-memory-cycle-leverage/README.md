@@ -1,4 +1,4 @@
-# 10 — Korea memory: the leverage "death spiral" doesn't show up in the tape — it rebounds
+# 10 — Korea memory: on the available proxy, the leverage "death spiral" doesn't show up — the proxy rebounds (Conditional)
 
 **Question.** Korean memory (Samsung, SK Hynix) sits on record retail margin debt (~36tn won, 2026). If price collapses, is there a self-reinforcing *death spiral* — worse forward returns and deeper drawdowns *after* a sharp drop — versus less-levered US memory? **Answer: no.** On the available data the Korea proxy *rebounds* after a sharp drop rather than spiralling, and the rebound is strongest (and only statistically significant) in the deepest tail — the opposite sign to a margin-call cascade.
 
@@ -47,7 +47,7 @@ On identical conditioning, the Korea proxy's shock-conditional spread beats the 
 | 21d | +1.14% | −0.30% | −7.14% | −12.76% | No |
 | 63d | +2.68% | −0.24% | −12.03% | −20.10% | No |
 
-![Subsequent 21d drawdown is deeper after a shock — but similarly in Korea and US](ds_conditional_drawdown.png)
+![Subsequent 21d drawdown is deeper after a shock — but the Korea proxy's is roughly half as deep as US single-name memory](ds_conditional_drawdown.png)
 
 **Answer (data-proven): No death spiral.** Sharp drops in the Korea proxy are followed by rebound, strongest and only significant in the deepest tail — the opposite of leverage-driven negative continuation. It holds out-of-sample and is not unique to Korea. The verdict is hedged **Conditional** only because the true Korea single-name limb is data-blocked.
 

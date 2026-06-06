@@ -3,6 +3,6 @@
   "slug": "01-volume-sweep-microstructure",
   "title": "Volume-sweep microstructure",
   "question": "Do cross-ticker abnormal-volume sweeps predict next-day semi-basket returns?",
-  "finding": "Pilot signal decayed out-of-sample (p 0.002 → 0.08); a two-sided \"MIXED\" sweep effect survived (p≈0.008) and warrants follow-up.",
+  "finding": "Clean null. On the full ~5yr sample, no sweep type beats the basket's next-day drift once dependence-adjusted, multiplicity-corrected, benchmarked vs random entry, and split out-of-sample. The pilot's BUY signal was small-sample noise and the \"MIXED\" cell is negative (−0.05%, p≈0.67), sign-unstable, and beaten by random entry.",
   "status": "published"
 }

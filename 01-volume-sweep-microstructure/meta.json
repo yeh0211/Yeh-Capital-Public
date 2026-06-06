@@ -2,7 +2,7 @@
   "number": 1,
   "slug": "01-volume-sweep-microstructure",
   "title": "Volume-sweep microstructure",
-  "question": "Do cross-ticker abnormal-volume sweeps predict next-day semi-basket returns?",
-  "finding": "Clean null. On the full ~5yr sample, no sweep type beats the basket's next-day drift once dependence-adjusted, multiplicity-corrected, benchmarked vs random entry, and split out-of-sample. The pilot's BUY signal was small-sample noise and the \"MIXED\" cell is negative (−0.05%, p≈0.67), sign-unstable, and beaten by random entry.",
+  "question": "Do cross-ticker abnormal-volume sweeps predict next-day semi returns, and does the effect depend on company size?",
+  "finding": "Clean null at every size. Run inside four market-cap buckets (Small <$10B / Mid $10-100B / Large $100-500B / Mega >$500B) of a 39-name semiconductor universe, no sweep type beats its own basket's next-day drift once dependence-adjusted, multiplicity-corrected, benchmarked vs random entry, and split out-of-sample. The size prior (bigger effect in smaller names) appears only as a point estimate in the smallest bucket's MIXED cell (+1.40%) and is a five-day volatility artifact: insignificant in excess (p=0.31), exploding with the threshold and out-of-sample. Size scales the noise, not the signal.",
   "status": "published"
 }

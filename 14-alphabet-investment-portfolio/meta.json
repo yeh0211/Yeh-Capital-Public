@@ -3,6 +3,6 @@
   "slug": "14-alphabet-investment-portfolio",
   "title": "Alphabet's investment book",
   "question": "Is Alphabet actually a skilled investor versus its peers?",
-  "finding": "Best cost basis, no provable picking skill. Alphabet has the best megacap cost basis on two generational private winners (SpaceX, Anthropic; ~40–55×, +$24bn ≈ 18% of FY25 net income), but its public CapitalG/GV book shows no significant edge over a same-era IPO baseline at any horizon.",
+  "finding": "Best cost basis, no detectable picking skill. Alphabet got the cheapest megacap entry into two generational private winners (SpaceX, Anthropic; ~40–55× vs ~18× for Microsoft, ~9× for Amazon; +$24bn ≈ 18% of FY25 net income, but the same line lost money in 2022). On the public CapitalG/GV names I can actually price (22 of them vs a 1,078-name same-era IPO control), the backed basket shows no edge at any horizon once tested with a name-level bootstrap on the difference — and what looked like an edge is listing vintage: the control swings the same way.",
   "status": "published"
 }

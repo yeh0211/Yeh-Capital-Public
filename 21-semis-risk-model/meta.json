@@ -1,0 +1,8 @@
+{
+  "number": 21,
+  "slug": "21-semis-risk-model",
+  "title": "A semiconductor risk-overlay model",
+  "question": "Can a simple risk dial beat just holding the chips, or does it only make the ride smoother?",
+  "finding": "It only makes the ride smoother. Across 36 chip stocks (2022-26, ~5y daily) a trend dial that halves net-long when the basket loses its 200-day average or falls >10% off its 60-day high cuts the worst drawdown from -43% to -30% full-sample, and it does so in every market-cap bucket (small caps -51% to -38%, mega caps -46% to -34%) so the protection is not a mega-cap artifact. But the Sharpe edge over buy-and-hold is +0.07 with a bootstrap CI of [-0.20, +0.35] that straddles zero, and the scorecard de-risk value is -4pp (the wrong sign for a timer). Verdict: a validated drawdown-reducer, not alpha. Robust across nine floor/MA settings (Sharpe 1.18-1.29); the one honest dent is the 2023 chop, where whipsaw made drawdown 2pp worse.",
+  "status": "published"
+}

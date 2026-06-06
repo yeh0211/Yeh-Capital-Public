@@ -3,6 +3,6 @@
   "slug": "13-gold-collapse-insurance",
   "title": "Gold vs Bitcoin: collapse insurance?",
   "question": "When equities collapse, does gold protect — and is Bitcoin \"digital gold\" or a risk asset?",
-  "finding": "Bitcoin is a risk asset, not digital gold. Across 8 SPY selloffs (≥8%) BTC fell 8/8 and worse than SPY in 7/8 (median −29%) while gold beat SPY in 7/8 (−3%); BTC's crash beta is ~0.94 (1.68 in the tail) and its 90-day SPY correlation roughly quadrupled (0.08→0.37) — converging toward equities, away from gold.",
+  "finding": "Bitcoin is a risk asset, not digital gold. Across 8 SPY selloffs (≥8%) gold beat the market in 7/8 (median −3%) and Bitcoin fell worse in 7/8 (median −29%) — both significant (sign p=0.035; Wilcoxon p=0.008/0.012). Bitcoin's daily beta to SPY is 0.94 (1.68 in the worst-5% tail, HAC t=7.2/3.1) and its 90-day SPY correlation rose 0.08→0.37, the later half higher in 107/107 split points (trend t=7.2). Gold is the better cushion but not an always-up haven (positive tail beta +0.37).",
   "status": "published"
 }

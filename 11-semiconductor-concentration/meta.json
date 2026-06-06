@@ -2,7 +2,7 @@
   "number": 11,
   "slug": "11-semiconductor-concentration",
   "title": "Semiconductor concentration",
-  "question": "When one stock supplies half an index's gain — and do winners persist?",
-  "finding": "NVDA is half the semis index (50% of the gain, 46% weight; top-3 = 76%), more concentrated than the Nasdaq — and winners do NOT keep winning year to year (Spearman IC −0.001; prior losers slightly beat prior winners). A risk fact, not a timing signal.",
+  "question": "How much of a chip index is one stock, and do this year's winners win again?",
+  "finding": "On an 82-name from-scratch index, NVDA is 43% of the gain and 32% of weight; the top three are 79% and the seven names over $500B are 91% of all gain. Cap-weighted +489% vs equal +296% (a 193pt gap), more concentrated than the Nasdaq on 86% of days. Persistence is not testable annually (only 2 clean year-transitions) and flat at the monthly/quarterly horizon (IC +0.02-0.03, t<1.3). A risk fact, not a timing signal.",
   "status": "published"
 }

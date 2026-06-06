@@ -2,7 +2,7 @@
   "number": 17,
   "slug": "17-semiconductor-layers",
   "title": "Semiconductor supply-chain layers",
-  "question": "Which layer leads — and how much of it is just semiconductor beta?",
-  "finding": "Completing the roster to 143 names barely moves the leaderboard (Spearman ρ 0.962; only EMS re-ranks, by dilution) — and read market-relative, only 6 of 13 layers beat the semis ETF (SMH); the rest are semiconductor beta.",
+  "question": "Which layer leads, and how much of the lead is just owning chips?",
+  "finding": "Completing the roster to 143 names barely moves the leaderboard (Spearman rho 0.962; only EMS re-ranks, by dilution). On raw return 6 of 13 layers beat the semis ETF (SMH), but strip out chip-beta with a Newey-West regression and 0 of 13 has significant alpha (best t=1.9) — the lead is leveraged semiconductor beta, not an edge. The one real cross-sectional pattern is size: mid-caps ($10-100B) returned +938% (47% beat SMH) while small-caps (<$10B) lagged at +244% (8% beat SMH).",
   "status": "published"
 }

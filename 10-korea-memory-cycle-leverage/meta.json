@@ -2,7 +2,7 @@
   "number": 10,
   "slug": "10-korea-memory-cycle-leverage",
   "title": "Korea memory cycle + leverage",
-  "question": "Is Korea's memory-stock retail leverage a death-spiral risk?",
-  "finding": "Death spiral NOT found. On the available proxy, Korea equities *rebound* after a worst-decile drop (positive at all four horizons; deepest tail 21d +4.8% / 63d +8.3%, significant positive) — the opposite of a margin cascade. Hedged Conditional: the clean Samsung/SK Hynix single-name limb is data-blocked.",
+  "question": "After a sharp drop, does the levered Korea memory trade spiral down or bounce — and is that anything Korea-specific?",
+  "finding": "No spiral in the proxy — it rebounds, and the rebound isn't Korean. Across 7 chip names (Korea proxy EWY + US memory MU/WDC/STX + like-vol US ETFs SMH/SOXX/XSD, 2,525 days, 2016-2026) a worst-decile drop is followed by *higher* returns at every horizon (mean spread +1.37%), strongest and only-significant in the deepest tail (worst-2.5%: 21d +4.8% [+2.0,+7.9], 63d +8.3% [+1.5,+14.2]) — the wrong sign for a margin cascade. But all 7 names bounce the same; Korea only clears zero because it's the calmest (27% vol vs 42-50% for single names), so its CIs are tightest. Against a like-vol US ETF the edge nearly vanishes (21d +1.14% vs +0.76%; the old 'half as deep' drawdown was a vol artifact). Verdict Conditional: no spiral in what's measurable, but the clean levered Samsung/SK Hynix tape is data-blocked.",
   "status": "published"
 }

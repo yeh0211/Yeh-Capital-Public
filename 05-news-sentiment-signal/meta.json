@@ -2,7 +2,7 @@
   "number": 5,
   "slug": "05-news-sentiment-signal",
   "title": "News-sentiment signal",
-  "question": "Does news sentiment predict forward returns, or just react to past ones?",
-  "finding": "Reactive, not predictive. Sentiment tracks the prior 20-day return (Spearman IC +0.20) ~3.2× more strongly than the matched forward 20-day (+0.06); the long-short forward-5-day spread is statistically zero. A trend mirror, not an entry signal.",
+  "question": "Does news sentiment predict forward returns, or just react to past ones — and does it depend on company size?",
+  "finding": "Reactive, and the mirror is sharpest in small caps. Across 9,762 model-tagged posts on 211 names split into 4 cap buckets, sentiment tracks the prior 20-day return (clustered IC +0.145) ~3x more strongly than the matched forward 20-day (+0.049), and that backward link falls monotonically with size (Small +0.244 to Mega +0.065). The forward flicker is mostly momentum in disguise (+0.049 to +0.010 once momentum is removed) and the tradable long-short spread is statistically zero (+0.38%, CI [-0.45%, +1.19%]). A momentum mirror, not an entry signal.",
   "status": "published"
 }

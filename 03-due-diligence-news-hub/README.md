@@ -100,7 +100,7 @@ Relative strength since IPO (>0 = outperformed, <0 = lagged):
 
 #### Idea ledger (qualitative, sourced)
 
-Distilled from the 20 on-topic corpus notes that mention TEM (1 additional tagged note(s) excluded as off-topic tags). "Notes" counts items in the corpus supporting the thesis; a thesis with at most one supporting note is flagged limited-coverage rather than promoted. Each thesis carries a confirm/break test in the internal tracker. The "latest in corpus" date is when the item entered the research corpus, not when the underlying event occurred - several notes describe earlier 2024-2025 quarterly results and deals.
+Distilled from the 20 on-topic corpus notes that mention TEM (1 additional tagged note(s) excluded as off-topic tags). "Notes" counts items in the corpus supporting the thesis; the same note can support several theses, so the column sums to more than the 20-note corpus (46 here) - the counts overlap rather than partition. A thesis with at most one supporting note is flagged limited-coverage rather than promoted. Each thesis carries a confirm/break test in the internal tracker. The "latest in corpus" date is when the item entered the research corpus, not when the underlying event occurred - several notes describe earlier 2024-2025 quarterly results and deals.
 
 | Thesis | Notes | Latest in corpus | Status |
 | --- | --- | --- | --- |

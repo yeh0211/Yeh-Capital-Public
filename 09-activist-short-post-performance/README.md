@@ -10,7 +10,7 @@
 
 ## Claim 1 — No pooled drift, and no edge over a random day
 
-The headline horizon is +21 trading days. The event-window median is essentially flat and the edge over the same-name baseline is not significant; the same holds at every horizon tested.
+The headline horizon is +21 trading days. The event-window median is essentially flat (-0.54%) and, if anything, the point estimate runs *against* the short: the mean AR is positive (+0.46%), the wrong sign for post-report drift. Either way the edge over the same-name baseline is not significant; the same holds at every horizon tested.
 
 ![Mean abnormal-return path, activist-short events vs a random non-event day in the same names](caar_event_vs_baseline.png)
 

@@ -2,7 +2,7 @@
   "number": 9,
   "slug": "09-activist-short-post-performance",
   "title": "Activist short post-performance",
-  "question": "Do activist short reports keep working, and does the publisher matter?",
-  "finding": "No tradable post-report drift. Across 96 campaigns (14 publishers, 2020–26) the 21-day path is indistinguishable from a random day in the same names (edge +1.8pp, bootstrap CI spans 0); the only structure is publisher identity (Hindenburg targets keep falling, Muddy Waters' bounce) — but every publisher bar one has n≤21, so indicative, not significant.",
+  "question": "After an activist short report, does the stock keep falling — and does it matter who published it or how big the target is?",
+  "finding": "No tradable post-report drift, in any size bucket. Across 96 campaigns (14 publishers, 2020-26) the 21-day path is indistinguishable from a random day in the same names (edge +1.8pp, dependence-adjusted CI spans 0; the mean even runs positive, the wrong sign for a short), and the small-minus-large cap difference is flat (-0.4pp). Net of borrow the short edge is negative at every horizon and ~20% of campaigns squeezed >+20%. The only structure is the publisher, and the forensic-shops 'win' is one Muddy Waters bounce cohort (pull it out and forensic targets fall -10.7%) — real-looking but small-sample and squeeze-driven, so Conditional, not a validated edge.",
   "status": "published"
 }

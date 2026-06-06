@@ -31,7 +31,7 @@ Timestamps where the basket prints abnormal volume on *both* sides at once retur
 
 ## Claim 3 — The honest next step (out-of-sample + costs)
 
-MIXED is a hypothesis, not a strategy. Before it could carry weight it needs two things this study deliberately does not claim: **(1)** a separate out-of-sample window — it is one significant cell out of four tests and is not multiplicity-corrected; and **(2)** a transaction-cost / slippage / borrow haircut — a +0.65% next-day basket edge is thin once a round trip is deducted. Reported as the thread worth pulling next, not a result.
+MIXED is a hypothesis, not a strategy. Before it could carry weight it needs two things this study deliberately does not claim: **(1)** a separate out-of-sample window — it is one significant cell out of four tests, and although it does survive multiplicity correction only marginally (Bonferroni p≈0.032, Šidák p≈0.032), one cell out of four is fragile; and **(2)** a transaction-cost / slippage / borrow haircut — a +0.65% next-day basket edge is thin once a round trip is deducted. Reported as the thread worth pulling next, not a result.
 
 ## The answer, in the data
 

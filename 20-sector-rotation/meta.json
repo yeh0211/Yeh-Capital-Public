@@ -2,7 +2,7 @@
   "number": 20,
   "slug": "20-sector-rotation",
   "title": "Sector rotation",
-  "question": "Does capital rotate between sectors with the market cycle — and can you trade it?",
-  "finding": "Real and large descriptively (defensives beat by ~15-20pp annualized in bears, cyclicals lead in bulls; energy off-axis) but NOT tradeable — a causal real-time rotation loses to holding the index and doesn't even cut drawdown.",
+  "question": "Does money rotate with the market cycle — by sector and by size — can you trade it, and which slice is worth owning?",
+  "finding": "Three cuts, one lesson. By sector, rotation is real and large (defensives beat the market +15-20pp annualized in bears, cyclicals lead bulls, energy off-axis) but a causal 200-DMA rotation loses to buy-and-hold (0.61 vs 0.77 Sharpe, PBO 94%). By size there is no rotation at all - pure symmetric beta, and the 'defensive small-cap' reading is a calendar artifact. You can't time it either way. The usable edge is which slice to own: investability climbs monotonically with size (median name Sharpe -0.19 small to +0.77 mega; 34% to 100% investable), and a static long mega+large / short mid+small tilt earned the best risk-adjusted return in-sample (Sharpe 1.66) - a regime-specific quality factor bet, not a timing signal.",
   "status": "published"
 }

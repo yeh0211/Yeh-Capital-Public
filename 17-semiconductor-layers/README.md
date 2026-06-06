@@ -8,7 +8,7 @@
 
 - **Completing the roster barely moves the leaderboard.** Adding the 10 names my first cut missed (Amkor, Amphenol, EnerSys, a few analog/timing fabless names, two solar) leaves the ranking almost untouched — Spearman rho = 0.962, the top two layers don't budge, and only one layer re-ranks at all (EMS, and only because two middling additions dilute a high-flying group).
 - **On raw return, 6 of 13 layers beat the semis ETF.** The whole complex returned +660% equal-weighted vs SMH +524%, but layer by layer only 6 clear SMH. Power-gen (+1,055%) and ODM/servers (+827%) lead; hyperscalers (+168%) and solar (+84%) are at the back.
-- **Strip out chip-beta and the alpha is gone.** When I regress each layer on SMH and read the leftover (the alpha), **0 of 13 layers has statistically significant alpha.** Eight have a positive point estimate but none clears its own error bar; the best t-stat is 1.9. "Beats SMH" is a raw return tally — it is not an edge once you account for how much each layer just rides the semis tape.
+- **Strip out chip-beta and the alpha is gone.** When I regress each layer on SMH and read the leftover (the alpha), **0 of 13 layers has statistically significant alpha.** Eight have a positive point estimate but none clears its own error bar; the best t-stat is 1.94. "Beats SMH" is a raw return tally — it is not an edge once you account for how much each layer just rides the semis tape.
 - **The outperformance is a mid-cap story, not a megacap one.** Split the universe by size and the $10-100B bucket runs away (+938% equal-weight, 96% of names positive, 47% beat SMH), while the <$10B bucket lags badly (+244%, only 8% beat SMH) and the >$500B megacaps merely match the market. Size is the variable that actually sorts winners here — not which layer you picked.
 
 > Research / backtested. No live capital, no audited track record. Layer indices are equal-weighted, clipped, non-tradeable proxies; membership is a hand-built analyst classification, not a reproducible automated sweep.
@@ -113,7 +113,7 @@ alpha_annual = b.intercept * 252 * 100        # leftover after chip-beta
 t_alpha      = b.intercept / newey_west_se(resid, X)   # HAC, not i.i.d.
 ```
 
-**What the data shows.** Here it is, sorted by alpha. Eight layers have a positive point estimate. **None is statistically significant.** The largest t-stat on alpha is 1.9 (Power-gen) — below the roughly 2.0 you'd want for even a 5% test, and that's before you correct for running the test 13 times.
+**What the data shows.** Here it is, sorted by alpha. Eight layers have a positive point estimate. **None is statistically significant.** The largest t-stat on alpha is 1.94 (ODM/servers) — below the roughly 2.0 you'd want for even a 5% test, and that's before you correct for running the test 13 times.
 
 | Layer | beta to SMH | alpha (%/yr) | t(alpha) | significant? |
 |---|---:|---:|---:|:--:|
@@ -137,7 +137,7 @@ t_alpha      = b.intercept / newey_west_se(resid, X)   # HAC, not i.i.d.
 
 **What I checked.** The Newey-West widening is the robustness — it's already the conservative SE. I also note the multiplicity problem out loud: 13 tests, so even one t-stat near 2 would need a multiplicity haircut (Bonferroni would demand |t| around 2.9) to mean anything. None gets close. The rival explanation — "the test is too weak, five years isn't enough" — is fair and I concede it below; but the honest reading of *this* sample is no significant alpha anywhere.
 
-**Verdict — null, and it's the real finding.** 0 of 13 layers shows statistically significant alpha over SMH (best t = 1.9; 0/13 at p < 0.05). The raw "6 of 13 beat SMH" does not survive a proper, dependence-adjusted alpha test. The layer leadership is, on this sample, leveraged semiconductor beta plus noise — not an edge you can name.
+**Verdict — null, and it's the real finding.** 0 of 13 layers shows statistically significant alpha over SMH (best t = 1.94; 0/13 at p < 0.05). The raw "6 of 13 beat SMH" does not survive a proper, dependence-adjusted alpha test. The layer leadership is, on this sample, leveraged semiconductor beta plus noise — not an edge you can name.
 
 ## Finding 4 — the one variable that actually sorts winners is size, not layer
 
@@ -168,7 +168,7 @@ t_alpha      = b.intercept / newey_west_se(resid, X)   # HAC, not i.i.d.
 - **Short-history names.** Re-running on full-window members only shifts the beats-SMH count from 6/13 to 7/13 — small, and it doesn't rescue any alpha.
 - **Weighting.** Cap-weighted instead of equal-weighted moves the count to 8/13 (it loads onto megacap winners), but the alpha test is unaffected in spirit — the megacaps still sit at beta near 1, alpha near 0.
 - **Dependence.** The alpha t-stats already use Newey-West HAC errors. With i.i.d. errors they'd look stronger and they'd be lying.
-- **Multiplicity.** 13 simultaneous tests; even the best t (1.9) fails a Bonferroni bar (|t| around 2.9). No layer survives correction.
+- **Multiplicity.** 13 simultaneous tests; even the best t (1.94) fails a Bonferroni bar (|t| around 2.9). No layer survives correction.
 
 ## Steelman the rivals, then test them
 
@@ -184,7 +184,7 @@ t_alpha      = b.intercept / newey_west_se(resid, X)   # HAC, not i.i.d.
 **A: No.** rho = 0.962, top two unchanged, one dilution-driven re-rank (EMS). The leadership read is robust to membership.
 
 **Q2: Which layers beat the semis ETF, and is that an edge?**
-**A: Conditional — and mostly no.** 6 of 13 layers beat SMH on raw return (7/13 full-window, 8/13 cap-weighted), but **0 of 13 has statistically significant alpha once chip-beta is removed** (best t = 1.9, none survives multiplicity). "Leading layer" is leveraged semiconductor beta plus noise, not a nameable edge. The one robust cross-sectional pattern is **size**: mid-caps ($10-100B) crushed it (+938%, 47% beat SMH) while small-caps lagged (+244%, 8% beat SMH).
+**A: Conditional — and mostly no.** 6 of 13 layers beat SMH on raw return (7/13 full-window, 8/13 cap-weighted), but **0 of 13 has statistically significant alpha once chip-beta is removed** (best t = 1.94, none survives multiplicity). "Leading layer" is leveraged semiconductor beta plus noise, not a nameable edge. The one robust cross-sectional pattern is **size**: mid-caps ($10-100B) crushed it (+938%, 47% beat SMH) while small-caps lagged (+244%, 8% beat SMH).
 
 Summary grid — per-name buy-and-hold totals (the dispersion behind the layer indices):
 
@@ -236,7 +236,7 @@ for L in layers:
 bucket = pd.cut(cap_usd/1e9, [0,10,100,500,1e9], labels=["<10B","10-100B","100-500B",">500B"])
 ```
 
-Key fitted numbers, shown not told: whole complex +660% EW vs SMH +524%; rho(base,complete) = 0.962; alpha t-stats max 1.9 (Power-gen), 0/13 at p < 0.05; mid-cap bucket +938% / 47% beat SMH vs small-cap +244% / 8%. The five figures here are each rendered from the same panel. Universe, window, clip and thresholds are all stated above so the result can be challenged.
+Key fitted numbers, shown not told: whole complex +660% EW vs SMH +524%; rho(base,complete) = 0.962; alpha t-stats max 1.94 (ODM/servers), 0/13 at p < 0.05; mid-cap bucket +938% / 47% beat SMH vs small-cap +244% / 8%. The five figures here are each rendered from the same panel. Universe, window, clip and thresholds are all stated above so the result can be challenged.
 
 ## References & forward pointer
 

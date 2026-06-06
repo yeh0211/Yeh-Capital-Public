@@ -34,13 +34,13 @@ Conditioning on the warning being on (bottom-quintile reading), the 63-day forwa
 | Indicator (warning = low reading) | n_warn | % positive | mean fwd 63d | vs rest | diff [95% CI] | significant? |
 |---|---:|---:|---:|---:|---:|:--|
 | % above 200dma | 473 | 68.5% | +5.2% | +2.9% | +2.3pp [−2.9, +7.5] | No (ns) |
-| % above 50dma | 475 | 73.9% | +5.3% | +2.9% | +2.5pp [−1.2, +6.0] | No (ns) |
+| % above 50dma | 475 | 73.9% | +5.3% | +2.9% | +2.4pp [−1.2, +6.0] | No (ns) |
 | A/D line (63d dev) | 483 | 69.4% | +4.5% | +3.1% | +1.4pp [−3.2, +5.9] | No (ns) |
 | NH-NL Hi-Lo index | 453 | 68.2% | +3.9% | +3.2% | +0.7pp [−2.8, +4.2] | No (ns) |
 | McClellan oscillator | 487 | 76.4% | +4.3% | +3.1% | +1.2pp [−1.4, +3.8] | No (ns) |
 | Cap-vs-equal 63d momentum | 474 | 81.6% | +5.7% | +2.8% | +2.9pp [−0.5, +6.3] | No (ns) |
 
-The much-cited A/D-line bearish-divergence *event* (price at a 20-day high while the A/D line is not) fares no better — its forward return is statistically indistinguishable from an ordinary day at every horizon (63d: +2.8% on event days vs +3.3% on all days, diff −0.6pp [−2.3, +1.2], ns).
+The much-cited A/D-line bearish-divergence *event* (price at a 20-day high while the A/D line is not) fares no better — its forward return is statistically indistinguishable from an ordinary day at every horizon (63d: +2.8% on event days vs +3.3% on all days, diff −0.5pp [−2.3, +1.2], ns).
 
 ## Claim 3 — Acting on the warnings loses to just holding the index
 

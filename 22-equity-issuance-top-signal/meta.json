@@ -1,0 +1,8 @@
+{
+  "number": 22,
+  "slug": "22-equity-issuance-top-signal",
+  "title": "Equity issuance as a market-top signal",
+  "question": "Does a wave of equity issuance (IPOs + secondary offerings) mark an overpriced market and predict weak forward returns?",
+  "finding": "No usable timing signal — across 2001–2026 (Nasdaq Composite + SPY/QQQ/RSP) with survivorship-free EDGAR filing counts, 0 of 12 non-overlapping annual tests are significant. A faint IPO/SPAC froth tilt survives in direction (strongest in tech) but is ~half momentum and 2020–22-bound; the \"SEOs invert\" result is an EDGAR coverage-ratio artifact; mega-caps are net repurchasers. The real effect is cross-sectional (study 15), not market timing.",
+  "status": "published"
+}

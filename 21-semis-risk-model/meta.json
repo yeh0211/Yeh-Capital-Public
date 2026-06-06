@@ -1,0 +1,8 @@
+{
+  "number": 21,
+  "slug": "21-semis-risk-model",
+  "title": "A semiconductor risk-overlay model",
+  "question": "Can a simple, layered risk model improve on holding the semiconductor index, and is it alpha or just risk management?",
+  "finding": "Risk management, not alpha. A trend-dial overlay (halve net-long when the index loses its 200-day average or falls >10% off its 60-day high) cuts the max drawdown in every regime (full -37% vs -46%; 2022 bear -31% vs -46%, +15pp) for a modest CAGR give-up, is robust across floor/MA parameters (Sharpe 0.90-1.04), but does NOT beat buy-and-hold on Sharpe (1.02 vs 1.03). A smoother ride, not a higher return. A live append-only scorecard tracks the model's calls.",
+  "status": "published"
+}

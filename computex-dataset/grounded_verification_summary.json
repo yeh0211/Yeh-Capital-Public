@@ -1,0 +1,32 @@
+{
+  "method": "Mined from official Computex transcripts via a large language model with verbatim-quote grounding, then deterministically cleaned (phantom key_numbers nulled, tickers trimmed to the announcing issuer) and adversarially re-verified claim-by-claim by an independent skeptic pass. The trustworthy tier = verdict 'real_new' AND ticker_ok.",
+  "total_grounded": 622,
+  "verified_clean": 318,
+  "verdict_mix": {
+    "real_new": 342,
+    "recap": 122,
+    "unsupported": 107,
+    "vision_only": 30,
+    "misattributed": 21
+  },
+  "ticker_ok": 547,
+  "by_year_verified": {
+    "2024": 137,
+    "2025": 121,
+    "2026": 60
+  },
+  "top_tickers_verified": {
+    "INTC": 26,
+    "AMD": 17,
+    "NVDA": 17,
+    "2308.TW": 14,
+    "SMCI": 13,
+    "2357.TW": 8,
+    "2317.TW": 7,
+    "ARM": 5,
+    "6669.TW": 5,
+    "2395.TW": 5,
+    "QCOM": 5,
+    "3515.TW": 5
+  }
+}

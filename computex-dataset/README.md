@@ -54,7 +54,9 @@ is in [`verification_report.json`](verification_report.json).
 |---|---|---|
 | `sessions.csv` / `.json` | 44 | The **corrected attendance reality** — every company × year, the *real* form (official keynote / company press event / forum talk / booth-only / absent), a confidence, a source citation, and a `video_status` flag noting where a collected recording is mislabeled. |
 | `announcements_verified.csv` / `.json` | 126 | The **verified tier** — the headline announcements confirmed by the live press, each with a source. Trust these. |
-| `announcements_extracted.csv` / `.json` | 366 | The **extracted tier** — the detailed transcript-derived announcements, kept for depth but marked `verified=no`. Flagged errors removed, garbled names fixed, the Arm record relabeled to its true year (2021). Treat as best-effort, not gospel. |
+| `announcements_grounded.csv` / `.json` | 622 (318 clean) | The **grounded tier** — announcements mined from the full transcript corpus (a much larger pull than the original marquee set), each carrying a **verbatim quote** and source-video link. Every row is then deterministically cleaned (phantom numbers nulled, tickers trimmed to the announcing issuer) and adversarially re-audited claim-by-claim; each row carries its `verdict` (real_new / recap / unsupported / vision_only / misattributed), `ticker_ok` and an `audit_note`. **The trustworthy subset = `verdict==real_new` AND `ticker_ok` (318 rows: 2024=137, 2025=121, 2026=60).** The flagged rows are kept, labelled, not hidden — see `grounded_verification_summary.json`. |
+| `announcements_extracted.csv` / `.json` | 366 | The earlier **extracted tier** — ungrounded transcript-derived rows from the original marquee pass, marked `verified=no`. Superseded by the grounded tier above (which adds verbatim-quote grounding + a per-row audit); kept for continuity. Best-effort, not gospel. |
+| `grounded_verification_summary.json` | — | The method + verdict mix for the grounded tier (how 622 mined rows were cleaned and audited down to 318 trustworthy ones). |
 | `verification_report.json` | — | The full cited audit: corrected attendance matrix, every dataset error + correction + source, the coverage gaps, and the verified highlights. |
 | `news_index.csv` | 38 | Taiwan press coverage index (headline, date, source, link). |
 | `regenerate.py` | — | Rebuild transcripts from the public videos (captions-first). |
@@ -80,6 +82,14 @@ is in [`verification_report.json`](verification_report.json).
 - **Verified-depth layer:** marquee keynote / press videos → captions (or local
   ASR) → LLM extraction → **independent web verification** against the official
   program + tech press → hand-correction from the cited report.
+- **Grounded tier:** captions pulled across the full catalogue → announcement
+  extraction with a hard **verbatim-quote** requirement (no quote in transcript →
+  row dropped) → deterministic cleanup (a key_number not present in its quote is
+  nulled; the ticker list is trimmed to the single announcing issuer) →
+  **adversarial re-audit** of every claim by an independent skeptic pass that
+  labels each as real_new / recap / unsupported / vision_only / misattributed.
+  The 318-row trustworthy subset is the rows that pass that audit; the ~49% that
+  fail are kept and labelled so the filter is transparent.
 
 The event study built on this data is in
 [`../18-computex-event-study/`](../18-computex-event-study/); the synthesis is in

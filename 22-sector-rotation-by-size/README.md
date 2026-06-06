@@ -1,4 +1,4 @@
-# 22 — Sector rotation by size: does money rotate between big and small tech as the cycle turns — and can you trade it?
+# 20 — Sector rotation by size: does money rotate between big and small tech as the cycle turns — and can you trade it?
 
 There is a tidy story traders tell about cycles. When the market is climbing, money chases the risky, fast-moving names; when it turns down, money runs to the safe, boring ones. "Risk-on, risk-off." Inside the one corner of the market I can measure deeply — the US AI and technology complex, from the smallest chip-tool maker to the trillion-dollar platforms — the cleanest version of that story is **size**. If rotation is real, the small, high-octane names should lead when the complex is rising and get dumped first when it falls; the giant, cash-rich platforms should be the place money hides.
 

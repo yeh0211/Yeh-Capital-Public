@@ -24,7 +24,7 @@ Win-rate stays near a coin-flip in absolute terms but the share beating SPY coll
 | 180d | 641 | 47.6% | −1.1% | −11.3% | −15.4% | 25% |
 | 365d | 474 | 45.6% | −4.1% | −16.2% | **−28.4%** | **19%** |
 
-At one year the median IPO is down 4% outright and down 28% relative to simply owning the index. The mean is even worse (−34.4%) because the right tail of occasional winners cannot offset a long left tail of names that lost most of their value.
+At one year the median IPO is down 4% outright and down 28% relative to simply owning the index. The mean is even worse (−16.2%) because the right tail of occasional winners cannot offset a long left tail of names that lost most of their value.
 
 ![IPO chase: win-rate by horizon (left) and the distribution of 1-year returns (right)](ipo_chase.png)
 
@@ -32,7 +32,7 @@ At one year the median IPO is down 4% outright and down 28% relative to simply o
 
 The class average hides a sharp split. Stable-income listings (REITs) and profitable software held up; biotech and the large "micro-cap / unclassified" bucket were the destroyers.
 
-| Sector | n | win 90d | Median 90d | Median 365d |
+| Sector | n | % positive 90d (absolute) | Median 90d | Median 365d |
 |---|---|---|---|---|
 | Software / IT | 30 | 65.5% | +3.4% | **+9.1%** |
 | Real Estate / REIT | 192 | 79.8% | +1.0% | **+4.9%** |

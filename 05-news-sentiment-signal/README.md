@@ -33,12 +33,12 @@ Bucket the posts by sentiment and the *past* return rises monotonically (negativ
 
 ![Past return tracks sentiment; forward alpha does not](fig2_bucket_monotonicity.png)
 
-| Slice | n | % positive | median fwd-5d alpha | mean fwd-5d alpha |
-|---|---:|---:|---:|---:|
-| Positive sentiment | 2,418 | 51.7% | +0.0023 | +0.0081 |
-| Neutral sentiment | 844 | 47.7% | −0.0026 | +0.0068 |
-| Negative sentiment | 773 | 49.7% | −0.0007 | +0.0074 |
-| **Baseline (all)** | 4,035 | 50.5% | +0.0011 | +0.0077 |
+| Slice | n | % fwd-5d > 0 | mean past-20d return | median fwd-5d alpha | mean fwd-5d alpha |
+|---|---:|---:|---:|---:|---:|
+| Positive sentiment | 2,418 | 51.7% | +6.0% | +0.0023 | +0.0081 |
+| Neutral sentiment | 844 | 47.7% | +1.7% | −0.0026 | +0.0068 |
+| Negative sentiment | 773 | 49.7% | −2.6% | −0.0007 | +0.0074 |
+| **Baseline (all)** | 4,035 | 50.5% | — | +0.0011 | +0.0077 |
 
 The long-short (positive minus negative) forward-5d alpha is **+0.0007, 95% CI [−0.0073, +0.0084]** — it spans zero (Mann-Whitney p=0.49). **No tradable edge.** Per ticker, the predictive IC distribution is centered on zero (mean +0.007, 52% positive), so there is no broad cross-sectional signal hiding under the aggregate.
 
@@ -51,7 +51,7 @@ Forward-20d IC is the only predictive figure that clears significance (+0.063, p
 | Window | IC (sentiment → fwd-20d) | n |
 |---|---:|---:|
 | Early half (2024-07 .. 2025-12) | +0.041 (p=0.10, not significant) | 1,676 |
-| Late half (2025-12 .. 2026-03) | +0.087 (p<0.001) | 1,676 |
+| Late half (2025-12 .. 2026-04) | +0.087 (p<0.001) | 1,676 |
 | By year 2024 | −0.013 | 432 |
 | By year 2025 | +0.017 | 1,419 |
 | By year 2026 | **+0.139** | 1,501 |

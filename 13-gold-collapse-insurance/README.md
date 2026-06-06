@@ -1,4 +1,4 @@
-# 13 — Bitcoin is a risk asset, not digital gold
+# 13 — Collapse insurance: gold cushions, Bitcoin is a risk asset (not digital gold)
 
 **Question.** In equity selloffs, does Bitcoin behave like GOLD (a safe haven with low or negative crash beta) or like a RISK ASSET — and over time, is its behavior converging toward equities or toward gold? **Answer:** Bitcoin is a high-beta risk asset converging toward equities. Gold is the better crash diversifier, though not the always-up haven its reputation implies.
 

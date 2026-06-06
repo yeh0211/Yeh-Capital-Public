@@ -1,6 +1,6 @@
 # 19 — Shorting overbought semiconductors does not pay
 
-**Question.** Does conditioning a short on the semiconductor index on an "overbought" reading — RSI(14) > 70, price > 15% above its 200-day average, or a trailing 21-day return above +20% — earn anything over a blind short? **Answer:** No. Every condition at every horizon loses money, and the edge over a blind short rounds to zero. The setup tells you *when shorts hurt most*, not when they pay.
+**Question.** Does conditioning a short on the semiconductor index on an "overbought" reading — RSI(14) > 70, price > 15% above its 200-day average, or a trailing 21-day return above +20% — earn anything over a blind short? **Answer:** No. Every condition the union actually trades loses at every horizon, and the edge over a blind short rounds to zero (the lone exception — a thin "all three at once" overlap at 63 days, +1.26% — is one or two episodes of noise; see Claim 2). The setup tells you *when shorts hurt most*, not when they pay.
 
 > Research / backtested. No live capital, no audited track record. Returns are point-to-point and carry no borrow cost — a real short of a hot semi ETF would print *worse* than every number here, and a long hold can be margin-called by an interim spike the endpoint never shows.
 
@@ -10,7 +10,7 @@ The semiconductor index over ~10 years (May-2016 to Jun-2026, 2,326 daily bars a
 
 ## Claim 1 — Every condition loses, and the edge over a blind short is ~0
 
-The tradable trigger is the **union** of the three conditions. Across horizons the share of profitable shorts falls from ~45% at one week to ~17% at six months; the median and mean short return are negative everywhere; and the edge over a blind short is a fraction of a point — even slightly *negative* at six months.
+The tradable trigger is the **union** of the three conditions, which fires on roughly 40% of bars (938 of 2,326 at the 5-day horizon). Across horizons the share of profitable shorts falls from ~45% at one week to ~17% at six months; the median and mean short return are negative everywhere; and the edge over a blind short is a fraction of a point — even slightly *negative* at six months.
 
 ![Semiconductor index over ten years with overbought short-triggers marked; the triggers cluster on a secular uptrend](fig1_soxx_triggers.png)
 

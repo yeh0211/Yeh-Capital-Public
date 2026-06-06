@@ -4,7 +4,7 @@
 
 **Finding.** **Conditional.** On the *private* book, yes narrowly: Alphabet's SpaceX and Anthropic entries were earlier, cheaper, and larger per dollar deployed (~40–55x on the flagship cheques vs MSFT ~18x, AMZN ~9x), and those marks added roughly **+$24bn — about 18% of 2025 net income**. But on the *one slice that can be marked to a real tape* — CapitalG/GV names that became public tickers — Alphabet shows **no statistically significant edge over a broad same-era IPO baseline at any horizon** once the edge is tested correctly. Best cost basis on two generational private winners; **no evidence of repeatable, priceable picking alpha.**
 
-> Research / backtested. No live capital, no audited track record. The private marks are mark-to-model, unrealised, and reflexive; the public test is, by construction, generous to Alphabet (it only sees names that survived to an IPO) and it still doesn't beat baseline.
+> Research / backtested. No live capital, no audited track record. The private marks are mark-to-model, unrealised, and reflexive; the public test is, by construction, generous to Alphabet (it only sees names that survived to an IPO) and it still doesn't beat baseline. Method-described, not yet re-runnable: the 216-name control list and the block-bootstrap procedure are described here but the underlying lists and code are not published, so the test is documented rather than independently reproducible.
 
 ## Data & method
 
@@ -34,7 +34,7 @@ Per dollar invested, Alphabet is the standout: a ~$0.9bn SpaceX cheque (2015) re
 | Alphabet | Anthropic + SpaceX | ~2.9 | ~120–160 | ~40–55x | +24.1 |
 | Microsoft | OpenAI ~27% | ~13.0 | ~228 | ~18x | −3.1 (equity-method loss) |
 | Amazon | Anthropic | ~8.0 | 74.2 | ~9x | +9.5 (est.) |
-| Nvidia | CoreWeave + xAI + others | ~4+ | ~6 (public marks) | ~3x | small + |
+| Nvidia | CoreWeave + xAI + others | ~4+ | ~6 (public marks) | ~1.5x | small + |
 
 ![Hyperscaler stake books: cost vs reported paper mark](peer_marks.png)
 

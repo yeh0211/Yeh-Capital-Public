@@ -24,17 +24,17 @@ By 11:30 ET the morning move's sign matches the eventual close sign **80.3%** of
 | 12:00 | 115,554 | 0.8191 | +0.3191 | [0.8132, 0.8251] | yes |
 | 13:00 | 115,587 | 0.8474 | +0.3474 | [0.8417, 0.8529] | yes |
 
-The CIs are tight and well above the coin-flip line — but "significant" here is significant-because-mechanical, not significant-because-tradable.
+The CIs are tight and well above the coin-flip line — but "significant" here is significant-because-mechanical, not significant-because-tradable. (Counts differ slightly from the rest-of-day profit tables below — e.g. 115,552 vs 116,033 at 11:30 — because the two tests apply different non-null filters: the description leg needs both an open→cutoff and an open→close sign, while the profit leg only needs a non-null non-overlapping cutoff→close return.)
 
 ![Decision-time curve: how early the morning move calls the close](fig_decision_time_curve.png)
 
 ## Claim 2 — You CANNOT profit (the honest test is a coin flip)
 
-Trade the 11:30 morning direction, hold to close, and score the signed return on the **non-overlapping** 11:30→close leg: win-rate **50.4%** (95% CI [49.5%, 51.2%], straddles 0.50), mean signed return **+3.4 bp before costs** whose seed-averaged 95% CI runs **-0.8 bp to +69.7 bp** — the lower bound sits on zero. Both nulls (coin-flip win-rate, zero drift) live inside the interval. And a same-day enter-at-11:30 / exit-at-close round trip on these names costs more than 3 bp, so the rule is net-negative.
+Trade the 11:30 morning direction, hold to close, and score the signed return on the **non-overlapping** 11:30→close leg: win-rate **50.4%** (95% CI [49.5%, 51.2%], straddles 0.50), mean signed return **+3.4 bp before costs** whose seed-averaged 95% CI runs **-0.1 bp to +7.0 bp** — the lower bound sits on zero. Both nulls (coin-flip win-rate, zero drift) live inside the interval. And a same-day enter-at-11:30 / exit-at-close round trip on these names costs more than 3 bp, so the rule is net-negative.
 
 | metric | n | %positive (win) | median | mean | seed-avg 95% CI | robust? |
 |---|---:|:---:|:---:|:---:|:---:|:---:|
-| signed rest-of-day return (11:30→close) | 116,033 | 50.4% | +1.6 bp | +3.4 bp | mean [-0.8 bp, +69.7 bp]; win [49.5%, 51.2%] | **no — marginal, sub-cost** |
+| signed rest-of-day return (11:30→close) | 116,033 | 50.4% | +1.6 bp | +3.4 bp | mean [-0.1 bp, +7.0 bp]; win [49.5%, 51.2%] | **no — marginal, sub-cost** |
 
 Run the same momentum rule at every cutoff and only the two earliest survive a robust CI — and only because they keep the longest rest-of-day window, at 5-6 bp gross, still below realistic frictions:
 

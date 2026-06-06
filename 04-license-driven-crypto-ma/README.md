@@ -91,7 +91,7 @@ Mechanism (the thesis): federal market-structure clarity should compress the reg
 
 ![Milestone reaction](milestone_reaction.png)
 
-**What the data actually says.** On the milestone dates so far, the cohort's abnormal return has been **negative**, most clearly at +21d — a "sell-the-news" pattern. This is the honest counterweight to the thesis: even as the regime hardens in crypto's favour, *the legislative milestones themselves have not been cohort catalysts.* The bullish case relies on the discount compressing over a longer arc (or on CLARITY's **final passage**, which has not happened), not on the headline dates.
+**What the data actually says.** On the milestone dates so far, the cohort's abnormal return has been **negative**, most clearly at +21d — a "sell-the-news" pattern. Note the first two dates (House-passage 2025-07-17 and GENIUS-signing 2025-07-18) are one calendar day apart, so their +1d/+5d/+21d windows overlap almost entirely and are not independent observations — the effective independent-event count here is closer to **two** than three. This is the honest counterweight to the thesis: even as the regime hardens in crypto's favour, *the legislative milestones themselves have not been cohort catalysts.* The bullish case relies on the discount compressing over a longer arc (or on CLARITY's **final passage**, which has not happened), not on the headline dates.
 
 ## 4 — The counter-case still stands
 
@@ -113,4 +113,4 @@ Not investment advice, and not a prediction of any specific transaction — this
 - Legislative record: congress.gov (H.R.3633 CLARITY; the GENIUS Act / S.1582); the White House GENIUS-Act signing (18 Jul 2025); Senate Banking Committee markup (15-9, 14 May 2026).
 - Prices: split-adjusted daily closes; abnormal return = name return minus SPY over the same window.
 
-*This is a living document. Re-running the tracker refreshes the watchlist, both event studies, and these figures against current data.*
+*This is a living document; figures are refreshed periodically against current data. The published directory contains this write-up and the figures only — the underlying tracker, dataset, and code are not included, so the results here are not independently re-runnable from this repository.*

@@ -3,6 +3,6 @@
   "slug": "12-googl-five-year-hold",
   "title": "GOOGL — laggard or not",
   "question": "Was Google really a laggard, and what drove the 2025-26 re-rating?",
-  "finding": "Never the laggard the tape implied. Clean prices show GOOGL +148% (beats 4 of its 5 megacap peers, loses only to NVDA); the \"laggard-to-leader\" story was a data-corruption artifact, and only the Sep-2025 DOJ antitrust-remedies catalyst (+11.0%, p=0.007) is statistically real.",
+  "finding": "Never the laggard. On clean prices GOOGL returned +148% (2nd of 6, beats 4 of 5 megacap peers, loses only to NVDA); the \"laggard\" was a 23x data-corruption bug plus benchmark choice. Of five named catalysts only two survive (Gemini 2.0 and DOJ remedies); the \"leader-phase alpha\" is not significant once the start date is exogenous (Newey-West t=1.15, bootstrap CI crosses 0). The +148% is ~62% earnings / 38% multiple — a delivery story, not a re-rate.",
   "status": "published"
 }

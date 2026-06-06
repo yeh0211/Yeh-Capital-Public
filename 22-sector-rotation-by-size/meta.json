@@ -1,0 +1,8 @@
+{
+  "number": 22,
+  "slug": "22-sector-rotation-by-size",
+  "title": "Sector rotation by size",
+  "question": "As the AI/tech complex rises and falls, does capital rotate between market-cap tiers — into small high-beta names in up-legs, into mega-caps for shelter in down-legs — and can you trade it?",
+  "finding": "No, and no. Across 78 AI/tech names split into four market-cap buckets (Small <$10B / Mid $10-100B / Large $100-500B / Mega >$500B), size is a symmetric beta dial, not a rotation axis: up-capture equals down-capture in every bucket (spreads on zero, p>=0.11). The 'defensive small-cap in bears' reading is a calendar artifact (small caps fell hardest in all four drawdowns, median -32% vs Mega -23%); no bucket's bull-vs-bear edge is significant (p=0.27-0.71); and a causal 200-day rotation loses to buy-and-hold (Sharpe 1.13 vs 1.26), cuts no drawdown, and is beaten by its own random-timing placebo (p=0.65).",
+  "status": "published"
+}

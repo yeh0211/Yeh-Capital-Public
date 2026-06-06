@@ -15,7 +15,7 @@
 
 ![Win-rate by horizon vs a random-entry baseline in the same names](fig2_winrate_horizon.png)
 
-Across every horizon the signal win-rate hugs 50% and is indistinguishable from a random entry in the same universe.
+At the 30/60/90d horizons the signal win-rate hugs ~49-50% and is indistinguishable from a random entry in the same universe; it only drifts above 50% at 365d (53.5%, n=142), where the lift reflects cohort/market beta over a full year rather than a VWAP-touch edge (edge vs random is still just +1.2 pts).
 
 | Horizon | n | % Positive (win) | Median | Mean | Edge vs random |
 |---|---:|---:|---:|---:|---:|
@@ -47,7 +47,7 @@ Sector cells scatter widely (Utilities 60% / REIT 62% at 90d vs Healthcare 30%),
 ## The answer, in the data
 
 **Q: If I buy when price touches the IPO-anchored VWAP, is the win-rate an edge?**
-**A: No.** It is ~49% — a coin flip — confirmed two ways (pullback and reclaim), consistent out-of-sample, with a bootstrap CI that includes zero. The anchored VWAP is a useful *descriptive* level (the cohort's average cost basis) but not a *predictive* entry signal.
+**A: No.** At 30/60/90d it is ~49% — a coin flip — confirmed two ways (pullback and reclaim), consistent out-of-sample, with a bootstrap CI that includes zero. It does reach 53.5% at 365d, but that one-year drift is cohort/market beta (edge vs random only +1.2 pts), not a VWAP-touch signal. The anchored VWAP is a useful *descriptive* level (the cohort's average cost basis) but not a *predictive* entry signal.
 
 | Signal (90d) | n | % Positive | Edge vs random | Verdict |
 |---|---:|---:|---:|---|

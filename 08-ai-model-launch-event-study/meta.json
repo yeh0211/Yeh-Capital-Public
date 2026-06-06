@@ -1,0 +1,8 @@
+{
+  "number": 8,
+  "slug": "08-ai-model-launch-event-study",
+  "title": "AI model-launch event study",
+  "question": "Does a frontier-model launch reliably move software (SaaS) stocks?",
+  "finding": "No — across 11 launches software barely moves vs QQQ (+0.33% over [0,+5]); the famous GPT-4 \"crash\" was the SVB banking week, not the model; ex-confound the other 10 averaged ~+1%. Only AI-*exposed* lagging AI-*insulated* by ~1 pt/month is real — too small to trade.",
+  "status": "published"
+}

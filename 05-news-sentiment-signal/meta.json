@@ -1,0 +1,8 @@
+{
+  "number": 5,
+  "slug": "05-news-sentiment-signal",
+  "title": "News-sentiment signal",
+  "question": "Does news sentiment predict forward returns, or just react to past ones?",
+  "finding": "Reactive, not predictive. Sentiment tracks the prior 20-day return (Spearman IC +0.20) ~3.2× more strongly than the matched forward 20-day (+0.06); the long-short forward-5-day spread is statistically zero. A trend mirror, not an entry signal.",
+  "status": "published"
+}

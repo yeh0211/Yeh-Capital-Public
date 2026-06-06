@@ -1,0 +1,8 @@
+{
+  "number": 2,
+  "slug": "02-ipo-anchored-vwap",
+  "title": "IPO-anchored VWAP",
+  "question": "What is the win-rate of buying the IPO-anchored VWAP, by horizon and across sectors?",
+  "finding": "No edge. Buying the touch is a coin flip (~49% win-rate; edge over random within ±3.6pts) across 881 IPOs / 188 liquid names; the 90-day bootstrap CI spans zero, it holds out-of-sample, and no sector edge is robust.",
+  "status": "published"
+}

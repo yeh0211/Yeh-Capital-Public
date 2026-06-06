@@ -1,0 +1,8 @@
+{
+  "number": 9,
+  "slug": "09-activist-short-post-performance",
+  "title": "Activist short post-performance",
+  "question": "Do activist short reports keep working, and does the publisher matter?",
+  "finding": "No tradable post-report drift. Across 96 campaigns (14 publishers, 2020–26) the 21-day path is indistinguishable from a random day in the same names (edge +1.8pp, bootstrap CI spans 0); the only structure is publisher identity (Hindenburg targets keep falling, Muddy Waters' bounce) — but every publisher bar one has n≤21, so indicative, not significant.",
+  "status": "published"
+}

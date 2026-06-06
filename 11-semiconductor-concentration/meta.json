@@ -1,0 +1,8 @@
+{
+  "number": 11,
+  "slug": "11-semiconductor-concentration",
+  "title": "Semiconductor concentration",
+  "question": "When one stock supplies half an index's gain — and do winners persist?",
+  "finding": "NVDA is half the semis index (50% of the gain, 46% weight; top-3 = 76%), more concentrated than the Nasdaq — and winners do NOT keep winning year to year (Spearman IC −0.001; prior losers slightly beat prior winners). A risk fact, not a timing signal.",
+  "status": "published"
+}

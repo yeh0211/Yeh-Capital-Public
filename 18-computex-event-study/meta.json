@@ -1,0 +1,8 @@
+{
+  "number": 18,
+  "slug": "18-computex-event-study",
+  "title": "Computex event study",
+  "question": "Do the chip names that headline or supply Computex beat the semis tape after the keynote?",
+  "finding": "No robust alpha — abnormal vs SMH is statistically zero at every horizon (0 of 40 cells significant) and flips sign across robustness cuts (drop-2021 +1.2%, pre-2021 listings −2.4%); the median name beats SMH less than half the time. Own SMH, not the basket.",
+  "status": "published"
+}

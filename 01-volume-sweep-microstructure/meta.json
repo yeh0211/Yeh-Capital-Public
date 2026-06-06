@@ -1,0 +1,8 @@
+{
+  "number": 1,
+  "slug": "01-volume-sweep-microstructure",
+  "title": "Volume-sweep microstructure",
+  "question": "Do cross-ticker abnormal-volume sweeps predict next-day semi-basket returns?",
+  "finding": "Pilot signal decayed out-of-sample (p 0.002 → 0.08); a two-sided \"MIXED\" sweep effect survived (p≈0.008) and warrants follow-up.",
+  "status": "published"
+}

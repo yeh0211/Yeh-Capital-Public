@@ -12,9 +12,9 @@ I came at it three ways, on two different datasets, because one cut can fool you
 
 - **By sector — rotation is real and large, but not tradeable.** Inside bear markets the defensive basket (staples, utilities, health care) beat the market by 15–20 points annualized; cyclicals led by a similar margin in bulls; energy marched to the inflation cycle instead. Yet a causal 200-day rotation netted **0.61 Sharpe vs 0.77 for buy-and-hold**, cut no drawdown, and the probability of backtest overfitting was **94%**.
 - **By size — there is no rotation at all, just beta.** Every cap bucket's up-capture equals its down-capture (spreads on zero, p ≥ 0.11); the "defensive small-cap in bears" reading is a calendar artifact (measured peak-to-trough, small caps fell *hardest* in 4 of 4 drawdowns, −32% vs −23%). The causal cap rotation lost to buy-and-hold and to its own random-timing placebo.
-- **Investability climbs monotonically with size.** Median single-name Sharpe runs Small **−0.19** → Mid +0.21 → Large +0.68 → Mega **+0.77**; the share of "investable" names runs **34% → 66% → 81% → 100%**; loss-makers run **56 of 143** small caps down to **1 of 11** megas; median drawdown −78% (small) vs −58% (mega).
-- **The efficient frontier is a trap.** Optimized in-sample it crowns the small bucket (it has the most names to cherry-pick) — a pure overfitting artifact. The honest read (equal-weight portfolio + median name) says the opposite: Large/Mega equal-weight Sharpe ~1.25 vs Small ~0.31.
-- **The combination — own the giants, short the minnows — worked in-sample.** Long mega+large / short mid+small earned the best Sharpe (**1.66**, +24%/yr, half the volatility, drawdown −18% vs −44%), positive in both walk-forward halves. But it is a regime-specific size/quality *factor* bet (one mega-cap-tech bull, gross of borrow), not the *rotation timing* the study set out to find.
+- **Investability climbs monotonically with size — a clean line.** Across 253 names in equal-count cap quartiles, a name's Sharpe rises **+0.31 for every 10× of market cap** (correlation +0.60). Median single-name Sharpe runs Small **−0.25** → Mid −0.04 → Large +0.02 → Mega **+0.52**; the share of "investable" names runs **14% → 32% → 40% → 71%**; loss-makers run **28 of 64** smallest down to **7 of 63** largest; median drawdown −84% (smallest) vs −56% (largest).
+- **The efficient frontier is a trap when buckets are unbalanced.** With 143 small vs 11 mega, in-sample optimization crowns the small bucket purely because it has more names to cherry-pick from (its max-Sharpe inflated to 5.18). With **equal-count quartiles** the artifact vanishes and even the optimized frontier is monotonic with size (Small 1.43 → Mega 1.74); the honest equal-weight read agrees (Small 0.18 → Mega 1.01).
+- **The combination — own the bigger half, short the smaller half — worked in-sample.** Long top-half / short bottom-half earned the best Sharpe (**1.29**, +13%/yr, a third of the volatility, drawdown −14% vs −44%), positive in both walk-forward halves [1.18, 1.40]. But it is a regime-specific size/quality *factor* bet (one mega-cap-tech bull, gross of borrow), not the *rotation timing* the study set out to find.
 - **The spine:** measure the rotation two ways → find it's real-but-untimeable (sectors) and not-even-real (size) → pivot to "what is worth owning" → frontier + per-name quality + the long/short → graded verdict.
 
 ## What I expected, and why
@@ -43,7 +43,8 @@ Two universes, both from a private price + reference warehouse; daily split-adju
 | Cut | Universe | Window | Benchmark |
 |---|---|---|---|
 | By sector | 9 SPDR sector ETFs (XLP/XLV/XLU/XLF/XLI/XLE/XLY/XBI/XLK) + SPY, RSP | 2016-05 → 2026-06 (2,525 days) | cap-weight SPY + equal-weight RSP |
-| By size / investability | The full liquid AI/tech complex, **242 US names** (Small <$10B ×143, Mid $10–100B ×67, Large $100–500B ×21, Mega >$500B ×11), screened to px ≥ $5 and median \$-volume ≥ $5M | 2021-06 → 2026-06 (~1,260 days) | equal-weight complex |
+| By size (rotation) | A curated **78-name** AI/tech complex with reported diluted-share history, in four cap buckets | 2021-05 → 2026-06 (~1,280 days) | equal-weight complex |
+| Investability (frontier) | The full liquid AI/tech complex, **253 US names** in four equal-count market-cap quartiles (~63 each: Small $0.1–1.9B, Mid $1.9–5.5B, Large $5.6–22B, Mega $22B+; only 11 names exceed $500B), px ≥ $5, median \$-volume ≥ $3M | 2021-06 → 2026-06 (~1,250 days) | equal-weight complex |
 
 Caps come from reported shares × price; profitability from the last four quarters of filed income statements. RSP (equal-weight) is the primary relative-strength benchmark for the sector cut because one sector (XLK) is ~30% of cap-weight SPY, so "leadership" measured against SPY is partly a concentration mirror.
 
@@ -141,55 +142,57 @@ Inside one corner of the market — the AI/tech complex — the cleanest version
 
 # Part 3 — So which slice is worth owning?
 
-If you can't *time* the rotation, the question that actually matters is which part of the market is simply worth holding. I broadened the complex to the **full 242 liquid AI/tech names** and asked it three ways: the efficient frontier per tier, every name on a risk-return-quality map, and the obvious trade your idea points at — own the giants, short the minnows.
+If you can't *time* the rotation, the question that actually matters is which part of the market is simply worth holding. I took the **full liquid AI/tech complex — 253 names** — and split it into **four equal-count market-cap quartiles** (~63 names each, so it is a balanced contest, not 143 minnows against 11 giants) and asked it three ways: every name's risk-adjusted return against its size, the efficient frontier per quartile, and the trade your idea points at — own the bigger half, short the smaller half. (The true >$500B giants are only **11 names** — the entire real population — so a fair test has to compare *quartiles*, not that handful. Daily returns are winsorized at ±50%/day and names with an implausible >150% annualized volatility are dropped; here that removes zero, so the volatility numbers are real.)
 
-### Finding 7 — Investability climbs with size, and the frontier hides it
+### Finding 7 — Investability rises with size, in a clean line
 
-- **What I expected & why.** The desk intuition is that small caps are where the alpha is — more inefficiency, more room to run. The frontier is supposed to show it.
-- **How I measured it.** A long-only Ledoit-Wolf efficient frontier per bucket (20%/name cap), but reported honestly: the **equal-weight** portfolio (no optimization) and the **median name** are the real investability reads, because an in-sample frontier optimized over more names always looks better.
+- **What I expected & why.** The desk intuition is that small caps are where the alpha hides — more inefficiency, more room to run. So smaller should pay more per unit of risk, if anything.
+- **How I measured it.** Two honest reads and one fair frontier. Regress every name's annualized Sharpe on the log of its market cap (the whole 253-name sample, no bucketing). Then per quartile, the **equal-weight** portfolio and the **median name**. Then a long-only Ledoit-Wolf efficient frontier per quartile — which is now a *fair* contest because every bucket has the same name count.
 
   ```python
-  cov = LedoitWolf().fit(bucket_returns).covariance_ * 252   # shrunk covariance
-  # max-Sharpe is in-sample and overfits; the honest points are:
-  ew_sharpe     = annualize(bucket.mean(axis=1)).sharpe       # buy the whole tier
-  median_sharpe = per_name_sharpe(bucket).median()            # the typical name
+  # the line: does risk-adjusted return depend on size? (full sample)
+  slope, intercept = polyfit(log10(market_cap_b), per_name_sharpe, 1)   # +0.31, corr +0.60
+  # per quartile, the honest reads:
+  ew_sharpe     = annualize(quartile.mean(axis=1)).sharpe
+  median_sharpe = per_name_sharpe(quartile).median()
   ```
 
-- **What the data shows.** The naive frontier is a trap: optimized in-sample it crowns the *small* bucket purely because it has 143 names to cherry-pick from. The honest reads invert it cleanly, and they are monotonic with size:
+- **What the data shows.** It is a line, and it points the opposite way to the desk intuition: a name's Sharpe rises **+0.31 for every 10× of market cap** (correlation **+0.60** across 253 names). The quartile reads are monotonic on every metric:
 
-  | Tier | Names | Median name Sharpe | % investable | Loss-makers | Median max-DD | Equal-weight Sharpe |
+  | Quartile (cap) | Names | Median name Sharpe | % investable | Loss-makers | Median max-DD | Equal-weight Sharpe |
   |---|---:|---:|---:|---:|---:|---:|
-  | Small <$10B | 143 | **−0.19** | 34% | 56 | −78% | 0.31 |
-  | Mid $10–100B | 67 | +0.21 | 66% | 14 | −61% | 0.76 |
-  | Large $100–500B | 21 | +0.68 | 81% | 0 | −59% | 1.24 |
-  | Mega >$500B | 11 | **+0.77** | 100% | 1 | −58% | **1.27** |
+  | Small $0.1–1.9B | 64 | **−0.25** | 14% | 28 | −84% | 0.18 |
+  | Mid $1.9–5.5B | 63 | −0.04 | 32% | 22 | −74% | 0.46 |
+  | Large $5.6–22B | 63 | +0.02 | 40% | 16 | −69% | 0.65 |
+  | Mega $22B+ | 63 | **+0.52** | 71% | 7 | −56% | **1.01** |
 
-![Efficient frontier by tier — curves overfit; the honest equal-weight dots say big wins](fig7_frontier_by_cap.png)
+![Every name's Sharpe against its market cap — a clean upward line (corr +0.60)](fig8_size_line.png)
 
-- **Why (mechanism).** The typical small AI/tech name is just a bad investment: negative risk-adjusted return, an 78% median drawdown, and a 39% chance it is outright loss-making. The giants compound; the minnows churn and crash. "Investable" is not evenly spread — it is concentrated at the top of the cap scale.
-- **What I checked.** The frontier's small-cap "win" is the overfitting tell, not an edge: its in-sample max-Sharpe scaled with the number of names (it was 5.18 before winsorizing the bad ticks), exactly what cherry-picking from a big pool produces.
-- **Verdict.** **Bigger is more investable**, on every honest metric. Inside any tier, only the top names clear the bar (e.g. the Mid bucket's best handful are genuinely investable; its loss-making tail is not).
+- **Why (mechanism).** The typical small AI/tech name is simply a bad investment: a negative median Sharpe, an **−84%** median drawdown, and a **44%** chance (28 of 64) it is outright loss-making. The giants compound; the minnows churn and crash. "Investable" is not spread evenly — it is concentrated at the top of the cap scale.
+- **What I checked — and what the balance fixed.** In an earlier, imbalanced cut (143 small vs 11 mega) the *optimized* frontier crowned the small bucket — but that was a pure sample-size artifact: with 143 names to cherry-pick from, the in-sample max-Sharpe inflates (it hit 5.18 before bad-tick winsorizing). With **equal counts**, that artifact disappears and even the optimized frontier max-Sharpe is now monotonic with size (Small 1.43 → Mega 1.74). Both the honest reads and the fair frontier now agree.
 
-![Every name by risk and return — X marks the loss-makers, clustered in small/high-vol](fig8_name_scatter.png)
+![Efficient frontier by quartile (equal count) — the Mega equal-weight dot dominates](fig7_frontier_by_cap.png)
 
-### Finding 8 — Own the giants, short the minnows: it worked — as a factor bet, not a timing edge
+- **Verdict.** **Bigger is more investable**, on every metric, as a clean +0.31-per-decade line. Inside any quartile only the top names clear the bar; the loss-making tail does not.
 
-- **What I expected & why.** Your idea, stated plainly: small and mid AI/tech are mostly unprofitable names unlikely to compound, so go long the giants and short the minnows. Under Part 2's "pure beta" finding this should *lose* (you'd be net short the higher-beta bucket in a bull) — unless the giants carry real quality/alpha over the minnows.
-- **How I measured it.** Equal-weight legs, net of the trade, plus a quality-screened version (long the *profitable* giants, short the *loss-making* minnows), benchmarked against simply holding the complex, with a walk-forward split.
+### Finding 8 — Own the bigger half, short the smaller half: it worked — as a factor bet, not a timing edge
+
+- **What I expected & why.** Your idea, stated plainly: small and mid AI/tech are mostly unprofitable names unlikely to compound, so go long the bigger half and short the smaller half. Under Part 2's "pure beta" finding this should *lose* (you'd be net short the higher-beta names in a bull) — unless the larger names carry real quality/alpha over the smaller ones.
+- **How I measured it.** Equal-weight legs: long the top half (Large+Mega quartiles, 126 names, $5.6B+), short the bottom half (Small+Mid, 127 names, <$5.6B), net of the trade; plus a quality-screened version (long the *profitable* big, short the *loss-making* small), benchmarked against holding the complex, with a walk-forward split.
 
   | Strategy (net) | Sharpe | CAGR | Vol | Max drawdown |
   |---|---:|---:|---:|---:|
-  | Hold the complex (equal-weight) | 0.45 | +13.0% | 29% | −44% |
-  | Long mega+large only | 1.34 | +37.9% | 28% | −43% |
-  | **Long mega+large / short mid+small** | **1.66** | +24.1% | 15% | **−18%** |
-  | Quality: long profitable / short loss-making | 1.12 | +23.3% | 21% | −23% |
+  | Hold the complex (equal-weight) | 0.46 | +13% | 29% | −44% |
+  | Long top-half (Large+Mega) only | 0.76 | +21% | 28% | −42% |
+  | **Long top-half / short bottom-half** | **1.29** | +13% | 10% | **−14%** |
+  | Quality: long profitable / short loss-making | 1.04 | +19% | 19% | −25% |
 
-![The combination — long-big / short-small is the smoothest line](fig9_longshort.png)
+![The combination — long the bigger half, short the smaller half, is the smoothest line](fig9_longshort.png)
 
-- **What the data shows.** It worked, and well: the long/short earned the best Sharpe (1.66) with half the volatility and a third of the drawdown of holding the complex, and it was positive in **both** walk-forward halves (Sharpe 1.20 then 2.09). Just *owning* the giants long-only returned +38%/yr — nearly triple the equal-weight complex. The minnows really are the drag your idea suspected.
-- **Why (mechanism).** This is not Part 2's beta talking. The giants delivered genuine quality — superior return *per unit of risk* — over a small-cap cohort that was 39% loss-making with −78% median drawdowns. Long-big / short-small harvested that quality spread with low net market exposure (vol fell to 15%).
-- **What I checked / the honest dents.** Three. (1) This is **one 5-year window dominated by a historic mega-cap-tech bull** — the big-over-small spread is regime-specific and a small-cap mean-reversion would punish it. (2) The short leg is **gross of borrow cost**, and shorting 143 small caps is not free or always possible. (3) It is a **static factor tilt, not the rotation timing** the study set out to find — which is exactly why it works where the timing rules failed.
-- **Verdict.** **Conditional yes.** Own-the-giants is a real, large, in-sample edge and the honest practical takeaway of the whole study — but treat it as a size/quality factor bet to be sized and hedged, not a free lunch or a market-timing signal.
+- **What the data shows.** It worked: the long/short earned the best Sharpe (**1.29**) with a third of the volatility (10% vs 29%) and a third of the drawdown (−14% vs −44%) of holding the complex, and it was positive in **both** walk-forward halves (Sharpe 1.18 then 1.40). Just *owning* the bigger half long-only returned +21%/yr at a much shallower drawdown than the complex. The smaller names really are the drag your idea suspected.
+- **Why (mechanism).** This is not Part 2's beta talking. The larger names delivered genuine quality — superior return *per unit of risk* — over a smaller-cap cohort riddled with loss-makers and −80%-ish drawdowns. Long-big / short-small harvested that quality spread with low net market exposure (vol fell to 10%).
+- **What I checked / the honest dents.** Three. (1) This is **one 5-year window dominated by a historic mega-cap-tech bull** — the big-over-small spread is regime-specific and a small-cap mean-reversion would punish it. (2) The short leg is **gross of borrow cost**, and shorting ~127 small caps is neither free nor always possible. (3) It is a **static size/quality factor tilt, not the rotation timing** the study set out to find — which is exactly why it works where the timing rules failed.
+- **Verdict.** **Conditional yes.** Own-the-bigger-half is a real, large, in-sample edge and the practical takeaway of the whole study — but treat it as a size/quality factor bet to be sized, cost-, and regime-hedged, not a free lunch or a market-timing signal.
 
 ---
 
@@ -214,8 +217,8 @@ Pulled together as one goal, the conclusions had to survive a forward split, a c
 | Cut | Is the rotation real? | Tradeable by timing? | The usable takeaway |
 |---|---|---|---|
 | By sector (9 ETFs) | **Yes** — defensives +15–20pp in bears, cyclicals lead bulls, energy off-axis | **No** — causal rotation 0.61 vs SPY 0.77 Sharpe, no drawdown cut, PBO 94% | a positioning/regime map |
-| By size (242 names) | **No** — pure symmetric beta; "defensive small-cap" is a calendar artifact | **No** — cap rotation 1.13 vs 1.26 buy-hold, beaten by random timing | size is a beta dial |
-| Investability (frontier) | n/a | n/a | **big ≫ small** (median Sharpe −0.19→+0.77; 34%→100% investable); long-big/short-small Sharpe **1.66** in-sample |
+| By size (78 names) | **No** — pure symmetric beta; "defensive small-cap" is a calendar artifact | **No** — cap rotation 1.13 vs 1.26 buy-hold, beaten by random timing | size is a beta dial |
+| Investability (253 names) | n/a | n/a | **big ≫ small** (Sharpe +0.31 per 10× cap, corr +0.60; median name −0.25→+0.52; 14%→71% investable); long-big/short-small Sharpe **1.29** in-sample |
 
 **Separating the two questions.** *Did the rotation hold and can you trade it?* Real by sector, absent by size, untimeable in both. *What did I actually learn that's usable?* The cross-sectional quality gap — own the giants, avoid the minnows — is the real, monetizable structure here, where the cyclical timing was not. The live alternative I cannot fully exclude: a genuine cross-sector rotation could exist that a tech-heavy size lens cannot see, and the long/short's edge could be a mega-cap-bull artifact that a different regime erases.
 
@@ -251,6 +254,6 @@ Every confidence interval is a block/stationary bootstrap (5–21-day blocks). F
 ## References & forward pointer
 
 - Up/down-capture is the standard Morningstar geometric definition; the 200-day-average trend filter and relative-rotation construction are standard, publicly documented. Ledoit, O. & Wolf, M. (2004), *Honey, I Shrunk the Sample Covariance Matrix.* Politis, D. & Romano, J. (1994), *The stationary bootstrap.*
-- Data: daily split-adjusted closes for the nine SPDR sector ETFs + SPY/RSP (2016–2026) and 242 liquid AI/tech names (2021–2026); reported shares and quarterly income statements for the cap split and quality screen; 10-year Treasury yield and VIX (public) for the energy and correlation overlays.
+- Data: daily split-adjusted closes for the nine SPDR sector ETFs + SPY/RSP (2016–2026) and the liquid AI/tech complex (78 names for the size-rotation cut, 253 for the investability cut, 2021–2026); reported shares and quarterly income statements for the cap split and quality screen; 10-year Treasury yield and VIX (public) for the energy and correlation overlays.
 
 **Builds on / part of** the repo-wide thread on *which "edges" survive an honest test*: the four-cap-bucket lens of [study 01 — volume-sweep microstructure](../01-volume-sweep-microstructure/) (where size scales *noise*; here it scales *beta* and *quality*), the concentration view of [study 11 — semiconductor concentration](../11-semiconductor-concentration/), and the timing-overlay null of [study 16 — narrow leadership and the index](../16-narrow-leadership-and-the-index/). **Next:** turning the own-the-giants tilt into a properly cost-, borrow-, and regime-hedged factor test — the question this study leaves open.

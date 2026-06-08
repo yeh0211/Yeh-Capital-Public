@@ -54,6 +54,12 @@ def write(df: pd.DataFrame, name: str) -> None:
     df.to_csv(DATA / f"{name}.csv", index=False)
 
 
+def date_meta(raw_date: str, basis: str) -> tuple[str, str, str]:
+    if raw_date.startswith("TBD"):
+        return raw_date, basis, "expected_month"
+    return raw_date, basis, "model_calendar_date"
+
+
 sources = pd.DataFrame(
     [
         {
@@ -254,6 +260,10 @@ lockup_calendar = pd.DataFrame(
     lockup_rows,
     columns=["order", "event", "timing", "model_date_if_prospectus_2026_06_11", "shares_released_m", "pool", "percent_of_base_ipo_float", "condition", "inside_first_6_months"],
 )
+lockup_calendar[["event_date", "date_basis", "date_precision"]] = lockup_calendar.apply(
+    lambda row: pd.Series(date_meta(row["model_date_if_prospectus_2026_06_11"], row["timing"])),
+    axis=1,
+)
 lockup_calendar["release_x_base_ipo_float"] = lockup_calendar["shares_released_m"] / IPO_FLOAT_M
 lockup_calendar["release_pct_basic_common"] = lockup_calendar["shares_released_m"] / POST_TOTAL_M * 100
 lockup_calendar["release_pct_post_class_a"] = lockup_calendar["shares_released_m"] / POST_A_M * 100
@@ -398,7 +408,145 @@ lockup_first_6m_scenarios = pd.DataFrame(
         "note",
     ],
 )
+lockup_first_6m_scenarios[["event_date", "date_basis", "date_precision"]] = lockup_first_6m_scenarios.apply(
+    lambda row: pd.Series(date_meta(row["model_date_if_prospectus_2026_06_11"], row["timing"])),
+    axis=1,
+)
 write(lockup_first_6m_scenarios, "lockup_first_6m_scenarios")
+
+
+nasdaq_explainer = pd.DataFrame(
+    [
+        (
+            "Nasdaq exchange listing",
+            "A company trades on the Nasdaq exchange. This is a listing venue, like NYSE versus Nasdaq.",
+            "Lets the shares trade publicly under the ticker, subject to exchange listing standards.",
+            "Gives investors a public trading venue and continuous price discovery.",
+            "No. Listing does not create extra equity beyond the shares sold or registered.",
+        ),
+        (
+            "Nasdaq-100 index inclusion",
+            "The company becomes a constituent of the Nasdaq-100 index, which is tracked by ETFs and benchmarked products.",
+            "Raises visibility, may improve liquidity, and can create passive/index demand. It does not raise new cash for SpaceX.",
+            "Can create forced buying and higher liquidity, but it is not a fundamental guarantee and can be offset by valuation or unlock supply.",
+            "No new shares are created. The index assigns a weight to existing shares; for low-float names Nasdaq-100 caps modified market cap at 3x free float.",
+        ),
+        (
+            "Low-float weighting",
+            "Nasdaq-100 has no minimum free-float requirement, but low-float securities are weighted using the lesser of listed shares or 3x free-floating shares.",
+            "As more shares unlock and become free floating, the stock could represent more index market cap at later reviews.",
+            "Unlocks can increase future index weight but also add sellable supply. The same event can be both passive-demand positive and supply-risk negative.",
+            f"Base IPO float supports about ${min(POST_A_M, IPO_FLOAT_M * 3) * IPO_PRICE / 1000:.1f}B of Nasdaq modified market cap versus ${POST_TOTAL_M * IPO_PRICE / 1000:.1f}B full basic market cap.",
+        ),
+        (
+            "Capital raised",
+            "Index inclusion is secondary-market index mechanics, not a primary offering.",
+            "SpaceX raises capital from the IPO proceeds, not from Nasdaq-100 inclusion itself.",
+            "Index funds buy shares from the market or other holders; they do not inject cash into the company unless a separate primary issuance occurs.",
+            "No. Equity outstanding changes only through issuance, conversion, exercise, buyback, or similar corporate actions.",
+        ),
+    ],
+    columns=["concept", "plain_english", "company_meaning", "investor_meaning", "equity_supply_answer"],
+)
+write(nasdaq_explainer, "nasdaq_explainer")
+
+
+spacex_business_breakdown = pd.DataFrame(
+    [
+        (
+            "Rocket / Space",
+            "Falcon, Dragon, Starship and customer launch operations.",
+            4.086,
+            -0.657,
+            3.832,
+            0.619,
+            -0.662,
+            1.052,
+            "Strategic moat and launch cadence are the core franchise. Starship is the upside and execution-risk center.",
+            "Execution risk, mission failure, capital intensity, government/customer concentration, launch cadence and regulatory approvals.",
+        ),
+        (
+            "Starlink / Connectivity",
+            "Starlink broadband/connectivity services and associated offerings.",
+            11.387,
+            4.423,
+            4.178,
+            3.257,
+            1.188,
+            1.332,
+            "Best current business quality: 2025 operating margin 38.8%, 8.9M subscribers at year-end 2025 and 10.3M in Q1 2026.",
+            "ARPU declined from $99 in 2023 to $81 in 2025 and $66 in Q1 2026; spectrum, orbital, regulatory and capacity constraints matter.",
+        ),
+        (
+            "AI / xAI / X",
+            "AI compute, Grok, X platform and related AI infrastructure acquired through xAI/X transactions.",
+            3.201,
+            -6.355,
+            12.727,
+            0.818,
+            -2.469,
+            7.723,
+            "Largest optionality and largest quality penalty. SpaceX acquired xAI effective 2026-02-02; xAI had acquired X Holdings effective 2025-03-28.",
+            "Heavy losses, high capex, power/GPU execution, related-party complexity, platform moderation/regulatory risk and terminable compute contracts.",
+        ),
+        (
+            "Cursor / Anysphere",
+            "April 2026 compute plus option agreement with Anysphere, Inc., doing business as Cursor.",
+            pd.NA,
+            pd.NA,
+            pd.NA,
+            pd.NA,
+            pd.NA,
+            pd.NA,
+            "Not acquired as of the S-1/A. SpaceX has the right, not obligation, to acquire Cursor at a $60B implied equity value after the offering.",
+            "Potential strategic AI coding distribution and training-data asset; also creates option/termination-fee complexity.",
+        ),
+    ],
+    columns=[
+        "business_line",
+        "description",
+        "revenue_2025_usd_b",
+        "operating_income_2025_usd_b",
+        "capex_2025_usd_b",
+        "revenue_q1_2026_usd_b",
+        "operating_income_q1_2026_usd_b",
+        "capex_q1_2026_usd_b",
+        "why_it_matters",
+        "key_risks",
+    ],
+)
+write(spacex_business_breakdown, "spacex_business_breakdown")
+
+
+spacex_ai_timeline = pd.DataFrame(
+    [
+        ("2022-10", "Twitter acquisition by X Holdings", "actual_month", "X Holdings acquired Twitter in October 2022, before the later xAI and SpaceX common-control transactions."),
+        ("2023-07", "Twitter rebranded to X", "actual_month", "S-1/A describes impairment of the Twitter brand when Twitter was rebranded to X in July 2023."),
+        ("2025-03-28", "xAI acquired X Holdings/X", "actual_effective_date", "S-1/A says X Holdings was acquired by xAI effective March 28, 2025."),
+        ("2026-02-02", "SpaceX acquired xAI", "actual_effective_date", "S-1/A says X.AI Holdings Corp. was acquired by SpaceX effective February 2, 2026."),
+        ("2026-04", "SpaceX entered Cursor compute + option agreement", "actual_month", "SpaceX entered a compute and option agreement with Anysphere/Cursor in April 2026."),
+        ("2026-05", "Anthropic cloud services agreements", "actual_month", "SpaceX entered Anthropic cloud services agreements in May 2026 for approximately 325,000 NVIDIA GPUs."),
+        ("2026-06-05", "Google cloud services agreement FWP", "actual_filing_date", "June 5 FWP disclosed Google agreement for approximately 110,000 NVIDIA GPUs."),
+    ],
+    columns=["event_date", "event", "date_precision", "note"],
+)
+spacex_ai_timeline["date_basis"] = "SpaceX S-1/A and FWPs"
+write(spacex_ai_timeline, "spacex_ai_timeline")
+
+
+cursor_option_analysis = pd.DataFrame(
+    [
+        ("Status", "Not acquired as of S-1/A", "SpaceX has a collaboration and option, not completed ownership of Cursor."),
+        ("Counterparty", "Anysphere, Inc. doing business as Cursor", "Private software company focused on AI-assisted coding workflows."),
+        ("Agreement date", "2026-04", "Compute and option agreement entered in April 2026."),
+        ("Compute agreement", "SpaceX provides certain GPU cluster compute capacity", "Cursor contributes personnel, data/datasets, documentation, technical know-how, workflows, prompts, specifications and code per FWP/S-1 disclosure."),
+        ("Option", "Right, not obligation, to acquire Cursor", "Consideration would be SpaceX Class A stock based on Cursor implied equity value of $60.0B and SpaceX VWAP before closing."),
+        ("Termination economics", "$1.5B termination fee plus $8.5B deferred services fee if applicable", "Fees payable in cash or Class A stock if the offering has not been consummated when payable."),
+        ("Investor read", "Strategic upside with dilution/complexity risk", "Cursor could add developer distribution and model-training data, but it is not current owned revenue and should not be valued as a completed acquisition."),
+    ],
+    columns=["topic", "answer", "investor_read"],
+)
+write(cursor_option_analysis, "cursor_option_analysis")
 
 
 quality_scores = pd.DataFrame(
@@ -832,6 +980,10 @@ with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
         "lockup_calendar",
         "lockup_supply_summary",
         "lockup_first_6m_scenarios",
+        "nasdaq_explainer",
+        "spacex_business_breakdown",
+        "spacex_ai_timeline",
+        "cursor_option_analysis",
         "quality_scores",
         "comp_universe",
         "comp_ipo_performance",

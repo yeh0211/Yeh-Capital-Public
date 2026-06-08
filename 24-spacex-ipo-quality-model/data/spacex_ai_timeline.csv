@@ -1,0 +1,8 @@
+event_date,event,date_precision,note,date_basis
+2022-10,Twitter acquisition by X Holdings,actual_month,"X Holdings acquired Twitter in October 2022, before the later xAI and SpaceX common-control transactions.",SpaceX S-1/A and FWPs
+2023-07,Twitter rebranded to X,actual_month,S-1/A describes impairment of the Twitter brand when Twitter was rebranded to X in July 2023.,SpaceX S-1/A and FWPs
+2025-03-28,xAI acquired X Holdings/X,actual_effective_date,"S-1/A says X Holdings was acquired by xAI effective March 28, 2025.",SpaceX S-1/A and FWPs
+2026-02-02,SpaceX acquired xAI,actual_effective_date,"S-1/A says X.AI Holdings Corp. was acquired by SpaceX effective February 2, 2026.",SpaceX S-1/A and FWPs
+2026-04,SpaceX entered Cursor compute + option agreement,actual_month,SpaceX entered a compute and option agreement with Anysphere/Cursor in April 2026.,SpaceX S-1/A and FWPs
+2026-05,Anthropic cloud services agreements,actual_month,"SpaceX entered Anthropic cloud services agreements in May 2026 for approximately 325,000 NVIDIA GPUs.",SpaceX S-1/A and FWPs
+2026-06-05,Google cloud services agreement FWP,actual_filing_date,"June 5 FWP disclosed Google agreement for approximately 110,000 NVIDIA GPUs.",SpaceX S-1/A and FWPs

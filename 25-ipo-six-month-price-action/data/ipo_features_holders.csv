@@ -1,0 +1,13 @@
+ticker,top_holder_or_structure,top_holder_economic_pct,top_holder_voting_pct,insider_director_economic_pct,holder_read,source_type,holder_risk_score,known_by
+SPCX,Elon Musk,49.1,84.4,53.4,Musk and directors/officers dominate voting control; 13F data is future monitoring only.,S-1/A,5.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+V,Distributed bank legacy holders,,,,Cleaner governance and dispersed public-company profile after IPO.,prospectus/manual comp note,1.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+META,Mark Zuckerberg,,57.0,,Founder voting control was a major public-entry governance feature.,prospectus/manual comp note,4.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+BABA,SoftBank/Yahoo/partnership/VIE context,,,,Scale comp only; ADR/VIE and China governance make holder structure less comparable.,prospectus/manual comp note,5.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+UBER,Founder/VC overhang,,,,Large VC/private-holder overhang and profitability questions at listing.,prospectus/manual comp note,2.5,IPO date / prospectus; post-IPO 13F data is monitoring only
+ABNB,Founders and pre-IPO holders,,,,Founder-led dual-class platform; less extreme than SpaceX.,prospectus/manual comp note,3.5,IPO date / prospectus; post-IPO 13F data is monitoring only
+ARM,SoftBank,,,90.0,Parent-control and float-scarcity comp.,prospectus/manual comp note,4.5,IPO date / prospectus; post-IPO 13F data is monitoring only
+SNOW,Founder/VC/public software holders,,,,Strong software quality but valuation overhang dominated early setup.,prospectus/manual comp note,2.5,IPO date / prospectus; post-IPO 13F data is monitoring only
+DASH,Founder/VC holders,,,,"Founder-led, dual-class and valuation-sensitive.",prospectus/manual comp note,3.5,IPO date / prospectus; post-IPO 13F data is monitoring only
+RIVN,Strategic and VC holders,,,,Capital-intensive story IPO with strategic-holder and unlock overhang risk.,prospectus/manual comp note,3.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+CRWD,Founder/VC holders,,,,Founder-led but cleaner public-entry profile than SpaceX.,prospectus/manual comp note,2.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+DDOG,Founder/VC holders,,,,Founder-led but cleaner public-entry profile than SpaceX.,prospectus/manual comp note,2.0,IPO date / prospectus; post-IPO 13F data is monitoring only

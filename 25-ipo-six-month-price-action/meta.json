@@ -1,0 +1,8 @@
+{
+  "number": 25,
+  "slug": "25-ipo-six-month-price-action",
+  "title": "IPO six-month price-action predictor",
+  "question": "Can prior IPO research be turned into a reusable six-month price-action framework using offering mechanics, underwriters, holder control, market setup, index flow and business quality?",
+  "finding": "Yes, as a transparent scorecard rather than a price oracle. The model starts with the negative IPO-chase prior from studies 15 and 24, then adjusts for offering quality, underwriters, holder/control risk, market setup, index flow, lock-up overhang and business quality. SpaceX screens as a negative six-month bucket with a -20.2% midpoint from first listed close, 22.4% probability of beating SPY and 18.4% probability of beating QQQ: underwriters, scarcity and Nasdaq-100 fast-entry flow help, but valuation, unlock supply and Musk/Class B control dominate the six-month setup.",
+  "status": "published"
+}

@@ -1,0 +1,17 @@
+ticker,company,ipo_proceeds_usd_b,ipo_market_cap_usd_b,listing_type,approx_ipo_public_float_pct,lead_underwriters,large_institutional_ipo,low_float_flag,spac_flag,direct_listing_flag,lockup_180d_pool_x_ipo_float,directed_share_program_flag,known_by
+SPCX,SpaceX,75.0,1765.7,Primary IPO,4.248709722567172,"Goldman Sachs, Morgan Stanley; large global syndicate",True,True,False,False,8.2,True,IPO date / final prospectus
+V,Visa,17.9,42.0,Primary IPO,42.61904761904762,"J.P. Morgan, Goldman Sachs, BofA",True,False,False,False,,False,IPO date / final prospectus
+META,Meta/Facebook,16.0,104.0,Primary IPO,15.384615384615383,"Morgan Stanley, J.P. Morgan, Goldman Sachs",True,False,False,False,,False,IPO date / final prospectus
+BABA,Alibaba,21.8,168.0,Primary IPO / ADR,12.976190476190478,"Credit Suisse, Deutsche Bank, Goldman Sachs, J.P. Morgan, Morgan Stanley, Citi",True,False,False,False,,False,IPO date / final prospectus
+UBER,Uber,8.1,75.5,Primary IPO,10.728476821192052,"Morgan Stanley, Goldman Sachs, BofA",True,False,False,False,,False,IPO date / final prospectus
+ABNB,Airbnb,3.5,47.0,Primary IPO,7.446808510638298,"Morgan Stanley, Goldman Sachs",True,True,False,False,,False,IPO date / final prospectus
+ARM,Arm,4.9,54.5,Primary IPO,8.990825688073395,"Barclays, Goldman Sachs, J.P. Morgan, Mizuho",True,True,False,False,,False,IPO date / final prospectus
+SNOW,Snowflake,3.4,33.0,Primary IPO,10.303030303030305,"Goldman Sachs, Morgan Stanley, J.P. Morgan",True,False,False,False,,False,IPO date / final prospectus
+DASH,DoorDash,3.4,39.0,Primary IPO,8.717948717948717,"Goldman Sachs, J.P. Morgan",True,True,False,False,,False,IPO date / final prospectus
+RIVN,Rivian,11.9,66.5,Primary IPO,17.894736842105264,"Morgan Stanley, Goldman Sachs, J.P. Morgan",True,False,False,False,,False,IPO date / final prospectus
+CRWD,CrowdStrike,0.6,6.8,Primary IPO,8.823529411764707,"Goldman Sachs, J.P. Morgan, BofA, Barclays",True,True,False,False,,False,IPO date / final prospectus
+DDOG,Datadog,0.6,7.8,Primary IPO,7.6923076923076925,"Morgan Stanley, Goldman Sachs, J.P. Morgan",True,True,False,False,,False,IPO date / final prospectus
+COIN,Coinbase,0.0,85.8,Direct listing,,,False,False,False,True,,False,IPO date / final prospectus
+RDDT,Reddit,0.75,6.4,Primary IPO,11.71875,"Morgan Stanley, Goldman Sachs, J.P. Morgan",True,False,False,False,,False,IPO date / final prospectus
+CAVA,Cava,0.37,2.5,Primary IPO,14.8,"J.P. Morgan, Jefferies, Citi",False,False,False,False,,False,IPO date / final prospectus
+CART,Instacart/Maplebear,0.66,9.9,Primary IPO,6.666666666666667,"Goldman Sachs, J.P. Morgan",True,True,False,False,,False,IPO date / final prospectus

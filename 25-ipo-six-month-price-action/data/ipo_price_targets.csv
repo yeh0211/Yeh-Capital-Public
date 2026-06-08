@@ -1,0 +1,17 @@
+ticker,company,ipo_date,model_role,target_horizon_days,target_return_6m_pct,target_bucket_6m,target_basis
+SPCX,SpaceX,2026-06-12 expected trading,prediction subject,180,,No actual target yet,First listed close to roughly six months; SpaceX has no actual target yet.
+V,Visa,2008-03-19,training/benchmark comp,180,13.6,Positive,First listed close to roughly six months; SpaceX has no actual target yet.
+META,Meta/Facebook,2012-05-18,training/benchmark comp,180,-40.0,Severe fade,First listed close to roughly six months; SpaceX has no actual target yet.
+BABA,Alibaba,2014-09-19,context comp,180,-10.3,Negative,First listed close to roughly six months; SpaceX has no actual target yet.
+UBER,Uber,2019-05-10,training/benchmark comp,180,-34.1,Severe fade,First listed close to roughly six months; SpaceX has no actual target yet.
+ABNB,Airbnb,2020-12-10,training/benchmark comp,180,3.1,Range-bound,First listed close to roughly six months; SpaceX has no actual target yet.
+ARM,Arm,2023-09-14,training/benchmark comp,180,99.7,Positive,First listed close to roughly six months; SpaceX has no actual target yet.
+SNOW,Snowflake,2020-09-16,training/benchmark comp,180,-14.7,Negative,First listed close to roughly six months; SpaceX has no actual target yet.
+DASH,DoorDash,2020-12-09,training/benchmark comp,180,-18.7,Negative,First listed close to roughly six months; SpaceX has no actual target yet.
+RIVN,Rivian,2021-11-10,training/benchmark comp,180,-75.9,Severe fade,First listed close to roughly six months; SpaceX has no actual target yet.
+CRWD,CrowdStrike,2019-06-12,training/benchmark comp,180,-18.0,Negative,First listed close to roughly six months; SpaceX has no actual target yet.
+DDOG,Datadog,2019-09-19,training/benchmark comp,180,-11.1,Negative,First listed close to roughly six months; SpaceX has no actual target yet.
+COIN,Coinbase,2021-04-14,context/excluded,180,,No actual target yet,First listed close to roughly six months; SpaceX has no actual target yet.
+RDDT,Reddit,2024-03-21,excluded/noisy,180,,No actual target yet,First listed close to roughly six months; SpaceX has no actual target yet.
+CAVA,Cava,2023-06-15,excluded/noisy,180,,No actual target yet,First listed close to roughly six months; SpaceX has no actual target yet.
+CART,Instacart/Maplebear,2023-09-19,excluded/noisy,180,,No actual target yet,First listed close to roughly six months; SpaceX has no actual target yet.

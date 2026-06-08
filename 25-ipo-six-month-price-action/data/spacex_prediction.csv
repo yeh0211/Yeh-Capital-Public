@@ -1,0 +1,11 @@
+factor,contribution_pct_points,evidence,investor_read
+Base prior,-14.7,Study 15/24 six-month IPO fade prior.,Negative starting point.
+Business/IPO quality,5.0,Weighted quality score 3.62.,"Positive, but governance lowers total score."
+Underwriters/liquidity support,6.0,Goldman Sachs/Morgan Stanley led global book; Morgan Stanley stabilization proxy.,Positive execution support.
+Nasdaq/index flow,9.0,Nasdaq-100 fast-entry path and low-float modified market cap.,"Positive early flow, not fundamental value."
+Float scarcity,4.0,Immediate float is about 4.25% of basic shares.,Positive early scarcity.
+Market setup,0.0,2026 mega-IPO with issuance/froth caution.,Neutral in this scorecard.
+Unlock risk,-12.0,Potential tradable supply reaches about 9.4x IPO float by day 180.,Major negative.
+Holder/control risk,-7.5,Musk voting control about 84.4%; Class B voting power 88.5%.,Major governance negative.
+Valuation risk,-10.0,About $1.77T implied basic market cap and high sales multiple.,Major negative.
+Model output,-20.2,"Expected bucket: Negative; beat SPY 22.4%, beat QQQ 18.4%.",Trade-only / wait-for-unlock bias.

@@ -1,0 +1,17 @@
+ticker,company,nasdaq100_fast_entry_flag,index_flow_score,index_flow_read,full_market_cap_for_eligibility_usd_b,low_float_modified_market_cap_usd_b,known_by
+SPCX,SpaceX,True,5.0,"Nasdaq-100 fast-entry path; evaluated after 7th trading day, typical addition after 15 trading days.",1765.2,225.0,Known by IPO date / index methodology
+V,Visa,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+META,Meta/Facebook,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+BABA,Alibaba,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+UBER,Uber,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+ABNB,Airbnb,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+ARM,Arm,False,3.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+SNOW,Snowflake,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+DASH,DoorDash,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+RIVN,Rivian,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+CRWD,CrowdStrike,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+DDOG,Datadog,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+COIN,Coinbase,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+RDDT,Reddit,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+CAVA,Cava,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology
+CART,Instacart/Maplebear,False,2.0,No special near-term index-flow catalyst modeled.,,,Known by IPO date / index methodology

@@ -1,0 +1,12 @@
+feature,definition,table,known_by,allowed_for_prediction
+ipo_proceeds_usd_b,Offering size; larger offerings usually have better institutional sponsorship but more supply.,ipo_features_offering,IPO date / final prospectus,True
+approx_ipo_public_float_pct,Estimated IPO public float as % of market cap/basic shares.,ipo_features_offering,IPO date / final prospectus,True
+lockup_180d_pool_x_ipo_float,Potential 180-day lock-up pool as multiple of IPO float.,ipo_features_offering,IPO date / final prospectus,True
+underwriter_quality_score,Lead-left/bookrunner quality and syndicate strength.,ipo_features_underwriters,IPO date / prospectus,True
+liquidity_support_proxy,Public proxy for stabilization/market-making support; not true symbol-level market-maker data.,ipo_features_underwriters,IPO date / prospectus,True
+holder_risk_score,Founder/control/top-holder/VC overhang risk.,ipo_features_holders,IPO date / prospectus,True
+market_setup_score,Issuance regime and sector setup known by listing.,ipo_features_market_setup,IPO date / first close,True
+index_flow_score,Near-term passive-flow catalyst such as Nasdaq-100 fast entry.,ipo_features_index_flow,IPO date / index methodology,True
+weighted_quality_score,Business/IPO/governance quality score from study 24 rubric.,ipo_features_business_quality,IPO date / prospectus,True
+target_return_6m_pct,"Actual six-month return from first listed close; target only, never a prediction feature.",ipo_price_targets,After six months,False
+post_ipo_13f_top_holders,Lagged institutional ownership monitoring field; excluded from IPO-day prediction.,future_monitoring,After IPO quarter-end filings,False

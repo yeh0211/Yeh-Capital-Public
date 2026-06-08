@@ -1,0 +1,7 @@
+source,url,used_for
+YehCapital study 02,../02-ipo-anchored-vwap/,Aftermarket entry framing: first-close/aftermarket entries differ from IPO allocation economics.
+YehCapital study 15,../15-ipo-chase/,"Broad IPO base rates: day-1-close entries underperformed SPY, especially by 180/365 days."
+YehCapital study 22,../22-equity-issuance-top-signal/,"Aggregate issuance is weak as market timing, but new issues underperform cross-sectionally."
+YehCapital study 24,../24-spacex-ipo-quality-model/,"SpaceX IPO mechanics, lock-ups, quality scores, Nasdaq/S&P index rules and comp returns."
+SEC EDGAR,https://www.sec.gov/,"Prospectuses and FWPs for offering mechanics, lock-ups, holders and underwriters."
+Nasdaq-100 methodology,https://indexes.nasdaq.com/docs/Methodology_NDX.pdf,Fast-entry and low-float index weighting rules.

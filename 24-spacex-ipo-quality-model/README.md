@@ -146,6 +146,35 @@ This does not make SpaceX a bad business. It means public holders are buying exp
 
 Your Nasdaq instinct is right in substance, but the timing is not literally day one.
 
+### What Nasdaq Inclusion Means
+
+There are two different ideas that often get mixed together:
+
+| Term | Plain English | What changes |
+|---|---|---|
+| Nasdaq exchange listing | The stock trades on a Nasdaq market under a ticker. | Public trading venue, order book, listing standards and daily price discovery. |
+| Nasdaq-100 index inclusion | The stock becomes part of the Nasdaq-100 index tracked by QQQ and other index products. | Index funds and benchmarked portfolios may need to buy or hold the stock according to index rules. |
+
+For SpaceX, the important issue is **Nasdaq-100 index inclusion**, not merely exchange listing. A stock can list on Nasdaq without being in the Nasdaq-100. Nasdaq-100 inclusion is what creates the passive-flow discussion.
+
+### What It Means for the Company
+
+Nasdaq-100 inclusion would be positive for visibility and trading liquidity. It can broaden the shareholder base, increase analyst and institutional attention, and possibly lower the long-run cost of capital because more investors can own the stock through index products.
+
+It does **not** give SpaceX new cash. SpaceX raises capital from the IPO itself. Index funds buying in the secondary market buy shares from sellers, not from SpaceX, unless SpaceX separately issues new shares.
+
+### What It Means for Investors
+
+For investors, Nasdaq-100 inclusion can create a near-term forced-buyer setup. Funds tracking the Nasdaq-100 may need exposure, and active managers benchmarked to it may also adjust. That can support price and liquidity, especially when free float is tight.
+
+But index inclusion is not fundamental validation. It does not make the valuation cheaper, fix governance, remove lock-up overhang, or guarantee outperformance. In SpaceX's case, the same unlocks that can increase future index representation also increase sellable supply.
+
+### Does It Increase Equity in the Index?
+
+It does **not create more equity**. The share count changes only through corporate actions such as issuance, option exercise, conversion, buybacks, or stock-based compensation.
+
+What changes is the amount of existing equity represented in the index. For Nasdaq-100, low-float stocks are weighted using the lesser of listed shares or **3x free-floating shares**. With base IPO float of 555.6m shares, SpaceX's starting Nasdaq modified market cap is about **$225bn**, not the full **$1.77tn** basic market cap. If more shares unlock and become free-floating, future index weight could rise, but that comes with supply risk.
+
 | Index | Current rule | SpaceX read | First-6-month impact |
 |---|---|---|---|
 | Nasdaq-100 Fast Entry | A mega IPO can skip the normal three-full-calendar-month seasoning rule if Full Market Capitalization ranks within the top 40 current constituents. It is evaluated on the 7th trading day and is typically added after 15 trading days, with announcement after the 10th trading day. | At about $1.77T, SpaceX likely clears the size test if SPCX lists on an eligible Nasdaq market and no final filing changes the setup. | Possible near-term QQQ/NDX flow catalyst, modeled as late June to early July 2026. |
@@ -219,6 +248,37 @@ Good company quality did not prevent weak first-six-month trading in many large 
 
 The Google FWP improves the revenue story, but it also reinforces the key risk: AI revenue quality depends on delivery, power/GPU execution, customer termination rights and capital intensity. Anthropic and Google contracts are useful valuation support only after risk adjustment.
 
+## Business Breakdown: Rockets, Starlink, xAI/X, Cursor
+
+| Business | What it includes | 2025 revenue | 2025 operating income | 2025 capex | Q1 2026 read | Main investor question |
+|---|---|---:|---:|---:|---|---|
+| Rocket / Space | Falcon, Dragon, Starship and launch services. | $4.1bn | -$0.7bn | $3.8bn | Q1 revenue $0.6bn, operating loss $0.7bn. | Can Starship execution turn strategic moat into better economics? |
+| Starlink / Connectivity | Starlink broadband/connectivity services and associated offerings. | $11.4bn | $4.4bn | $4.2bn | Q1 revenue $3.3bn, operating income $1.2bn. | Can subscriber growth offset ARPU decline and spectrum/regulatory limits? |
+| AI / xAI / X | AI compute, Grok, X platform and related infrastructure. | $3.2bn | -$6.4bn | $12.7bn | Q1 revenue $0.8bn, operating loss $2.5bn. | Are Anthropic/Google contracts durable enough to justify the capex and losses? |
+| Cursor / Anysphere | April 2026 compute plus option agreement with Cursor. | n/a | n/a | n/a | Not owned as of S-1/A. | Does the option become a valuable AI distribution/data asset or a dilution/fee risk? |
+
+### xAI, X and Twitter Timeline
+
+The clean answer: **SpaceX acquired xAI; xAI had acquired X Holdings/X; Cursor was not acquired as of the S-1/A.**
+
+| Date | Event | Meaning |
+|---|---|---|
+| October 2022 | Twitter acquired by X Holdings. | This sits inside the later X/xAI/SpaceX common-control history. |
+| July 2023 | Twitter rebranded to X. | The S-1/A describes a one-time impairment of the Twitter brand from the rebrand. |
+| 2025-03-28 | xAI acquired X Holdings/X effective this date. | X became part of xAI before SpaceX acquired xAI. |
+| 2026-02-02 | SpaceX acquired xAI effective this date. | SpaceX consolidated the AI business, including AI compute, Grok and X. |
+| April 2026 | SpaceX entered compute + option agreement with Cursor. | Collaboration and acquisition option, not completed ownership. |
+| May 2026 | SpaceX entered Anthropic compute agreements. | Approximately 325,000 NVIDIA GPUs; $1.25bn/month through May 2029 after ramp, terminable after initial period on 90 days notice. |
+| 2026-06-05 | SpaceX disclosed Google compute agreement in FWP. | Approximately 110,000 NVIDIA GPUs; $920m/month from October 2026 through June 2029 after ramp, with delivery and termination conditions. |
+
+### Cursor Option Analysis
+
+Cursor is **not** treated as an acquired subsidiary in this model. The April 2026 agreement gives SpaceX compute collaboration economics and the **right, not obligation**, to acquire Anysphere/Cursor. If exercised after the offering, consideration would be SpaceX Class A shares based on a **$60.0bn** Cursor implied equity value and the SpaceX Class A VWAP before closing.
+
+That matters because the upside is strategic but not yet owned: Cursor could give SpaceX a high-frequency developer workflow, coding data, Grok distribution and sustained inference demand. The risk is that it also adds option complexity, possible dilution, and disclosed fee exposure: if SpaceX terminates the option agreement or Cursor terminates for eligible breach, Cursor may be entitled to a **$1.5bn** termination fee plus an **$8.5bn** deferred services fee under the compute agreement.
+
+For valuation, Cursor belongs in the **optionality** bucket, not the current revenue bucket.
+
 ## Underwriters
 
 The underwriter group is a clear positive. Goldman Sachs and Morgan Stanley anchor the bookrunner group and score highest in the model because of lead-left mega-cap IPO franchise strength and stabilization credibility. BofA, Citi and J.P. Morgan add global distribution depth. The broad syndicate helps execution, but it does not solve valuation, control or unlock supply.
@@ -240,6 +300,17 @@ My optimized plan is therefore:
 4. **Wait for unlock absorption before sizing long-term.** The Q2 earnings release and 70/90/105/120/135-day releases are the real public-market test.
 5. **Rebuild after 424B4.** Final price, share count, option exercise, lock-up details and index notices can move the conclusion.
 
+## Predictive IPO Framework
+
+This study is now linked to [study 25 - IPO six-month price-action predictor](../25-ipo-six-month-price-action/), which turns the IPO research stack into a reusable scorecard. Study 25 uses:
+
+- study 15's broad IPO-chase base rate;
+- study 22's issuance/froth context;
+- study 02's aftermarket-entry framing;
+- this SpaceX model's lock-up, float, index-flow, underwriter and holder-control mechanics.
+
+For SpaceX, the scorecard output is a **negative six-month bucket** from first listed close: underwriters, scarcity and Nasdaq-100 fast-entry flow are positive, but valuation, unlock supply and Musk/Class B voting control dominate the first-six-month risk.
+
 ## Model Files
 
 - [Workbook](spacex_ipo_quality_model.xlsx)
@@ -248,6 +319,10 @@ My optimized plan is therefore:
 - [Lock-up calendar](data/lockup_calendar.csv)
 - [Lock-up supply summary](data/lockup_supply_summary.csv)
 - [Lock-up first-six-month scenarios](data/lockup_first_6m_scenarios.csv)
+- [Nasdaq explainer](data/nasdaq_explainer.csv)
+- [SpaceX business breakdown](data/spacex_business_breakdown.csv)
+- [SpaceX AI timeline](data/spacex_ai_timeline.csv)
+- [Cursor option analysis](data/cursor_option_analysis.csv)
 - [Quality scores](data/quality_scores.csv)
 - [Comp universe](data/comp_universe.csv)
 - [Comp IPO performance](data/comp_ipo_performance.csv)

@@ -1,0 +1,8 @@
+topic,answer,investor_read
+Status,Not acquired as of S-1/A,"SpaceX has a collaboration and option, not completed ownership of Cursor."
+Counterparty,"Anysphere, Inc. doing business as Cursor",Private software company focused on AI-assisted coding workflows.
+Agreement date,2026-04,Compute and option agreement entered in April 2026.
+Compute agreement,SpaceX provides certain GPU cluster compute capacity,"Cursor contributes personnel, data/datasets, documentation, technical know-how, workflows, prompts, specifications and code per FWP/S-1 disclosure."
+Option,"Right, not obligation, to acquire Cursor",Consideration would be SpaceX Class A stock based on Cursor implied equity value of $60.0B and SpaceX VWAP before closing.
+Termination economics,$1.5B termination fee plus $8.5B deferred services fee if applicable,Fees payable in cash or Class A stock if the offering has not been consummated when payable.
+Investor read,Strategic upside with dilution/complexity risk,"Cursor could add developer distribution and model-training data, but it is not current owned revenue and should not be valued as a completed acquisition."

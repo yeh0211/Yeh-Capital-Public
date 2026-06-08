@@ -92,6 +92,23 @@ BOT traded at a large premium to its stale reported NAV through its first public
 
 **What would confirm the premium.** New share issuance has to be above NAV after costs, and the proceeds have to raise NAV/share by buying or marking up better private robotics assets. A high premium that does not translate into NAV/share accretion is only expensive access.
 
+## How much premium do private-access CEFs get?
+
+The clean comparison is not BOT versus ordinary income CEFs. The better comparison is BOT versus exchange-traded vehicles that package scarce private companies or SPV exposure. On that basis, BOT's **5.13x** reported NAV multiple is still extreme, but it is not without precedent. VCX, the Fundrise Innovation Fund, recently traded near **7.12x** reported NAV while offering exposure to private AI and venture names such as Anthropic, Databricks, OpenAI and SpaceX.
+
+That does not make BOT cheap. It says the market sometimes pays a very large access premium when three things overlap: famous private holdings, limited tradable float, and stale quarterly NAV marks. Once the sample broadens to RVI, DXYZ, SuRo Capital and UK investment trusts, the premiums fall sharply. Most private-growth wrappers trade near NAV, at modest premiums, or at discounts.
+
+| Group | Examples | Reported price/NAV range | Read-through |
+|---|---|---:|---|
+| Pure public venture/private access | VCX, BOT, RVI, DXYZ | 1.70x to 7.12x | This is the relevant scarcity-premium peer group. BOT is below VCX but far above RVI and DXYZ. |
+| Venture/private-company public wrapper | SSSS | 0.96x | A longer-running venture wrapper can trade near NAV even with attractive AI/private holdings. |
+| UK investment trusts with popular private holdings | SMT, USA, MNTN/MNTS, SSIT, CHRY | 0.57x to 1.13x | SpaceX, Stripe, Databricks and Anthropic exposure does not automatically command multi-x NAV. |
+| Broad CEF baseline | CEFA diversified equity model, AIC Growth Capital sector | 0.84x to 0.90x | Ordinary closed-end/private-growth baskets often trade at discounts, not premiums. |
+
+![Private-access fund reported price/NAV multiples, with NAV staleness shown beside each ticker](fig5_private_access_premium_comps.png)
+
+The key caveat is NAV staleness. BOT, VCX and DXYZ use March 31 reported NAVs in this comparison, so the denominator may lag private-company valuation events. But stale NAV cuts both ways: it can justify some premium if marks are about to rise, and it can hide risk if public buyers are paying for unverified re-ratings. The conclusion is therefore narrower than "4x is wrong": a 4x+ multiple is **rare and demanding**, mostly visible in launch-window or scarcity-window private-access wrappers, and it needs fast NAV/share validation.
+
 ## Claim 3 — Good robotics is not enough; entry multiple decides the public return
 
 The replay tests four paths. It is not a forecast. It is a sensitivity map for one question: how much of the early investor's return comes from NAV/share compounding versus premium persistence?
@@ -127,6 +144,7 @@ The public figures use only CSVs in `data/`:
 - `data/bot_massive_price_nav.csv`
 - `data/bot_mstr_replay_scenarios.csv`
 - `data/bot_private_access_premium_break_even.csv`
+- `data/private_access_fund_comparables.csv`
 
 Regenerate the figures:
 
@@ -144,4 +162,10 @@ The supporting workbook is included as [`mstr_robotics_fund_replay_model.xlsx`](
 - [SemiAnalysis: Robotics Levels of Autonomy](https://newsletter.semianalysis.com/p/robotics-levels-of-autonomy).
 - [RoboStrategy strategy materials](https://robostrategy.co/strategy) on NAV, premium issuance, and closed-end fund mechanics.
 - [RoboStrategy/BOT SEC 424B3 filing](https://www.sec.gov/Archives/edgar/data/2081119/000121390026052329/ea0287946-02_424b3.htm) reporting NAV/share and portfolio reference as of 2026-03-31.
+- [Fundrise Innovation Fund / VCX SEC N-CSR](https://www.stocktitan.net/sec-filings/VCX/n-csr-a-fundrise-innovation-fund-llc-sec-filing-177460d2b328.html) and public quote data for VCX.
+- [Destiny Tech100 / DXYZ SEC 424B5](https://www.sec.gov/Archives/edgar/data/1843974/000157587226000359/dxyz102_424b5.htm) and public quote data for DXYZ.
+- [Robinhood Ventures Fund I / RVI update](https://cdn.robinhood.com/app_assets/rhv/updates/rvi_q1_2026_update.pdf), CEFData, and public quote data for RVI.
+- [SuRo Capital Q1 2026 results](https://www.globenewswire.com/news-release/2026/05/05/3288229/0/en/SuRo-Capital-Corp-Reports-First-Quarter-2026-Financial-Results.html) and public quote data for SSSS.
+- AIC company data for [Scottish Mortgage](https://www.theaic.co.uk/companydata/scottish-mortgage-investment-trust), [Baillie Gifford US Growth](https://www.theaic.co.uk/companydata/baillie-gifford-us-growth), [Schiehallion](https://www.theaic.co.uk/companydata/schiehallion-fund), [Seraphim Space](https://www.theaic.co.uk/companydata/seraphim-space-investment-trust), and [Chrysalis](https://www.theaic.co.uk/companydata/chrysalis-investments).
+- [CEF Advisors model portfolio data](https://legacy.cefdata.com/portfoliocomp/) and AIC advanced-compare data for broad baseline discount context.
 - Investor.gov closed-end fund materials on premiums and discounts to NAV.

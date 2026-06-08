@@ -170,15 +170,82 @@ def fig4_break_even_heatmap():
     save(fig, "fig4_break_even_heatmap.png")
 
 
+def fig5_private_access_premium_comps():
+    df = pd.read_csv(DATA_DIR / "private_access_fund_comparables.csv")
+    order = [
+        "VCX",
+        "BOT",
+        "RVI",
+        "DXYZ",
+        "MNTN/MNTS",
+        "SSIT",
+        "USA",
+        "SMT",
+        "SSSS",
+        "CEFA Diversified Equity",
+        "AIC Growth Capital sector",
+        "CHRY",
+    ]
+    df["ticker"] = pd.Categorical(df["ticker"], categories=order, ordered=True)
+    df = df.sort_values("ticker").reset_index(drop=True)
+
+    group_colors = {
+        "Pure public venture/private access": BLUE,
+        "Venture/private-company public wrapper": PURPLE,
+        "UK investment trust with popular private holdings": GREEN,
+        "Baseline": MUTED,
+    }
+    colors = [group_colors.get(group, INK) for group in df["group"]]
+    y = np.arange(len(df))
+
+    fig, ax = plt.subplots(figsize=(10.5, 7.0))
+    ax.barh(y, df["price_nav_multiple"], color=colors, alpha=0.9)
+    ax.axvline(1.0, color=INK, linewidth=1.1)
+    ax.axvline(2.0, color="#AAB7B8", linewidth=0.9, linestyle="--")
+    ax.axvline(5.0, color="#AAB7B8", linewidth=0.9, linestyle="--")
+
+    labels = []
+    for _, row in df.iterrows():
+        if pd.notna(row["nav_staleness_days"]):
+            labels.append(f"{row['ticker']}  ({int(row['nav_staleness_days'])}d NAV)")
+        else:
+            labels.append(str(row["ticker"]))
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels)
+    ax.invert_yaxis()
+
+    for idx, row in df.iterrows():
+        multiple = row["price_nav_multiple"]
+        label = f"{multiple:.2f}x"
+        x = multiple + 0.08 if multiple >= 1 else multiple + 0.04
+        ax.text(x, idx, label, va="center", ha="left", fontsize=9, color=INK)
+
+    ax.text(1.02, -0.78, "NAV", color=INK, fontsize=9, ha="left", va="center")
+    ax.text(2.02, -0.78, "2x NAV", color=MUTED, fontsize=9, ha="left", va="center")
+    ax.text(5.02, -0.78, "5x NAV", color=MUTED, fontsize=9, ha="left", va="center")
+    ax.set_xlim(0, max(8.2, df["price_nav_multiple"].max() + 0.6))
+    ax.set_xlabel("Market price / reported NAV per share")
+    ax.set_title("BOT is expensive versus normal CEFs, but not alone among private-access wrappers")
+    clean_ax(ax)
+
+    handles = []
+    for group, color in group_colors.items():
+        handles.append(plt.Line2D([0], [0], color=color, lw=6, label=group))
+    ax.legend(handles=handles, frameon=False, loc="lower right", fontsize=8)
+    save(fig, "fig5_private_access_premium_comps.png")
+
+
 def main():
     fig1_mstr_decomposition()
     fig2_bot_premium_path()
     fig3_replay_scenarios()
     fig4_break_even_heatmap()
+    fig5_private_access_premium_comps()
     print("wrote fig1_mstr_decomposition.png")
     print("wrote fig2_bot_premium_path.png")
     print("wrote fig3_replay_scenarios.png")
     print("wrote fig4_break_even_heatmap.png")
+    print("wrote fig5_private_access_premium_comps.png")
 
 
 if __name__ == "__main__":

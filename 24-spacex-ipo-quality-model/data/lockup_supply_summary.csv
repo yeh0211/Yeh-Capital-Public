@@ -1,0 +1,8 @@
+pool,shares_m,x_base_ipo_float,pct_basic_common,pct_post_class_a,interpretation
+Immediate IPO float,555.555555,1.0,4.248709722567172,7.527652199187732,Tradable at listing unless purchased by affiliates; this is the denominator for all unlock multiples.
+Over-allotment option,83.333333,0.14999999954999998,0.633270582166067,1.1165404344433096,"Optional primary issuance, not a lock-up release. If exercised, immediate float rises to 638.9M shares."
+180-day lock-up pool before affiliate timing,4557.5,8.2035000082035,34.85429024393409,61.75309487778965,"Approximate pool inferred from S-1/A release percentages; releases are staged across Q2 earnings, day 70, day 90, day 105, day 120, day 135, Q3 earnings and day 180."
+Base float plus 180-day pool,5113.055555,9.2035000082035,39.10299996650126,69.28074707697738,Approximate before the 59.1M affiliate catch-up timing line; this is the clean first-six-month supply scale.
+Extended lock-up excluding Musk,1759.5,3.1671000031671,13.45608857579858,23.840827303888293,"Post-180-day releases beginning around Q4 2026 earnings, excluding Musk."
+Musk 366-day lock-up,6400.0,11.520000011519999,48.94513605291896,86.71855342136122,Largest single overhang; no early release in the S-1/A lock-up schedule.
+All named lock-up overhang after IPO float,12717.0,22.8906000228906,97.25551487265164,172.31247560303916,"Potential supply overhang, not expected sale volume. Some Class B shares would need conversion before Class A trading."

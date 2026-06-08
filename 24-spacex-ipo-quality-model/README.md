@@ -2,7 +2,7 @@
 
 **Question.** Does the SpaceX IPO setup justify participating once free float, lock-ups, control, underwriters, index inclusion rules and high-quality IPO comps are screened honestly?
 
-**Finding.** **Trade-only / wait-for-unlock bias.** Study 15 gives the base rate: chasing IPOs from the day-1 close has been a losing trade, with a **-28.4%** median one-year excess return versus SPY and only **19%** beating SPY. SpaceX deserves a better filter than the broad IPO bucket, but the filtered large-IPO comp set still warns against complacency: its median six-month return from first close is about **-14.7%**. SpaceX is exceptional on management, underwriting, scale and scarcity. The problem is entry quality, not company quality: the immediate public float is only **555.6 million Class A shares**, or **4.25%** of basic post-offering shares; Class B holds **88.5%** of voting power; Elon Musk holds about **49.1%** of basic economic ownership and **84.4%** of combined voting power; and the first-six-month lock-up releases are multiples of the IPO float. Connectivity is the quality anchor. AI/xAI/X is the expensive swing factor. At about **$1.77 trillion** basic market cap and a **$75 billion** raise, this is a scarcity/catalyst trade before it is a clean long-term entry.
+**Finding.** **Trade-only / wait-for-unlock bias.** Study 15 gives the base rate: chasing IPOs from the day-1 close has been a losing trade, with a **-28.4%** median one-year excess return versus SPY and only **19%** beating SPY. SpaceX deserves a better filter than the broad IPO bucket, but the filtered large-IPO comp set still warns against complacency: its median six-month return from first close is about **-14.7%**. SpaceX is exceptional on management, underwriting, scale and scarcity. The problem is entry quality, not company quality: the immediate public float is only **555.6 million Class A shares**, or **4.25%** of basic post-offering shares; by day 180, potential tradable supply reaches about **5.24 billion shares**, or **9.4x** the IPO float and roughly **40%** of basic shares. Class B holds **88.5%** of voting power; Elon Musk holds about **49.1%** of basic economic ownership and **84.4%** of combined voting power. Connectivity is the quality anchor. AI/xAI/X is the expensive swing factor. At about **$1.77 trillion** basic market cap and a **$75 billion** raise, this is a scarcity/catalyst trade before it is a clean long-term entry.
 
 > Research model only; not personal financial advice. Latest EDGAR check in the model is **2026-06-08**. No final **424B4** was found in SpaceX CIK `0001181412` recent filings as of that check.
 
@@ -14,7 +14,7 @@ The upgrade path is specific:
 
 1. Q2 2026 results confirm Starlink/connectivity revenue quality and cash conversion.
 2. Anthropic and Google compute ramps convert into visible revenue without adverse contract changes.
-3. The stock absorbs the first earnings release unlock, the 70/90/105/120/135-day releases, and Q3 earnings unlock.
+3. The stock absorbs the first earnings release unlock, the 70/90/105/120/135-day releases, Q3 earnings unlock and day-180 cleanup, when potential supply reaches about 9.4x the IPO float.
 4. Valuation resets from heroic sales multiples or the market receives enough proof that AI revenue is durable despite termination rights.
 5. The final 424B4 does not change offering size, lock-ups, control, risk factors or bookrunner economics in a negative way.
 
@@ -69,11 +69,34 @@ Free float here means legally tradable Class A supply, not fully diluted shares 
 | Directed-share program | 27.8m | Up to 5% of IPO shares; not subject to lock-up if purchased. |
 | Registration-rights overhang | ~12.2bn | Class A shares including Class B conversion shares with registration rights. |
 
-![First-six-month float and lock-up releases](fig1_first_6m_float_unlocks.png)
+![First-six-month cumulative float scenarios](fig1_first_6m_float_unlocks.png)
 
 ## Lock-Up Supply
 
-Scarcity is real at IPO, but it is temporary. The key first-six-month unlock events are:
+Scarcity is real at IPO, but it is temporary. The lock-up analysis needs three separate ratios:
+
+1. **Incremental release / IPO float:** how large each new release is versus the 555.6m-share IPO float.
+2. **Cumulative potential supply / IPO float:** how much supply could be tradable after each release.
+3. **Cumulative potential supply / basic shares:** how much of the post-offering common base that potential supply represents.
+
+These are **eligibility and supply-overhang ratios**, not sale forecasts. They do not mean every released share will be sold. Some shares may be affiliate-held, and some Class B exposure would need conversion before Class A trading.
+
+### Pool Ratios
+
+| Pool | Shares | x IPO float | % basic shares | % post-offering Class A | Interpretation |
+|---|---:|---:|---:|---:|---|
+| Immediate IPO float | 555.6m | 1.00x | 4.2% | 7.5% | Starting tradable supply. |
+| Over-allotment option | 83.3m | 0.15x | 0.6% | 1.1% | Optional primary issuance, not a lock-up release. |
+| 180-day lock-up pool | 4,557.5m | 8.20x | 34.9% | 61.8% | Main first-six-month overhang before affiliate timing. |
+| IPO float + 180-day pool | 5,113.1m | 9.20x | 39.1% | 69.3% | Clean first-six-month supply scale before 59.1m affiliate catch-up timing. |
+| Extended lock-up excluding Musk | 1,759.5m | 3.17x | 13.5% | 23.8% | Post-180-day releases beginning around Q4 2026 earnings. |
+| Musk 366-day lock-up | 6,400.0m | 11.52x | 48.9% | 86.7% | Largest single overhang; no early release in the S-1/A. |
+
+![Lock-up pools as multiples of the IPO float](fig6_lockup_pool_ratios.png)
+
+### First-Six-Month Scenario Bridge
+
+The performance trigger changes **timing**, not the rough day-180 supply endpoint. If SpaceX trades at least 30% above the IPO price for 5 of 10 trading days around the Q2 earnings window, 455.8m shares come out earlier and the day-180 cleanup is smaller. If not, the day-180 release is larger.
 
 | Event | Timing | Shares released | % of base IPO float | Condition |
 |---|---|---:|---:|---|
@@ -89,7 +112,21 @@ Scarcity is real at IPO, but it is temporary. The key first-six-month unlock eve
 | Q3 2026 earnings unlock | Likely Nov 2026 | 1,300.0m | 234.0% | 28% of 180-day pool. |
 | Day 180 | Model date 2026-12-08 | 328.4m or 797.6m | 59.1% or 143.6% | Lower if performance early release happened; higher if it did not. |
 
-Elon Musk's lock-up is the long-tail overhang: about **6.4 billion** shares, locked for **366 days** with no early release.
+| Milestone | Cumulative if performance trigger hits | % basic shares | Cumulative if no performance trigger | % basic shares |
+|---|---:|---:|---:|---:|
+| IPO float | 555.6m / 1.00x | 4.2% | 555.6m / 1.00x | 4.2% |
+| Q2 earnings unlock | 1,467.1m / 2.64x | 11.2% | 1,467.1m / 2.64x | 11.2% |
+| Performance early release | 1,922.9m / 3.46x | 14.7% | 1,467.1m / 2.64x | 11.2% |
+| Day 70 | 2,241.9m / 4.04x | 17.1% | 1,786.1m / 3.21x | 13.7% |
+| Day 90 | 2,560.9m / 4.61x | 19.6% | 2,105.1m / 3.79x | 16.1% |
+| Day 91 affiliate catch-up | 2,620.0m / 4.72x | 20.0% | 2,164.2m / 3.90x | 16.6% |
+| Day 105 | 2,948.4m / 5.31x | 22.5% | 2,492.6m / 4.49x | 19.1% |
+| Day 120 | 3,276.8m / 5.90x | 25.1% | 2,821.0m / 5.08x | 21.6% |
+| Day 135 | 3,605.2m / 6.49x | 27.6% | 3,149.4m / 5.67x | 24.1% |
+| Q3 earnings unlock | 4,905.2m / 8.83x | 37.5% | 4,449.4m / 8.01x | 34.0% |
+| Day 180 final release | 5,233.6m / 9.42x | 40.0% | 5,247.0m / 9.44x | 40.1% |
+
+The key read: **by day 180 the scarcity trade is mostly gone in either scenario.** The performance trigger just pulls some supply forward. Elon Musk's separate long-tail overhang is about **6.4 billion** shares, locked for **366 days** with no early release.
 
 ## Control
 
@@ -209,6 +246,8 @@ My optimized plan is therefore:
 - [Offering math](data/offering_math.csv)
 - [Shareholder ratios](data/shareholder_ratios.csv)
 - [Lock-up calendar](data/lockup_calendar.csv)
+- [Lock-up supply summary](data/lockup_supply_summary.csv)
+- [Lock-up first-six-month scenarios](data/lockup_first_6m_scenarios.csv)
 - [Quality scores](data/quality_scores.csv)
 - [Comp universe](data/comp_universe.csv)
 - [Comp IPO performance](data/comp_ipo_performance.csv)

@@ -26,6 +26,9 @@ IPO_PRICE = 135.00
 POST_A_M = 7380.196910
 POST_B_M = 5695.668265
 POST_TOTAL_M = POST_A_M + POST_B_M
+LOCKUP_180_DAY_POOL_M = 4557.5
+EXTENDED_LOCKUP_EX_MUSK_POOL_M = 1759.5
+MUSK_LOCKUP_M = 6400.0
 US_MARKET_HOLIDAYS_2026 = {
     date(2026, 6, 19),  # Juneteenth
     date(2026, 7, 3),  # Independence Day observed
@@ -251,7 +254,151 @@ lockup_calendar = pd.DataFrame(
     lockup_rows,
     columns=["order", "event", "timing", "model_date_if_prospectus_2026_06_11", "shares_released_m", "pool", "percent_of_base_ipo_float", "condition", "inside_first_6_months"],
 )
+lockup_calendar["release_x_base_ipo_float"] = lockup_calendar["shares_released_m"] / IPO_FLOAT_M
+lockup_calendar["release_pct_basic_common"] = lockup_calendar["shares_released_m"] / POST_TOTAL_M * 100
+lockup_calendar["release_pct_post_class_a"] = lockup_calendar["shares_released_m"] / POST_A_M * 100
+lockup_calendar["release_pct_relevant_pool"] = pd.NA
+lockup_calendar.loc[lockup_calendar["pool"].str.contains("180-day", case=False), "release_pct_relevant_pool"] = (
+    lockup_calendar.loc[lockup_calendar["pool"].str.contains("180-day", case=False), "shares_released_m"] / LOCKUP_180_DAY_POOL_M * 100
+)
+lockup_calendar.loc[lockup_calendar["pool"].str.contains("extended", case=False), "release_pct_relevant_pool"] = (
+    lockup_calendar.loc[lockup_calendar["pool"].str.contains("extended", case=False), "shares_released_m"] / EXTENDED_LOCKUP_EX_MUSK_POOL_M * 100
+)
+lockup_calendar.loc[lockup_calendar["pool"].str.contains("Musk", case=False), "release_pct_relevant_pool"] = (
+    lockup_calendar.loc[lockup_calendar["pool"].str.contains("Musk", case=False), "shares_released_m"] / MUSK_LOCKUP_M * 100
+)
 write(lockup_calendar, "lockup_calendar")
+
+
+lockup_supply_summary = pd.DataFrame(
+    [
+        (
+            "Immediate IPO float",
+            IPO_FLOAT_M,
+            IPO_FLOAT_M / IPO_FLOAT_M,
+            IPO_FLOAT_M / POST_TOTAL_M * 100,
+            IPO_FLOAT_M / POST_A_M * 100,
+            "Tradable at listing unless purchased by affiliates; this is the denominator for all unlock multiples.",
+        ),
+        (
+            "Over-allotment option",
+            83.333333,
+            83.333333 / IPO_FLOAT_M,
+            83.333333 / (POST_TOTAL_M + 83.333333) * 100,
+            83.333333 / (POST_A_M + 83.333333) * 100,
+            "Optional primary issuance, not a lock-up release. If exercised, immediate float rises to 638.9M shares.",
+        ),
+        (
+            "180-day lock-up pool before affiliate timing",
+            LOCKUP_180_DAY_POOL_M,
+            LOCKUP_180_DAY_POOL_M / IPO_FLOAT_M,
+            LOCKUP_180_DAY_POOL_M / POST_TOTAL_M * 100,
+            LOCKUP_180_DAY_POOL_M / POST_A_M * 100,
+            "Approximate pool inferred from S-1/A release percentages; releases are staged across Q2 earnings, day 70, day 90, day 105, day 120, day 135, Q3 earnings and day 180.",
+        ),
+        (
+            "Base float plus 180-day pool",
+            IPO_FLOAT_M + LOCKUP_180_DAY_POOL_M,
+            (IPO_FLOAT_M + LOCKUP_180_DAY_POOL_M) / IPO_FLOAT_M,
+            (IPO_FLOAT_M + LOCKUP_180_DAY_POOL_M) / POST_TOTAL_M * 100,
+            (IPO_FLOAT_M + LOCKUP_180_DAY_POOL_M) / POST_A_M * 100,
+            "Approximate before the 59.1M affiliate catch-up timing line; this is the clean first-six-month supply scale.",
+        ),
+        (
+            "Extended lock-up excluding Musk",
+            EXTENDED_LOCKUP_EX_MUSK_POOL_M,
+            EXTENDED_LOCKUP_EX_MUSK_POOL_M / IPO_FLOAT_M,
+            EXTENDED_LOCKUP_EX_MUSK_POOL_M / POST_TOTAL_M * 100,
+            EXTENDED_LOCKUP_EX_MUSK_POOL_M / POST_A_M * 100,
+            "Post-180-day releases beginning around Q4 2026 earnings, excluding Musk.",
+        ),
+        (
+            "Musk 366-day lock-up",
+            MUSK_LOCKUP_M,
+            MUSK_LOCKUP_M / IPO_FLOAT_M,
+            MUSK_LOCKUP_M / POST_TOTAL_M * 100,
+            MUSK_LOCKUP_M / POST_A_M * 100,
+            "Largest single overhang; no early release in the S-1/A lock-up schedule.",
+        ),
+        (
+            "All named lock-up overhang after IPO float",
+            LOCKUP_180_DAY_POOL_M + EXTENDED_LOCKUP_EX_MUSK_POOL_M + MUSK_LOCKUP_M,
+            (LOCKUP_180_DAY_POOL_M + EXTENDED_LOCKUP_EX_MUSK_POOL_M + MUSK_LOCKUP_M) / IPO_FLOAT_M,
+            (LOCKUP_180_DAY_POOL_M + EXTENDED_LOCKUP_EX_MUSK_POOL_M + MUSK_LOCKUP_M) / POST_TOTAL_M * 100,
+            (LOCKUP_180_DAY_POOL_M + EXTENDED_LOCKUP_EX_MUSK_POOL_M + MUSK_LOCKUP_M) / POST_A_M * 100,
+            "Potential supply overhang, not expected sale volume. Some Class B shares would need conversion before Class A trading.",
+        ),
+    ],
+    columns=["pool", "shares_m", "x_base_ipo_float", "pct_basic_common", "pct_post_class_a", "interpretation"],
+)
+write(lockup_supply_summary, "lockup_supply_summary")
+
+
+scenario_events = [
+    ("IPO float", "At offering", PROSPECTUS_DATE_ASSUMPTION.isoformat(), IPO_FLOAT_M, IPO_FLOAT_M, "Starting tradable Class A supply."),
+    ("First earnings release unlock", "Q2 2026 earnings window", "TBD - likely Aug 2026", 911.5, 911.5, "20% release from 180-day pool."),
+    ("Performance early release", "Q2 2026 earnings window", "TBD - likely Aug 2026", 455.8, 0.0, "Only in performance case: price at least 30% above IPO price for 5 of 10 trading days."),
+    ("Day 70 release", "70th day after prospectus", model_date(70), 319.0, 319.0, "7% release from 180-day pool."),
+    ("Day 90 release", "90th day after prospectus", model_date(90), 319.0, 319.0, "7% release from 180-day pool."),
+    ("Affiliate catch-up release", "91st day after prospectus", model_date(91), 59.1, 59.1, "Rule 144 timing catch-up; shown as incremental tradable supply, not a new percentage tranche."),
+    ("Day 105 release", "105th day after prospectus", model_date(105), 328.4, 328.4, "7% release from 180-day pool."),
+    ("Day 120 release", "120th day after prospectus", model_date(120), 328.4, 328.4, "7% release from 180-day pool."),
+    ("Day 135 release", "135th day after prospectus", model_date(135), 328.4, 328.4, "7% release from 180-day pool."),
+    ("Q3 2026 earnings release unlock", "Q3 2026 earnings window", "TBD - likely Nov 2026", 1300.0, 1300.0, "28% release from 180-day pool."),
+    ("Day 180 final release", "180th day after prospectus", model_date(180), 328.4, 797.6, "Final 180-day release is smaller if the performance release happened, larger if it did not."),
+]
+
+scenario_rows = []
+cumulative_perf = 0.0
+cumulative_no_perf = 0.0
+for order, (event, timing, model_day, incremental_perf, incremental_no_perf, note) in enumerate(scenario_events):
+    cumulative_perf += incremental_perf
+    cumulative_no_perf += incremental_no_perf
+    scenario_rows.append(
+        (
+            order,
+            event,
+            timing,
+            model_day,
+            incremental_perf,
+            incremental_perf / IPO_FLOAT_M,
+            cumulative_perf,
+            cumulative_perf / IPO_FLOAT_M,
+            cumulative_perf / POST_TOTAL_M * 100,
+            cumulative_perf / POST_A_M * 100,
+            incremental_no_perf,
+            incremental_no_perf / IPO_FLOAT_M,
+            cumulative_no_perf,
+            cumulative_no_perf / IPO_FLOAT_M,
+            cumulative_no_perf / POST_TOTAL_M * 100,
+            cumulative_no_perf / POST_A_M * 100,
+            note,
+        )
+    )
+
+lockup_first_6m_scenarios = pd.DataFrame(
+    scenario_rows,
+    columns=[
+        "order",
+        "event",
+        "timing",
+        "model_date_if_prospectus_2026_06_11",
+        "incremental_perf_case_m",
+        "incremental_perf_case_x_ipo_float",
+        "cumulative_perf_case_m",
+        "cumulative_perf_case_x_ipo_float",
+        "cumulative_perf_case_pct_basic_common",
+        "cumulative_perf_case_pct_post_class_a",
+        "incremental_no_perf_case_m",
+        "incremental_no_perf_case_x_ipo_float",
+        "cumulative_no_perf_case_m",
+        "cumulative_no_perf_case_x_ipo_float",
+        "cumulative_no_perf_case_pct_basic_common",
+        "cumulative_no_perf_case_pct_post_class_a",
+        "note",
+    ],
+)
+write(lockup_first_6m_scenarios, "lockup_first_6m_scenarios")
 
 
 quality_scores = pd.DataFrame(
@@ -564,13 +711,32 @@ write(excluded_comps, "excluded_comps")
 plt.style.use("seaborn-v0_8-whitegrid")
 
 fig, ax = plt.subplots(figsize=(10, 5.5))
-plot_df = lockup_calendar[lockup_calendar["inside_first_6_months"]].copy()
-plot_df = plot_df[~plot_df["event"].str.contains("no performance", case=False)]
-ax.barh(plot_df["event"], plot_df["shares_released_m"], color="#1f77b4")
-ax.axvline(IPO_FLOAT_M, color="#d62728", linestyle="--", linewidth=1.5, label="base IPO float")
-ax.set_xlabel("Shares released / tradable, millions")
-ax.set_title("SpaceX first-six-month float and lock-up releases")
-ax.legend(loc="lower right")
+plot_df = lockup_first_6m_scenarios.copy()
+labels = [
+    "IPO",
+    "Q2 earn.",
+    "Perf.",
+    "D70",
+    "D90",
+    "D91",
+    "D105",
+    "D120",
+    "D135",
+    "Q3 earn.",
+    "D180",
+]
+x = range(len(plot_df))
+ax.plot(x, plot_df["cumulative_perf_case_x_ipo_float"], marker="o", linewidth=2.2, label="performance trigger")
+ax.plot(x, plot_df["cumulative_no_perf_case_x_ipo_float"], marker="o", linewidth=2.2, label="no performance trigger")
+ax.axhline(1.0, color="#d62728", linestyle="--", linewidth=1.4, label="IPO float")
+ax.set_xticks(list(x))
+ax.set_xticklabels(labels, rotation=35, ha="right")
+ax.set_ylabel("Cumulative tradable supply / base IPO float")
+ax.set_title("SpaceX first-six-month cumulative float scenarios")
+ax.legend(loc="upper left")
+for idx in [0, 1, 2, 9, 10]:
+    y_val = plot_df.loc[idx, "cumulative_perf_case_x_ipo_float"]
+    ax.text(idx, y_val + 0.18, f"{y_val:.1f}x", ha="center", fontsize=8)
 fig.tight_layout()
 fig.savefig(ROOT / "fig1_first_6m_float_unlocks.png", dpi=180)
 plt.close(fig)
@@ -640,6 +806,22 @@ fig.tight_layout()
 fig.savefig(ROOT / "fig5_study15_base_rate_bridge.png", dpi=180)
 plt.close(fig)
 
+fig, ax = plt.subplots(figsize=(10, 5.5))
+pool_plot = lockup_supply_summary[lockup_supply_summary["pool"].isin([
+    "Immediate IPO float",
+    "180-day lock-up pool before affiliate timing",
+    "Extended lock-up excluding Musk",
+    "Musk 366-day lock-up",
+])].copy()
+ax.barh(pool_plot["pool"], pool_plot["x_base_ipo_float"], color=["#1f77b4", "#ff7f0e", "#7f7f7f", "#d62728"])
+ax.set_xlabel("Shares / base IPO float")
+ax.set_title("Lock-up pools as multiples of the IPO float")
+for idx, row in pool_plot.reset_index(drop=True).iterrows():
+    ax.text(row["x_base_ipo_float"] + 0.2, idx, f"{row['x_base_ipo_float']:.1f}x", va="center")
+fig.tight_layout()
+fig.savefig(ROOT / "fig6_lockup_pool_ratios.png", dpi=180)
+plt.close(fig)
+
 
 workbook_path = ROOT / "spacex_ipo_quality_model.xlsx"
 with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
@@ -648,6 +830,8 @@ with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
         "offering_math",
         "shareholder_ratios",
         "lockup_calendar",
+        "lockup_supply_summary",
+        "lockup_first_6m_scenarios",
         "quality_scores",
         "comp_universe",
         "comp_ipo_performance",
@@ -675,10 +859,12 @@ with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
     ws["A8"] = "Musk combined voting power"
     ws["B8"] = "84.4% after offering per S-1/A table"
     ws["A9"] = "First-six-month issue"
-    ws["B9"] = "IPO float scarcity can support the tape, but unlock waves are multiples of IPO float."
+    ws["B9"] = "IPO float scarcity can support the tape, but cumulative tradable supply reaches about 9.4x IPO float by day 180 in both release scenarios."
     ws["A10"] = "Nasdaq-100 path"
     ws["B10"] = "Fast Entry can evaluate a mega IPO on trading day 7 and typically add after trading day 15; low-float weight is capped at 3x free float."
     ws["A11"] = "S&P 500 path"
     ws["B11"] = "No mega-cap fast track: 12-month IPO seasoning, positive GAAP income screens and IWF/liquidity screens remain."
+    ws["A12"] = "Day-180 lock-up ratio"
+    ws["B12"] = "Performance case: 5.23B shares / 9.42x IPO float / 40.0% of basic shares. No-performance case: 5.25B shares / 9.44x / 40.1%."
 
 print(f"Wrote {workbook_path}")

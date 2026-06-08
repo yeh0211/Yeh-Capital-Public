@@ -39,8 +39,31 @@ Outside research supports the robotics adoption side of the thesis, but it does 
 | [Citrini Research humanoid primer](https://www.citriniresearch.com/p/thematic-primer-humanoid-robots?action=share) | Citrini frames humanoids as a "why now" theme driven by early deployments, AI progress, a falling cost curve, and supplier-cycle setup. | Supports the sector bull case: private robotics holdings can be valuable if deployments and cost curves keep improving. It does **not** say BOT is cheap at any premium. |
 | [Citrini MSTR thesis](https://www.citriniresearch.com/p/microstrategy-thesis) | Citrini's MSTR work treats the premium over Bitcoin holdings as state-dependent and important to value; in a weak Bitcoin regime, the vehicle can plausibly trade closer to or below asset value. | Supports this study's MSTR analogy: a premium can be rational while the flywheel works, but the public investor is exposed to premium compression. |
 | [SemiAnalysis robotics levels](https://newsletter.semianalysis.com/p/robotics-levels-of-autonomy) | SemiAnalysis argues general-purpose robots are already in early production or pilot phases, while later autonomy levels still face reliability, force-sensing, data, and deployment hurdles. | Supports robotics adoption as real but uneven. No direct public SemiAnalysis call on BOT/RoboStrategy was found, so this is sector evidence, not fund-specific endorsement. |
-| [RoboStrategy strategy materials](https://robostrategy.co/strategy) and [BOT 424B3 filing](https://www.sec.gov/Archives/edgar/data/2081119/000121390026052329/ea0287946-02_424b3.htm) | RoboStrategy describes the closed-end-fund premium issuance mechanic; the filing reports **$7.31 NAV/share** as of **2026-03-31** and large private positions in Figure AI, Dyna, and Apptronik. | Confirms the mechanism being tested: issuance above NAV can be accretive, but only when the premium persists and proceeds improve NAV/share. |
+| [RoboStrategy strategy materials](https://robostrategy.co/strategy) and [BOT 424B3 supplement](https://www.sec.gov/Archives/edgar/data/2081119/000121390026058028/ea0291179-01_424b3.htm) | RoboStrategy describes the closed-end-fund premium issuance mechanic; the supplement reports **$7.31 NAV/share** as of **2026-03-31** and large private positions in Figure AI, Dyna, and Apptronik. | Confirms the mechanism being tested: issuance above NAV can be accretive, but only when the premium persists and proceeds improve NAV/share. |
 | YehCapital evidence audit | Read-only checks across the local market/research databases found robotics, physical-AI, Figure, MSTR, and social/news/transcript support, but no direct institutional BOT thesis strong enough to cite publicly. The requested cloud-drive source was unavailable at implementation time. | Used only as a sanity check. The public study relies on citeable public sources and does not include private PDFs, cloud-drive files, local paths, or unpublished ingestion code. |
+
+## What BOT actually owns
+
+The holding-company question matters because BOT is not a broad robotics index. The latest public SEC supplement shows **$141.8 million** of restricted Level 3 private exposure, equal to **97.4% of net assets** as of **2026-03-31**. The top three holdings - Apptronik, Figure AI and Dyna - were each about **$37.25 million**, and together represented **78.8% of private investments** and **76.8% of net assets**.
+
+![BOT holding concentration by reported fair value](fig6_bot_holding_concentration.png)
+
+| Holding | Business | Exposure type | Fair value | % net assets | Read-through |
+|---|---|---|---:|---:|---|
+| Apptronik | Humanoid robotics | Direct preferred + SPV | $37.3m | 25.6% | Top-three humanoid exposure; needs deployment and later-round validation. |
+| Figure AI | Humanoid robotics | SPV | $37.3m | 25.6% | Top-three humanoid exposure; needs commercial deployment and outside valuation validation. |
+| Dyna | General-purpose robotics | Direct preferred | $37.2m | 25.6% | Top-three manipulation-platform exposure; needs customer traction and marked-up financing validation. |
+| Dexmate | General-purpose robotics | Direct preferred | $10.0m | 6.9% | Meaningful secondary robotics exposure, but not large enough alone to justify the public premium. |
+| Standard Bots | Industrial automation | Direct preferred | $7.0m | 4.8% | Industrial automation exposure added in the latest public holdings schedule. |
+| Path Robotics | Industrial automation | Direct preferred | $6.0m | 4.1% | Automation exposure; upside matters but is smaller than the top-three names. |
+| REK | Humanoid robotics | Direct preferred | $2.5m | 1.7% | Small early-stage humanoid and robot-competition exposure. |
+| GMI Computing | Cloud infrastructure | SAFE | $2.0m | 1.4% | AI infrastructure adjacency; helps the robotics compute theme but is not a pure robot manufacturer. |
+| Cyan/CoCo Robotics | Logistics | SAFE via SPV | $1.5m | 1.0% | Small logistics robotics exposure. |
+| Endiatx | Medical robotics | Direct preferred | $0.5m | 0.3% | De minimis medical robotics exposure. |
+| Allonic | Robotics infrastructure | Direct preferred | $0.3m | 0.2% | De minimis robotics infrastructure exposure. |
+| Purple Rhombus | Defense robotics | SAFE via SPV | $0.3m | 0.2% | De minimis defense robotics exposure. |
+
+This makes the practical test more specific. BOT is bullish if the top holdings show external validation through commercial deployments, higher-priced funding rounds, IPO filings, acquisitions, or audited NAV mark-ups. It is not bullish if the public premium rises while those marks stay flat, if the evidence remains stale, or if the top three fail to commercialize.
 
 ## Data & method
 
@@ -132,6 +155,7 @@ The break-even grid shows the same thing from another angle: if BOT eventually t
 
 - **Short BOT history.** BOT's public price record in this study covers only its first trading month. The premium path is a starting condition, not a stable distribution.
 - **Stale private NAV.** Reported BOT NAV/share is as of **2026-03-31**. Private marks can lag reality in either direction.
+- **Holding concentration.** The public NAV is highly sensitive to Apptronik, Figure AI and Dyna; broad robotics adoption is not enough if those specific marks fail to validate.
 - **Simplified MSTR mNAV.** The MSTR decomposition excludes debt, preferred stock, cash, and software operating value. It is intentionally a clean mechanical analogue, not an official valuation.
 - **Scenario model, not backtest.** The 10-year BOT paths are sensitivity tests. They do not estimate private robotics company outcomes directly.
 - **Private-company access risk.** Scarcity value only matters if the fund actually gets access to winners and converts issuance into NAV/share accretion.
@@ -145,6 +169,7 @@ The public figures use only CSVs in `data/`:
 - `data/bot_mstr_replay_scenarios.csv`
 - `data/bot_private_access_premium_break_even.csv`
 - `data/private_access_fund_comparables.csv`
+- `data/bot_portfolio_holdings.csv`
 
 Regenerate the figures:
 
@@ -161,7 +186,7 @@ The supporting workbook is included as [`mstr_robotics_fund_replay_model.xlsx`](
 - [Citrini Research: Microstrategy Thesis](https://www.citriniresearch.com/p/microstrategy-thesis).
 - [SemiAnalysis: Robotics Levels of Autonomy](https://newsletter.semianalysis.com/p/robotics-levels-of-autonomy).
 - [RoboStrategy strategy materials](https://robostrategy.co/strategy) on NAV, premium issuance, and closed-end fund mechanics.
-- [RoboStrategy/BOT SEC 424B3 filing](https://www.sec.gov/Archives/edgar/data/2081119/000121390026052329/ea0287946-02_424b3.htm) reporting NAV/share and portfolio reference as of 2026-03-31.
+- [RoboStrategy/BOT SEC 424B3 supplement](https://www.sec.gov/Archives/edgar/data/2081119/000121390026058028/ea0291179-01_424b3.htm) reporting NAV/share and portfolio reference as of 2026-03-31.
 - [Fundrise Innovation Fund / VCX SEC N-CSR](https://www.stocktitan.net/sec-filings/VCX/n-csr-a-fundrise-innovation-fund-llc-sec-filing-177460d2b328.html) and public quote data for VCX.
 - [Destiny Tech100 / DXYZ SEC 424B5](https://www.sec.gov/Archives/edgar/data/1843974/000157587226000359/dxyz102_424b5.htm) and public quote data for DXYZ.
 - [Robinhood Ventures Fund I / RVI update](https://cdn.robinhood.com/app_assets/rhv/updates/rvi_q1_2026_update.pdf), CEFData, and public quote data for RVI.

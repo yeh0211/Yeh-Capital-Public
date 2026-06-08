@@ -235,17 +235,69 @@ def fig5_private_access_premium_comps():
     save(fig, "fig5_private_access_premium_comps.png")
 
 
+def fig6_bot_holding_concentration():
+    df = pd.read_csv(DATA_DIR / "bot_portfolio_holdings.csv")
+    df = df.sort_values("fair_value_usd", ascending=True).reset_index(drop=True)
+    top_three = {"Apptronik", "Figure AI", "Dyna"}
+    colors = [GREEN if company in top_three else MUTED for company in df["company"]]
+
+    fig, ax = plt.subplots(figsize=(10.5, 6.4))
+    y = np.arange(len(df))
+    values_m = df["fair_value_usd"] / 1_000_000
+    ax.barh(y, values_m, color=colors, alpha=0.92)
+    ax.set_yticks(y)
+    ax.set_yticklabels(df["company"])
+
+    for idx, row in df.iterrows():
+        value_m = row["fair_value_usd"] / 1_000_000
+        ax.text(value_m + 0.55, idx, f"${value_m:.1f}m", va="center", fontsize=9, color=INK)
+
+    private_total = df["fair_value_usd"].sum()
+    top_three_total = df[df["company"].isin(top_three)]["fair_value_usd"].sum()
+    top_three_share = top_three_total / private_total
+    net_assets_share = top_three_total / 145_554_571
+    ax.text(
+        0.98,
+        0.08,
+        f"Top 3 = {top_three_share:.0%} of private investments\nand {net_assets_share:.0%} of net assets",
+        transform=ax.transAxes,
+        ha="right",
+        va="bottom",
+        fontsize=10,
+        color=INK,
+        bbox={"boxstyle": "round,pad=0.35", "facecolor": "white", "edgecolor": GRID},
+    )
+    ax.text(
+        0.98,
+        0.20,
+        "All rows are Level 3 / restricted private exposure;\nSPV and SAFE flags follow the SEC schedule.",
+        transform=ax.transAxes,
+        ha="right",
+        va="bottom",
+        fontsize=8.5,
+        color=MUTED,
+    )
+
+    ax.set_title("BOT's NAV is concentrated in three private robotics holdings")
+    ax.set_xlabel("Fair value reported by BOT, $ millions")
+    ax.set_xlim(0, max(values_m) + 8)
+    clean_ax(ax)
+    save(fig, "fig6_bot_holding_concentration.png")
+
+
 def main():
     fig1_mstr_decomposition()
     fig2_bot_premium_path()
     fig3_replay_scenarios()
     fig4_break_even_heatmap()
     fig5_private_access_premium_comps()
+    fig6_bot_holding_concentration()
     print("wrote fig1_mstr_decomposition.png")
     print("wrote fig2_bot_premium_path.png")
     print("wrote fig3_replay_scenarios.png")
     print("wrote fig4_break_even_heatmap.png")
     print("wrote fig5_private_access_premium_comps.png")
+    print("wrote fig6_bot_holding_concentration.png")
 
 
 if __name__ == "__main__":

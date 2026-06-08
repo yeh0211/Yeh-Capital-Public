@@ -1,0 +1,7 @@
+event,description,model_date,note
+First trade assumption,SPCX begins trading,2026-06-12,Assumption based on June 2026 launch timing; update once 424B4/final exchange notice is filed.
+Nasdaq-100 IPO reference date,7th trading day evaluation,2026-06-23,Full market cap top-40 test and fast-entry eligibility check.
+Nasdaq-100 announcement window,10th trading day announcement,2026-06-26,Methodology says announcement typically occurs after close on the 10th trading day.
+Nasdaq-100 addition window,15th trading day typical addition,2026-07-06,Methodology says IPO fast-entry addition typically occurs after 15 trading days; effective date can depend on notice conventions.
+S&P broad-index fast-track,S&P TMI / Dow Jones TSM possible fast-track,TBD,Depends on S&P DJI announcement and all applicable criteria; this is not S&P 500.
+S&P 500 earliest seasoning date,12 months after first trade,2027-06-12,"Only a possible consideration date. Profitability, IWF, liquidity and committee selection still apply."

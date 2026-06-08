@@ -1,0 +1,8 @@
+group_or_company,treatment,reason
+Small IPOs,Excluded,Below $5B IPO market cap or below $500M proceeds.
+SPACs/de-SPACs,Excluded,"Different incentives, redemption mechanics and sponsor economics."
+Biotech binary names,Excluded,Clinical-binary risk is not comparable to SpaceX.
+Firefly Aerospace,Context only,"Useful space-sector context, not a SpaceX-scale valuation or liquidity comp."
+Reddit,Excluded from core,Passes size floor but retail/social-media profile would overweight meme-demand mechanics.
+Instacart,Excluded from core,"Not small by market cap, but lower-quality business comparability and smaller offering."
+Coinbase,Context only,"Large direct listing, but no primary proceeds and no lead-underwriter execution."

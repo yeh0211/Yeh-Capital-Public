@@ -1,0 +1,5 @@
+layer,source,finding,key_number,spacex_decision_rule
+Broad IPO prior,Study 15,Day-1-close IPO chasing is a negative base-rate trade.,365d median excess vs SPY -28.4%; only 19% beat SPY.,Start from skepticism; do not buy SpaceX just because the IPO is famous.
+Quality filter,Study 24,Small/noisy IPOs are removed; only institutional-scale comps remain.,Filtered 6m comp median from first close -14.7%.,Quality filter reduces junk risk but still leaves post-IPO fade risk.
+Scarcity and index flow,Study 24,SpaceX has unusually tight immediate tradable supply plus a Nasdaq-100 fast-entry path.,Immediate float 4.25%; Nasdaq low-float modified market cap about $225B.,"Treat early upside as flow/scarcity, not proof of long-term entry quality."
+Unlock and governance penalty,Study 24,"First-six-month releases, Musk control and registration-rights overhang cap public-entry quality.",Q2/Q3 earnings unlocks plus 70/90/105/120/135/180-day releases are multiples of IPO float.,Wait for unlock absorption before underwriting a larger long-term position.

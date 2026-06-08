@@ -1,0 +1,25 @@
+metric,value,unit,source,note
+Class A shares offered,555.555555,million shares,S-1/A,Primary issuance; freely tradable unless bought by affiliates.
+Over-allotment option,83.333333,million shares,S-1/A,Primary shares; no underwriting discount on option shares per filing.
+IPO price assumption,135.0,USD/share,S-1/A,Expected initial public offering price.
+Gross proceeds,74.999999925,USD billion,calculated,Base offering before fees.
+Net proceeds,74.4,USD billion,S-1/A,Company estimate after underwriting discounts and expenses.
+Net proceeds if option exercised,85.7,USD billion,S-1/A,Company estimate with full over-allotment.
+Class A shares post offering,7380.19691,million shares,S-1/A,"After base offering, no option exercise."
+Class B shares post offering,5695.668265,million shares,S-1/A,"After base offering, no option exercise."
+Total common shares post offering,13075.865174999999,million shares,calculated,Class A plus Class B; not fully diluted.
+Implied market cap,1765.2417986249998,USD billion,calculated,Basic post-offering common shares times IPO price.
+Immediate public float,555.555555,million shares,S-1/A,IPO shares only; excludes option exercise.
+Immediate free-float percentage,4.248709722567172,percent of basic shares,calculated,Legally tradable Class A supply at IPO.
+Immediate public float if option exercised,638.8888880000001,million shares,S-1/A/calculated,IPO shares plus full over-allotment.
+Free-float percentage if option exercised,4.855074475938593,percent of basic shares,calculated,Assumes additional primary shares are issued.
+Directed share program,27.777777750000002,million shares,S-1/A,Up to 5% of IPO shares; not subject to lock-up if purchased.
+Class A voting power,11.5,percent,S-1/A,After base offering.
+Class B voting power,88.5,percent,S-1/A,After base offering.
+Registration-rights overhang,12200.0,million shares,S-1/A,Approximate Class A shares including Class B conversion shares with registration rights.
+Nasdaq-100 full market cap for eligibility,1765.2417986249998,USD billion,Nasdaq methodology/calculated,"Eligibility ranking considers full market cap, including listed and unlisted shares."
+Nasdaq-100 modified market cap - base float,224.99999977500002,USD billion,Nasdaq methodology/calculated,Weighting uses listed Class A market cap capped at 3x free-floating shares for low-float securities.
+Nasdaq-100 modified market cap - option exercised,258.74999964000006,USD billion,Nasdaq methodology/calculated,Same low-float cap if the over-allotment option is fully exercised.
+S&P float-adjusted market cap at IPO,74.999999925,USD billion,S&P methodology/calculated,Base public float value; relevant for S&P IWF/FMC screens and broad-index fast-track math.
+Anthropic compute contract,1.25,USD billion/month,S-1/A,May 2026 cloud services agreements through May 2029; terminable after initial 3-month period on 90 days notice.
+Google compute contract,0.92,USD billion/month,June 5 FWP,"October 2026 through June 2029 after ramp; terminable after Dec. 31, 2026 on 90 days notice."

@@ -1,0 +1,5 @@
+case,revenue_usd_b,implied_market_cap_usd_b,price_to_sales_x,note
+2025 reported revenue,18.674,1765.2417986249998,94.52938838090392,Contract run-rate cases are not risk-adjusted; Anthropic/Google contracts are terminable and delivery-dependent.
+Q1 2026 annualized,18.776,1765.2417986249998,94.01586059996804,Contract run-rate cases are not risk-adjusted; Anthropic/Google contracts are terminable and delivery-dependent.
+2025 revenue + Anthropic annualized run-rate,33.674,1765.2417986249998,52.42150616573617,Contract run-rate cases are not risk-adjusted; Anthropic/Google contracts are terminable and delivery-dependent.
+2025 revenue + Anthropic + Google annualized run-rate,44.714,1765.2417986249998,39.47850334626738,Contract run-rate cases are not risk-adjusted; Anthropic/Google contracts are terminable and delivery-dependent.

@@ -1,0 +1,14 @@
+ticker,company,inclusion_tier,management_quality,business_quality,ipo_quality,governance_quality,market_setup,note,weighted_quality_score
+SPCX,SpaceX,Subject,4.5,4.0,4.5,1.5,3.0,"Elite execution and underwriting; penalized for control, related parties, AI losses and unlock overhang.",3.625
+V,Visa,Core quality comp,4.5,5.0,5.0,4.0,4.5,Best-in-class scaled network IPO; cleaner governance and profitability than SpaceX.,4.65
+CRWD,CrowdStrike,Core quality comp,4.5,4.5,4.0,4.0,4.0,Founder-led cybersecurity compounder with credible underwriting and strong public-market quality.,4.2250000000000005
+DDOG,Datadog,Core quality comp,4.5,4.5,4.0,4.0,4.0,High-quality founder-led software IPO with good governance and durable growth.,4.2250000000000005
+ABNB,Airbnb,Core quality comp,4.5,4.5,4.5,3.5,4.0,Founder-led platform with brand quality and strong IPO execution; dual-class governance but less extreme than SpaceX.,4.25
+META,Meta/Facebook,Scale/control comp,4.0,5.0,5.0,2.5,4.0,Best scale and founder-control comp; weak early trading shows scarcity does not immunize valuation.,4.225
+ARM,Arm,Scale/control comp,4.0,4.5,4.5,2.5,4.0,High-quality tech asset with parent-control overhang; useful float-scarcity comp.,4.0
+UBER,Uber,Scale comp,3.5,4.0,4.0,3.5,3.5,Large institutional IPO; useful caution on valuation and post-listing profitability questions.,3.725
+SNOW,Snowflake,Valuation caution comp,4.0,4.0,4.5,3.5,3.0,"Great company, extreme valuation at IPO; useful for pop/fade and valuation discipline.",3.825
+DASH,DoorDash,Valuation caution comp,4.0,3.5,4.5,3.0,3.0,Founder-led but cyclically expensive IPO; useful first-6-month caution.,3.6250000000000004
+RIVN,Rivian,Capital intensity caution comp,3.0,2.5,4.0,3.0,2.0,Institutional-scale but capex-heavy story IPO; useful negative comp for AI/Starship capex risk.,2.8750000000000004
+BABA,Alibaba,Liquidity-only comp,3.5,4.0,5.0,1.5,3.0,Mega IPO liquidity comp; not a clean U.S. governance comp due ADR/China/VIE issues.,3.5250000000000004
+COIN,Coinbase,Excluded from core,4.0,3.5,1.0,3.0,2.5,"Large liquid listing, but direct listing with no primary IPO proceeds or lead underwriter.",2.825

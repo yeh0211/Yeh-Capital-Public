@@ -1,0 +1,5 @@
+horizon_days,n,positive_pct,median_abs_return_pct,mean_abs_return_pct,median_excess_vs_spy_pct,beat_spy_pct,source
+30,760,53.2,0.2,-2.1,-1.9,39.0,YehCapital study 15; day-1-close entries for 760 US IPOs since 2022-10
+90,731,52.8,0.3,-1.6,-6.6,29.0,YehCapital study 15; day-1-close entries for 760 US IPOs since 2022-10
+180,641,47.6,-1.1,-11.3,-15.4,25.0,YehCapital study 15; day-1-close entries for 760 US IPOs since 2022-10
+365,474,45.6,-4.1,-16.2,-28.4,19.0,YehCapital study 15; day-1-close entries for 760 US IPOs since 2022-10

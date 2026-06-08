@@ -1,0 +1,6 @@
+sector,n,positive_90d_pct,median_90d_return_pct,median_365d_return_pct,spacex_model_read,source
+Software / IT,30,65.5,3.4,9.1,Survivor bucket in study 15; closest public-market analogue to profitable infrastructure/software quality.,YehCapital study 15 sector table
+Real Estate / REIT,192,79.8,1.0,4.9,Survivor bucket but not comparable to SpaceX business quality or capital cycle.,YehCapital study 15 sector table
+Biotech / Pharma,53,32.1,-13.0,-30.3,Explicitly excluded from the SpaceX comp set.,YehCapital study 15 sector table
+Industrials,21,47.4,-4.7,-63.4,Too small/noisy as a broad bucket; not a mega-cap aerospace/space comp.,YehCapital study 15 sector table
+Micro-cap / unclassified,324,43.8,-8.3,-63.7,Explicitly excluded from the SpaceX comp set.,YehCapital study 15 sector table

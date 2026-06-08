@@ -1,0 +1,8 @@
+{
+  "number": 23,
+  "slug": "23-robotics-fund-mstr-premium-replay",
+  "title": "Robotics closed-end fund vs MSTR premium replay",
+  "question": "If a robotics closed-end fund trades at a persistent private-access premium and uses a MicroStrategy-style issuance flywheel, do early public investors benefit?",
+  "finding": "Conditional. A premium can be rational when the holdings are private and scarce, so the right test is not \"premium bad\" but whether NAV/share compounds before the premium fades. Using YehCapital Massive-backed MSTR/BTC/BOT prices plus Strategy BTC/share data, MSTR decomposes into asset price, asset-per-share accretion and mNAV compression/expansion. BOT starts at roughly 5.1x reported NAV on the latest Massive close used here, so early investors need either fast robotics NAV/share growth, durable private-access multiple persistence, or both. Good sector, bad entry remains the main failure mode.",
+  "status": "published"
+}

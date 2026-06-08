@@ -1,8 +1,0 @@
-{
-  "number": 25,
-  "slug": "25-ipo-six-month-price-action",
-  "title": "IPO six-month price-action predictor",
-  "question": "Can prior IPO research be turned into a reusable six-month price-action framework using offering mechanics, underwriters, holder control, market setup, index flow and business quality?",
-  "finding": "Yes, as a transparent scorecard rather than a price oracle. Study 15 is merged directly into the model as horizon base-rate and sector-screen tables: broad day-1-close IPO chasing had a -15.4% median 180-day excess return versus SPY and only 25% beat SPY. Study 25 then applies the institutional IPO filter from study 24, using the filtered large-IPO six-month midpoint of -14.7% as the model baseline before adjusting for offering quality, underwriters, holder/control risk, market setup, index flow, lock-up overhang and business quality. SpaceX screens as a negative six-month bucket with a -20.2% midpoint from first listed close, 22.4% probability of beating SPY and 18.4% probability of beating QQQ.",
-  "status": "published"
-}

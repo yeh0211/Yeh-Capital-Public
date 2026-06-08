@@ -9,6 +9,6 @@ market_setup_score,Issuance regime and sector setup known by listing.,ipo_featur
 index_flow_score,Near-term passive-flow catalyst such as Nasdaq-100 fast entry.,ipo_features_index_flow,IPO date / index methodology,True
 weighted_quality_score,Business/IPO/governance quality score from study 24 rubric.,ipo_features_business_quality,IPO date / prospectus,True
 study15_broad_180d_excess_prior_pct,Study 15 broad 180-day median excess return versus SPY for day-1-close IPO chasing.,model_predictions,Known before this model is run; historical prior,True
-large_ipo_filtered_6m_prior_pct,Filtered institutional IPO six-month midpoint used as the study 25 base return prior.,model_predictions,Known before this model is run; historical prior,True
+large_ipo_filtered_6m_prior_pct,Filtered institutional IPO six-month midpoint used as the Study 15 model base return prior.,model_predictions,Known before this model is run; historical prior,True
 target_return_6m_pct,"Actual six-month return from first listed close; target only, never a prediction feature.",ipo_price_targets,After six months,False
 post_ipo_13f_top_holders,Lagged institutional ownership monitoring field; excluded from IPO-day prediction.,future_monitoring,After IPO quarter-end filings,False

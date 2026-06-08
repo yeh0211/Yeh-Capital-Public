@@ -321,7 +321,7 @@ My optimized plan is therefore:
 
 ## Predictive IPO Framework
 
-This study is now linked to [study 25 - IPO six-month price-action predictor](../25-ipo-six-month-price-action/), which turns the IPO research stack into a reusable scorecard. Study 25 uses:
+This study is now linked to [study 15 - IPO chase and six-month price-action model](../15-ipo-chase/), which turns the IPO research stack into a reusable scorecard. The Study 15 six-month model uses:
 
 - study 15's broad IPO-chase base rate;
 - study 22's issuance/froth context;

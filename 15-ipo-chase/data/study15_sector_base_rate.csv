@@ -1,4 +1,4 @@
-sector,n,positive_90d_pct,median_90d_return_pct,median_365d_return_pct,spacex_model_read,source,study25_quality_action,merged_into_study25
+sector,n,positive_90d_pct,median_90d_return_pct,median_365d_return_pct,spacex_model_read,source,six_month_model_action,merged_into_study15
 Software / IT,30,65.5,3.4,9.1,Survivor bucket in study 15; closest public-market analogue to profitable infrastructure/software quality.,YehCapital study 15 sector table,Keep as high-quality business analog when scale and disclosure pass.,True
 Real Estate / REIT,192,79.8,1.0,4.9,Survivor bucket but not comparable to SpaceX business quality or capital cycle.,YehCapital study 15 sector table,Do not use as SpaceX valuation comp; stable-income survivor bucket only.,True
 Biotech / Pharma,53,32.1,-13.0,-30.3,Explicitly excluded from the SpaceX comp set.,YehCapital study 15 sector table,Exclude from comp universe; binary/noisy IPO behavior.,True

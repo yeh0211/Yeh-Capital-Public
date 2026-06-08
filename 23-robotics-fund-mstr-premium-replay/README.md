@@ -30,6 +30,18 @@ The bearish version is not "premium exists." It is:
 
 At a starting multiple above **5x reported NAV**, early investors are not just buying robotics. They are buying the persistence of the private-access premium.
 
+## External research cross-check
+
+Outside research supports the robotics adoption side of the thesis, but it does not remove the price/NAV hurdle. The public evidence points to a two-part answer: robotics can be a real secular theme, while BOT still has to convert that theme into NAV/share accretion at a starting premium above 5x reported NAV.
+
+| Source | What it supports | How it affects BOT thesis |
+|---|---|---|
+| [Citrini Research humanoid primer](https://www.citriniresearch.com/p/thematic-primer-humanoid-robots?action=share) | Citrini frames humanoids as a "why now" theme driven by early deployments, AI progress, a falling cost curve, and supplier-cycle setup. | Supports the sector bull case: private robotics holdings can be valuable if deployments and cost curves keep improving. It does **not** say BOT is cheap at any premium. |
+| [Citrini MSTR thesis](https://www.citriniresearch.com/p/microstrategy-thesis) | Citrini's MSTR work treats the premium over Bitcoin holdings as state-dependent and important to value; in a weak Bitcoin regime, the vehicle can plausibly trade closer to or below asset value. | Supports this study's MSTR analogy: a premium can be rational while the flywheel works, but the public investor is exposed to premium compression. |
+| [SemiAnalysis robotics levels](https://newsletter.semianalysis.com/p/robotics-levels-of-autonomy) | SemiAnalysis argues general-purpose robots are already in early production or pilot phases, while later autonomy levels still face reliability, force-sensing, data, and deployment hurdles. | Supports robotics adoption as real but uneven. No direct public SemiAnalysis call on BOT/RoboStrategy was found, so this is sector evidence, not fund-specific endorsement. |
+| [RoboStrategy strategy materials](https://robostrategy.co/strategy) and [BOT 424B3 filing](https://www.sec.gov/Archives/edgar/data/2081119/000121390026052329/ea0287946-02_424b3.htm) | RoboStrategy describes the closed-end-fund premium issuance mechanic; the filing reports **$7.31 NAV/share** as of **2026-03-31** and large private positions in Figure AI, Dyna, and Apptronik. | Confirms the mechanism being tested: issuance above NAV can be accretive, but only when the premium persists and proceeds improve NAV/share. |
+| YehCapital evidence audit | Read-only checks across the local market/research databases found robotics, physical-AI, Figure, MSTR, and social/news/transcript support, but no direct institutional BOT thesis strong enough to cite publicly. The requested cloud-drive source was unavailable at implementation time. | Used only as a sanity check. The public study relies on citeable public sources and does not include private PDFs, cloud-drive files, local paths, or unpublished ingestion code. |
+
 ## Data & method
 
 - **MSTR price.** YehCapital's published extract from the Massive-backed daily-bars store, supplemented by Massive REST where local rows were missing.
@@ -127,6 +139,9 @@ The supporting workbook is included as [`mstr_robotics_fund_replay_model.xlsx`](
 ## References
 
 - Strategy official purchase page and public BTC reserve disclosures.
-- RoboStrategy strategy materials on NAV, premium issuance, and closed-end fund mechanics.
-- RoboStrategy/BOT SEC 424B3 filing reporting NAV/share and portfolio reference as of 2026-03-31.
+- [Citrini Research: Humanoid Robots](https://www.citriniresearch.com/p/thematic-primer-humanoid-robots?action=share).
+- [Citrini Research: Microstrategy Thesis](https://www.citriniresearch.com/p/microstrategy-thesis).
+- [SemiAnalysis: Robotics Levels of Autonomy](https://newsletter.semianalysis.com/p/robotics-levels-of-autonomy).
+- [RoboStrategy strategy materials](https://robostrategy.co/strategy) on NAV, premium issuance, and closed-end fund mechanics.
+- [RoboStrategy/BOT SEC 424B3 filing](https://www.sec.gov/Archives/edgar/data/2081119/000121390026052329/ea0287946-02_424b3.htm) reporting NAV/share and portfolio reference as of 2026-03-31.
 - Investor.gov closed-end fund materials on premiums and discounts to NAV.

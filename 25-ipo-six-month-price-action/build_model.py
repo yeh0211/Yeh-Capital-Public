@@ -146,6 +146,7 @@ sources = pd.DataFrame(
         ("YehCapital study 24", "../24-spacex-ipo-quality-model/", "SpaceX IPO mechanics, lock-ups, quality scores, Nasdaq/S&P index rules and comp returns."),
         ("SEC EDGAR", "https://www.sec.gov/", "Prospectuses and FWPs for offering mechanics, lock-ups, holders and underwriters."),
         ("Nasdaq-100 methodology", "https://indexes.nasdaq.com/docs/Methodology_NDX.pdf", "Fast-entry and low-float index weighting rules."),
+        ("Tesla 10-Q", "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm", "Tesla's March 2026 SpaceX common-stock investment and related-party Megapack transactions."),
     ],
     columns=["source", "url", "used_for"],
 )
@@ -263,7 +264,7 @@ write(ipo_features_underwriters, "ipo_features_underwriters")
 
 
 holder_rows = [
-    ("SPCX", "Elon Musk", 49.1, 84.4, 53.4, "Musk and directors/officers dominate voting control; 13F data is future monitoring only.", "S-1/A"),
+    ("SPCX", "Elon Musk; Tesla small economic interest", 49.1, 84.4, 53.4, "Musk and directors/officers dominate voting control. Tesla 10-Q says Tesla invested $2.00B in SpaceX common stock, less than 1% ownership; estimated at about 0.11% of SpaceX basic shares at the IPO price. 13F data is future monitoring only.", "S-1/A; Tesla 10-Q"),
     ("V", "Distributed bank legacy holders", pd.NA, pd.NA, pd.NA, "Cleaner governance and dispersed public-company profile after IPO.", "prospectus/manual comp note"),
     ("META", "Mark Zuckerberg", pd.NA, 57.0, pd.NA, "Founder voting control was a major public-entry governance feature.", "prospectus/manual comp note"),
     ("BABA", "SoftBank/Yahoo/partnership/VIE context", pd.NA, pd.NA, pd.NA, "Scale comp only; ADR/VIE and China governance make holder structure less comparable.", "prospectus/manual comp note"),

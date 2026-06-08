@@ -77,9 +77,9 @@ Scarcity is real at IPO, but it is temporary. The lock-up analysis needs three s
 
 1. **Incremental release / IPO float:** how large each new release is versus the 555.6m-share IPO float.
 2. **Cumulative potential supply / IPO float:** how much supply could be tradable after each release.
-3. **Cumulative potential supply / basic shares:** how much of the post-offering common base that potential supply represents.
+3. **Circulating free float / basic shares:** how much legally tradable Class A supply could exist after each event as a percentage of the post-offering common base.
 
-These are **eligibility and supply-overhang ratios**, not sale forecasts. They do not mean every released share will be sold. Some shares may be affiliate-held, and some Class B exposure would need conversion before Class A trading.
+These are **eligibility and supply-overhang ratios**, not sale forecasts. They do not mean every released share will be sold. Some shares may be affiliate-held, and some Class B exposure would need conversion before Class A trading. The starting IPO free float is **555.6m shares**, or **4.25%** of basic shares. After each milestone below, the circulating/free-float line keeps increasing.
 
 ### Pool Ratios
 
@@ -112,19 +112,19 @@ The performance trigger changes **timing**, not the rough day-180 supply endpoin
 | Q3 2026 earnings unlock | TBD - likely Nov 2026 | Q3 2026 earnings window | 1,300.0m | 234.0% | 28% of 180-day pool. |
 | Day 180 | 2026-12-08 | 180th day after prospectus | 328.4m or 797.6m | 59.1% or 143.6% | Lower if performance early release happened; higher if it did not. |
 
-| Milestone date | Milestone | Cumulative if performance trigger hits | % basic shares | Cumulative if no performance trigger | % basic shares |
-|---|---|---:|---:|---:|---:|
-| 2026-06-11 | IPO float | 555.6m / 1.00x | 4.2% | 555.6m / 1.00x | 4.2% |
-| TBD - likely Aug 2026 | Q2 earnings unlock | 1,467.1m / 2.64x | 11.2% | 1,467.1m / 2.64x | 11.2% |
-| TBD - likely Aug 2026 | Performance early release | 1,922.9m / 3.46x | 14.7% | 1,467.1m / 2.64x | 11.2% |
-| 2026-08-20 | Day 70 | 2,241.9m / 4.04x | 17.1% | 1,786.1m / 3.21x | 13.7% |
-| 2026-09-09 | Day 90 | 2,560.9m / 4.61x | 19.6% | 2,105.1m / 3.79x | 16.1% |
-| 2026-09-10 | Day 91 affiliate catch-up | 2,620.0m / 4.72x | 20.0% | 2,164.2m / 3.90x | 16.6% |
-| 2026-09-24 | Day 105 | 2,948.4m / 5.31x | 22.5% | 2,492.6m / 4.49x | 19.1% |
-| 2026-10-09 | Day 120 | 3,276.8m / 5.90x | 25.1% | 2,821.0m / 5.08x | 21.6% |
-| 2026-10-24 | Day 135 | 3,605.2m / 6.49x | 27.6% | 3,149.4m / 5.67x | 24.1% |
-| TBD - likely Nov 2026 | Q3 earnings unlock | 4,905.2m / 8.83x | 37.5% | 4,449.4m / 8.01x | 34.0% |
-| 2026-12-08 | Day 180 final release | 5,233.6m / 9.42x | 40.0% | 5,247.0m / 9.44x | 40.1% |
+| Milestone date | Milestone | New shares released if trigger hits | Circulating free float if trigger hits | Free float % basic | New shares released if no trigger | Circulating free float if no trigger | Free float % basic |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 2026-06-11 | IPO float | 555.6m | 555.6m / 1.00x | 4.2% | 555.6m | 555.6m / 1.00x | 4.2% |
+| TBD - likely Aug 2026 | Q2 earnings unlock | 911.5m | 1,467.1m / 2.64x | 11.2% | 911.5m | 1,467.1m / 2.64x | 11.2% |
+| TBD - likely Aug 2026 | Performance early release | 455.8m | 1,922.9m / 3.46x | 14.7% | 0.0m | 1,467.1m / 2.64x | 11.2% |
+| 2026-08-20 | Day 70 | 319.0m | 2,241.9m / 4.04x | 17.1% | 319.0m | 1,786.1m / 3.21x | 13.7% |
+| 2026-09-09 | Day 90 | 319.0m | 2,560.9m / 4.61x | 19.6% | 319.0m | 2,105.1m / 3.79x | 16.1% |
+| 2026-09-10 | Day 91 affiliate catch-up | 59.1m | 2,620.0m / 4.72x | 20.0% | 59.1m | 2,164.2m / 3.90x | 16.6% |
+| 2026-09-24 | Day 105 | 328.4m | 2,948.4m / 5.31x | 22.5% | 328.4m | 2,492.6m / 4.49x | 19.1% |
+| 2026-10-09 | Day 120 | 328.4m | 3,276.8m / 5.90x | 25.1% | 328.4m | 2,821.0m / 5.08x | 21.6% |
+| 2026-10-24 | Day 135 | 328.4m | 3,605.2m / 6.49x | 27.6% | 328.4m | 3,149.4m / 5.67x | 24.1% |
+| TBD - likely Nov 2026 | Q3 earnings unlock | 1,300.0m | 4,905.2m / 8.83x | 37.5% | 1,300.0m | 4,449.4m / 8.01x | 34.0% |
+| 2026-12-08 | Day 180 final release | 328.4m | 5,233.6m / 9.42x | 40.0% | 797.6m | 5,247.0m / 9.44x | 40.1% |
 
 The key read: **by day 180 the scarcity trade is mostly gone in either scenario.** The performance trigger just pulls some supply forward. Elon Musk's separate long-tail overhang is about **6.4 billion** shares, locked for **366 days** with no early release.
 
@@ -141,6 +141,25 @@ Governance is the weakest quality dimension in the scorecard.
 | Class B | 5,695.7m | 43.6% | 88.5% | Control class. |
 
 This does not make SpaceX a bad business. It means public holders are buying exposure, not influence.
+
+## Tesla / Musk Related-Party Check
+
+Tesla does appear to have a SpaceX economic interest, but it is small relative to SpaceX's post-IPO share base. Tesla's Q1 2026 10-Q says Tesla invested **$2.00bn** in SpaceX common stock in **March 2026**, formerly a preferred share investment in xAI, representing an ownership interest of **less than 1%**. At the model's **$135** IPO price, that would equal roughly **14.8m SpaceX shares**, or about **0.11%** of SpaceX basic post-offering shares.
+
+That is different from Elon Musk's direct SpaceX control. Musk is the control holder in the SpaceX S-1/A; Tesla is a small economic holder and related-party commercial counterparty.
+
+| Relationship | Period / date | Amount | Approx SpaceX shares | Approx % basic | Read-through |
+|---|---:|---:|---:|---:|---|
+| Tesla equity investment in SpaceX | 2026-03 | $2.00bn | 14.8m | 0.11% | Tesla 10-Q says less than 1%; this is economic exposure, not control. |
+| Tesla revenue from SpaceX Megapack purchase | Q1 2026 | $87m revenue / $65m cost | n/a | n/a | SpaceX bought Megapack products from Tesla in ordinary course. |
+| SpaceX Megapack purchases from Tesla | 2025 | $506m | n/a | n/a | SpaceX S-1/A records this in property, plant and equipment. |
+| SpaceX Megapack purchases from Tesla | 2024 | $191m | n/a | n/a | Confirms the commercial relationship predates the IPO. |
+| Tesla revenue from xAI Megapack sales | 2025 | $430.1m | n/a | n/a | xAI became part of SpaceX effective 2026-02-02. |
+| Tesla revenue from xAI through February 2026 | Jan-Feb 2026 | $78.1m | n/a | n/a | Cross-checks Tesla/xAI/SpaceX related-party chain. |
+| Tesla advertising on X | 2025 | $3.3m | n/a | n/a | X became part of xAI effective 2025-03-28, then xAI became part of SpaceX. |
+| Musk cross-company role | 2026-04-30 | n/a | n/a | n/a | Tesla filings describe Musk roles at Tesla, SpaceX, X/xAI, The Boring Company and Neuralink. |
+
+The accounting nuance matters: Tesla says it is presumed to have significant influence over SpaceX because Tesla's CEO also serves as SpaceX CEO, even though Tesla's ownership interest is less than 1%. For this memo, Tesla is therefore a **small SpaceX economic holder plus related-party counterparty**, not a major shareholder comparable to Musk.
 
 ## Index Rules
 
@@ -316,9 +335,11 @@ For SpaceX, the scorecard output is a **negative six-month bucket** from first l
 - [Workbook](spacex_ipo_quality_model.xlsx)
 - [Offering math](data/offering_math.csv)
 - [Shareholder ratios](data/shareholder_ratios.csv)
+- [Tesla / SpaceX related-party check](data/tesla_spacex_related_parties.csv)
 - [Lock-up calendar](data/lockup_calendar.csv)
 - [Lock-up supply summary](data/lockup_supply_summary.csv)
 - [Lock-up first-six-month scenarios](data/lockup_first_6m_scenarios.csv)
+- [Lock-up free-float bridge](data/lockup_free_float_bridge.csv)
 - [Nasdaq explainer](data/nasdaq_explainer.csv)
 - [SpaceX business breakdown](data/spacex_business_breakdown.csv)
 - [SpaceX AI timeline](data/spacex_ai_timeline.csv)

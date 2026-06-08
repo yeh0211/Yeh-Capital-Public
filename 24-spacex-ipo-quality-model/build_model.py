@@ -29,6 +29,7 @@ POST_TOTAL_M = POST_A_M + POST_B_M
 LOCKUP_180_DAY_POOL_M = 4557.5
 EXTENDED_LOCKUP_EX_MUSK_POOL_M = 1759.5
 MUSK_LOCKUP_M = 6400.0
+TESLA_SPACEX_INVESTMENT_USD_B = 2.0
 US_MARKET_HOLIDAYS_2026 = {
     date(2026, 6, 19),  # Juneteenth
     date(2026, 7, 3),  # Independence Day observed
@@ -182,6 +183,22 @@ sources = pd.DataFrame(
             "used_for": "S&P 500 no-change decision and Total Market Index mega-cap IWF update",
             "status": "primary",
         },
+        {
+            "source": "Tesla 10-Q",
+            "date": "2026-04-23",
+            "filing_or_article": "Tesla Form 10-Q for quarter ended March 31, 2026",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+            "used_for": "Tesla SpaceX equity investment and Q1 2026 SpaceX Megapack related-party transaction cross-check",
+            "status": "primary",
+        },
+        {
+            "source": "Tesla 10-K/A",
+            "date": "2026-04-30",
+            "filing_or_article": "Tesla Form 10-K/A for fiscal year 2025",
+            "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
+            "used_for": "Musk outside roles and Tesla/SpaceX/xAI/X related-party transaction cross-check",
+            "status": "primary",
+        },
     ]
 )
 write(sources, "sources")
@@ -232,6 +249,146 @@ shareholder_ratios = pd.DataFrame(
     columns=["holder", "class_a_m", "class_b_m", "economic_shares_m", "economic_pct_basic", "combined_voting_pct", "note"],
 )
 write(shareholder_ratios, "shareholder_ratios")
+
+
+tesla_estimated_spacex_shares_m = TESLA_SPACEX_INVESTMENT_USD_B * 1000 / IPO_PRICE
+tesla_spacex_related_parties = pd.DataFrame(
+    [
+        (
+            "Tesla equity investment in SpaceX",
+            "2026-03",
+            TESLA_SPACEX_INVESTMENT_USD_B,
+            tesla_estimated_spacex_shares_m,
+            tesla_estimated_spacex_shares_m / POST_TOTAL_M * 100,
+            "Less than 1% per Tesla 10-Q; approx 0.11% if valued at $135 IPO price.",
+            "Tesla 10-Q says the company invested $2.00B in SpaceX common stock, formerly a preferred share investment in xAI, representing an ownership interest of less than 1%.",
+            "This is not listed as a named holder in the SpaceX S-1/A beneficial ownership table; use as Tesla economic exposure, not control.",
+            "Tesla 10-Q 2026-04-23",
+        ),
+        (
+            "Tesla revenue from SpaceX Megapack purchase",
+            "2026-Q1",
+            0.087,
+            pd.NA,
+            pd.NA,
+            "Q1 2026 related-party operating transaction.",
+            "Tesla recognized $87M of revenues and $65M of cost of revenues from SpaceX for its purchase of Megapack products in ordinary course.",
+            "Confirms commercial relationship; not equity ownership.",
+            "Tesla 10-Q 2026-04-23",
+        ),
+        (
+            "SpaceX Megapack purchases from Tesla",
+            "2025",
+            0.506,
+            pd.NA,
+            pd.NA,
+            "SpaceX related-party capex purchase.",
+            "SpaceX S-1/A says the company purchased $506M of Megapack products from Tesla in 2025, recorded in property, plant and equipment.",
+            "Adds related-party/capital-intensity complexity around AI/compute power infrastructure.",
+            "SpaceX S-1/A 2026-06-03",
+        ),
+        (
+            "SpaceX Megapack purchases from Tesla",
+            "2024",
+            0.191,
+            pd.NA,
+            pd.NA,
+            "SpaceX related-party capex purchase.",
+            "SpaceX S-1/A says the company purchased $191M of Megapack products from Tesla in 2024.",
+            "Commercial relationship predates the IPO and xAI consolidation.",
+            "SpaceX S-1/A 2026-06-03",
+        ),
+        (
+            "Tesla commercial/licensing/support transactions with SpaceX",
+            "2025",
+            0.1433,
+            pd.NA,
+            pd.NA,
+            "Tesla revenue from SpaceX-related commercial arrangements.",
+            "Tesla 10-K/A says Tesla recognized approximately $143.3M of revenue in 2025, primarily for vehicle sales, under SpaceX commercial/licensing/support agreements.",
+            "Related-party commercial activity; not proof of material SpaceX equity ownership beyond the separate $2.00B investment.",
+            "Tesla 10-K/A 2026-04-30",
+        ),
+        (
+            "Tesla expenses under SpaceX commercial/licensing/support agreements",
+            "2025",
+            0.0114,
+            pd.NA,
+            pd.NA,
+            "Tesla expense to SpaceX.",
+            "Tesla 10-K/A says Tesla incurred approximately $11.4M of expenses in 2025 under SpaceX commercial/licensing/support agreements.",
+            "Small operating related-party expense.",
+            "Tesla 10-K/A 2026-04-30",
+        ),
+        (
+            "Tesla aircraft-use expense to SpaceX",
+            "2025",
+            0.0004,
+            pd.NA,
+            pd.NA,
+            "Tesla expense to SpaceX.",
+            "Tesla 10-K/A says SpaceX invoiced Tesla for use of aircraft owned and operated by SpaceX; Tesla incurred about $0.4M in 2025.",
+            "Immaterial but disclosed related-party link.",
+            "Tesla 10-K/A 2026-04-30",
+        ),
+        (
+            "Tesla advertising on X",
+            "2025",
+            0.0033,
+            pd.NA,
+            pd.NA,
+            "Tesla expense to X.",
+            "Tesla 10-K/A says Tesla directly or indirectly purchased advertising on X and incurred about $3.3M in 2025.",
+            "Relevant because X became part of xAI, and xAI became part of SpaceX in 2026.",
+            "Tesla 10-K/A 2026-04-30",
+        ),
+        (
+            "Tesla revenue from xAI Megapack sales",
+            "2025",
+            0.4301,
+            pd.NA,
+            pd.NA,
+            "Tesla revenue from xAI before xAI became SpaceX subsidiary.",
+            "Tesla 10-K/A says Tesla recognized approximately $430.1M of revenue in 2025 from xAI, primarily for Megapack products.",
+            "Shows Tesla/xAI commercial relationship feeding into the later SpaceX AI segment.",
+            "Tesla 10-K/A 2026-04-30",
+        ),
+        (
+            "Tesla revenue from xAI through February 2026",
+            "2026-01_to_2026-02",
+            0.0781,
+            pd.NA,
+            pd.NA,
+            "Tesla revenue from xAI before/around SpaceX xAI acquisition effective date.",
+            "Tesla 10-K/A says Tesla recognized approximately $78.1M of revenue through February 2026 from xAI, primarily for Megapack products.",
+            "Cross-checks Tesla/xAI/SpaceX related-party chain.",
+            "Tesla 10-K/A 2026-04-30",
+        ),
+        (
+            "Musk cross-company role",
+            "2026-04-30",
+            pd.NA,
+            pd.NA,
+            pd.NA,
+            "Governance and related-party context.",
+            "Tesla 10-K/A describes Musk roles at Tesla, SpaceX, X/xAI, The Boring Company and Neuralink; SpaceX S-1/A shows Musk 84.4% voting control after offering.",
+            "Explains why Tesla says it is presumed to have significant influence over SpaceX for accounting even with less than 1% ownership.",
+            "Tesla 10-K/A 2026-04-30; Tesla 10-Q 2026-04-23; SpaceX S-1/A 2026-06-03",
+        ),
+    ],
+    columns=[
+        "relationship",
+        "period_or_date",
+        "amount_usd_b",
+        "estimated_spacex_shares_m_at_ipo_price",
+        "estimated_economic_pct_basic",
+        "headline",
+        "filing_fact",
+        "model_read",
+        "source",
+    ],
+)
+write(tesla_spacex_related_parties, "tesla_spacex_related_parties")
 
 
 lockup_rows = [
@@ -419,7 +576,39 @@ lockup_first_6m_scenarios["milestone"] = lockup_first_6m_scenarios["event"]
 lockup_first_6m_scenarios["milestone_with_date"] = (
     lockup_first_6m_scenarios["event"] + " (" + lockup_first_6m_scenarios["event_date"] + ")"
 )
+lockup_first_6m_scenarios["circulating_free_float_perf_case_m"] = lockup_first_6m_scenarios["cumulative_perf_case_m"]
+lockup_first_6m_scenarios["circulating_free_float_perf_case_pct_basic_common"] = lockup_first_6m_scenarios["cumulative_perf_case_pct_basic_common"]
+lockup_first_6m_scenarios["circulating_free_float_perf_case_pct_post_class_a"] = lockup_first_6m_scenarios["cumulative_perf_case_pct_post_class_a"]
+lockup_first_6m_scenarios["circulating_free_float_no_perf_case_m"] = lockup_first_6m_scenarios["cumulative_no_perf_case_m"]
+lockup_first_6m_scenarios["circulating_free_float_no_perf_case_pct_basic_common"] = lockup_first_6m_scenarios["cumulative_no_perf_case_pct_basic_common"]
+lockup_first_6m_scenarios["circulating_free_float_no_perf_case_pct_post_class_a"] = lockup_first_6m_scenarios["cumulative_no_perf_case_pct_post_class_a"]
 write(lockup_first_6m_scenarios, "lockup_first_6m_scenarios")
+
+
+lockup_free_float_bridge = lockup_first_6m_scenarios[
+    [
+        "order",
+        "event_date",
+        "milestone",
+        "date_basis",
+        "date_precision",
+        "incremental_perf_case_m",
+        "incremental_no_perf_case_m",
+        "circulating_free_float_perf_case_m",
+        "circulating_free_float_perf_case_pct_basic_common",
+        "circulating_free_float_perf_case_pct_post_class_a",
+        "circulating_free_float_no_perf_case_m",
+        "circulating_free_float_no_perf_case_pct_basic_common",
+        "circulating_free_float_no_perf_case_pct_post_class_a",
+        "note",
+    ]
+].copy()
+lockup_free_float_bridge["starting_ipo_float_m"] = IPO_FLOAT_M
+lockup_free_float_bridge["starting_ipo_float_pct_basic_common"] = IPO_FLOAT_M / POST_TOTAL_M * 100
+lockup_free_float_bridge["interpretation"] = (
+    "Circulating/free float means potential legally tradable Class A supply after the milestone; it is not a sale forecast."
+)
+write(lockup_free_float_bridge, "lockup_free_float_bridge")
 
 
 nasdaq_explainer = pd.DataFrame(
@@ -886,8 +1075,8 @@ ax.plot(x, plot_df["cumulative_no_perf_case_x_ipo_float"], marker="o", linewidth
 ax.axhline(1.0, color="#d62728", linestyle="--", linewidth=1.4, label="IPO float")
 ax.set_xticks(list(x))
 ax.set_xticklabels(labels, rotation=35, ha="right")
-ax.set_ylabel("Cumulative tradable supply / base IPO float")
-ax.set_title("SpaceX first-six-month cumulative float scenarios")
+ax.set_ylabel("Circulating free float / base IPO float")
+ax.set_title("SpaceX first-six-month circulating free-float scenarios")
 ax.legend(loc="upper left")
 for idx in [0, 1, 2, 9, 10]:
     y_val = plot_df.loc[idx, "cumulative_perf_case_x_ipo_float"]
@@ -984,9 +1173,11 @@ with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
         "sources",
         "offering_math",
         "shareholder_ratios",
+        "tesla_spacex_related_parties",
         "lockup_calendar",
         "lockup_supply_summary",
         "lockup_first_6m_scenarios",
+        "lockup_free_float_bridge",
         "nasdaq_explainer",
         "spacex_business_breakdown",
         "spacex_ai_timeline",

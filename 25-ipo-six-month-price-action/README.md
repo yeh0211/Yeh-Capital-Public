@@ -46,6 +46,8 @@ Market makers are handled conservatively. Pre-listing, the public source is usua
 | Valuation risk | -10.0 pts | About $1.77tn implied basic market cap and high sales multiple. |
 | **Model output** | **-20.2%** | Negative bucket; trade-only / wait-for-unlock bias. |
 
+Tesla is included as related-party/economic context, not as a control holder: Tesla's Q1 2026 10-Q says it invested $2.00bn in SpaceX common stock, less than 1% ownership, which is about 0.11% of SpaceX basic shares at the $135 IPO price assumption.
+
 ![SpaceX scorecard contribution bridge](fig3_spacex_contributions.png)
 
 ## What The Model Predicts

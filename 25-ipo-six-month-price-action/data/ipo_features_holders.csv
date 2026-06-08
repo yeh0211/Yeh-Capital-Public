@@ -1,5 +1,5 @@
 ticker,top_holder_or_structure,top_holder_economic_pct,top_holder_voting_pct,insider_director_economic_pct,holder_read,source_type,holder_risk_score,known_by
-SPCX,Elon Musk,49.1,84.4,53.4,Musk and directors/officers dominate voting control; 13F data is future monitoring only.,S-1/A,5.0,IPO date / prospectus; post-IPO 13F data is monitoring only
+SPCX,Elon Musk; Tesla small economic interest,49.1,84.4,53.4,"Musk and directors/officers dominate voting control. Tesla 10-Q says Tesla invested $2.00B in SpaceX common stock, less than 1% ownership; estimated at about 0.11% of SpaceX basic shares at the IPO price. 13F data is future monitoring only.",S-1/A; Tesla 10-Q,5.0,IPO date / prospectus; post-IPO 13F data is monitoring only
 V,Distributed bank legacy holders,,,,Cleaner governance and dispersed public-company profile after IPO.,prospectus/manual comp note,1.0,IPO date / prospectus; post-IPO 13F data is monitoring only
 META,Mark Zuckerberg,,57.0,,Founder voting control was a major public-entry governance feature.,prospectus/manual comp note,4.0,IPO date / prospectus; post-IPO 13F data is monitoring only
 BABA,SoftBank/Yahoo/partnership/VIE context,,,,Scale comp only; ADR/VIE and China governance make holder structure less comparable.,prospectus/manual comp note,5.0,IPO date / prospectus; post-IPO 13F data is monitoring only

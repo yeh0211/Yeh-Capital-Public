@@ -1,0 +1,8 @@
+reported_nav_per_share,nav_date,multiple,implied_price,premium_to_reported_nav,read_through
+7.31,2026-03-31,1.00,7.31,0.00,Filing NAV: buyer pays reported NAV/share.
+7.31,2026-03-31,2.00,14.62,1.00,Buyer pays a 100% premium to reported NAV.
+7.31,2026-03-31,3.00,21.93,2.00,Private-access premium is meaningful but below BOT's first-month average.
+7.31,2026-03-31,4.00,29.24,3.00,Buyer pays 4x reported NAV; NAV/share must validate quickly.
+7.31,2026-03-31,5.00,36.55,4.00,Near the study's latest BOT price/NAV level.
+7.31,2026-03-31,5.13,37.49,4.13,Latest Massive close used in the study.
+7.31,2026-03-31,6.00,43.86,5.00,Scarcity-window valuation; requires very durable premium or fast NAV/share catch-up.

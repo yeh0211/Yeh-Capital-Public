@@ -115,6 +115,29 @@ BOT traded at a large premium to its stale reported NAV through its first public
 
 **What would confirm the premium.** New share issuance has to be above NAV after costs, and the proceeds have to raise NAV/share by buying or marking up better private robotics assets. A high premium that does not translate into NAV/share accretion is only expensive access.
 
+## Valuation ladder from reported NAV
+
+The public filing is the anchor for a simple order-price map. BOT's reported NAV/share was **$7.31 as of 2026-03-31**. Any market price can be translated into a reported-NAV multiple with:
+
+```text
+price / $7.31 = reported-NAV multiple
+reported-NAV multiple x $7.31 = implied price
+```
+
+Citrini's MSTR-style framing helps with interpretation: a premium can be rational if the public vehicle uses that premium to compound asset value per share, but the same premium can disappear if the flywheel stalls. For BOT, that means these are not fair-value targets by themselves. They are the prices at which an investor is choosing how much private-access premium to underwrite.
+
+| Reported NAV multiple | Implied BOT price | Premium to filed NAV | Read-through |
+|---:|---:|---:|---|
+| 1.00x | $7.31 | 0% | Buyer pays filed NAV/share. |
+| 2.00x | $14.62 | 100% | Still a large premium versus ordinary CEFs. |
+| 3.00x | $21.93 | 200% | Private-access premium is meaningful but below BOT's first-month average. |
+| 4.00x | $29.24 | 300% | Requires NAV/share validation, not just robotics excitement. |
+| 5.00x | $36.55 | 400% | Near the study's latest BOT price/NAV level. |
+| 5.13x | $37.49 | 413% | Latest Massive daily close used in this study. |
+| 6.00x | $43.86 | 500% | Scarcity-window valuation; needs very durable premium or fast NAV/share catch-up. |
+
+The practical use is mechanical: choose the maximum reported-NAV multiple you are willing to pay, then multiply it by **$7.31**. The risk is that the NAV is stale and private-company marks can move in either direction before the next filing.
+
 ## How much premium do private-access CEFs get?
 
 The clean comparison is not BOT versus ordinary income CEFs. The better comparison is BOT versus exchange-traded vehicles that package scarce private companies or SPV exposure. On that basis, BOT's **5.13x** reported NAV multiple is still extreme, but it is not without precedent. VCX, the Fundrise Innovation Fund, recently traded near **7.12x** reported NAV while offering exposure to private AI and venture names such as Anthropic, Databricks, OpenAI and SpaceX.
@@ -168,6 +191,7 @@ The public figures use only CSVs in `data/`:
 - `data/bot_massive_price_nav.csv`
 - `data/bot_mstr_replay_scenarios.csv`
 - `data/bot_private_access_premium_break_even.csv`
+- `data/bot_reported_nav_price_ladder.csv`
 - `data/private_access_fund_comparables.csv`
 - `data/bot_portfolio_holdings.csv`
 

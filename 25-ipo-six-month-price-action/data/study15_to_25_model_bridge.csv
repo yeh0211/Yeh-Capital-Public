@@ -1,0 +1,5 @@
+layer,sample_definition,n_or_rows,filter_or_scope,six_month_prior_pct,one_year_excess_vs_spy_pct,beat_spy_base_pct,study25_usage
+Study 15 broad IPO chase,All qualifying US IPOs since 2022-10 with day-1-close entry.,760,All-size / noisy cohort,-15.4,-28.4,25.0,Start with a harsh prior: chasing new listings has underperformed SPY.
+Study 15 sector screen,Sector table separates survivor buckets from weak/noisy IPO buckets.,760,Software/IT and REIT survived; biotech and micro-cap/unclassified failed.,,,,Used as a quality gate: remove small/noisy IPOs and avoid binary biotech/promotional listings.
+Study 24 institutional comp filter,Core plus scale IPO comps with market cap above $5B and proceeds above $500M.,11,Large institutional IPOs only,-14.7,,,This is the six-month price-return midpoint used as the study 25 base prior.
+Study 25 model baseline,Reusable six-month IPO scorecard.,16,SpaceX plus filtered comps and explicitly excluded/noisy rows,-14.7,,25.0,"Predictions start at the filtered large-IPO prior, while beat-SPY probability starts from study 15's 180-day 25% rate."

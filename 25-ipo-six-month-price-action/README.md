@@ -2,7 +2,7 @@
 
 **Question.** Can the IPO research stack be turned into a reusable first-six-month price-action framework using offering mechanics, underwriters, holder control, market setup, index flow and business quality?
 
-**Finding.** **Yes, as a transparent scorecard, not a magic price oracle.** The strongest prior is still study 15: aftermarket IPO chasing is a weak base-rate trade. This model starts with the large-IPO six-month fade prior and then adjusts for company-specific mechanics known by IPO date or first close. For SpaceX, the scorecard gives a **negative six-month bucket**, a **-20.2%** midpoint from first listed close, **22.4%** probability of beating SPY and **18.4%** probability of beating QQQ. The positive forces are underwriters, scarcity and Nasdaq-100 fast-entry flow. The negative forces are valuation, lock-up supply and Musk/Class B voting control.
+**Finding.** **Yes, as a transparent scorecard, not a magic price oracle.** Study 15 is now merged directly into this model as base-rate and sector-screen tables. The broad IPO-chase prior is harsh: day-1-close IPO entries had a **-15.4%** median excess return versus SPY at 180 days and only **25%** beat SPY. Study 25 then applies the institutional IPO quality filter from study 24, using the filtered large-IPO six-month midpoint of **-14.7%** as the model baseline. For SpaceX, the scorecard gives a **negative six-month bucket**, a **-20.2%** midpoint from first listed close, **22.4%** probability of beating SPY and **18.4%** probability of beating QQQ. The positive forces are underwriters, scarcity and Nasdaq-100 fast-entry flow. The negative forces are valuation, lock-up supply and Musk/Class B voting control.
 
 > Research model only; not investment advice. The target is the first six months from first listed close. The model deliberately excludes post-IPO 13F holder data from IPO-day prediction because it is lagged and would create lookahead leakage.
 
@@ -16,6 +16,31 @@ The framework combines four prior notes:
 | [15 - Should you chase IPOs?](../15-ipo-chase/) | Base rate: broad day-1-close IPO chasing underperformed SPY. |
 | [22 - Equity issuance as a market-top signal](../22-equity-issuance-top-signal/) | Aggregate issuance is weak as a market-timing signal, but new issues underperform cross-sectionally. |
 | [24 - SpaceX IPO quality model](../24-spacex-ipo-quality-model/) | SpaceX mechanics, lock-ups, index rules, underwriters and institutional comp set. |
+
+## Merged Study 15 Case
+
+Study 15 is carried forward as data inside this workbook, not just as a footnote. The model keeps the broad aftermarket-chase result intact, then narrows the investable universe for SpaceX-style decisions.
+
+| Horizon | n | Median return | Median excess vs SPY | % beating SPY | Study 25 usage |
+|---|---:|---:|---:|---:|---|
+| 30d | 760 | +0.2% | -1.9% | 39% | Early aftermarket reference. |
+| 90d | 731 | +0.3% | -6.6% | 29% | First-earnings / early-trading reference. |
+| 180d | 641 | -1.1% | **-15.4%** | **25%** | Broad six-month IPO-chase prior. |
+| 365d | 474 | -4.1% | **-28.4%** | **19%** | One-year warning and sanity check. |
+
+The sector table is also merged so the quality screen is explicit:
+
+| Study 15 bucket | Result | Study 25 action |
+|---|---|---|
+| Software / IT | +9.1% median 365d return | Keep as a high-quality business analog when scale and disclosure pass. |
+| Real Estate / REIT | +4.9% median 365d return | Survivor bucket, but not a SpaceX valuation comp. |
+| Biotech / Pharma | -30.3% median 365d return | Exclude from the comp universe. |
+| Industrials | -63.4% median 365d return | Use only for context unless scale and underwriting pass. |
+| Micro-cap / unclassified | -63.7% median 365d return | Exclude from the comp universe. |
+
+That is the merge logic: **study 15 supplies the broad base rate; study 24 supplies the institutional-quality filter; study 25 turns both into a reusable six-month predictor.**
+
+![Study 15 base rate merged into study 25](fig4_study15_to_25_bridge.png)
 
 The model is intentionally simple:
 
@@ -35,7 +60,7 @@ Market makers are handled conservatively. Pre-listing, the public source is usua
 
 | Factor | Contribution | Read |
 |---|---:|---|
-| Base prior | -14.7 pts | Large IPOs have a negative six-month base rate from first close. |
+| Base prior | -14.7 pts | Study 15 broad 180-day excess was -15.4%; filtered institutional IPO comp median was -14.7%. |
 | Business / IPO quality | +5.0 pts | Strong business and offering quality, but governance lowers the score. |
 | Underwriters / liquidity support | +6.0 pts | Goldman Sachs and Morgan Stanley-led global book; Morgan Stanley stabilization proxy. |
 | Nasdaq / index flow | +9.0 pts | Nasdaq-100 fast-entry path can create forced demand. |
@@ -77,6 +102,9 @@ The workbook and CSVs are designed so future IPOs can be added row-by-row.
 
 | Output | Purpose |
 |---|---|
+| [study15_ipo_chase_base_rate](data/study15_ipo_chase_base_rate.csv) | Merged study 15 horizon base rates for 30 / 90 / 180 / 365 days. |
+| [study15_sector_base_rate](data/study15_sector_base_rate.csv) | Merged study 15 sector base rates and study 25 quality-screen actions. |
+| [study15_to_25_model_bridge](data/study15_to_25_model_bridge.csv) | Reconciliation from broad IPO-chase prior to filtered study 25 baseline. |
 | [ipo_master](data/ipo_master.csv) | IPO universe, role, inclusion and data quality. |
 | [ipo_price_targets](data/ipo_price_targets.csv) | Actual 6m targets when available. |
 | [ipo_features_offering](data/ipo_features_offering.csv) | Proceeds, market cap, float, lock-up and offering flags. |

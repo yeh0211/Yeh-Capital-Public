@@ -46,6 +46,10 @@ Vintage matters too: the 2023 cohort was brutal (−53.5% median at one year), 2
 
 **Should you chase IPOs at the open for a one-year hold? No.** The base rate is roughly −28% versus SPY with only a one-in-five chance of beating the index, and the bootstrap CI never touches zero. If you must participate, the only survivable buckets historically were REITs and profitable software — not biotech and not sub-dollar micro-caps. As a class, IPOs are a sell-the-pop, not a buy-and-hold.
 
+## Forward link
+
+This IPO-chase case is merged into [study 25](../25-ipo-six-month-price-action/) as the base-rate layer for the reusable first-six-month IPO price-action predictor. Study 25 keeps the 30 / 90 / 180 / 365-day horizon table and sector screen from this study, then filters toward institutional-scale IPOs for SpaceX-style decisions.
+
 ## Caveats
 
 - **Period.** Coverage starts 2022-10, an unusual and mostly-poor IPO vintage. The direction is consistent with decades of academic work, but the −28% magnitude is specific to this window.

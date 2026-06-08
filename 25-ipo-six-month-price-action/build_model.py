@@ -19,6 +19,10 @@ DATA = ROOT / "data"
 DATA.mkdir(exist_ok=True)
 STUDY24 = ROOT.parent / "24-spacex-ipo-quality-model" / "data"
 
+# Study 15 is the broad aftermarket IPO-chase case. Study 25 keeps that base
+# rate intact, then applies the institutional IPO filter from study 24.
+STUDY15_BROAD_6M_EXCESS_PCT = -15.4
+STUDY15_BROAD_1Y_EXCESS_PCT = -28.4
 BASE_6M_PRIOR_PCT = -14.7
 BASE_BEAT_SPY_PROB_PCT = 25.0
 
@@ -156,6 +160,98 @@ write(sources, "sources")
 comp_universe = pd.read_csv(STUDY24 / "comp_universe.csv")
 comp_perf = pd.read_csv(STUDY24 / "comp_ipo_performance.csv")
 quality = pd.read_csv(STUDY24 / "quality_scores.csv")
+
+study15_ipo_chase_base_rate = pd.read_csv(STUDY24 / "ipo_chase_base_rate.csv")
+study15_ipo_chase_base_rate["horizon_label"] = study15_ipo_chase_base_rate["horizon_days"].map(
+    {30: "1 month", 90: "3 months", 180: "6 months", 365: "1 year"}
+)
+study15_ipo_chase_base_rate["study25_model_usage"] = study15_ipo_chase_base_rate["horizon_days"].map(
+    {
+        30: "Early aftermarket reference only.",
+        90: "First-earnings / early trading reference only.",
+        180: "Broad six-month IPO-chase prior; feeds the model beat-SPY base probability.",
+        365: "One-year warning and sanity check; not the target horizon.",
+    }
+)
+study15_ipo_chase_base_rate["merged_into_study25"] = True
+write(study15_ipo_chase_base_rate, "study15_ipo_chase_base_rate")
+
+study15_sector_base_rate = pd.read_csv(STUDY24 / "ipo_chase_sector_base_rate.csv")
+study15_sector_base_rate["study25_quality_action"] = study15_sector_base_rate["sector"].map(
+    {
+        "Software / IT": "Keep as high-quality business analog when scale and disclosure pass.",
+        "Real Estate / REIT": "Do not use as SpaceX valuation comp; stable-income survivor bucket only.",
+        "Biotech / Pharma": "Exclude from comp universe; binary/noisy IPO behavior.",
+        "Industrials": "Use only for context unless scale and underwriting pass.",
+        "Micro-cap / unclassified": "Exclude from comp universe; small/noisy IPO behavior.",
+    }
+)
+study15_sector_base_rate["merged_into_study25"] = True
+write(study15_sector_base_rate, "study15_sector_base_rate")
+
+institutional_comp_tickers = comp_universe.loc[
+    comp_universe["inclusion"].isin(["Core", "Scale only"]),
+    "ticker",
+]
+filtered_comp_median_6m = round(
+    comp_perf.loc[comp_perf["ticker"].isin(institutional_comp_tickers), "return_from_first_close_6m_pct"].median(),
+    1,
+)
+study15_to_25_model_bridge = pd.DataFrame(
+    [
+        (
+            "Study 15 broad IPO chase",
+            "All qualifying US IPOs since 2022-10 with day-1-close entry.",
+            760,
+            "All-size / noisy cohort",
+            STUDY15_BROAD_6M_EXCESS_PCT,
+            STUDY15_BROAD_1Y_EXCESS_PCT,
+            BASE_BEAT_SPY_PROB_PCT,
+            "Start with a harsh prior: chasing new listings has underperformed SPY.",
+        ),
+        (
+            "Study 15 sector screen",
+            "Sector table separates survivor buckets from weak/noisy IPO buckets.",
+            760,
+            "Software/IT and REIT survived; biotech and micro-cap/unclassified failed.",
+            pd.NA,
+            pd.NA,
+            pd.NA,
+            "Used as a quality gate: remove small/noisy IPOs and avoid binary biotech/promotional listings.",
+        ),
+        (
+            "Study 24 institutional comp filter",
+            "Core plus scale IPO comps with market cap above $5B and proceeds above $500M.",
+            len(institutional_comp_tickers),
+            "Large institutional IPOs only",
+            filtered_comp_median_6m,
+            pd.NA,
+            pd.NA,
+            "This is the six-month price-return midpoint used as the study 25 base prior.",
+        ),
+        (
+            "Study 25 model baseline",
+            "Reusable six-month IPO scorecard.",
+            len(comp_universe),
+            "SpaceX plus filtered comps and explicitly excluded/noisy rows",
+            BASE_6M_PRIOR_PCT,
+            pd.NA,
+            BASE_BEAT_SPY_PROB_PCT,
+            "Predictions start at the filtered large-IPO prior, while beat-SPY probability starts from study 15's 180-day 25% rate.",
+        ),
+    ],
+    columns=[
+        "layer",
+        "sample_definition",
+        "n_or_rows",
+        "filter_or_scope",
+        "six_month_prior_pct",
+        "one_year_excess_vs_spy_pct",
+        "beat_spy_base_pct",
+        "study25_usage",
+    ],
+)
+write(study15_to_25_model_bridge, "study15_to_25_model_bridge")
 
 ipo_master = comp_universe.copy()
 ipo_master["model_role"] = ipo_master["inclusion"].map(
@@ -386,6 +482,8 @@ feature_dictionary = pd.DataFrame(
         ("market_setup_score", "Issuance regime and sector setup known by listing.", "ipo_features_market_setup", "IPO date / first close", True),
         ("index_flow_score", "Near-term passive-flow catalyst such as Nasdaq-100 fast entry.", "ipo_features_index_flow", "IPO date / index methodology", True),
         ("weighted_quality_score", "Business/IPO/governance quality score from study 24 rubric.", "ipo_features_business_quality", "IPO date / prospectus", True),
+        ("study15_broad_180d_excess_prior_pct", "Study 15 broad 180-day median excess return versus SPY for day-1-close IPO chasing.", "model_predictions", "Known before this model is run; historical prior", True),
+        ("large_ipo_filtered_6m_prior_pct", "Filtered institutional IPO six-month midpoint used as the study 25 base return prior.", "model_predictions", "Known before this model is run; historical prior", True),
         ("target_return_6m_pct", "Actual six-month return from first listed close; target only, never a prediction feature.", "ipo_price_targets", "After six months", False),
         ("post_ipo_13f_top_holders", "Lagged institutional ownership monitoring field; excluded from IPO-day prediction.", "future_monitoring", "After IPO quarter-end filings", False),
     ],
@@ -405,6 +503,11 @@ feature_base = (
 feature_base["float_scarcity_score"] = feature_base["approx_ipo_public_float_pct"].apply(float_scarcity_score)
 feature_base["unlock_risk_score"] = feature_base.apply(lambda row: unlock_risk_score(row["ticker"], row["approx_ipo_public_float_pct"]), axis=1)
 feature_base["valuation_risk_score"] = feature_base["ticker"].apply(valuation_risk_score)
+feature_base["study15_broad_180d_excess_prior_pct"] = STUDY15_BROAD_6M_EXCESS_PCT
+feature_base["study15_broad_180d_beat_spy_pct"] = BASE_BEAT_SPY_PROB_PCT
+feature_base["large_ipo_filtered_6m_prior_pct"] = BASE_6M_PRIOR_PCT
+feature_base["base_prior_adjustment_vs_study15_pct"] = round(BASE_6M_PRIOR_PCT - STUDY15_BROAD_6M_EXCESS_PCT, 1)
+feature_base["base_prior_source"] = "Study 15 broad IPO chase + study 24 institutional comp filter"
 feature_base["quality_contribution"] = (feature_base["weighted_quality_score"].fillna(3.0) - 3.0) * 8.0
 feature_base["underwriter_contribution"] = (feature_base["underwriter_quality_score"].fillna(3.0) - 3.0) * 3.0
 feature_base["index_flow_contribution"] = (feature_base["index_flow_score"].fillna(2.0) - 2.0) * 3.0
@@ -445,7 +548,7 @@ write(model_predictions, "model_predictions")
 spcx = model_predictions[model_predictions["ticker"] == "SPCX"].iloc[0]
 spacex_prediction = pd.DataFrame(
     [
-        ("Base prior", BASE_6M_PRIOR_PCT, "Study 15/24 six-month IPO fade prior.", "Negative starting point."),
+        ("Base prior", BASE_6M_PRIOR_PCT, "Study 15 broad 180-day median excess was -15.4%; filtered institutional IPO comp median was -14.7%.", "Negative starting point."),
         ("Business/IPO quality", spcx["quality_contribution"], f"Weighted quality score {spcx['weighted_quality_score']:.2f}.", "Positive, but governance lowers total score."),
         ("Underwriters/liquidity support", spcx["underwriter_contribution"], "Goldman Sachs/Morgan Stanley led global book; Morgan Stanley stabilization proxy.", "Positive execution support."),
         ("Nasdaq/index flow", spcx["index_flow_contribution"], "Nasdaq-100 fast-entry path and low-float modified market cap.", "Positive early flow, not fundamental value."),
@@ -464,7 +567,9 @@ write(spacex_prediction, "spacex_prediction")
 validation = pd.DataFrame(
     [
         ("no_lookahead", bool(feature_dictionary[feature_dictionary["allowed_for_prediction"]]["known_by"].str.contains("After").sum() == 0), "Prediction features exclude six-month returns and post-IPO 13F holder data."),
-        ("study15_baseline", True, f"Base six-month prior set to {BASE_6M_PRIOR_PCT}% using study 15/24 bridge."),
+        ("study15_tables_merged", True, "Study 15 horizon and sector base-rate tables are generated inside study 25."),
+        ("study15_broad_180d_reconciles", bool(study15_ipo_chase_base_rate.loc[study15_ipo_chase_base_rate["horizon_days"] == 180, "median_excess_vs_spy_pct"].iloc[0] == STUDY15_BROAD_6M_EXCESS_PCT), "Study 15 180-day excess prior reconciles to the merged base-rate table."),
+        ("study15_baseline", True, f"Base six-month prior set to {BASE_6M_PRIOR_PCT}% after applying the institutional comp filter to study 15's {STUDY15_BROAD_6M_EXCESS_PCT}% broad prior."),
         ("space_x_row_present", "SPCX" in set(model_predictions["ticker"]), "SpaceX prediction row exists."),
         ("requested_tabs_present", True, "All requested CSV/workbook tabs are generated."),
     ],
@@ -507,11 +612,28 @@ fig.tight_layout()
 fig.savefig(ROOT / "fig3_spacex_contributions.png", dpi=180)
 plt.close(fig)
 
+fig, ax = plt.subplots(figsize=(10, 5.5))
+bridge_plot = study15_to_25_model_bridge[study15_to_25_model_bridge["six_month_prior_pct"].notna()].copy()
+ax.barh(
+    bridge_plot["layer"],
+    bridge_plot["six_month_prior_pct"],
+    color=["#d62728" if x < 0 else "#2ca02c" for x in bridge_plot["six_month_prior_pct"]],
+)
+ax.axvline(0, color="black", linewidth=1)
+ax.set_xlabel("Six-month prior / midpoint, %")
+ax.set_title("Study 15 base rate merged into study 25")
+fig.tight_layout()
+fig.savefig(ROOT / "fig4_study15_to_25_bridge.png", dpi=180)
+plt.close(fig)
+
 
 workbook_path = ROOT / "ipo_six_month_price_action_model.xlsx"
 with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
     for name in [
         "sources",
+        "study15_ipo_chase_base_rate",
+        "study15_sector_base_rate",
+        "study15_to_25_model_bridge",
         "ipo_master",
         "ipo_price_targets",
         "ipo_features_offering",
@@ -530,10 +652,12 @@ with pd.ExcelWriter(workbook_path, engine="openpyxl") as writer:
     ws["A1"] = "IPO six-month price-action scorecard"
     ws["A2"] = "Primary target: first six months from first listed close."
     ws["A4"] = "Base prior"
-    ws["B4"] = f"{BASE_6M_PRIOR_PCT}% six-month fade midpoint from prior IPO work."
+    ws["B4"] = f"{BASE_6M_PRIOR_PCT}% six-month fade midpoint: study 15 broad 180-day excess prior {STUDY15_BROAD_6M_EXCESS_PCT}%, filtered to institutional IPO comps."
     ws["A5"] = "SpaceX output"
     ws["B5"] = f"{spcx['expected_return_bucket']} / {spcx['predicted_6m_return_mid_pct']}% midpoint / {spcx['prob_beat_spy_pct']}% beat-SPY probability."
     ws["A6"] = "Market-maker policy"
     ws["B6"] = "Use disclosed underwriters/stabilization agent as pre-listing liquidity-support proxy; symbol-level market makers are post-listing monitoring only."
+    ws["A7"] = "Study 15 merge"
+    ws["B7"] = "Workbook includes study15_ipo_chase_base_rate, study15_sector_base_rate and study15_to_25_model_bridge tabs."
 
 print(f"Wrote {workbook_path}")

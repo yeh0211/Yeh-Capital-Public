@@ -1,5 +1,7 @@
 check,passed,note
 no_lookahead,True,Prediction features exclude six-month returns and post-IPO 13F holder data.
-study15_baseline,True,Base six-month prior set to -14.7% using study 15/24 bridge.
+study15_tables_merged,True,Study 15 horizon and sector base-rate tables are generated inside study 25.
+study15_broad_180d_reconciles,True,Study 15 180-day excess prior reconciles to the merged base-rate table.
+study15_baseline,True,Base six-month prior set to -14.7% after applying the institutional comp filter to study 15's -15.4% broad prior.
 space_x_row_present,True,SpaceX prediction row exists.
 requested_tabs_present,True,All requested CSV/workbook tabs are generated.

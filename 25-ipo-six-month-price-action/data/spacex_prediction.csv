@@ -1,5 +1,5 @@
 factor,contribution_pct_points,evidence,investor_read
-Base prior,-14.7,Study 15/24 six-month IPO fade prior.,Negative starting point.
+Base prior,-14.7,Study 15 broad 180-day median excess was -15.4%; filtered institutional IPO comp median was -14.7%.,Negative starting point.
 Business/IPO quality,5.0,Weighted quality score 3.62.,"Positive, but governance lowers total score."
 Underwriters/liquidity support,6.0,Goldman Sachs/Morgan Stanley led global book; Morgan Stanley stabilization proxy.,Positive execution support.
 Nasdaq/index flow,9.0,Nasdaq-100 fast-entry path and low-float modified market cap.,"Positive early flow, not fundamental value."

@@ -264,6 +264,8 @@ lockup_calendar[["event_date", "date_basis", "date_precision"]] = lockup_calenda
     lambda row: pd.Series(date_meta(row["model_date_if_prospectus_2026_06_11"], row["timing"])),
     axis=1,
 )
+lockup_calendar["milestone_date"] = lockup_calendar["event_date"]
+lockup_calendar["milestone_with_date"] = lockup_calendar["event"] + " (" + lockup_calendar["event_date"] + ")"
 lockup_calendar["release_x_base_ipo_float"] = lockup_calendar["shares_released_m"] / IPO_FLOAT_M
 lockup_calendar["release_pct_basic_common"] = lockup_calendar["shares_released_m"] / POST_TOTAL_M * 100
 lockup_calendar["release_pct_post_class_a"] = lockup_calendar["shares_released_m"] / POST_A_M * 100
@@ -411,6 +413,11 @@ lockup_first_6m_scenarios = pd.DataFrame(
 lockup_first_6m_scenarios[["event_date", "date_basis", "date_precision"]] = lockup_first_6m_scenarios.apply(
     lambda row: pd.Series(date_meta(row["model_date_if_prospectus_2026_06_11"], row["timing"])),
     axis=1,
+)
+lockup_first_6m_scenarios["milestone_date"] = lockup_first_6m_scenarios["event_date"]
+lockup_first_6m_scenarios["milestone"] = lockup_first_6m_scenarios["event"]
+lockup_first_6m_scenarios["milestone_with_date"] = (
+    lockup_first_6m_scenarios["event"] + " (" + lockup_first_6m_scenarios["event_date"] + ")"
 )
 write(lockup_first_6m_scenarios, "lockup_first_6m_scenarios")
 
@@ -861,17 +868,17 @@ plt.style.use("seaborn-v0_8-whitegrid")
 fig, ax = plt.subplots(figsize=(10, 5.5))
 plot_df = lockup_first_6m_scenarios.copy()
 labels = [
-    "IPO",
-    "Q2 earn.",
-    "Perf.",
-    "D70",
-    "D90",
-    "D91",
-    "D105",
-    "D120",
-    "D135",
-    "Q3 earn.",
-    "D180",
+    "IPO\n2026-06-11",
+    "Q2 earn.\nTBD Aug 2026",
+    "Perf.\nTBD Aug 2026",
+    "D70\n2026-08-20",
+    "D90\n2026-09-09",
+    "D91\n2026-09-10",
+    "D105\n2026-09-24",
+    "D120\n2026-10-09",
+    "D135\n2026-10-24",
+    "Q3 earn.\nTBD Nov 2026",
+    "D180\n2026-12-08",
 ]
 x = range(len(plot_df))
 ax.plot(x, plot_df["cumulative_perf_case_x_ipo_float"], marker="o", linewidth=2.2, label="performance trigger")

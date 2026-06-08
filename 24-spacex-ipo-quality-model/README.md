@@ -96,35 +96,35 @@ These are **eligibility and supply-overhang ratios**, not sale forecasts. They d
 
 ### First-Six-Month Scenario Bridge
 
-The performance trigger changes **timing**, not the rough day-180 supply endpoint. If SpaceX trades at least 30% above the IPO price for 5 of 10 trading days around the Q2 earnings window, 455.8m shares come out earlier and the day-180 cleanup is smaller. If not, the day-180 release is larger.
+The performance trigger changes **timing**, not the rough day-180 supply endpoint. If SpaceX trades at least 30% above the IPO price for 5 of 10 trading days around the Q2 earnings window, 455.8m shares come out earlier and the day-180 cleanup is smaller. If not, the day-180 release is larger. Model dates below assume a **2026-06-11** prospectus date; earnings-release events remain **TBD** and are shown by expected month, not fake day precision.
 
-| Event | Timing | Shares released | % of base IPO float | Condition |
-|---|---|---:|---:|---|
-| IPO float | At offering | 555.6m | 100.0% | Freely tradable unless held by affiliates. |
-| First earnings release unlock | Q2 2026 earnings window | 911.5m | 164.1% | 20% of 180-day pool, non-affiliates. |
-| Performance early release | Q2 2026 earnings window | 455.8m | 82.0% | If stock is at least 30% above IPO price for 5 of 10 trading days. |
-| Day 70 | Model date 2026-08-20 | 319.0m | 57.4% | Non-affiliate pool release. |
-| Day 90 | Model date 2026-09-09 | 319.0m | 57.4% | Non-affiliate pool release. |
-| Day 91 affiliate catch-up | Model date 2026-09-10 | 59.1m | 10.6% | Affiliate catch-up after Rule 144 timing. |
-| Day 105 | Model date 2026-09-24 | 328.4m | 59.1% | 180-day pool release. |
-| Day 120 | Model date 2026-10-09 | 328.4m | 59.1% | 180-day pool release. |
-| Day 135 | Model date 2026-10-24 | 328.4m | 59.1% | 180-day pool release. |
-| Q3 2026 earnings unlock | Likely Nov 2026 | 1,300.0m | 234.0% | 28% of 180-day pool. |
-| Day 180 | Model date 2026-12-08 | 328.4m or 797.6m | 59.1% or 143.6% | Lower if performance early release happened; higher if it did not. |
+| Event | Date | Timing | Shares released | % of base IPO float | Condition |
+|---|---|---|---:|---:|---|
+| IPO float | 2026-06-11 | At offering | 555.6m | 100.0% | Freely tradable unless held by affiliates. |
+| First earnings release unlock | TBD - likely Aug 2026 | Q2 2026 earnings window | 911.5m | 164.1% | 20% of 180-day pool, non-affiliates. |
+| Performance early release | TBD - likely Aug 2026 | Q2 2026 earnings window | 455.8m | 82.0% | If stock is at least 30% above IPO price for 5 of 10 trading days. |
+| Day 70 | 2026-08-20 | 70th day after prospectus | 319.0m | 57.4% | Non-affiliate pool release. |
+| Day 90 | 2026-09-09 | 90th day after prospectus | 319.0m | 57.4% | Non-affiliate pool release. |
+| Day 91 affiliate catch-up | 2026-09-10 | 91st day after prospectus | 59.1m | 10.6% | Affiliate catch-up after Rule 144 timing. |
+| Day 105 | 2026-09-24 | 105th day after prospectus | 328.4m | 59.1% | 180-day pool release. |
+| Day 120 | 2026-10-09 | 120th day after prospectus | 328.4m | 59.1% | 180-day pool release. |
+| Day 135 | 2026-10-24 | 135th day after prospectus | 328.4m | 59.1% | 180-day pool release. |
+| Q3 2026 earnings unlock | TBD - likely Nov 2026 | Q3 2026 earnings window | 1,300.0m | 234.0% | 28% of 180-day pool. |
+| Day 180 | 2026-12-08 | 180th day after prospectus | 328.4m or 797.6m | 59.1% or 143.6% | Lower if performance early release happened; higher if it did not. |
 
-| Milestone | Cumulative if performance trigger hits | % basic shares | Cumulative if no performance trigger | % basic shares |
-|---|---:|---:|---:|---:|
-| IPO float | 555.6m / 1.00x | 4.2% | 555.6m / 1.00x | 4.2% |
-| Q2 earnings unlock | 1,467.1m / 2.64x | 11.2% | 1,467.1m / 2.64x | 11.2% |
-| Performance early release | 1,922.9m / 3.46x | 14.7% | 1,467.1m / 2.64x | 11.2% |
-| Day 70 | 2,241.9m / 4.04x | 17.1% | 1,786.1m / 3.21x | 13.7% |
-| Day 90 | 2,560.9m / 4.61x | 19.6% | 2,105.1m / 3.79x | 16.1% |
-| Day 91 affiliate catch-up | 2,620.0m / 4.72x | 20.0% | 2,164.2m / 3.90x | 16.6% |
-| Day 105 | 2,948.4m / 5.31x | 22.5% | 2,492.6m / 4.49x | 19.1% |
-| Day 120 | 3,276.8m / 5.90x | 25.1% | 2,821.0m / 5.08x | 21.6% |
-| Day 135 | 3,605.2m / 6.49x | 27.6% | 3,149.4m / 5.67x | 24.1% |
-| Q3 earnings unlock | 4,905.2m / 8.83x | 37.5% | 4,449.4m / 8.01x | 34.0% |
-| Day 180 final release | 5,233.6m / 9.42x | 40.0% | 5,247.0m / 9.44x | 40.1% |
+| Milestone date | Milestone | Cumulative if performance trigger hits | % basic shares | Cumulative if no performance trigger | % basic shares |
+|---|---|---:|---:|---:|---:|
+| 2026-06-11 | IPO float | 555.6m / 1.00x | 4.2% | 555.6m / 1.00x | 4.2% |
+| TBD - likely Aug 2026 | Q2 earnings unlock | 1,467.1m / 2.64x | 11.2% | 1,467.1m / 2.64x | 11.2% |
+| TBD - likely Aug 2026 | Performance early release | 1,922.9m / 3.46x | 14.7% | 1,467.1m / 2.64x | 11.2% |
+| 2026-08-20 | Day 70 | 2,241.9m / 4.04x | 17.1% | 1,786.1m / 3.21x | 13.7% |
+| 2026-09-09 | Day 90 | 2,560.9m / 4.61x | 19.6% | 2,105.1m / 3.79x | 16.1% |
+| 2026-09-10 | Day 91 affiliate catch-up | 2,620.0m / 4.72x | 20.0% | 2,164.2m / 3.90x | 16.6% |
+| 2026-09-24 | Day 105 | 2,948.4m / 5.31x | 22.5% | 2,492.6m / 4.49x | 19.1% |
+| 2026-10-09 | Day 120 | 3,276.8m / 5.90x | 25.1% | 2,821.0m / 5.08x | 21.6% |
+| 2026-10-24 | Day 135 | 3,605.2m / 6.49x | 27.6% | 3,149.4m / 5.67x | 24.1% |
+| TBD - likely Nov 2026 | Q3 earnings unlock | 4,905.2m / 8.83x | 37.5% | 4,449.4m / 8.01x | 34.0% |
+| 2026-12-08 | Day 180 final release | 5,233.6m / 9.42x | 40.0% | 5,247.0m / 9.44x | 40.1% |
 
 The key read: **by day 180 the scarcity trade is mostly gone in either scenario.** The performance trigger just pulls some supply forward. Elon Musk's separate long-tail overhang is about **6.4 billion** shares, locked for **366 days** with no early release.
 

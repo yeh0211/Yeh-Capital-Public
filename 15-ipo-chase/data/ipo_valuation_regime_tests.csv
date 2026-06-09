@@ -1,0 +1,11 @@
+test,description,sample_n,stat_value,interpretation,test_basis
+spearman_ipo_count_vs_cape,IPO count rank correlation with CAPE,66,0.077,Correlation near zero means IPO count alone is not a reliable valuation-greed gauge.,"Descriptive, full-sample valuation relation."
+spearman_ipo_count_vs_forward_pe,IPO count rank correlation with forward P/E,36,0.295,Correlation near zero means IPO count alone is not a reliable valuation-greed gauge.,"Descriptive, full-sample valuation relation."
+spearman_ipo_count_vs_shiller_trailing_pe,IPO count rank correlation with trailing P/E,66,0.096,Correlation near zero means IPO count alone is not a reliable valuation-greed gauge.,"Descriptive, full-sample valuation relation."
+high_ipo_years,"Years in top quartile of IPO count, 1960-2025",17,17.0,The high-IPO-count sample is large enough to inspect across regimes.,Full-sample descriptive quartile.
+high_ipo_and_high_cape_overlap,Top-quartile IPO count years that also had top-quartile CAPE,17,3.0,"Only 3 of 17 high-IPO-count years were also high-CAPE years: 1997, 1999 and 2000.",Full-sample descriptive quartile.
+high_ipo_not_high_cape,Top-quartile IPO count years without top-quartile CAPE,17,14.0,Most high-count IPO years did not occur at extreme broad-market valuation.,Full-sample descriptive quartile.
+high_cape_not_high_ipo,Top-quartile CAPE years without top-quartile IPO count,16,13.0,High valuation can persist even when operating-company IPO counts are low.,Full-sample descriptive quartile.
+forward_1y_after_high_ipo_expanding,Mean S&P 500 forward 1y return after point-in-time high IPO-count years minus other years,66,-2.13,Uses expanding IPO-count percentiles to avoid lookahead; not a mechanical sell rule.,"Forward-return context, not trading model."
+forward_3y_after_high_ipo_expanding,Mean S&P 500 forward 3y return after point-in-time high IPO-count years minus other years,64,8.24,Uses expanding IPO-count percentiles to avoid lookahead; not a mechanical sell rule.,"Forward-return context, not trading model."
+forward_5y_after_high_ipo_expanding,Mean S&P 500 forward 5y return after point-in-time high IPO-count years minus other years,62,5.98,Uses expanding IPO-count percentiles to avoid lookahead; not a mechanical sell rule.,"Forward-return context, not trading model."

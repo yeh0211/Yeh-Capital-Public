@@ -6,3 +6,9 @@ YehCapital study 24,../24-spacex-ipo-quality-model/,"SpaceX IPO mechanics, lock-
 SEC EDGAR,https://www.sec.gov/,"Prospectuses and FWPs for offering mechanics, lock-ups, holders and underwriters."
 Nasdaq-100 methodology,https://indexes.nasdaq.com/docs/Methodology_NDX.pdf,Fast-entry and low-float index weighting rules.
 Tesla 10-Q,https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm,Tesla's March 2026 SpaceX common-stock investment and related-party Megapack transactions.
+RIA / Real Investment Advice,https://realinvestmentadvice.com/resources/blog/equity-supply-surge-what-historically-comes-next/,"Hypothesis source for equity supply waves, lock-up overhang and S&P 500 drawdown case studies."
+Jay Ritter IPO Statistics,https://site.warrington.ufl.edu/ritter/files/IPO-Statistics.pdf,"Long-history IPO counts, first-day returns and gross proceeds from Table 8, 1960-2025."
+Robert Shiller / multpl CAPE table,https://www.multpl.com/shiller-pe/table/by-year,Annual CAPE valuation proxy; used because Yale Shiller endpoint was unavailable during build.
+History of Market forward P/E,https://historyofmarket.com/api/sp500/forward-pe.json,"Public forward P/E appendix, quarter-end observations back to 1990."
+Baker and Wurgler 2000,https://onlinelibrary.wiley.com/doi/10.1111/0022-1082.00285,Academic benchmark: equity share in new issues predicts aggregate stock returns in 1928-1997 data.
+SEC IPO statistics,https://www.sec.gov/data-research/statistics-data-visualizations/initial-public-offerings-ipos,2000-2025 IPO count and proceeds cross-check with broader SEC issuer categories.

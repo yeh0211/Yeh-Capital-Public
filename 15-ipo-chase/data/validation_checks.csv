@@ -3,5 +3,11 @@ no_lookahead,True,Prediction features exclude six-month returns and post-IPO 13F
 study15_tables_merged,True,Study 15 horizon and sector base-rate tables are generated inside the six-month model.
 study15_broad_180d_reconciles,True,Study 15 180-day excess prior reconciles to the merged base-rate table.
 study15_baseline,True,Base six-month prior set to -14.7% after applying the institutional comp filter to study 15's -15.4% broad prior.
+ipo_valuation_sample_1960_2025,True,Ritter IPO valuation-regime table covers 1960-2025 complete IPO years.
+forward_pe_appendix_1990_present,True,Forward P/E appendix covers 1990 through the live 2026 valuation-only row.
+dotcom_drawdown_reconciles,True,Dot-com peak/trough drawdown is independently reconstructed near RIA's roughly -49% figure.
+gfc_drawdown_reconciles,True,GFC peak/trough drawdown is independently reconstructed near -57%.
+spac_2022_drawdown_reconciles,True,2022 peak/trough drawdown is independently reconstructed near -25%.
+scenario_2026_not_actual,True,"2026 mega-IPO wave is marked as a scenario, not a completed drawdown."
 space_x_row_present,True,SpaceX prediction row exists.
 requested_tabs_present,True,All requested CSV/workbook tabs are generated.

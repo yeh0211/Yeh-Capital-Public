@@ -1,4 +1,4 @@
-# 25 - Bending Spoons ($BSP): IPO due diligence memo
+# 25 - Bending Spoons ($BSP): IPO Due Diligence Memo
 
 **Question.** Is Bending Spoons a differentiated permanent owner/operator of digital products, or a private-equity-like software roll-up whose reported growth depends on acquisition pace, debt, restructuring, and pricing power?
 

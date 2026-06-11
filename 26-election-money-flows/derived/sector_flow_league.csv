@@ -1,0 +1,86 @@
+cohort,sector,median_post13w,hit_rate_pos,n
+all_presidential,Aerospace & defense,-1.4,0.4,5
+all_presidential,Biotech,-1.8,0.5,6
+all_presidential,Consumer discretionary,3.2,0.67,6
+all_presidential,Consumer staples,-2.7,0.33,6
+all_presidential,Energy,6.5,1.0,6
+all_presidential,Financials,9.2,1.0,6
+all_presidential,Healthcare,-1.4,0.33,6
+all_presidential,Industrials,9.2,0.83,6
+all_presidential,Materials,6.5,0.67,6
+all_presidential,Medical devices,-1.8,0.4,5
+all_presidential,Real estate,18.1,0.83,6
+all_presidential,Semiconductors,1.7,0.5,6
+all_presidential,Software,-3.0,0.33,6
+all_presidential,Tech-Media-Telecom,1.2,0.67,6
+all_presidential,Technology,1.9,0.67,6
+all_presidential,Telecom,2.8,0.67,6
+all_presidential,Utilities,-4.2,0.33,6
+R_wins,Aerospace & defense,33.3,1.0,2
+R_wins,Biotech,-4.3,0.33,3
+R_wins,Consumer discretionary,21.8,0.67,3
+R_wins,Consumer staples,-4.2,0.33,3
+R_wins,Energy,1.0,1.0,3
+R_wins,Financials,9.0,1.0,3
+R_wins,Healthcare,-2.3,0.33,3
+R_wins,Industrials,0.8,1.0,3
+R_wins,Materials,8.2,0.67,3
+R_wins,Medical devices,1.7,0.5,2
+R_wins,Real estate,16.0,0.67,3
+R_wins,Semiconductors,8.0,0.67,3
+R_wins,Software,10.7,0.67,3
+R_wins,Tech-Media-Telecom,2.3,1.0,3
+R_wins,Technology,2.5,1.0,3
+R_wins,Telecom,3.5,1.0,3
+R_wins,Utilities,-8.3,0.0,3
+D_wins,Aerospace & defense,-9.5,0.0,3
+D_wins,Biotech,0.7,0.67,3
+D_wins,Consumer discretionary,0.7,0.67,3
+D_wins,Consumer staples,-1.1,0.33,3
+D_wins,Energy,12.6,1.0,3
+D_wins,Financials,20.9,1.0,3
+D_wins,Healthcare,-0.5,0.33,3
+D_wins,Industrials,17.5,0.67,3
+D_wins,Materials,4.8,0.67,3
+D_wins,Medical devices,-4.9,0.33,3
+D_wins,Real estate,20.3,1.0,3
+D_wins,Semiconductors,-6.4,0.33,3
+D_wins,Software,-3.4,0.0,3
+D_wins,Tech-Media-Telecom,-7.9,0.33,3
+D_wins,Technology,-0.6,0.33,3
+D_wins,Telecom,-0.8,0.33,3
+D_wins,Utilities,7.0,0.67,3
+trump_wins,Aerospace & defense,33.3,1.0,2
+trump_wins,Biotech,-4.9,0.0,2
+trump_wins,Consumer discretionary,14.8,0.5,2
+trump_wins,Consumer staples,-6.7,0.0,2
+trump_wins,Energy,0.7,1.0,2
+trump_wins,Financials,9.2,1.0,2
+trump_wins,Healthcare,-3.2,0.0,2
+trump_wins,Industrials,16.6,1.0,2
+trump_wins,Materials,37.6,0.5,2
+trump_wins,Medical devices,1.7,0.5,2
+trump_wins,Real estate,1.1,0.5,2
+trump_wins,Semiconductors,13.9,0.5,2
+trump_wins,Software,9.2,0.5,2
+trump_wins,Tech-Media-Telecom,1.5,1.0,2
+trump_wins,Technology,1.9,1.0,2
+trump_wins,Telecom,10.6,1.0,2
+trump_wins,Utilities,-8.4,0.0,2
+midterms,Aerospace & defense,16.3,0.6,5
+midterms,Biotech,0.1,0.5,6
+midterms,Consumer discretionary,1.6,0.83,6
+midterms,Consumer staples,-3.8,0.33,6
+midterms,Energy,4.0,0.67,6
+midterms,Financials,2.5,0.67,6
+midterms,Healthcare,-1.9,0.17,6
+midterms,Industrials,11.6,0.67,6
+midterms,Materials,0.3,0.5,6
+midterms,Medical devices,-6.0,0.2,5
+midterms,Real estate,14.1,0.67,6
+midterms,Semiconductors,-2.7,0.5,6
+midterms,Software,3.6,0.83,6
+midterms,Tech-Media-Telecom,2.3,0.5,6
+midterms,Technology,5.1,0.67,6
+midterms,Telecom,-7.7,0.33,6
+midterms,Utilities,1.2,0.67,6

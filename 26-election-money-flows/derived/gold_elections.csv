@@ -1,0 +1,15 @@
+event,party,flip,pre_12m,post_3m,post_6m,post_12m
+1972 Nixon,R,False,32.0,32.0,88.0,67.0
+1976 Carter,D,True,-4.0,10.7,5.1,19.8
+1980 Reagan,R,True,15.5,-7.3,-14.3,-23.8
+1984 Reagan,R,False,-21.5,-1.9,-1.0,0.7
+1988 Bush,R,False,-16.0,-6.9,-12.3,-2.3
+1992 Clinton,D,True,-8.0,-1.4,11.1,14.5
+1996 Clinton,D,False,-5.0,-4.7,-7.7,-21.8
+2000 Bush,R,True,-4.3,-3.1,-0.4,1.6
+2004 Bush,R,False,7.9,-1.9,-2.6,15.4
+2008 Obama,D,True,1.6,13.3,15.9,39.0
+2012 Obama,D,False,2.7,-5.4,-20.3,-27.5
+2016 Trump,R,True,7.1,6.4,8.9,9.3
+2020 Biden,D,True,20.4,-7.5,-1.3,-3.7
+2024 Trump,R,True,23.5,12.7,26.6,62.7

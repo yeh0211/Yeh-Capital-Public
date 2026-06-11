@@ -17,7 +17,7 @@ OUT = DATA_DIR / "prices"
 OUT.mkdir(parents=True, exist_ok=True)
 
 INDICES = {"idx_spx": "^GSPC", "idx_vix": "^VIX", "idx_dxy": "DX-Y.NYB", "idx_tnx": "^TNX",
-           "idx_oil": "CL=F"}
+           "idx_oil": "CL=F", "idx_gold": "GC=F"}
 
 
 def fetch_one(symbol: str) -> pd.DataFrame:

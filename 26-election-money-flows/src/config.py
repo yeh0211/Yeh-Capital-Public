@@ -45,6 +45,14 @@ ETF_PANEL = [
 PANEL_TICKERS = [e["ticker"] for e in ETF_PANEL]
 BUCKETS = {e["ticker"]: e["bucket"] for e in ETF_PANEL}
 
+# US sector panel (all iShares so the fundDownload endpoint covers flows).
+SECTOR_PANEL = {
+    "IYW": "Technology", "IGV": "Software", "SOXX": "Semiconductors", "IGM": "Tech-Media-Telecom",
+    "IYF": "Financials", "IYE": "Energy", "IYH": "Healthcare", "IBB": "Biotech", "IHI": "Medical devices",
+    "IYJ": "Industrials", "ITA": "Aerospace & defense", "IYK": "Consumer staples", "IYC": "Consumer discretionary",
+    "IDU": "Utilities", "IYM": "Materials", "IYZ": "Telecom", "IYR": "Real estate",
+}
+
 # Region groups used by rotation metrics (US vs rest-of-world equity).
 ROW_EQUITY_BUCKETS = {"EM", "China", "Taiwan", "Korea", "Japan", "AsiaExJapan", "India", "Europe"}
 US_EQUITY_BUCKETS = {"US", "US_smallcap"}

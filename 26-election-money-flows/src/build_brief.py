@@ -10,7 +10,7 @@ import shutil
 import pandas as pd
 from jinja2 import Template
 
-from config import DERIVED_DIR, OUTPUT_DIR
+from config import DATA_DIR, DERIVED_DIR, OUTPUT_DIR
 
 BRIEF_DIR = OUTPUT_DIR / "brief"
 BRIEF_DIR.mkdir(parents=True, exist_ok=True)
@@ -59,6 +59,15 @@ TPL = Template("""<!DOCTYPE html>
 <h2>Presidents as volatility regimes</h2>
 <p>Annualized S&P 500 volatility by administration: Clinton {{ vol_clinton }}, Bush 43 {{ vol_bush43 }}, Obama {{ vol_obama }}, Trump I <span class="k">{{ vol_trump1 }}</span>, Biden {{ vol_biden }}, Trump II {{ vol_trump2 }} to date. Trump I ran five points hotter than Biden, but the volatility is episodic, not ambient: it clusters on policy announcement days rather than around the election itself. The 2019 escalation tweet cost {{ tar_2019_5d }} in five sessions; Liberation Day 2025 cost {{ tar_lib_5d }} in five sessions and was followed by the largest one-day gain since 2008 when the pause was announced. Under this kind of administration the tradable unit is the policy headline, and the historical base rate is that tariff-shock drawdowns retraced once de-escalation began ({{ tar_geneva_20d }} in the month after the May 2025 Geneva step-down).</p>
 
+<h2>The century view: 25 elections, 18 presidents</h2>
+<p>Extending returns to every election since 1928: the post-midterm pattern strengthens to {{ deep_mid120 }} median over the next 120 trading days, positive in {{ deep_mid_hits }} midterms since 1930. Party-flip elections resolve uncertainty - realized volatility falls in {{ flip_vol_falls }} flips ({{ flip_vol }} vol points median) - while incumbent holds leave it slightly higher. Across presidents, the best risk-adjusted market of the century belonged to Eisenhower (Sharpe {{ eis_sharpe }} on total returns over T-bills); both Trump terms earn high returns the loud way ({{ t1_ret }} annualized at {{ t1_vol }} volatility - Sharpe {{ t1_sharpe }} for Trump I, {{ t2_sharpe }} for Trump II to date).</p>
+
+<h2>Gold</h2>
+<p>Gold's climb predates the 2024 election: the central-bank accumulation era of 2022-2024 already ran {{ gold_base }} annualized. The vote accelerated it - {{ gold_t2 }} annualized since, against {{ gold_t1 }} across all of Trump I. The dollar correlation is unchanged at roughly -0.4 in every era; what changed under Trump II is the gold-equity correlation turning positive ({{ gold_corr_spx_t2 }}). Gold rising with stocks is an allocation bid, not a fear bid.</p>
+
+<h2>Sectors: the money rotates to defense</h2>
+<p>Within US equities, the post-Trump-win flow league is led by materials and aerospace-defense ({{ def_flow_trump }} of assets median in 13 weeks, positive both times), with utilities, staples, healthcare and biotech in outflows both times. The century agrees: across 25 elections, defense is the most Republican-sensitive industry ({{ guns_r }} median in the 60 trading days after R wins, {{ guns_r_hit }} hit rate, against {{ guns_d }} after D wins), while semiconductors carry the largest Democratic tilt ({{ chips_spread }} points R-minus-D). Around wars the rotation is flows-first: defense funds took in {{ ita_ukraine }} of assets in the quarter after the Ukraine invasion and {{ ita_2016 }} after the 2016 election.</p>
+
 <h2>What history says for November 3, 2026</h2>
 <table>
 <thead><tr><th>Pattern</th><th>Historical median</th><th>Hit rate</th><th>Sample</th></tr></thead>
@@ -74,12 +83,14 @@ TPL = Template("""<!DOCTYPE html>
 </table>
 <p>The 2018 analog deserves respect: the one recent midterm whose aftermath broke down (December 2018, minus sixteen percent) did so on Federal Reserve tightening, not the election. The pattern is conditional on the macro regime staying out of the way.</p>
 
-<div class="limits">Limits. Nine presidential and eight midterm observations; medians and sign counts, not statistics. Fund-flow panel covers U.S.-listed ETFs (predominantly U.S.-domiciled money) from 2000-2004 onward; pre-2000 statements rest on index prices and volatility only. The 2020 post-election window contains the vaccine announcement; the 2008 window contains the financial crisis; the post-Soleimani window contains COVID. These are patterns, not predictions.</div>
+<div class="limits">Limits. Flow claims rest on nine presidential and eight midterm elections; return claims extend to 25 presidential and 24 midterm elections since 1928; gold is monthly from 1971 and daily from 2000; sector flows start 2000. Medians and sign counts, not statistics. Fund-flow panel covers U.S.-listed ETFs (predominantly U.S.-domiciled money) from 2000-2004 onward; pre-2000 statements rest on index prices and volatility only. The 2020 post-election window contains the vaccine announcement; the 2008 window contains the financial crisis; the post-Soleimani window contains COVID. These are patterns, not predictions.</div>
 </body></html>
 """)
 
 
-def main():
+def context() -> dict:
+    """All numbers for the brief, pulled live from derived/ (shared by the
+    HTML renderer here and the markdown renderer in build_brief_md.py)."""
     coh = pd.read_csv(DERIVED_DIR / "cohort_summary.csv")
     flows = pd.read_parquet(DERIVED_DIR / "flows_caf_paths.parquet")
     ret = pd.read_parquet(DERIVED_DIR / "returns_paths.parquet")
@@ -121,8 +132,52 @@ def main():
         s = sub.set_index("rel_day")["value"]
         return float(s.loc[day]) if day in s.index else float("nan")
 
-    html = TPL.render(
-        css=CSS,
+    # phase 2: deep sample, gold, sectors
+    deep_coh = pd.read_csv(DERIVED_DIR / "deep_cohort_summary.csv")
+
+    def dc(cohort, metric, field):
+        r = deep_coh[(deep_coh.cohort == cohort) & (deep_coh.metric == metric)]
+        return float(r.iloc[0][field]) if len(r) else float("nan")
+
+    pres_reg = pd.read_csv(DERIVED_DIR / "president_regimes.csv").set_index("president")
+    gold_corr = pd.read_csv(DERIVED_DIR / "gold_correlations.csv").set_index("era")
+    league = pd.read_csv(DERIVED_DIR / "sector_flow_league.csv")
+    matrix = pd.read_csv(DERIVED_DIR / "industry_party_matrix.csv").set_index("industry")
+    tdef = pd.read_csv(DERIVED_DIR / "tech_defense.csv").set_index("event")
+    gd = pd.read_parquet(DATA_DIR / "prices" / "idx_gold.parquet")["close"].dropna()
+
+    def gann(a, b):
+        seg = gd.loc[a:b]
+        return ((seg.iloc[-1] / seg.iloc[0]) ** (252 / len(seg)) - 1) * 100
+
+    mid_n = int(dc("all_midterm", "post120", "n"))
+    flip_n = int(dc("pres_flip", "rv_change_20d", "n"))
+    extra = dict(
+        deep_mid120=pct(dc("all_midterm", "post120", "median")),
+        deep_mid_hits=f"{int(round(dc('all_midterm', 'post120', 'hit_rate_pos') * mid_n))} of {mid_n}",
+        flip_vol=f"{dc('pres_flip', 'rv_change_20d', 'median'):+.1f}",
+        flip_vol_falls=f"{int(round((1 - dc('pres_flip', 'rv_change_20d', 'hit_rate_pos')) * flip_n))} of {flip_n}",
+        eis_sharpe=f"{pres_reg.loc['Eisenhower', 'sharpe']:.2f}",
+        t1_sharpe=f"{pres_reg.loc['Trump I', 'sharpe']:.2f}",
+        t2_sharpe=f"{pres_reg.loc['Trump II', 'sharpe']:.2f}",
+        t1_ret=f"{pres_reg.loc['Trump I', 'ann_return_pct']:.0f}%",
+        t1_vol=f"{pres_reg.loc['Trump I', 'ann_vol_pct']:.0f}%",
+        gold_t1=pct(gann("2017-01-20", "2021-01-19")),
+        gold_base=pct(gann("2022-01-01", "2024-10-31")),
+        gold_t2=pct(gann("2024-11-05", None)),
+        gold_corr_spx_t2=f"{gold_corr.loc['Trump II', 'corr_spx']:+.2f}",
+        def_flow_trump=pct(league[(league.cohort == "trump_wins") &
+                                  (league.sector == "Aerospace & defense")]["median_post13w"].iloc[0]),
+        guns_r=pct(matrix.loc["Guns", "r_win_post60"]),
+        guns_r_hit=f"{matrix.loc['Guns', 'r_hit'] * 100:.0f}%",
+        guns_d=pct(matrix.loc["Guns", "d_win_post60"]),
+        chips_spread=f"{matrix.loc['Chips', 'r_minus_d']:+.1f}",
+        ita_ukraine=pct(tdef.loc["Russia invades Ukraine", "defense_flow_13w"]),
+        ita_2016=pct(tdef.loc["2016 election", "defense_flow_13w"]),
+    )
+
+    return dict(
+        **extra,
         vix_m60=f"{vmed.loc[-60]:.0f}", vix_m20=f"{vmed.loc[-20]:.0f}", vix_m1=f"{vmed.loc[-1]:.0f}",
         vix_p1=f"{vmed.loc[1]:.0f}", vix_p5=f"{vmed.loc[5]:.0f}",
         cash_pre13=pct(c("pres_all", "flow_Cash", "pre13")),
@@ -157,6 +212,10 @@ def main():
         tar_lib_5d=pct(tar_at("2025-04-02", 5)),
         tar_geneva_20d=pct(tar_at("2025-05-12", 20)),
     )
+
+
+def main():
+    html = TPL.render(css=CSS, **context())
     (BRIEF_DIR / "index.html").write_text(html)
     for fig in ["cohort_pres_all", "cohort_pres_trump", "cycle_seasonal", "wars_summary"]:
         src = OUTPUT_DIR / "figures" / f"{fig}.png"

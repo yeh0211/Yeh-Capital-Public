@@ -34,6 +34,18 @@ Across seventeen U.S.-relevant military events since 2001, the old pattern holds
 
 Annualized S&P 500 volatility by administration: Clinton 16%, Bush 43 22%, Obama 17%, Trump I **21%**, Biden 17%, Trump II 17% to date. Trump I ran five points hotter than Biden, but the volatility is episodic, not ambient: it clusters on policy announcement days rather than around the election itself. The 2019 escalation tweet cost -4.2% in five sessions; Liberation Day 2025 cost -3.8% in five sessions and was followed by the largest one-day gain since 2008 when the pause was announced. Under this kind of administration the tradable unit is the policy headline, and the historical base rate is that tariff-shock drawdowns retraced once de-escalation began (+3.3% in the month after the May 2025 Geneva step-down).
 
+## The century view: 25 elections, 18 presidents
+
+Extending returns to every election since 1928: the post-midterm pattern strengthens to +11.1% median over the next 120 trading days, positive in 22 of 24 midterms since 1930. Party-flip elections resolve uncertainty - realized volatility falls in 10 of 12 flips (-2.8 vol points median) - while incumbent holds leave it slightly higher. Across presidents, the best risk-adjusted market of the century belonged to Eisenhower (Sharpe 1.29 on total returns over T-bills); both Trump terms earn high returns the loud way (18% annualized at 21% volatility - Sharpe 0.83 for Trump I, 0.67 for Trump II to date).
+
+## Gold
+
+Gold's climb predates the 2024 election: the central-bank accumulation era of 2022-2024 already ran +16.0% annualized. The vote accelerated it - +29.0% annualized since, against +11.2% across all of Trump I. The dollar correlation is unchanged at roughly -0.4 in every era; what changed under Trump II is the gold-equity correlation turning positive (+0.11). Gold rising with stocks is an allocation bid, not a fear bid.
+
+## Sectors: the money rotates to defense
+
+Within US equities, the post-Trump-win flow league is led by materials and aerospace-defense (+33.3% of assets median in 13 weeks, positive both times), with utilities, staples, healthcare and biotech in outflows both times. The century agrees: across 25 elections, defense is the most Republican-sensitive industry (+4.2% median in the 60 trading days after R wins, 89% hit rate, against -3.4% after D wins), while semiconductors carry the largest Democratic tilt (-7.2 points R-minus-D). Around wars the rotation is flows-first: defense funds took in +40.8% of assets in the quarter after the Ukraine invasion and +64.6% after the 2016 election.
+
 ## What history says for November 3, 2026
 
 | Pattern | Historical median | Hit rate | Sample |
@@ -50,4 +62,4 @@ The 2018 analog deserves respect: the one recent midterm whose aftermath broke d
 
 ---
 
-*Limits. Nine presidential and eight midterm observations; medians and sign counts, not statistics. Fund-flow panel covers U.S.-listed ETFs (predominantly U.S.-domiciled money) from 2000-2004 onward; pre-2000 statements rest on index prices and volatility only. The 2020 post-election window contains the vaccine announcement; the 2008 window contains the financial crisis; the post-Soleimani window contains COVID. These are patterns, not predictions.*
+*Limits. Flow claims rest on nine presidential and eight midterm elections; return claims extend to 25 presidential and 24 midterm elections since 1928; gold is monthly from 1971 and daily from 2000; sector flows start 2000. Medians and sign counts, not statistics. Fund-flow panel covers U.S.-listed ETFs (predominantly U.S.-domiciled money) from 2000-2004 onward; pre-2000 statements rest on index prices and volatility only. The 2020 post-election window contains the vaccine announcement; the 2008 window contains the financial crisis; the post-Soleimani window contains COVID. These are patterns, not predictions.*

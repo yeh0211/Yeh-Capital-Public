@@ -86,8 +86,8 @@ The honest footnote: 2018 is the analog that bit — the one post-midterm window
 
 ## What's here
 
-- [`brief/index.html`](brief/index.html) — the one-page synthesis note.
-- [`dossiers/index.html`](dossiers/index.html) — 52 per-event pages: every election, midterm, war and tariff shock, each with returns/rotation/flows/VIX panels and a stats table.
+- [`brief/`](brief/) — the one-page synthesis note.
+- [`dossiers/`](dossiers/) — 52 per-event pages: every election, midterm, war and tariff shock, each with returns/rotation/flows/VIX panels and a stats table.
 - `src/` — the full pipeline (fetchers for the iShares endpoint, Yahoo, CBOE, EPU, GPR; the event-study engine; figure/dossier/brief builders). `python src/fetch_ishares.py && python src/fetch_prices.py && python src/fetch_macro.py` rebuilds `data/`, then `run_analysis.py`, `build_dossiers.py`, `build_wars_module.py`, `build_brief.py`. Dependencies: pandas, pyarrow, requests, yfinance, matplotlib, jinja2, xlrd.
 - `derived/` — all computed datasets (event paths, cohort stats, the war-puzzle table, per-administration regimes, cycle seasonality), so every number above is reproducible without re-downloading anything.
 - [`lit_map.md`](lit_map.md) — the annotated academic literature this sits on (the presidential puzzle, political-uncertainty pricing, the midterm effect, the war puzzle, partisan rebalancing), and where this study's gap is: free, country-level ETF-flow event studies around U.S. elections did not exist in the public literature.

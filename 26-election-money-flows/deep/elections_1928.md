@@ -1,5 +1,11 @@
 # Every election since 1928: the deep sample
 
+## Conclusions
+
+- Midterms are the strong pattern: median +11.1% over the 120 trading days after, positive in 22 of 24 since 1930. Presidential elections are much weaker (+1.9% median, 64% positive).
+- Party-flip elections resolve uncertainty: realized volatility falls in 10 of 12 flips (-2.8 vol points median); incumbent holds leave it slightly higher.
+- The 1948 Truman surprise behaves as the one documented pre-1992 shock: equities fell about 5% in the month after.
+
 *S&P 500 price index around 25 presidential elections and 24 midterms; realized volatility (21-day, annualized) as the century-long volatility measure. All paths normalized to 0 at election day.*
 
 ![](../figures/deep_elections_overlay.png)

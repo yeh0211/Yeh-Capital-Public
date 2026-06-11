@@ -1,5 +1,11 @@
 # Sector rotation: where the money goes inside America
 
+## Conclusions
+
+- The tech-to-defense rotation is real and repeated. After Trump wins, the sector flow league is led by materials and aerospace-defense (+33.3% of AUM median in 13 weeks, positive both times) while utilities, staples, healthcare and biotech see outflows both times.
+- Over a century (25 elections), defense is the single most Republican-sensitive industry: +4.2% median in the 60 trading days after R wins (89% hit rate) vs -3.4% after D wins. Semiconductors are the most Democratic-tilted (-7.2 points R-minus-D).
+- Around wars the rotation is flows-first: defense funds took +40.8% of AUM in the quarter after the Ukraine invasion (tech funds bled) and +64.6% after the 2016 election.
+
 *Two layers: creation/redemption flows for 17 iShares sector funds (2000-), and the French 49 value-weighted industries (1926-) for returns around all 25 elections and every major war since 1939.*
 
 ![](../figures/sector_flows_elections.png)

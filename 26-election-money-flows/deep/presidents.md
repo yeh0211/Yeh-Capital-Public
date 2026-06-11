@@ -1,5 +1,12 @@
 # The market under every president, 1926-2026
 
+## Conclusions
+
+- Best risk-adjusted market of any completed term: Eisenhower (Sharpe 1.29, 15.6%/yr at 10.1% volatility).
+- Both Trump terms earn high returns the loud way: Trump I 18.0%/yr at 20.7% volatility (Sharpe 0.83); Trump II similar shape to date.
+- The negative-Sharpe terms - Bush 43, Nixon, Hoover - map to eras (Depression, stagflation, dot-com + GFC), not to a party effect.
+- Dividends matter: on price-only data the pre-1960 presidents look far worse than they were. This table uses total returns.
+
 *Total-return market series (dividends included) in excess of T-bills; every president of the daily-data era, normalized to 100 at inauguration so terms of any length compare. Sharpe = annualized excess return / annualized volatility.*
 
 ![](../figures/president_sharpe.png)
@@ -17,9 +24,9 @@
 | Johnson | D | 1963-11-22 - 1969-01-20 | 5.0 | 81.4 | 12.5 | 8.8 | 0.91 | -20.3 | -2.9 | 1272 |  |
 | Trump I | R | 2017-01-20 - 2021-01-20 | 4.0 | 93.5 | 18.0 | 20.7 | 0.83 | -34.2 | -12.0 | 1007 |  |
 | Clinton | D | 1993-01-20 - 2001-01-20 | 8.0 | 236.0 | 16.3 | 15.6 | 0.75 | -21.9 | -6.7 | 2021 |  |
+| Trump II | R | 2025-01-20 - present | 1.4 | 24.9 | 17.5 | 18.0 | 0.74 | -19.6 | -5.9 | 348 | term in progress |
 | Ford | R | 1974-08-09 - 1977-01-20 | 2.5 | 46.5 | 16.8 | 15.6 | 0.72 | -22.0 | -3.5 | 620 |  |
 | Bush 41 | R | 1989-01-20 - 1993-01-20 | 4.0 | 72.5 | 14.5 | 12.3 | 0.69 | -20.8 | -5.5 | 1012 |  |
-| Trump II | R | 2025-01-20 - present | 1.4 | 22.9 | 16.0 | 18.0 | 0.67 | -19.6 | -5.9 | 349 | term in progress |
 | Roosevelt | D | 1933-03-04 - 1945-04-12 | 14.4 | 379.4 | 11.5 | 20.0 | 0.64 | -51.0 | -9.2 | 3626 |  |
 | Biden | D | 2021-01-20 - 2025-01-20 | 4.0 | 57.0 | 12.0 | 17.3 | 0.57 | -25.6 | -4.3 | 1005 |  |
 | Kennedy | D | 1961-01-20 - 1963-11-22 | 2.8 | 24.3 | 8.0 | 11.6 | 0.5 | -27.7 | -7.0 | 716 |  |

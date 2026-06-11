@@ -1,5 +1,11 @@
 # Gold: elections, presidents, and the Trump question
 
+## Conclusions
+
+- The gold rise predates Trump II but accelerated after the vote: +16.0%/yr in the 2022-24 central-bank era, +29.0%/yr since the 2024 election. Under all of Trump I it was just +11.2%/yr - so this is an acceleration on a structural trend, not a pure Trump effect.
+- What changed under Trump II is not the dollar link (correlation ~-0.4 in every era) but the gold-equity correlation turning positive (+0.11): gold is rising WITH stocks - an allocation bid, not a fear bid.
+- Across the float era, gold regimes are era-driven, not party-driven: Carter +43%/yr, Reagan -3%/yr, Trump II +30%/yr to date.
+
 *Monthly gold from the 1971 float; daily futures from 2000; gold-ETF (IAU) creation/redemption flows from 2005. The question: is the recent rise a Trump effect or a structural one?*
 
 ![](../figures/gold_admin.png)

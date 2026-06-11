@@ -1,159 +1,367 @@
-# Literature map — money flows around U.S. elections and wars
+# What the research says - and what we add
 
-Compiled 2026-06-10 from a fan-out web sweep (SSRN / NBER / journal pages / IMF / Fed sources).
-Purpose: establish what is already known per research question, and what gap this project fills.
-Format per entry: venue/year — question — data/method — core finding — relevance.
+Compiled from 35 verified anchor papers plus a reference-mining pass over their
+bibliographies (every entry below was located and read by a checking agent;
+links are the pages actually loaded). Conclusions first.
 
----
+## Conclusions
 
-## A. Elections, returns, and uncertainty (well-trodden)
+1. **The pre-election de-risking is real, global, and shows up inside companies too.** Stocks earn a positive run-up into election weeks as uncertainty resolves across 33 countries (Pantzalis-Stangeland-Turtle 2000); options spanning elections cost more (Kelly-Pastor-Veronesi 2016); and firms themselves cut investment ~4.8% and hoard cash in election years, resuming after (Julio-Yook 2012), with cross-border corporate flows pausing ~12-13% the quarter before a destination-country election (Julio-Yook 2016). Our fund-flow result - cash builds before the vote, equity funds take +6.5% of assets in the 13 weeks after - is the household/ETF version of the same cycle.
+2. **Returns are higher under Democrats, but not because Democrats run the market better.** The raw gap is the famous presidential puzzle (Santa-Clara-Valkanov 2003). The best-supported explanations: voters elect Democrats when risk premia are already high (Pastor-Veronesi 2020); risk loadings differ across cycles (Sy-Al Zaman 2011); the macro gap is mostly luck and shocks (Blinder-Watson 2016); and on some specifications the partisan link disappears entirely (Jones-Banning 2009). Read our president Sharpe table as era regimes, not party skill.
+3. **The partisan return effect is mostly a small-cap effect.** Small caps earned 20+ points per year more under Democrats while large-cap differences are statistically nothing (Hensel-Ziemba 1995; Chittenden-Jensen-Johnson 1999). Index-level party claims are weaker than they look.
+4. **Elections reprice sectors more reliably than the market.** Government-exposed industries earn about +6%/yr under Democrats and -5%/yr under Republicans (Belo-Gala-Li 2013); platform-sensitive stocks moved with Bush/Gore odds in 2000 (Knight 2006); a surprise shift of Senate control repriced politically connected firms within a week (Jayachandran 2006, the Jeffords effect); and the 2016 winners/losers sorted on taxes and trade exposure (Wagner-Zeckhauser-Ziegler 2018). This is the academic version of our century matrix - defense most R-sensitive, semiconductors most D-tilted. One published caution: industry-level political cycles are fragile out of sample (Stangl-Jacobsen 2007), so treat the matrix as descriptive, not a trading rule.
+5. **The midterm/cycle pattern has been documented for forty years.** Second-half-of-term returns beat first-half (Huang 1985); the four-year cycle peaks around presidential-election Novembers (Herbst-Slinkman 1984); midterms carry a premium that matters more than presidential years (Chan-Marsh 2021), partly as risk compensation (their 2023 follow-up). Our 22-of-24 post-midterm hit rate since 1930 is the deep-sample confirmation.
+6. **Wars: priced in the buildup, relief at the outbreak - for a century.** War probability falling on markets before the shooting (Rigobon-Sack 2005; Amihud-Wohl 2004; Leigh-Wolfers-Zitzewitz 2003), outbreak relief (Brune et al's war puzzle), LOWER realized equity volatility during wartime (Cortes-Vossmeyer-Weidenmier), and selective war pricing back to the 1930s-40s in bond markets (Frey-Kucher 2000) and German equities (Bittlingmayer 1998). Our 11-of-17 war-puzzle consistency sits squarely on this line.
+7. **Gold is a hedge on average, a safe haven only briefly, and currently in an allocation regime.** Gold hedges stocks on average and protects only in short crisis windows (Baur-Lucey 2010); high real gold prices have historically mean-reverted (Erb-Harvey 2013's golden dilemma - a caution against extrapolating +29%/yr). Our finding - post-2024 acceleration above the central-bank-era baseline with the gold-equity correlation turning positive - is neither classic hedge nor haven behavior; it is an allocation bid.
+8. **Tariff announcements are the repricing events of Trump-type administrations.** The 2018-19 tariffs cost US consumers/importers with near-complete pass-through (Fajgelbaum et al 2020) and erased ~$4T of equity value across eleven announcement days (Amiti-Gomez-Kong-Weinstein); the 2025 Liberation Day reaction was not proportional to assigned tariff rates and hit the US itself (SEF 2026). Matches our finding that volatility clusters on policy days, not election days.
+9. **Prediction-market odds are the right surprise measure - and markets can be wrong about direction.** US election betting markets are deep and informative back to 1880 (Rhode-Strumpf 2004; Snowberg-Wolfers-Zitzewitz 2007). In 2016 markets priced a Trump win as a 10-15% equity DROP (Wolfers-Zitzewitz 2016) - the market rallied instead. Classify elections by how priced they were, then treat the direction as an empirical question.
+10. **The gap our study fills is unchanged - and now better bounded.** The academic record covers returns, volatility, corporate investment, and macro outcomes around elections. Country-level and sector-level FUND FLOWS around US elections (who actually moves money, where) remain practitioner territory; our free, reproducible creation/redemption panel is the contribution. The closest academic neighbors are Julio-Yook (corporate flows) and the IMF's 2025 EM election study (aggregate inflows).
 
-1. **Santa-Clara & Valkanov 2003, J. Finance — "The Presidential Puzzle"**
-   CRSP 1927-1998. Value-weighted excess returns ~9%/yr higher under Democratic presidents; not explained by business-cycle variables. The anchor fact for RQ5.
-   https://www.pwlcapital.com/u-s-presidential-elections-vs-the-stock-market-whos-really-in-charge/ (summary incl. 1999-2015 extension where the gap widens)
 
-2. **Pastor & Veronesi 2020, J. Political Economy — "Political Cycles and Stock Returns"** (NBER w23184)
-   Equilibrium model: when risk aversion is high (bad times), voters elect Democrats; the high realized equity premium under D is risk compensation, not partisan policy magic. Implication for us: condition on the state of the economy at election, not just the winner's party.
-   https://www.nber.org/system/files/working_papers/w23184/w23184.pdf
+## Flows and the hedging cycle around elections
 
-3. **Pastor & Veronesi 2013, J. Financial Economics — "Political Uncertainty and Risk Premia"**
-   Policy uncertainty carries a risk premium, larger in weak economies; stocks more volatile and more correlated when policy is uncertain.
-   https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1932420
+**Pastor, L., and Veronesi, P. (2013). Political Uncertainty and Risk Premia. Journal of Financial Economics, 110(3), 520-545. (NBER Working Paper 17464)**  
+[link](https://www.nber.org/papers/w17464)  
+Conclusion: Investors demand extra return for holding stocks when it is unclear what the government will do next, and this premium is biggest when the economy is weak. Political uncertainty also makes stocks both jumpier and more likely to move together, because it erodes the safety net investors expect the government to provide in bad times.  
+How we use it: Theoretical backbone for RQ1 and RQ2: it explains why money de-risks ahead of elections (political uncertainty is priced) and frames returns/volatility differences across political regimes.
 
-4. **Kelly, Pastor & Veronesi 2016, J. Finance — "The Price of Political Uncertainty"**
-   Options spanning 272 national elections/summits cost more (IV, variance, tail protection); effect stronger in weak economies. Confirms pre-event hedging demand — our RQ1 mechanism.
-   https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2356588
+**Kelly, Bryan T., Lubos Pastor, and Pietro Veronesi, 2016, "The Price of Political Uncertainty: Theory and Evidence from the Option Market," Journal of Finance 71(5), 2417-2480 (NBER Working Paper 19812).**  
+[link](https://www.nber.org/papers/w19812)  
+Conclusion: Options whose lifetimes span elections and global summits cost more than otherwise-similar options, meaning investors pay a real premium for insurance against political surprises. That insurance gets even more expensive when the economy is weak and the political outcome is more uncertain, confirming that political risk carries a price markets cannot diversify away.  
+How we use it: Anchors RQ1/RQ2: it shows investors hedge election windows in advance (the pricing counterpart of de-risk-before/re-risk-after flows) and supplies the Pastor-Veronesi theory behind election-period risk premia and the presidential puzzle.
 
-5. **Goodell & Vahamaa 2013, J. Banking & Finance — "US presidential elections and implied volatility"**
-   VIX rises as the eventual winner's probability changes during campaigns; election uncertainty is priced ex ante.
-   https://www.sciencedirect.com/science/article/abs/pii/S0378426612003603
+**Goodell, J.W., & Vähämaa, S. (2013). US presidential elections and implied volatility: The role of political uncertainty. Journal of Banking & Finance, 37(3), 1108-1117.**  
+[link](https://ideas.repec.org/a/eee/jbfina/v37y2013i3p1108-1117.html)  
+Conclusion: Using election prediction-market prices over five US presidential races, the paper finds that stock-market implied volatility (VIX) rises as the eventual winner's chances of victory rise, even after accounting for how uncertain the race itself is. In plain terms: the election process itself makes investors nervous, because they are repricing what the likely next president will mean for economic policy, and that anxiety fades once the outcome is settled.  
+How we use it: Primarily RQ2 (election-driven volatility regimes around presidential races) with direct support for RQ1's mechanism — political uncertainty is what drives pre-election de-risking and post-election re-risking.
 
-6. **St. Louis Fed 2024 — "What Happens to Expected Stock Volatility around Election Day?"**
-   VIX falls from election day to day-after in 7 of the last 10 presidential elections; the three largest one-day VIX drops were 2016, 2020, 2024 — uncertainty resolution dominates outcome direction. Core RQ1 fact.
-   https://www.stlouisfed.org/on-the-economy/2024/dec/what-happens-expected-stock-volatility-election-day
+**Anderson, W., Bialkowski, J., & Wagner, M. (2023). Midterm elections and stock returns. Finance Research Letters, 55, 103825. https://doi.org/10.1016/j.frl.2023.103825 (published version: https://www.sciencedirect.com/science/article/abs/pii/S1544612323001988; open working paper: https://econpapers.repec.org/paper/cbteconwp/23_2f05.htm)**  
+[link](https://repec.canterbury.ac.nz/cbt/econwp/2305.pdf)  
+Conclusion: Across 49 US industry portfolios from 1926-2022, stocks do earn noticeably higher returns around midterm elections, but the extra return disappears once you adjust for ordinary market risk - it is simply payment for bearing election-time risk that hits the whole market. So there is no free lunch: neither rotating into particular sectors nor timing the midterm election produces higher risk-adjusted returns.  
+How we use it: Directly serves RQ5 (post-midterm equity pattern / presidential-cycle seasonality) as the key skeptical, risk-adjusted counterpoint, and informs RQ6's sector-rotation question by showing industry-level midterm gains are not exploitable.
 
-7. **Snowberg, Wolfers & Zitzewitz 2007, QJE — "Partisan Impacts on the Economy"**
-   High-frequency election-night moves (2004) + prediction markets back to 1880. Republican win → equities +2-3%, higher bond yields, stronger dollar, higher oil. Method template: use odds shifts, not calendar days, to identify the shock.
-   https://www.nber.org/papers/w12073
+**Arakelyan, Maria, and Tatiana Evdokimova. 2025. "Elections Matter: Capital Flows and Political Cycles." IMF Working Paper No. 2025/243, International Monetary Fund, Washington, DC. DOI: 10.5089/9798229031813.001**  
+[link](https://www.elibrary.imf.org/view/journals/001/2025/243/article-A001-en.xml)  
+Conclusion: Across 38 emerging markets (1990-2020), foreign private money coming into a country drops noticeably in the quarter around an election — investors pull back when they don't know who will win or what policies will follow. The drop is bigger and lasts longer when the incumbent loses or the election is chaotic (snap elections, violence), and it largely disappears in politically stable countries with strong institutions.  
+How we use it: Directly serves RQ1: academic anchor for "investors de-risk around elections" in capital-flow data — the cross-country generalization of our US election fund-flow de-risk/re-risk pattern.
 
-8. **Wagner, Zeckhauser & Ziegler 2018, JFE — "Trump, Taxes, and Trade"** (+ companion "Paths to Convergence")
-   Cross-section of stock reactions to the 2016 shock: high-tax firms and banks won, healthcare/apparel lost, domestic beat international; complex exposures repriced slowly over days. Justifies our [-5, +20] day "slow rotation" windows.
-   https://www.nber.org/papers/w23152
+**Koepke, R. (2019). What Drives Capital Flows to Emerging Markets? A Survey of the Empirical Literature. Journal of Economic Surveys, 33(2), 516-540. (Working-paper version read: MPRA Paper No. 75887, 2015; also SSRN abstract 2569249.)**  
+[link](https://mpra.ub.uni-muenchen.de/75887/15/MPRA_paper_75887.pdf)  
+Conclusion: Money moves into and out of emerging markets for two kinds of reasons: global conditions (mainly how scared investors are worldwide and rich-country interest rates) and conditions inside each country. Global fear and rate shifts dominate for stock and bond flows -- so foreign portfolio money exits fastest when global risk spikes -- while longer-term money like direct investment mostly follows a country's own growth.  
+How we use it: RQ1 -- gives the push/pull framework and evidence that risk-aversion shocks (the mechanism behind pre-election de-risking and post-election re-risking and country rotation) drive portfolio fund flows.
 
-## B. Midterms (in scope per decision #1)
+**Fratzscher, Marcel (2012). "Capital flows, push versus pull factors and the global financial crisis." Journal of International Economics, 88(2), 341-356. (Also NBER WP 17357 and ECB WP 1364.)**  
+[link](https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1364.pdf)  
+Conclusion: Using weekly fund-level portfolio flows to 50 countries, the paper finds that during the 2008 crisis global shocks (risk spikes, liquidity squeezes, key crisis events) pulled money out of emerging markets and into safe advanced economies, while in the 2009-10 recovery it was each country's own fundamentals, institutions and policies that determined where money flowed back. Capital-account openness mattered little, so good domestic policy, not capital controls, is what shields a country from global flow shocks.  
+How we use it: RQ1 — the methodological backbone: high-frequency (EPFR-style) fund flows reacting to discrete risk events with flight-to-safety and country-level rotation is exactly the template for measuring de-risk-before/re-risk-after and China-fund outflows around US elections.
 
-9. **Chan & Marsh 2021, JFE — "Asset prices, midterm elections, and political uncertainty"**
-   Midterms matter more than presidential elections for asset pricing: equity premium, mutual fund flows, and real investment growth all significantly higher in post-midterm months.
-   https://www.sciencedirect.com/science/article/abs/pii/S0304405X21000970
+**Forbes, Kristin J., and Francis E. Warnock (2012), "Capital Flow Waves: Surges, Stops, Flight, and Retrenchment," Journal of International Economics, 88(2), 235-251.**  
+[link](https://www.nber.org/papers/w17351)  
+Conclusion: Big swings in cross-border investment money are driven mainly by global conditions — above all how risky the world feels — rather than by a country's own economic health: when global fear spikes, foreign investors stop sending money in and local investors pull their money back home. Capital controls do little to stop these waves.  
+How we use it: RQ1: provides the canonical taxonomy (surge/stop/flight/retrenchment) and the global-risk-driver evidence for framing de-risk-before / re-risk-after election fund flows and country-level rotation.
 
-10. **"Midterm elections and stock returns", Finance Research Letters 2023**
-    Equity fund outflows in pre-midterm months (retail anticipation of regime-change risk), reversal to net inflows post-midterm; money-market funds absorb the flight-to-safety pre-midterm. This is RQ1+RQ4 for midterms, already documented — we replicate and extend to 2022/2026 and add the country dimension.
-    https://www.sciencedirect.com/science/article/abs/pii/S1544612323001988
+**Chari, Anusha, Karlye Dilts Stedman, and Christian Lundblad. "Global Fund Flows and Emerging Market Tail Risk." NBER Working Paper No. 30577, October 2022. (Note: the seed's w31143 number is a different paper — Chari's solo survey "Global Risk, Non-Bank Financial Intermediation, and Emerging Market Vulnerabilities"; the correct number for this title is w30577. Landing page: https://www.nber.org/papers/w30577; also SSRN 4245851.)**  
+[link](https://www.nber.org/system/files/working_papers/w30577/w30577.pdf)  
+Conclusion: When global investors are hit by shocks to risk or risk appetite, mutual funds and ETFs pull money out of emerging markets in ways that hit the worst-case (tail) outcomes much harder than the average: rising risk aversion triggers sudden stops while macro-uncertainty shocks trigger capital flight. Passive funds and ETFs, which must mechanically track benchmarks, react far more than active funds, so much of emerging-market tail risk is driven by forced, non-discretionary rebalancing rather than deliberate investor decisions.  
+How we use it: RQ1 — gives the mechanism and measurement framework (EPFR-style fund flows, flows-at-risk, sudden stop vs flight taxonomy) for how global funds de-risk/re-risk and rotate across countries when risk events like elections hit.
 
-11. **Kraussl, Lucas, Rijsbergen, van der Sluis & Vrugt 2013, J. Int. Money & Finance — "Washington meets Wall Street"**
-    S&P 500 excess return ~10%/yr higher in years 3-4 of the presidential term; not explained by business cycle, risk, or sentiment. The "midterm year trough" seasonal.
-    https://www.sciencedirect.com/science/article/abs/pii/S0261560613001721
+**Meeuwis, Maarten, Jonathan A. Parker, Antoinette Schoar, and Duncan Simester, 2022, Belief Disagreement and Portfolio Choice, Journal of Finance 77(6), 3191-3247. NBER Working Paper 25108.**  
+[link](https://www.nber.org/papers/w25108)  
+Conclusion: After Trump's surprise 2016 win, Republican-leaning investors moved their retirement portfolios into stocks while Democrat-leaning investors moved into safe assets — the same news produced opposite trades because the two groups read it through different views of the world, not because their incomes or taxes were differently exposed. The average shift was small and driven by a minority of attentive, self-directed investors, and the unsurprising 2012 election produced no comparable partisan rebalancing.  
+How we use it: Core evidence for RQ1: households de-risk/re-risk around elections along partisan lines (micro-level mechanism behind election-driven fund flows), with side relevance to RQ2 regime narratives.
 
-12. **Chan & Marsh 2023 (follow-up)** — once CAPM risk adjustment is applied, much of the midterm excess return reads as compensation for risk, not anomaly. Discipline for our brief: report raw AND risk-adjusted.
-    (via https://www.northerntrust.com/europe/insights-research/asset-servicing/a-suite/insights-hub/midterm-elections-and-us-markets-a-guide)
+**Pantzalis, C., Stangeland, D. A., & Turtle, H. J. (2000). Political elections and the resolution of uncertainty: The international evidence. Journal of Banking & Finance, 24(10), 1575-1604. doi:10.1016/S0378-4266(99)00093-X** *(NEW - found via reference mining)*  
+[link](https://econpapers.repec.org/article/eeejbfina/v_3a24_3ay_3a2000_3ai_3a10_3ap_3a1575-1604.htm)  
+Conclusion: Studying stock indices in 33 countries around national elections (1974-1995), the authors find significantly positive abnormal returns in the two weeks leading up to election week, consistent with markets rallying as electoral uncertainty gets resolved. The pre-election run-up is larger where more uncertainty is resolved: in countries with less political/economic/press freedom, in elections whose timing is less predictable, and when the incumbent loses.  
+How we use it: Provides the canonical, citable cross-country evidence for the pre-election uncertainty-resolution return pattern - the empirical template behind de-risk-before/re-risk-after positioning (RQ1) and election-cycle return seasonality (RQ5).
 
-## C. Elections and capital flows — the thin part (our gap)
+**Julio, B., & Yook, Y. (2016). Policy uncertainty, irreversibility, and cross-border flows of capital. Journal of International Economics, 103, 13-26. (Earlier: Federal Reserve FEDS Working Paper 2013-64, August 2013.)** *(NEW - found via reference mining)*  
+[link](https://www.federalreserve.gov/econres/feds/policy-uncertainty-irreversibility-and-cross-border-flows-of-capital.htm)  
+Conclusion: US companies' FDI flows to foreign affiliates drop significantly (roughly 13% vs. non-election years) just before national elections in the destination country and rebound once the election resolves the uncertainty, with bigger drops where policy reversals are likelier and outcomes more uncertain. The electoral cycle shows up only in hard-to-reverse FDI, not in foreign portfolio investment flows.  
+How we use it: Concrete, citable evidence for the de-risk-before/re-risk-after pattern in cross-border capital around elections, plus a useful discipline for RQ1: the effect concentrates in irreversible FDI, not portfolio flows.
 
-13. **IMF Working Paper, Nov 2025 — "Elections Matter: Capital Flows and Political Cycles"**
-    38 emerging markets, quarterly, 1990-2020: election periods see a decline in gross private capital inflows; larger and more persistent when uncertainty extends beyond the vote (e.g. incumbent loss with unclear policy priorities). Closest academic neighbor — but it studies EM domestic elections, not U.S. elections' effect on cross-border allocation.
-    https://www.imf.org/en/publications/wp/issues/2025/11/14/elections-matter-capital-flows-and-political-cycles-571782
+**Julio, B., & Yook, Y. (2012). Political Uncertainty and Corporate Investment Cycles. Journal of Finance, 67(1), 45-84. doi:10.1111/j.1540-6261.2011.01707.x** *(NEW - found via reference mining)*  
+[link](https://lbsresearch.london.edu/id/eprint/340/)  
+Conclusion: Using national elections across dozens of countries as a recurring uncertainty shock, the authors find firms cut investment spending by an average of 4.8% in election years versus non-election years, then resume investing once the electoral outcome is known. The pull-back is larger when elections are closer or more uncertain, showing political uncertainty causes economic actors to delay risk-taking until resolution.  
+How we use it: Canonical, citable evidence (4.8% election-year investment cut, resumption after resolution) for the de-risk-before/re-risk-after election mechanism — the real-economy counterpart to pre-election fund-flow de-risking; note it measures capex, not fund flows, so cite as mechanism support rather than direct flow evidence.
 
-14. **EPFR practitioner notes (paywalled data, public commentary)**
-    2016 election week: 66 tracked funds with outsized reactions, 22 of them EM equity. October 2024: EM equity funds' biggest weekly outflows since 2Q20 ahead of the vote; elevated cash allocations in US equity funds post-2024. Proves the flow signal exists at country level; no free academic replication exists — that is this project.
-    https://epfr.com/insights/quants-corner/getting-ready-anomalous-election/ ; https://epfr.com/insights/global-navigator/searching-buffer-funds-october-us-elections/
+**Bialkowski, J., Gottschalk, K., & Wisniewski, T. P. (2008). Stock market volatility around national elections. Journal of Banking & Finance, 32(9), 1941-1953.** *(NEW - found via reference mining)*  
+[link](https://econpapers.repec.org/RePEc:eee:jbfina:v:32:y:2008:i:9:p:1941-1953)  
+Conclusion: Across 27 OECD countries, the country-specific component of stock index return variance can easily double in the week around a national election, meaning investors are systematically surprised by outcomes. The volatility shock is larger when the victory margin is narrow, voting is not compulsory, the government's political orientation changes, or no parliamentary majority is formed.  
+How we use it: Concrete, citable cross-country finding (election-week variance roughly doubles, scaled by outcome uncertainty) that establishes elections as discrete risk events — the volatility backdrop rationalizing pre-election de-risking and post-election re-risking in fund flows; only indirectly relevant to RQ5 since midterms are not in its sample.
 
-15. **Koepke 2019 (survey, J. Econ. Surveys) — "What Drives Capital Flows to Emerging Markets?"**
-    Push factors (US rates, global risk aversion) dominate cyclical EM flows. US election uncertainty is a push factor — frames RQ2 direction of causality.
-    https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2569249
+**Li, Jinliang, and Jeffery A. Born (2006), "Presidential Election Uncertainty and Common Stock Returns in the United States," Journal of Financial Research 29(4), 609-622. DOI: 10.1111/j.1475-6803.2006.00197.x** *(NEW - found via reference mining)*  
+[link](https://ideas.repec.org/a/bla/jfnres/v29y2006i4p609-622.html)  
+Conclusion: Using polling data for U.S. presidential elections (1964-2000) instead of assuming the outcome is known, the authors find that when no candidate holds a dominant lead in the polls, both stock market volatility and average daily returns rise in the pre-election window. In other words, close (uncertain) elections carry a measurable pre-election risk premium, while lopsided races do not.  
+How we use it: Concrete, citable US event-window result — poll-measured election uncertainty raises pre-election volatility and returns — directly grounding RQ2's returns/volatility-around-elections analysis and the pre-election de-risking premium framing in RQ1.
 
-16. **Fratzscher 2012, J. Int. Economics — "Push versus pull"** — EPFR-based decomposition of crisis-period flows; common (push) shocks dominate in stress.
-17. **Forbes & Warnock 2012, J. Int. Economics — "Capital flow waves"** — surges/stops keyed to global risk, not local fundamentals.
-18. **Chari, Dilts Stedman & Lundblad (NBER w31143) — "Global Fund Flows and EM Tail Risk"**
-    Risk and risk-aversion shocks produce extreme EM flow realizations via open-end mutual funds — the vehicle-level mechanism our ETF panel measures directly.
-    https://www.nber.org/system/files/working_papers/w31143/w31143.pdf
+**Julio, B., and Y. Yook (2012), "Political Uncertainty and Corporate Investment Cycles," Journal of Finance 67(1), 45-83. [Note: the candidate title "Corporate Financial Policy under Political Uncertainty: International Evidence from National Elections" is the earlier SSRN working-paper version (SSRN abstract 1089999) of this same paper; the published JF title differs.]** *(NEW - found via reference mining)*  
+[link](https://lbsresearch.london.edu/id/eprint/340/)  
+Conclusion: Across 48 countries, firms cut capital investment by an average 4.8% in national election years (and build up cash, about 5.4%, ahead of elections) relative to non-election years, then resume investing once the election resolves; the effect is stronger when the election outcome is closer/more uncertain, showing political uncertainty causes agents to pause risk-taking until the vote is decided.  
+How we use it: Canonical top-journal evidence for the de-risk-before/re-risk-after election mechanism: concrete, citable numbers (-4.8% investment, +5.4% cash, stronger in close races) that anchor RQ1's flow pattern on the corporate side — cite under its published JF title, not the working-paper title.
 
-19. **"Episodes of extreme international capital inflows and global economic policy uncertainty", PLOS One 2022**
-    Global EPU raises surge probability into EMDEs (portfolio-rebalancing channel) — i.e. US-origin uncertainty can push money TOWARD EM, not just away. Keeps our priors honest; direction is an empirical question per episode.
-    https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0275249
+**Wolfers, Justin, and Eric Zitzewitz (2016), "What Do Financial Markets Think of the 2016 Election?", Brookings Institution working paper, October 20, 2016.** *(NEW - found via reference mining)*  
+[link](https://www.brookings.edu/wp-content/uploads/2016/10/what-do-financial-markets-think-of-the-2016-election_102016_wolferszitzewitz.pdf)  
+Conclusion: Using overnight market moves during the first 2016 presidential debate (when Clinton's prediction-market odds rose 63% to 69%), the authors estimate markets priced a Trump victory as a 10-15% drop in the S&P 500 and UK/Asian equities, a $4 oil decline, a ~25% Mexican peso fall, and sharply higher expected volatility. This 'Trump discount' reverses the consistent pattern since 1880 in which equity markets rose on Republican wins, making 2016 a striking exception to the historical Republican premium.  
+How we use it: Gives concrete, citable market-implied estimates of candidate-conditional cross-asset and country-level repricing (RQ1: peso, Asian/UK equities, vol de-risking) and directly documents the 1880-2016 Republican-win equity reaction pattern plus its 2016 reversal (RQ2: presidential puzzle).
 
-## D. Partisan investor behavior (who moves the money)
+## Presidents as return and volatility regimes
 
-20. **Meeuwis, Parker, Schoar & Simester 2022, J. Finance — "Belief Disagreement and Portfolio Choice"**
-    Administrative retail data around 2016: likely-Republicans raised equity share and beta; likely-Democrats rotated into safe assets. Take-profit behavior is partisan, driven by a minority of active traders.
-    https://www.nber.org/papers/w25108
+**Santa-Clara, Pedro, and Rossen Valkanov, 2003, "The Presidential Puzzle: Political Cycles and the Stock Market," Journal of Finance 58(5), 1841-1872.**  
+[link](https://web.archive.org/web/20190319233417/http://docentes.fe.unl.pt/~psc/Politics.pdf)  
+Conclusion: Since 1927, US stocks have earned about 9 percentage points more per year over T-bills under Democratic presidents than Republican ones (16 points for the equal-weighted index, and up to 22 points for the smallest firms), and the gap builds steadily through each term rather than jumping at election dates. The authors show this is not explained by the business cycle, by election-day surprises, or by higher risk under Democrats - the market seems repeatedly and positively surprised by Democratic administrations, leaving the return gap an unexplained puzzle.  
+How we use it: This is the canonical RQ2 paper (returns by president type / the presidential puzzle), and its finding that returns are NOT concentrated around election dates also disciplines RQ1/RQ5 event-window interpretations.
 
-21. **Addoum & Kumar 2016, RFS — "Political Sentiment and Predictable Returns"**
-    Party-in-power shifts industry-level portfolio composition; exploiting it earned ~6%/yr risk-adjusted (1939-2011), strongest at political transitions. Supports a sector-rotation read of post-election flows.
-    https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2169360
+**Pastor, Lubos, and Pietro Veronesi. 2020. "Political Cycles and Stock Returns." Journal of Political Economy 128 (11): 4011-4045. (NBER Working Paper 23184.)**  
+[link](https://www.nber.org/papers/w23184)  
+Conclusion: Stock returns and economic growth are higher under Democratic presidents not because Democrats manage the economy better, but because voters tend to elect Democrats when they are fearful (e.g., after crises), which is exactly when markets compensate investors with higher future returns; Republicans tend to win when investors feel safe and expected returns are low. Timing of who gets elected, not what presidents do, explains the "presidential puzzle" -- consistent with the fact that control of Congress shows no such return pattern.  
+How we use it: Core paper for RQ2 (president-type regimes / the presidential puzzle): it provides the leading risk-aversion-based explanation for why returns differ by party in power, and frames RQ5's presidential-cycle seasonality.
 
-22. **Capital Group (practitioner, 1992-2024) — "How elections move markets"**
-    Money-market funds receive outsized inflows in election years; equity funds see their highest net inflows in the year immediately after. The cleanest free statement of the de-risk/re-risk cycle (RQ1/RQ4).
-    https://www.capitalgroup.com/individual/insights/articles/how-elections-move-markets-5-charts.html
+**Snowberg, Erik, Justin Wolfers, and Eric Zitzewitz (2007), "Partisan Impacts on the Economy: Evidence from Prediction Markets and Close Elections," Quarterly Journal of Economics 122(2): 807-829 (NBER Working Paper No. 12073).**  
+[link](https://www.nber.org/papers/w12073)  
+Conclusion: Using the surprise swings in election-night odds in 2000 and 2004 as natural experiments (plus prediction-market data on every presidential election since 1880), the paper finds that markets genuinely expect policy to differ by party: a Republican win was priced as roughly 2-3% higher stock values, along with higher bond yields and oil prices. This shows investors do not believe the two parties converge to the same policies, and it cuts against the long-horizon finding that realized stock returns are higher under Democrats.  
+How we use it: Core RQ2 evidence (president-type effects on equities/yields; the causal counterpoint to the presidential puzzle), with spillover to RQ6 (markets pricing party-specific policy).
 
-## E. Elections and the dollar / cross-border prices
+**Kräussl, R., Lucas, A., Rijsbergen, D.R., van der Sluis, P.J., & Vrugt, E.B. (2014). Washington meets Wall Street: A closer examination of the presidential cycle puzzle. Journal of International Money and Finance, 43, 50-69.**  
+[link](https://ideas.repec.org/a/eee/jimfin/v43y2014icp50-69.html)  
+Conclusion: U.S. stocks earn almost 10 percentage points more per year in the last two years of a presidential term than in the first two, and the authors cannot explain this with economic conditions, risk, investor mood, or evidence that presidents pump up the economy before elections. The pattern survives every test they throw at it and remains an unexplained puzzle.  
+How we use it: Core paper for RQ2 (presidential puzzle) and RQ5 (presidential-cycle seasonality: strong years 3-4 begin right after midterms); also tests the policy-manipulation mechanism behind both.
 
-23. **Della Corte & Fu (working paper, AEA 2021) — "Presidential Cycles and Exchange Rates"**
-    USD appreciates ~4.3%/yr under Democratic presidencies, depreciates ~1.3%/yr under Republican ones — the FX mirror of the presidential puzzle.
-    https://www.aeaweb.org/conference/2021/preliminary/paper/RHfSAy7e
+**Della Corte, Pasquale, and Hsuan Fu. "Presidential Cycles and Exchange Rates." Working paper, Imperial College London & Universite Laval, December 2020 draft (also SSRN abstract 4769498, March 2024 draft).**  
+[link](https://www.aeaweb.org/conference/2021/preliminary/paper/RHfSAy7e)  
+Conclusion: Over ~40 years and 25 currencies, the US dollar on average strengthened about 4.3% a year under Democratic presidents and weakened about 1.3% a year under Republicans — a gap of roughly 5.6% per year that is not explained by interest rates, inflation, or the state of the economy. The authors attribute it to trade policy: higher tariffs and trade-policy uncertainty under Republicans get priced into currencies as extra risk.  
+How we use it: Serves RQ2 (president-type return regimes / the presidential puzzle, extended from stocks to FX) and feeds RQ6 via its tariff and trade-policy-uncertainty channel.
 
-24. **NBER w33193 — "How Institutions Interact with Exchange Rates" (2024 election)**
-    Minute-level data, 73 currencies: nearly all fell against USD within minutes of the 2024 result; stronger-institution countries depreciated more persistently. Confirms 2024 was at least partly a surprise in FX space.
-    https://www.nber.org/system/files/working_papers/w33193/w33193.pdf
+**Aizenman, Joshua, and Jamel Saadaoui. "How Institutions Interact with Exchange Rates After the 2024 US Presidential Election: New High-Frequency Evidence." NBER Working Paper No. 33193, November 2024 (revised November 2025). DOI: 10.3386/w33193. PDF: https://www.nber.org/system/files/working_papers/w33193/w33193.pdf**  
+[link](https://www.nber.org/papers/w33193)  
+Conclusion: After Trump's 2024 win, nearly every one of 73 currencies fell against the dollar, and - counterintuitively - countries with stronger, more democratic institutions saw bigger and longer-lasting drops. The authors read this as markets repricing the world order: with the US stepping back as guarantor of rules-based institutions, good institutions stopped acting as a safety buffer and instead became a source of exposure.  
+How we use it: Serves RQ1 directly (cross-country money/currency repricing and rotation immediately around a US election outcome), and supports RQ6's framing of an election as a discrete trade-policy repricing event.
 
-25. **"Protectionism, bilateral integration, and the cross section of exchange rate returns in US presidential debates", JIMF 2024**
-    Debate outcomes move USD against trade-integrated currencies — protectionist-candidate news appreciates USD vs trade partners. Mechanism for Trump-cycle FX/flow rotation.
-    https://www.sciencedirect.com/science/article/pii/S0261560624001219
+**Baker, S. R., Bloom, N., & Davis, S. J. (2016). Measuring Economic Policy Uncertainty. Quarterly Journal of Economics, 131(4), 1593-1636. (Loaded version: NBER Working Paper 21633, October 2015.)**  
+[link](https://www.policyuncertainty.com/media/BakerBloomDavis.pdf)  
+Conclusion: The authors build an index of policy uncertainty by counting newspaper articles about it, and show the index spikes around close presidential elections, wars, 9/11, and fiscal showdowns. When policy uncertainty rises, stock prices get more volatile and firms in policy-exposed sectors (defense, healthcare, infrastructure) cut investment and hiring, followed by lower output and employment across 12 major economies.  
+How we use it: Backbone measurement paper for the whole study: EPU spikes at elections and wars give the uncertainty channel behind RQ1 (pre-election de-risking), RQ2 (regime risk), RQ4 (war windows), and RQ6 (trade-policy uncertainty as repricing trigger).
 
-## F. Wars and markets
+**Rhode, Paul W., and Koleman S. Strumpf. 2004. "Historical Presidential Betting Markets." Journal of Economic Perspectives 18(2): 127-141. DOI: 10.1257/0895330041371277 (also confirmed at https://www.aeaweb.org/articles?id=10.1257/0895330041371277)**  
+[link](https://users.wfu.edu/strumpks/papers/JEP_2004.pdf)  
+Conclusion: From 1868 to 1940, large organized betting markets on US presidential elections - at times so big they dominated trading volume on Wall Street - almost always picked the winner well before election day, despite there being no scientific polls and despite active attempts to rig the odds. These markets died out once Gallup-style polling and other gambling options arrived, and the authors conclude the historical record shows prediction markets work well and modern fears about them (manipulation, corruption of the political process) are largely unfounded.  
+How we use it: Serves RQ1/RQ2/RQ5/RQ6 as infrastructure: betting odds 1868-1940 give a pre-polling measure of election expectations, letting us define "election surprises" for event studies on flows, president-type regimes, and sector repricing (the paper even notes 1930s utility stocks traded as de facto anti-Roosevelt bets - a direct RQ6 data point).
 
-26. **Brune, Hens, Rieger & Wang 2015, Int. Review of Economics — "The War Puzzle"**
-    Post-WWII conflicts: rising war likelihood depresses prices; the actual outbreak of a telegraphed war LIFTS them ("buy the invasion"); surprise wars fall on outbreak. The central pattern our wars module tests per administration.
-    https://link.springer.com/article/10.1007/s12232-014-0215-7
+**Blinder, Alan S., and Mark W. Watson. 2016. "Presidents and the US Economy: An Econometric Exploration." American Economic Review 106(4): 1015-45. DOI: 10.1257/aer.20140913** *(NEW - found via reference mining)*  
+[link](https://www.aeaweb.org/articles?id=10.1257/aer.20140913)  
+Conclusion: The US economy has grown substantially faster under Democratic presidents than Republican ones, a gap that is large and statistically significant across nearly every performance measure. The authors find the gap is not explained by more expansionary fiscal or monetary policy under Democrats, but mainly by more benign oil shocks, better TFP performance, a more favorable international environment, and perhaps more optimistic consumer expectations -- i.e., largely good luck rather than partisan policy.  
+How we use it: It is the canonical, citable macro counterpart to the presidential puzzle: it quantifies the Democrat-Republican performance gap by administration and shows it stems from luck (oil, TFP, global conditions) rather than policy, directly framing whether RQ2's return/vol/Sharpe gap reflects real-economy differences.
 
-27. **Cortes, Vossmeyer & Weidenmier (NBER w29837) — "Stock Volatility and the War Puzzle"**
-    US wartime equity volatility is anomalously LOW (defense-spending stabilization of cash flows) — relevant to the "Trump volatility" question: conflict does not mechanically mean higher vol.
-    https://www.nber.org/system/files/working_papers/w29837/revisions/w29837.rev0.pdf
+**Hensel, C. R., & Ziemba, W. T. (1995). United States Investment Returns during Democratic and Republican Administrations, 1928-1993. Financial Analysts Journal, 51(2), 61-69. https://doi.org/10.2469/faj.v51.n2.1882** *(NEW - found via reference mining)*  
+[link](https://www.semanticscholar.org/paper/72aec094dad226e4281e0c272b02e8e095d3abe2)  
+Conclusion: Over 1928-1993, small-cap stocks earned significantly higher returns under Democratic presidents (concentrated in April-December, so not a January-effect artifact), while large-cap return differences were modest and bonds (corporate, long-term and intermediate government) and cash earned significantly more under Republicans. Risk was similar across parties, making this one of the earliest asset-class-by-asset-class documentations of the presidential puzzle, and the authors show party-conditional trading strategies (e.g., small caps under Democrats) would have been profitable.  
+How we use it: Canonical practitioner precursor to the presidential puzzle: concrete, citable party-by-party return numbers across stocks/bonds/cash 1928-1993, including the small-cap-under-Democrats effect that matches our size-decile monotonicity. Caveat: full text paywalled; findings verified via CrossRef metadata plus direct reads of citing papers (Pastor & Veronesi NBER w23184; Fed FEDS 2004-69).
 
-28. **Leigh, Wolfers & Zitzewitz 2003 (NBER w9587) — "What do Financial Markets Think of War in Iraq?"**
-    Prediction-market war probability mapped to asset prices ex ante: higher war odds → lower equities, higher oil. Method template for buildup windows.
+**Alesina, A., Roubini, N., & Cohen, G. D. (1997). Political Cycles and the Macroeconomy. Cambridge, MA: MIT Press.** *(NEW - found via reference mining)*  
+[link](https://books.google.co.uk/books/about/Political_Cycles_the_Macroeconomy.html?id=NAClEiUYzMwC&redir_esc=y)  
+Conclusion: Using U.S. and OECD data, the book finds the economy systematically differs by the party in power consistent with rational partisan theory: growth is temporarily higher (and unemployment lower) early in Democratic administrations and lower early in Republican ones, with the gap fading mid-term as expectations adjust, while inflation stays persistently higher under left-leaning governments. Evidence for crude pre-election booms in real activity is weak; opportunistic manipulation appears mainly in monetary/fiscal instruments, and the same patterns hold across two-party democracies, so the U.S. is not exceptional.  
+How we use it: It is the canonical rational-partisan-theory evidence base: the documented Democrat/Republican macro-regime differences are the benchmark against which the presidential return puzzle (RQ2) is evaluated and the foundation for expecting partisan sector winners (RQ6).
 
-29. **Caldara & Iacoviello 2022, AER — "Measuring Geopolitical Risk"**
-    Newspaper-based GPR index, 1900-present (daily variant available); GPR shocks lower investment and stocks. Our control series for separating election effects from concurrent geopolitics. Free download.
-    https://www.matteoiacoviello.com/gpr.htm
+**Chittenden, W., Jensen, G. R., & Johnson, R. R. (1999). Presidential Politics, Stocks, Bonds, Bills, and Inflation. Journal of Portfolio Management, 26(1), 27-31. doi:10.3905/jpm.1999.319771** *(NEW - found via reference mining)*  
+[link](https://api.openalex.org/works/doi:10.3905/jpm.1999.319771)  
+Conclusion: Over 1929-1996, large-cap stock returns show no significant difference between Democratic and Republican administrations, but small-cap stocks earn over 20 percentage points more per year under Democrats, while bonds and bills perform significantly better under Republicans - and real returns to debt over the whole period were on average negative.  
+How we use it: Gives concrete, citable party-regime return numbers across asset classes (small-cap equity premium under Democrats, bond/bill outperformance under Republicans), extending the presidential-puzzle comparison beyond equities exactly as RQ2 needs. Verified via OpenAlex/Crossref (publisher page https://jpm.pm-research.com/content/26/1/27 is paywalled).
 
-30. **IMF Global Financial Stability Report, April 2025, Ch. 2 — "Geopolitical Risks and Asset Prices"**
-    Major geopolitical events since WWII: modest, short-lived aggregate equity declines; larger for EMs and fiscally weak states; flight to gold and safe assets. Cross-country benchmark for our war dossiers.
-    https://www.elibrary.imf.org/display/book/9798229003261/CH002.xml
+**Tavares, J., & Valkanov, R. I. (2001). The Neglected Effect of Fiscal Policy on Stock and Bond Returns. UCLA Anderson School of Management / FEUNL Working Paper No. 413; EFA 2003 Annual Conference Paper No. 201. SSRN 291670.** *(NEW - found via reference mining)*  
+[link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=291670)  
+Conclusion: Using US data 1960-2000, higher taxes strongly depress future asset returns: a one-standard-deviation rise in tax receipts/GDP lowers annualized expected stock and bond returns by roughly 4% at quarterly and 9% at yearly horizons, while higher government spending lifts expected returns only for bonds at short horizons. Fiscal shocks explain 3-4% of unexpected stock-return variation and 8-10% for bonds, so fiscal policy measurably reprices both markets (contradicting Ricardian equivalence).  
+How we use it: It quantifies the fiscal-policy channel Santa-Clara & Valkanov conjectured behind the presidential puzzle (tax/spending shifts move stock and bond returns by citable magnitudes), and supports RQ6's premise that policy shocks reprice markets - though it covers taxes/spending, not tariffs or sector winners.
 
-31. **Berkman, Jacobsen & Lee 2011, JFE — "Time-varying rare disaster risk and stock returns"** — ICB political-crisis count prices a disaster premium; background for buildup windows.
-32. **Boungou & Yatie 2022 (and G20+ event studies) — Russia-Ukraine 2022** — anticipation losses in exposed markets pre-invasion, broad losses post; the 2022-02-24 US intraday reversal is a case-study staple.
-    https://www.sciencedirect.com/science/article/pii/S2214635022000570
+**Sy, O., & Al Zaman, A. (2011). Resolving the Presidential Puzzle. Financial Management, 40(2), 331-355. doi:10.1111/j.1755-053X.2011.01144.x (also SSRN abstract_id=2508520)** *(NEW - found via reference mining)*  
+[link](https://ideas.repec.org/a/bla/finmgt/v40y2011i2p331-355.html)  
+Conclusion: Using 1926-2007 data and a conditional Fama-French model that lets risk vary across political cycles, the authors find the higher stock returns under Democratic presidents are explained by risk: Democratic administrations coincide with higher market and default risk premiums, so the Democrat-Republican return gap disappears after proper risk adjustment.  
+How we use it: Direct, citable resolution of the presidential puzzle — the canonical risk-compensation counterpoint to Santa-Clara & Valkanov for any returns/volatility/Sharpe-by-administration analysis.
 
-## G. Trump-specific policy shocks (tariffs as the flow mover)
+**Jones, S.T., & Banning, K. (2009). US elections and monthly stock market returns. Journal of Economics and Finance, 33(3), 273-287. doi:10.1007/s12197-008-9059-x** *(NEW - found via reference mining)*  
+[link](https://link.springer.com/article/10.1007/s12197-008-9059-x)  
+Conclusion: Using 104 years of monthly US stock returns, the authors find essentially no relationship between market returns and partisan control of government (robust to macroeconomic controls), and the famous "second-half" presidential-cycle effect is much weaker and messier than commonly believed. They conclude that neither election results nor the election cycle offers much help in predicting stock returns.  
+How we use it: A concrete, citable long-sample null result that directly stress-tests the presidential-cycle/post-midterm seasonality claim (RQ5) and the partisan presidential puzzle (RQ2) — essential as the skeptical counterweight in both literatures.
 
-33. **Amiti, Gomez, Kong & Weinstein — "Trade Protection, Stock-Market Returns, and Welfare"** (+ NY Fed Liberty Street summary 2024)
-    11 tariff-announcement days 2018-19: cumulative market decline ~11.5% (~$4.1T); firms hit hardest had genuinely worse subsequent fundamentals. Tariff announcements, not the election itself, are the repricing events in Trump terms.
-    https://libertystreeteconomics.newyorkfed.org/2024/12/using-stock-returns-to-assess-the-aggregate-effect-of-the-u-s-china-trade-war/
+**Herron, M. C. (2000). Estimating the Economic Impact of Political Party Competition in the 1992 British Election. American Journal of Political Science, 44(2), 320-331. doi:10.2307/2669314** *(NEW - found via reference mining)*  
+[link](https://api.openalex.org/works/doi:10.2307/2669314)  
+Conclusion: Using campaign-period prices of London-traded securities tied to the probability of a Labour win, Herron shows UK investors expected a 1992 Labour government to bring significantly higher interest rates and lower stock prices than the victorious Conservatives. Markets thus priced a substantial left-right partisan gap in real time, demonstrating that security prices can recover the expected economic impact of an election-losing party that never took office.  
+How we use it: Concrete cross-country evidence that markets ex-ante price left-party wins as equity-negative/rate-positive — the expectations half of the presidential puzzle (RQ2) and the canonical election-probability-to-repricing design behind RQ1's election event studies.
 
-34. **"Trump Liberation Day tariffs and stock market reactions", Studies in Economics & Finance 2026**
-    77-country event study of 2025-04-02: declines NOT proportional to assigned tariff rates; US market itself fell — read as broadly costly policy, not bilateral transfer.
-    https://www.emerald.com/sef/article/43/2/415/1333419/Trump-Liberation-Day-tariffs-and-stock-market
+**Niederhoffer, V., Gibbs, S., & Bullock, J. (1970). Presidential Elections and the Stock Market. Financial Analysts Journal, 26(2), 111-113. (Journal page: https://www.tandfonline.com/doi/abs/10.2469/faj.v26.n2.111; JSTOR issue: https://www.jstor.org/stable/i403227. Publisher pages block automated access; existence and bibliographic details verified verbatim via the loaded SAGE Open, Springer, and Dergipark reference lists.)** *(NEW - found via reference mining)*  
+[link](https://journals.sagepub.com/doi/10.1177/2158244019864175)  
+Conclusion: Tracking the Dow around all 18 presidential elections from 1900 to 1968, the paper finds a short-run partisan reaction — the market tends to jump immediately after a Republican victory and dip after a Democratic one — and a broader tendency to rally between the election and year-end regardless of winner (up in Sep-Oct in 16 of 28 election years). Over full four-year administrations, however, it finds no systematic Republican-vs-Democrat performance difference.  
+How we use it: Earliest systematic event-study of elections: gives RQ2 its pre-1970 baseline (no full-term partisan gap, sharpening the later "presidential puzzle") and gives RQ5 concrete citable election-window seasonality (immediate partisan reaction, post-election/year-end rally).
 
-35. **Liberation Day market record (for the 2024-25 dossier)**
-    2025-04-03..04-08: US total market -12.4%; 04-09 pause: S&P +9.5% (largest one-day gain since 2008); USD fell; 30y Treasury's biggest 3-day yield rise since 1982; one year on, "rethinking US exceptionalism" framing with sustained European inflows.
-    https://en.wikipedia.org/wiki/Liberation_Day_tariffs ; https://www.cnbc.com/2026/04/02/liberation-day-1-year-on-investors-are-rethinking-us-assets.html ; https://cepr.org/voxeu/columns/how-tariff-war-shock-affected-safe-asset-privilege-us-treasuries
+## Midterms and the four-year cycle
 
----
+**Chan, Kam Fong, and Terry Marsh (2021), "Asset prices, midterm elections, and political uncertainty," Journal of Financial Economics 141(1), 276-296. DOI: 10.1016/j.jfineco.2021.03.007**  
+[link](https://api.semanticscholar.org/graph/v1/paper/3f8a1db057b6c0072fa190693a383c51f8d05c44?fields=title,abstract,year,authors,venue,externalIds,referenceCount)  
+Conclusion: In the months right after U.S. midterm elections, stock returns, mutual-fund inflows, and real investment are all significantly higher while Treasury bond premiums fall, because the election resolves a large dose of political uncertainty. Midterms turn out to matter more for asset prices than presidential elections, and the usual risk-return (beta) relationship only shows up in those post-midterm months.  
+How we use it: Core paper for RQ5 (post-midterm equity pattern / presidential-cycle seasonality), with direct spillover to RQ1 via its post-midterm mutual-fund-flow evidence.
 
-## Synthesis: what is known vs what we add
+**de Boer, J., Eichler, S., & Rövekamp, I. (2024). Protectionism, Bilateral Integration, and the Cross Section of Exchange Rate Returns in US Presidential Debates. Journal of International Money and Finance, 146, 103134. (Published version: sciencedirect.com/science/article/pii/S0261560624001219; open working-paper version read: CEPIE WP 03/22, EconStor handle 10419/266451)**  
+[link](https://www.econstor.eu/bitstream/10419/266451/1/1822638119.pdf)  
+Conclusion: Using 23 US presidential TV debates (1996-2016) as real-time shocks to election odds, the paper finds currency markets reprice within the 90-minute debate window: when the more protectionist candidate's chances of winning rise, the currencies of countries that trade most heavily with the US (e.g., Mexico, Canada, Singapore) fall against the dollar. Markets price expected tariffs immediately, and the damage concentrates in America's closest trading partners.  
+How we use it: Serves RQ6 directly (tariff/trade-policy expectations as instant repricing events, with country-level winners/losers by candidate) and supports RQ1's country-rotation angle (e.g., why China/Mexico-exposed assets sell off when a protectionist wins).
 
-Known and replicable: pre-election hedging and cash build-up (4, 5, 10, 22); post-result volatility crush regardless of winner (6); post-midterm equity strength (9, 11, with risk-adjustment caveat 12); partisan rebalancing at household level (20); R-win short-run equity pop (7); war-puzzle buildup/outbreak asymmetry (26); wartime vol suppression (27); tariff announcements as the true Trump-era repricing events (33-35).
+**Cortes, Gustavo S., Angela Vossmeyer, and Marc D. Weidenmier (2022). "Stock Volatility and the War Puzzle." NBER Working Paper No. 29837, March 2022 (revised May 2024 as "Stock Volatility and the War Puzzle: The Military Demand Channel").**  
+[link](https://www.nber.org/system/files/working_papers/w29837/revisions/w29837.rev0.pdf)  
+Conclusion: US stock market volatility is roughly a third lower during wars and conflicts, and the paper explains why: massive, government-guaranteed defense spending makes company profits much easier to predict, which calms markets. Using 100+ years of defense-spending data, they show military outlays reduce volatility at the aggregate, sector, and even global level, and analyst earnings forecasts for defense firms became visibly tighter after 9/11 and the Afghanistan/Iraq invasions.  
+How we use it: Directly serves RQ4: it is the canonical resolution of the war puzzle (volatility falls once conflict starts) via the defense-spending/military-demand channel, including defense-sector evidence.
 
-The gap we fill: a free, reproducible, country-level ETF-flow event study around ALL U.S. elections (presidential + midterm, 1992/2004-2026) by winner type, with a wars overlay — answering whether money actually LEAVES the US (flows) or merely reprices (returns), and where it goes (EM/China/Asia/Taiwan/Europe/bonds/gold/cash). Academic work nearest to this (13) covers EM domestic elections; country-flow facts around US elections live only in paywalled practitioner notes (14).
+**Boutchkova, M., Doshi, H., Durnev, A., & Molchanov, A. (2012). Precarious Politics and Return Volatility. The Review of Financial Studies, 25(4), 1111-1154.** *(NEW - found via reference mining)*  
+[link](https://academic.oup.com/rfs/article-abstract/25/4/1111/1578649)  
+Conclusion: Political uncertainty -- elections and shifts in leaders' political orientation -- raises stock return volatility unevenly across industries: sectors dependent on trade, contract enforcement, and labor get hit hardest, and political turmoil in trading-partner countries spills over to trade-dependent industries. Domestic political risk shows up as systematic (market-wide) volatility, while foreign/global political risk shows up as firm-specific (idiosyncratic) volatility.  
+How we use it: Gives a concrete, citable result that election/political-regime uncertainty raises volatility (RQ2's volatility-by-regime channel) and that the effect is industry-specific via trade/labor/contract exposure, directly underpinning RQ6's sector-level sensitivity to political and trade-policy shocks.
 
-Method discipline imported from the literature: align events on result-known dates and odds shifts, not calendar dates (7, 28); classify surprise via prediction markets; report raw and risk-adjusted (12); treat tariff shocks as separate events from elections (33); expect slow multi-day rotation, not just overnight jumps (8).
+**Huang, R.D. (1985). "Common Stock Returns and Presidential Elections." Financial Analysts Journal, 41(2), 58-65. doi:10.2469/faj.v41.n2.58** *(NEW - found via reference mining)*  
+[link](https://www.tandfonline.com/doi/abs/10.2469/faj.v41.n2.58)  
+Conclusion: Stock returns in the second half of the four-year presidential term are significantly higher than in the first half, both economically and statistically, and the cycle holds under both parties but is stronger under Democratic administrations. Average returns are also higher under Democratic than Republican presidents, and timing strategies based on the cycle beat buy-and-hold.  
+How we use it: Foundational citable evidence for both the presidential puzzle (higher returns under Democrats, RQ2) and presidential-cycle seasonality (second half of the term pays, the year-3/post-midterm pattern, RQ5).
+
+**Herbst, A. F., & Slinkman, C. W. (1984). Political-Economic Cycles in the U.S. Stock Market. Financial Analysts Journal, 40(2), 38-44.** *(NEW - found via reference mining)*  
+[link](https://rpc.cfainstitute.org/research/financial-analysts-journal/1984/political-economic-cycles-in-the-us-stock-market)  
+Conclusion: Using month-end U.S. stock prices from 1926-1977, the authors find strong support for a four-year political-economic cycle in equities that peaks, on average, in November of presidential election years. They find no support for a politically induced two-year (midterm) cycle - the two-year cycle they detect peaks about nine months after elections, inconsistent with a political driver.  
+How we use it: Foundational, directly citable evidence on presidential-cycle seasonality: confirms the four-year cycle peaking at presidential elections while rejecting a politically driven two-year midterm cycle, which sharpens RQ5's framing of the post-midterm pattern.
+
+**Jayachandran, Seema (2006). "The Jeffords Effect." Journal of Law and Economics, 49(2), 397-425.** *(NEW - found via reference mining)*  
+[link](https://ideas.repec.org/a/ucp/jlawec/y2006v49i2p397-425.html)  
+Conclusion: When Senator Jeffords's surprise 2001 party switch handed Senate control to the Democrats, firms aligned with Republicans (measured by soft-money donations) lost about 0.8% of market cap that week per $250,000 donated, and the loss persisted. Unexpected shifts in which party holds power therefore cause large, measurable repricing of politically exposed firms.  
+How we use it: Cleanly identified, quantified evidence that a partisan power shift reprices firms by party alignment — the core mechanism behind RQ6's "winners by winning party" and supporting evidence that partisan control is priced (RQ2).
+
+## Sectors and partisan winners
+
+**Wagner, A.F., Zeckhauser, R.J., and Ziegler, A. (2018). Company Stock Price Reactions to the 2016 Election Shock: Trump, Taxes, and Trade. Journal of Financial Economics 130(2), 428-451. (NBER Working Paper 23152, Feb 2017; full PDF read at https://www.nber.org/system/files/working_papers/w23152/w23152.pdf)**  
+[link](https://www.nber.org/papers/w23152)  
+Conclusion: Trump's surprise 2016 win instantly repriced individual stocks along expected policy lines: companies with high tax burdens, high market sensitivity, and domestic focus gained, while healthcare, pharma, and import-dependent or internationally oriented firms lost. Investors priced in the growth and tax implications within a day, but needed weeks to work out what the trade-policy shift meant for specific companies.  
+How we use it: Core anchor for RQ6 (an election as a tariff/tax repricing event with clear sector winners by winning party), with supporting context for RQ1/RQ2 on post-election re-risking.
+
+**Addoum, Jawad M., and Alok Kumar. 2016. "Political Sentiment and Predictable Returns." Review of Financial Studies 29(12): 3471-3518.**  
+[link](http://addoum.dyson.cornell.edu/docs/hhw066.pdf)  
+Conclusion: When the party in the White House changes, investors systematically shift their portfolios toward industries they believe the new party favors, and these demand shifts make returns in politically sensitive industries predictable. A strategy exploiting this earned roughly 6% a year risk-adjusted over 1939-2011, with the effect about twice as strong when the challenger party wins (especially Democrat-to-Republican transitions) and concentrated around election months and years 1 and 4 of the presidential term.  
+How we use it: Core for RQ2 (party-in-power return regimes) and RQ6 (industry winners by winning party); the investor-demand-shift mechanism also underpins RQ1's rotation-around-elections story.
+
+**Hong, H., Kostovetsky, L., 2012. Red and blue investing: Values and finance. Journal of Financial Economics 103(1), 1-19. (Working-paper PDF loaded from Hong's Columbia page; SSRN abstract 1214382; ScienceDirect DOI 10.1016/j.jfineco.2011.01.006)**  
+[link](http://www.columbia.edu/~hh2679/redandblue.pdf)  
+Conclusion: Mutual fund (and hedge fund) managers who donate to Democrats hold noticeably less of their portfolios in "socially irresponsible" stocks - tobacco, guns and defense, natural resources - than Republican-donor or non-donor managers, even in funds that are not explicitly socially responsible. Since these are large professional managers who help set prices, the authors conclude that politics-driven "closet SRI" is widespread enough that values-based shunning can have a real impact on stock prices.  
+How we use it: RQ2 (partisan regimes in money management - political identity directly shapes professional portfolios), with spillover to RQ4/RQ6 via Democratic managers' systematic underweighting of defense and other politically coded sectors.
+
+**Wang, Xiaoli, and Claire Guo. 2025. Presidential Partisanship and Sectoral ETF Performance in U.S. Equity Markets. Risks 13(10): 201. https://doi.org/10.3390/risks13100201 (DOI verified resolving to the MDPI page; MDPI blocks bot fetches, so abstract and references were confirmed via Semantic Scholar and Crossref records for this DOI)**  
+[link](https://www.mdpi.com/2227-9091/13/10/201)  
+Conclusion: Using GICS sector ETFs, the paper finds that U.S. stock sectors show different return and volatility patterns under Republican versus Democratic presidencies, so the party in the White House matters at the sector level, not just for the overall market. But the sector winners are not always the intuitive ones (e.g., energy underperformed during the pro-fossil-fuel first Trump term), so party affiliation alone is an unreliable sector-picking rule.  
+How we use it: Core for RQ2 (returns/volatility regimes by administration) and RQ6 (sector winners by winning party) — it is the sector-level bridge between the presidential puzzle and partisan sector rotation.
+
+**Belo, F., Gala, V. D., & Li, J. (2013). Government spending, political cycles, and the cross section of stock returns. Journal of Financial Economics, 107(2), 305-324.** *(NEW - found via reference mining)*  
+[link](https://www.hbs.edu/faculty/Shared%20Documents/events/41/GovSpending%20Belo%20HBS.pdf)  
+Conclusion: Industries that sell heavily to the government outperform low-exposure industries by about 6.1% per year under Democratic presidents and underperform by about 4.8% per year under Republican presidents, and a strategy exploiting this earns up to 6.9% per year in abnormal returns. The famous "presidential puzzle" (higher market returns under Democrats) is concentrated precisely in these high government-exposure industries, suggesting markets underreact to predictable shifts in government spending policy.  
+How we use it: Gives citable magnitudes for which industries win under each party (RQ6) and shows the presidential puzzle is concentrated in government-exposed sectors, partially explaining the RQ2 regime effect via a fiscal-spending channel.
+
+**Knight, Brian (2006). "Are Policy Platforms Capitalized into Equity Prices? Evidence from the Bush/Gore 2000 Presidential Election." Journal of Public Economics, 90(4-5), 751-773. (NBER Working Paper No. 10333, 2004.)** *(NEW - found via reference mining)*  
+[link](https://www.nber.org/papers/w10333)  
+Conclusion: Using 70 policy-sensitive firms and Iowa Electronic Markets odds during the 2000 election, Knight finds party platforms are capitalized into stock prices: Bush-favored firms were worth about 3% more and Gore-favored firms about 6% less under a Bush win, a statistically significant 9% differential return. The largest movers were tobacco (+13% under Bush), Microsoft competitors (-15%), and alternative energy (-16%).  
+How we use it: Gives a concrete, citable magnitude (9% differential return; named winner/loser sectors) for party-favored sectors repricing continuously as election odds move — exactly RQ6's sector winners by winning party and elections as repricing events.
+
+**Schwert, G. William (1981), "Using Financial Data to Measure Effects of Regulation," Journal of Law and Economics, 24(1), 121-158.** *(NEW - found via reference mining)*  
+[link](https://www.billschwert.com/regul.htm)  
+Conclusion: Stock returns can measure the wealth effects of regulation only when the regulatory change is unanticipated — markets reprice on the surprise, so anticipated or already-existing regulation leaves no trace in returns. For existing regulation, effects must instead be read from price levels (e.g., the value of taxicab medallions, exchange seats, or firm value minus asset replacement cost).  
+How we use it: Supplies the identification logic RQ6 rests on: tariff/trade-policy announcements reprice sectors only via their unanticipated component, which disciplines both event-window design and interpretation of muted reactions to telegraphed tariffs.
+
+**Stangl, J. S., & Jacobsen, B. (2007). Political Cycles in US Industry Returns. Journal of International Finance and Economics; SSRN Working Paper No. 864804 (posted 2005), DOI 10.2139/ssrn.864804.** *(NEW - found via reference mining)*  
+[link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=864804)  
+Conclusion: Across 48 US industry portfolios, neither of the two famous political effects shows up at the industry level: market-adjusted industry returns do not consistently underperform under Republicans, no specific industries reliably win under either party, and there is no industry-level presidential election cycle effect. The authors conclude these political effects are market-wide phenomena whose explanation lies at the macroeconomic level, not in sector-specific party favoritism.  
+How we use it: Concrete citable null result: it is the direct academic test of "sector winners by winning party" (RQ6) and shows the presidential puzzle (RQ2) is market-wide rather than industry-driven — an essential counterweight to any sector-rotation-by-party narrative. Note: paper existence verified via Crossref/OpenAlex APIs; SSRN landing page blocks automated fetch (Cloudflare), abstract recovered via search index.
+
+## Wars and geopolitical risk
+
+**Brune, A., Hens, T., Rieger, M. O., & Wang, M. (2015). The war puzzle: Contradictory effects of international conflicts on stock markets. International Review of Economics, 62(1), 1-21. https://doi.org/10.1007/s12232-014-0215-7**  
+[link](https://link.springer.com/article/10.1007/s12232-014-0215-7)  
+Conclusion: Studying major international conflicts since World War II with news-based measures of how likely escalation looked, the authors find that stock markets fall while the chance of war is rising, but tend to rise once war actually breaks out - unless the outbreak comes as a surprise, in which case prices drop. They show this "war puzzle" cannot be explained by standard stories like investor risk aversion or expectations that the war will be over quickly.  
+How we use it: This is the anchor paper for RQ4: it defines the war puzzle (buildup-down / outbreak-up) that the war-and-markets analysis tests.
+
+**Leigh, A., Wolfers, J., & Zitzewitz, E. (2003). "What Do Financial Markets Think of War in Iraq?" NBER Working Paper No. 9587.**  
+[link](https://www.nber.org/papers/w9587)  
+Conclusion: Using prices of a betting-market contract on Saddam Hussein being ousted ("Saddam Securities"), the paper finds that markets expected war with Iraq to raise oil prices by about $10/barrel and lower U.S. stocks by around 15%, with a meaningful chance of much worse outcomes. The equity decline works mainly through lower expected future company earnings (weakest sectors: consumer discretionary and airlines; gold and oil firms gain), not through investors demanding extra compensation for risk.  
+How we use it: Core RQ4 paper: shows how markets price war risk before outbreak (buildup-down leg of the war puzzle), with sector winners/losers and cross-country effects that also feed RQ1 and RQ3 (gold as war hedge).
+
+**Caldara, Dario, and Matteo Iacoviello. 2022. "Measuring Geopolitical Risk." American Economic Review 112 (4): 1194-1225. https://doi.org/10.1257/aer.20191823**  
+[link](https://www.matteoiacoviello.com/gpr_files/GPR_PAPER.pdf)  
+Conclusion: The authors build a newspaper-based index of geopolitical risk going back to 1900 and show that when geopolitical risk rises, investment and employment fall and the odds of an economic disaster go up — and the damage comes both from the threat of bad events and from the events actually happening. Firms and industries more exposed to geopolitics cut investment the most.  
+How we use it: Backbone measurement paper for RQ3 (is gold's rise geopolitical?) and RQ4 (its threat-vs-realization split maps directly onto the buildup-down/outbreak-up war puzzle); the GPR index is the natural conditioning variable for both modules.
+
+**Berkman, H., Jacobsen, B., & Lee, J. B. (2011). Time-varying rare disaster risk and stock returns. Journal of Financial Economics, 101(2), 313-332.**  
+[link](https://ideas.repec.org/a/eee/jfinec/v101y2011i2p313-332.html)  
+Conclusion: Using 447 international political crises from 1918-2006, the authors show that when the perceived chance of a major crisis or war rises, world stock prices fall and markets become more volatile, and when crises resolve, stocks recover. Industries more exposed to this crisis risk earn higher average returns, meaning investors are paid extra to bear political-disaster risk.  
+How we use it: Core evidence for RQ4 (war puzzle: crisis buildup depresses stocks, resolution/outbreak clarity lifts them; geopolitical risk is priced), with side relevance to RQ3 (geopolitical risk as a driver of safe-haven demand).
+
+**Boungou, W., & Yatie, A. (2022). The impact of the Ukraine-Russia war on world stock market returns. Economics Letters, 215, 110516. (Open-access working-paper PDF read: Bordeaux Economics WP 2022-06, http://bordeauxeconomicswp.u-bordeaux.fr/2022/2022-06.pdf)**  
+[link](https://ideas.repec.org/a/eee/ecolet/v215y2022ics0165176522001355.html)  
+Conclusion: Using daily stock returns for 94 countries from 22 Jan to 24 Mar 2022, the paper finds the Ukraine-Russia war pushed stock markets down worldwide, with the biggest drops in the first two weeks after the 24 Feb invasion and a fading effect afterward. Losses were largest for countries bordering Ukraine/Russia and for countries that condemned the invasion at the UN (condemning countries fell about 3-4x more than neutral ones).  
+How we use it: RQ4 (wars and markets): the canonical outbreak-day event study - global equity drawdown at invasion onset that decays, with cross-country heterogeneity by proximity and political alignment - the 'outbreak' half of the war puzzle baseline.
+
+**Wolfers, J., & Zitzewitz, E. (2009). Using Markets to Inform Policy: The Case of the Iraq War. Economica, 76(302), 225-250 (circulated 2004-05 as Wharton/Stanford mimeo).** *(NEW - found via reference mining)*  
+[link](https://law.yale.edu/sites/default/files/documents/pdf/Using_Markets_to_Inform_Policy.pdf)  
+Conclusion: Using a prediction market on Saddam Hussein's ouster, the authors find that a 10% rise in the probability of the Iraq war raised spot oil by about $1 (with futures implying the spike would fade quickly) and cut the S&P 500 by about 1.5%, with options pricing a substantial chance of an extremely bad outcome. Because the war went better than these priced-in fears, its outbreak/resolution triggered a rally, biggest in the sectors and countries (32 of 43 markets had war discounts) that had been most depressed beforehand.  
+How we use it: Gives the cleanest causal quantification of the war puzzle: war risk priced in during buildup (equities down, oil up) and the relief rally at outbreak concentrated in the most war-discounted sectors/countries, with gold noted as a war-risk hedge outlier.
+
+**Rigobon, R., & Sack, B. (2005). The effects of war risk on US financial markets. Journal of Banking & Finance, 29(7), 1769-1789.** *(NEW - found via reference mining)*  
+[link](https://www.nber.org/papers/w9609)  
+Conclusion: In the ten weeks before the 2003 Iraq invasion, increases in the perceived probability of war caused US equity prices and Treasury yields to fall, lower-grade corporate spreads to widen, the dollar to weaken, and oil prices to rise. The war-risk factor accounted for a considerable share of the variance of these nine financial variables during the pre-war buildup.  
+How we use it: Provides a causal, quantified estimate that rising war risk depresses equities and drives safe-haven/oil moves before the outbreak — the buildup-down half of the war puzzle.
+
+**Frey, Bruno S., and Marcel Kucher (2000), "History as Reflected in Capital Markets: The Case of World War II," Journal of Economic History 60(2): 468-496. DOI: 10.1017/S0022050700025183** *(NEW - found via reference mining)*  
+[link](https://www.cambridge.org/core/journals/journal-of-economic-history/article/abs/history-as-reflected-in-capital-markets-the-case-of-world-war-ii/70A454EA426E0B34ECBC4FBF3A4538A5)  
+Conclusion: Using prices of five European governments' bonds traded on the Swiss bourse from 1928-1948, the authors show that war news was selectively priced: the official outbreak of WWII and changes in national sovereignty produced sharp bond-price moves, while other events historians consider pivotal — most notably Germany's 1945 capitulation — caused no reaction because markets had already anticipated and priced them in. Markets thus repriced war risk in advance of formal outcomes rather than on the official announcement.  
+How we use it: Concrete, citable historical evidence that markets reprice on war outbreak and anticipate resolutions in advance — the exact anticipation-vs-event mechanism behind the buildup-down/outbreak-up war puzzle in RQ4.
+
+**Amihud, Y., & Wohl, A. (2004). Political news and stock prices: The case of Saddam Hussein contracts. Journal of Banking & Finance, 28(5), 1185-1200.** *(NEW - found via reference mining)*  
+[link](https://fairmodel.econ.yale.edu/ec439/stev.pdf)  
+Conclusion: Using prices of traded "Saddam contracts" (a market probability that Saddam Hussein would be out of power by a given date), the authors find the same political probability flips sign for markets: before the war, a higher chance of Saddam's fall meant a higher chance of war breaking out and lowered stock prices (with gradual, not instant, adjustment); once the war started, a higher chance of his fall meant a faster, cheaper end to the war and raised stocks, strengthened the dollar against the euro, and lowered oil prices.  
+How we use it: Directly documents the war-puzzle mechanism (buildup-down, outbreak/resolution-up) with a concrete citable finding, and supplies the event-probability repricing template (prediction-market odds vs asset prices) reusable for election and tariff shocks.
+
+**Bittlingmayer, G. (1998). Output, Stock Volatility, and Political Uncertainty in a Natural Experiment: Germany, 1880-1940. Journal of Finance, 53(6), 2243-2257. doi:10.1111/0022-1082.00090** *(NEW - found via reference mining)*  
+[link](https://ideas.repec.org/p/ces/ceswps/_87.html)  
+Conclusion: Using Germany 1880-1940 as a natural experiment, the paper finds that major political events — war outbreak, defeat, revolution, and regime change — were the dominant drivers of stock-market volatility, and that this politically generated volatility coincided with real economic damage: a doubling of stock volatility implied an output decline of roughly 6-15 percent. The volatility-output link seen in U.S. data thus largely reflects the joint effect of political uncertainty on both.  
+How we use it: Canonical historical evidence for the uncertainty channel behind the war puzzle: war buildup and regime turmoil elevate stock volatility (and depress output), which is the mechanism that makes markets fall during buildup and rally when outbreak resolves the uncertainty.
+
+**Manela, A., & Moreira, A. (2017). News implied volatility and disaster concerns. Journal of Financial Economics, 123(1), 137-162.** *(NEW - found via reference mining)*  
+[link](https://amoreira2.github.io/alan-moreira.github.io/NVIX_published.pdf)  
+Conclusion: Using WSJ front-page text since 1890, the authors build a news-implied volatility index (NVIX) that spikes in wars, crises, and policy uncertainty; high NVIX predicts above-average stock returns over the next 6-24 months and rises just before economic disasters. Content analysis shows that concerns about wars and government policy account for most of the time variation in the risk premium NVIX captures, consistent with time-varying rare-disaster risk driving asset prices.  
+How we use it: Gives a citable mechanism for the war puzzle: war/geopolitical fear is priced ex ante (war-related news drives most of the identified risk-premium variation), so elevated war concern is followed by above-average returns — i.e., buildup-down/outbreak-up as a disaster-risk premium being earned; also grounds RQ3's geopolitics-as-priced-risk angle.
+
+## Gold
+
+**Baur, D. G., & Lucey, B. M. (2010). Is Gold a Hedge or a Safe Haven? An Analysis of Stocks, Bonds and Gold. Financial Review, 45(2), 217-229. doi:10.1111/j.1540-6288.2010.00244.x (working-paper version: IIIS Discussion Paper No. 198, Trinity College Dublin; also https://ideas.repec.org/p/iis/dispap/iiisdp198.html)**  
+[link](https://www.tcd.ie/triss/assets/PDFs/iiis/iiisdp198.pdf)  
+Conclusion: Gold tends to rise when stocks fall, and especially during extreme stock-market crashes in the US, UK and Germany, so it works as both an everyday hedge and a crisis refuge for stock investors - but the protection is short-lived: investors who keep holding gold more than about 15 trading days after a crash lose money. Gold offers no such protection against bond losses.  
+How we use it: RQ3 - the foundational definition and evidence of gold as hedge vs safe haven, the baseline against which to test whether the post-2022/post-2024 gold rise is political/geopolitical or structural.
+
+**Erb, Claude B., and Campbell R. Harvey. 2013. "The Golden Dilemma." Financial Analysts Journal 69(4): 10-42. (Also NBER Working Paper No. 18706.)**  
+[link](https://www.nber.org/papers/w18706)  
+Conclusion: Gold does not reliably protect against inflation over any horizon an actual investor cares about (it only works over centuries), and its inflation-adjusted price was historically high, which in the past has meant poor returns ahead. The one thing that could keep the price elevated is a structural shift: emerging-market governments (central banks) buying much more gold to catch up with rich countries' holdings.  
+How we use it: Core paper for RQ3: it frames the exact question of whether a high gold price is structural (central-bank/EM official demand) or due for mean reversion, i.e. the political-vs-structural test for the post-2022/2024 gold rise.
+
+**O'Connor, F.A., Lucey, B.M., Batten, J.A., & Baur, D.G. (2015). The financial economics of gold — A survey. International Review of Financial Analysis, 41, 186-205.**  
+[link](https://mpra.ub.uni-muenchen.de/65484/)  
+Conclusion: The survey maps the large and growing research on gold as an investment and finds that gold behaves less like an ordinary commodity and more like a financial asset: its price is driven by investment demand, crises, interest rates and official-sector (central bank) buying and selling, and it tends to hold or gain value when stocks fall, acting as a hedge or safe haven in bad times. The authors also note that the volume of gold research has historically risen and fallen with the gold price itself.  
+How we use it: Serves RQ3 directly: it is the canonical map of what drives gold prices (safe-haven demand, political tension, central-bank flows), framing the political-vs-structural question for the post-2022/2024 gold rise.
+
+## Tariffs and policy shocks
+
+**Amiti, M., M. Gomez, S. H. Kong, and D. E. Weinstein (2026). "Trade Protection, Stock Market Returns, and Welfare." Working paper, May 20, 2026 version (supersedes "The Effect of the U.S.-China Trade War on U.S. Investment").**  
+[link](https://www.matthieugomez.com/files/tpw.pdf)  
+Conclusion: Tariff announcements in the 2018-19 US-China trade war caused large, lasting stock-market drops (cumulative -11.5% US, -20.6% China), with China-exposed firms hit hardest, and those announcement-day losses correctly predicted later declines in real profits, sales, jobs, and investment. Reading those market reactions through their model, the authors conclude the trade war made Americans substantially worse off — far more than standard static tariff models suggest — and the 2025-26 tariff episode shows nearly identical market patterns (-11.4% cumulative on tariff-increase days).  
+How we use it: Core paper for RQ6: it treats tariff announcements as repricing events, identifies sector/firm winners and losers by China exposure, and shows announcement-day returns forecast real outcomes.
+
+**Al-Kharusi, S. and Elroukh, A.W. (2026), "Trump Liberation Day tariffs and stock market reactions: new insights from global analysis", Studies in Economics and Finance, Vol. 43 No. 2, pp. 415-435. doi: 10.1108/SEF-08-2025-0536**  
+[link](https://www.emerald.com/sef/article/43/2/415/1333419/Trump-Liberation-Day-tariffs-and-stock-market)  
+Conclusion: After the April 2, 2025 "Liberation Day" tariff announcement, stock markets in most of the 77 countries studied fell sharply and in sync (losses beyond -15% in some countries, over -10% in the US itself), but countries hit with higher tariff rates did not fall more than those facing the baseline 10%. What determined how hard a market fell was not the tariff rate it was assigned but how tied that country's trade and financial system is to the US.  
+How we use it: RQ6 - direct global event-study evidence that tariff/trade-policy announcements act as synchronized market repricing events, with transmission via trade exposure and US financial integration.
+
+**Fajgelbaum, P. D., Goldberg, P. K., Kennedy, P. J., & Khandelwal, A. K. (2020). "The Return to Protectionism." Quarterly Journal of Economics, 135(1), 1-55. (NBER Working Paper No. 25638, 2019.)** *(NEW - found via reference mining)*  
+[link](https://www.nber.org/papers/w25638)  
+Conclusion: The 2018 US tariffs and foreign retaliation caused large drops in imports and exports, with full pass-through of tariffs into US duty-inclusive prices, costing US consumers and importing firms about $51 billion (0.27% of GDP) and producing a net aggregate real income loss of roughly $7.2 billion (0.04% of GDP). US protection was tilted toward sectors concentrated in politically competitive counties, while retaliatory tariffs fell hardest on tradeable-sector workers in heavily Republican counties.  
+How we use it: Benchmark, citable quantification of the 2018-19 tariff shock (complete pass-through, $51B consumer cost, $7.2B net loss) plus political-geography incidence (protection aimed at swing counties, retaliation hitting Republican counties) — directly anchors tariff shocks as repricing events and party-linked winners/losers.
+
+## Method notes imported from the literature
+
+Align events on odds shifts and result-known dates, not calendar dates (Snowberg et al; Amihud-Wohl). Classify surprise with prediction markets (Rhode-Strumpf). Expect slow multi-day repricing of complex exposures (Wagner et al). Report raw and risk-adjusted (Sy-Al Zaman; Chan-Marsh). Regulation/policy only reprices when unanticipated (Schwert 1981). Treat industry party-tilts as descriptive given out-of-sample fragility (Stangl-Jacobsen). For century-scale risk context, the news-implied volatility index extends to 1890 (Manela-Moreira 2017).

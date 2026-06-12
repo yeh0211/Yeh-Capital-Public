@@ -469,12 +469,84 @@ def test4() -> dict:
     return res
 
 
+# ----------------------------------------------------------------------
+# Test 5 — cross-check with study 15: do mega-IPO stocks chase any better?
+# ----------------------------------------------------------------------
+
+# Study 15 base rates (760 IPOs, 2022-10+ vintage, day-1 close entry,
+# excess vs SPY): median -15.4% at 180d (25% beat), -28.4% at 365d (19% beat).
+STUDY15 = {"6m": {"median_excess": -15.4, "pct_beat": 25.0},
+           "12m": {"median_excess": -28.4, "pct_beat": 19.0}}
+
+
+def test5() -> dict:
+    ndq = load_close("nasdaq_composite")
+    spx = load_close("sp500")
+    ipos = pd.read_csv(DATA / "mega_ipos.csv", parse_dates=["first_trade_date"])
+    rows = []
+    for f in sorted((DATA / "megastocks").glob("*.csv")):
+        tick = f.stem
+        px = pd.read_csv(f, parse_dates=["date"]).set_index("date").sort_index()
+        # macrotrends prepends an offer-price placeholder row (volume 0)
+        # and, for some names, when-issued rows before the listing date
+        sample_tick = {"META": "FB"}.get(tick, tick)
+        ftd = ipos.loc[ipos["ticker"] == sample_tick, "first_trade_date"].iloc[0]
+        live = px[(px.index >= ftd) & (px["volume"] > 0)]["close"]
+        day1 = float(live.iloc[0])
+        day1_d = live.index[0]
+        out = {"ticker": tick, "day1_close_date": day1_d.date().isoformat()}
+        for label, h in (("6m", 126), ("12m", 252)):
+            if len(live) <= h:
+                out[f"abs_{label}"] = np.nan
+                out[f"excess_ndq_{label}"] = out[f"excess_spx_{label}"] = np.nan
+                continue
+            stock_r = live.iloc[h] / day1 - 1
+            out[f"abs_{label}"] = round(stock_r * 100, 1)
+            for bname, bser in (("ndq", ndq), ("spx", spx)):
+                i = bser.index.searchsorted(day1_d, side="right") - 1
+                idx_r = bser.values[i + h] / bser.values[i] - 1
+                out[f"excess_{bname}_{label}"] = round((stock_r - idx_r) * 100, 1)
+        rows.append(out)
+    t = pd.DataFrame(rows)
+    t.to_csv(HERE / "megaipo_chase_returns.csv", index=False)
+
+    summary = {"n": int(len(t)), "study15_base": STUDY15}
+    for label in ("6m", "12m"):
+        a = t[f"abs_{label}"].dropna()
+        summary[label] = {"median_abs_pct": round(float(a.median()), 1)}
+        for bname in ("ndq", "spx"):
+            e = t[f"excess_{bname}_{label}"].dropna()
+            summary[label][f"median_excess_{bname}_pct"] = round(float(e.median()), 1)
+            summary[label][f"pct_beating_{bname}"] = round(float((e > 0).mean()) * 100, 1)
+
+    # Fig 6 — per-name 12m S&P excess (study 15's benchmark family) vs its base rate
+    fig, ax = plt.subplots(figsize=(9, 4.8))
+    t6 = t.dropna(subset=["excess_spx_12m"]).sort_values("excess_spx_12m")
+    colors = [ACCENT if v < 0 else "#5a5145" for v in t6["excess_spx_12m"]]
+    ax.barh(t6["ticker"], t6["excess_spx_12m"], color=colors, height=0.6)
+    ax.axvline(0, color=INK, linewidth=1)
+    ax.axvline(STUDY15["12m"]["median_excess"], color=GREY, linestyle="--", linewidth=1.3,
+               label="Study 15 broad-IPO median excess at 1y (-28.4%)")
+    med = float(t6["excess_spx_12m"].median())
+    ax.axvline(med, color=ACCENT, linestyle=":", linewidth=1.3,
+               label=f"Mega-IPO subset median ({med:+.1f}%)")
+    ax.set_xlabel("Stock return minus S&P 500, 12 months from day-1 close (%)")
+    ax.set_title("Chasing the mega-IPOs themselves, vs study 15's broad base rate",
+                 loc="left", fontsize=12)
+    ax.legend(frameon=False, fontsize=8.5, loc="lower right")
+    fig.tight_layout()
+    fig.savefig(HERE / "fig6_megaipo_chase_vs_study15.png", dpi=160)
+    plt.close(fig)
+    return summary
+
+
 def main() -> None:
     results = {"test1_trump_event_study": test1()}
     t2, _ = test2()
     results["test2_megaipo_base_rate"] = t2
     results["test3_relative_scale"] = test3()
     results["test4_gme_control_case"] = test4()
+    results["test5_study15_crosscheck"] = test5()
     (HERE / "results.json").write_text(json.dumps(results, indent=2))
     print(json.dumps(results, indent=2))
 

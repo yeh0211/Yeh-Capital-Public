@@ -12,6 +12,7 @@ This matters for a position: if the analogy holds, the week SpaceX lists is the 
 - But as a *stock* of value, SpaceX at the indicated $170 open would be 3.1% of all US equities — a bigger share of its asset class than TRUMP ever was of crypto. The TRUMP pattern lives on at the asset level, not the market level: 4.25% free float, a scarcity premium, and a supply calendar (study 24) that multiplies tradable shares 9.4x within six months.
 - GameStop, the control case, completes the dose-response line. At its January 2021 peak GME was just 0.05% of US equities, and even with short interest at 140% of float its squeeze dented the S&P only -3.3% for nine sessions (forced de-grossing) before full recovery. Small relative to the class: no lasting market damage. But the stock itself fell 88% in 16 sessions once the supply constraint resolved — the same vertical-then-collapse shape as TRUMP.
 - Mega-IPOs do carry market-level information. Across the 34 largest US-listed IPOs since 1996, the NASDAQ's median return over the following 12 months was +4.9%, against +16.0% for all days in the same era. Only 0.8% of random 34-date draws look that bad. 59% of these IPOs were followed by a 20%+ index drawdown within a year, against a 36% base rate.
+- And fame does not buy the *stock* out of the chase deficit. Cross-checked like-for-like against study 15's broad base rate (760 IPOs: -28.4% median one-year excess vs SPY, 19% beat), the ten data-available mega-IPOs ran -27.7% vs the S&P with 20% beating — the same deficit, from an independent sample and era. The damage is front-loaded (-32.3% at six months, twice the broad base), landing exactly in the unlock window; measured against the NASDAQ these names trade in, the one-year deficit is -37.9%.
 - The signal is clustering, not causation: issuers sell the most stock when the window is hottest, so record IPOs land late in cycles. Drop the five IPOs from the first half of 2000 and half the deficit disappears.
 - Verdict: **No on the market mechanism, conditional yes on the timing signal, and yes at the asset level.** SpaceX will not vacuum the market the way TRUMP did — but the share itself carries the low-float mania architecture, and the *fact that this deal was possible at all* — at 94x revenue, four times oversubscribed, in a record $160B IPO-pipeline year — has historically been the property of late-cycle markets.
 
@@ -33,6 +34,7 @@ Four tests, from the known case to the open question:
 2. **The base rate.** Take the 34 largest US-listed IPOs from 1996-2024 and measure index returns 1, 3, 6 and 12 months after each, against the unconditional distribution over the same era. Bootstrap the medians. Then try to kill the result twice (drop the dot-com cluster; condition the base rate on an equally hot tape).
 3. **The scale test, two ways.** Compare each event to its host market both as a *stock* (instant value as a share of the whole asset class — including TRUMP against all of crypto, and SpaceX at $135 and at the indicated $170 against all US equities) and as a *flow* (trading shock against the host's daily turnover). If TRUMP was a whale in a pond and SpaceX is a whale in the ocean, the flow mechanism does not transfer no matter what the charts rhyme like.
 4. **The control case.** GameStop, January 2021: a low-float scarcity vertical that was *tiny* relative to its asset class. If the scale logic is right, GME should have crushed its own holders without leaving a mark on the broad market — a prediction the data can check. It also supplies the third member of the low-float family that study 24's SpaceX float model belongs to.
+5. **The study 15 cross-check.** Study 15 measured the IPO *chase* — buying the day-1 close — across 760 ordinary IPOs and found it loses badly to the index. If this study's mega-IPOs are a different breed (famous, institutional, underwritten by the best), maybe they escape that base rate. Recompute study 15's exact trade on the mega-IPO sample itself and find out.
 
 The identification problem, out loud: with n=34 events that cluster in time, I cannot cleanly separate "mega-IPOs cause weak markets" from "mega-IPOs happen when markets are about to be weak." I don't try to. For the practical question — should the SpaceX listing change your risk posture? — the two stories give the same answer, and I say which one the data favors in Finding 4.
 
@@ -46,6 +48,7 @@ The identification problem, out loud: with n=34 events that cluster in time, I c
 | S&P 500 daily closes | macrotrends | Dec 1927 - Jun 2026 | independent cross-check |
 | Mega-IPO sample | hand-built from contemporaneous press + filings | 1996-2024 | all 34 US-listed IPOs with base proceeds >= ~$2.8B; SPACs, direct listings and closed-end funds excluded |
 | GameStop daily OHLCV | macrotrends (public dataset endpoint) | Jun 2011 - Jun 2026 | split-adjusted prices (4-for-1, Jul 2022); volume in unadjusted shares |
+| Mega-IPO stock histories (10 names) | macrotrends per-stock pages | from each IPO - Jun 2026 | every sample name with from-IPO daily data on the free tier (2012+ vintage): META, BABA, SYF, SNAP, UBER, SNOW, ABNB, DASH, ARM, RIVN |
 | On-chain launch-weekend stats | Helius, Chainalysis (via NYT/CNBC), DefiLlama | Jan 2025 | cited, not recomputed |
 | Scale constants | Cboe, Siblis Research, Mordor Intelligence, contemporaneous reports | 2021-2026 | US equity mcap ~$72T (2026) / ~$50T (2021); US daily notional $1.1T (2025); total crypto mcap peak ~$3.8T (mid-Jan 2025); GME short interest ~140% of float (Jan 2021) |
 
@@ -186,6 +189,41 @@ spx_dent   = spx["2021-01-25":"2021-01-29"].min() / spx.asof("2021-01-22") - 1  
 
 *Verdict.* **Confirmed at the asset level.** Low-float verticals revert hard once supply normalizes, and SpaceX's supply normalizes on a published calendar. The TRUMP analogy fails for the market (Finding 4) but holds for the share.
 
+## Finding 6 — cross-check with study 15: fame does not buy you out of the chase deficit
+
+*What I expected.* [Study 15](../15-ipo-chase/) measured what happens when you buy an IPO at its first day's close — the price retail can actually get — across 760 US IPOs: a median one-year excess return of -28.4% versus SPY, with only 19% of names beating the market (-15.4% and 25% at six months). But that sample is the 2022-onward vintage, dominated by small and micro-cap listings. A reasonable objection to using it on SpaceX: *these* deals are different — famous franchises, top-tier underwriters, institutional books. Maybe mega-IPOs escape the chase deficit. I expected them to do at least somewhat better than the broad base rate. They don't.
+
+*How I measured it.* Study 15's exact trade, run on this study's own sample: buy each mega-IPO at its day-1 close, hold six and twelve months, measure against both the S&P 500 (study 15's benchmark family) and the NASDAQ (the index these names mostly trade in). Ten of the 34 names have from-IPO daily data on the free tier (everything listed 2012 or later and still trading): META, BABA, SYF, SNAP, UBER, SNOW, ABNB, DASH, ARM, RIVN.
+
+```python
+day1   = first_close_with_volume(stock)        # skip the offer-price placeholder row
+excess = stock[h] / day1 - index[h] / index[day1]        # h in {126, 252} days
+# subset medians vs S&P:    6m -32.3% (20% beat), 12m -27.7% (20% beat)
+# subset medians vs NASDAQ: 6m -33.0% (20% beat), 12m -37.9% (20% beat)
+# study 15 broad (vs SPY):  6m -15.4% (25% beat), 12m -28.4% (19% beat)
+```
+
+*What the data shows.*
+
+![Mega-IPO chase vs study 15 base rate](fig6_megaipo_chase_vs_study15.png)
+
+| Chase from day-1 close | Mega-IPOs vs S&P (n=10) | Mega-IPOs vs NASDAQ (n=10) | Study 15 broad base, vs SPY (n=760) |
+|---|---|---|---|
+| 6-month median excess | **-32.3%** | -33.0% | -15.4% |
+| 6-month % beating index | 20% | 20% | 25% |
+| 12-month median excess | **-27.7%** | -37.9% | -28.4% |
+| 12-month % beating index | 20% | 20% | 19% |
+
+Like-for-like, the twelve-month numbers are nearly identical: -27.7% for the mega-IPOs against -28.4% for study 15's broad zoo, with the same one-in-five hit rate. The most institutional, most underwritten, most famous deals of the era earned the *same* chase deficit as the micro-cap junk — that is the cross-check's headline. Two differences are real, though. The mega-IPO damage is front-loaded: at six months the subset is already -32.3% (twice the broad base's -15.4%), which is exactly the lock-up window where Finding 5 says the float multiplies. And against the NASDAQ — the index a SpaceX buyer would otherwise own — the deficit is -37.9%.
+
+Eight of ten lost to the market in year one, several catastrophically: META -63% excess vs the S&P (the famous 2012 halving), RIVN -52%, DASH -40%, SNAP -39%, BABA -30%, UBER -26%. The two winners are instructive: ARM (+93%) rode the 2023-24 AI repricing, and SYF (+40%) was the sample's *least* famous deal — a spun-off consumer lender nobody chased. Median absolute returns were -16.7% at six months and -18.4% at a year, against an unconditional NASDAQ 12-month median of +16%: buying the median mega-IPO at its first close cost about 34 points versus just owning the index.
+
+*Why (mechanism).* This is Findings 2 and 5 compounding at the level of one trade. The index itself runs below base rate after these events (Finding 2), and the stock carries the low-float architecture — day-1 prices set on a sliver of float at peak fame, then unlock supply arriving for months (Finding 5), which is why the deficit is deepest in the first six months. The fame that fills a record order book is exactly what guarantees the day-1 buyer overpays; SYF, with no fame to price in, is the exception that fits the rule.
+
+*What I checked.* The era differs (2012-2023 here vs 2022+ there) — two independent vintages landing on the same number is the point of a cross-check, not a flaw in it. The subset omits DiDi — delisted within a year of its IPO, down roughly 87% — plus the 2000-era disasters (AT&T Wireless, Agere, Infineon), so the data-availability cut *flatters* the mega-IPO side; the true historical medians are worse than the table. Dividends are excluded on both legs (hurts the high-yield names' showing slightly; direction against my conclusion, magnitude small at these horizons).
+
+*Verdict.* **Study 15 confirmed on an independent sample — and sharpened.** Same trade, different era, different names: the like-for-like medians agree within a point. Quality, fame and underwriting do not repeal the chase base rate; they just concentrate the losses into the first six months, where the unlocks live. Study 15's warning applies to SpaceX without a discount.
+
 ## Did I just find noise?
 
 Four ways this could be nothing, and what the checks said:
@@ -213,8 +251,9 @@ What I could not test: only 34 events exist at this size. This is a structurally
 | Did GME (0.05% of its class, 140% SI/float) hurt the broad market? | **Barely** — de-grossing only | S&P -3.3%, NASDAQ -3.5% in the week | — | recovered in 9 sessions |
 | Do low-float verticals revert? | **Yes, hard** | GME -88% in 16 sessions; TRUMP -84% in 3 months | — | 1y later: GME 27%, TRUMP 11% of peak |
 | 20%+ index drawdown within 12m of a mega-IPO? | **Elevated** | max-dd -29.8% vs -16.5% | — | 59% vs 36% base |
+| Does study 15's chase deficit hold for mega-IPOs? | **Yes — same deficit, front-loaded** (n=10, 2012-2023) | 12m vs S&P -27.7% (study 15: -28.4%); 6m -32.3% (study 15: -15.4%) | abs -18.4% at 12m | 20% beat vs 19% broad |
 
-**What this means for the live event.** SpaceX listing today is not a sell-everything signal — a single IPO is a weak timer and the market will not be drained by it. But hold the two levels apart. *Market level:* the context — the biggest raise ever at 94x revenue, four times oversubscribed, a 30% retail tranche, OpenAI filing four days before it, a forecast record $160B IPO year — is the cluster forming, and clusters are what carried the 12-month deficit; the year after days like this has historically been below-average and drawdown-prone. *Asset level:* a buyer at the $170-175 indicated open takes the TRUMP-coin architecture personally — a 26-30% scarcity premium, on a 4.25% float, over a price already 1.4-2.3x credible fair-value marks, with tradable supply scheduled to reach 9.4x the float by day 180 (study 24). The two low-float precedents in this study gave back 73-89% of their peak within a year. Position for chop at the index level, treat day-one euphoria as the thermometer reading, and respect the unlock calendar before sizing the share itself.
+**What this means for the live event.** SpaceX listing today is not a sell-everything signal — a single IPO is a weak timer and the market will not be drained by it. But hold the two levels apart. *Market level:* the context — the biggest raise ever at 94x revenue, four times oversubscribed, a 30% retail tranche, OpenAI filing four days before it, a forecast record $160B IPO year — is the cluster forming, and clusters are what carried the 12-month deficit; the year after days like this has historically been below-average and drawdown-prone. *Asset level:* a buyer at the $170-175 indicated open takes the TRUMP-coin architecture personally — a 26-30% scarcity premium, on a 4.25% float, over a price already 1.4-2.3x credible fair-value marks, with tradable supply scheduled to reach 9.4x the float by day 180 (study 24). The two low-float precedents in this study gave back 73-89% of their peak within a year, and the chase base rate for the most famous deals — study 15's trade, recomputed on this sample — is a median -27.7% against the S&P over the first year (-37.9% against the NASDAQ), with eight of ten losing and the worst of it landing in the first six months. Position for chop at the index level, treat day-one euphoria as the thermometer reading, and respect the unlock calendar before sizing the share itself.
 
 ## Caveats
 
@@ -229,7 +268,7 @@ What I could not test: only 34 events exist at this size. This is a structurally
 ## Reproducibility
 
 - [pull_data.py](pull_data.py) — fetches the Binance and index series from public endpoints. Note: the macrotrends endpoints (index histories and the GameStop series, extracted from its stock-price-history page) sit behind a bot wall that may require a browser-like fetch; the exact snapshots used are committed under [data/](data/).
-- [run_study.py](run_study.py) — all four tests, every figure, every number in this document; writes [results.json](results.json) and [ipo_event_returns.csv](ipo_event_returns.csv) (per-event forward returns, both indexes, all horizons).
+- [run_study.py](run_study.py) — all five tests, every figure, every number in this document; writes [results.json](results.json), [ipo_event_returns.csv](ipo_event_returns.csv) (per-event index forward returns, both indexes, all horizons) and [megaipo_chase_returns.csv](megaipo_chase_returns.csv) (per-name day-1-close chase returns, absolute and index-excess).
 - The governing statistic, in one line: `p = mean([median(sample(base_12m, 34)) for 10k draws] <= +4.9%) = 0.008`.
 
 ## Sources and forward pointers
@@ -238,5 +277,5 @@ What I could not test: only 34 events exist at this size. This is a structurally
 - SpaceX deal terms: Reuters pricing coverage (June 11, 2026); S-1 financials and the float/unlock model as analyzed in study 24; Cboe "2025 U.S. Equities Year in Review" (daily notional); Siblis Research / Visual Capitalist (US market cap); Mordor Intelligence (total crypto market cap, early-2025 peak).
 - GameStop: daily prices via macrotrends; short-interest-vs-float figure (~140%) per the post-episode academic and regulatory reviews; AMC June 2, 2021 all-time high per contemporaneous coverage.
 - IPO sample: contemporaneous NYT, Washington Post, LA Times, MarketWatch, Insurance Journal and SEC filings per deal.
-- **Builds on** [study 15](../15-ipo-chase/) (the IPO-chase base rate), [study 22](../22-equity-issuance-top-signal/) (aggregate issuance does *not* time tops — this study's narrower event-level claim is the surviving piece), and [study 24](../24-spacex-ipo-quality-model/) (the SpaceX-specific float/unlock model; its supply calendar is the trade plan this study's clock sits behind).
+- **Builds on** [study 15](../15-ipo-chase/) (the IPO-chase base rate — independently confirmed here on the mega-IPO sample: like-for-like one-year medians agree within a point, with the mega damage front-loaded into the six-month unlock window), [study 22](../22-equity-issuance-top-signal/) (aggregate issuance does *not* time tops — this study's narrower event-level claim is the surviving piece), and [study 24](../24-spacex-ipo-quality-model/) (the SpaceX-specific float/unlock model; its supply calendar is the trade plan this study's clock sits behind). The three prior studies and this one now form one consistent ladder: aggregate issuance has no timing signal (22), supply waves are warnings rather than triggers (15's regime check — its GFC false positive matches this study's "conditional" grade), record single events lean bearish at 12 months (28), and the listed share itself is the reliably bad part of the trade (15 broad, 24 filtered, 28 mega — three samples, one sign).
 - **Next:** a day-one follow-up once SPCX has a close — and the cluster watch: if OpenAI and Anthropic price into the same window, Finding 3 says the clock matters more than any single deal.

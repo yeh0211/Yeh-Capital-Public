@@ -163,5 +163,32 @@
     "spx_degross_week_pct": -3.31,
     "ndq_degross_week_pct": -3.49,
     "spx_sessions_to_recover": 9
+  },
+  "test5_study15_crosscheck": {
+    "n": 10,
+    "study15_base": {
+      "6m": {
+        "median_excess": -15.4,
+        "pct_beat": 25.0
+      },
+      "12m": {
+        "median_excess": -28.4,
+        "pct_beat": 19.0
+      }
+    },
+    "6m": {
+      "median_abs_pct": -16.7,
+      "median_excess_ndq_pct": -33.0,
+      "pct_beating_ndq": 20.0,
+      "median_excess_spx_pct": -32.3,
+      "pct_beating_spx": 20.0
+    },
+    "12m": {
+      "median_abs_pct": -18.4,
+      "median_excess_ndq_pct": -37.9,
+      "pct_beating_ndq": 20.0,
+      "median_excess_spx_pct": -27.7,
+      "pct_beating_spx": 20.0
+    }
   }
 }

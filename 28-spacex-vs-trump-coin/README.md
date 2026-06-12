@@ -271,6 +271,52 @@ What I could not test: only 34 events exist at this size. This is a structurally
 - [run_study.py](run_study.py) — all five tests, every figure, every number in this document; writes [results.json](results.json), [ipo_event_returns.csv](ipo_event_returns.csv) (per-event index forward returns, both indexes, all horizons) and [megaipo_chase_returns.csv](megaipo_chase_returns.csv) (per-name day-1-close chase returns, absolute and index-excess).
 - The governing statistic, in one line: `p = mean([median(sample(base_12m, 34)) for 10k draws] <= +4.9%) = 0.008`.
 
+## Postscript — day one, in the data (added after the June 12, 2026 close)
+
+The study shipped before the first trade; the close arrived the same evening. Two questions could now be answered with prints instead of indications: how does SpaceX's day one rank against the other mega-IPOs, and did the TRUMP-style vacuum show up anywhere?
+
+**Day one against the family.** SPCX opened at $150 (well below the $174-175 pre-open indications) and closed at $160.95, up 19.2% from the $135 offer — a $2.11 trillion close. Against the ten mega-IPOs from Finding 6, that pop is *below* the median:
+
+| Name (IPO year) | Day-1 pop, offer to close | Stock 12m later (abs) | 12m excess vs S&P |
+|---|---|---|---|
+| Airbnb (2020) | +112.8% | +24.7% | -3.8% |
+| Snowflake (2020) | +111.6% | +27.4% | -4.7% |
+| DoorDash (2020) | +85.8% | -13.0% | -40.1% |
+| Snap (2017) | +44.0% | -26.4% | -39.4% |
+| Alibaba (2014) | +38.1% | -31.9% | -29.8% |
+| Rivian (2021) | +29.1% | -67.3% | -52.4% |
+| ARM (2023) | +24.7% | +117.6% | +92.6% |
+| **SpaceX (2026)** | **+19.2%** | ? | ? |
+| Facebook (2012) | +0.6% | -34.2% | -62.8% |
+| Synchrony (2014) | 0.0% | +49.4% | +40.4% |
+| Uber (2019) | -7.6% | -23.9% | -25.6% |
+
+The restrained pop (median of the ten: ~+27%) is consistent with the deal's design: a 30% retail tranche fed the demand that normally chases the open, and the price was fixed before the roadshow. Day-1 pop size has no reliable relationship with year-one outcome in this family — the two biggest poppers went roughly flat-to-fine, the flattest opener (Facebook) was the worst year-one hold.
+
+**The vacuum found its pond.** The study's scale logic (Finding 4) said SpaceX cannot drain a $72T market but is enormous relative to its *sector*. Day one delivered exactly that split. The broad tape was up — S&P +0.5%, NASDAQ-100 +0.6%, Russell 2000 +0.9% — while every listed space pure-play was hit, hard:
+
+| Space pure-play | Day-1 move | Market cap |
+|---|---|---|
+| Firefly Aerospace (FLY) | **-19.1%** | $5.1B |
+| AST SpaceMobile (ASTS) | **-14.4%** | $32.4B |
+| Intuitive Machines (LUNR) | -13.1% | $6.7B |
+| Redwire (RDW) | -11.5% | $3.4B |
+| EchoStar (SATS) | -11.0% | $33.1B |
+| BlackSky (BKSY) | -9.9% | $1.2B |
+| Planet Labs (PL) | -8.8% | $11.1B |
+| Procure Space ETF (UFO) | -7.0% | — |
+| Rocket Lab (RKLB) | -6.9% (on a Nasdaq-100 inclusion day) | $61.7B |
+| Iridium (IRDM) | -5.2% | $5.0B |
+| Viasat (VSAT) | -3.5% | $9.6B |
+| Globalstar (GSAT) | -0.5% | $10.5B |
+| *Reference: S&P +0.5%, NASDAQ-100 +0.6%, Russell 2000 +0.9%* | | |
+
+Cap-weighted, the listed space complex fell about 9% — roughly $17B of market value — on a day the index rose. And the dominance ratio explains why: those eleven names sum to about $180B, so SpaceX at $2.11T is **11.7x its entire listed sector** — it instantly *is* about 92% of the listed space asset class. TRUMP at peak was 54% of its host chain's value; SpaceX's grip on its own pond is larger. Before today, the pure-plays carried a scarcity premium as the only listed ways to own space; that premium died at 9:30 this morning, the same way the memecoin complex's "only way to own the moment" premium died the weekend TRUMP launched. (Read-through competition is part of it too — the worst-hit large name, AST SpaceMobile, is Starlink's most direct rival — but Firefly and Intuitive Machines don't compete with Starlink and fell just as hard.)
+
+**What this changes.** Nothing in the verdict, one thing in the watch list. The market-level call (no drain — Finding 4) was confirmed on day one: the index didn't blink. The host-market call (the vacuum hits the pond, not the ocean — Finding 1's mechanism) was also confirmed; the pond just turned out to be the space sector, precisely as the dose-response line predicted. The new watch item: if the TRUMP template runs its course, the space pure-plays' relative highs are behind them, while the unlock calendar (70/90/105/120/135/180 days — roughly late August through mid-December 2026) now applies the TRUMP-style scheduled-supply decay to SPCX itself. One day is one day; the six-month marks from Finding 6 (-32.3% median excess for mega-IPOs) come due in December.
+
+Day-one tape committed at [data/day_one_tape.csv](data/day_one_tape.csv) (closes, day moves, market caps as of June 12, 2026).
+
 ## Sources and forward pointers
 
 - Helius, "$TRUMP's Historic Weekend on Solana" (on-chain launch statistics); Chainalysis wallet P&L via NYT (Feb 9, 2025) and CNBC (May 6, 2025); Reuters and BBC contemporaneous launch coverage; Token Unlocks / contemporaneous coverage of the April 2025 TRUMP unlock schedule.

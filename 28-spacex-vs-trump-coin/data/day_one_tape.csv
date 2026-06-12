@@ -1,0 +1,17 @@
+ticker,name,role,close_2026_06_12,day_change_pct,market_cap_usd_b
+SPCX,SpaceX,the event,160.95,19.22,2110.0
+RKLB,Rocket Lab,launch pure-play,106.85,-6.91,61.7
+SATS,EchoStar,satellite/spectrum,114.08,-10.97,33.1
+ASTS,AST SpaceMobile,direct-to-cell (Starlink rival),83.49,-14.42,32.4
+PL,Planet Labs,earth observation,31.15,-8.84,11.1
+GSAT,Globalstar,satellite connectivity,80.78,-0.47,10.5
+VSAT,Viasat,satellite broadband (Starlink rival),70.17,-3.49,9.6
+LUNR,Intuitive Machines,lunar services,26.62,-13.12,6.7
+FLY,Firefly Aerospace,launch pure-play,31.87,-19.05,5.1
+IRDM,Iridium,satellite connectivity (Starlink rival),47.32,-5.19,5.0
+RDW,Redwire,space infrastructure,15.12,-11.53,3.4
+BKSY,BlackSky,earth observation,32.42,-9.87,1.2
+UFO,Procure Space ETF,sector ETF,52.92,-6.99,
+IWM,iShares Russell 2000,small caps,292.95,0.87,
+QQQ,Invesco QQQ,NASDAQ-100,721.34,0.59,
+SPY,SPDR S&P 500,broad market,741.75,0.54,

@@ -25,6 +25,7 @@
 - **The subscription subsidy is now measured, not inferred.** SemiAnalysis ran the Anthropic and OpenAI plans to the weekly cap; max draw is 20-70x plan price, with break-even utilization as low as 5.7%.
 - **Agents are the utilization pump.** Relays dragged seats to 100% utilization illegally; long-horizon agents do the same work natively, so the risk is distribution shift, not one average-user estimate.
 - **The retreat is already on tape.** Copilot token billing, Claude Code's Pro-plan test, Codex API-token pricing and OpenAI's Plus-to-Go forecast all point to bifurcation before a public nerf.
+- **Filings show concentration rising at every tier:** the first-order stress floors run from -8.5% to -33.5% on a 50% capex cut and up to -67% on a single-payer failure; the 2000 control says the chain amplifies from roughly -60% tier-1 to -79% tier-2, with casualties where concentration, leverage and same-cycle collateral overlap.
 
 ---
 
@@ -208,6 +209,96 @@ What to watch: subscription-plan repricings, frontier-model API-only launches su
 
 ---
 
+## The circle, decomposed: what the filings disclose
+
+The money map showed the financing edges. I read the circle the other way here — the revenue dependencies, straight out of customer-concentration disclosures in 10-Ks, 20-Fs and quarterlies. The method is deliberately narrow: SEC-style filings generally disclose customers at or above 10% of revenue, so every percentage below is a floor on true exposure. The payer is what matters first in a stress. Nvidia is the special case: its disclosed direct customers are intermediaries, and its FY2026 10-K says some indirect customers individually represent 10% or more, so end-demand concentration is higher than the direct line shows.
+
+| Layer | Name | Disclosed concentration | Trend into the cycle | Source |
+|---|---|---:|---|---|
+| Neocloud | CoreWeave | Microsoft was approximately 67% of FY2025 revenue; OpenAI added $11.2B backlog | Current-cycle single-payer exposure | CRWV FY2025 10-K; Q1-2025 release |
+| Compute | Nvidia | FY2026 direct customers: 22% and 14%; indirect customers estimated at 10%+ individually | 13% in FY2024, then 12%/11%/11% in FY2025, then 22%+14% | NVDA FY2026 10-K |
+| Integration | Super Micro | Four customers each at least 10% of FY2025 sales | One 10% customer became four | SMCI FY2025 10-K |
+| Foundry | TSMC | Top 10 customers were 78% of 2025 revenue; customer #2 was 17%; HPC was 55% of Q4-2025 revenue | Customer #2 rose 11%, 12%, 17% | TSM 2025 20-F; Q4-2025 results |
+| Memory | Micron | One customer was 17% of FY2025 revenue, mainly CMBU | 13% a year earlier, 17% in Q1 FY2026 | MU FY2025 10-K; Q1 FY2026 10-Q |
+| Memory | SK hynix | Press-reported 62-64% HBM share; HBM over 30% of DRAM revenue | Press-reported, not filing history | CNBC Oct. 2025; third-party estimates |
+| Networking/ASIC | Broadcom | Top 5 end customers about 40% of FY2024 and FY2025 revenue | High and steady | AVGO FY2025 10-K |
+| Cloud forward book | Oracle | RPO $455B in Q1 FY2026, up 359%; WSJ-reported roughly $300B OpenAI deal, later study figure about $638B RPO | Forward book ballooned, not current revenue | ORCL Q1 FY2026 results; WSJ reporting |
+
+![Concentration ladder](figures/concentration-ladder.png)
+
+The trend is the point. Nvidia's disclosed direct concentration rose into FY2026; TSMC's second customer rose from 11% to 17%; Micron's disclosed customer rose from 13% to 17%; Super Micro went from one 10% customer to four. The circle is not diversifying as it scales.
+
+### The stress arithmetic: minus 50%, and minus one player
+
+These are first-order arithmetic floors — no inventory burn, no pricing reset, no credit reflex. The 50% cut is an assumed stress, not a forecast. One worked example: TSMC disclosed HPC at 55% of Q4-2025 revenue; a 50% cut to that exposed block is 27.5% of total revenue before second-round effects.
+
+| Name | -50% capex cut: first-order revenue at risk | Basis |
+|---|---:|---|
+| CoreWeave | -33.5% | 67% Microsoft exposure in CRWV FY2025 10-K |
+| TSMC | -27.5% | 55% HPC share in TSMC Q4-2025 results |
+| Super Micro | at least -20% | Four 10%+ customers in SMCI FY2025 10-K |
+| Broadcom | -20% | Top 5 about 40% in AVGO FY2025 10-K |
+| Nvidia | -18% floor | Two direct customers were 36% in NVDA FY2026 10-K |
+| Micron | -8.5% floor | One 17% customer in MU FY2025 10-K |
+
+| Name | One-player failure: first-order hit | Basis |
+|---|---:|---|
+| CoreWeave | -67% | Largest payer stops, per CRWV FY2025 10-K |
+| Nvidia | -22% floor | Largest direct customer, per NVDA FY2026 10-K |
+| TSMC | -17% | Customer #2, per TSM 2025 20-F |
+| Micron | -17% | CMBU customer, per MU FY2025 10-K |
+| Super Micro | at least -10% | Largest of four not separately sized |
+| Oracle | up to about $300B of RPO | Forward-book event first, revenue event later, per WSJ-reported OpenAI deal |
+| SK hynix | HBM block exposed | Press-reported HBM over 30% of DRAM revenue, tied to one buyer's roadmap |
+
+History says the lower tiers overshoot this arithmetic, because inventory, double-ordering and credit unwind after the first customer stops.
+
+### 1999-2003: when the demand layer failed, the chain amplified it
+
+![Dot-com cascade](figures/dotcom-cascade.png)
+
+The verified sequence starts with WorldCom: fraud was discovered in June 2002, including an initial $3.8B of improper entries under SEC investigation, and Chapter 11 followed in July 2002 as the then-largest U.S. bankruptcy. Lucent then shows the equipment-tier hit: American Affairs puts revenue at roughly $30B in FY2000 and roughly $12B in FY2002, about a 60% fall, with vendor financing central; Lazonick and March put fiscal-2000 revenue at $41.4B including later-divested units; Lucent was gone as an independent by 2006. Nortel's Q4-2001 revenue was $3.4B, Light Reading reported; investigators later found roughly $3B of revenue improperly booked from 1998 to 2000, and Nortel filed bankruptcy in January 2009.
+
+The component tier fell harder. JDS Uniphase revenue went from $3.2B in FY2001 to $1.1B in FY2002 to $676M in FY2003, a 79% two-year collapse per Light Reading, and the New York Times reported the $44.8B July 2001 goodwill writedown, part of the largest annual loss in history at the time. Cisco took a $2.25B inventory write-off in the April 2001 quarter, cut 8,500 jobs, and its stock fell about 86%, per CNET/CIO and the existing study record. But Cisco had the survivor traits — positive free cash flow, no vendor-financing receivables, and a franchise that lived, even though it took about 21 years to reclaim its high. The earlier ledger's other tells still matter: 33-80% of vendor financing went uncollected across the telecom set, and under 5% of laid fiber was lit.
+
+**The amplification lesson:** end demand roughly halved; tier-1 equipment fell about 60%; tier-2 components fell about 79%. The further a supplier sits from final demand, and the more concentrated and levered it is, the more the realized loss overshoots the first customer cut.
+
+### The mapping, and the worst case by tier
+
+| 2000 role | 2026 occupant | Why |
+|---|---|---|
+| Leveraged buildout layer | OpenAI funding gap and neoclouds | CoreWeave has 67% Microsoft revenue and the study's $4.2B refi wall |
+| Levered vendor-financier | Oracle and neoclouds, not Nvidia | Oracle builds at -$23.7B FCF for one tenant; Nvidia used over $40B of equity and has the Cisco-like balance sheet |
+| Customer-concentrated components | SK hynix HBM, Micron, Super Micro | HBM over 30% of DRAM revenue; Micron 17% customer; SMCI four 10%+ customers |
+| Survivor profile | Nvidia, TSMC, hyperscalers | Cash-rich, diversified, or toll-road assets |
+
+Who is WorldCom? In this cycle it is the leveraged, creatively financed demand layer: OpenAI's funding gap plus the neoclouds whose collateral and revenues are priced off the same AI buildout. Who is Lucent? Oracle and the neoclouds: Oracle is carrying -$23.7B FCF while building for one cash-negative tenant, and the neoclouds sit closer to the collateral unwind. It is explicitly not Nvidia. Nvidia manufactures demand with more than $40B of equity into customers, but that is equity from a cash-rich balance sheet, not receivables leverage.
+
+Who is JDSU? The single-buyer supplier tier: SK hynix's HBM block, Micron's 17% customer, and Super Micro's four 10% customers. The lower-tier worst case is therefore not just the first-order -20% to -67% revenue hit at concentrated names. The 2000 control says the realized number overshoots when single-customer concentration, leverage and collateral priced off the same demand overlap.
+
+### Verdict
+
+**On a 50% capex cut:** the first-order floors run from -8.5% at Micron to -33.5% at CoreWeave, with Nvidia at an -18% direct-customer floor and TSMC at -27.5% on HPC.
+
+**On a single-player failure:** CoreWeave is the outright casualty risk at -67% of revenue from one payer; TSMC and Micron shrink but survive at -17%; Oracle's forward book deflates before its P&L because the hit is up to about $300B of RPO first.
+
+**The historical base rate:** the chain amplifies. Tier-2 overshoots. Survivors are the unlevered diversified names; casualties cluster where one customer, debt and same-cycle collateral meet.
+
+| Name | Largest AI customer | -50% scenario | One-player-fails scenario | 2000 analog | Survives? |
+|---|---|---:|---:|---|---|
+| CRWV | Microsoft 67% | -33.5% | -67% | Leveraged demand layer | At-risk |
+| NVDA | Direct customer 22%; two direct 36% | -18% floor | -22% floor | Cisco-like core | Yes |
+| TSM | Customer #2 17%; HPC 55% | -27.5% | -17% | Toll road survivor | Yes-diminished |
+| MU | One CMBU customer 17% | -8.5% floor | -17% | Component tier | Yes-diminished |
+| SMCI | Four 10%+ customers | at least -20% | at least -10% | Concentrated integrator | At-risk |
+| AVGO | Top 5 about 40% | -20% | Not separately disclosed | Diversified component tier | Yes-diminished |
+| ORCL | OpenAI about $300B RPO | Forward-book stress | Up to about $300B RPO | Vendor-financier | Yes-diminished |
+| SK hynix | HBM block tied to Nvidia roadmap | Not filing-sized | HBM over 30% of DRAM exposed | JDSU-like block | Yes-diminished |
+
+What I watch from here is simple: RPO concentration, the next 10-K concentration footnotes, and the refinancing calendar already flagged in the study. If those move together, the circle is no longer just concentrated — it is transmitting.
+
+---
+
 ## Method
 
 - **Value-chain map** — a 28-layer semiconductor/AI/power graph with typed, weighted edges; Nvidia's heaviest customer edges run to its most fragile customers (Super Micro, CoreWeave), its demand is driven by hyperscaler capex, and it is bottlenecked upstream by a single foundry (TSMC) and a 3-player HBM oligopoly.
@@ -216,6 +307,7 @@ What to watch: subscription-plan repricings, frontier-model API-only launches su
 - **Video verification** — the source video's audio was transcribed and claim-ledgered, then every load-bearing claim was independently checked against public primary sources (six clusters, each web-verified and adversarially refuted); inline framing throughout distinguishes verified fact from creator arithmetic from allegation from disputed figure.
 - **Adversarial pass** — a red-team review of the synthesis forced ~20 corrections (count reconciliations, removal of overstated labels, the GSY unit-of-analysis caveat above), all folded in.
 - **Subscription-subsidy ledger** — SemiAnalysis's measured plan caps are converted into break-even utilization and fleet sensitivities using the 75% API gross-margin assumption, while separating measured max draw from unobservable average utilization.
+- **Filing dependency matrix plus control-case stress test** — I combined customer-concentration disclosures, first-order revenue-at-risk arithmetic, and the 1999-2003 telecom cascade; all figures come from named filings, company releases, press-reported items explicitly labeled as such, or the study's already-carried historical ledger.
 
 ## Sources & verification (selected primary)
 
@@ -227,6 +319,7 @@ What to watch: subscription-plan repricings, frontier-model API-only launches su
 - **The video:** LinYi / 林亦, *"大模型中转站，凭啥这么便宜?"* ("LLM relay stations: how are they so cheap?"), YouTube, 5 Jun 2026.
 - **Subscription subsidy measurement:** SemiAnalysis X thread, 10 Jun 2026; The Information / Ed Zitron / WSJ on OpenAI's Plus-to-Go migration and Q1 2026 adjusted operating margin; Copilot, Codex and Claude Code repricing or withholding reports.
 - **GPU rental tape:** SemiAnalysis, *"The Great GPU Shortage — Rental Capacity"* (H100 one-year contract index) plus its AI Neocloud Playbook and ClusterMAX work; AIMultiple cross-provider GPU price index (2026).
+- **Customer concentration and cascade sources** — CRWV, NVDA, TSM, MU, SMCI, AVGO and ORCL filings/releases; WSJ-reported Oracle/OpenAI forward book; CNBC/third-party HBM estimates; American Affairs and Lazonick on Lucent; Light Reading on Nortel and JDSU; the New York Times on JDSU's writedown; CNET/CIO on Cisco; SEC/Wikipedia record on WorldCom.
 
 ## Academic anchors
 

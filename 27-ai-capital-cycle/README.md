@@ -22,6 +22,10 @@
 
 - **Every analog says the same thing.** The technology wins, the first-cycle capital is destroyed, and the eventual equity winners are mostly born in the wreckage.
 
+- **The subscription subsidy is now measured, not inferred.** SemiAnalysis ran the Anthropic and OpenAI plans to the weekly cap; max draw is 20-70x plan price, with break-even utilization as low as 5.7%.
+- **Agents are the utilization pump.** Relays dragged seats to 100% utilization illegally; long-horizon agents do the same work natively, so the risk is distribution shift, not one average-user estimate.
+- **The retreat is already on tape.** Copilot token billing, Claude Code's Pro-plan test, Codex API-token pricing and OpenAI's Plus-to-Go forecast all point to bifurcation before a public nerf.
+
 ---
 
 ## The relay-station economy: the negative-margin tail, industrialised
@@ -44,7 +48,7 @@ That consumer subscription access can be reused as a programmable API surface is
 
 The structural point survives even after you strip the gray market away: **a flat-rate plan is a free call option on compute, and the relay economy is what happens when someone exercises the option at scale.** Subscription pricing assumes most users sit well below their quota. Pooling many users behind one "solo seat" pushes every account to its cap — converting the seat the provider priced for a light average user into the negative-margin tail, and doing it industrially.
 
-How deep is that tail? Specialist analysts (SemiAnalysis, via trade press) report that a $200/month Claude Max user *can draw* $5,000–$8,000 of usage in a month at API list price, and that the $20 Pro tier is "roughly break-even on average users but significantly underwater on heavy users." Anthropic itself ran a test removing Claude Code from the $20 Pro tier for new users — corroborating that the heavy tier is a loss-leader.
+How deep is that tail? Specialist analysts (SemiAnalysis, via trade press) report that a $200/month Claude Max user *can draw* $5,000–$8,000 of usage in a month at API list price, and that the $20 Pro tier is "roughly break-even on average users but significantly underwater on heavy users." Anthropic itself ran a test removing Claude Code from the $20 Pro tier for new users — corroborating that the heavy tier is a loss-leader. *(Since first publication, SemiAnalysis has measured this directly by maxing out every plan: $8,000 for the $200 Claude tier, $14,000 for the $200 ChatGPT tier — see [The subsidy ledger](#the-subsidy-ledger-who-is-long-the-cheap-tokens-and-who-eats-it-when-they-stop) below.)*
 
 **But carry the rebuttal, because it matters.** A named public critique (Martin Alderson) argues the "$5,000–$8,000" is *retail-API-equivalent value*, not Anthropic's actual cost to serve — which he estimates at closer to ~$500/month (roughly 10% of retail), consistent with analysts modelling internal serving cost at 30–50% of API price. So the honest statement is narrow: **the heavy flat-rate user is gross-margin-negative against the price the provider charges itself for that compute, and the gray market industrialises exactly that user — but "$5–8k of provider cost per user" overstates it; the true cost gap is smaller, and serving a token remains gross-positive on average.** That nuance is the difference between "AI is structurally unprofitable" (false) and "flat-rate consumer pricing has a negative-margin tail that arbitrage attacks" (true).
 
@@ -109,6 +113,101 @@ Four interacting paths, not a partition: (1) a **credit/refinancing refusal** le
 
 Survivors, mapped onto the dot-com cast: Nvidia is **Cisco** (franchise survives and leads; the multiple is the risk, not the franchise); CoreWeave-tier neoclouds are **Lucent/Nortel** (the vendor financiers that don't make it; their GPUs and data centres become the cheap substrate of the deployment phase); the lab that keeps control from its creditors is **Amazon** (down hard, then compounds); and the biggest equity winner of the deployment phase is probably **the 2028 startup that doesn't exist yet**, renting compute at cents on the dollar from the wreckage. Structural winners regardless: TSMC (the toll road), the EDA/lithography monopolies, and whoever owns distribution and workflow lock-in.
 
+---
+
+## The subsidy ledger: who is long the cheap tokens, and who eats it when they stop
+
+A SemiAnalysis thread of 10 June 2026 turns the "free call option on compute" framing from trade-press folklore into measured data. SemiAnalysis bought one of each Anthropic and OpenAI subscription plan, then ran long-horizon coding tasks until the weekly limit was exhausted. The headline is no longer just "a $200 Claude Max seat can draw $5,000-$8,000" at API list. It is 20-70x measured multiples, with $200 seats drawing $8,000 on Claude Max and $14,000 on ChatGPT Pro.
+
+### The measured option
+
+![Measured subscription max draw by plan](figures/subsidy-ladder.png)
+
+**Measured fact:** SemiAnalysis measured maximum draw, not average subscriber use. The upgrade is precise: the $5,000-$8,000 Claude Max range becomes a measured $8,000 for `claude-max-20x`, and OpenAI's comparable tier reaches $14,000. The asymmetry is measured too: Anthropic plans sit at 20-40x API-equivalent value, while OpenAI's sit at 35-70x.
+
+The break-even math is the discipline. SemiAnalysis assumes API list carries a 75% gross margin, so cost-to-serve is 25% of API-equivalent value:
+
+`margin(u) = 1 - u * 0.25 * max_spend / price`
+
+For `chatgpt-pro-20x`, the break-even utilization is `200 / (0.25 * 14000) = 0.057`, or 5.7%. At 10% utilization, margin is `1 - 0.10 * 0.25 * 14000 / 200 = -0.75`. That means the seat is already at a negative 75% subscription margin before anything like full utilization. Across the six plans, break-even utilization ranges from 5.7% to 20%.
+
+![Break-even utilization frontier by plan](figures/breakeven-frontier.png)
+
+**Framing:** the subsidy scales with the cost basis. SemiAnalysis assumes 75% API gross margin; the Alderson rebuttal argues internal cost can be closer to 10% of retail, while other analysts model 30-50% of API price. Under any of those bases, the heavy-tail seat is underwater; only the hole size changes.
+
+### Agents are the utilization pump
+
+SemiAnalysis maxed the seats with long-horizon coding agents, which is exactly where mainstream usage is moving. The relay economy industrialised 100% utilization illegally by pooling users behind one seat. Agents do the same economic work natively and legally: they keep working until the quota stops them.
+
+So the average-utilization distribution should drift right over time. I cannot observe it from outside, and neither can anyone else using public data. The honest way to show the risk is a scenario grid, not a point estimate:
+
+| ChatGPT Plus utilization | Annual margin per subscriber | 44M Plus-seat annual margin |
+|---:|---:|---:|
+| 5% | $135 | $5.9B |
+| 10% | $30 | $1.3B |
+| 15% | -$75 | -$3.3B |
+| 20% | -$180 | -$7.9B |
+| 30% | -$390 | -$17.2B |
+
+Those are arithmetic sensitivities, not a forecast. But the mechanism is clear: agents push seats from light use toward heavy use, and the option goes in the money on more of the fleet.
+
+### The retreat has already started
+
+SemiAnalysis tweet 4/4 predicted the quiet exit: labs would withhold new features and models from subscriptions rather than explicitly nerf them, and it would be "interesting to see if Mythos ends up being API only." The tape corroborates it. Microsoft is moving all GitHub Copilot subscribers to token billing starting June 2026. Anthropic briefly removed Claude Code from the $20 Pro plan for new users on 21 April 2026. OpenAI moved Codex to API-token pricing on 2 April 2026. The Information, via Ed Zitron and WSJ reporting, has OpenAI forecasting Plus subscribers falling from 44M to 9M while ChatGPT Go, the $8 ad tier, fills the gap.
+
+There are only two endgames. **Subsidy ends by price:** plans bifurcate, frontier agents go API-only, and heavy users are repriced. **Subsidy ends by cost:** Epoch AI's roughly 50x/year inference deflation catches up fast enough that a $20 plan can profitably serve an Opus-4.8-class model "in the near future." The race is cost deflation against agentic usage growth.
+
+### The rental tape is the live gauge
+
+The missing bridge between the subscription subsidy and the credit event is the GPU rental price. Subsidized flat-rate seats manufacture inference demand; inference demand keeps clusters utilized; utilization supports the rental rate; and the rental rate is the cash yield lenders underwrite against neocloud collateral. That is the chain to watch: cheap seats, then rental yield, then refinancing math.
+
+**Measured fact:** SemiAnalysis's H100 rental index, in its public "The Great GPU Shortage - Rental Capacity" work, is the exact series behind the study's existing "+40% into 2026" claim. H100 one-year contract pricing rose almost 40%, from a low of $1.70/hr/GPU in October 2025 to $2.35/hr/GPU by March 2026. **Framing:** that is not proof that consumer subscriptions drove the move. SemiAnalysis attributes the tightening mostly to frontier training and committed lab demand, and I cannot isolate the subsidy contribution from outside. The honest claim is narrower: if subsidized inference demand is helping hold up utilization at the margin, the rental tape is where that help should show.
+
+The opposite phase matters just as much. SemiAnalysis's earlier AI Neocloud Playbook and ClusterMAX work documented H100 rental price drops accelerating from mid-2024, a cooled-off GPU rental market, and a buyers' market in Hopper-class capacity; the DeepSeek launch gave H200 rates only momentary stabilization. AIMultiple's 2026 cross-provider index across 37 providers puts the H100 cohort median around $2.95/GPU-hour, down from above $7 earlier in the cycle. That is the two-track market: older-vintage and on-demand rates deflated hard, while frontier-generation capacity is tight.
+
+**Press-reported / analyst-estimated tape:** SemiAnalysis reports customers fighting to pay $14/hr/GPU for B200 spot instances on AWS, with some neocloud giants no longer selling single nodes, while estimating OpenAI pays roughly $2.80 per GPU-hour on its first GB200 cluster against TCO of about $2.38/hr at full cluster scale. So the refi question is not "are GPUs worthless?" It is whether the cash yield on the specific collateral vintage still supports the debt stack.
+
+If the subsidy is switched off by repricing or bifurcation, demand revelation prints here first. Watch the H100/B200 one-year contract rate: it is the single number that tells me whether the manufactured demand layer is being switched off.
+
+### The exposure ladder
+
+| Rank | Who | Mechanism when the circle breaks | Severity |
+|---:|---|---|---|
+| 1 | Subscription-priced agentic tooling users and the heavy-tail prosumer | At the cap, the 25% cost basis implies a 5-17.5x cost load (`max_spend*0.25/price`); at API list, repricing is the full 20-70x. | Highest: direct price shock or feature loss |
+| 2 | The relay/gray-market economy | The arbitrage needs cheap subscription seats, account pooling and weak enforcement; enforcement is already killing it. | Instant zero |
+| 3 | OpenAI | The subsidy lives in its consumer-heavy revenue line; OpenAI has the deepest multiples, a press-reported -122% adjusted operating margin in Q1 2026, and an already conceded Plus-to-Go migration. | Valuation-narrative shock |
+| 4 | App-layer/wrapper startups whose unit economics assume subsidized tokens | Copilot's move shows even the largest coding distributor is abandoning flat-rate economics. | Margin compression and churn |
+| 5 | Subsidy-induced inference demand chain | Neoclouds face the $4.2B refinancing wall first; downstream GSY-flagged names such as MU, VRT and GEV then lose a partly manufactured demand signal. | Credit first, equity second |
+| 6 | Anthropic | Less exposed by construction: majority-to-~80% business revenue, shallower subsidy at every tier, and already cutting via weekly limits, the Pro/Claude Code test and OAuth blocks. | Material but contained |
+| 7 | Nvidia + hyperscalers | The signal slows and multiples compress, but this is not a solvency story for the core. | Multiple compression |
+
+Rank 1 is mechanical: fixed-price option -> agents raise utilization -> the lab withholds the frontier model or charges the API-equivalent price. The user is not suffering a mark-to-market loss. They are losing the product they were buying.
+
+Rank 3 follows from mix: consumer-heavy revenue -> deepest measured subsidy -> external funding need and Plus-to-Go migration. Repricing that base is not a small SKU change — it reprices the growth story investors capitalised.
+
+Rank 5 is the capital-cycle version: subsidized usage flatters inference demand -> that signal supports neocloud refinancing and downstream power, memory and cooling extrapolation -> lenders re-underwrite the artificial part first. The API side of the market is gross-margin-positive and therefore real demand; the subscription side is the manufactured layer — when the circle breaks, the demand that evaporates is precisely the demand the bulls count as proof.
+
+### Verdict
+
+**If the subsidy persists to the bust:** the hit lands first on heavy subscription users, then relays, then OpenAI, then wrapper startups, then the neocloud-led inference chain.
+
+**If the labs bifurcate first:** this is the quiet path. The subsidy decays into API-only frontier access, the cost curve bails out the consumer tier, and the shock never aggregates.
+
+| Plan | Price | Max draw | Multiple | Break-even utilization |
+|---|---:|---:|---:|---:|
+| claude-pro | $20 | $400 | 20x | 20% |
+| claude-max-5x | $100 | $2,000 | 20x | 20% |
+| claude-max-20x | $200 | $8,000 | 40x | 10% |
+| chatgpt-plus | $20 | $700 | 35x | 11.4% |
+| chatgpt-pro-5x | $100 | $3,500 | 35x | 11.4% |
+| chatgpt-pro-20x | $200 | $14,000 | 70x | 5.7% |
+
+What to watch: subscription-plan repricings, frontier-model API-only launches such as Mythos, Copilot token-billing fallout, the relay-price index as a live utilization gauge, and the H100/B200 one-year contract rate as the demand-revelation print.
+
+**New since first publication.** SemiAnalysis measured the flat-rate subsidy directly: subscription seats can draw 20-70x monthly price at API list, turning the compute option into a priced exposure ladder.
+
+---
+
 ## Method
 
 - **Value-chain map** — a 28-layer semiconductor/AI/power graph with typed, weighted edges; Nvidia's heaviest customer edges run to its most fragile customers (Super Micro, CoreWeave), its demand is driven by hyperscaler capex, and it is bottlenecked upstream by a single foundry (TSMC) and a 3-player HBM oligopoly.
@@ -116,6 +215,7 @@ Survivors, mapped onto the dot-com cast: Nvidia is **Cisco** (franchise survives
 - **Equity internals** — two-year/one-year returns and volatility for a 17-name AI basket plus SPY/QQQ, from adjusted closes, screened against the Greenwood-Shleifer-You >100%-net-of-market threshold. The two figures are generated from that computation.
 - **Video verification** — the source video's audio was transcribed and claim-ledgered, then every load-bearing claim was independently checked against public primary sources (six clusters, each web-verified and adversarially refuted); inline framing throughout distinguishes verified fact from creator arithmetic from allegation from disputed figure.
 - **Adversarial pass** — a red-team review of the synthesis forced ~20 corrections (count reconciliations, removal of overstated labels, the GSY unit-of-analysis caveat above), all folded in.
+- **Subscription-subsidy ledger** — SemiAnalysis's measured plan caps are converted into break-even utilization and fleet sensitivities using the 75% API gross-margin assumption, while separating measured max draw from unobservable average utilization.
 
 ## Sources & verification (selected primary)
 
@@ -125,6 +225,8 @@ Survivors, mapped onto the dot-com cast: Nvidia is **Cisco** (franchise survives
 - **Distillation allegations:** Anthropic, *"Detecting and preventing distillation attacks"* (23 Feb 2026); Rest of World / TechCrunch / FDD on OpenAI's House Select Committee memo; DeepSeek API pricing docs (V4 ~75% cut).
 - **Market structure:** OpenRouter *State of AI* data (arXiv:2601.10088) and weekly rankings; Grand View Research (AI-API market size); Epoch AI (inference price trends).
 - **The video:** LinYi / 林亦, *"大模型中转站，凭啥这么便宜?"* ("LLM relay stations: how are they so cheap?"), YouTube, 5 Jun 2026.
+- **Subscription subsidy measurement:** SemiAnalysis X thread, 10 Jun 2026; The Information / Ed Zitron / WSJ on OpenAI's Plus-to-Go migration and Q1 2026 adjusted operating margin; Copilot, Codex and Claude Code repricing or withholding reports.
+- **GPU rental tape:** SemiAnalysis, *"The Great GPU Shortage — Rental Capacity"* (H100 one-year contract index) plus its AI Neocloud Playbook and ClusterMAX work; AIMultiple cross-provider GPU price index (2026).
 
 ## Academic anchors
 

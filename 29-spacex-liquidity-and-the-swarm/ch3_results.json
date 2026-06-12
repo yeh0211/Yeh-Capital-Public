@@ -1,0 +1,110 @@
+{
+  "regime_fingerprint": {
+    "target_month": "2026-06",
+    "target_features": {
+      "ret_12m": 0.2356,
+      "ret_3m": 0.1658,
+      "vol_63d": 0.2128,
+      "dd_from_high": -0.0669,
+      "tech_rel_12m": 0.044
+    },
+    "top10_analogs": [
+      {
+        "month": "2007-10",
+        "distance": 0.62,
+        "fwd_6m_pct": -15.6,
+        "fwd_12m_pct": -39.8
+      },
+      {
+        "month": "2024-07",
+        "distance": 0.65,
+        "fwd_6m_pct": 11.5,
+        "fwd_12m_pct": 20.0
+      },
+      {
+        "month": "2023-07",
+        "distance": 0.68,
+        "fwd_6m_pct": 5.7,
+        "fwd_12m_pct": 22.7
+      },
+      {
+        "month": "2023-06",
+        "distance": 0.69,
+        "fwd_6m_pct": 8.9,
+        "fwd_12m_pct": 28.6
+      },
+      {
+        "month": "2019-03",
+        "distance": 0.72,
+        "fwd_6m_pct": 3.5,
+        "fwd_12m_pct": -0.4
+      },
+      {
+        "month": "1991-04",
+        "distance": 0.73,
+        "fwd_6m_pct": 12.0,
+        "fwd_12m_pct": 19.4
+      },
+      {
+        "month": "2010-10",
+        "distance": 0.73,
+        "fwd_6m_pct": 14.6,
+        "fwd_12m_pct": 7.1
+      },
+      {
+        "month": "2010-11",
+        "distance": 0.74,
+        "fwd_6m_pct": 13.5,
+        "fwd_12m_pct": 4.9
+      },
+      {
+        "month": "2010-09",
+        "distance": 0.82,
+        "fwd_6m_pct": 17.4,
+        "fwd_12m_pct": 2.0
+      },
+      {
+        "month": "2025-01",
+        "distance": 0.84,
+        "fwd_6m_pct": 7.6,
+        "fwd_12m_pct": 19.5
+      }
+    ],
+    "analog_fwd_6m_median_pct": 10.2,
+    "analog_fwd_12m_median_pct": 13.2,
+    "analog_fwd_12m_pct_positive": 80.0,
+    "base_fwd_12m_median_pct": 16.6
+  },
+  "price_action_analogs_120d": [
+    {
+      "window_end": "1982-12-15",
+      "corr": 0.379,
+      "fwd_6m_pct": 42.7,
+      "fwd_12m_pct": 22.0
+    },
+    {
+      "window_end": "1981-05-04",
+      "corr": 0.335,
+      "fwd_6m_pct": -7.5,
+      "fwd_12m_pct": -12.8
+    },
+    {
+      "window_end": "2015-12-24",
+      "corr": 0.321,
+      "fwd_6m_pct": -2.7,
+      "fwd_12m_pct": 8.2
+    },
+    {
+      "window_end": "2000-04-04",
+      "corr": 0.321,
+      "fwd_6m_pct": -16.7,
+      "fwd_12m_pct": -60.5
+    },
+    {
+      "window_end": "1988-01-11",
+      "corr": 0.32,
+      "fwd_6m_pct": 17.3,
+      "fwd_12m_pct": 14.4
+    }
+  ]
+}

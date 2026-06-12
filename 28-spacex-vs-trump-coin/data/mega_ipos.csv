@@ -1,0 +1,35 @@
+ticker,company,first_trade_date,proceeds_usd_b,foreign_dual,note
+BABA,Alibaba,2014-09-19,25.0,1,incl greenshoe; base 21.8
+V,Visa,2008-03-19,17.9,0,19.7 with greenshoe
+ENE,Enel,1999-11-02,16.5,1,Milan + NYSE ADR privatization
+FB,Facebook,2012-05-18,16.0,0,
+GM,General Motors,2010-11-18,15.8,0,common only; +4.35 preferred
+DT,Deutsche Telekom,1996-11-18,13.0,1,global privatization incl NYSE ADR
+RIVN,Rivian,2021-11-10,11.9,0,13.7 with greenshoe
+AWE,AT&T Wireless,2000-04-27,10.6,0,tracking stock
+KFT,Kraft Foods,2001-06-13,8.7,0,
+UBER,Uber,2019-05-10,8.1,0,
+FTE,France Telecom,1997-10-20,7.3,1,Paris + NYSE ADR privatization
+UPS,UPS,1999-11-10,5.5,0,
+IFX,Infineon,2000-03-13,5.2,1,Frankfurt + NYSE ADR
+ARM,ARM Holdings,2023-09-14,4.9,1,5.2 with greenshoe
+CHU,China Unicom,2000-06-21,4.9,1,HK + NYSE ADR
+CIT,CIT Group,2002-07-02,4.6,0,Tyco carve-out
+DIDI,DiDi Global,2021-06-30,4.4,1,delisted 2022
+COC,Conoco,1998-10-22,4.4,0,DuPont carve-out
+BX,Blackstone,2007-06-22,4.1,0,
+TPC,Travelers Property Casualty,2002-03-22,3.9,0,Citigroup carve-out
+HCA,HCA Holdings,2011-03-10,3.8,0,
+GS,Goldman Sachs,1999-05-04,3.7,0,
+AGR,Agere Systems,2001-03-28,3.6,0,Lucent carve-out
+ABNB,Airbnb,2020-12-10,3.5,0,
+SNAP,Snap,2017-03-02,3.4,0,
+DASH,DoorDash,2020-12-09,3.4,0,
+SNOW,Snowflake,2020-09-16,3.4,0,3.9 with greenshoe
+CHTR,Charter Communications,1999-11-09,3.2,0,
+PRU,Prudential Financial,2001-12-13,3.0,0,demutualization
+LU,Lucent Technologies,1996-04-03,3.0,0,AT&T carve-out
+PTR,PetroChina,2000-04-06,2.9,1,HK + NYSE ADR
+MET,MetLife,2000-04-05,2.9,0,demutualization; +1.0 private placements
+KMI,Kinder Morgan,2011-02-11,2.9,0,
+SYF,Synchrony Financial,2014-07-31,2.9,0,GE carve-out

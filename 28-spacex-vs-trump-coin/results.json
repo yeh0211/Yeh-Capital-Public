@@ -1,0 +1,142 @@
+{
+  "test1_trump_event_study": {
+    "launch_date": "2025-01-17",
+    "binance_listing_date": "2025-01-19",
+    "trump_peak": {
+      "date": "2025-01-19",
+      "price": 77.24
+    },
+    "sol_peak": {
+      "date": "2025-01-19",
+      "price": 295.83,
+      "days_after_launch": 2
+    },
+    "btc_peak_q1": {
+      "date": "2025-01-20",
+      "price": 109588.0,
+      "days_after_launch": 3
+    },
+    "memecoin_basket_indexed_to_100_at_0116": {
+      "launch_weekend_low_jan17_21": 91.5,
+      "plus_30d": 59.1,
+      "plus_90d": 39.6,
+      "plus_180d": 78.8,
+      "max_after_launch_thru_jun2025": 111.2,
+      "max_after_launch_date": "2025-01-17"
+    },
+    "drawdowns_from_jan_peak_to_2025_06_30": {
+      "TRUMP": -88.5,
+      "SOL": -47.7,
+      "BTC_to_april_low": -30.4
+    },
+    "sol_now_vs_jan19_peak_pct": -77.3
+  },
+  "test2_megaipo_base_rate": {
+    "n_ipos": 34,
+    "nasdaq": {
+      "1m": {
+        "event_median_pct": 1.56,
+        "event_mean_pct": 1.13,
+        "event_pct_positive": 61.8,
+        "base_median_pct": 1.7,
+        "base_mean_pct": 1.07,
+        "base_pct_positive": 62.7,
+        "event_median_percentile_of_base": 48.6
+      },
+      "3m": {
+        "event_median_pct": 3.89,
+        "event_mean_pct": 4.95,
+        "event_pct_positive": 67.6,
+        "base_median_pct": 4.1,
+        "base_mean_pct": 3.24,
+        "base_pct_positive": 67.7,
+        "event_median_percentile_of_base": 48.7
+      },
+      "6m": {
+        "event_median_pct": 6.31,
+        "event_mean_pct": 0.86,
+        "event_pct_positive": 58.8,
+        "base_median_pct": 7.9,
+        "base_mean_pct": 6.56,
+        "base_pct_positive": 71.9,
+        "event_median_percentile_of_base": 43.8
+      },
+      "12m": {
+        "event_median_pct": 4.89,
+        "event_mean_pct": -0.79,
+        "event_pct_positive": 58.8,
+        "base_median_pct": 16.03,
+        "base_mean_pct": 13.87,
+        "base_pct_positive": 77.1,
+        "event_median_percentile_of_base": 30.2
+      }
+    },
+    "sp500": {
+      "1m": {
+        "event_median_pct": 0.98,
+        "event_mean_pct": 0.78,
+        "event_pct_positive": 58.8,
+        "base_median_pct": 1.29,
+        "base_mean_pct": 0.77,
+        "base_pct_positive": 63.7,
+        "event_median_percentile_of_base": 46.2
+      },
+      "3m": {
+        "event_median_pct": 2.52,
+        "event_mean_pct": 2.13,
+        "event_pct_positive": 70.6,
+        "base_median_pct": 3.29,
+        "base_mean_pct": 2.27,
+        "base_pct_positive": 68.2,
+        "event_median_percentile_of_base": 44.4
+      },
+      "6m": {
+        "event_median_pct": 2.84,
+        "event_mean_pct": 1.52,
+        "event_pct_positive": 58.8,
+        "base_median_pct": 5.81,
+        "base_mean_pct": 4.64,
+        "base_pct_positive": 72.6,
+        "event_median_percentile_of_base": 36.4
+      },
+      "12m": {
+        "event_median_pct": 2.15,
+        "event_mean_pct": 1.14,
+        "event_pct_positive": 58.8,
+        "base_median_pct": 12.1,
+        "base_mean_pct": 9.6,
+        "base_pct_positive": 78.0,
+        "event_median_percentile_of_base": 25.0
+      }
+    },
+    "bootstrap_12m_nasdaq": {
+      "event_median_pct": 4.89,
+      "p_random_dates_median_below_event": 0.008
+    },
+    "nasdaq_max_drawdown_within_12m": {
+      "event_median_pct": -29.8,
+      "base_median_pct": -16.5,
+      "event_pct_with_dd_worse_than_20": 58.8,
+      "base_pct_with_dd_worse_than_20": 35.6
+    },
+    "robustness_ex_2000_cluster": {
+      "n": 29,
+      "event_median_12m_pct": 9.3,
+      "event_pct_positive": 69.0
+    },
+    "robustness_hot_tape_base": {
+      "median_event_trailing_12m_pct": 26.6,
+      "n_hot_days": 2140,
+      "hot_base_median_fwd12_pct": 14.67,
+      "hot_base_pct_positive": 75.7
+    }
+  },
+  "test3_relative_scale": {
+    "trump_peak_dex_volume_x_baseline": 6.5,
+    "trump_stablecoin_float_growth_6d_pct": 72.4,
+    "spacex_raise_pct_of_us_mcap": 0.104,
+    "spacex_raise_pct_of_one_day_volume": 6.8,
+    "spacex_retail_tranche_usd_b": 22.5,
+    "trump_fdv_peak_pct_of_sol_mcap": 52.4
+  }
+}

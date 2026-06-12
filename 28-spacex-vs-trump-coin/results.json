@@ -137,6 +137,31 @@
     "spacex_raise_pct_of_us_mcap": 0.104,
     "spacex_raise_pct_of_one_day_volume": 6.8,
     "spacex_retail_tranche_usd_b": 22.5,
-    "trump_fdv_peak_pct_of_sol_mcap": 52.4
+    "trump_fdv_peak_pct_of_sol_mcap": 53.6,
+    "trump_fdv_peak_pct_of_total_crypto": 1.97,
+    "trump_circ_mcap_pct_of_total_crypto": 0.39,
+    "spacex_mcap_at_135_pct_of_us": 2.45,
+    "spacex_mcap_at_170_pct_of_us": 3.09,
+    "gme_peak_mcap_pct_of_us_2021": 0.048
+  },
+  "test4_gme_control_case": {
+    "close_peak": {
+      "date": "2021-01-27",
+      "adj": 86.88,
+      "unadjusted": 347.51
+    },
+    "intraday_high_jan28_unadjusted": 483.0,
+    "drawdown_to_feb_trough_pct": -88.3,
+    "sessions_peak_to_trough": 16,
+    "echo_high_2021_pct_of_peak": 87.1,
+    "one_year_later_pct_of_peak": 26.9,
+    "peak_day_dollar_volume_usd_b": {
+      "2021-01-26": 26.4,
+      "2021-01-27": 32.5,
+      "2021-01-28": 11.4
+    },
+    "spx_degross_week_pct": -3.31,
+    "ndq_degross_week_pct": -3.49,
+    "spx_sessions_to_recover": 9
   }
 }

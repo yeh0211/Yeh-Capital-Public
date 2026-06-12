@@ -332,9 +332,15 @@ def test3() -> dict:
     sol_stable_before, sol_stable_after = 6.15, 10.6  # $B, Jan 17 -> 23
     spacex_raise = 75.0               # $B
     spacex_retail = 0.30 * spacex_raise
+    spacex_shares_b = 13.08           # B shares outstanding post-IPO (Reuters)
     us_equity_mcap = 72_000.0         # $B (Siblis: $69.0T Jan 2026; Visual Capitalist: >$75T Apr 2026)
+    us_equity_mcap_2021 = 50_000.0    # $B (approx, early 2021)
     us_equity_adv = 1_100.0           # $B/day (Cboe: 2025 US equities ADNV $1.1T)
     sol_mcap_jan2025 = 140.0          # $B (SOL market cap mid-Jan 2025, approx)
+    crypto_total_mcap_jan2025 = 3_800.0  # $B (cycle peak, mid-Jan 2025)
+    trump_peak_fdv = 75.0             # $B (peak price ~$75 x 1B total supply)
+    trump_peak_circ = 15.0            # $B (200M circulating x ~$75)
+    gme_peak_mcap_close = 24.2        # $B (close peak $347.51 x 69.75M shares)
 
     res = {
         "trump_peak_dex_volume_x_baseline": round(sol_peak_dex_daily / sol_baseline_dex_daily, 1),
@@ -342,25 +348,123 @@ def test3() -> dict:
         "spacex_raise_pct_of_us_mcap": round(spacex_raise / us_equity_mcap * 100, 3),
         "spacex_raise_pct_of_one_day_volume": round(spacex_raise / us_equity_adv * 100, 1),
         "spacex_retail_tranche_usd_b": round(spacex_retail, 1),
-        "trump_fdv_peak_pct_of_sol_mcap": round(73.4 * 1.0 / sol_mcap_jan2025 * 100, 1),  # $73.4B FDV at peak
+        "trump_fdv_peak_pct_of_sol_mcap": round(trump_peak_fdv / sol_mcap_jan2025 * 100, 1),
+        "trump_fdv_peak_pct_of_total_crypto": round(trump_peak_fdv / crypto_total_mcap_jan2025 * 100, 2),
+        "trump_circ_mcap_pct_of_total_crypto": round(trump_peak_circ / crypto_total_mcap_jan2025 * 100, 2),
+        "spacex_mcap_at_135_pct_of_us": round(spacex_shares_b * 135 / us_equity_mcap * 100, 2),
+        "spacex_mcap_at_170_pct_of_us": round(spacex_shares_b * 170 / us_equity_mcap * 100, 2),
+        "gme_peak_mcap_pct_of_us_2021": round(gme_peak_mcap_close / us_equity_mcap_2021 * 100, 3),
     }
 
-    fig, ax = plt.subplots(figsize=(8, 4.2))
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.6))
+    ax = axes[0]
     items = [
-        ("TRUMP peak FDV / SOL market cap", 73.4 / sol_mcap_jan2025 * 100),
-        ("TRUMP peak-day DEX vol / Solana baseline vol", sol_peak_dex_daily / sol_baseline_dex_daily * 100),
-        ("SpaceX raise / one day of US equity volume", spacex_raise / us_equity_adv * 100),
-        ("SpaceX raise / US equity market cap", spacex_raise / us_equity_mcap * 100),
+        ("GME close peak / US equities (2021)", res["gme_peak_mcap_pct_of_us_2021"]),
+        ("TRUMP peak FDV / all crypto", res["trump_fdv_peak_pct_of_total_crypto"]),
+        ("SpaceX at $135 / US equities", res["spacex_mcap_at_135_pct_of_us"]),
+        ("SpaceX at $170 / US equities", res["spacex_mcap_at_170_pct_of_us"]),
+        ("TRUMP peak FDV / its host chain (SOL)", res["trump_fdv_peak_pct_of_sol_mcap"]),
     ]
     vals = [v for _, v in items]
-    ax.barh([k for k, _ in items], vals, color=[ACCENT, ACCENT, "#5a5145", "#5a5145"], height=0.55)
+    ax.barh([k for k, _ in items], vals,
+            color=[GREY, ACCENT, "#5a5145", "#5a5145", ACCENT], height=0.55)
     ax.set_xscale("log")
-    ax.set_xlabel("Event size relative to host market (%, log scale)")
+    ax.set_xlim(None, max(vals) * 12)
+    ax.set_xlabel("Asset value as % of host asset class (log scale)")
     for y, v in enumerate(vals):
-        ax.text(v * 1.15, y, f"{v:,.1f}%", va="center", fontsize=9, color=INK)
-    ax.set_title("Event size relative to host market", loc="left", fontsize=12)
-    fig.tight_layout()
+        ax.text(v * 1.2, y, f"{v:,.2f}%", va="center", fontsize=8.5, color=INK)
+    ax.set_title("Stock: instant size vs the whole class", loc="left", fontsize=11)
+
+    ax = axes[1]
+    items2 = [
+        ("GME peak day / US tape (approx)", 32.5 / 600 * 100),
+        ("SpaceX raise / one day of US volume", res["spacex_raise_pct_of_one_day_volume"]),
+        ("TRUMP peak-day DEX vol / host baseline", res["trump_peak_dex_volume_x_baseline"] * 100),
+    ]
+    vals2 = [v for _, v in items2]
+    ax.barh([k for k, _ in items2], vals2, color=[GREY, "#5a5145", ACCENT], height=0.45)
+    ax.set_xscale("log")
+    ax.set_xlim(None, max(vals2) * 12)
+    ax.set_xlabel("Event flow vs host turnover (%, log scale)")
+    for y, v in enumerate(vals2):
+        ax.text(v * 1.2, y, f"{v:,.1f}%", va="center", fontsize=8.5, color=INK)
+    ax.set_title("Flow: trading shock vs host tape", loc="left", fontsize=11)
+    fig.suptitle("Same pattern, different dose: size of each mania vs its host market",
+                 x=0.01, ha="left", fontsize=12.5, color=INK)
+    fig.tight_layout(rect=(0, 0, 1, 0.94))
     fig.savefig(HERE / "fig4_relative_scale.png", dpi=160)
+    plt.close(fig)
+    return res
+
+
+# ----------------------------------------------------------------------
+# Test 4 — the GameStop control case (low-float squeeze, January 2021)
+# ----------------------------------------------------------------------
+
+def test4() -> dict:
+    gme = pd.read_csv(DATA / "GME.csv", parse_dates=["date"]).set_index("date").sort_index()
+    spx = load_close("sp500")
+    ndq = load_close("nasdaq_composite")
+
+    peak_d = pd.Timestamp("2021-01-27")          # close peak (adj $86.88 = $347.51 unadj)
+    close = gme["close"]
+    peak = float(close.loc[peak_d])
+    after = close.loc[peak_d:]
+
+    # decay
+    trough_1m = float(after.iloc[:25].min())
+    trough_1m_d = after.iloc[:25].idxmin()
+    sessions_to_trough = int(after.index.get_loc(trough_1m_d))
+    echo_max = float(close.loc["2021-02-20":"2021-12-31"].max())
+    one_year = float(close.asof(peak_d + pd.Timedelta(days=365)))
+
+    # dollar volume, peak days (volume is unadjusted millions of shares;
+    # prices are split-adjusted -> x4 before the July 2022 4-for-1 split)
+    dv = {d: round(float(gme.loc[d, "volume"] * gme.loc[d, "close"] * 4 / 1000), 1)
+          for d in ("2021-01-26", "2021-01-27", "2021-01-28")}
+
+    # broad-market spillover: the degrossing week and the recovery
+    pre = float(spx.asof(pd.Timestamp("2021-01-22")))
+    low_wk = float(spx.loc["2021-01-25":"2021-01-29"].min())
+    rec = spx.loc["2021-02-01":]
+    recovery_day = rec[rec >= pre].index[0]
+    ndq_pre = float(ndq.asof(pd.Timestamp("2021-01-22")))
+    ndq_low = float(ndq.loc["2021-01-25":"2021-01-29"].min())
+
+    res = {
+        "close_peak": {"date": "2021-01-27", "adj": round(peak, 2), "unadjusted": 347.51},
+        "intraday_high_jan28_unadjusted": 483.0,
+        "drawdown_to_feb_trough_pct": round((trough_1m / peak - 1) * 100, 1),
+        "sessions_peak_to_trough": sessions_to_trough,
+        "echo_high_2021_pct_of_peak": round(echo_max / peak * 100, 1),
+        "one_year_later_pct_of_peak": round(one_year / peak * 100, 1),
+        "peak_day_dollar_volume_usd_b": dv,
+        "spx_degross_week_pct": round((low_wk / pre - 1) * 100, 2),
+        "ndq_degross_week_pct": round((ndq_low / ndq_pre - 1) * 100, 2),
+        "spx_sessions_to_recover": int(spx.loc["2021-01-25":recovery_day].shape[0]),
+    }
+
+    # Fig 5 — decay paths from the peak close: GME vs TRUMP
+    fig, ax = plt.subplots(figsize=(9, 5))
+    gme_path = (after.iloc[:131] / peak) * 100
+    trump = load_close("TRUMPUSDT")
+    tpeak_d = trump.loc["2025-01-19":"2025-06-30"].idxmax()
+    tafter = trump.loc[tpeak_d:]
+    trump_path = (tafter.iloc[:131] / float(trump.loc[tpeak_d])) * 100
+    ax.plot(range(len(gme_path)), gme_path.values, color=INK, linewidth=1.6,
+            label="GameStop from Jan 27, 2021 close peak")
+    ax.plot(range(len(trump_path)), trump_path.values, color=ACCENT, linewidth=1.6,
+            label="TRUMP from Jan 19, 2025 close peak")
+    ax.axhline(100 - 14.7, color=GREY, linestyle="--", linewidth=1.2)
+    ax.text(2, 86.8, "large-IPO comp median at 6 months (-14.7%, study 24)",
+            fontsize=8.5, color=GREY)
+    ax.set_xlabel("Trading days from peak close")
+    ax.set_ylabel("Price (100 = peak close)")
+    ax.set_ylim(0, 105)
+    ax.set_title("After the vertical: what low-float manias do next", loc="left", fontsize=12)
+    ax.legend(frameon=False, fontsize=9)
+    fig.tight_layout()
+    fig.savefig(HERE / "fig5_lowfloat_decay.png", dpi=160)
     plt.close(fig)
     return res
 
@@ -370,6 +474,7 @@ def main() -> None:
     t2, _ = test2()
     results["test2_megaipo_base_rate"] = t2
     results["test3_relative_scale"] = test3()
+    results["test4_gme_control_case"] = test4()
     (HERE / "results.json").write_text(json.dumps(results, indent=2))
     print(json.dumps(results, indent=2))
 

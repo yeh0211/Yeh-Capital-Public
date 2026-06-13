@@ -107,12 +107,29 @@ Twelve-month percentiles: p10 $50, p25 $88, median $147, p75 $235, p90 $378. The
 
 *Verdict.* The empirical families say the day-one buyer's position is close to a coin flip against the open and meaningfully exposed against the IPO price, with the odds deteriorating monotonically through the unlock calendar.
 
-## Finding 4b — the swarm rehearsal
+## Finding 4b — can the swarm be trusted? Three validation pilots first
 
-[PENDING — this section is filled by the running pipeline:]
-- Pilot A (2001 telecom): mechanism-breadth score vs the 2001-2003 record.
-- Pilot B (GameStop 2021): does the swarm find the clearing-collateral halt, the de-grossing spillover, the peak-then-collapse shape?
-- The live run (SpaceX, Jun-Dec 2026): emergent predictions with dates, published before the fact.
+*What I expected.* Before letting a multi-agent simulation speak about SpaceX, it has to earn the microphone. A swarm that just retells whatever you feed it is a fancy paraphraser. So we ran it on three known episodes and scored *mechanism breadth* — does it surface the causal channels, including the ones a naive narrative misses — never outcome recall, because the model's training data already contains all three outcomes.
+
+*How I measured it.* Pre-registered rubrics; one pilot graded by an independent 7-agent adversarial workflow with a seed-contamination guard (drop any item whose answer was verbatim in the seed). Two of the three pilots are from a parallel evaluation of the same engine against [study 27](../27-ai-capital-cycle/); all artifacts are in [validation/](validation/).
+
+| Pilot | Setup | Result | What it proves |
+|---|---|---|---|
+| A — 2001 telecom | Rich seed that *contained* the answer (WorldCom vulnerability, Cisco-healthiest, JDSU goodwill) | 15/16 raw | Coherence + plumbing + honest synthesis. NOT prediction — the seed gave it away. The control. |
+| B — AI capital cycle | Study-27 facts with the verdict and exposure ladder **stripped out**; 61 agents, 15 rounds | **12/16 contamination-adjusted**, ~65% seed-restatement | Genuine reasoning: the swarm reached "financing-refusal is the trigger, periphery breaks first, core survives" unprompted, and surfaced a seed-absent mechanism (GPU residual-value / LTV repricing as the refinancing pivot). |
+| C — GameStop 2021 | Facts only (short interest, gamma loop, NSCC clearing); outcome withheld | **5/5 channels**; found the buy-side halt | The decisive one for this study (below). |
+
+*The GameStop pilot is the one that earned the swarm its role here.* Given the January 2021 setup with no outcome, it reproduced the peak window (late January, at the broker restriction), named the de-grossing spillover, and listed all five sister names — but the load-bearing result is this: it reasoned, unprompted, that **the price peaks when the *buying channel* is constrained by clearing-collateral demands, not when sellers overwhelm buyers.** That causal ordering was not in the seed (the seed listed the NSCC collateral fact as one neutral bullet). The swarm deduced that the plumbing, not the order flow, sets the top — which is the exact structural question this study asks of SpaceX.
+
+*What I checked.* The honest ceiling: all three outcomes are in training data, and Pilots A and C had the mechanism (not the ordering) seeded. The genuine value-add is the *ordering and the seed-absent mechanisms* (Pilot B's LTV pivot, Pilot C's buy-constraint-marks-the-top). Agreement with our own studies may partly reflect shared LLM priors rather than independent foresight — so the swarm is the third-ranked evidence layer, never the verdict. Public framing throughout: "the simulation suggests," never "the simulation shows."
+
+*Verdict.* **Qualified yes — a mechanism-and-ordering rehearser, not an oracle.** Cleared to run on SpaceX, with outcome probabilities owned by the backtests (Findings 1-3) and the bootstrap cone (Finding 4a).
+
+## Finding 4c — the swarm on SpaceX: the live, blind rehearsal
+
+This is the only genuinely blind test in the study — the six months from 13 June 2026 have not happened. The seed ([sim_seeds/seed_C_spacex_2026.md](sim_seeds/seed_C_spacex_2026.md)) gives the swarm facts and participants only; our own verdict and the Finding 4a probabilities are deliberately withheld. Predictions are published here *before the fact* and will be scored against reality at each lock-up date.
+
+[PENDING — filled when the SpaceX run completes: emergent price-path call, the lock-up date the swarm flags as most vulnerable, the peer-rotation mechanism, the first-stress location, the spillover call, and the single early-warning signal. Cross-checked against the bootstrap cone — where the swarm and the cone agree is the signal.]
 
 ## Did I just find noise?
 

@@ -12,7 +12,7 @@ Four lenses, weakest evidence last. Each was a standalone study; they are merged
 - **Part II — Is it a mania top?** The TRUMP-coin and GameStop analog: low-float manias, the mega-IPO base rate, the stock-vs-flow scale split, the study-15 chase cross-check. (Originally study 28.)
 - **Part III — Is there enough market, and the decade ahead?** Liquidity absorption, value-chain peer crowding-out, regime analog, the bootstrap cone, the swarm rehearsal, and the "next FAANG" arithmetic ceiling. (Originally study 29.)
 
-Lineage: builds on [study 15](../15-ipo-chase/) (the IPO-chase base rate) and [study 22](../22-equity-issuance-top-signal/) (issuance timing). The swarm engine's general validity is established separately in [study 30](../30-can-a-swarm-forecast/); this dossier applies it.
+Lineage: builds on [study 15](../15-ipo-chase/) (the IPO-chase base rate) and [study 22](../22-equity-issuance-top-signal/) (issuance timing). The swarm engine's general validity is established separately in [study 30](../30-llm-players-forecast/); this dossier applies it.
 
 ## The answer, up front
 
@@ -737,7 +737,7 @@ This matters for a position: the space-economy basket just front-ran the listing
 - **The live case sits in the dangerous quadrant.** The space basket (RKLB, ASTS, IRDM, LUNR, RDW, PL, SPCE, TSLA) beat the S&P by ~40 points in the 30 sessions before SPCX's debut — the same halo-then-bleed shape Coinbase printed (+11% halo, then the bleed). SpaceX is more dominant over its complex than Coinbase was over crypto equities. The next ~60 trading days are the test window.
 - **The 2026 tape is not late-2021.** A five-feature regime fingerprint puts June 2026 among ordinary hot-bull months (analog median forward 12m +13.2%, 80% positive); 2021 does not appear in the top ten analogs. The one dark note: the single nearest neighbor is October 2007.
 - **The bootstrap cone prices the premium's decay.** Resampling the empirical post-listing families (10 mega-IPO chase paths + the GME/TRUMP low-float decays), P(SPCX below its $135 IPO price) is 35% at the first unlock and 46% at one year; the median path returns to the $150 opening print by day 180. The scarcity premium has a half-life of roughly one lockup cycle.
-- **The swarm converges and adds a trigger.** The engine's general validity is established in companion [study 30](../30-can-a-swarm-forecast/) (12/16 honest score); a study-29-specific GameStop pilot then showed it finds market-plumbing mechanisms (the buy-side clearing-collateral halt, unprompted). On that footing, a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable, counter-intuitive early-warning signal — the danger is not a high borrow fee (that means shorts are constrained) but borrow *loosening* while the price fails to make new highs on good news.
+- **The swarm converges and adds a trigger.** The engine's general validity is established in companion [study 30](../30-llm-players-forecast/) (12/16 honest score); a study-29-specific GameStop pilot then showed it finds market-plumbing mechanisms (the buy-side clearing-collateral halt, unprompted). On that footing, a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable, counter-intuitive early-warning signal — the danger is not a high borrow fee (that means shorts are constrained) but borrow *loosening* while the price fails to make new highs on good news.
 - **"The next FAANG" is arithmetically foreclosed.** FAANG's returns came from IPO'ing tiny — Netflix $310M, Amazon $438M, Nvidia $626M, median ~$1.2B; even Facebook's "huge" 2012 IPO was $104B. SpaceX enters at **$1,770B** (~17x Facebook, ~5,700x Netflix). From a $2T base, matching even the *weakest* FAANG return (Facebook's 14x) would require SpaceX to reach **$25T — ~5x the largest company in history**; a typical FAANG multiple would exceed all world equity. The realistic ceiling is a low-single-digit multiple: a great outcome (3x) just makes it today's Nvidia. "Next FAANG" is true of the company, false of the entry return — capped upside over years against the near-term unlock downside.
 
 ## How this study works (and what the simulator can and cannot prove)
@@ -764,7 +764,7 @@ Mechanisms, not outcomes, transfer between eras. The [casting table](CASTING_TAB
 | 2026 pipeline | Goldman Sachs forecast | $160B incl. SpaceX $75B | OpenAI filed Jun 8 |
 | Index absorption | Bloomberg Intelligence | ~24% of SPCX float to R1000+NDX funds in 6m | |
 | SpaceX deal terms / unlock calendar | S-1 via Part I; Reuters | float 4.25%; supply 9.4x float by day 180 | |
-| Swarm engine | MiroFish (open source), gpt-5.5 | GME plumbing pilot + the live SpaceX run (general validation in [study 30](../30-can-a-swarm-forecast/)) | seeds in [sim_seeds/](sim_seeds/) |
+| Swarm engine | MiroFish (open source), gpt-5.5 | GME plumbing pilot + the live SpaceX run (general validation in [study 30](../30-llm-players-forecast/)) | seeds in [sim_seeds/](sim_seeds/) |
 
 ## Finding 1 — peers bleed only when the listing is the complex's cash-out event
 
@@ -836,7 +836,7 @@ Twelve-month percentiles: p10 $50, p25 $88, median $147, p75 $235, p90 $378. The
 
 ## Finding 4b — is the swarm trustworthy enough to use here? (validation, with one new pilot)
 
-Whether this class of tool can forecast at all — rather than launder its input back as a confident story — is the entire subject of a companion study, **[study 30](../30-can-a-swarm-forecast/)**. That study ran the same engine on a known case (2001 telecom) and a conclusion-stripped live case (the AI capital cycle), graded the second with an adversarial contamination panel, and landed on a qualified yes: **12/16 on the honest measure, a hypothesis generator not an oracle**, with the standing caveat that engine and grader share a language model so agreement may be shared priors, not independent foresight. I take that verdict as given here rather than repeat it.
+Whether this class of tool can forecast at all — rather than launder its input back as a confident story — is the entire subject of a companion study, **[study 30](../30-llm-players-forecast/)**. That study ran the same engine on a known case (2001 telecom) and a conclusion-stripped live case (the AI capital cycle), graded the second with an adversarial contamination panel, and landed on a qualified yes: **12/16 on the honest measure, a hypothesis generator not an oracle**, with the standing caveat that engine and grader share a language model so agreement may be shared priors, not independent foresight. I take that verdict as given here rather than repeat it.
 
 What this study adds is **one new pilot built for the liquidity question specifically — GameStop, January 2021** — because the SpaceX question is not about a capital cycle, it is about whether market *plumbing* (float, borrow, clearing, unlock supply) governs a price. GameStop is the cleanest case where it did.
 
@@ -943,7 +943,7 @@ Read the bottom row, because it is the whole finding. Matching the *weakest* FAA
 
 - ICI money-market release (Jun 11, 2026); S&P Dow Jones Indices buyback reports; Goldman Sachs 2026 IPO forecast (Reuters); Bloomberg Intelligence index-absorption estimates; Cboe/Siblis as in Part II.
 - **Builds on** Part II of this dossier (the event-level base rates and the low-float family), Part I of this dossier (the unlock calendar), [study 15](../15-ipo-chase/) (the chase base rate), and [study 27](../27-ai-capital-cycle/) (the financing-cycle casting that the 2001 transfer relies on).
-- **Companion:** [study 30](../30-can-a-swarm-forecast/) asks whether the swarm engine can forecast at all (the general tool evaluation); this study takes that verdict as given and *applies* the validated engine to the SpaceX liquidity question, adding a plumbing-specific GME pilot. Read 30 for "is the tool any good," 29 for "what does it say about SpaceX."
+- **Companion:** [study 30](../30-llm-players-forecast/) asks whether the swarm engine can forecast at all (the general tool evaluation); this study takes that verdict as given and *applies* the validated engine to the SpaceX liquidity question, adding a plumbing-specific GME pilot. Read 30 for "is the tool any good," 29 for "what does it say about SpaceX."
 - **Next:** scoring the SpaceX swarm predictions against reality at each unlock date — the only test of the simulator that means anything.
 
 ---

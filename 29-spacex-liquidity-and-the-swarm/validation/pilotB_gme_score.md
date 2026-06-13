@@ -24,7 +24,7 @@ structural question study 29 asks of SpaceX — whether the absorption/plumbing 
 the plumbing-binds-the-price logic unprompted in the GME case. That earns the swarm a
 genuine (caveated) role on the SpaceX run, not just narrative color.
 
-## Caveats (unchanged from Pilot A)
+## Caveats (same as study 30's pilots)
 - Contamination: outcome in training data; seed contained the collateral fact. Genuine
   value-add = the causal ORDERING (buy-constraint marks the top), which was seed-absent.
 - No quantified price path; spillover magnitude declined (honestly).
@@ -32,6 +32,6 @@ genuine (caveated) role on the SpaceX run, not just narrative color.
 
 ## Verdict
 5/5 channels surfaced; the non-obvious plumbing halt found with correct causal ordering.
-Combined with the parallel-session Pilots A+B (12/16 contamination-adjusted), the swarm is
+Combined with study 30's general validation (12/16 contamination-adjusted), the swarm is
 validated as a mechanism/ordering rehearser. Cleared to run on SpaceX as the 3rd evidence
 layer; outcome probabilities stay owned by the backtests (Ch1-3) and the bootstrap cone (Ch4a).

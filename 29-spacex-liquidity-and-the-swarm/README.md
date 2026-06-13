@@ -11,7 +11,7 @@ This matters for a position: the space-economy basket just front-ran the listing
 - **The live case sits in the dangerous quadrant.** The space basket (RKLB, ASTS, IRDM, LUNR, RDW, PL, SPCE, TSLA) beat the S&P by ~40 points in the 30 sessions before SPCX's debut — the same halo-then-bleed shape Coinbase printed (+11% halo, then the bleed). SpaceX is more dominant over its complex than Coinbase was over crypto equities. The next ~60 trading days are the test window.
 - **The 2026 tape is not late-2021.** A five-feature regime fingerprint puts June 2026 among ordinary hot-bull months (analog median forward 12m +13.2%, 80% positive); 2021 does not appear in the top ten analogs. The one dark note: the single nearest neighbor is October 2007.
 - **The bootstrap cone prices the premium's decay.** Resampling the empirical post-listing families (10 mega-IPO chase paths + the GME/TRUMP low-float decays), P(SPCX below its $135 IPO price) is 35% at the first unlock and 46% at one year; the median path returns to the $150 opening print by day 180. The scarcity premium has a half-life of roughly one lockup cycle.
-- **The swarm converges and adds a trigger.** Validated on three known episodes (the GameStop pilot found the buy-side clearing-collateral halt unprompted), a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable early-warning signal — if SPCX fails to make a new high after index inclusion while borrow loosens, the benign path is breaking.
+- **The swarm converges and adds a trigger.** The engine's general validity is established in companion [study 30](../30-can-a-swarm-forecast/) (12/16 honest score); a study-29-specific GameStop pilot then showed it finds market-plumbing mechanisms (the buy-side clearing-collateral halt, unprompted). On that footing, a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable early-warning signal — if SPCX fails to make a new high after index inclusion while borrow loosens, the benign path is breaking.
 
 ## How this study works (and what the simulator can and cannot prove)
 
@@ -37,7 +37,7 @@ Mechanisms, not outcomes, transfer between eras. The [casting table](CASTING_TAB
 | 2026 pipeline | Goldman Sachs forecast | $160B incl. SpaceX $75B | OpenAI filed Jun 8 |
 | Index absorption | Bloomberg Intelligence | ~24% of SPCX float to R1000+NDX funds in 6m | |
 | SpaceX deal terms / unlock calendar | S-1 via study 24; Reuters | float 4.25%; supply 9.4x float by day 180 | |
-| Swarm engine | MiroFish (open source), gpt-5.5 | two validation pilots + one live run | seeds in [sim_seeds/](sim_seeds/) |
+| Swarm engine | MiroFish (open source), gpt-5.5 | GME plumbing pilot + the live SpaceX run (general validation in [study 30](../30-can-a-swarm-forecast/)) | seeds in [sim_seeds/](sim_seeds/) |
 
 ## Finding 1 — peers bleed only when the listing is the complex's cash-out event
 
@@ -107,23 +107,19 @@ Twelve-month percentiles: p10 $50, p25 $88, median $147, p75 $235, p90 $378. The
 
 *Verdict.* The empirical families say the day-one buyer's position is close to a coin flip against the open and meaningfully exposed against the IPO price, with the odds deteriorating monotonically through the unlock calendar.
 
-## Finding 4b — can the swarm be trusted? Three validation pilots first
+## Finding 4b — is the swarm trustworthy enough to use here? (validation, with one new pilot)
 
-*What I expected.* Before letting a multi-agent simulation speak about SpaceX, it has to earn the microphone. A swarm that just retells whatever you feed it is a fancy paraphraser. So we ran it on three known episodes and scored *mechanism breadth* — does it surface the causal channels, including the ones a naive narrative misses — never outcome recall, because the model's training data already contains all three outcomes.
+Whether this class of tool can forecast at all — rather than launder its input back as a confident story — is the entire subject of a companion study, **[study 30](../30-can-a-swarm-forecast/)**. That study ran the same engine on a known case (2001 telecom) and a conclusion-stripped live case (the AI capital cycle), graded the second with an adversarial contamination panel, and landed on a qualified yes: **12/16 on the honest measure, a hypothesis generator not an oracle**, with the standing caveat that engine and grader share a language model so agreement may be shared priors, not independent foresight. I take that verdict as given here rather than repeat it.
 
-*How I measured it.* Pre-registered rubrics; one pilot graded by an independent 7-agent adversarial workflow with a seed-contamination guard (drop any item whose answer was verbatim in the seed). Two of the three pilots are from a parallel evaluation of the same engine against [study 27](../27-ai-capital-cycle/); all artifacts are in [validation/](validation/).
+What this study adds is **one new pilot built for the liquidity question specifically — GameStop, January 2021** — because the SpaceX question is not about a capital cycle, it is about whether market *plumbing* (float, borrow, clearing, unlock supply) governs a price. GameStop is the cleanest case where it did.
 
-| Pilot | Setup | Result | What it proves |
-|---|---|---|---|
-| A — 2001 telecom | Rich seed that *contained* the answer (WorldCom vulnerability, Cisco-healthiest, JDSU goodwill) | 15/16 raw | Coherence + plumbing + honest synthesis. NOT prediction — the seed gave it away. The control. |
-| B — AI capital cycle | Study-27 facts with the verdict and exposure ladder **stripped out**; 61 agents, 15 rounds | **12/16 contamination-adjusted**, ~65% seed-restatement | Genuine reasoning: the swarm reached "financing-refusal is the trigger, periphery breaks first, core survives" unprompted, and surfaced a seed-absent mechanism (GPU residual-value / LTV repricing as the refinancing pivot). |
-| C — GameStop 2021 | Facts only (short interest, gamma loop, NSCC clearing); outcome withheld | **5/5 channels**; found the buy-side halt | The decisive one for this study (below). |
+*How I measured it.* Seed = the market state as of 22 January 2021 (short interest, the gamma loop, NSCC clearing collateral, the sister names) with the **outcome withheld**. Score the causal channels, not outcome recall (2021 is in the model's training data). Artifacts: [validation/pilotB_gme_score.md](validation/pilotB_gme_score.md), [validation/pilotB_groundtruth.md](validation/pilotB_groundtruth.md).
 
-*The GameStop pilot is the one that earned the swarm its role here.* Given the January 2021 setup with no outcome, it reproduced the peak window (late January, at the broker restriction), named the de-grossing spillover, and listed all five sister names — but the load-bearing result is this: it reasoned, unprompted, that **the price peaks when the *buying channel* is constrained by clearing-collateral demands, not when sellers overwhelm buyers.** That causal ordering was not in the seed (the seed listed the NSCC collateral fact as one neutral bullet). The swarm deduced that the plumbing, not the order flow, sets the top — which is the exact structural question this study asks of SpaceX.
+*What the data shows.* 5 of 5 channels surfaced: the peak window (late January, at the broker restriction), the de-grossing spillover, all five sister names, the short-side squeeze, and Citadel as the dominant market maker. The load-bearing result is the one the seed did *not* contain: the swarm reasoned, unprompted, that **the price peaks when the *buying channel* is constrained by clearing-collateral demands — not when sellers overwhelm buyers.** The seed listed the NSCC collateral fact as one neutral bullet; the swarm deduced that the plumbing, not the order flow, sets the top.
 
-*What I checked.* The honest ceiling: all three outcomes are in training data, and Pilots A and C had the mechanism (not the ordering) seeded. The genuine value-add is the *ordering and the seed-absent mechanisms* (Pilot B's LTV pivot, Pilot C's buy-constraint-marks-the-top). Agreement with our own studies may partly reflect shared LLM priors rather than independent foresight — so the swarm is the third-ranked evidence layer, never the verdict. Public framing throughout: "the simulation suggests," never "the simulation shows."
+*Why it matters here.* That is the exact structural question study 29 asks of SpaceX — whether the absorption side (index demand vs unlock supply, borrow, lock-up mechanics) governs the price path. The swarm found the plumbing-binds-the-price logic in the one historical case built to test it. Combined with study 30's general 12/16, that earns the engine a caveated role on the SpaceX run.
 
-*Verdict.* **Qualified yes — a mechanism-and-ordering rehearser, not an oracle.** Cleared to run on SpaceX, with outcome probabilities owned by the backtests (Findings 1-3) and the bootstrap cone (Finding 4a).
+*Verdict.* **Cleared as a mechanism-and-ordering rehearser** (general validity per study 30; plumbing-specific validity per the GME pilot here). Outcome probabilities stay owned by the backtests (Findings 1-3) and the bootstrap cone (Finding 4a); the swarm speaks only to mechanism and trigger.
 
 ## Finding 4c — the swarm on SpaceX: the live, blind rehearsal
 
@@ -175,4 +171,5 @@ This is the only genuinely blind test in the study — the six months from 13 Ju
 
 - ICI money-market release (Jun 11, 2026); S&P Dow Jones Indices buyback reports; Goldman Sachs 2026 IPO forecast (Reuters); Bloomberg Intelligence index-absorption estimates; Cboe/Siblis as in study 28.
 - **Builds on** [study 28](../28-spacex-vs-trump-coin/) (the event-level base rates and the low-float family), [study 24](../24-spacex-ipo-quality-model/) (the unlock calendar), [study 15](../15-ipo-chase/) (the chase base rate), and [study 27](../27-ai-capital-cycle/) (the financing-cycle casting that the 2001 transfer relies on).
+- **Companion:** [study 30](../30-can-a-swarm-forecast/) asks whether the swarm engine can forecast at all (the general tool evaluation); this study takes that verdict as given and *applies* the validated engine to the SpaceX liquidity question, adding a plumbing-specific GME pilot. Read 30 for "is the tool any good," 29 for "what does it say about SpaceX."
 - **Next:** scoring the SpaceX swarm predictions against reality at each unlock date — the only test of the simulator that means anything.

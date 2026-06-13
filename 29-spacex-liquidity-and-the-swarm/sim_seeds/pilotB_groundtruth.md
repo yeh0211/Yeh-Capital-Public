@@ -1,7 +1,7 @@
 # Pilot B ground truth — GameStop, 25 Jan - 19 Feb 2021
 
 What actually happened, to score the swarm report (report_208682c920ff) against.
-Same discipline as Pilot A: score MECHANISM BREADTH, not outcome recall (2021 is in
+Same discipline as study 30's telecom pilot: score MECHANISM BREADTH, not outcome recall (2021 is in
 training data). The test is whether the swarm finds the five causal channels — especially
 the clearing-collateral broker halt, which is the non-obvious one.
 

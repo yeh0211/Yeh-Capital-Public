@@ -184,4 +184,4 @@ python3 15-ipo-chase/build_model.py
 - [Baker & Wurgler - The Equity Share in New Issues and Aggregate Stock Returns](https://onlinelibrary.wiley.com/doi/10.1111/0022-1082.00285)
 - [Study 02 - IPO-anchored VWAP](../02-ipo-anchored-vwap/)
 - [Study 22 - Equity issuance as a market-top signal](../22-equity-issuance-top-signal/)
-- [Study 24 - SpaceX IPO quality model](../24-spacex-ipo-quality-model/)
+- [Study 24 - SpaceX: the complete case](../24-spacex-dossier/)

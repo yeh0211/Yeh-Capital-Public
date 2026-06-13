@@ -75,6 +75,51 @@ Before trusting the engine on a future I can't check, I ran it on a past I can: 
 
 On that honest measure the forecast scored **12 of 16**. Good, not magic. Two-thirds of the engine's output was a restatement of the facts I gave it; only the remaining third — the trigger choice, the ordering, the survivors, and the novel mechanisms — is the engine's own reasoning. And the deepest caveat is one I can't fully clear: the engine and my own study 27 were built on the same family of language model, so their agreement on "financing refusal, periphery first, core survives" might be a shared habit of thought rather than two roads to the truth. That is exactly why the two places it *disagreed* with me — the relay economy surviving, and refusing to name a single lab — are worth more than the places it agreed.
 
+## Connecting the dots: names, financials, and where the trade is
+
+Up to here this study has been the swarm's forecast and an honest accounting of how much to trust it. This last section does the thing a forecast is for: I pulled the real financials and the real price tape for the names in the circle, put them next to the swarm's break-order, and asked whether the numbers agree. They do — and that lets me say, plainly, where a research-grade expression of this thesis actually sits, and what is already in the price.
+
+First the calendar peg, cross-checked against our own news. The swarm's trigger is "a next-gen accelerator launches and starts the collateral clock." That has a date every year, and our internal warehouse confirms the cadence is not invented — it traces to the keynote record, with 230 collected Computex notes corroborating it.
+
+**Table 1 — Computex: the accelerator calendar, cross-checked against our news**
+
+| Year | Next-gen part(s) | Ship quarter | Turns prior gen into cheap collateral via | In our news? |
+|---|---|---|---|---|
+| 2024 | AMD Instinct MI325X; Nvidia GB200 | MI325X 2H24 | the next reveal (MI350) | Yes |
+| 2025 | AMD MI350 / CDNA 4; Nvidia GB300 (Grace Blackwell) | 2025 | the next reveal (MI400 / Rubin) | Yes |
+| 2026 | AMD MI400 / CDNA Next; Nvidia Vera Rubin | 2026 | the next reveal (the 2027 part) | Yes |
+
+Every family in the swarm's mechanism — Blackwell, GB200, the Rubin generation, the MI325-to-MI400 ladder — is present in our coverage, and the depreciation risk it implies surfaced independently in the corpus (a "GPU depreciation could be the next crisis" thread, alongside reports of a roughly 30% one-weekend drop in B200 rental prices and warehoused idle GPUs). The cadence is real, annual, and self-confirming: each launch is the thing that turns last year's silicon into cheapening collateral.
+
+Now the names. I pulled leverage (liabilities/assets), free cash flow (inclusive of M&A), gross margin, and drawdown from all-time high, and matched each call to an adversarial positioning review.
+
+**Table 2 — Who breaks, who survives, with names and financials**
+
+| Ticker | Layer | Leverage (liab/assets) | FCF | Gross margin | From ATH | Research call |
+|---|---|---:|---:|---:|---:|---|
+| CRWV | Levered periphery (neocloud) | 93% | −7.2B | 72% | −40% | Structural underweight (refi window) — not a fresh short, largely priced in |
+| ORCL | Levered periphery (capex on credit) | 88% | −0.9B | n/a | −30% | Structural underweight — cleaner, less priced in |
+| DELL | Levered integrator (assembly) | 102% | n/a | n/a | −10% | Avoid — ~1% circle, financials dashed; uncallable |
+| SMCI | Levered periphery (liquid-cooled racks) | 55% | +1.5B | 11% | −60% | Avoid a fresh short — already broken |
+| MU | Cyclical memory | 35% | +0.5B | 45% | 0% | Own on quality, but at the high after +956% — don't chase |
+| VRT | Buildout infra (thermal/power) | 68% | +0.4B | 39% | −12% | Mild underweight candidate — not a clean short |
+| MRVL | Custom silicon / interconnect | 36% | +0.3B | 52% | −9% | Own (lower conviction) — don't chase +318% |
+| CRDO | High-beta circle pure-play | 16% | −0.1B | 67% | −9% | Pair-only — risk is operational, not balance-sheet |
+| NVDA | Fortress core (accelerator) | 24% | +5.3B | 75% | −11% | Own / overweight (relative, not a timing call) |
+| AVGO | Fortress core (custom silicon/networking) | 52% | +7.3B | 68% | −18% | Own / overweight |
+| ANET | Fortress core (networking) | 36% | +0.3B | 63% | −2% | Own / overweight — cleanest leverage-adjusted |
+| TSM | Foundry | n/a (foreign filer) | n/a | n/a | −4% | Survives on scale/tape; no financial-based call |
+
+![Leverage versus drawdown: the most-levered, negative-FCF names are already the most drawn-down, while the fortress core sits near highs](figures/fig5-leverage-drawdown.png)
+
+Here is where the dots connect. The swarm forecast that the most-levered, negative-FCF periphery breaks first and the cash-rich core survives. The financials and the tape already agree with that ordering, before any 2028 trigger fires. CoreWeave carries 93% liabilities/assets, $21.4B of long-term debt, and burns −7.2B in FCF on 5.1B of revenue — and it is already down 40% from its high, the only large name with a negative one-year return. Oracle sits at 88% leverage with negative FCF and is down 30%. Dell screens at 102% leverage. Against them, Nvidia runs 24% leverage, a 75% gross margin, +5.3B FCF on 36.2B of operating cash flow, and is only 11% off its high; Broadcom throws off +7.3B of FCF (a 40%-plus FCF margin); Arista is effectively debt-free at 36% leverage and sits 2% from its all-time high. The fortress is near the highs; the leverage is in the drawdown. That is the forecast, expressed in today's prices.
+
+So what is the honest positioning? The research-grade expression is a **pair, not a chase**: own the cash-rich core that gets paid (Nvidia, Broadcom, Arista) and underweight the high-leverage, negative-FCF periphery that has to refinance into the 2027 H1 window (CoreWeave, Oracle). The core survives a financing-refusal shock because it is the supplier being paid, not the borrower buying compute. But I have to be plain about what is already in the price. CoreWeave at −40% and Supermicro at −60% are not fresh setups — most of their fragility is already booked; the defensible version is a structural underweight specifically dated to the refinancing window, not a short of names that have already fallen. Oracle is the cleaner short leg precisely because it is *less* priced in (−30% but still +36% on the year), so its leverage and capex burn have not yet reflected a refi shock — though note Oracle's risk is balance-sheet-and-capex, not circle-demand (only ~2% of its revenue is the circle). And the "own" leg is rich: Micron is at its all-time high after +956%, Nvidia up 46% on the year. These overweights are relative-to-periphery within a pair, not standalone buy timing.
+
+Tie it to the calendar: the quarter after **Computex 2027** is the catalyst window, when the next accelerator ships and turns the live neocloud collateral into a haircut — the swarm's mechanism, next-gen launch into old-GPU resale collapse into a loan-to-value cut into a refinancing refused. Until then, the watch-list is the numbers, not the keynote: leverage, FCF, the 2027 refinancing calendar, and the GPU-rental tape. While the one-year rate on the vintage behind the debt keeps rising, the gate stays shut.
+
+*Research, not investment advice. The pair above is a way to express a forecast, not a recommendation to put it on; positions, sizing, and timing are the reader's own call, and the most fragile-looking names have already moved.*
+
 ## The answer, in the forecast
 
 **What happens to the LLM players when the circle breaks?** On this simulation's base case: the leverage in the periphery breaks first, in 2028 H1, triggered by a collateral-value squeeze on a refinancing calendar rather than a collapse in demand; the cash-rich core survives with compressed multiples; no single lab is forecast to fail; and the all-you-can-eat subscription is re-priced out of existence rather than abandoned. Hold it as a scenario to monitor, not a certainty.
@@ -89,6 +134,8 @@ On that honest measure the forecast scored **12 of 16**. Good, not magic. Two-th
 | Subsidy endgame | Re-priced away (quotas, usage billing), not killed by weak demand |
 | Sharpest mechanism | Next-gen chip → old-GPU resale collapse → collateral haircut → refi refused |
 | Calendar peg | Computex (annual accelerator launch); watch the quarter after Computex 2027, not the keynote |
+| Confirmed in the tape | Most-levered names already most drawn-down (CRWV 93% lev/−40%, ORCL 88%/−30%, DELL 102%); fortress core (NVDA/AVGO/ANET) near highs |
+| Research positioning | Pair, not a chase: own the cash-rich core / underweight the levered periphery into the 2027 H1 refi window (ORCL the cleaner leg) |
 | Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat; Computex limb illustrative (N=3) |
 
 ## Caveats, each with its direction

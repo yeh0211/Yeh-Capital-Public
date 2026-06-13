@@ -53,6 +53,18 @@ The single most useful thing the simulation produced was buried in the agent cha
 
 It surfaced four more mechanisms in the same vein, all worth investigating: the triple-duration mismatch as a risk distinct from demand; "take-or-pay coverage of depreciation plus debt" as the real test for a neocloud's solvency; the relay economy's distinct loss-type; and power-equipment project-finance as a second, non-GPU channel through which the same stress travels.
 
+## The trigger has a calendar: Computex
+
+The swarm's trigger is abstract — a next-gen accelerator launches and starts the clock — but accelerators don't launch on abstract dates. They launch at Computex, the Taipei show held every year in late May or early June. That makes it the real-world calendar peg for the mechanism. I went back and checked our Computex dataset, and it isn't just a PC show: the exact AMD cadence the swarm leans on shows up in the keynote record verbatim — the Instinct MI325X (shipping 2H24), the MI350 / CDNA 4 line (2025), and the MI400 / CDNA Next generation (2026) — each reveal naming the *next* part and, in 2024 explicitly, the forward ship quarter that dates when the prior generation becomes depreciating collateral. Nvidia carries the same annual rhythm: Grace Blackwell GB300 in 2025, the Vera Rubin generation surfacing in 2026. The cadence is real and annual. The swarm's "a next-gen chip launches" has a date stamp every year, and Computex is it.
+
+![Computex as the trigger's calendar: the keynote is a relief rally; periphery stress shows up only in the quarter after, and only in some regimes](figures/fig4-computex.png)
+
+Then I ran the honest test against the price tape, and it killed the easy version of the story. If a launch instantly cratered GPU-levered names you'd see the periphery sell off around the keynote. The tape says the opposite. The keynote window is a *relief rally*: in both 2024 and 2025 the whole AI complex — core chip-sellers and the levered periphery alike — rose around the keynote (Nvidia about +10 points of excess return over the S&P in the ten trading days after the 2024 keynote, Broadcom about +35; the 2025 window positive again). A launch happening is good news the market celebrates, not a shock it flees. So the trigger is a slow-burn, not an announcement-day move — you will not catch it at the keynote.
+
+The one place stress actually showed up was the *quarter after* Computex 2024: Supermicro roughly −48 points of excess return over the next sixty days, Micron about −32, Vertiv about −22. Right direction for the mechanism. But it flatly did not repeat in the 2025 bull — the same names ran −7, +19, +16 — so it is regime-dependent, not mechanical. And that lines up exactly with study 27's rental tape: the residual collapse hadn't fired because demand was still outrunning supply, the current-generation H100 one-year rate climbing about 40% into 2026 even as trailing-edge silicon fell. The forecast condition is precise — the trigger fires once the cadence outruns demand, which the swarm dates to 2027–2028, with demand the gate and the launch the trigger.
+
+Be brutal about what this is. Three Computex events, only two with a usable forward window, the periphery reducing to one or two clean names, CoreWeave and Nebius confounded by post-IPO ramps, the whole sample riding a two-year AI bull. This is illustrative, not a statistical test — there is no p-value here and I won't pretend there is. What it buys is a watch-instruction: the 2028 H1 break should *preview* as periphery and GPU-rental weakness in the quarter after **Computex 2027** — when the next big accelerator ships — not at the keynote itself. While the one-year rental rate on the vintage behind the live neocloud debt keeps rising, the gate stays shut; a sustained rollover through the 2027 refinancing calendar is what fires it.
+
 ## How much to trust this — I backtested the engine first
 
 Here is the part that keeps this honest, and it is why everything above is "the simulation forecasts," never "I forecast."
@@ -76,7 +88,8 @@ On that honest measure the forecast scored **12 of 16**. Good, not magic. Two-th
 | Survives | NVDA / hyperscalers / TSMC (multiple compression); relay economy (no GPU debt) |
 | Subsidy endgame | Re-priced away (quotas, usage billing), not killed by weak demand |
 | Sharpest mechanism | Next-gen chip → old-GPU resale collapse → collateral haircut → refi refused |
-| Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat |
+| Calendar peg | Computex (annual accelerator launch); watch the quarter after Computex 2027, not the keynote |
+| Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat; Computex limb illustrative (N=3) |
 
 ## Caveats, each with its direction
 
@@ -84,10 +97,11 @@ On that honest measure the forecast scored **12 of 16**. Good, not magic. Two-th
 - **About two-thirds of the output restated the facts I supplied.** The genuinely new content is the trigger mechanism and the two contrarian calls — treat the rest as well-organized input, not forecast.
 - **The run didn't compile a single polished report** (a usage limit cut it off), so the ranking above is reconstructed from the raw simulated world. A cleaner run would likely sharpen it; it would not change the spine.
 - **One engine, one live question.** This is a forecast from a tool with a known, limited track record (one backtest), not a consensus.
+- **The Computex calendar peg is structure, not proof.** Three events, one-to-two usable periphery names, a post-IPO confound, and an AI-bull backdrop make the event study illustrative; the keynote is a relief rally, so watch the quarter *after* Computex 2027, not the keynote, for the trigger to preview.
 
 ## How it was produced
 
-The engine is **MiroFish** (`github.com/666ghj/MiroFish`), an open-source swarm-simulation tool built on the **OASIS** multi-agent framework from CAMEL-AI, run on **gpt-5.5**. I drove it through its API: it builds a knowledge graph from the seed facts, gives each entity an agent persona with memory, runs them as a simulated social network for fifteen rounds, and reports what the world did. The forecast seed contained only facts (the financing edges, disclosed concentrations, measured subscription economics, the supply graph, historical analogs) with my study-27 conclusions removed; the prediction request posed the trigger as an open menu so the engine had to choose. Grading used a panel of independent agents (blind scorers, a contamination auditor that diffs every claim against the seed, a novel-mechanism verifier, an extractor). The seeds, the rubrics, and the grading outputs live with the working notes behind this study.
+The engine is **MiroFish** (`github.com/666ghj/MiroFish`), an open-source swarm-simulation tool built on the **OASIS** multi-agent framework from CAMEL-AI, run on **gpt-5.5**. I drove it through its API: it builds a knowledge graph from the seed facts, gives each entity an agent persona with memory, runs them as a simulated social network for fifteen rounds, and reports what the world did. The forecast seed contained only facts (the financing edges, disclosed concentrations, measured subscription economics, the supply graph, historical analogs) with my study-27 conclusions removed; the prediction request posed the trigger as an open menu so the engine had to choose. Grading used a panel of independent agents (blind scorers, a contamination auditor that diffs every claim against the seed, a novel-mechanism verifier, an extractor). The Computex cross-check pairs our grounded Computex announcement dataset (the accelerator cadence) with an event study on adjusted closes around the three Nvidia keynote dates (excess return versus the S&P), all from an internal market-data warehouse. The seeds, the rubrics, and the grading outputs live with the working notes behind this study.
 
 ## References & forward pointer
 

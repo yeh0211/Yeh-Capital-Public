@@ -1,0 +1,38 @@
+{
+  "anchor": {
+    "day1_close": 160.9,
+    "ipo_price": 135.0,
+    "open": 150.0
+  },
+  "families": {
+    "mega_ipo_chase_n": 10,
+    "low_float_decay_n": 2,
+    "blend": "70/30"
+  },
+  "p_below_ipo_price": {
+    "day_70": 35.4,
+    "day_90": 38.0,
+    "day_105": 39.3,
+    "day_120": 40.0,
+    "day_135": 41.0,
+    "day_180": 43.4,
+    "day_252": 45.5
+  },
+  "p_below_open": {
+    "day_70": 46.8,
+    "day_90": 48.0,
+    "day_105": 48.9,
+    "day_120": 48.6,
+    "day_135": 49.1,
+    "day_180": 50.1,
+    "day_252": 51.0
+  },
+  "day_252_percentiles": {
+    "p10": 50.0,
+    "p25": 88.0,
+    "p50": 147.0,
+    "p75": 235.0,
+    "p90": 378.0
+  },
+  "median_path_day_180": 150.0
+}

@@ -1,0 +1,31 @@
+{
+  "eras": {
+    "1999 (dot-com)": {
+      "ipo_proceeds_pct_mcap": 0.43,
+      "ipo_proceeds_pct_mmf": 4.0,
+      "ipo_proceeds_pct_buybacks": 46.0,
+      "max_supply_pct_mcap": 0.43,
+      "max_supply_pct_mmf": 4.0
+    },
+    "2021 (SPAC/IPO wave)": {
+      "ipo_proceeds_pct_mcap": 0.27,
+      "ipo_proceeds_pct_mmf": 3.0,
+      "ipo_proceeds_pct_buybacks": 16.0,
+      "max_supply_pct_mcap": 0.57,
+      "max_supply_pct_mmf": 6.4
+    },
+    "2026F (mega-IPO year)": {
+      "ipo_proceeds_pct_mcap": 0.22,
+      "ipo_proceeds_pct_mmf": 2.0,
+      "ipo_proceeds_pct_buybacks": 15.0,
+      "max_supply_pct_mcap": 0.97,
+      "max_supply_pct_mmf": 8.9
+    }
+  },
+  "spacex_specific": {
+    "float_value_day1_close_usd_b": 89.0,
+    "index_forced_demand_6m_usd_b": 21.0,
+    "potential_supply_day180_usd_b_at_day1_close": 840.0,
+    "note": "supply at day 180 assumes the full 9.4x float at the day-1 close; actual insider selling is a fraction"
+  }
+}

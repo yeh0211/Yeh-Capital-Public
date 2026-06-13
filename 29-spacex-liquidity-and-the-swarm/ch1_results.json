@@ -1,0 +1,96 @@
+{
+  "per_event_basket_excess_pct": {
+    "Facebook": {
+      "W1_alloc_-30_-1": -5.02,
+      "W2_listing_0_+5": -8.47,
+      "W3_digest_+6_+60": -12.76,
+      "W4_lockup_+121_+190": 42.59
+    },
+    "Alibaba": {
+      "W1_alloc_-30_-1": -1.57,
+      "W2_listing_0_+5": -1.58,
+      "W3_digest_+6_+60": -5.07,
+      "W4_lockup_+121_+190": 12.68
+    },
+    "Uber": {
+      "W1_alloc_-30_-1": -25.69,
+      "W2_listing_0_+5": -2.13,
+      "W3_digest_+6_+60": 8.35,
+      "W4_lockup_+121_+190": 12.08
+    },
+    "Snowflake": {
+      "W1_alloc_-30_-1": -5.93,
+      "W2_listing_0_+5": 8.79,
+      "W3_digest_+6_+60": 29.83,
+      "W4_lockup_+121_+190": 18.15
+    },
+    "DoorDash": {
+      "W1_alloc_-30_-1": 59.46,
+      "W2_listing_0_+5": 1.3,
+      "W3_digest_+6_+60": 12.46,
+      "W4_lockup_+121_+190": -19.42
+    },
+    "Airbnb": {
+      "W1_alloc_-30_-1": 24.76,
+      "W2_listing_0_+5": -2.43,
+      "W3_digest_+6_+60": 15.15,
+      "W4_lockup_+121_+190": -8.84
+    },
+    "Coinbase": {
+      "W1_alloc_-30_-1": 11.01,
+      "W2_listing_0_+5": -29.15,
+      "W3_digest_+6_+60": -19.57,
+      "W4_lockup_+121_+190": -23.67
+    },
+    "Rivian": {
+      "W1_alloc_-30_-1": 27.25,
+      "W2_listing_0_+5": 6.56,
+      "W3_digest_+6_+60": -22.22,
+      "W4_lockup_+121_+190": 0.27
+    },
+    "ARM": {
+      "W1_alloc_-30_-1": -2.83,
+      "W2_listing_0_+5": -3.98,
+      "W3_digest_+6_+60": 12.52,
+      "W4_lockup_+121_+190": 2.74
+    },
+    "SpaceX": {
+      "W1_alloc_-30_-1": 39.76,
+      "W2_listing_0_+5": null,
+      "W3_digest_+6_+60": null,
+      "W4_lockup_+121_+190": null
+    }
+  },
+  "summary_across_events_ex_spacex": {
+    "W1_alloc_-30_-1": {
+      "median_pct": -1.57,
+      "mean_pct": 9.05,
+      "pct_negative": 55.6,
+      "n_events": 9
+    },
+    "W2_listing_0_+5": {
+      "median_pct": -2.13,
+      "mean_pct": -3.45,
+      "pct_negative": 66.7,
+      "n_events": 9
+    },
+    "W3_digest_+6_+60": {
+      "median_pct": 8.35,
+      "mean_pct": 2.08,
+      "pct_negative": 44.4,
+      "n_events": 9
+    },
+    "W4_lockup_+121_+190": {
+      "median_pct": 2.74,
+      "mean_pct": 4.06,
+      "pct_negative": 33.3,
+      "n_events": 9
+    }
+  },
+  "btc_around_coinbase": {
+    "W1_alloc_-30_-1": 7.81,
+    "W2_listing_0_+5": -12.49,
+    "W3_digest_+6_+60": -29.86,
+    "W4_lockup_+121_+190": 40.08
+  }
+}

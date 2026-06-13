@@ -11,7 +11,7 @@ This matters for a position: the space-economy basket just front-ran the listing
 - **The live case sits in the dangerous quadrant.** The space basket (RKLB, ASTS, IRDM, LUNR, RDW, PL, SPCE, TSLA) beat the S&P by ~40 points in the 30 sessions before SPCX's debut — the same halo-then-bleed shape Coinbase printed (+11% halo, then the bleed). SpaceX is more dominant over its complex than Coinbase was over crypto equities. The next ~60 trading days are the test window.
 - **The 2026 tape is not late-2021.** A five-feature regime fingerprint puts June 2026 among ordinary hot-bull months (analog median forward 12m +13.2%, 80% positive); 2021 does not appear in the top ten analogs. The one dark note: the single nearest neighbor is October 2007.
 - **The bootstrap cone prices the premium's decay.** Resampling the empirical post-listing families (10 mega-IPO chase paths + the GME/TRUMP low-float decays), P(SPCX below its $135 IPO price) is 35% at the first unlock and 46% at one year; the median path returns to the $150 opening print by day 180. The scarcity premium has a half-life of roughly one lockup cycle.
-- **The swarm adds the mechanism layer.** [PENDING — pilot scores and SpaceX simulation results.]
+- **The swarm converges and adds a trigger.** Validated on three known episodes (the GameStop pilot found the buy-side clearing-collateral halt unprompted), a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable early-warning signal — if SPCX fails to make a new high after index inclusion while borrow loosens, the benign path is breaking.
 
 ## How this study works (and what the simulator can and cannot prove)
 
@@ -127,9 +127,22 @@ Twelve-month percentiles: p10 $50, p25 $88, median $147, p75 $235, p90 $378. The
 
 ## Finding 4c — the swarm on SpaceX: the live, blind rehearsal
 
-This is the only genuinely blind test in the study — the six months from 13 June 2026 have not happened. The seed ([sim_seeds/seed_C_spacex_2026.md](sim_seeds/seed_C_spacex_2026.md)) gives the swarm facts and participants only; our own verdict and the Finding 4a probabilities are deliberately withheld. Predictions are published here *before the fact* and will be scored against reality at each lock-up date.
+This is the only genuinely blind test in the study — the six months from 13 June 2026 have not happened. The seed ([sim_seeds/seed_C_spacex_2026.md](sim_seeds/seed_C_spacex_2026.md)) gives the swarm facts and participants only; our own verdict and the Finding 4a probabilities are deliberately withheld. The run was 11 agents over 15 rounds; the raw emergent world (the agents' own posts) is preserved in [validation/spacex_run_raw_world.md](validation/spacex_run_raw_world.md). Predictions are published here *before the fact* and will be scored against reality at each lock-up date.
 
-[PENDING — filled when the SpaceX run completes: emergent price-path call, the lock-up date the swarm flags as most vulnerable, the peer-rotation mechanism, the first-stress location, the spillover call, and the single early-warning signal. Cross-checked against the bootstrap cone — where the swarm and the cone agree is the signal.]
+*The emergent call (six themes, unprompted).*
+
+1. **Two regimes split at the lock-up calendar.** In the swarm's words: "before the unlock, shorts are constrained; after the unlock, the market tests absorption capacity." The first ~70 days are governed by the demand story — the 4.25% float scarcity, amplified by mechanical Nasdaq-100/Russell buying. From September-October, as the day-90/105/120/135 tranches release in sequence, the supply calendar takes over: "any bounce gets met with the question — who absorbs the employee and insider selling?"
+2. **Peak vulnerability is the day-180 December cleanup.** If SPCX still holds a high valuation going into the day-180 release, insider/employee diversification selling "could become the most visible supply stress-test in the whole market."
+3. **The early-warning signal (specific and falsifiable).** Before day 70, if the price *fails to make a new high even after index inclusion is confirmed*, while *borrow simultaneously becomes easy*, that is "the earliest signal the benign path is breaking." This is the swarm's single most useful output — a concrete, checkable trigger the statistical cone cannot produce.
+4. **Peers rotate out by substitution.** The market trades SPCX, Tesla and the space names as one "Musk-complex" allocation; if SPCX becomes the preferred vehicle, Tesla and the space peers face capital rotation *out*, and the pre-listing rally "turns from an industry re-rating into post-rehearsal profit-taking." This is Finding 1's substitution mechanism, reached independently.
+5. **Stress concentrates, it does not broadcast.** First stress appears "in SPCX options, borrow rates, space-concept stocks and high-valuation IPO names"; it reaches the broad index "only if the AI-capex narrative wobbles at the same time." This is Findings 2-3 and the [casting table](CASTING_TABLE.md)'s periphery-first ordering, restated by the agents.
+6. **Two named cross-triggers:** an OpenAI IPO priced below expectations re-rates SPCX's AI-compute premium; and borrow availability is the master gate on the whole short side ("the biggest problem shorting SPCX isn't the thesis, it's the borrow").
+
+*Convergence with the bootstrap cone — the actual signal.* Two independent methods, run without sight of each other, agree on the structure: the cone (Finding 4a) says the scarcity premium has a half-life of one lock-up cycle and the median path returns to the $150 open by day 180; the swarm says the demand story governs early and the supply calendar overwhelms it across days 90-180, peaking at the December cleanup. **Both put the break in the back half of the calendar, driven by unlock supply, not a market-wide top.** Where they agree is what this study will stand behind.
+
+*What the swarm adds beyond the cone.* The cone gives probabilities; the swarm gives the *mechanism and the trigger* the cone cannot: the two-part early-warning signal (new-high failure + borrow loosening), the peer substitution channel, the OpenAI-pricing cross-trigger, and borrow as the master variable gating the short side. None of these is in the seed — they are the genuine, seed-absent value-add (the seed listed borrow scarcity as a neutral fact but never said when or how the premium breaks).
+
+*Honesty markers.* This is one model's emergent narrative; "the simulation suggests," not "shows." Agreement with the cone may partly reflect shared priors. ~3 of the 38 emergent items are corporate-IR roleplay noise (Tesla/Rocket Lab "company perspective" posts), excluded from the read. The predictions are dated and will be scored at each unlock — that scoring, not this rehearsal, is the real test.
 
 ## Did I just find noise?
 
@@ -150,7 +163,7 @@ This is the only genuinely blind test in the study — the six months from 13 Ju
 | Is the space basket at risk now? | **Yes, on the precedent** — +40% halo printed, Coinbase shape | risk window: next ~60 sessions |
 | Is 2026 a repeat of 2021's window? | **No** — ordinary hot-bull fingerprint; nearest neighbor 2007-10 is the tail risk | analog median fwd 12m +13.2% |
 | Does the SPCX premium survive the unlocks? | **Even odds at best** | P(<$135): 35% day 70 → 46% day 252; median path = $150 at day 180 |
-| What does the swarm add? | [PENDING] | |
+| What does the swarm add? | **A convergent mechanism + a falsifiable signal** | Blind run independently put the break in the back half (days 90-180), same as the cone; added the early-warning trigger: new-high failure after index inclusion + borrow loosening, before day 70 |
 
 ## Reproducibility
 

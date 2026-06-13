@@ -1,8 +1,8 @@
 # 29 — Is there enough market for SpaceX? Liquidity, the value chain, and a swarm rehearsal of the next six months
 
-**The question.** Study 28 established what the SpaceX listing *is*: a record capital event that cannot drain the market but carries the low-float mania architecture personally. This study asks what it *does* next — to the cash pool that has to absorb it, to the second and third players in its value chain, and to its own price across the unlock calendar. And it adds a new instrument: a multi-agent swarm simulation (MiroFish), validated on history before being trusted on the future.
+**The question.** Study 28 established what the SpaceX listing *is*: a record capital event that cannot drain the market but carries the low-float mania architecture personally. This study asks what it *does* next, on two clocks. Over the **next six months**: to the cash pool that has to absorb it, to the second and third players in its value chain, and to its own price across the unlock calendar (Findings 1-4). Over the **next decade**: whether the "next FAANG" bull case is even arithmetically possible from a $2T starting valuation (Finding 5). It also adds a new instrument — a multi-agent swarm simulation (MiroFish), validated on history before being trusted on the future.
 
-This matters for a position: the space-economy basket just front-ran the listing by 40 points, the lockup calendar starts opening in under three months, and a record IPO pipeline is queued behind SpaceX. Whether to hold the peers, fade the premium, or wait is exactly what the next sections price.
+This matters for a position: the space-economy basket just front-ran the listing by 40 points, the lockup calendar starts opening in under three months, a record IPO pipeline is queued behind SpaceX, and the most common reason given to buy and hold — "it's the next FAANG" — turns on a number nobody is checking. Whether to hold the peers, fade the premium, or buy for the decade is exactly what the sections below price.
 
 ## Summary of results
 
@@ -12,6 +12,7 @@ This matters for a position: the space-economy basket just front-ran the listing
 - **The 2026 tape is not late-2021.** A five-feature regime fingerprint puts June 2026 among ordinary hot-bull months (analog median forward 12m +13.2%, 80% positive); 2021 does not appear in the top ten analogs. The one dark note: the single nearest neighbor is October 2007.
 - **The bootstrap cone prices the premium's decay.** Resampling the empirical post-listing families (10 mega-IPO chase paths + the GME/TRUMP low-float decays), P(SPCX below its $135 IPO price) is 35% at the first unlock and 46% at one year; the median path returns to the $150 opening print by day 180. The scarcity premium has a half-life of roughly one lockup cycle.
 - **The swarm converges and adds a trigger.** The engine's general validity is established in companion [study 30](../30-can-a-swarm-forecast/) (12/16 honest score); a study-29-specific GameStop pilot then showed it finds market-plumbing mechanisms (the buy-side clearing-collateral halt, unprompted). On that footing, a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable, counter-intuitive early-warning signal — the danger is not a high borrow fee (that means shorts are constrained) but borrow *loosening* while the price fails to make new highs on good news.
+- **"The next FAANG" is arithmetically foreclosed.** FAANG's returns came from IPO'ing tiny — Netflix $310M, Amazon $438M, Nvidia $626M, median ~$1.2B; even Facebook's "huge" 2012 IPO was $104B. SpaceX enters at **$1,770B** (~17x Facebook, ~5,700x Netflix). From a $2T base, matching even the *weakest* FAANG return (Facebook's 14x) would require SpaceX to reach **$25T — ~5x the largest company in history**; a typical FAANG multiple would exceed all world equity. The realistic ceiling is a low-single-digit multiple: a great outcome (3x) just makes it today's Nvidia. "Next FAANG" is true of the company, false of the entry return — capped upside over years against the near-term unlock downside.
 
 ## How this study works (and what the simulator can and cannot prove)
 
@@ -142,6 +143,47 @@ This is the only genuinely blind test in the study — the six months from 13 Ju
 
 *Honesty markers.* This is one model's emergent narrative; "the simulation suggests," not "shows." Agreement with the cone may partly reflect shared priors. ~3 of the 38 emergent items are corporate-IR roleplay noise (Tesla/Rocket Lab "company perspective" posts), excluded from the read. The predictions are dated and will be scored at each unlock — that scoring, not this rehearsal, is the real test.
 
+## Finding 5 — "the next FAANG" is a category error: from $2T, the upside is arithmetically capped
+
+*What I expected.* The bull case I kept hearing is "SpaceX is the next FAANG." Findings 1-4 are about the *next six months*; this is about the *next decade*, and it turns out to be the simplest finding in the study — almost pure arithmetic. The phrase quietly compares SpaceX's price *today* to FAANG's price *at IPO*. But FAANG's legendary returns came from one thing those companies will never do again: IPO small. SpaceX is doing the opposite.
+
+*How I measured it.* Pull each FAANG-era winner's market cap *at its IPO* against its price-return multiple since, then ask the only question that matters from a $2T base: to earn the same multiple, what would SpaceX have to *become* — and is there room in the world for it?
+
+```python
+spcx_terminal = 1770 * faang_multiple            # $B SpaceX would need to reach
+vs_largest_ever = spcx_terminal / 5500           # NVDA, the biggest company ever
+vs_world_equity = spcx_terminal / 126700         # SIFMA global equity, 2024
+```
+
+*What the data shows.*
+
+![The size ceiling](fig6_size_ceiling.png)
+
+The winners IPO'd tiny. Netflix entered at a **$310M** market cap, Amazon at **$438M**, Nvidia at **$626M**, Microsoft at **$780M**, Apple and Tesla under **$2B**. The median FAANG-era IPO cap was about **$1.2B**. Even Facebook — the deal everyone called grotesquely large in 2012 — came public at **$104B**. SpaceX is entering at **$1,770B**: about **17x** Facebook's "huge" IPO and roughly **5,700x** Netflix's. SpaceX is IPO'ing at a level its idols only reached after 20-40 years of compounding.
+
+That is why the multiple is capped. The return a stock can earn is bounded by (the largest it can plausibly become) / (where it starts), and SpaceX starts where the others finished:
+
+| To match... | its multiple | SpaceX would need to reach | = how many "largest companies ever" ($5.5T) | vs all world equity ($127T) |
+|---|---|---|---|---|
+| Microsoft | 6,611x | $11,700T | 2,100x | 92x |
+| Amazon | 5,400x | $9,558T | 1,738x | 75x |
+| Nvidia | 4,900x | $8,673T | 1,577x | 68x |
+| Apple | 2,964x | $5,246T | 954x | 41x |
+| Tesla | 1,000x | $1,770T | 322x | 14x |
+| Netflix | 671x | $1,188T | 216x | 9x |
+| Google | 90x | $159T | 29x | 1.3x |
+| **Facebook (the weakest)** | **14x** | **$24.8T** | **4.5x** | **0.20x** |
+
+Read the bottom row, because it is the whole finding. Matching the *weakest* FAANG return — Facebook's mere 14x, which is weak precisely *because* Facebook IPO'd big — would require SpaceX to become **$25 trillion, about five times the largest company that has ever existed** and a third of all US equity. Matching a *typical* FAANG (Tesla's 1,000x, Amazon's 5,400x) would require a company worth many times *all the equity on Earth*. These are not forecasts that look unlikely; they are numbers that cannot fit inside the world.
+
+*Why (mechanism).* This is the law of large numbers on a market cap — the same reason Buffett has said size is the anchor of performance. A 100-bagger has to traverse the whole distance from microcap to megacap; a company that begins as a megacap has already spent that distance. SpaceX may well be a magnificent business — Findings here do not dispute the company — but "great company" and "great *entry return*" are different claims, and the "next FAANG" label smuggles the second in on the strength of the first. It is the same entry-quality-vs-company-quality split that ran through [study 28](../28-spacex-vs-trump-coin/), now stated at the level of a decade.
+
+*The realistic ceiling.* Turn it around. A genuinely *great* long-run outcome — SpaceX **triples** to ~$5.3T — would merely make it the largest company in the world, roughly today's Nvidia. A **10x**, the floor of what "next FAANG" implies to most people, means **$17.7T**: about **3.2x the largest company ever** and a quarter of all US equity. So the honest top end is a low-single-digit multiple over many years, not a FAANG multiple — and that is the *best* case, before Findings 1-4's near-term unlock-supply downside is even applied.
+
+*What I checked.* IPO market caps are precisely sourced (WSJ for Nvidia's $626.1M; NYT for Facebook's $104B; Statista/CBS for Amazon's $438M); the multiples are the published price returns (macrotrends "$1,000 would now be worth…" series, and Musk's own cited 1,000x for Tesla). The benchmarks are sourced: Nvidia first crossed $5.5T in 2026; SIFMA puts 2024 global equity at $126.7T. Using *peak* instead of recent caps would only enlarge the required multiples, not shrink them — the direction is against the bull case, so the conclusion is conservative.
+
+*Verdict.* **Confirmed, and close to definitional.** "The next FAANG" is true only as a statement about the company and false as a statement about the return. From a ~$2T entry the upside is structurally a low-single-digit multiple at best; FAANG-scale multiples are arithmetically foreclosed. Paired with the near-term findings, the payoff is asymmetric: capped upside over years, unlock-supply downside over months.
+
 ## Did I just find noise?
 
 1. **Peer baskets are hand-assigned.** Mitigated by using only peers a contemporary would have named, and by the result *not* being universal — a cherry-picked design would have produced a cleaner story than "three of nine."
@@ -149,6 +191,7 @@ This is the only genuinely blind test in the study — the six months from 13 Ju
 3. **The ledger's constants are approximations** (1999 market cap, 2021 MMF). Each is rounded against the conclusion and none is load-bearing within a factor of two.
 4. **The cone inherits its families' eras** — mostly 2012-2023 listings; a 2000-style regime would sit outside it. The 2007-analog warning from Finding 3 bounds this honestly.
 5. **The swarm is a narrative engine.** Its pilots are contamination-prone (the model has read the history) and its live output is one model's emergent story. It is the third-ranked evidence layer by construction, and nothing in the verdict rests on it alone.
+6. **The FAANG multiples are price returns, not market-cap returns.** Finding 5 uses each name's per-share return; companies issue shares over time, so the market-*cap* multiple is generally *smaller* than the price multiple. That makes the required SpaceX terminal caps, if anything, understated — the direction is against the bull case, so the ceiling is conservative. The argument is order-of-magnitude (5x vs 50x the largest company ever), not knife-edge, so the imprecision changes nothing.
 
 ## The answer, in the data
 
@@ -162,10 +205,11 @@ This is the only genuinely blind test in the study — the six months from 13 Ju
 | Is 2026 a repeat of 2021's window? | **No** — ordinary hot-bull fingerprint; nearest neighbor 2007-10 is the tail risk | analog median fwd 12m +13.2% |
 | Does the SPCX premium survive the unlocks? | **Even odds at best** | P(<$135): 35% day 70 → 46% day 252; median path = $150 at day 180 |
 | What does the swarm add? | **A convergent mechanism + a falsifiable signal** | Blind run independently put the break in the back half (days 90-180), same as the cone; added the early-warning trigger: new-high failure after index inclusion + borrow loosening, before day 70 |
+| Can SpaceX be "the next FAANG"? | **No on the return** (yes only on company quality) | FAANG IPO'd at ~$0.3-1.8B (median $1.2B); SPCX enters at $1,770B. Matching the weakest FAANG (Meta 14x) needs $25T = ~5x the largest company ever; realistic ceiling ~3x (today's Nvidia) |
 
 ## Reproducibility
 
-- [run_ch1_peers.py](run_ch1_peers.py), [run_ch2_ledger.py](run_ch2_ledger.py), [run_ch3_regime.py](run_ch3_regime.py), [run_ch4_fanchart.py](run_ch4_fanchart.py) — every figure and number above; results in the matching `ch*_results.json`.
+- [run_ch1_peers.py](run_ch1_peers.py), [run_ch2_ledger.py](run_ch2_ledger.py), [run_ch3_regime.py](run_ch3_regime.py), [run_ch4_fanchart.py](run_ch4_fanchart.py), [run_ch4c_convergence.py](run_ch4c_convergence.py), [run_ch5_size_ceiling.py](run_ch5_size_ceiling.py) — every figure and number above; results in the matching `ch*_results.json`. IPO-cap inputs in [data/faang_ipo_caps.csv](data/faang_ipo_caps.csv).
 - [sim_seeds/](sim_seeds/) — the exact seed reports given to the swarm, written with as-of-date discipline (nothing the participants could not have known).
 - [CASTING_TABLE.md](CASTING_TABLE.md) — the 2001→2026 mechanism-transfer map.
 

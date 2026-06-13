@@ -1,0 +1,71 @@
+{
+  "spcx_entry_usd_b": 1770.0,
+  "spcx_entry_vs_faang_ipo": {
+    "vs_smallest_ipo_NFLX_x": 5710.0,
+    "vs_largest_ipo_META_x": 17.0,
+    "median_faang_ipo_cap_usd_b": 1.24
+  },
+  "benchmarks_usd_b": {
+    "largest_company_ever": 5500.0,
+    "us_equity": 75000.0,
+    "world_equity": 126700.0,
+    "world_gdp": 110000.0
+  },
+  "to_match_each_faang": {
+    "MSFT": {
+      "multiple": 6611,
+      "spcx_terminal_usd_t": 11701.5,
+      "x_largest_ever": 2127.5,
+      "x_world_equity": 92.36
+    },
+    "AMZN": {
+      "multiple": 5400,
+      "spcx_terminal_usd_t": 9558.0,
+      "x_largest_ever": 1737.8,
+      "x_world_equity": 75.44
+    },
+    "NVDA": {
+      "multiple": 4900,
+      "spcx_terminal_usd_t": 8673.0,
+      "x_largest_ever": 1576.9,
+      "x_world_equity": 68.45
+    },
+    "AAPL": {
+      "multiple": 2964,
+      "spcx_terminal_usd_t": 5246.3,
+      "x_largest_ever": 953.9,
+      "x_world_equity": 41.41
+    },
+    "NFLX": {
+      "multiple": 671,
+      "spcx_terminal_usd_t": 1187.7,
+      "x_largest_ever": 215.9,
+      "x_world_equity": 9.37
+    },
+    "TSLA": {
+      "multiple": 1000,
+      "spcx_terminal_usd_t": 1770.0,
+      "x_largest_ever": 321.8,
+      "x_world_equity": 13.97
+    },
+    "GOOG": {
+      "multiple": 90,
+      "spcx_terminal_usd_t": 159.3,
+      "x_largest_ever": 29.0,
+      "x_world_equity": 1.26
+    },
+    "META": {
+      "multiple": 14,
+      "spcx_terminal_usd_t": 24.8,
+      "x_largest_ever": 4.5,
+      "x_world_equity": 0.2
+    }
+  },
+  "realistic_ladder": {
+    "3x_great_outcome_usd_b": 5310.0,
+    "3x_vs_largest_ever": 0.97,
+    "10x_usd_b": 17700.0,
+    "10x_vs_largest_ever": 3.22,
+    "10x_vs_us_equity_pct": 23.6
+  }
+}

@@ -1,0 +1,10 @@
+ticker,company,ipo_date,ipo_mktcap_usd_b,approx_now_mktcap_usd_b,price_return_multiple,multiple_source
+MSFT,Microsoft,1986-03-13,0.78,3100,6611,"macrotrends $1k->$6.61M to 2026"
+AMZN,Amazon,1997-05-15,0.438,2400,5400,"$438M IPO cap -> ~$2.4T (Statista/CBS)"
+NVDA,Nvidia,1999-01-22,0.626,5000,4900,"WSJ $626.1M IPO; Yahoo $1k->$4.9M"
+AAPL,Apple,1980-12-12,1.8,3500,2964,"macrotrends $1k->$2.96M to 2026"
+NFLX,Netflix,2002-05-23,0.31,450,671,"macrotrends $1k->$670.7k to 2026"
+TSLA,Tesla,2010-06-29,1.7,1600,1000,"Musk/Barron's $1.7B->$1.6T ~1000x"
+GOOG,Google,2004-08-19,23.0,2100,90,"$23B IPO (Statista) -> ~$2.1T"
+META,Facebook,2012-05-18,104.0,1500,14,"$104B IPO (NYT) -> ~$1.5T"
+SPCX,SpaceX,2026-06-12,1770.0,2000,1,"$1.77T IPO ($135), ~$2T day-1 (Reuters)"

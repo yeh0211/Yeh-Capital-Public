@@ -4,7 +4,7 @@
 
 **Why it matters.** If a swarm can independently reason from facts to a correct exposure ranking, it is a cheap second opinion worth having before you take a position. If it mostly restates whatever you fed it, it is a confidence machine — the most dangerous kind of research tool, because the output *looks* like corroboration. The difference between those two is not visible in the report itself. You have to test for it on purpose.
 
-> Research, not investment advice. This is a tool evaluation, not a market call. The simulation outputs below are exactly that — simulations — and where they happen to agree with my earlier work, I treat that as a hypothesis to investigate, never as evidence that either is right. The engine ran on a general-purpose large language model through a third-party proxy; that detail matters for one of the conclusions and I flag it where it does. The forecasts are patterns a machine produced, not predictions I endorse.
+> Research, not investment advice. This is a tool evaluation, not a market call. The simulation outputs below are exactly that — simulations — and where they happen to agree with my earlier work, I treat that as a hypothesis to investigate, never as evidence that either is right. The engine ran on gpt-5.5; that the engine and my earlier study share a model family matters for one of the conclusions, and I flag it where it does. The forecasts are patterns a machine produced, not predictions I endorse.
 
 ## What I found, up front
 
@@ -19,7 +19,7 @@
 
 ## What I actually tested, and how I avoided fooling myself
 
-The tool takes seed documents, builds a knowledge graph from them, gives each entity in the graph an AI "persona" with memory, runs them as a little social network for a set number of rounds, and then a final agent writes a report on what the simulated world did. I drove the whole thing from its API so every run was identical except for what I changed on purpose.
+The tool — MiroFish, an open-source engine built on the OASIS multi-agent social-simulation framework — takes seed documents, builds a knowledge graph from them, gives each entity in the graph an AI "persona" with memory, runs them as a little social network for a set number of rounds, and then a final agent writes a report on what the simulated world did. I drove the whole thing from its API so every run was identical except for what I changed on purpose.
 
 The trap with any tool like this is obvious once you say it out loud: if your seed document already says "the loser will be the heavily indebted middle of the chain," then a report that concludes exactly that has told you nothing. It read your mind because you wrote it down. So the experiment has to be built so that the answer is *not* in the input, and the grading has to check, claim by claim, that the output went beyond the input.
 
@@ -125,8 +125,8 @@ The method, not the plumbing:
    Weight the DIVERGENCES and the seed-absent mechanisms.
 ```
 
-The engine itself: a published open-source swarm-simulation project built on a multi-agent social-simulation framework, run on a general-purpose large language model via an OpenAI-compatible endpoint, driven entirely through its REST API (build graph → spawn agents → run rounds → report). The two seeds, the two pre-registered rubrics, and the grading-panel outputs live with the working notes behind this study.
+The engine itself: MiroFish (a public GitHub project, `666ghj/MiroFish`), built on the OASIS multi-agent social-simulation framework from CAMEL-AI, run on gpt-5.5 via an OpenAI-compatible endpoint, driven entirely through its REST API (build graph → spawn agents → run rounds → report). The two seeds, the two pre-registered rubrics, and the grading-panel outputs live with the working notes behind this study.
 
 ## References & forward pointer
 
-Builds directly on [study 27 — the AI capital cycle](../27-ai-capital-cycle/), which supplied both the live question and the ranked ladder this tool was tested against. The telecom control draws on the public record of the 2000–2003 collapse (WorldCom's bankruptcy, the Lucent/Nortel/Cisco split, the JDS Uniphase write-down). The engine is a public GitHub project; the underlying simulation framework is an open multi-agent social-simulation library. Next: if the tool earns continued use, the test to run is whether its *divergences* (here, the relay-economy ranking) hold up against independent data — the only way to tell a useful contrarian from a confident one.
+Builds directly on [study 27 — the AI capital cycle](../27-ai-capital-cycle/), which supplied both the live question and the ranked ladder this tool was tested against. The telecom control draws on the public record of the 2000–2003 collapse (WorldCom's bankruptcy, the Lucent/Nortel/Cisco split, the JDS Uniphase write-down). The engine is MiroFish (`github.com/666ghj/MiroFish`); the underlying simulation framework is OASIS, from CAMEL-AI; both runs used gpt-5.5. Next: if the tool earns continued use, the test to run is whether its *divergences* (here, the relay-economy ranking) hold up against independent data — the only way to tell a useful contrarian from a confident one.

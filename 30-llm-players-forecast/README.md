@@ -120,6 +120,31 @@ Tie it to the calendar: the quarter after **Computex 2027** is the catalyst wind
 
 *Research, not investment advice. The pair above is a way to express a forecast, not a recommendation to put it on; positions, sizing, and timing are the reader's own call, and the most fragile-looking names have already moved.*
 
+## Is the forecast already priced? A market-implied check
+
+A forecast that only tells you what the market already believes is not an edge — it is a paraphrase of the price. So before I let the own-core / underweight-periphery pair stand, I asked the harder question of it: is this view *already in the tape*? I pulled the market-implied snapshot for the names in the circle — short interest as a percent of float, forward and trailing P/E, distance from the all-time high — and looked for where the forecast disagrees with the price, because that is the only place a forecast pays.
+
+The first thing the snapshot does is invert the lazy version of this trade. **The visible bearish positioning sits on the core, not on the periphery I want to underweight.** Short interest as a percent of float is structurally higher on the fortress-core names (mean 3.68% — NVDA 6.18%, AMD 5.08%, MU 4.21%, MRVL 2.63%, AVGO 0.29%) than on the short-leg periphery (mean 0.87% — DELL 1.22%, ORCL 0.70%, VRT 0.01%, plus CRWV 1.56%). The names the forecast wants to be short carry far less borrowed-stock bearishness than the names it wants to own. On positioning alone, the underweight is *contrarian*, not consensus. Two honest caveats keep me from over-claiming. CRWV's low 1.56% sits on a 2025 IPO with small float and lockups, so it plausibly understates bearish demand expressed through avoidance and options — and the stock is already −48% from its high on that low number. And high core short interest is not proof the Street is betting against NVDA: a mega-cap's 6.18% is equally consistent with index, basket, and convertible-arb hedging flow the snapshot can't decompose. The clean reading survives only for the liquid, easy-to-borrow names — ORCL (0.70%) and DELL (1.22%) have no float or lockup excuse, so their low short interest is genuine evidence of little bearish positioning.
+
+The valuation channel tells a different story, and it is a correction to my own study. **The multiple-compression risk does not sit where I warned loudest.** NVDA at ~20x forward is the *cheapest* multiple in the complex despite being the central name — the study over-warned on it. The rich multiples that actually have to be defended are MRVL ~59x, AMD ~52x, ANET ~41x, and VRT ~41x. And MU ~10x and SMCI ~10x forward are not "cheap to own" so much as the market already pricing a cyclical/credibility discount — though I have to flag that MU's 10.2x forward sits against a 46.3x trailing, so the cheapness is an earnings-trough artifact, not a stretched price being marked down.
+
+| Ticker | Short int % float | Fwd P/E | From ATH | What it tells us |
+|---|---:|---:|---:|---|
+| NVDA | 6.18% | 20.0x | −11% | Most-shorted, cheapest multiple — not the stretched name |
+| AVGO | 0.29% | 24.7x | −23% | Core, barely shorted, reasonable multiple |
+| ANET | 0.23% | 40.9x | −15% | Rich multiple to defend, almost no short |
+| MRVL | 2.63% | 58.8x | −9% | Highest forward multiple — compression risk lives here |
+| MU | 4.21% | 10.2x | 0% | Trough multiple at the high; cyclical discount priced |
+| SMCI | n/a | 9.7x | −60% | Already broken; cheap on a credibility discount |
+| CRWV | 1.56% | n/a | −48% | Already down hard on low short interest — mostly in the price |
+| ORCL | 0.70% | 22.7x | −30% | Low short, modest fall — not yet a refi casualty |
+| DELL | 1.22% | 20.0x | −21% | Liquid, easy-borrow, genuinely uncrowded short |
+| VRT | 0.01% | 40.6x | −12% | Rich multiple, essentially no short interest |
+
+![Is the forecast already priced: the market shorts the core not the periphery (left), and NVDA is not the stretched multiple (right)](figures/fig6-priced-in.png)
+
+So the verdict on consensus is **partly priced, on one of the two channels.** It is in the *price* for the already-broken names — CRWV is −48% from its high, SMCI −60%, ORCL −30% — and in the cheap forward multiples the market has already stamped on MU and SMCI. The relative-value gradient the forecast leans on is, to that extent, in the tape. But it is *not* in the positioning: the short leg is uncrowded in borrowed stock, decisively so for the liquid names. The cleanest un-priced edge is **ORCL** — only −30%, 0.70% short, 22.7x forward — a name the market has not yet treated as a refinancing casualty. The honest counterweight is that the already-broken names (CRWV, SMCI) are mostly in the price, so they are a structural underweight dated to the refi window, not a fresh short. One coverage gap to declare: clean consensus forward-growth estimates were not available in this pull, so this rests on short interest, forward multiples, and the price tape — not on a growth-expectations check. None of it overturns the pair; it sharpens it — own the cash-rich core the market is shorting, underweight the still-uncrowded periphery, and put the un-priced weight on Oracle.
+
 ## The answer, in the forecast
 
 **What happens to the LLM players when the circle breaks?** On this simulation's base case: the leverage in the periphery breaks first, in 2028 H1, triggered by a collateral-value squeeze on a refinancing calendar rather than a collapse in demand; the cash-rich core survives with compressed multiples; no single lab is forecast to fail; and the all-you-can-eat subscription is re-priced out of existence rather than abandoned. Hold it as a scenario to monitor, not a certainty.
@@ -136,7 +161,8 @@ Tie it to the calendar: the quarter after **Computex 2027** is the catalyst wind
 | Calendar peg | Computex (annual accelerator launch); watch the quarter after Computex 2027, not the keynote |
 | Confirmed in the tape | Most-levered names already most drawn-down (CRWV 93% lev/−40%, ORCL 88%/−30%, DELL 102%); fortress core (NVDA/AVGO/ANET) near highs |
 | Research positioning | Pair, not a chase: own the cash-rich core / underweight the levered periphery into the 2027 H1 refi window (ORCL the cleaner leg) |
-| Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat; Computex limb illustrative (N=3) |
+| Already priced? | Partly — consensus on valuation (NVDA ~20x cheapest; MU/SMCI ~10x already discounted), contrarian on positioning (short interest highest on the core, lowest on the short-leg periphery); un-priced edge = ORCL |
+| Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat; Computex limb illustrative (N=3); priced-in check on a single SI/multiples snapshot |
 
 ## Caveats, each with its direction
 
@@ -148,7 +174,7 @@ Tie it to the calendar: the quarter after **Computex 2027** is the catalyst wind
 
 ## How it was produced
 
-The engine is **MiroFish** (`github.com/666ghj/MiroFish`), an open-source swarm-simulation tool built on the **OASIS** multi-agent framework from CAMEL-AI, run on **gpt-5.5**. I drove it through its API: it builds a knowledge graph from the seed facts, gives each entity an agent persona with memory, runs them as a simulated social network for fifteen rounds, and reports what the world did. The forecast seed contained only facts (the financing edges, disclosed concentrations, measured subscription economics, the supply graph, historical analogs) with my study-27 conclusions removed; the prediction request posed the trigger as an open menu so the engine had to choose. Grading used a panel of independent agents (blind scorers, a contamination auditor that diffs every claim against the seed, a novel-mechanism verifier, an extractor). The Computex cross-check pairs our grounded Computex announcement dataset (the accelerator cadence) with an event study on adjusted closes around the three Nvidia keynote dates (excess return versus the S&P), all from an internal market-data warehouse. The seeds, the rubrics, and the grading outputs live with the working notes behind this study.
+The engine is **MiroFish** (`github.com/666ghj/MiroFish`), an open-source swarm-simulation tool built on the **OASIS** multi-agent framework from CAMEL-AI, run on **gpt-5.5**. I drove it through its API: it builds a knowledge graph from the seed facts, gives each entity an agent persona with memory, runs them as a simulated social network for fifteen rounds, and reports what the world did. The forecast seed contained only facts (the financing edges, disclosed concentrations, measured subscription economics, the supply graph, historical analogs) with my study-27 conclusions removed; the prediction request posed the trigger as an open menu so the engine had to choose. Grading used a panel of independent agents (blind scorers, a contamination auditor that diffs every claim against the seed, a novel-mechanism verifier, an extractor). The Computex cross-check pairs our grounded Computex announcement dataset (the accelerator cadence) with an event study on adjusted closes around the three Nvidia keynote dates (excess return versus the S&P). The named financials and the market-implied check (leverage, free cash flow, gross margin, short interest as a percent of float, and forward P/E) come from terminal-grade data in an internal market-data warehouse; the financing-refusal trigger and the exposure ordering are the engine's, and the financial cross-checks are mine. The seeds, the rubrics, and the grading outputs live with the working notes behind this study.
 
 ## References & forward pointer
 

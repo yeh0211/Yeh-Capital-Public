@@ -21,13 +21,13 @@ Lineage: builds on [study 15](../15-ipo-chase/) (the IPO-chase base rate) and [s
 | Quality (I) | Is the *entry* good? | **Trade-only / wait-for-unlock.** Elite company, low-quality entry: 4.25% float, 9.4x supply by day 180, 82% Musk voting control, 94x sales. |
 | Mania (II) | Is it a TRUMP/GME-style top? | **No on the market mechanism, yes on the share's low-float architecture.** SpaceX can't drain the market (flow shock 100x too small) but carries the same scarcity-then-unlock decay shape; the mega-IPO chase loses (-27.7% median 1y excess, like study 15). |
 | Liquidity (III) | Is there room for it? | **Yes in aggregate, no in the concentrated overhang.** Smallest relative cash call of the three manias, but the lock-up supply lands on SPCX's own book; peers bleed via substitution; swarm + cone agree the break is in the back half of the unlock calendar. |
-| Decade (III) | Can it be the "next FAANG"? | **No on the return.** FAANG IPO'd at a ~$1.2B median; SPCX enters at $1,770B. From $2T even the weakest FAANG multiple (Meta 14x) needs $25T = ~5x the largest company ever. Realistic ceiling ~3x. |
+| Decade (III) | Can it be the "next FAANG"? | **No on the return.** FAANG IPO'd at a ~$1.2B median; SPCX enters at $1,770B. From $2T even the weakest FAANG multiple (Meta 14x) needs $25T = ~4.5x the largest company ever. Realistic ceiling ~3x. |
 
 **Bottom line.** SpaceX is a magnificent company and a poor *entry*: capped upside over the decade (the size ceiling), unlock-supply downside over the next six months (the calendar), extreme governance discount throughout. The reasons to wait — float, unlocks, valuation, control — all resolve on a known calendar; the dossier's job is to price that calendar.
 
 > **Day-two follow-up (16 June 2026):** [The two clocks, and should you hedge the overextended sectors?](followup_2026-06-16_day2_and_hedge.md) — SPCX at ~$172 (+27% from IPO) while the space peers get drained and semis go vertical (SOXX +12% above its 21-EMA). The TRUMP clock does not transfer; hedging semis by averaging down into new highs *increases* risk; the disciplined move is defined-risk insurance against the one named tail (Oct-2007) plus a trigger list that flips wait→hedge when the parabola breaks.
 
-> **Post-publication fact-check (independent verification).** Every headline figure here was re-checked against primary sources by a separate multi-source verification pass; the dossier rated **high reliability**. Two numbers were corrected after first publication: (1) Elon Musk's post-IPO combined voting power is **82.4%** per the final 424B4 pricing prospectus (82.3% if the over-allotment is exercised), not the ~84% interim-filing figure used at first draft; (2) GameStop's January 2021 short interest reached **122.97%** of float per the SEC's December 2021 staff report — the widely-quoted ~140% was the contemporaneous data-provider figure. Confirmed unchanged: the SpaceX IPO terms ($135 / ~$75B / ~$1.77T / $150 open / ~$161 close), Solana's $294.85 ATH on Jan 19 2025, Bitcoin's ~$109k ATH on Jan 20 2025, the GME ~$483 Jan 28 2021 intraday and the NSCC-collateral-driven broker halt, the FAANG IPO market caps, and all scale constants ($7.87T money-market assets, ~$1.1T daily notional, Nvidia ~$5.5T).
+> **Post-publication fact-check (independent verification).** Every headline figure here was re-checked against primary sources by a separate multi-source verification pass; the dossier rated **high reliability**. Two numbers were corrected after first publication: (1) Elon Musk's post-IPO combined voting power is **82.4%** per the final 424B4 pricing prospectus (82.3% if the over-allotment is exercised), not the ~84% interim-filing figure used at first draft; (2) GameStop's January 2021 short interest reached **122.97%** of float per the SEC's December 2021 staff report — the widely-quoted ~140% was the contemporaneous data-provider figure. Confirmed unchanged: the SpaceX IPO terms ($135 / ~$75B / ~$1.77T / $150 open / ~$161 close), Solana's $295.83 ATH on Jan 19 2025 (Coinbase composite: $294.85), Bitcoin's ~$109k ATH on Jan 20 2025, the GME ~$483 Jan 28 2021 intraday and the NSCC-collateral-driven broker halt, the FAANG IPO market caps, and all scale constants ($7.87T money-market assets, ~$1.1T daily notional, Nvidia ~$5.5T). A follow-up line-by-line internal audit (every number recomputed from the data files, adversarially verified) then corrected one arithmetic slip — the ten mega-IPOs' median day-one pop is **~+34%**, not the ~+27% first stated (SpaceX's +19.2% sits below it either way) — and tightened five figure-consistency items: the FAANG ceiling is **4.5x** the largest-ever company (matching the study's own table, not the rounded "~5x"), the SpaceX IPO cap reads **$1,765.2bn** throughout, the filtered-comp median is **-14.7%** with Alibaba / **-16.4%** without, the Q3 unlock is ~28.5% of the 180-day pool, and the bootstrap cone runs from the **$160.95** day-one close. No conclusion changed.
 
 ---
 
@@ -35,7 +35,7 @@ Lineage: builds on [study 15](../15-ipo-chase/) (the IPO-chase base rate) and [s
 
 **Question.** Does the SpaceX IPO setup justify participating once free float, lock-ups, control, underwriters, index inclusion rules and high-quality IPO comps are screened honestly?
 
-**Finding.** **Trade-only / wait-for-unlock bias.** Study 15 gives the base rate: chasing IPOs from the day-1 close has been a losing trade, with a **-28.4%** median one-year excess return versus SPY and only **19%** beating SPY. SpaceX deserves a better filter than the broad IPO bucket, but the filtered large-IPO comp set still warns against complacency: its median six-month return from first close is about **-14.7%**. SpaceX is exceptional on management, underwriting, scale and scarcity. The problem is entry quality, not company quality: the immediate public float is only **555.6 million Class A shares**, or **4.25%** of basic post-offering shares; by day 180, potential tradable supply reaches about **5.24 billion shares**, or **9.4x** the IPO float and roughly **40%** of basic shares. Class B holds **88.5%** of voting power; Elon Musk holds about **49.1%** of basic economic ownership and **82.4%** of combined voting power. Connectivity is the quality anchor. AI/xAI/X is the expensive swing factor. At about **$1.77 trillion** basic market cap and a **$75 billion** raise, this is a scarcity/catalyst trade before it is a clean long-term entry.
+**Finding.** **Trade-only / wait-for-unlock bias.** Study 15 gives the base rate: chasing IPOs from the day-1 close has been a losing trade, with a **-28.4%** median one-year excess return versus SPY and only **19%** beating SPY. SpaceX deserves a better filter than the broad IPO bucket, but the filtered large-IPO comp set still warns against complacency: its median six-month return from first close is about **-14.7%** (the full comp set; **-16.4%** excluding Alibaba, which the screen carries as scale-only). SpaceX is exceptional on management, underwriting, scale and scarcity. The problem is entry quality, not company quality: the immediate public float is only **555.6 million Class A shares**, or **4.25%** of basic post-offering shares; by day 180, potential tradable supply reaches about **5.24 billion shares**, or **9.4x** the IPO float and roughly **40%** of basic shares. Class B holds **88.5%** of voting power; Elon Musk holds about **49.1%** of basic economic ownership and **82.4%** of combined voting power. Connectivity is the quality anchor. AI/xAI/X is the expensive swing factor. At about **$1.77 trillion** basic market cap and a **$75 billion** raise, this is a scarcity/catalyst trade before it is a clean long-term entry.
 
 > Research model only; not personal financial advice. Latest EDGAR check in the model is **2026-06-08**. No final **424B4** was found in SpaceX CIK `0001181412` recent filings as of that check.
 
@@ -60,7 +60,7 @@ The upgrade path is specific:
 | Broad IPO prior | Study 15: day-1-close entries in 760 IPOs had **-28.4%** median one-year excess return vs SPY; only **19%** beat SPY. | Start skeptical. Do not buy just because the IPO is famous. |
 | Horizon prior | Study 15: median excess return worsened from **-1.9%** at 30 days to **-15.4%** at 180 days and **-28.4%** at 365 days. | The longer the hold, the more proof SpaceX needs. |
 | Quality filter | Part I: micro/small IPOs, SPACs, biotech and weak story stocks are removed. | Compare SpaceX to META, V, UBER, ABNB, ARM, SNOW, DASH, RIVN, CRWD and DDOG, not the broad IPO zoo. |
-| Filtered-comp warning | The filtered comp median six-month return from first close is still about **-14.7%**. | Better comps improve relevance, not the base rate. |
+| Filtered-comp warning | The filtered comp median six-month return from first close is still about **-14.7%** (or **-16.4%** excluding scale-only Alibaba). | Better comps improve relevance, not the base rate. |
 | SpaceX exception test | Float is only **4.25%**, Nasdaq-100 fast entry can create early demand, and underwriting quality is top-tier. | Early strength can be scarcity/index flow, not thesis validation. |
 | Kill switch | Unlock waves are multiples of IPO float; governance/control is extreme; AI capex and contract risk are high. | Wait for earnings and unlock absorption before long-term sizing. |
 
@@ -142,7 +142,7 @@ The performance trigger changes **timing**, not the rough day-180 supply endpoin
 | Day 105 | 2026-09-24 | 105th day after prospectus | 328.4m | 59.1% | 180-day pool release. |
 | Day 120 | 2026-10-09 | 120th day after prospectus | 328.4m | 59.1% | 180-day pool release. |
 | Day 135 | 2026-10-24 | 135th day after prospectus | 328.4m | 59.1% | 180-day pool release. |
-| Q3 2026 earnings unlock | TBD - likely Nov 2026 | Q3 2026 earnings window | 1,300.0m | 234.0% | 28% of 180-day pool. |
+| Q3 2026 earnings unlock | TBD - likely Nov 2026 | Q3 2026 earnings window | 1,300.0m | 234.0% | ~28.5% of 180-day pool. |
 | Day 180 | 2026-12-08 | 180th day after prospectus | 328.4m or 797.6m | 59.1% or 143.6% | Lower if performance early release happened; higher if it did not. |
 
 | Milestone date | Milestone | New shares released if trigger hits | Circulating free float if trigger hits | Free float % basic | New shares released if no trigger | Circulating free float if no trigger | Free float % basic |
@@ -252,7 +252,7 @@ The comp set removes the noise: no micro IPOs, no SPACs/de-SPACs, no biotech bin
 
 | Ticker | Proceeds | IPO market cap | Approx IPO public float | Treatment |
 |---|---:|---:|---:|---|
-| SPCX | $75.0bn | $1,765.7bn | 4.2% | Subject |
+| SPCX | $75.0bn | $1,765.2bn | 4.2% | Subject |
 | V | $17.9bn | $42.0bn | 42.6% | Core |
 | META | $16.0bn | $104.0bn | 15.4% | Core |
 | BABA | $21.8bn | $168.0bn | 13.0% | Scale only |
@@ -691,7 +691,7 @@ The study shipped before the first trade; the close arrived the same evening. Tw
 | Synchrony (2014) | 0.0% | +49.4% | +40.4% |
 | Uber (2019) | -7.6% | -23.9% | -25.6% |
 
-The restrained pop (median of the ten: ~+27%) is consistent with the deal's design: a 30% retail tranche fed the demand that normally chases the open, and the price was fixed before the roadshow. Day-1 pop size has no reliable relationship with year-one outcome in this family — the two biggest poppers went roughly flat-to-fine, the flattest opener (Facebook) was the worst year-one hold.
+The restrained pop (median of the ten: ~+34%) is consistent with the deal's design: a 30% retail tranche fed the demand that normally chases the open, and the price was fixed before the roadshow. Day-1 pop size has no reliable relationship with year-one outcome in this family — the two biggest poppers went roughly flat-to-fine, the flattest opener (Facebook) was the worst year-one hold.
 
 **The vacuum found its pond.** The study's scale logic (Finding 4) said SpaceX cannot drain a $72T market but is enormous relative to its *sector*. Day one delivered exactly that split. The broad tape was up — S&P +0.5%, NASDAQ-100 +0.6%, Russell 2000 +0.9% — while every listed space pure-play was hit, hard:
 
@@ -742,7 +742,7 @@ This matters for a position: the space-economy basket just front-ran the listing
 - **The 2026 tape is not late-2021.** A five-feature regime fingerprint puts June 2026 among ordinary hot-bull months (analog median forward 12m +13.2%, 80% positive); 2021 does not appear in the top ten analogs. The one dark note: the single nearest neighbor is October 2007.
 - **The bootstrap cone prices the premium's decay.** Resampling the empirical post-listing families (10 mega-IPO chase paths + the GME/TRUMP low-float decays), P(SPCX below its $135 IPO price) is 35% at the first unlock and 46% at one year; the median path returns to the $150 opening print by day 180. The scarcity premium has a half-life of roughly one lockup cycle.
 - **The swarm converges and adds a trigger.** The engine's general validity is established in companion [study 30](../30-llm-players-forecast/) (12/16 honest score); a study-29-specific GameStop pilot then showed it finds market-plumbing mechanisms (the buy-side clearing-collateral halt, unprompted). On that footing, a blind 6-month SpaceX rehearsal independently reached the same structural call as the bootstrap cone — the lock-up calendar governs, the break is in the back half (days 90-180), peaking at the December cleanup, not a market-wide top. It adds what the cone cannot: a falsifiable, counter-intuitive early-warning signal — the danger is not a high borrow fee (that means shorts are constrained) but borrow *loosening* while the price fails to make new highs on good news.
-- **"The next FAANG" is arithmetically foreclosed.** FAANG's returns came from IPO'ing tiny — Netflix $310M, Amazon $438M, Nvidia $626M, median ~$1.2B; even Facebook's "huge" 2012 IPO was $104B. SpaceX enters at **$1,770B** (~17x Facebook, ~5,700x Netflix). From a $2T base, matching even the *weakest* FAANG return (Facebook's 14x) would require SpaceX to reach **$25T — ~5x the largest company in history**; a typical FAANG multiple would exceed all world equity. The realistic ceiling is a low-single-digit multiple: a great outcome (3x) just makes it today's Nvidia. "Next FAANG" is true of the company, false of the entry return — capped upside over years against the near-term unlock downside.
+- **"The next FAANG" is arithmetically foreclosed.** FAANG's returns came from IPO'ing tiny — Netflix $310M, Amazon $438M, Nvidia $626M, median ~$1.2B; even Facebook's "huge" 2012 IPO was $104B. SpaceX enters at **$1,770B** (~17x Facebook, ~5,700x Netflix). From a $2T base, matching even the *weakest* FAANG return (Facebook's 14x) would require SpaceX to reach **$25T — ~4.5x the largest company in history**; a typical FAANG multiple would exceed all world equity. The realistic ceiling is a low-single-digit multiple: a great outcome (3x) just makes it today's Nvidia. "Next FAANG" is true of the company, false of the entry return — capped upside over years against the near-term unlock downside.
 
 ## How this study works (and what the simulator can and cannot prove)
 
@@ -823,7 +823,7 @@ excess[w] = basket_return(window) - spx_return(window)
 
 ## Finding 4a — the bootstrap cone: the premium's half-life is one lockup cycle
 
-*How I measured it.* 10,000 twelve-month price paths for SPCX from its $160.90 day-1 close, block-bootstrapped (20-day blocks) from the two empirical families it belongs to: the ten mega-IPO chase paths (70% weight) and the two low-float vertical decays, GME and TRUMP (30%).
+*How I measured it.* 10,000 twelve-month price paths for SPCX from its $160.95 day-1 close, block-bootstrapped (20-day blocks) from the two empirical families it belongs to: the ten mega-IPO chase paths (70% weight) and the two low-float vertical decays, GME and TRUMP (30%).
 
 ![SPCX fan chart](fig4_spcx_fanchart.png)
 
@@ -904,7 +904,7 @@ That is why the multiple is capped. The return a stock can earn is bounded by (t
 | Google | 90x | $159T | 29x | 1.3x |
 | **Facebook (the weakest)** | **14x** | **$24.8T** | **4.5x** | **0.20x** |
 
-Read the bottom row, because it is the whole finding. Matching the *weakest* FAANG return — Facebook's mere 14x, which is weak precisely *because* Facebook IPO'd big — would require SpaceX to become **$25 trillion, about five times the largest company that has ever existed** and a third of all US equity. Matching a *typical* FAANG (Tesla's 1,000x, Amazon's 5,400x) would require a company worth many times *all the equity on Earth*. These are not forecasts that look unlikely; they are numbers that cannot fit inside the world.
+Read the bottom row, because it is the whole finding. Matching the *weakest* FAANG return — Facebook's mere 14x, which is weak precisely *because* Facebook IPO'd big — would require SpaceX to become **$25 trillion, about four and a half times the largest company that has ever existed** and a third of all US equity. Matching a *typical* FAANG (Tesla's 1,000x, Amazon's 5,400x) would require a company worth many times *all the equity on Earth*. These are not forecasts that look unlikely; they are numbers that cannot fit inside the world.
 
 *Why (mechanism).* This is the law of large numbers on a market cap — the same reason Buffett has said size is the anchor of performance. A 100-bagger has to traverse the whole distance from microcap to megacap; a company that begins as a megacap has already spent that distance. SpaceX may well be a magnificent business — Findings here do not dispute the company — but "great company" and "great *entry return*" are different claims, and the "next FAANG" label smuggles the second in on the strength of the first. It is the same entry-quality-vs-company-quality split that ran through Part II of this dossier, now stated at the level of a decade.
 
@@ -935,7 +935,7 @@ Read the bottom row, because it is the whole finding. Matching the *weakest* FAA
 | Is 2026 a repeat of 2021's window? | **No** — ordinary hot-bull fingerprint; nearest neighbor 2007-10 is the tail risk | analog median fwd 12m +13.2% |
 | Does the SPCX premium survive the unlocks? | **Even odds at best** | P(<$135): 35% day 70 → 46% day 252; median path = $150 at day 180 |
 | What does the swarm add? | **A convergent mechanism + a falsifiable signal** | Blind run independently put the break in the back half (days 90-180), same as the cone; added the early-warning trigger: new-high failure after index inclusion + borrow loosening, before day 70 |
-| Can SpaceX be "the next FAANG"? | **No on the return** (yes only on company quality) | FAANG IPO'd at ~$0.3-1.8B (median $1.2B); SPCX enters at $1,770B. Matching the weakest FAANG (Meta 14x) needs $25T = ~5x the largest company ever; realistic ceiling ~3x (today's Nvidia) |
+| Can SpaceX be "the next FAANG"? | **No on the return** (yes only on company quality) | FAANG IPO'd at ~$0.3-1.8B (median $1.2B); SPCX enters at $1,770B. Matching the weakest FAANG (Meta 14x) needs $25T = ~4.5x the largest company ever; realistic ceiling ~3x (today's Nvidia) |
 
 ## Reproducibility
 

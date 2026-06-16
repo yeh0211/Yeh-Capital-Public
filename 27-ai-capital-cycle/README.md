@@ -26,6 +26,7 @@
 - **Agents are the utilization pump.** Relays dragged seats to 100% utilization illegally; long-horizon agents do the same work natively, so the risk is distribution shift, not one average-user estimate.
 - **The retreat is already on tape.** Copilot token billing, Claude Code's Pro-plan test, Codex API-token pricing and OpenAI's Plus-to-Go forecast all point to bifurcation before a public nerf.
 - **Filings show concentration rising at every tier:** the first-order stress floors run from -8.5% to -33.5% on a 50% capex cut and up to -67% on a single-payer failure; the 2000 control says the chain amplifies from roughly -60% tier-1 to -79% tier-2, with casualties where concentration, leverage and same-cycle collateral overlap.
+- **The radius is 50+ companies, not seven.** The supply-chain graph puts 31 companies at 5%+ of revenue directly from the circle (13 layers) and 50+ across ~19 of 28 layers once the suppliers' suppliers are counted — with the single-buyer shape repeating at every depth (Credo/Amazon 86% at ring 1; Tokyo Ohka and Lasertec via TSMC at ring 2).
 
 ---
 
@@ -228,6 +229,20 @@ The money map showed the financing edges. I read the circle the other way here �
 
 The trend is the point. Nvidia's disclosed direct concentration rose into FY2026; TSMC's second customer rose from 11% to 17%; Micron's disclosed customer rose from 13% to 17%; Super Micro went from one 10% customer to four. The circle is not diversifying as it scales.
 
+### The full blast radius: rings, not a list
+
+The seven-name matrix is the floor, not the map. Filings disclose large customers at the 10% line, and the existing table is mostly ring 1: companies selling directly into the circle. Anything below that threshold can be economically real and still invisible in the footnote. Anything one step upstream is invisible by design. That means the filing view catches the first set of exposed names, not the full surface.
+
+![The blast radius, ring by ring](figures/blast-radius.png)
+
+The ring frame turns the circle into a supply-chain problem. Ring 0 is the labs, hyperscalers, Oracle, neoclouds, and AMD/NVDA as both buyers and suppliers. Ring 1 contains 31 companies with at least 5% of revenue directly tied to ring 0, across 13 of the graph's 28 layers. Ring 2 adds companies with at least 8% of revenue tied to those ring-1 names: at least 15 listed companies, plus the deep upstream set visible around TSMC, Micron, and SK hynix. On the full count, the surface is 50+ public companies across roughly 19 of 28 layers before private suppliers.
+
+The chart uses buckets because supply-chain revenue attribution is estimated. The honest claim is rank and rough size, not decimal precision. Where the estimates overlap filings, the order lines up: CoreWeave, TSMC, Micron, Fabrinet, and Broadcom agree in rank and rough size. The filing and press anchors are the calibration points. Credo put Amazon at 86% of Q3 FY2025 revenue, with the top-3 customers near 88%. Fabrinet disclosed NVIDIA at 35.1% and Cisco at 13.4% of FY2024 revenue. CoreWeave's Microsoft line is 67% of FY2025 revenue. TSMC's customer #2 is 17%, Micron has one 17% customer, and Broadcom's top-5 end customers are about 40%. An independent cross-check helps here: an entity graph built from 25 Bloomberg Intelligence deep-dives — co-mentions only, no supply-chain data — surfaces the same layers (advanced packaging, accelerators, AI energy) and many of the same upstream names, which is what you want two unrelated lenses to do.
+
+The important part is not the list. It is the repeated shape. Every layer has its own upstream chain, so the same shock arrives by different routes. Tokyo Ohka feels it through TSMC wafer starts. Powertech feels it through Micron packaging volumes. Onto and Lasertec feel it through equipment capex. The buyer changes, the mechanism changes, but the single-buyer pattern keeps recurring. Credo/Amazon in ring 1 becomes Tokyo Ohka/TSMC or Powertech/Micron in ring 2. The JDSU position exists at every depth.
+
+That matters for the stress arithmetic that follows. The tables below understate the surface by construction: they price ring 1 only. The ring map says the exposed surface is wider, and the 2000 case says outer rings fall harder and later, because order books, capex schedules, and inventory delay the hit before amplifying it.
+
 ### The stress arithmetic: minus 50%, and minus one player
 
 These are first-order arithmetic floors — no inventory burn, no pricing reset, no credit reflex. The 50% cut is an assumed stress, not a forecast. One worked example: TSMC disclosed HPC at 55% of Q4-2025 revenue; a 50% cut to that exposed block is 27.5% of total revenue before second-round effects.
@@ -320,6 +335,7 @@ What I watch from here is simple: RPO concentration, the next 10-K concentration
 - **Subscription subsidy measurement:** SemiAnalysis X thread, 10 Jun 2026; The Information / Ed Zitron / WSJ on OpenAI's Plus-to-Go migration and Q1 2026 adjusted operating margin; Copilot, Codex and Claude Code repricing or withholding reports.
 - **GPU rental tape:** SemiAnalysis, *"The Great GPU Shortage — Rental Capacity"* (H100 one-year contract index) plus its AI Neocloud Playbook and ClusterMAX work; AIMultiple cross-provider GPU price index (2026).
 - **Customer concentration and cascade sources** — CRWV, NVDA, TSM, MU, SMCI, AVGO and ORCL filings/releases; WSJ-reported Oracle/OpenAI forward book; CNBC/third-party HBM estimates; American Affairs and Lazonick on Lucent; Light Reading on Nortel and JDSU; the New York Times on JDSU's writedown; CNET/CIO on Cisco; SEC/Wikipedia record on WorldCom.
+- **Blast radius:** supply-chain revenue estimates (Bloomberg SPLC) fused with a curated 28-layer graph, presented as buckets and validated against the filing anchors above; a Bloomberg Intelligence deep-dive entity graph as an independent cross-check; Credo concentration per its filings and Q3-FY2025 press coverage; Fabrinet FY2024 10-K.
 
 ## Academic anchors
 

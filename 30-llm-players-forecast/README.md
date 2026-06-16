@@ -273,6 +273,24 @@ So the verdict on consensus is **partly priced, on one of the two channels.** It
 | Already priced? | Partly — consensus on valuation (NVDA ~20x cheapest; MU/SMCI ~10x already discounted), contrarian on positioning (short interest highest on the core, lowest on the short-leg periphery); un-priced edge = ORCL |
 | Confidence | 12/16 on a hidden-answer backtest; a full-chain re-run reproduced the spine (10/12) but collapsed the mid-layers and missed the Oracle outlier; ~65% echo; shared-model caveat; priced-in check on a single SI/multiples snapshot |
 
+## The possibility space: five futures, weighted
+
+A single base case is a thin thing to bet on. So I went back to the simulated world one more time and asked it the harder question — not "what is the forecast" but "what is the *distribution*": enumerate the distinct possible futures, weight them, and tell me which leading indicator separates them. Querying the world directly turned out to be where the engine earns its keep — the per-layer report had collapsed, but asked for a scenario tree it produced a clean, financially-grounded one. These are the *simulation's* probabilities, not mine; read them as the shape of the uncertainty, not a number to trade on.
+
+![The possibility space: five futures the simulation weights, split roughly evenly between a managed slowdown and a periphery break, decided by whether lenders keep accepting old GPU collateral before cash flows catch up](figures/fig7-possibility-space.png)
+
+| Scenario | Prob. | What breaks | The tell it's unfolding |
+|---|---:|---|---|
+| Orderly digestion (no break) | 20% | nothing systemic; weak neoclouds repriced or delayed | utilization stays high and refinancing success holds above ~80% |
+| Credit rationing / soft landing | **30%** | marginal neoclouds, GPU SPVs | loan-to-value on GPU-backed debt drops sharply (lenders move from asset-growth to cash-flow underwriting) |
+| Neocloud refinancing break | 25% | CoreWeave-class clouds, GPU SPVs; Oracle exposed | a major compute provider fails to refinance, or refinances only with heavy equity dilution / collateral top-up |
+| GPU pricing shock / collateral spiral | 15% | GPU-backed debt, high-leverage lessors | rental prices and residual-value marks fall together for two straight quarters |
+| Demand shortfall | 10% | OpenAI-style labs if the −$38.5B loss persists; Oracle | AI workload growth slows while cloud capex stays elevated, so utilization falls |
+
+The aggregate read is a coin flip. About half the weight (the first two scenarios, 50%) is some version of "the system slows but holds" — the buildout downshifts from a capacity grab to cash-flow discipline without a systemic break. The other half (the last three, 50%) is "the fragile layer breaks," in three different ways. And the single most likely *individual* outcome is neither the clean save nor the crash but the muddle in between: a soft-landing credit rationing at 30%, where the self-funded giants pull away and the leveraged middle gets restructured name by name.
+
+What I find useful is that all five scenarios turn on the *same hinge*, which the simulation named outright: **refinancing availability against real cash-flow coverage.** If lenders keep rolling the GPU and data-center debt because utilization, rental rates and customer payments support debt service, the system slows but does not break. If they stop accepting old GPU collateral values before the cash flows catch up, the fragile layer goes first — CoreWeave-class neoclouds (93% leverage, −$9.1B free cash flow), the GPU SPVs, and Oracle's debt-funded build (84% leverage, −$35.1B). Nvidia's +$116B of free cash flow absorbs the shock in every branch; it is the one balance sheet that does not care which future arrives. That is the whole study compressed to a single watch-item: not demand, not the keynote, but whether the credit stays open one more refinancing cycle.
+
 ## Caveats, each with its direction
 
 - **This is a simulation, and the engine shares a model family with my own prior work.** Its agreements with study 27 may overstate independent confirmation; weight the divergences, not the echoes.

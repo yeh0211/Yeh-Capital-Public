@@ -1,11 +1,12 @@
 # Sources - Bending Spoons ($BSP) IPO due diligence
 
-Latest source audit: 2026-06-09.
+Latest source audit: 2026-06-15.
 
 ## Primary SEC Sources
 
 - SEC EDGAR filing detail for Bending Spoons Form F-1 filed June 8, 2026: https://www.sec.gov/Archives/edgar/data/2004711/000110465926071170/0001104659-26-071170-index.htm
 - Bending Spoons Form F-1 HTML: https://www.sec.gov/Archives/edgar/data/2004711/000110465926071170/tm2613674-7_f1.htm
+  - The interest-expense, debt-note (per-facility hedged rates and the contractual maturity schedule), consolidated cash flow statement (operating/investing/financing and the acquisitions-vs-capex split), leverage-covenant, and liquidity/use-of-proceeds figures used in this note are all read from this same F-1.
 - Bending Spoons Exhibit 21.1, subsidiaries: https://www.sec.gov/Archives/edgar/data/2004711/000110465926071170/tm2613674d8_ex21-1.htm
 - SEC submissions feed for Bending Spoons CIK 0002004711: https://data.sec.gov/submissions/CIK0002004711.json
 - Vimeo Form 8-K completion filing, Nov. 24, 2025: https://www.sec.gov/Archives/edgar/data/1837686/000110465925115501/tm2532050d1_8k.htm
@@ -19,6 +20,8 @@ Latest source audit: 2026-06-09.
 ## Company And Product Sources
 
 - Bending Spoons official site: https://www.bendingspoons.com/
+- AOL: https://www.aol.com/
+- Splice (mobile video editor): https://spliceapp.com/
 - Evernote: https://evernote.com/
 - Vimeo: https://vimeo.com/
 - Brightcove: https://www.brightcove.com/
@@ -38,6 +41,7 @@ Latest source audit: 2026-06-09.
 ## Secondary Reporting
 
 - Axios, Bending Spoons files for IPO: https://www.axios.com/2026/06/08/bending-spoons-ipo-aol
+- Fortune, Bending Spoons (AOL/Evernote/WeTransfer owner) files US IPO - source of the ~$1.5bn raise / ~$20bn valuation estimate vs the prior ~$11.7bn private round: https://fortune.com/2026/06/08/bending-spoons-italian-aol-evernote-wetransfer-files-us-ipo/
 - TechCrunch, Eventbrite and Vimeo owner Bending Spoons files to go public: https://techcrunch.com/2026/06/08/eventbrite-and-vimeo-owner-bending-spoons-files-to-go-public/
 - TechCrunch background on Bending Spoons and acquired apps: https://techcrunch.com/2026/01/25/what-is-bending-spoons-everything-to-know-about-aols-acquirer/
 - TechCrunch, Bending Spoons acquires WeTransfer: https://techcrunch.com/2024/07/31/bending-spoons-acquires-file-transfer-service-wetransfer/
@@ -65,3 +69,13 @@ Latest source audit: 2026-06-09.
 - Trustpilot, Evernote reviews: https://www.trustpilot.com/review/www.evernote.com
 - Google Play, Evernote app listing: https://play.google.com/store/apps/details?id=com.evernote
 - Apple App Store, FiLMiC Pro listing/reviews: https://apps.apple.com/us/app/filmic-pro-video-camera/id436577167
+
+## Figures And Computed Metrics
+
+The five charts (`fig1`-`fig5`) are computed directly from the F-1 figures above; no external data is used. The computations are:
+
+- Cash conversion = operating cash flow / adjusted operating income, by period (fig1).
+- Funding mix = the operating, investing, and financing cash flow lines as filed (fig2).
+- Leverage ladder = $4.48bn net/gross debt divided by, in turn, the company's pro-forma adjusted-EBITDA-plus-cost-savings base (the reported 2.19x), annualized Q1 2026 adjusted operating income, trailing 2025 adjusted operating income, and 2025 GAAP operating income (fig3).
+- Bought vs organic growth = reported revenue growth vs the company-disclosed organic figures (fig4).
+- Interest cover = GAAP operating income / interest expense, by period; interest expense as filed (fig5).

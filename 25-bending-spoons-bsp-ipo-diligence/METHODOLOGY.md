@@ -28,6 +28,27 @@ The following figures were checked against the F-1-derived diligence record and 
 - Acquisition enterprise value / purchase consideration where disclosed.
 - Governance and high-vote share structure.
 - Internal-control material weaknesses and other listed risk factors.
+- Interest expense for all five periods, the per-facility hedged rates, the contractual debt-maturity schedule, the leverage covenant, and the acquisitions-vs-capex split inside investing cash flow.
+
+## Cash-Flow-Quality And Leverage Analysis
+
+The deepened section of this note reads the cash flow statement against the company's preferred "adjusted operating income" metric. The computed ratios are all simple arithmetic on filed figures, recomputed independently:
+
+- **Cash conversion** = operating cash flow / adjusted operating income.
+- **Funding mix** = operating, investing, and financing cash flow as filed; investing is treated as ~100% acquisitions because filed capex is under $1m a year and the company capitalizes essentially no internal software.
+- **Interest cover** = GAAP operating income / interest expense.
+- **Leverage** = period-end debt (gross and net of cash) over four different denominators: the company's pro-forma adjusted-EBITDA-plus-cost-savings base, annualized Q1 2026 adjusted operating income, trailing 2025 adjusted operating income, and 2025 GAAP operating income.
+
+Two honesty rules govern this section:
+
+- **Like-for-like periods only.** Operating cash flow is seasonally weakest in the first quarter, so a Q1 ratio is never compared against a full-year ratio. The headline cash-conversion decline reported here is the full-year figure (68% in 2024 to 47% in 2025); Q1 2026 is compared only against Q1 2025.
+- **Adjusted vs cash metrics are flagged.** Adjusted operating income is measured before interest and tax; operating cash flow is after both. For a company tripling its debt, the two diverge by arithmetic, so the note states this explicitly and uses the OCF-versus-GAAP-operating-income comparison as a cross-check.
+
+The leverage multiples carry a period-matching caveat: a point-in-time post-acquisition balance sheet is placed over pre-acquisition full-year income, which overstates the multiple in absolute terms. Correcting for it does not get anywhere near the reported 2.19x (pro-forma 2025 revenue was only $2.608bn and pro-forma net income $22.4m), so the directional conclusion — leverage on any actually-earned metric is mid-single-digit to low-teens — is robust.
+
+## Conglomerate Classification
+
+Each owned business was classified by end-market and customer type, then assessed for whether it shares product, customers, billing, or go-to-market with the others. The conglomerate-versus-roll-up call follows from that map: a roll-up consolidates one fragmented market; a conglomerate holds unrelated businesses for cash. The classification is judgement applied to the F-1's descriptions, not a financial measurement, and is labeled as inference.
 
 ## Community Signal Method
 

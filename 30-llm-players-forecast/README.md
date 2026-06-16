@@ -65,7 +65,7 @@ On that honest measure the forecast scored **12 of 16**. Good, not magic. Two-th
 
 ## The value chain, end to end: who breaks and who survives
 
-This replaces the old flat watch-list with the full chain as it actually flows — materials and toolmakers at the head, foundry and memory in the middle, fabless silicon and interconnect through neoclouds and hyperscalers, ending at the software seats that have to pay for all of it. We validated the membership and ordering against our internal 28-layer value-chain graph and the Obsidian master value-chain map (223 companies across 24 flow-ordered layers), then collapsed it to the nine reader-facing layers below so each one is a coherent break-or-survive unit rather than a bag of tickers. Every figure traces to the study datapack; the management view on each layer is drawn from the most recent earnings calls in our corpus.
+This replaces the old flat watch-list with the full chain as it actually flows — materials and toolmakers at the head, foundry and memory in the middle, fabless silicon and interconnect through neoclouds and hyperscalers, ending at the software seats that have to pay for all of it. We validated the membership and ordering against our internal 28-layer value-chain graph and the Obsidian master value-chain map (223 companies across 24 flow-ordered layers), then collapsed it to the nine reader-facing layers below so each one is a coherent break-or-survive unit rather than a bag of tickers. Every figure traces to the study datapack; the management view on each layer is drawn from the most recent earnings calls in our corpus. The leverage, free cash flow, gross margin and consensus forward growth are latest-annual terminal figures from an internal market-data warehouse; a handful of micro-cap and foreign-filed names (and the unprofitable neoclouds, which have no meaningful P/E) carry blanks where terminal coverage or the metric itself is not available, marked with a dash.
 
 The load-bearing finding reads the same down the entire chain: the swarm's break order runs periphery-first, core-last. The leveraged, negative-cash-flow edge — neoclouds above all, plus the one credit-channel hyperscaler (ORCL) — snaps first when financing refuses; the cash-rich core (fabless silicon, foundry, the big four hyperscalers, software) absorbs the same shock as a demand air-pocket and outlasts it. The tension that makes this a study rather than a list is that the analyst consensus prices the steepest forward growth onto exactly the layers the swarm says break first. The richest forward-growth numbers in the whole chain — NBIS +553%, MU +197%, CRWV +147% — sit on the weakest balance sheets, so the names with the furthest to fall if financing stalls are also the names carrying the highest expectations. That pattern repeats layer by layer below: wherever the Street's growth assumption is most aggressive, it tends to be sitting on the most cyclically or financially exposed name in the layer.
 
@@ -76,17 +76,17 @@ The toolmakers, EDA software and specialty materials that every chip in the circ
 
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
-| ASML | - | - | 52.8% | 41.8 | 20.6% |
-| LRCX | - | - | 48.7% | 34.3 | 26.1% |
-| AMAT | - | - | 48.7% | 33.7 | 17.6% |
-| KLAC | - | - | 60.9% | 36.9 | 11.7% |
-| ARM | - | - | 97.5% | 147.5 | 21.7% |
-| SNPS | - | - | 77.0% | 28.6 | 37.2% |
-| CDNS | - | - | 86.4% | 42.1 | 17.0% |
-| TEL | - | - | 35.2% | 16.7 | 13.4% |
-| KEYS | - | - | 62.1% | 32.1 | 28.1% |
+| ASML | 61% | +6.3 | 52.8% | 41.8 | 20.6% |
+| LRCX | 54% | +3.8 | 48.7% | 34.3 | 26.1% |
+| AMAT | 44% | +3.8 | 48.7% | 33.7 | 17.6% |
+| KLAC | 71% | +3.2 | 60.9% | 36.9 | 11.7% |
+| ARM | 23% | +0.6 | 97.5% | 147.5 | 21.7% |
+| SNPS | 41% | -14.8 | 77.0% | 28.6 | 37.2% |
+| CDNS | 46% | +1.2 | 86.4% | 42.1 | 17.0% |
+| TEL | 50% | +0.9 | 35.2% | 16.7 | 13.4% |
+| KEYS | 48% | +1.0 | 62.1% | 32.1 | 28.1% |
 | CRDO | 10.1% | - | 68.0% | 35.2 | 81.8% |
-| ENTG | - | - | 44.6% | 34.3 | 7.8% |
+| ENTG | 53% | +0.3 | 44.6% | 34.3 | 7.8% |
 | NVMI | - | - | - | - | - |
 
 This is the survive end of the spectrum: high gross margins (ASML, KLAC, SNPS, CDNS, ARM all 53-97%), tool-and-license business models with little disclosed leverage, and a one-step-removed position that lets them keep selling into whoever is still building. When the circle's financing refuses, the squeeze here is cyclical, not existential — order timing slips and a memory-cost or China-DUV air-pocket bites, but the picks-and-shovels do not break with the leveraged neoclouds. The exceptions to watch are the smaller, single-application names: CRDO (81.8% consensus growth, riding hyperscaler AEC demand) and ENTG (carrying net leverage near 3.8x with thin 7.8% growth). The swarm read: cash-rich core that outlasts a refusal, taking the demand hit a year late rather than going to zero.
@@ -100,12 +100,12 @@ The contract-manufacturing spine of the chain: the layer that actually fabricate
 
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
-| TSM | - | - | - | - | - |
-| INTC | - | - | 34.8% | 83.3 | -1.5% |
-| APH | - | - | 37.2% | 26.8 | 44.7% |
-| TER | - | - | 58.2% | 47.5 | 40.3% |
-| GFS | - | - | 24.4% | 35.0 | 6.7% |
-| TSEM | - | - | 23.2% | 58.2 | 20.7% |
+| TSM | 24% | +26.0 | 59% | - | - |
+| INTC | 46% | -2.9 | 34.8% | 83.3 | -1.5% |
+| APH | 63% | +3.4 | 37.2% | 26.8 | 44.7% |
+| TER | 33% | +0.4 | 58.2% | 47.5 | 40.3% |
+| GFS | 30% | +1.4 | 24.4% | 35.0 | 6.7% |
+| TSEM | 12% | +0.1 | 23.2% | 58.2 | 20.7% |
 
 On the break/survive spectrum this layer sits firmly on the survive side: it is the chokepoint everyone must pay, with sticky long-term wafer agreements and pricing power, so a financing refusal upstream reaches it last and as a volume air-pocket, not a solvency event. The swarm read is "squeezed, not broken" — utilization and ASP wobble through a downturn, but the cash-rich leaders absorb it, while the most exposed names are the loss-making turnaround (INTC, whose foundry still runs an operating loss and leans on outside strategic funding) and the smaller, single-program test/specialty shops. The Street is pricing real forward growth here, but unevenly — heaviest on the AI-test and connector names (TER +40.3%, APH +44.7%) rather than on the core foundries, and INTC carries an 83.3 fwd P/E against a -1.5% consensus sales decline. Management view: TSM management guided capex sharply higher and framed AI accelerator revenue doubling again, INTC management held capex flat while leaning on roughly $20bn of outside strategic funding to keep the foundry build going, and Teradyne and Amkor management both flagged AI/HPC demand now dominating their mix.
 
@@ -115,8 +115,8 @@ The supply of HBM stacks and DRAM/NAND that AI accelerators are bolted to — th
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
 | MU | 34.6% | 0.54 | 39.8% | 10.4 | 197.1% |
-| WDC | - | - | 38.8% | 30.6 | 35.2% |
-| NTAP | - | - | 70.7% | 19.6 | 7.9% |
+| WDC | 60% | +1.5 | 38.8% | 30.6 | 35.2% |
+| NTAP | 87% | +0.9 | 70.7% | 19.6 | 7.9% |
 | SIMO | - | - | - | - | - |
 
 On the break/survive spectrum this layer is cyclical-squeezed rather than fragile: MU carries only modest leverage (34.6%) but thin trailing FCF ($0.54bn), so a financing refusal that froze AI capex would hit it through volume and price, not a balance-sheet wall. The SWARM read puts memory among the early-to-feel-it names — demand is single-end-market concentrated on the same hyperscaler/neocloud buyers the swarm says break first — but cash-generative incumbents like MU survive the cycle even as the multiple compresses. The analyst-consensus read is the key tension: the Street prices the second-highest forward growth in the whole chain onto MU (197.1%), stacking peak expectations on exactly the volume-and-price-cyclical name most exposed to a buyer-financing stall. Management view: Micron management struck the most aggressive posture — record revenue, all 2026 HBM volume and pricing locked under multiyear contracts, and capex raised $2bn to $20bn to fund the HBM and 1-gamma ramps; WDC management cut net debt to a net-cash position and cited firm purchase orders through 2026 with LTAs out to 2028.
@@ -130,7 +130,7 @@ The design houses that architect the GPUs, custom accelerators and DSPs the whol
 | AVGO | 52.5% | 20.1 | 67.9% | 24.7 | 65.7% |
 | AMD | 18.1% | 6.0 | 49.5% | 49.2 | 15.7% |
 | MRVL | 35.8% | 3.4 | 51.0% | 63.9 | 40.2% |
-| QCOM | - | - | 55.4% | 19.1 | -4.1% |
+| QCOM | 58% | +2.2 | 55.4% | 19.1 | -4.1% |
 
 When the circle's financing refuses, this layer is the most insulated in the chain: NVDA, AVGO and AMD pair high gross margins (49-71%) with large positive FCF and modest leverage, so they survive a capex air-pocket on their own balance sheets rather than the customers'. The exposure is indirect demand risk, not solvency risk — fabless names get squeezed if neoclouds and hyperscalers cut orders, but none breaks the way a levered, single-customer periphery name does. The SWARM read: core silicon bends but does not break; MRVL is the soft spot given its custom-silicon concentration in a few hyperscaler programs.
 
@@ -143,11 +143,11 @@ The wires and light between the GPUs — transceivers, optical components, laser
 
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
-| LITE | - | - | 28.0% | 54.9 | 80.5% |
-| COHR | - | - | 35.2% | 44.9 | 21.5% |
-| MKSI | - | - | 46.7% | 25.9 | 22.2% |
+| LITE | 73% | +0.0 | 28.0% | 54.9 | 80.5% |
+| COHR | 45% | +0.0 | 35.2% | 44.9 | 21.5% |
+| MKSI | 69% | +0.4 | 46.7% | 25.9 | 22.2% |
 | AAOI | - | - | - | - | - |
-| VECO | - | - | 40.0% | 27.2 | 15.3% |
+| VECO | 33% | +0.0 | 40.0% | 27.2 | 15.3% |
 
 On the break/survive spectrum this is a squeezed-but-survivable middle layer: not the leverage-and-negative-FCF profile that snaps first, but cyclical and demand-derivative — its order book is a direct echo of the same hyperscaler capex the swarm sees pausing. The MiroFish read is that networking gets cut second, not first: if neoclouds and memory break on financing refusal, optical bookings hollow out one quarter later, with the highest-multiple, thinnest-margin name (LITE, 28% gross, 54.9x) most exposed to the air-pocket.
 
@@ -161,13 +161,13 @@ The energy-and-thermal backbone: turbines, transformers, grid build-out, utiliti
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
 | VRT (Vertiv) | 67.7% | 1.35 | 36.3% | 44.0 | 35.5% |
-| BE (Bloom Energy) | - | - | 29.6% | 89.1 | 83.8% |
-| MPWR (Monolithic Power) | - | - | 55.2% | 60.9 | 31.9% |
-| GEV (GE Vernova) | - | - | 20.1% | 49.5 | 19.5% |
-| CEG (Constellation) | - | - | 42.5% | 20.5 | 28.5% |
-| PWR (Quanta) | - | - | 15.0% | 47.9 | 23.0% |
-| GE (General Electric) | - | - | 35.0% | 39.5 | 6.0% |
-| NEE (NextEra) | - | - | - | 20.9 | 13.7% |
+| BE (Bloom Energy) | 83% | -0.1 | 29.6% | 89.1 | 83.8% |
+| MPWR (Monolithic Power) | 16% | +0.2 | 55.2% | 60.9 | 31.9% |
+| GEV (GE Vernova) | 82% | +4.2 | 20.1% | 49.5 | 19.5% |
+| CEG (Constellation) | 75% | -0.1 | 42.5% | 20.5 | 28.5% |
+| PWR (Quanta) | 64% | +1.2 | 15.0% | 47.9 | 23.0% |
+| GE (General Electric) | 86% | +7.2 | 35.0% | 39.5 | 6.0% |
+| NEE (NextEra) | 74% | -1.7 | - | 20.9 | 13.7% |
 
 When the circle's financing refuses, most of this layer survives: regulated utilities and nuclear (NEE, SO, DUK, CEG) carry through-cycle cash flows, and the equipment names ride record multi-year backlogs rather than spot AI orders. The squeeze points are the cyclical, single-end-market exposures — VRT (highest leverage here, AI-cooling-levered) and BE (negative operating margin, story-priced at 89x) — which the swarm tags as squeezed-not-broken if hyperscaler capex stalls.
 The Street is pricing aggressive growth precisely onto the most exposed names: BE +83.8% and VRT +35.5% consensus forward sales growth sit on the layer's weakest balance sheet and worst margin, respectively.
@@ -178,10 +178,10 @@ The middlemen who buy the silicon, rack it, and rent compute by the hour — the
 
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
-| BABA | - | - | 39.8% | 18.1 | 10.0% |
-| DLR | - | - | 58.0% | 81.6 | 10.4% |
+| BABA | 44% | -14.6 | 39.8% | 18.1 | 10.0% |
+| DLR | 54% | -1.7 | 58.0% | 81.6 | 10.4% |
 | CRWV | 93.2% | -9.05 | 71.7% | - | 146.8% |
-| NBIS | - | - | 68.6% | - | 553.4% |
+| NBIS | 63% | -3.6 | 68.6% | - | 553.4% |
 | APLD | - | - | - | - | - |
 
 This is the layer the swarm flags first. CoreWeave carries 93.2% leverage and -$9.05bn free cash flow, Nebius runs a -115.5% operating margin, and both lean on a thin set of anchor tenants — the textbook break profile if the circle's financing refuses. Cash-rich BABA and the contracted-backlog REIT DLR are the survivors here; the pure-play neoclouds are the fragile edge MiroFish expects to snap before the core.
@@ -195,10 +195,10 @@ The terminal demand node of the whole chain: the buyers whose capex budgets fund
 
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
-| GOOGL | - | - | 59.7% | 25.5 | 20.9% |
-| MSFT | - | - | 68.8% | 20.6 | 16.9% |
-| AMZN | - | - | 50.3% | 26.1 | 15.0% |
-| META | - | - | 82.0% | 17.7 | 25.9% |
+| GOOGL | 30% | +51.8 | 59.7% | 25.5 | 20.9% |
+| MSFT | 45% | +41.2 | 68.8% | 20.6 | 16.9% |
+| AMZN | 50% | -10.9 | 50.3% | 26.1 | 15.0% |
+| META | 41% | +18.1 | 82.0% | 17.7 | 25.9% |
 | ORCL | 83.6% | -35.07 | 65.8% | 22.7 | 32.7% |
 
 On the break/survive spectrum this layer is mostly the survivor side: GOOGL, MSFT, AMZN and META carry fortress gross margins (50-82%) and self-fund builds from operating cash. The clear exception is ORCL, which sits on 83.6% leverage and -$35bn free cash flow to chase data-center demand — debt-funded, not cash-funded, and therefore the one name here exposed if the circle's financing dries up. The SWARM read fits: cash-rich core absorbs a financing freeze and can even slow capex at will, while ORCL is the periphery-style break risk inside the "core" layer.
@@ -212,11 +212,11 @@ The end of the chain: enterprise SaaS and IT-services firms that monetize AI by 
 
 | Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
 |---|---|---|---|---|---|
-| IBM | - | - | 58.2% | 25.0 | 5.8% |
-| CRM | - | - | 77.7% | 13.0 | 11.0% |
-| ACN | - | - | 31.9% | 11.4 | 6.2% |
-| ADBE | - | - | 89.3% | 8.7 | 9.6% |
-| NOW | - | - | 77.5% | 22.7 | 21.9% |
+| IBM | 79% | +8.8 | 58.2% | 25.0 | 5.8% |
+| CRM | 47% | +8.9 | 77.7% | 13.0 | 11.0% |
+| ACN | 52% | +4.9 | 31.9% | 11.4 | 6.2% |
+| ADBE | 61% | +7.5 | 89.3% | 8.7 | 9.6% |
+| NOW | 50% | +1.5 | 77.5% | 22.7 | 21.9% |
 
 On the break/survive spectrum this layer is the most insulated: 58-89% gross margins, asset-light models, and no GPU debt load mean the financing refusal that snaps the leveraged periphery does not hit them on the balance sheet. The SWARM read places software among the survivors of the circle, with the caveat that demand softens second-hand if the neocloud/AI-buildout customers that now fund seat expansion retrench. The analyst-consensus read is muted relative to upstream: forward growth here tops out at NOW's 21.9% versus the triple-digit consensus printed on the names the swarm says break first (NBIS +553%, MU +197%, CRWV +147%), so the Street is not pricing the AI boom into the layer that survives it. Management commentary supports the durable-but-unspectacular framing: IBM management guided to mid-single-digit revenue and 12bn-plus free cash flow with no GPU-style capex burden, Salesforce management framed Agentforce as monetizing "digital labor" inside existing accounts, and ServiceNow management raised its AI commitment target and authorized a 5bn buyback rather than leaning on external financing.
 

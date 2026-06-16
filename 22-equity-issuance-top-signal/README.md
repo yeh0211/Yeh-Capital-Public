@@ -1,4 +1,4 @@
-# 23 — Equity issuance doesn't time the market top (and the "SEO signal" is a data artifact)
+# 22 — Issuance doesn't time the market top — equity *or* debt (and what NVIDIA's $25bn bond really signals)
 
 **Question.** A durable piece of market folklore: companies sell equity when management thinks the stock is dear, so a wave of issuance — IPOs and secondary offerings — should mark an overpriced market and predict weak forward returns. Does aggregate equity-issuance intensity actually time the top?
 
@@ -60,7 +60,7 @@ The raw secondary-offering count appears to *invert* the hypothesis (high SEO �
 
 ## Claim 4 — The mega-caps people invoke don't issue equity at all
 
-The intuition is often pinned on names like Meta, Alphabet, Microsoft and Amazon "selling stock at the top." They don't — they are among the largest *repurchasers* in history, and their share counts have fallen, not risen: **Microsoft ~7.99B → ~7.45B** (no split in the window — pure buyback), **Meta 2.71B → 2.57B**, **Alphabet 12.49B → 12.20B**; **Apple's split-adjusted count fell about a third** (≈22B → 14.7B, after its 2020 4-for-1 split and a decade of buybacks); only **Amazon** is roughly flat (modest stock-comp dilution). Their genuine equity raises sit outside this window (Amazon's 1999–2000 convertibles near the dot-com peak; Alphabet's lone 2005 follow-on). For today's cash-generative mega-caps the issuance-as-overpricing frame simply does not apply.
+The intuition is often pinned on names like Meta, Alphabet, Microsoft and Amazon "selling stock at the top." They don't — they are among the largest *repurchasers* in history, and their share counts have fallen, not risen: **Microsoft ~7.99B → ~7.45B** (no split in the window — pure buyback), **Meta 2.71B → 2.57B**, **Alphabet 12.49B → 12.20B**; **Apple's split-adjusted count fell about a third** (≈22B → 14.7B, after its 2020 4-for-1 split and a decade of buybacks); only **Amazon** is roughly flat (modest stock-comp dilution). Their genuine equity raises sit outside this window (Amazon's 1999–2000 convertibles near the dot-com peak; Alphabet's lone 2005 follow-on). For today's cash-generative mega-caps the issuance-as-overpricing frame simply does not apply — *for equity*. The corollary that "cash-gushers never tap capital markets" is now only half-true: they have become large **debt** issuers. That is the sequel, and we test it directly in **Part II** below, where NVIDIA's June-2026 $25bn bond and the hyperscaler borrowing wave are run through the same engine as a separate signal.
 
 ## Did we find noise? — the robustness battery
 
@@ -89,6 +89,50 @@ Six standard checks beyond the headline test. Every one points the same way: no 
 | Mega-caps issue equity at the top | **N/A** | Net repurchasers — MSFT 7.99B→7.45B shares; AAPL −34% split-adjusted |
 | The *issued securities* underperform | **Yes (separate result)** | [Study 15](../15-ipo-chase/README.md); Loughran-Ritter |
 
+## Part II — Does *debt* issuance time the top? (the June 2026 NVIDIA test)
+
+The folklore above is about *equity*. But the companies people point to at the top of the AI cycle aren't selling stock — they're selling **bonds**. On 15 June 2026 **NVIDIA priced a $25bn investment-grade bond** — its first in five years, ~3.4× oversubscribed (~$85bn of orders), across seven tranches from 2 to 30 years — from a balance sheet carrying only ~$8bn of debt against ~$116bn of annual free cash flow. It sits on top of a sector-wide wave: the five large hyperscalers issued roughly **$121bn of bonds in 2025 and ~$159bn through early June 2026**, more than four times their 2020–24 pace. If a financing binge marks a top, debt is where to look now — so we re-ran the *exact* engine above on debt issuance.
+
+**Method (same machinery, debt forms).** Monthly EDGAR full-text counts, 2001–2026: **424B2 + "senior notes"** (primary investment-grade note-takedown proxy), **424B5 + "senior notes"** (shelf debt) and **424B2 + "notes due"** (secondary). Same point-in-time detrended-percentile signal, same non-overlapping-annual headline, same moving-block bootstrap, momentum partial, and robustness battery. Three measurement caveats, stated up front because they bound what a count test can claim: (i) **filing counts are not dollar volume** — a few mega-deals can dominate dollars while barely moving a count, so this tests issuance *intensity*, not deal size; (ii) **424B2 sweeps in bank/financial and structured-note programs**, not only operating-company debt, so the primary series is a noisy proxy; (iii) the debt form's raw count drifts **~17–60×** across the sample (EDGAR coverage growth, far more than the equity forms' ~4×), so every series is **detrended within-form** before any percentile or ratio — the same coverage-artifact lesson that sank the SEO result in Part I.
+
+### Finding 5 — Debt issuance doesn't time the top either
+
+Same null — if anything cleaner. On the primary measure, **0 of 4** non-overlapping-annual tests are significant, and the sign is *unstable* (Nasdaq tercile gap −8.8% but annual Spearman **+0.27** — they disagree, the signature of noise). Detrending the annual test to remove the coverage drift barely moves it (+0.27 → +0.19, exact permutation p = 0.38). Every bootstrap CI crosses zero.
+
+![Almost every debt-issuance timing estimate's CI crosses zero](fig5_forest_debt.png)
+
+The robustness battery says what Part I's did: the only place a tilt appears is **in-sample and crisis-bound** — Nasdaq high-minus-low −21.6% in 2001–2015 (the dot-com and GFC debt binges) collapses to −3.0% out-of-sample (2016–2026) and flips to +1.5% in the second half; HAC inference is insignificant (COMP p = 0.20); and "go to cash when debt issuance is hot" earns Sharpe **+0.52 vs +0.62 for buy-and-hold**, with a **deflated Sharpe of 0.84 (fails)**. One secondary cell looks significant — 424B5 → QQQ, annual Spearman −0.72, p = 0.030 — so we tried to kill it: it does **not** survive HAC (p = 0.56), its sub-period high-minus-low flips +15% → −12%, the four "all-negative" index signs are 0.88–0.99 correlated (≈ one independent equity factor, not four confirmations), and one hit in twelve tests is exactly the ~0.6 false positives chance delivers. It is noise.
+
+![Debt-issuance intensity vs the market — it does not lead](fig4_debt_vs_market.png)
+
+### Finding 6 — The equity/debt *mix* says a debt-tilted market is the benign side
+
+Baker & Wurgler (2000) — already in the references — found the **equity share of new issues**, e/(e+d), predicts low aggregate returns: when firms tilt to *equity*, the market does worse afterward. The mirror is the point here: tilting to *debt* is historically the **benign** configuration. Built drift-robustly (each form detrended within-form before the ratio, because the raw share is itself a coverage artifact — it drifts 0.75 → 0.30 across the sample), our count proxy **reproduces Baker–Wurgler's sign** — equity-share → forward return is negative (Nasdaq Spearman −0.33, QQQ −0.55) — though at 22 and 9 independent years **it is not statistically established** (p ≈ 0.13). It is a count-based proxy for a financing-*dollar* concept, so read it as directional corroboration, not proof. The qualitative implication is the robust part: a market financing itself with *debt rather than equity* sits, if anything, on the side B–W associates with **higher** forward returns — not a top.
+
+### Finding 7 — So what does NVIDIA's $25bn actually signal?
+
+In the issuance-timing frame, **choosing debt over equity is not an equity-top signal** — it lowers the equity share (the benign side of Finding 6), and a firm that could fund $25bn by printing ~0.6% of its shares chose not to. What the deal *does* sit inside is a credit market priced for perfection: it was placed into **the tightest investment-grade spreads in a generation — IG OAS ~73bp, high-yield ~266bp**, both near cycle lows and still compressing as the AI supply lands. That tightness is *why* a 30-year, never-needed-it borrower clears at 3.4× cover — and it is exactly the complacency the bears point to.
+
+![The mix tilts to debt while credit spreads sit at cycle lows](fig6_credit_froth.png)
+
+But note what that argument *is*: a **credit-cycle / overcapacity** worry — too much cheap debt funding an AI capex arms race — that runs through spreads and default risk, **not** through the equity-issuance-timing channel this study tests. The result is bounded accordingly: debt issuance is **uninformative for timing the equity top**; whether the AI debt wave is dangerous is a *credit* question (spread complacency, interest coverage, the durability of cash flows backing 2056 maturities) that a filing-count timing test cannot answer and we do not claim to.
+
+### Claim 4, revisited
+
+Part I's Claim 4 — "the mega-caps don't issue" — is true for *equity* and false for *debt* as of 2025–26: NVIDIA, Alphabet, Amazon, Meta, Microsoft and Oracle are now among the largest investment-grade issuers in the market. That retires the lazy corollary that cash-generative mega-caps never tap capital markets — but it does **not** revive the timing thesis. Different instrument; on the evidence here, the same non-signal.
+
+### Answer (Part II)
+
+**Does *debt* issuance signal a market top? No — same verdict as equity.** And NVIDIA's bond, read through this lens, is not a top tell; the legitimate worry it belongs to is credit complacency, a different channel this study does not test.
+
+| Form of the claim | Verdict | Evidence |
+|---|---|---|
+| Aggregate debt issuance times the market top | **No usable signal** | 0/4 primary annual tests; raw→detrended +0.27→+0.19 (perm p 0.38); OOS −21.6%→−3.0% + sign-flip; HAC ns; strategy deflated-Sharpe 0.84 fails |
+| The one "significant" debt cell (424B5·QQQ) | **Noise** | Fails HAC (p 0.56); sub-period sign-flip; 4 indices ≈ 1 factor; 1/12 = chance |
+| A debt-tilted issuance mix is bearish | **No — the benign side** | Reproduces Baker–Wurgler sign (equity-share → return negative); not significant at honest n |
+| NVIDIA's $25bn debt deal is an equity-top signal | **No** | Debt-over-equity lowers the equity share; a not-needed borrower terming out cheap money at 3.4× cover |
+| The real risk in the AI debt wave | **Credit channel — untested here** | Placed at cycle-tight spreads (IG 73bp / HY 266bp); a credit-cycle question, not issuance-timing |
+
 ## What the first pass got wrong (methods note)
 
 This study was rebuilt after an internal audit caught three errors in a first version that had reported "significant" results — kept here because the failure modes are the interesting part:
@@ -110,3 +154,5 @@ Overlap-inflated p-values (treating ~290 overlapping monthly observations as ind
 - Baker & Wurgler (2000). *The Equity Share in New Issues and Aggregate Stock Returns.* Journal of Finance.
 - Loughran & Ritter (1995). *The New Issues Puzzle.* Journal of Finance.
 - Ritter, J. *Initial Public Offerings: Updated Statistics* (University of Florida).
+- Greenwood & Hanson (2013). *Issuer Quality and Corporate Bond Returns.* Review of Financial Studies. *(Part II: the debt-quality / issuer-mix channel.)*
+- López-Salido, Stein & Zakrajšek (2017). *Credit-Market Sentiment and the Business Cycle.* Quarterly Journal of Economics. *(Part II: why the AI debt wave is a credit-cycle question, not an equity-timing one.)*

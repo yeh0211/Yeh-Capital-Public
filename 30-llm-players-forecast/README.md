@@ -53,18 +53,6 @@ The single most useful thing the simulation produced was buried in the agent cha
 
 It surfaced four more mechanisms in the same vein, all worth investigating: the triple-duration mismatch as a risk distinct from demand; "take-or-pay coverage of depreciation plus debt" as the real test for a neocloud's solvency; the relay economy's distinct loss-type; and power-equipment project-finance as a second, non-GPU channel through which the same stress travels.
 
-## The trigger has a calendar: Computex
-
-The swarm's trigger is abstract — a next-gen accelerator launches and starts the clock — but accelerators don't launch on abstract dates. They launch at Computex, the Taipei show held every year in late May or early June. That makes it the real-world calendar peg for the mechanism. I went back and checked our Computex dataset, and it isn't just a PC show: the exact AMD cadence the swarm leans on shows up in the keynote record verbatim — the Instinct MI325X (shipping 2H24), the MI350 / CDNA 4 line (2025), and the MI400 / CDNA Next generation (2026) — each reveal naming the *next* part and, in 2024 explicitly, the forward ship quarter that dates when the prior generation becomes depreciating collateral. Nvidia carries the same annual rhythm: Grace Blackwell GB300 in 2025, the Vera Rubin generation surfacing in 2026. The cadence is real and annual. The swarm's "a next-gen chip launches" has a date stamp every year, and Computex is it.
-
-![Computex as the trigger's calendar: the keynote is a relief rally; periphery stress shows up only in the quarter after, and only in some regimes](figures/fig4-computex.png)
-
-Then I ran the honest test against the price tape, and it killed the easy version of the story. If a launch instantly cratered GPU-levered names you'd see the periphery sell off around the keynote. The tape says the opposite. The keynote window is a *relief rally*: in both 2024 and 2025 the whole AI complex — core chip-sellers and the levered periphery alike — rose around the keynote (Nvidia about +10 points of excess return over the S&P in the ten trading days after the 2024 keynote, Broadcom about +35; the 2025 window positive again). A launch happening is good news the market celebrates, not a shock it flees. So the trigger is a slow-burn, not an announcement-day move — you will not catch it at the keynote.
-
-The one place stress actually showed up was the *quarter after* Computex 2024: Supermicro roughly −48 points of excess return over the next sixty days, Micron about −32, Vertiv about −22. Right direction for the mechanism. But it flatly did not repeat in the 2025 bull — the same names ran −7, +19, +16 — so it is regime-dependent, not mechanical. And that lines up exactly with study 27's rental tape: the residual collapse hadn't fired because demand was still outrunning supply, the current-generation H100 one-year rate climbing about 40% into 2026 even as trailing-edge silicon fell. The forecast condition is precise — the trigger fires once the cadence outruns demand, which the swarm dates to 2027–2028, with demand the gate and the launch the trigger.
-
-Be brutal about what this is. Three Computex events, only two with a usable forward window, the periphery reducing to one or two clean names, CoreWeave and Nebius confounded by post-IPO ramps, the whole sample riding a two-year AI bull. This is illustrative, not a statistical test — there is no p-value here and I won't pretend there is. What it buys is a watch-instruction: the 2028 H1 break should *preview* as periphery and GPU-rental weakness in the quarter after **Computex 2027** — when the next big accelerator ships — not at the keynote itself. While the one-year rental rate on the vintage behind the live neocloud debt keeps rising, the gate stays shut; a sustained rollover through the 2027 refinancing calendar is what fires it.
-
 ## How much to trust this — I backtested the engine first
 
 Here is the part that keeps this honest, and it is why everything above is "the simulation forecasts," never "I forecast."
@@ -75,50 +63,167 @@ Before trusting the engine on a future I can't check, I ran it on a past I can: 
 
 On that honest measure the forecast scored **12 of 16**. Good, not magic. Two-thirds of the engine's output was a restatement of the facts I gave it; only the remaining third — the trigger choice, the ordering, the survivors, and the novel mechanisms — is the engine's own reasoning. And the deepest caveat is one I can't fully clear: the engine and my own study 27 were built on the same family of language model, so their agreement on "financing refusal, periphery first, core survives" might be a shared habit of thought rather than two roads to the truth. That is exactly why the two places it *disagreed* with me — the relay economy surviving, and refusing to name a single lab — are worth more than the places it agreed.
 
-## Connecting the dots: names, financials, and where the trade is
+## The value chain, end to end: who breaks and who survives
 
-Up to here this study has been the swarm's forecast and an honest accounting of how much to trust it. This last section does the thing a forecast is for: I pulled the real financials and the real price tape for the names in the circle, put them next to the swarm's break-order, and asked whether the numbers agree. They do — and that lets me say, plainly, where a research-grade expression of this thesis actually sits, and what is already in the price.
+This replaces the old flat watch-list with the full chain as it actually flows — materials and toolmakers at the head, foundry and memory in the middle, fabless silicon and interconnect through neoclouds and hyperscalers, ending at the software seats that have to pay for all of it. We validated the membership and ordering against our internal 28-layer value-chain graph and the Obsidian master value-chain map (223 companies across 24 flow-ordered layers), then collapsed it to the nine reader-facing layers below so each one is a coherent break-or-survive unit rather than a bag of tickers. Every figure traces to the study datapack; the management view on each layer is drawn from the most recent earnings calls in our corpus.
 
-First the calendar peg, cross-checked against our own news. The swarm's trigger is "a next-gen accelerator launches and starts the collateral clock." That has a date every year, and our internal warehouse confirms the cadence is not invented — it traces to the keynote record, with 230 collected Computex notes corroborating it.
+The load-bearing finding reads the same down the entire chain: the swarm's break order runs periphery-first, core-last. The leveraged, negative-cash-flow edge — neoclouds above all, plus the one credit-channel hyperscaler (ORCL) — snaps first when financing refuses; the cash-rich core (fabless silicon, foundry, the big four hyperscalers, software) absorbs the same shock as a demand air-pocket and outlasts it. The tension that makes this a study rather than a list is that the analyst consensus prices the steepest forward growth onto exactly the layers the swarm says break first. The richest forward-growth numbers in the whole chain — NBIS +553%, MU +197%, CRWV +147% — sit on the weakest balance sheets, so the names with the furthest to fall if financing stalls are also the names carrying the highest expectations. That pattern repeats layer by layer below: wherever the Street's growth assumption is most aggressive, it tends to be sitting on the most cyclically or financially exposed name in the layer.
 
-**Table 1 — Computex: the accelerator calendar, cross-checked against our news**
+![The value chain end to end: the steepest analyst-consensus growth sits on the layer the swarm forecasts breaks first](figures/fig-valuechain.png)
 
-| Year | Next-gen part(s) | Ship quarter | Turns prior gen into cheap collateral via | In our news? |
-|---|---|---|---|---|
-| 2024 | AMD Instinct MI325X; Nvidia GB200 | MI325X 2H24 | the next reveal (MI350) | Yes |
-| 2025 | AMD MI350 / CDNA 4; Nvidia GB300 (Grace Blackwell) | 2025 | the next reveal (MI400 / Rubin) | Yes |
-| 2026 | AMD MI400 / CDNA Next; Nvidia Vera Rubin | 2026 | the next reveal (the 2027 part) | Yes |
+### Materials & equipment (the picks-and-shovels)
+The toolmakers, EDA software and specialty materials that every chip in the circle must pass through before a single GPU ships — the chain's chokepoint upstream of foundry.
 
-Every family in the swarm's mechanism — Blackwell, GB200, the Rubin generation, the MI325-to-MI400 ladder — is present in our coverage, and the depreciation risk it implies surfaced independently in the corpus (a "GPU depreciation could be the next crisis" thread, alongside reports of a roughly 30% one-weekend drop in B200 rental prices and warehoused idle GPUs). The cadence is real, annual, and self-confirming: each launch is the thing that turns last year's silicon into cheapening collateral.
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| ASML | - | - | 52.8% | 41.8 | 20.6% |
+| LRCX | - | - | 48.7% | 34.3 | 26.1% |
+| AMAT | - | - | 48.7% | 33.7 | 17.6% |
+| KLAC | - | - | 60.9% | 36.9 | 11.7% |
+| ARM | - | - | 97.5% | 147.5 | 21.7% |
+| SNPS | - | - | 77.0% | 28.6 | 37.2% |
+| CDNS | - | - | 86.4% | 42.1 | 17.0% |
+| TEL | - | - | 35.2% | 16.7 | 13.4% |
+| KEYS | - | - | 62.1% | 32.1 | 28.1% |
+| CRDO | 10.1% | - | 68.0% | 35.2 | 81.8% |
+| ENTG | - | - | 44.6% | 34.3 | 7.8% |
+| NVMI | - | - | - | - | - |
 
-Now the names. I pulled leverage (liabilities/assets), free cash flow (inclusive of M&A), gross margin, and drawdown from all-time high, and matched each call to an adversarial positioning review.
+This is the survive end of the spectrum: high gross margins (ASML, KLAC, SNPS, CDNS, ARM all 53-97%), tool-and-license business models with little disclosed leverage, and a one-step-removed position that lets them keep selling into whoever is still building. When the circle's financing refuses, the squeeze here is cyclical, not existential — order timing slips and a memory-cost or China-DUV air-pocket bites, but the picks-and-shovels do not break with the leveraged neoclouds. The exceptions to watch are the smaller, single-application names: CRDO (81.8% consensus growth, riding hyperscaler AEC demand) and ENTG (carrying net leverage near 3.8x with thin 7.8% growth). The swarm read: cash-rich core that outlasts a refusal, taking the demand hit a year late rather than going to zero.
 
-**Table 2 — Who breaks, who survives, with names and financials**
+Analyst-consensus read: the Street prices solid-but-modest growth here (mostly 8-28%), and the one outsized number — CRDO at 81.8% — sits squarely on the layer's most cyclically exposed, single-customer-concentrated name, exactly the kind of optimism the swarm flags.
 
-| Ticker | Layer | Leverage (liab/assets) | FCF | Gross margin | From ATH | Research call |
-|---|---|---:|---:|---:|---:|---|
-| CRWV | Levered periphery (neocloud) | 93% | −7.2B | 72% | −40% | Structural underweight (refi window) — not a fresh short, largely priced in |
-| ORCL | Levered periphery (capex on credit) | 88% | −0.9B | n/a | −30% | Structural underweight — cleaner, less priced in |
-| DELL | Levered integrator (assembly) | 102% | n/a | n/a | −10% | Avoid — ~1% circle, financials dashed; uncallable |
-| SMCI | Levered periphery (liquid-cooled racks) | 55% | +1.5B | 11% | −60% | Avoid a fresh short — already broken |
-| MU | Cyclical memory | 35% | +0.5B | 45% | 0% | Own on quality, but at the high after +956% — don't chase |
-| VRT | Buildout infra (thermal/power) | 68% | +0.4B | 39% | −12% | Mild underweight candidate — not a clean short |
-| MRVL | Custom silicon / interconnect | 36% | +0.3B | 52% | −9% | Own (lower conviction) — don't chase +318% |
-| CRDO | High-beta circle pure-play | 16% | −0.1B | 67% | −9% | Pair-only — risk is operational, not balance-sheet |
-| NVDA | Fortress core (accelerator) | 24% | +5.3B | 75% | −11% | Own / overweight (relative, not a timing call) |
-| AVGO | Fortress core (custom silicon/networking) | 52% | +7.3B | 68% | −18% | Own / overweight |
-| ANET | Fortress core (networking) | 36% | +0.3B | 63% | −2% | Own / overweight — cleanest leverage-adjusted |
-| TSM | Foundry | n/a (foreign filer) | n/a | n/a | −4% | Survives on scale/tape; no financial-based call |
+Management view: across these calls, management strikes a confident capex stance — ASML guided 2026 sales no lower than 2025 and Lam raised its industry equipment forecast to roughly $140bn citing AI-driven gate-all-around, HBM and advanced-packaging demand, with KLA and Applied echoing high-teens/20%+ equipment growth into a second-half-weighted 2026.
 
-![Leverage versus drawdown: the most-levered, negative-FCF names are already the most drawn-down, while the fortress core sits near highs](figures/fig5-leverage-drawdown.png)
+### Foundry, packaging & test
+The contract-manufacturing spine of the chain: the layer that actually fabricates, packages and electrically tests every AI accelerator the layers above it design and the layers below it equip.
 
-Here is where the dots connect. The swarm forecast that the most-levered, negative-FCF periphery breaks first and the cash-rich core survives. The financials and the tape already agree with that ordering, before any 2028 trigger fires. CoreWeave carries 93% liabilities/assets, $21.4B of long-term debt, and burns −7.2B in FCF on 5.1B of revenue — and it is already down 40% from its high, the only large name with a negative one-year return. Oracle sits at 88% leverage with negative FCF and is down 30%. Dell screens at 102% leverage. Against them, Nvidia runs 24% leverage, a 75% gross margin, +5.3B FCF on 36.2B of operating cash flow, and is only 11% off its high; Broadcom throws off +7.3B of FCF (a 40%-plus FCF margin); Arista is effectively debt-free at 36% leverage and sits 2% from its all-time high. The fortress is near the highs; the leverage is in the drawdown. That is the forecast, expressed in today's prices.
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| TSM | - | - | - | - | - |
+| INTC | - | - | 34.8% | 83.3 | -1.5% |
+| APH | - | - | 37.2% | 26.8 | 44.7% |
+| TER | - | - | 58.2% | 47.5 | 40.3% |
+| GFS | - | - | 24.4% | 35.0 | 6.7% |
+| TSEM | - | - | 23.2% | 58.2 | 20.7% |
 
-So what is the honest positioning? The research-grade expression is a **pair, not a chase**: own the cash-rich core that gets paid (Nvidia, Broadcom, Arista) and underweight the high-leverage, negative-FCF periphery that has to refinance into the 2027 H1 window (CoreWeave, Oracle). The core survives a financing-refusal shock because it is the supplier being paid, not the borrower buying compute. But I have to be plain about what is already in the price. CoreWeave at −40% and Supermicro at −60% are not fresh setups — most of their fragility is already booked; the defensible version is a structural underweight specifically dated to the refinancing window, not a short of names that have already fallen. Oracle is the cleaner short leg precisely because it is *less* priced in (−30% but still +36% on the year), so its leverage and capex burn have not yet reflected a refi shock — though note Oracle's risk is balance-sheet-and-capex, not circle-demand (only ~2% of its revenue is the circle). And the "own" leg is rich: Micron is at its all-time high after +956%, Nvidia up 46% on the year. These overweights are relative-to-periphery within a pair, not standalone buy timing.
+On the break/survive spectrum this layer sits firmly on the survive side: it is the chokepoint everyone must pay, with sticky long-term wafer agreements and pricing power, so a financing refusal upstream reaches it last and as a volume air-pocket, not a solvency event. The swarm read is "squeezed, not broken" — utilization and ASP wobble through a downturn, but the cash-rich leaders absorb it, while the most exposed names are the loss-making turnaround (INTC, whose foundry still runs an operating loss and leans on outside strategic funding) and the smaller, single-program test/specialty shops. The Street is pricing real forward growth here, but unevenly — heaviest on the AI-test and connector names (TER +40.3%, APH +44.7%) rather than on the core foundries, and INTC carries an 83.3 fwd P/E against a -1.5% consensus sales decline. Management view: TSM management guided capex sharply higher and framed AI accelerator revenue doubling again, INTC management held capex flat while leaning on roughly $20bn of outside strategic funding to keep the foundry build going, and Teradyne and Amkor management both flagged AI/HPC demand now dominating their mix.
 
-Tie it to the calendar: the quarter after **Computex 2027** is the catalyst window, when the next accelerator ships and turns the live neocloud collateral into a haircut — the swarm's mechanism, next-gen launch into old-GPU resale collapse into a loan-to-value cut into a refinancing refused. Until then, the watch-list is the numbers, not the keynote: leverage, FCF, the 2027 refinancing calendar, and the GPU-rental tape. While the one-year rate on the vintage behind the debt keeps rising, the gate stays shut.
+### Memory (HBM/DRAM)
+The supply of HBM stacks and DRAM/NAND that AI accelerators are bolted to — the layer that converts the compute layer's order book into shipped bits, sitting one node behind fabless silicon.
 
-*Research, not investment advice. The pair above is a way to express a forecast, not a recommendation to put it on; positions, sizing, and timing are the reader's own call, and the most fragile-looking names have already moved.*
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| MU | 34.6% | 0.54 | 39.8% | 10.4 | 197.1% |
+| WDC | - | - | 38.8% | 30.6 | 35.2% |
+| NTAP | - | - | 70.7% | 19.6 | 7.9% |
+| SIMO | - | - | - | - | - |
+
+On the break/survive spectrum this layer is cyclical-squeezed rather than fragile: MU carries only modest leverage (34.6%) but thin trailing FCF ($0.54bn), so a financing refusal that froze AI capex would hit it through volume and price, not a balance-sheet wall. The SWARM read puts memory among the early-to-feel-it names — demand is single-end-market concentrated on the same hyperscaler/neocloud buyers the swarm says break first — but cash-generative incumbents like MU survive the cycle even as the multiple compresses. The analyst-consensus read is the key tension: the Street prices the second-highest forward growth in the whole chain onto MU (197.1%), stacking peak expectations on exactly the volume-and-price-cyclical name most exposed to a buyer-financing stall. Management view: Micron management struck the most aggressive posture — record revenue, all 2026 HBM volume and pricing locked under multiyear contracts, and capex raised $2bn to $20bn to fund the HBM and 1-gamma ramps; WDC management cut net debt to a net-cash position and cited firm purchase orders through 2026 with LTAs out to 2028.
+
+### Compute — fabless AI silicon
+The design houses that architect the GPUs, custom accelerators and DSPs the whole circle runs on — the highest-value node, one step downstream of foundry and memory.
+
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| NVDA | 23.9% | 115.9 | 71.1% | 19.6 | 82.0% |
+| AVGO | 52.5% | 20.1 | 67.9% | 24.7 | 65.7% |
+| AMD | 18.1% | 6.0 | 49.5% | 49.2 | 15.7% |
+| MRVL | 35.8% | 3.4 | 51.0% | 63.9 | 40.2% |
+| QCOM | - | - | 55.4% | 19.1 | -4.1% |
+
+When the circle's financing refuses, this layer is the most insulated in the chain: NVDA, AVGO and AMD pair high gross margins (49-71%) with large positive FCF and modest leverage, so they survive a capex air-pocket on their own balance sheets rather than the customers'. The exposure is indirect demand risk, not solvency risk — fabless names get squeezed if neoclouds and hyperscalers cut orders, but none breaks the way a levered, single-customer periphery name does. The SWARM read: core silicon bends but does not break; MRVL is the soft spot given its custom-silicon concentration in a few hyperscaler programs.
+
+Analyst-consensus read: yes, the Street prices high forward growth here (NVDA +82%, AVGO +66%, MRVL +40%), but unlike the periphery that growth sits on cash-generative, low-leverage balance sheets — not the most fragile names.
+
+Management view: across the layer the stance is uniformly capex-and-demand-up — NVDA management says demand exceeds supply with no digestion phase, AVGO management cites a backlog above $73bn with AI revenue set to roughly double, AMD management guides data-center growth above 60% in 2026, and MRVL management points to a multi-year custom-silicon agreement with a major hyperscaler.
+
+### Networking & optical interconnect
+The wires and light between the GPUs — transceivers, optical components, lasers and the deposition/process gear behind them — the connective tissue that lets a training cluster behave as one machine.
+
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| LITE | - | - | 28.0% | 54.9 | 80.5% |
+| COHR | - | - | 35.2% | 44.9 | 21.5% |
+| MKSI | - | - | 46.7% | 25.9 | 22.2% |
+| AAOI | - | - | - | - | - |
+| VECO | - | - | 40.0% | 27.2 | 15.3% |
+
+On the break/survive spectrum this is a squeezed-but-survivable middle layer: not the leverage-and-negative-FCF profile that snaps first, but cyclical and demand-derivative — its order book is a direct echo of the same hyperscaler capex the swarm sees pausing. The MiroFish read is that networking gets cut second, not first: if neoclouds and memory break on financing refusal, optical bookings hollow out one quarter later, with the highest-multiple, thinnest-margin name (LITE, 28% gross, 54.9x) most exposed to the air-pocket.
+
+The Street is pricing the steepest growth onto exactly that fragility: analyst consensus has LITE at +80.5% forward sales — multiples of COHR (+21.5%) or MKSI (+22.2%) — so the richest growth assumption sits on the most cyclically exposed name.
+
+On the management view, Lumentum guided to record revenue with operating margin stepping to 30-31%, citing 200G laser pricing power, a $400m+ OCS backlog and multi-hundred-million CPO orders already booked for 2027 — management's stance is unambiguously demand-up and capacity-led, the mirror image of the swarm's pause.
+
+### Power, grid & cooling
+The energy-and-thermal backbone: turbines, transformers, grid build-out, utilities/nuclear, and the power-and-cooling gear that sits between the grid and the racks — the layer that ultimately gates how much compute can be plugged in.
+
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| VRT (Vertiv) | 67.7% | 1.35 | 36.3% | 44.0 | 35.5% |
+| BE (Bloom Energy) | - | - | 29.6% | 89.1 | 83.8% |
+| MPWR (Monolithic Power) | - | - | 55.2% | 60.9 | 31.9% |
+| GEV (GE Vernova) | - | - | 20.1% | 49.5 | 19.5% |
+| CEG (Constellation) | - | - | 42.5% | 20.5 | 28.5% |
+| PWR (Quanta) | - | - | 15.0% | 47.9 | 23.0% |
+| GE (General Electric) | - | - | 35.0% | 39.5 | 6.0% |
+| NEE (NextEra) | - | - | - | 20.9 | 13.7% |
+
+When the circle's financing refuses, most of this layer survives: regulated utilities and nuclear (NEE, SO, DUK, CEG) carry through-cycle cash flows, and the equipment names ride record multi-year backlogs rather than spot AI orders. The squeeze points are the cyclical, single-end-market exposures — VRT (highest leverage here, AI-cooling-levered) and BE (negative operating margin, story-priced at 89x) — which the swarm tags as squeezed-not-broken if hyperscaler capex stalls.
+The Street is pricing aggressive growth precisely onto the most exposed names: BE +83.8% and VRT +35.5% consensus forward sales growth sit on the layer's weakest balance sheet and worst margin, respectively.
+Management is uniformly bullish: Vertiv management guided 2026 sales +28% on record backlog and "robust AI-driven demand" while accelerating capacity investment; GE Vernova management raised guidance on a $163bn backlog with data-center electrification orders already exceeding all of last year — capex-up, demand-up, no financing strain flagged.
+
+### Neoclouds (GPU-as-a-service)
+The middlemen who buy the silicon, rack it, and rent compute by the hour — they sit between the chipmakers and the labs, and they fund that gap with debt.
+
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| BABA | - | - | 39.8% | 18.1 | 10.0% |
+| DLR | - | - | 58.0% | 81.6 | 10.4% |
+| CRWV | 93.2% | -9.05 | 71.7% | - | 146.8% |
+| NBIS | - | - | 68.6% | - | 553.4% |
+| APLD | - | - | - | - | - |
+
+This is the layer the swarm flags first. CoreWeave carries 93.2% leverage and -$9.05bn free cash flow, Nebius runs a -115.5% operating margin, and both lean on a thin set of anchor tenants — the textbook break profile if the circle's financing refuses. Cash-rich BABA and the contracted-backlog REIT DLR are the survivors here; the pure-play neoclouds are the fragile edge MiroFish expects to snap before the core.
+
+The analyst-consensus read is the study's sharpest tension: the Street prices the highest forward growth onto the most exposed names — NBIS +553% and CRWV +147% — so the optimism sits exactly where the balance sheets are weakest.
+
+On the management view: CRWV management guided 2026 capex up to $30-35bn (doubling power to 1.7 GW) against a $66.8bn backlog while conceding near-term margins are compressed by deploying ahead of revenue — capex and demand pinned to financing that has to keep flowing.
+
+### Hyperscalers & labs (end demand)
+The terminal demand node of the whole chain: the buyers whose capex budgets fund every upstream layer, so when financing refuses here the refusal propagates backward through neoclouds, memory and compute.
+
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| GOOGL | - | - | 59.7% | 25.5 | 20.9% |
+| MSFT | - | - | 68.8% | 20.6 | 16.9% |
+| AMZN | - | - | 50.3% | 26.1 | 15.0% |
+| META | - | - | 82.0% | 17.7 | 25.9% |
+| ORCL | 83.6% | -35.07 | 65.8% | 22.7 | 32.7% |
+
+On the break/survive spectrum this layer is mostly the survivor side: GOOGL, MSFT, AMZN and META carry fortress gross margins (50-82%) and self-fund builds from operating cash. The clear exception is ORCL, which sits on 83.6% leverage and -$35bn free cash flow to chase data-center demand — debt-funded, not cash-funded, and therefore the one name here exposed if the circle's financing dries up. The SWARM read fits: cash-rich core absorbs a financing freeze and can even slow capex at will, while ORCL is the periphery-style break risk inside the "core" layer.
+
+The analyst-consensus read shows the same tension as the chain overall — the Street prices its highest forward growth (ORCL +32.7%, META +25.9%) onto names with the weakest balance sheet (ORCL) rather than the safest.
+
+Management view: across recent calls MSFT, GOOGL and AMZN management struck a uniformly demand-outstrips-supply, capex-up stance — Microsoft management flagged $37.5bn quarterly capex with AI demand exceeding capacity, Alphabet management guided 2026 capex to $175-185bn, and Amazon management pointed to roughly $125bn cash capex on AI infrastructure; we have no earnings-call coverage in our corpus for META or ORCL in this layer.
+
+### Software / application layer
+The end of the chain: enterprise SaaS and IT-services firms that monetize AI by selling it as a feature into existing seats, the layer that ultimately must pay for everything upstream.
+
+| Ticker | Leverage | FCF $bn | Gross margin | Fwd P/E | Consensus fwd sales growth |
+|---|---|---|---|---|---|
+| IBM | - | - | 58.2% | 25.0 | 5.8% |
+| CRM | - | - | 77.7% | 13.0 | 11.0% |
+| ACN | - | - | 31.9% | 11.4 | 6.2% |
+| ADBE | - | - | 89.3% | 8.7 | 9.6% |
+| NOW | - | - | 77.5% | 22.7 | 21.9% |
+
+On the break/survive spectrum this layer is the most insulated: 58-89% gross margins, asset-light models, and no GPU debt load mean the financing refusal that snaps the leveraged periphery does not hit them on the balance sheet. The SWARM read places software among the survivors of the circle, with the caveat that demand softens second-hand if the neocloud/AI-buildout customers that now fund seat expansion retrench. The analyst-consensus read is muted relative to upstream: forward growth here tops out at NOW's 21.9% versus the triple-digit consensus printed on the names the swarm says break first (NBIS +553%, MU +197%, CRWV +147%), so the Street is not pricing the AI boom into the layer that survives it. Management commentary supports the durable-but-unspectacular framing: IBM management guided to mid-single-digit revenue and 12bn-plus free cash flow with no GPU-style capex burden, Salesforce management framed Agentforce as monetizing "digital labor" inside existing accounts, and ServiceNow management raised its AI commitment target and authorized a 5bn buyback rather than leaning on external financing.
+
+![Leverage versus drawdown by name: the most-levered, negative-FCF names are already the most drawn-down, the cash-rich core near its highs](figures/fig5-leverage-drawdown.png)
+
+### End to end, the chain says the same thing three ways
+Read down all nine layers, three independent lenses converge on one break order. The financials concentrate the fragility in a handful of names: CRWV (93.2% leverage, -$9.05bn FCF) and NBIS in neoclouds, plus the credit-channel hyperscaler ORCL (83.6% leverage, -$35bn FCF) — debt-funded edges surrounded by a cash-rich core (NVDA +$116bn FCF, the big-four hyperscalers, foundry, software) that self-funds through a freeze. The analyst consensus stacks its steepest forward growth onto those very names — NBIS +553%, MU +197%, CRWV +147%, BE +84%, LITE +81%, CRDO +82% — so the layers most exposed to a financing refusal are also the ones with the furthest to fall if the growth they are priced for fails to arrive. And management, layer by layer, is uniformly capex-up and demand-outstrips-supply, with the most leveraged builders (CoreWeave, Vertiv, Oracle) explicitly pinning that build to financing that has to keep flowing. Financials, consensus and the calls all point the same way: the periphery breaks first, the core last — which is precisely the SWARM verdict, a financing-refusal trigger that snaps the leveraged, single-tenant, negative-cash-flow edge while the cash-rich core absorbs the demand shock a year late. Research, not investment advice.
 
 ## Is the forecast already priced? A market-implied check
 
@@ -158,11 +263,10 @@ So the verdict on consensus is **partly priced, on one of the two channels.** It
 | Survives | NVDA / hyperscalers / TSMC (multiple compression); relay economy (no GPU debt) |
 | Subsidy endgame | Re-priced away (quotas, usage billing), not killed by weak demand |
 | Sharpest mechanism | Next-gen chip → old-GPU resale collapse → collateral haircut → refi refused |
-| Calendar peg | Computex (annual accelerator launch); watch the quarter after Computex 2027, not the keynote |
-| Confirmed in the tape | Most-levered names already most drawn-down (CRWV 93% lev/−40%, ORCL 88%/−30%, DELL 102%); fortress core (NVDA/AVGO/ANET) near highs |
+| Confirmed end to end | Across 9 value-chain layers, financials + analyst consensus + earnings calls converge on the swarm's break order; most-levered names (CRWV 93%, ORCL 84%) already most drawn-down, cash-rich core near highs |
 | Research positioning | Pair, not a chase: own the cash-rich core / underweight the levered periphery into the 2027 H1 refi window (ORCL the cleaner leg) |
 | Already priced? | Partly — consensus on valuation (NVDA ~20x cheapest; MU/SMCI ~10x already discounted), contrarian on positioning (short interest highest on the core, lowest on the short-leg periphery); un-priced edge = ORCL |
-| Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat; Computex limb illustrative (N=3); priced-in check on a single SI/multiples snapshot |
+| Confidence | 12/16 on a hidden-answer backtest; ~65% echo; shared-model caveat; priced-in check on a single SI/multiples snapshot |
 
 ## Caveats, each with its direction
 
@@ -170,11 +274,10 @@ So the verdict on consensus is **partly priced, on one of the two channels.** It
 - **About two-thirds of the output restated the facts I supplied.** The genuinely new content is the trigger mechanism and the two contrarian calls — treat the rest as well-organized input, not forecast.
 - **The run didn't compile a single polished report** (a usage limit cut it off), so the ranking above is reconstructed from the raw simulated world. A cleaner run would likely sharpen it; it would not change the spine.
 - **One engine, one live question.** This is a forecast from a tool with a known, limited track record (one backtest), not a consensus.
-- **The Computex calendar peg is structure, not proof.** Three events, one-to-two usable periphery names, a post-IPO confound, and an AI-bull backdrop make the event study illustrative; the keynote is a relief rally, so watch the quarter *after* Computex 2027, not the keynote, for the trigger to preview.
 
 ## How it was produced
 
-The engine is **MiroFish** (`github.com/666ghj/MiroFish`), an open-source swarm-simulation tool built on the **OASIS** multi-agent framework from CAMEL-AI, run on **gpt-5.5**. I drove it through its API: it builds a knowledge graph from the seed facts, gives each entity an agent persona with memory, runs them as a simulated social network for fifteen rounds, and reports what the world did. The forecast seed contained only facts (the financing edges, disclosed concentrations, measured subscription economics, the supply graph, historical analogs) with my study-27 conclusions removed; the prediction request posed the trigger as an open menu so the engine had to choose. Grading used a panel of independent agents (blind scorers, a contamination auditor that diffs every claim against the seed, a novel-mechanism verifier, an extractor). The Computex cross-check pairs our grounded Computex announcement dataset (the accelerator cadence) with an event study on adjusted closes around the three Nvidia keynote dates (excess return versus the S&P). The named financials and the market-implied check (leverage, free cash flow, gross margin, short interest as a percent of float, and forward P/E) come from terminal-grade data in an internal market-data warehouse; the financing-refusal trigger and the exposure ordering are the engine's, and the financial cross-checks are mine. The seeds, the rubrics, and the grading outputs live with the working notes behind this study.
+The engine is **MiroFish** (`github.com/666ghj/MiroFish`), an open-source swarm-simulation tool built on the **OASIS** multi-agent framework from CAMEL-AI, run on **gpt-5.5**. I drove it through its API: it builds a knowledge graph from the seed facts, gives each entity an agent persona with memory, runs them as a simulated social network for fifteen rounds, and reports what the world did. The forecast seed contained only facts (the financing edges, disclosed concentrations, measured subscription economics, the supply graph, historical analogs) with my study-27 conclusions removed; the prediction request posed the trigger as an open menu so the engine had to choose. Grading used a panel of independent agents (blind scorers, a contamination auditor that diffs every claim against the seed, a novel-mechanism verifier, an extractor). The named financials and the market-implied check (leverage, free cash flow, gross margin, short interest as a percent of float, forward P/E, and the Bloomberg analyst-consensus forward growth) come from terminal-grade data in an internal market-data warehouse; the financing-refusal trigger and the exposure ordering are the engine's, and the financial cross-checks are mine. The end-to-end value chain was assembled from an internal 28-layer value-chain graph, validated against a master value-chain map of 223 companies across 24 flow-ordered layers, then collapsed to nine reader-facing layers; the management view on each layer is drawn from the most recent earnings-call transcripts in our corpus (coverage gaps flagged inline, e.g. no transcript for Meta or Oracle). The seeds, the rubrics, and the grading outputs live with the working notes behind this study.
 
 ## References & forward pointer
 

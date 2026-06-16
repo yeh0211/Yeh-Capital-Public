@@ -1,4 +1,4 @@
-# 22 — Equity issuance doesn't time the market top (and the "SEO signal" is a data artifact)
+# 23 — Equity issuance doesn't time the market top (and the "SEO signal" is a data artifact)
 
 **Question.** A durable piece of market folklore: companies sell equity when management thinks the stock is dear, so a wave of issuance — IPOs and secondary offerings — should mark an overpriced market and predict weak forward returns. Does aggregate equity-issuance intensity actually time the top?
 
@@ -16,6 +16,8 @@
 ## Claim 1 — At honest resolution, there is no aggregate issuance top-signal
 
 Point estimates lean negative for IPO/SPAC (consistent with the folklore *in direction*), but almost every confidence interval crosses zero, and not one non-overlapping annual test clears p = 0.05 — before any multiple-testing penalty across the 12-test family.
+
+The family is pre-specified: IPO / SEO / total × {COMP, SPY, QQQ, RSP} = 12 non-overlapping annual Spearman tests. The SPAC series, the equity-share SEO variant, the Pearson read and the moving-block bootstrap high−low are secondary and shown for completeness — the bootstrap rests on overlapping 12-month windows (and the ETF rows on only ~9 independent years), so it is less conservative than the annual test, which is the headline. The SPAC keyword count is near-zero before ~2003, so its early point-in-time signal is degenerate; read the SPAC rows as descriptive.
 
 | Index · series | High−low fwd-12m | Time-block 95% CI | Annual Spearman (n) | Annual p |
 |---|---|---|---|---|
@@ -60,13 +62,28 @@ The raw secondary-offering count appears to *invert* the hypothesis (high SEO �
 
 The intuition is often pinned on names like Meta, Alphabet, Microsoft and Amazon "selling stock at the top." They don't — they are among the largest *repurchasers* in history, and their share counts have fallen, not risen: **Microsoft ~7.99B → ~7.45B** (no split in the window — pure buyback), **Meta 2.71B → 2.57B**, **Alphabet 12.49B → 12.20B**; **Apple's split-adjusted count fell about a third** (≈22B → 14.7B, after its 2020 4-for-1 split and a decade of buybacks); only **Amazon** is roughly flat (modest stock-comp dilution). Their genuine equity raises sit outside this window (Amazon's 1999–2000 convertibles near the dot-com peak; Alphabet's lone 2005 follow-on). For today's cash-generative mega-caps the issuance-as-overpricing frame simply does not apply.
 
+## Did we find noise? — the robustness battery
+
+Six standard checks beyond the headline test. Every one points the same way: no reliable, tradeable signal.
+
+| Check | Result | Read |
+|---|---|---|
+| Leave the mania out | COMP·IPO high−low −4.3% → **−0.3%** dropping 2020–22 (QQQ −14.7% → −2.7%; annual Spearman flips to +0.14) | the entire tilt *is* the 2020–22 episode |
+| Time-split | IPO high−low **+4.6%** in 2001–2015 vs **−12.7%** in 2016–2026 | the sign flips across halves — it does not generalize |
+| Newey–West / HAC (lag 12) | COMP·IPO p=0.55, COMP·SEO p=0.54; only QQQ·IPO marginal (p=0.045, single test) | the broad-market effect is insignificant under serial-correlation-robust inference |
+| Reactive vs predictive | IPO trailing-return IC **+0.57** vs forward IC **−0.11** (5.4×); SEO 2.8× | issuance chases past returns; it does not lead |
+| Tradeable strategy | "go to cash when issuance is hot" earns Sharpe **+0.39 vs +0.62** for buy-and-hold; **deflated Sharpe 0.62 (fails)**, **PBO 0.54 (overfit-prone)**; transaction costs immaterial | no tradeable edge survives an overfitting adjustment |
+| Parameter sensitivity | COMP·IPO high−low spans only **−1% to −9%** across 27 smoothing / detrend-window / threshold combinations | sign-stable, magnitude imprecise, never large |
+
+**A word on power.** With 24 independent annual observations (9 for the ETFs), the annual test can only catch *large* correlations — |r| ≥ 0.40 to reach p < 0.05, and ≥ 0.55 for 80% power (for n = 9: ≥ 0.67 and ≥ 0.82). So the honest reading is "no evidence of a reliable, usable signal," not "proof that no small effect exists."
+
 ## Answer
 
 **Does equity issuance signal a market top? No, not in a way you can act on.** Properly tested point-in-time, de-trended, momentum-controlled and at honest resolution, there is **no statistically established aggregate issuance top-signal** (0/12 annual tests significant). A faint directional tilt remains for IPO/SPAC froth — strongest in tech — but it is about half mean-reversion and confined to the 2020–22 mania. The SEO "inversion" is a data artifact. The part of the folklore that *is* true is cross-sectional, not market-level: **the new issues themselves underperform** ([study 15](../15-ipo-chase/README.md): −28% median excess vs SPY at one year). Don't buy the offerings; don't sell the index because offerings are heavy.
 
 | Form of the claim | Verdict | Evidence |
 |---|---|---|
-| Aggregate issuance times the market top | **No** | 0/12 annual tests significant; CIs cross zero |
+| Aggregate issuance times the market top | **No usable signal** | 0/12 annual tests significant; CIs cross zero; no tradeable edge (deflated Sharpe fails) |
 | IPO/SPAC froth tilts forward tech returns down | **Weak / directional only** | Sign consistent; ~half momentum; 2020–22-bound; not significant |
 | SEOs invert (predict higher returns) | **Artifact — rejected** | EDGAR capture-ratio drift 0.29→0.70; placebo beats it |
 | Mega-caps issue equity at the top | **N/A** | Net repurchasers — MSFT 7.99B→7.45B shares; AAPL −34% split-adjusted |
@@ -84,7 +101,7 @@ Overlap-inflated p-values (treating ~290 overlapping monthly observations as ind
 
 ## Caveats
 
-- **Power.** ~24 independent years on the Nasdaq Composite, ~9 on SPY/QQQ/RSP. The study can reject "strong timing signal" but cannot rule out a small genuine IPO-froth effect; it is under-powered for that.
+- **Power.** ~24 independent years on the Nasdaq Composite, ~9 on SPY/QQQ/RSP — enough to detect only large correlations (|r| ≥ 0.40 for significance, ≥ 0.55 for 80% power; n = 9 needs ≥ 0.67 / ≥ 0.82). The study can reject a *strong, tradeable* timing signal but cannot rule out a small genuine IPO-froth effect; it is under-powered for that. Read the verdict as "no usable signal," not "proof of no effect."
 - **Proxy error.** 424B5 + "common stock" captures some convertible/warrant debt and misses some equity deals; 424B4 is a clean IPO proxy. The capture-ratio drift is documented, not fully correctable from counts alone.
 - **Scope.** This concerns *market-level timing only*. The cross-sectional underperformance of new issues is a separate, robust result and is not in question here.
 

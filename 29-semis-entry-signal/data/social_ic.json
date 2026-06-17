@@ -1,0 +1,41 @@
+{
+  "window": [
+    "2025-12-04",
+    "2026-04-30"
+  ],
+  "posts": 912,
+  "post_days": 114,
+  "n_obs": 95,
+  "rows": [
+    {
+      "horizon": "fwd5d",
+      "signal": "attention",
+      "ic": 0.311
+    },
+    {
+      "horizon": "fwd5d",
+      "signal": "engagement",
+      "ic": 0.271
+    },
+    {
+      "horizon": "fwd5d",
+      "signal": "credible-handle",
+      "ic": 0.305
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "attention",
+      "ic": 0.074
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "engagement",
+      "ic": 0.128
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "credible-handle",
+      "ic": 0.272
+    }
+  ]
+}

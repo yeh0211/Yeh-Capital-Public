@@ -338,6 +338,62 @@ shows up first as *slower growth than consensus*, not absolute declines.
 
 ---
 
+## 6.5 The inference-ASIC challenger cohort — where Cerebras sits (and what Nvidia's Groq move signals)
+
+Cerebras is not a lone wafer-scale curiosity; it is the **only listable pure-play** in a cohort of
+inference-ASIC challengers that all attack the same GPU-fragmentation tax from §0 — but by two different
+memory routes, and that split decides whether each one *threatens* or *feeds* the HBM/CoWoS pools mapped in §3.
+
+**Two camps, by memory architecture.**
+- **SRAM / no-HBM camp — the §3.3 "re-weight away from HBM" actually rides on these names.** Cerebras
+  (wafer-scale, 44 GB on-die SRAM, zero HBM), **Groq** (LPU, ~230 MB SRAM, no HBM; GlobalFoundries 14 nm →
+  Samsung 4 nm), **d-Matrix** (digital in-memory compute: SRAM + commodity LPDDR, TSMC N6, no HBM). If the
+  HBM-displacement thesis pays, it pays because *this* camp wins share — not the cohort as a whole.
+- **HBM camp — additive to the very stack §3 flags as at risk.** **SambaNova** (SN40L, three-tier incl.
+  64 GB HBM, TSMC 5 nm on CoWoS-S), **Rebellions** (REBEL-Quad, 144 GB HBM3E, Samsung foundry + I-CubeS),
+  **Etched** (Sohu transformer-only ASIC, 144 GB HBM3E). A win here *feeds* HBM and advanced packaging — the
+  opposite sign to Cerebras.
+
+So "inference ASICs threaten HBM/CoWoS" is too coarse: only the SRAM camp does, and Cerebras + Groq + d-Matrix
+are the whole of it.
+
+**The signal that matters most for this study's thesis — the incumbent bought the SRAM camp's leader.** In
+December 2025 Nvidia struck a **~$20 bn non-exclusive inference-IP license + acqui-hire of Groq** (founder
+Jonathan Ross and ~90% of staff moved to Nvidia; Jensen Huang: "not acquiring Groq as a company"; ~$17 bn
+disclosed cash; not formally closed as of mid-2026; under antitrust review — Warren/Blumenthal letter, March
+2026). That is the cleanest evidence for §5–§6's "the incumbent is actively absorbing the inference niche":
+rather than be undercut on low-latency tokens, Nvidia bought the leading standalone low-latency challenger. It
+also leaves **Cerebras as the last independent, listable SRAM pure-play** — the rest of the cohort is private
+or absorbed:
+
+| Challenger | Public? | Memory camp | Foundry | Status (as of 2026-06) |
+|---|---|---|---|---|
+| **Cerebras (CBRS)** | **Listed (IPO 2026-05-14)** | SRAM (wafer-scale) | TSMC 5 nm | the pure-play; ~$56.4 bn FD at listing |
+| Groq | Private → **Nvidia** | SRAM, no HBM | GF 14 nm → Samsung 4 nm | ~$20 bn Nvidia license + acqui-hire, Dec 2025 (not closed, antitrust) |
+| d-Matrix | Private | SRAM + LPDDR | TSMC N6 | $275 M Series C at ~$2 bn (Nov 2025); shipping Jun 2026 |
+| SambaNova | Private | **HBM** (3-tier) | TSMC 5 nm | down-round ~$2.2 bn (Feb 2026); Intel ~9% after a collapsed buyout |
+| Rebellions | Private | **HBM3E** | Samsung | ~$2.34 bn pre-IPO (Mar 2026); KOSPI listing targeted |
+| Tenstorrent | Private | RISC-V (flexible) | — | Qualcomm acquisition talks reported $8–10 bn (Jun 2026) |
+
+The consolidation pattern is itself a finding: the standalone inference-ASIC startup is being arbitraged into
+incumbents (Nvidia→Groq, Qualcomm→Tenstorrent, Intel→SambaNova-stake, SoftBank→Graphcore). **The exit is M&A
+at incumbent prices, not an IPO — except Cerebras.** That scarcity is part of what the CBRS multiple prices.
+
+**External counter-tension (hold this against the §3 re-weight).** Bloomberg Intelligence (Jan 2026) sizes the
+AI-accelerator TAM at **$116 bn (2024) → $604 bn (2033)**, ASICs growing ~3× faster than GPUs — but it models
+mainstream custom ASICs (TPU, Trainium, MTIA, Maia) as **HBM-designed**, calling on-die SRAM "insufficient"
+for the broad workload. If the *volume* ASIC wave is HBM-based, the SRAM camp — and therefore the §3.3
+HBM/CoWoS displacement — stays a high-margin niche rather than a mass substitution. That is consistent with
+this study's base case: the re-weight shaves growth *rate*, not absolute revenue, unless the SRAM camp wins
+broadly.
+
+**Cross-check on the CBRS facts used here.** Independent verification (premium sources + arithmetic) confirms
+the study's own figures — 2025 revenue ~$510 M (profitable); ~86% of 2025 revenue from two UAE-linked entities
+(G42); IPO 14 May 2026 at $185 — and adds the listing mark, **~$56.4 bn fully-diluted**, as the anchor for the
+multiple discussion. The concentration and supply-chain risks in §5/§9 are corroborated, not softened.
+
+---
+
 ## 7. Three scenarios (Question 9)
 
 Framed as a long-term investor would: probabilities are judgment, not precision.

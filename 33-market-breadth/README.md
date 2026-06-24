@@ -38,7 +38,17 @@ The trap in any breadth study is **survivorship**: if you measure "how many stoc
 
 ## What the data looks like first
 
-Before any test, three pictures set the scene.
+Before any test, here is the whole question in one chart: every member of the index over the last year, each a faint line, with the names that actually move the index drawn bold and colored by what they do.
+
+![Every S&P 500 stock over the last year; leaders bold, colored by layer](figures/who-leads-spaghetti.png)
+
+A wall of stocks bunched near the middle, and a thin spray of rockets up top — almost all of them chips and memory (SanDisk up ~45x on the year, then Lumentum, Western Digital, Micron), plus the AI-power names (GE Vernova, Vertiv). The median stock barely leaves the starting line.
+
+Strip it to three reference lines and the concentration is unmistakable: the cap-weight index — what people mean by "the market" — rises well above the equal-weight index *and* the typical (median) stock, and the gap widens into the recent months.
+
+![Cap-weight index vs the typical stock](figures/index-vs-typical.png)
+
+The cap-weight index made +22% over the year; the equal-weight index +17%; the median stock just +9%. "The market is up" and "my average stock is up a lot" are two different statements right now. Now the close-ups.
 
 **The index is a few names.** The 10 largest are ~44% of market cap — but the sharper number is the *return* share.
 

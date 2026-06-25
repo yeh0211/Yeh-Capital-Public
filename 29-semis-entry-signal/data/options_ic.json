@@ -1,0 +1,58 @@
+{
+  "window": [
+    "2024-03-11",
+    "2026-06-09"
+  ],
+  "option_days": 563,
+  "n_names": 17,
+  "rows": [
+    {
+      "horizon": "fwd5d",
+      "signal": "put/call",
+      "ic": 0.188,
+      "n": 505
+    },
+    {
+      "horizon": "fwd5d",
+      "signal": "d put/call 5d",
+      "ic": 0.004,
+      "n": 499
+    },
+    {
+      "horizon": "fwd5d",
+      "signal": "OI-weighted IV",
+      "ic": -0.135,
+      "n": 557
+    },
+    {
+      "horizon": "fwd5d",
+      "signal": "d IV 5d",
+      "ic": 0.016,
+      "n": 552
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "put/call",
+      "ic": 0.389,
+      "n": 490
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "d put/call 5d",
+      "ic": 0.106,
+      "n": 484
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "OI-weighted IV",
+      "ic": -0.467,
+      "n": 542
+    },
+    {
+      "horizon": "fwd20d",
+      "signal": "d IV 5d",
+      "ic": 0.077,
+      "n": 537
+    }
+  ]
+}

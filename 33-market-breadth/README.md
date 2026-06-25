@@ -38,13 +38,39 @@ The trap in any breadth study is **survivorship**: if you measure "how many stoc
 
 ## What the data looks like first
 
-Before any test, here is the whole question in one chart: every member of the index over the last year, each a faint line, with the names that actually move the index drawn bold and colored by what they do.
+Before any test: 500 individual lines are unreadable, so group the market and ask which *group* is pulling the index up.
 
-![Every S&P 500 stock over the last year; leaders bold, colored by layer](figures/who-leads-spaghetti.png)
+**By sector first.** Each of the 11 sectors collapsed into one cap-weighted index, rebased to 100 a year ago:
 
-A wall of stocks bunched near the middle, and a thin spray of rockets up top — almost all of them chips and memory (SanDisk up ~45x on the year, then Lumentum, Western Digital, Micron), plus the AI-power names (GE Vernova, Vertiv). The median stock barely leaves the starting line.
+![Which sector is leading the index](figures/sector-leaders.png)
 
-Strip it to three reference lines and the concentration is unmistakable: the cap-weight index — what people mean by "the market" — rises well above the equal-weight index *and* the typical (median) stock, and the gap widens into the recent months.
+Information Technology (+38%), Energy (+33%) and Communication Services (+28%) do the lifting; Financials (+2%), Staples and Real Estate are flat. The S&P 500 (+22%) sits in between, because it *is* the cap-weighted blend dragged up by the top sectors.
+
+**Then in finer detail, by value-chain layer.** Same idea, split into the layers of the AI build-out (note the log scale — the spread is enormous):
+
+![Which value-chain layer is leading](figures/layer-leaders.png)
+
+This is the whole story in one frame. Memory is in a category of its own: the layer's combined market value roughly 9x'd on the year (a real, verified melt-up across SanDisk, Micron, Western Digital). Behind it, chip equipment (+202%), the electrical build-out (EPC +124%, grid equipment +58%) and fabless compute (+48%). At the bottom sit software and consumer: Vertical SaaS −41%, med-device −27%, fintech −16% — and, tellingly, merchant power generation (the IPPs) at −14%, already rolled over even as the rest of the power complex soars.
+
+| Value-chain layer | # names | Cap-weight 12m | Median member | % above 200-day |
+|---|--:|--:|--:|--:|
+| CPU / Memory | 4 | +828% | +809% | 100% |
+| Equipment / WFE | 4 | +202% | +200% | 75% |
+| System ODM | 3 | +142% | +112% | 67% |
+| Electrical Construction / EPC | 3 | +124% | +96% | 100% |
+| Grid & Electrical Equipment | 3 | +58% | +21% | 67% |
+| Fabless AI / Compute | 25 | +48% | +38% | 84% |
+| Grid / Power Infra | 8 | +28% | +13% | 75% |
+| Power Generation | 9 | +18% | +20% | 56% |
+| Hyperscaler / End Market | 5 | +15% | +4% | 40% |
+| Power Generation / IPP | 3 | −14% | −15% | 0% |
+| Fintech / payments / crypto | 13 | −16% | −18% | 15% |
+| Med-device + AI imaging | 7 | −27% | −22% | 14% |
+| Vertical SaaS | 5 | −41% | −42% | 0% |
+
+Layers with at least 3 members; cap-weighted with start-of-window weights so a single post-run winner can't dominate, and the median member shown beside it as the de-skewed "typical name."
+
+**The concentration in one view.** Pull back to three reference lines:
 
 ![Cap-weight index vs the typical stock](figures/index-vs-typical.png)
 

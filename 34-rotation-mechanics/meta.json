@@ -1,0 +1,9 @@
+{
+  "number": 34,
+  "slug": "34-rotation-mechanics",
+  "title": "Rotation mechanics: is the rotation graph real, and can you trade it?",
+  "question": "Is the clockwise rotation in a Relative Rotation Graph real money-flow or a drawing artifact, do sub-industries lead their parent sector, and can cross-sectional momentum trade any of it?",
+  "finding": "The popular sector-rotation toolkit is a null. The RRG's clockwise rotation is a drawing artifact: on 24 years (9 GICS sectors, 1,142 weeks) the real clockwise share (0.771) ties a phase-scrambled surrogate run through the identical 12-week smoother (0.770; excess +0.001, p=0.37), and an early two-year window's apparent +0.029 excess (p=0.01) vanished on the full sample. The quadrant position does not predict forward relative returns (momentum-axis spread -0.0018 at 13 weeks, p=0.11; the 'Leading' quadrant has the worst forward return). Sub-industries do not reliably lead their parent sector once the constituent overlap is removed via a market-residualized lead-lag asymmetry (semis->tech p=0.23; pooled mean ~0 across 13 pairs). And cross-sectional momentum doesn't rescue it: top-3 sector momentum nets Sharpe 0.43 vs 0.59 equal-weight and 0.53 buy-and-hold, the long-short loses money, timing doesn't beat a random reshuffle (placebo p=0.14); the sub-industry version looks better in-sample (0.66) but the probability of backtest overfitting is 0.90. You can draw the rotation, but you can't set a clock by it.",
+  "date": "2026-06-26",
+  "author": "Hsin Cheng Yeh"
+}

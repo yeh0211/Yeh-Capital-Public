@@ -204,6 +204,29 @@ Across all 45, the funding split is lopsided toward health: **32 of 45 self-fund
 
 **Verdict: confirmed, and it reframes the risk.** Net borrowing is not the danger signal. Net borrowing *with negative free cash flow and nothing returned to shareholders* is — and that test isolates Oracle and the neoclouds from a core that is borrowing by choice.
 
+### The capital-strategy table — type, amount, and use, name by name
+
+The quadrant in one table: for each major spender, the funding *type*, the *amounts* (the build, the net new debt raised, the cash handed back), and what the capital is actually *doing*. All figures latest fiscal year, $bn, from the same EDGAR pull.
+
+| Company | Funding type | Capex | Net new debt | Cash returned | Use — what the capital is doing |
+|---|---|--:|--:|--:|---|
+| Amazon | Self-funds (thin) | 132 | +11 | 0 | Build covered by $140bn operating cash (FCF +$8bn); small debt top-up; no buyback |
+| Alphabet | Self-funds + optimizes | 91 | +37 | +46 | +$73bn FCF; raised cheap debt *and* bought back $46bn — balance-sheet optimization, not need |
+| Meta | Self-funds + optimizes | 70 | +30 | +26 | Same play: borrow cheap, buy back $26bn, fund the build from FCF |
+| Microsoft | Self-funds + returns | 65 | −2 | +16 | From $136bn operating cash; paid debt down; returned $16bn |
+| Oracle | Debt-funded | 56 | +37 | −1 | Operating cash covers under two-thirds of the build; +$37bn debt funds the gap; −$24bn FCF; returns nothing |
+| Micron | Self-funds | 16 | +1 | −1 | Funded from operating cash; roughly flat debt (cyclical memory) |
+| Intel | Equity / strategic | 15 | −3 | −1 | −$5bn FCF; leans on equity issuance + outside strategic funding; actually paid debt down |
+| Duke | Debt-funded (utility) | 14 | +7 | +1 | Regulated-utility capex funded with debt recovered through tariffs — AI-incidental, not fragility |
+| Southern | Debt-funded (utility) | 13 | +8 | −2 | Same regulated-utility model as Duke |
+| CoreWeave | Debt-funded | 10 | +13 | 0 | Capex 3.4× operating cash; debt tripled to $21bn; −$7bn FCF; must keep raising to build |
+| Nvidia | Self-funds + returns | 6 | 0 | +40 | Spends almost nothing; +$97bn FCF; returned $40bn — it *collects* the build |
+| Dell | Self-funds + returns | 3 | +7 | +6 | FCF-positive; funds from cash, adds debt, returns cash |
+| Digital Realty | Debt-funded (REIT) | 3 | +2 | 0 | Data-center REIT; debt-funded development (the normal REIT model) |
+| Neoclouds (WULF, CIFR, APLD, IREN) | Debt + equity raises | ~1 each | + | 0 | Negative operating cash; fund the build *entirely* by raising debt and equity |
+
+Read down the "use" column and the split is plain: the top of the table funds the build out of its own cash and even hands money back; only Oracle, the neoclouds and (structurally) the utilities reach outside for the money.
+
 ## Finding 6 — the war chest: who could keep building if financing stopped tomorrow
 
 **What I expected & why.** The thing that decides who survives a financing freeze is how long they can keep building from cash already in the bank. So I measured each company's liquidity (cash plus short-term investments) against its annual capex — years of capex sitting in reserve.

@@ -1,0 +1,17 @@
+ticker,company,layer,capex_usd_bn,currency,capex_local_bn,fiscal_period,fx_basis,is_total_capex,ai_relevance,confidence,source_url
+TSM,Taiwan Semiconductor (TSMC),Foundry / memory,40.9,TWD,1272.4,FY2025 (Dec 2025),USD as reported; USD/TWD 31.17 2025 avg,true,high,high,https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000008/a4q25e_withguidancexfinal.htm
+005930.KS,Samsung Electronics (total; semiconductor div $33.4bn),Foundry / memory,37.1,KRW,52700,FY2025 (Dec 2025),USD/KRW 1421 2025 avg,true,high,high,https://news.samsung.com/global/samsung-electronics-announces-fourth-quarter-and-fy-2025-results
+000660.KS,SK Hynix,Foundry / memory,19.4,KRW,27519,FY2025 (Dec 2025),USD/KRW 1421 2025 avg,true,high,high,https://news.skhynix.com/sk-hynix-announces-fy25-financial-results/
+private,ByteDance (private; estimated),Hyperscaler,20.8,RMB,150,FY2025 (Dec 2025),USD/CNY 7.19 2025 avg,true,high,low,https://www.reuters.com/technology/
+BABA,Alibaba Group,Hyperscaler,11.8,RMB,85.97,FY2025 (Mar 2025),USD/RMB 7.26 Mar-2025 spot,true,high,high,https://data.alibabagroup.com/
+0700.HK,Tencent,Hyperscaler,11.0,RMB,79.2,FY2025 (Dec 2025),USD/CNY 7.19 2025 avg,true,high,high,https://static.www.tencent.com/uploads/2026/03/18/
+0981.HK,SMIC,Foundry / memory,8.1,USD,8.1,FY2025 (Dec 2025),reports in USD,true,medium,high,https://www.smics.com/en/site/news_read/7949
+2317.TW,Hon Hai / Foxconn,Servers / ODM,5.6,TWD,173.76,FY2025 (Dec 2025),USD/TWD 31.17 2025 avg,true,medium,high,https://stockanalysis.com/quote/tpe/2317/financials/cash-flow-statement/
+285A.T,Kioxia Holdings,Foundry / memory,1.9,JPY,281.06,FY2025 (Mar 2026),USD/JPY 150 period avg,true,high,high,https://www.kioxia-holdings.com/en-jp/ir/library/securities.html
+0992.HK,Lenovo,Servers / ODM,1.9,USD,1.859,FY2025/26 (Mar 2026),reports in USD,true,medium,high,https://doc.irasia.com/listco/hk/lenovo/annual/2026/res.pdf
+ASML,ASML Holding,Semicap equipment,1.8,EUR,1.57,FY2025 (Dec 2025),EUR/USD 1.13 2025 avg,true,low,high,https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000937966
+BIDU,Baidu,Hyperscaler,1.7,RMB,11.98,FY2025 (Dec 2025),USD/RMB 6.99 year-end,true,high,high,https://www.prnewswire.com/news-releases/baidu-announces-fourth-quarter-and-fiscal-year-2025-results
+UMC,United Microelectronics (UMC),Foundry / memory,1.5,TWD,47.75,FY2025 (Dec 2025),USD/TWD 31.37 year-end,true,low,high,https://www.sec.gov/Archives/edgar/data/1033767/000119312526193757/d91630d20f.htm
+2308.TW,Delta Electronics,Power / cooling,1.5,TWD,46.1,FY2025 (Dec 2025),USD/TWD 31.17 2025 avg,true,high,high,https://stockanalysis.com/quote/tpe/2308/financials/cash-flow-statement/
+8035.T,Tokyo Electron,Semicap equipment,1.4,JPY,216.0,FY2026 (Mar 2026),USD/JPY 150 period avg,true,low,high,https://www.tel.com/ir/library/report/index.html
+4062.T,Ibiden,Networking / optical,0.6,JPY,106.1,FY2025 (Mar 2026),USD/JPY 150 (range $0.4-0.7),true,medium,medium,https://www.ibiden.com/ir/items/ConsolidatedFinancialResultsFY2025.pdf

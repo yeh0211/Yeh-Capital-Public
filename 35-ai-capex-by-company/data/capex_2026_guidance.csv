@@ -1,0 +1,10 @@
+ticker,company,actual_usd_bn,guidance_usd_bn,guidance_low,guidance_high,basis,kind
+AMZN,Amazon,131,200,,,CY2026 guidance,guidance
+MSFT,Microsoft,89,190,,,CY2026 guidance,guidance
+GOOGL,Alphabet,91,185,180,190,CY2026 guidance,guidance
+META,Meta,72,135,125,145,FY2026 guidance,guidance
+ORCL,Oracle,56,93,90,95,FY2027 guidance,guidance
+TSM,TSMC,41,54,52,56,CY2026 guidance,guidance
+005930.KS,Samsung (semi div),33,43,40,48,CY2026 estimate,guidance
+AAPL,Apple,13,14,,,FY2026 consensus,estimate
+NVDA,Nvidia,6,9,8,10,FY2027 estimate,estimate

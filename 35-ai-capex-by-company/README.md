@@ -11,8 +11,9 @@
 - Everyone else barely spends. Fabless silicon (Nvidia, Broadcom, AMD) and software (Palantir, Salesforce) run capex **under 3% of revenue** and throw off huge free cash flow. They *monetize* the build; they don't pay for it.
 - The fragility is not the size of the spend — it is **how it's funded**. The cash-rich core self-funds (Microsoft, Alphabet, Meta, Nvidia all print double-digit-billions of free cash flow even after the build). The danger sits in a small edge that spends **more than its entire operating cash flow**: Oracle (−$24bn free cash flow), CoreWeave (capex 3.4× operating cash), and the neoclouds (capex 2–6× revenue, several with negative operating cash flow).
 - **Following the cash (the deeper cut): in aggregate the build pays for itself.** The 45 names generated **$910bn of operating cash against $520bn of capex — a $390bn surplus** — and still returned **$182bn to shareholders**. Even the five biggest spenders self-fund (hyperscaler operating cash $588bn vs $413bn capex). "AI is a credit bubble" fails at the aggregate.
-- **The debt is a choice for the core, a necessity for the edge.** Alphabet added **$37bn of net new debt — the same as Oracle** — but Alphabet also returned $46bn to shareholders and earned +$73bn free cash flow, while Oracle returned nothing and burned −$24bn. The tell that separates them: returning cash while building. Only **4 of 45 are genuinely debt-funded** (Oracle + neoclouds + utilities). The war chest agrees: Nvidia holds 7.5 years of capex in cash, the core 1–1.5, Oracle 0.6, CoreWeave 0.3.
-- **Verdict: conditional.** "AI capex" as a market-wide phenomenon is a myth — it is five companies, and in aggregate they pay for it out of cash with a surplus. The systemic risk is narrow and nameable: Oracle and the neoclouds, the AI-build names funding with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash, on the thinnest cushions.
+- **The debt is a choice for the core, a necessity for the edge.** Alphabet added **$37bn of net new debt — the same as Oracle** — but Alphabet also returned $46bn to shareholders and earned +$73bn free cash flow, while Oracle returned nothing and burned −$24bn. The tell that separates them: returning cash while building. Just **7 of 45 are debt-funded** (Oracle, three neoclouds, a data-center REIT, and two regulated utilities); strip the utilities and the AI-build set is five names, only one of them a mega-cap. The war chest agrees: Nvidia holds 7.5 years of capex in cash, the core 1–1.5, Oracle 0.6, CoreWeave 0.3.
+- **Going global (16 foreign giants added): the true total is ~$687bn across 61 companies** ($520bn US, $167bn foreign). Concentration softens exactly as the first cut predicted — the top-five US clouds fall from 79% of the US table to **60% of the global total** — but they still lead: only TSMC ($41bn) and Samsung ($37bn) crack the top tier, and the whole Chinese cloud sector (Alibaba+Tencent+Baidu+ByteDance ≈ $45bn) is **out-spent by the US hyperscalers ~9 to 1.** The one thing the US-only view badly missed: **foundry & memory is the real #2 layer at $139bn and 78% offshore** — the chips are made where the US filings can't see.
+- **Verdict: conditional.** "AI capex" as a market-wide phenomenon is a myth — it is a handful of US clouds plus the Asian fabs that supply them, and in aggregate the spenders pay for it out of cash with a surplus. The systemic risk is narrow and nameable: Oracle and the neoclouds, the AI-build names funding with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash, on the thinnest cushions.
 
 This builds on study [27 — the AI capital cycle](../27-ai-capital-cycle/) (which priced the *blast radius* of a capex cut) and study [30 — LLM players forecast](../30-llm-players-forecast/) (which mapped the break-order). Here I do the thing under both: put a real, sourced capex number on every company and ask who can pay for what they started.
 
@@ -195,7 +196,7 @@ net_return = buybacks - stock_issued            # >0 = handing cash back
 
 The single most revealing number in the whole study: **Alphabet added $37bn of net new debt this year — exactly as much as Oracle did.** But Alphabet also generated +$73bn of free cash flow and handed +$46bn back to shareholders in buybacks. Oracle generated **−$24bn of free cash flow, returned nothing, and is funding the gap with the borrowing.** Same $37bn of debt; opposite meaning. Meta is Alphabet's twin (+$30bn debt, +$26bn returned, +$46bn FCF). Microsoft actually *paid down* debt and returned $16bn. The core borrows the way a homeowner with full pockets takes a cheap mortgage; Oracle borrows the way someone covers a shortfall.
 
-Across all 45, the funding split is lopsided toward health: **32 of 45 self-fund the build** (21 of them while also returning cash), and only **four are genuinely debt-funded** (Oracle, CoreWeave, and the two regulated utilities) with another four raising equity. Among the five hyperscalers, four self-fund and **Oracle stands completely alone** as the one paying for its build with outside money.
+Across all 45, the funding split is lopsided toward health: **32 of 45 self-fund the build** (21 of them while also returning cash). Only **seven are debt-funded** — Oracle, three neoclouds (CoreWeave, TeraWulf, Cipher), a data-center REIT (Digital Realty), and two regulated utilities (Duke, Southern) — and one more, Intel, is raising equity. Strip the two utilities (whose debt-funded capex programs are normal and AI-incidental) and the AI-build debt-funded set is five names: Oracle plus four small ones. Among the five hyperscalers, four self-fund and **Oracle stands completely alone** as the one paying for its build with outside money.
 
 **Why (mechanism).** Issuing cheap investment-grade debt and using it to buy back stock is textbook balance-sheet optimization for a company swimming in cash — it lowers the cost of capital without touching the build. Oracle and the neoclouds aren't optimizing; their operating cash can't cover the capex, so the debt closes a real gap. The behavior looks superficially similar (both "borrowed billions") and is economically opposite.
 
@@ -225,11 +226,58 @@ Nvidia holds **7.5 years** of its (small) capex in cash. The cash-funded core ho
 
 **Verdict: confirmed.** The runway maps cleanly onto the core/edge split: the companies most dependent on outside financing are the ones with the least cash to survive without it.
 
+## Going global: what the US-only table couldn't see
+
+Everything above is US filers, because that's what EDGAR gives you cleanly. But the biggest single AI-capex node on earth — TSMC — files in Taipei, not Washington, and so do Samsung, SK Hynix, Alibaba and the rest of the Asian build. The honest caveat in the first cut was that my $520bn is the US slice, not the world. So I went and got the rest.
+
+**A word on the data, because this part is less clean.** The foreign figures don't come from one uniform pull — each is from that company's own audited filing or earnings release, in its own currency (TWD, KRW, RMB, JPY, EUR), converted to USD at a stated rate. To keep myself honest I ran every figure through two independent checks: one re-sourcing the number from a second outlet, one re-doing the currency conversion and judging AI-relevance. That caught real errors before they landed — a first pass had mislabelled Tokyo Electron's capex (it had picked up Kioxia's yen figure by mistake; the verifier caught the duplicate and corrected it to ¥216bn / $1.4bn), and flagged that Samsung's headline ₩47.5tn is the semiconductor division, not the ₩52.7tn company total. Each foreign figure carries its source, currency, FX basis and a confidence flag in [`data/foreign_capex.csv`](data/foreign_capex.csv). Treat this tier as well-sourced but not as homogeneous as the EDGAR core. Every figure is total-company capex, same basis as the US names.
+
+## Finding 7 — add the world, and concentration softens but the US clouds still lead
+
+**What I expected & why.** The first cut warned that the 79% top-five share was an overstatement of *US* concentration and would fall once the foreign foundries and clouds were added. I expected it to soften — the open question was by how much.
+
+**How I measured it.** Sixteen foreign AI value-chain spenders, latest fiscal year, USD-converted and verified, merged with the 45 US filers into one global table.
+
+```python
+global_total = us_total + foreign_total          # 520 + 167 = 687
+top5_share   = sum(global_sorted[:5]) / global_total   # the five US hyperscalers
+```
+
+**What the data shows.**
+
+![Top global spenders](figures/global_top.png)
+
+The true global figure is **about $687bn across 61 companies** — $520bn US, **$167bn foreign**. Adding the world does soften the concentration: the top five (still the five US hyperscalers) fall from 79% of the US table to **60% of the global total.** But "softer" is not "broad." TSMC ($41bn) and Samsung ($37bn) are the only non-US names that crack the top tier, slotting in right behind Oracle; the global top seven is five American clouds plus two Asian foundries. And the much-discussed Chinese cloud build is real but smaller than the headlines suggest: Alibaba, Tencent, Baidu and ByteDance together spend about **$45bn — the US hyperscalers outspend the entire Chinese cloud sector by roughly nine to one.**
+
+**Why (mechanism).** The demand for AI compute is overwhelmingly American (the US clouds and their customers), so the capex that chases that demand concentrates there too. The rest of the world's heavy spend sits one layer back, in the factories that build the chips — which is the next finding.
+
+**What I checked.** Two cross-checks. The verified web figure for TSMC's FY2025 ($40.9bn) lines up with the prior-year number EDGAR reports directly in TSMC's 20-F ($29bn FY2024, +37% to $41bn — consistent with TSMC's own guidance path). And Baidu, UMC and ASML, which file both ways, match between their home releases and their EDGAR filings to within rounding. The foreign tier is web-sourced, but where it overlaps EDGAR it ties.
+
+**Verdict: confirmed, as predicted.** Concentration softens from 79% to 60% once the world is included — real, but the US clouds remain the gravitational centre. The caveat was right and now it's quantified.
+
+## Finding 8 — the US-only view was blind to where the chips are actually made
+
+**What I expected & why.** If the foreign names are mostly foundries and memory makers, then the one layer the US table badly understated should be foundry/memory — in the US set it was a trivial $30bn (just Intel and Micron), because the giants that make the chips are all offshore.
+
+**How I measured it.** The same layer rollup as Finding 1, but global, split by where the company files.
+
+**What the data shows.**
+
+![Global capex by layer](figures/global_layers.png)
+
+The foundry/memory layer goes from $30bn in the US-only view to **$139bn globally — and 78% of it is foreign.** It is the **second-largest capex layer in the entire AI build**, behind only the hyperscalers, and the US table couldn't see four-fifths of it. TSMC, Samsung, SK Hynix and SMIC are the physical plant of the AI economy, and they sit outside US reporting. Hyperscalers are still far and away number one ($458bn globally, 67%), but the real shape of the build is now two big layers — the clouds that rent the compute and the fabs that make the silicon — with everything else a rounding error.
+
+**Why (mechanism).** This is the geography of the supply chain showing up in the accounts. The demand and the data centers are American; the fabrication is Taiwanese and Korean. A capex map drawn only from US filings sees the demand side clearly and the supply side barely at all — exactly backwards from where the capital intensity of *manufacturing* actually sits.
+
+**What I checked.** The foundry/memory total is dominated by four well-corroborated figures (TSMC $41bn, Samsung $37bn, SK Hynix $19bn, SMIC $8bn), each confirmed by two sources and, for TSMC and SMIC, cross-checked against filings. Even if every smaller foreign name were wrong, the layer's reordering (from sixth-largest to second) holds on those four alone.
+
+**Verdict: confirmed.** The single biggest thing a US-only capex map misses is the manufacturing base. Globally, foundry and memory is the #2 layer, and it lives offshore.
+
 ## Did I just find noise?
 
 A few honest stress tests:
 
-- **Is the concentration a universe artifact?** Covered in Finding 1 — drop the long tail, keep only $2bn+ spenders, and the top five are still 84%. Adding *more* small names would only push concentration higher, not lower.
+- **Is the concentration a universe artifact?** Covered in Finding 1 — drop the long tail, keep only the 17 names spending over $2bn, and the top five are still 82%. Adding *more* small names would only push concentration higher, not lower.
 - **Are the fragile names fragile because of one weird year?** Look at the growth, not just the level. CoreWeave, CIFR, APLD, WULF all show capex growing faster than revenue for two straight years — the gap is structural, not a one-off. Oracle's self-funding went from comfortable to 174% as FY2026 capex tripled; it's a deteriorating trend, not a blip.
 - **Costs / definitional drift.** Switching Amazon from gross to net capex (about $13bn of incentives) moves it from 95% to roughly 86% self-funding — still positive free cash flow, still in the safe camp. The verdict doesn't hinge on the gross/net choice for any name near the line.
 
@@ -245,35 +293,36 @@ Three competing stories, each tested:
 
 **Is "AI capex" a broad market-wide boom? No. Is it dangerous? Only at a nameable edge — conditional yes.**
 
-It is five companies (79% of $520bn), growing 73% a year, with the rest of the value chain collecting the spend as revenue rather than funding it. Following the cash settles the bigger question: in aggregate the build pays for itself — $910bn of operating cash against $520bn of capex, a $390bn surplus, with $182bn handed back to shareholders on top. The systemic risk is not the aggregate and not the dollar figure. It is a small, nameable set — Oracle and the neoclouds — that funds its build with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash and returning nothing, on the thinnest cash cushions in the group. They are the names to watch when the financing window tightens.
+It is five companies (79% of the US table, 60% of the $687bn global total), growing 73% a year, with the rest of the value chain collecting the spend as revenue rather than funding it — except the Asian fabs (TSMC, Samsung, SK Hynix), which make foundry & memory the second-biggest layer in the world once you look past US filings. Following the cash settles the bigger question: in aggregate the build pays for itself — $910bn of operating cash against $520bn of US capex, a $390bn surplus, with $182bn handed back to shareholders on top. The systemic risk is not the aggregate and not the dollar figure. It is a small, nameable set — Oracle and the neoclouds — that funds its build with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash and returning nothing, on the thinnest cash cushions in the group. They are the names to watch when the financing window tightens.
 
-| metric (45 US filers, latest FY) | value |
+| metric | value |
 |---|---:|
-| Total capex | $520bn |
-| Top-5 (hyperscaler) share | 79% |
-| Largest single spender (Amazon) | $132bn (25%) |
+| **Global capex (61 companies)** | **~$687bn** |
+| ...US filers (45) / foreign (16) | $520bn / $167bn |
+| Top-5 US-cloud share of global | 60% (was 79% of the US-only table) |
+| Largest spender (Amazon) | $132bn |
+| Largest foreign spender (TSMC) | $41bn |
+| Global #2 layer — foundry & memory | $139bn, 78% offshore |
+| US hyperscalers vs entire Chinese cloud | ~9 to 1 ($413bn vs $45bn) |
 | Hyperscaler combined capex YoY | +73% |
 | Median capex intensity (capex/revenue) | 6.5% |
-| Median fabless-silicon intensity | 2.8% |
-| **Aggregate operating cash flow** | **$910bn** |
-| **Aggregate capex** | **$520bn** |
+| **Aggregate operating cash flow (45 US)** | **$910bn** |
 | **Aggregate free cash flow (surplus)** | **+$390bn** |
 | **Net cash returned to shareholders** | **$182bn** |
-| **Net new debt raised** | **$176bn** |
 | Companies that self-fund the build | 32 of 45 (21 also return cash) |
-| Genuinely debt-funded (AI build) | Oracle + neoclouds (utilities separate) |
+| Debt-funded | 7 of 45 (Oracle, 3 neoclouds, a REIT, 2 utilities) |
 | War chest — Nvidia / core / Oracle / CoreWeave | 7.5 / ~1.3 / 0.6 / 0.3 yrs of capex in cash |
 
 ## Caveats (with the direction of the bias)
 
-- **US filers only — understates the true total.** TSMC, Samsung, SK Hynix, Alibaba, Tencent and Nebius file capex outside us-gaap XBRL and aren't here. They are huge: TSMC alone guided around $40bn for 2025. The real global AI capex number is well above $520bn; my concentration figure (top-5 = 79%) is therefore an *overstatement of US concentration* and would fall somewhat if foreign foundries/clouds were included. The *direction* of the finding (concentrated, demand-led) holds; the exact share would soften.
+- **Two data tiers — the foreign tier is less homogeneous.** The 45 US names are one uniform EDGAR pull; the 16 foreign names (Findings 7–8) are each from their own filing/earnings release, in five currencies, converted to USD and double-verified, but not the single clean source the US set is. ByteDance is private (estimated, flagged low-confidence). FX choice (period-average vs year-end) moves individual USD figures a few percent. The big four foreign figures (TSMC, Samsung, SK Hynix, SMIC) are well-corroborated and carry the conclusions; the small ones are directional. The global total is "about $687bn," not a to-the-dollar figure.
 - **Capex is not "AI capex."** It's all PP&E. Amazon's warehouses, the utilities' grid, Intel's non-AI fabs are all in here. This inflates the dollar magnitude (the AI-only figure is lower) but does not change who is self-funded vs not.
 - **Gross capex, mixed fiscal-year ends.** Gross of disposal proceeds/incentives (matters mainly for Amazon), and each company's latest full year ends on its own date, so this is a rolling snapshot, not a single instant.
 - **NextEra excluded** (custom capex tag); one real US power-capex spender is missing from the power layer.
 
 ## Reproducibility
 
-Every number here comes from SEC EDGAR XBRL, no API key required. The capex side and the funding side are each a pull plus a build:
+The US figures come from SEC EDGAR XBRL, no API key required. The capex side and the funding side are each a pull plus a build:
 
 ```bash
 cd 35-ai-capex-by-company
@@ -283,7 +332,11 @@ python3 src/02_figures.py          # -> figures/capex_*, fcf_*, intensity_*
 python3 src/03_pull_funding_edgar.py  # -> data/funding_raw.csv (cash, debt, buybacks, equity per name)
 python3 src/04_build_funding.py    # -> data/funding_table.csv  (war chest, net borrowing, funding class)
 python3 src/05_funding_figures.py  # -> figures/funding_quadrant, war_chest
+python3 src/06_pull_foreign_edgar.py  # -> data/foreign_edgar_anchor.csv (the EDGAR-reproducible foreign cross-check)
+python3 src/07_build_global.py     # -> data/global_capex.csv + figures/global_* (US + foreign merge)
 ```
+
+The foreign current-year figures (Findings 7–8) are not a re-runnable pull — they're each from the company's own filing/earnings release, verified against a second source, and stored with full provenance (source URL, currency, FX basis, confidence) in [`data/foreign_capex.csv`](data/foreign_capex.csv). `06_pull_foreign_edgar.py` independently pulls whatever those foreign 20-F filers report directly to EDGAR (lagged a year) as a reproducible cross-check.
 
 Two method subtleties, both in code:
 - **Capex tag selection.** Pick the tag whose series reaches the **latest** period end-date (so a tag-switcher like Amazon resolves to its current tag, not the retired one), and key annual values by the **period end-year**, not the filing's stated fiscal year (which mislabels comparative prior-year rows). That single fix is the difference between Amazon reading $5bn (stale tag, FY2016) and $132bn (current tag, FY2025).
@@ -291,8 +344,8 @@ Two method subtleties, both in code:
 
 ## References & forward pointer
 
-- **Data:** SEC EDGAR XBRL frames/company-concept API (public-domain corporate filings).
+- **Data:** SEC EDGAR XBRL frames/company-concept API for the 45 US filers and the foreign 20-F anchors (public-domain corporate filings); the 16 foreign current-year figures from each company's own audited filing / earnings release (sources in `data/foreign_capex.csv`).
 - **Builds on:** [27 — the AI capital cycle](../27-ai-capital-cycle/) (blast radius of a capex cut) and [30 — LLM players forecast](../30-llm-players-forecast/) (the break-order down the chain). This study supplies the per-company capex and funding numbers those two reason *about*.
-- **Next:** the natural extension is to add the foreign capex giants (TSMC, Samsung, SK Hynix, Alibaba) from their own filings to get a true global AI-capex total, and to track the self-funding ratio of the fragile edge quarter by quarter — it's the single most direct read on when the financing perimeter starts to bind.
+- **Next:** track the self-funding ratio of the fragile edge (Oracle, the neoclouds) quarter by quarter — it is the single most direct read on when the financing perimeter starts to bind — and convert the foreign tier to a programmatic IFRS-XBRL pull as more FY2025 20-Fs land on EDGAR, to put the global total on the same reproducible footing as the US core.
 
 *Research, not investment advice.*

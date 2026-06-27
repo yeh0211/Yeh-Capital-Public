@@ -1,0 +1,62 @@
+ticker,company,layer,capex_bn,region
+AMZN,AMZN,Hyperscaler,131.82,US filer
+GOOGL,GOOGL,Hyperscaler,91.45,US filer
+META,META,Hyperscaler,69.69,US filer
+MSFT,MSFT,Hyperscaler,64.55,US filer
+ORCL,ORCL,Hyperscaler,55.66,US filer
+TSM,Taiwan Semiconductor (TSMC),Foundry / memory,40.9,Foreign
+005930.KS,Samsung Electronics (total; semiconductor div $33.4bn),Foundry / memory,37.1,Foreign
+private,ByteDance (private; estimated),Hyperscaler,20.8,Foreign
+000660.KS,SK Hynix,Foundry / memory,19.4,Foreign
+MU,MU,Foundry / memory,15.86,US filer
+INTC,INTC,Foundry / memory,14.65,US filer
+DUK,DUK,Power / cooling,14.02,US filer
+SO,SO,Power / cooling,12.74,US filer
+BABA,Alibaba Group,Hyperscaler,11.8,Foreign
+0700.HK,Tencent,Hyperscaler,11.0,Foreign
+CRWV,CRWV,Neocloud,10.31,US filer
+0981.HK,SMIC,Foundry / memory,8.1,Foreign
+NVDA,NVDA,Compute silicon,6.04,US filer
+2317.TW,Hon Hai / Foxconn,Servers / ODM,5.6,Foreign
+EQIX,EQIX,Data-center REIT,4.31,US filer
+DLR,DLR,Data-center REIT,3.18,US filer
+CEG,CEG,Power / cooling,2.95,US filer
+DELL,DELL,Servers / ODM,2.63,US filer
+HPE,HPE,Servers / ODM,2.29,US filer
+AMAT,AMAT,Semicap equipment,2.26,US filer
+285A.T,Kioxia Holdings,Foundry / memory,1.9,Foreign
+0992.HK,Lenovo,Servers / ODM,1.9,Foreign
+ASML,ASML Holding,Semicap equipment,1.8,Foreign
+BIDU,Baidu,Hyperscaler,1.7,Foreign
+UMC,United Microelectronics (UMC),Foundry / memory,1.5,Foreign
+2308.TW,Delta Electronics,Power / cooling,1.5,Foreign
+8035.T,Tokyo Electron,Semicap equipment,1.4,Foreign
+GEV,GEV,Power / cooling,1.28,US filer
+QCOM,QCOM,Compute silicon,1.19,US filer
+IBM,IBM,Software / apps,1.09,US filer
+WULF,WULF,Neocloud,1.06,US filer
+AMD,AMD,Compute silicon,0.97,US filer
+ETN,ETN,Power / cooling,0.92,US filer
+CSCO,CSCO,Networking / optical,0.91,US filer
+NOW,NOW,Software / apps,0.87,US filer
+LRCX,LRCX,Semicap equipment,0.76,US filer
+CORZ,CORZ,Neocloud,0.73,US filer
+APLD,APLD,Neocloud,0.68,US filer
+AVGO,AVGO,Compute silicon,0.62,US filer
+PWR,PWR,Power / cooling,0.61,US filer
+4062.T,Ibiden,Networking / optical,0.6,Foreign
+CRM,CRM,Software / apps,0.59,US filer
+IREN,IREN,Neocloud,0.57,US filer
+CIFR,CIFR,Neocloud,0.49,US filer
+COHR,COHR,Networking / optical,0.44,US filer
+MRVL,MRVL,Compute silicon,0.35,US filer
+KLAC,KLAC,Semicap equipment,0.34,US filer
+LITE,LITE,Networking / optical,0.23,US filer
+VRT,VRT,Power / cooling,0.22,US filer
+SMCI,SMCI,Servers / ODM,0.13,US filer
+ANET,ANET,Networking / optical,0.12,US filer
+SNOW,SNOW,Software / apps,0.1,US filer
+CRDO,CRDO,Networking / optical,0.06,US filer
+BE,BE,Power / cooling,0.06,US filer
+ONTO,ONTO,Semicap equipment,0.03,US filer
+PLTR,PLTR,Software / apps,0.03,US filer

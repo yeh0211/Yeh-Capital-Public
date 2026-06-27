@@ -1,0 +1,8 @@
+ticker,title,fiscal_end,capex_usd_bn,capex_local_bn,local_ccy,tag,source
+TSM,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,2024-12-31,29.16,956.01,TWD,PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,SEC EDGAR 20-F
+UMC,UNITED MICROELECTRONICS CORP,2024-12-31,2.7,88.54,TWD,PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,SEC EDGAR 20-F
+ASML,ASML HOLDING NV,2025-12-31,,1.57,EUR,PaymentsToAcquirePropertyPlantAndEquipment,SEC EDGAR 20-F
+NBIS,Nebius Group N.V.,2025-12-31,4.07,90.64,RUB,PaymentsToAcquirePropertyPlantAndEquipment,SEC EDGAR 20-F
+BIDU,"Baidu, Inc.",2025-12-31,1.73,12.07,CNY,PaymentsToAcquirePropertyPlantAndEquipment,SEC EDGAR 20-F
+SONY,Sony Group Corp,2021-03-31,,512.24,JPY,PaymentsToAcquireProductiveAssets,SEC EDGAR 20-F
+LPL,"LG Display Co., Ltd.",2009-12-31,0.88,2129.74,KRW,PaymentsToAcquirePropertyPlantAndEquipment,SEC EDGAR 20-F

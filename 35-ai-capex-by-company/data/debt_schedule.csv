@@ -1,0 +1,21 @@
+ticker,company,sp,moodys,grade,total_debt_bn,net_cash,pct_fixed,pct_floating,wavg_coupon_pct,due_3yr_bn,wam_years,secured,exposure,note
+AMZN,Amazon,AA,A1,IG,69,yes,100,0,4.0,16,14,no,low,all fixed unsecured; net cash; no wall
+GOOGL,Alphabet,AA+,Aa2,IG,82,yes,98,2,4.0,2,16,no,low,98% fixed; ~$45bn net cash; trivial near-term wall
+META,Meta,AA-,Aa3,IG,59,yes,100,0,4.4,4,18,no,low,100% fixed; 83% matures after 2030
+MSFT,Microsoft,AAA,Aaa,IG,43,yes,100,0,4.4,12,14,no,low,top-rated; all fixed; pays debt down
+ORCL,Oracle,BBB,Baa2,IG (neg),130,no,98,2,4.8,23,14,no,high,existing debt fixed BUT BBB/neg and issuing ~$37bn/yr of NEW debt - refinancing/credit risk on new money
+TSM,TSMC,AA-,Aa3,IG,33,yes,96,4,1.9,15,6,no,low,mostly fixed; net cash; low coupon
+005930.KS,Samsung,AA-,Aa2,IG,18,yes,87,13,3.0,0,3,no,low,net cash; mostly fixed
+private,ByteDance,n/a,n/a,unrated,28,yes,5,95,5.2,20,4,no,high,~95% FLOATING bank debt - reprices immediately if rates rise; private/unrated
+000660.KS,SK Hynix,BBB+,Baa1,IG,14,yes,75,25,2.8,7,4,no,low,net cash cushions the 25% floating
+MU,Micron,BBB,Baa2,IG,15,no,93,7,5.2,2,8,no,low,mostly fixed; small wall
+INTC,Intel,BBB,Baa2,IG (neg),47,no,76,24,4.6,10,13,no,high,BBB/neg, negative FCF, leans on strategic equity; ~24% floating
+DUK,Duke,BBB,Baa2,IG,86,no,93,7,4.4,13,14,yes,low,regulated utility; fixed long-dated, debt recovered via tariffs
+SO,Southern,BBB+,Baa1,IG,73,no,92,8,4.3,15,16,yes,low,regulated utility; fixed long-dated
+AAPL,Apple,AA+,Aaa,IG,99,yes,90,10,3.2,40,10,no,low,term notes fixed + some commercial paper; deep net cash
+BABA,Alibaba,A+,A1,IG,38,yes,81,19,2.4,9,5,no,low,net cash; mostly fixed + convertibles
+0700.HK,Tencent,A+,A1,IG,47,yes,64,36,4.0,23,5,no,low,36% floating but deep net cash offsets it
+CRWV,CoreWeave,B+,Ba3,junk,22,no,49,51,9.1,13,3,yes,high,junk; 51% floating at ~9%; GPU/contract-secured; ~59% of debt due within 3yr
+0981.HK,SMIC,BB+,Baa3,split,13,yes,47,53,1.8,3,6,yes,medium,53% floating + secured but net cash
+NVDA,Nvidia,AA-,Aa1,IG,34,yes,100,0,4.3,2,10,no,low,all fixed; +$97bn FCF; no wall
+2317.TW,Foxconn,A-,n/a,IG,40,yes,40,60,3.0,30,3,no,low,heavy short-term bank debt (floating) but net cash; split approx

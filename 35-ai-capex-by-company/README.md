@@ -93,6 +93,12 @@ top5_share = top5 / total                          # 0.79
 
 One layer is four-fifths of the spend. The capex concentration index (Herfindahl on company shares) is about **1,440** — squarely in "concentrated" territory for what's supposed to be a whole-sector boom. And the five aren't coasting: combined hyperscaler capex went from **$238bn to $413bn in a single year, +73%**, led by Oracle (+162%), Meta (+87%) and Alphabet (+74%).
 
+The year-by-year ramp is the clearest single picture in the study — a decade of gently rising spend, then a wall of money from 2024:
+
+![Hyperscaler capex ramp, year by year](figures/capex_ramp.png)
+
+The shape is a hockey stick. Amazon roughly doubled in two years (FY2023 $53bn to FY2025 $132bn); Oracle's line (accent) barely moved for years and then went near-vertical into FY2026. The flat dashed line along the bottom is Nvidia: even in its own fiscal 2026 it spent about $6bn — it sells the shovels, it doesn't dig.
+
 **Why (mechanism).** This is what a demand-pull buildout looks like. The hyperscalers own the end demand (cloud, ads, AI services), so they're the ones writing checks for land, buildings, power and GPUs. Everyone upstream gets paid *by* those checks — they don't have to write their own.
 
 **What I checked.** Could the concentration be an artifact of my universe — did I just include too many tiny names downstream? No: even if I drop the entire tail and keep only the 17 names spending over $2bn, the top five are still 82% of *that* subset. The cliff is real, not a denominator trick.
@@ -352,6 +358,7 @@ cd 35-ai-capex-by-company
 python3 src/pull_capex_edgar.py    # -> data/capex_raw.csv     (capex/revenue/OCF per name, all fiscal years)
 python3 src/01_build_table.py      # -> data/capex_table.csv    (intensity, self-funding, FCF, concentration)
 python3 src/02_figures.py          # -> figures/capex_*, fcf_*, intensity_*
+python3 src/08_capex_ramp.py       # -> figures/capex_ramp.png (the YoY ramp line chart)
 python3 src/03_pull_funding_edgar.py  # -> data/funding_raw.csv (cash, debt, buybacks, equity per name)
 python3 src/04_build_funding.py    # -> data/funding_table.csv  (war chest, net borrowing, funding class)
 python3 src/05_funding_figures.py  # -> figures/funding_quadrant, war_chest

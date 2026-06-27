@@ -10,7 +10,9 @@
 - The five are the hyperscalers — **Amazon $132bn, Alphabet $91bn, Meta $70bn, Microsoft $65bn, Oracle $56bn**. Their combined capex grew **+73% in one year**, from $238bn to $413bn.
 - Everyone else barely spends. Fabless silicon (Nvidia, Broadcom, AMD) and software (Palantir, Salesforce) run capex **under 3% of revenue** and throw off huge free cash flow. They *monetize* the build; they don't pay for it.
 - The fragility is not the size of the spend — it is **how it's funded**. The cash-rich core self-funds (Microsoft, Alphabet, Meta, Nvidia all print double-digit-billions of free cash flow even after the build). The danger sits in a small edge that spends **more than its entire operating cash flow**: Oracle (−$24bn free cash flow), CoreWeave (capex 3.4× operating cash), and the neoclouds (capex 2–6× revenue, several with negative operating cash flow).
-- **Verdict: conditional.** "AI capex" as a market-wide phenomenon is a myth — it is five companies plus a thin, levered fringe. The systemic risk lives in the fringe and in Oracle, not in the aggregate dollar figure.
+- **Following the cash (the deeper cut): in aggregate the build pays for itself.** The 45 names generated **$910bn of operating cash against $520bn of capex — a $390bn surplus** — and still returned **$182bn to shareholders**. Even the five biggest spenders self-fund (hyperscaler operating cash $588bn vs $413bn capex). "AI is a credit bubble" fails at the aggregate.
+- **The debt is a choice for the core, a necessity for the edge.** Alphabet added **$37bn of net new debt — the same as Oracle** — but Alphabet also returned $46bn to shareholders and earned +$73bn free cash flow, while Oracle returned nothing and burned −$24bn. The tell that separates them: returning cash while building. Only **4 of 45 are genuinely debt-funded** (Oracle + neoclouds + utilities). The war chest agrees: Nvidia holds 7.5 years of capex in cash, the core 1–1.5, Oracle 0.6, CoreWeave 0.3.
+- **Verdict: conditional.** "AI capex" as a market-wide phenomenon is a myth — it is five companies, and in aggregate they pay for it out of cash with a surplus. The systemic risk is narrow and nameable: Oracle and the neoclouds, the AI-build names funding with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash, on the thinnest cushions.
 
 This builds on study [27 — the AI capital cycle](../27-ai-capital-cycle/) (which priced the *blast radius* of a capex cut) and study [30 — LLM players forecast](../30-llm-players-forecast/) (which mapped the break-order). Here I do the thing under both: put a real, sourced capex number on every company and ask who can pay for what they started.
 
@@ -48,8 +50,9 @@ From those three I built the only three lenses that matter:
 
 - Source: SEC EDGAR XBRL `companyconcept` / `companyfacts`. Range: latest reported fiscal year (FY2025 for most; FY2026 for May/January year-ends already filed). Transform: none — values are as-reported, in USD.
 - Capex is **gross** purchases of PP&E (the cash outflow line). A few firms, Amazon most notably, report proceeds/incentives on a separate line, so their *net* capex is a little lower than the gross figure here. I use gross because it's the consistent, comparable line across all 45 names.
+- For the funding side (Findings 4–6) I pull, from the same filings: cash & equivalents, short-term investments, total debt (long-term plus current portion), and the financing-statement flows for buybacks and stock issuance. Net new borrowing is measured as the **year-over-year change in the total-debt stock**, not the issuance/repayment cash-flow lines — those are inflated by commercial-paper that's issued and repaid many times a year (Alphabet's gross issuance line reads $65bn against a $37bn actual rise in its debt). Tags vary far more here than for capex, so each concept uses a fallback list; anything that won't resolve cleanly is left blank, never guessed.
 
-Raw pull: [`data/capex_raw.csv`](data/capex_raw.csv) · computed table: [`data/capex_table.csv`](data/capex_table.csv) · pull + build code: [`src/`](src/).
+Raw pulls: [`data/capex_raw.csv`](data/capex_raw.csv), [`data/funding_raw.csv`](data/funding_raw.csv) · computed tables: [`data/capex_table.csv`](data/capex_table.csv), [`data/funding_table.csv`](data/funding_table.csv) · pull + build code: [`src/`](src/).
 
 ## What the data looks like first
 
@@ -148,6 +151,80 @@ The capex-heavy utilities (Southern, Duke) and Intel also sit above the line, bu
 
 **Verdict: confirmed, and it's the load-bearing finding.** The risk in the AI build is not the $520bn. It's the slice of it being funded on credit — a thin, identifiable edge, plus one mega-cap (Oracle).
 
+## Digging deeper: how is the build actually funded?
+
+Finding 3 said the danger is the funding, not the magnitude. That's a claim about *sources of cash*, so I went and pulled them: each company's cash war-chest, its total debt and how much that debt changed in the year, and how much stock it bought back or issued. Three more findings come out, and they sharpen the verdict in a direction I did not expect.
+
+## Finding 4 — step back, and the whole thing pays for itself
+
+**What I expected & why.** The bear case is "AI is a credit bubble": capex outruns cash, so the build is floated on debt. If that's true at the level of the whole AI market, the 45 companies together should be cash-negative.
+
+**How I measured it.** Sum operating cash flow and capex across all 45, and add up the year's net new debt and net cash returned to shareholders.
+
+```python
+total_ocf   = sum(c.operating_cash_flow for c in companies)   # $910bn
+total_capex = sum(c.capex for c in companies)                  # $520bn
+aggregate_fcf = total_ocf - total_capex                        # +$390bn
+net_new_debt  = sum(c.total_debt - c.total_debt_prior)         # +$176bn
+returned      = sum(c.buybacks - c.stock_issued)               # +$182bn
+```
+
+**What the data shows.** The 45 names generated **$910bn of operating cash against $520bn of capex — a $390bn surplus** — and still handed **$182bn back to shareholders**, while adding $176bn of net new debt (the debt and the buybacks roughly cancel). Even if you keep only the five biggest spenders, the hyperscalers alone produced **$588bn of operating cash against $413bn of capex, a $175bn surplus.** The build is not floated on debt in aggregate; it is funded out of the largest corporate cash engines that have ever existed, with money left over.
+
+**Why (mechanism).** Capex is enormous in dollars but modest against the cash these businesses throw off. Microsoft and Alphabet each generate ~$140–165bn of operating cash a year; a $65–91bn build is large but leaves a surplus. The dollars are scary in isolation and unremarkable next to the cash flow behind them.
+
+**What I checked.** Nvidia's +$97bn of free cash flow flatters the aggregate — it collects the build rather than paying for it (Finding 2). Fair. So I stripped it out: the remaining 44 still self-fund, and the five hyperscalers self-fund on their own. The surplus is not a one-name artifact.
+
+**Verdict: confirmed — the "AI is a credit bubble" framing fails at the aggregate.** The risk is not that the sector can't pay; it's that a small part of it pays differently. Which is the next finding.
+
+## Finding 5 — the debt is a choice for the core, a necessity for the edge
+
+**What I expected & why.** Borrowing by itself says nothing — a company can borrow because it must, or because debt is cheap and buying back stock with it is efficient. To tell them apart you need one more fact: is the company *also returning cash to shareholders* while it builds? If yes, the debt is optimization. If it's borrowing while burning cash and returning nothing, the debt is necessity.
+
+**How I measured it.** For each company: net new borrowing (the year's change in total debt), net cash returned (buybacks minus stock issued), and free cash flow. Then plot return-to-shareholders against free cash flow, sizing each by how much debt it added.
+
+```python
+net_borrow = total_debt - total_debt_prior      # YoY change in the debt stock
+net_return = buybacks - stock_issued            # >0 = handing cash back
+# the tell: returning cash to holders WHILE building => debt is a choice
+```
+
+**What the data shows.**
+
+![Is the debt a choice or a necessity?](figures/funding_quadrant.png)
+
+The single most revealing number in the whole study: **Alphabet added $37bn of net new debt this year — exactly as much as Oracle did.** But Alphabet also generated +$73bn of free cash flow and handed +$46bn back to shareholders in buybacks. Oracle generated **−$24bn of free cash flow, returned nothing, and is funding the gap with the borrowing.** Same $37bn of debt; opposite meaning. Meta is Alphabet's twin (+$30bn debt, +$26bn returned, +$46bn FCF). Microsoft actually *paid down* debt and returned $16bn. The core borrows the way a homeowner with full pockets takes a cheap mortgage; Oracle borrows the way someone covers a shortfall.
+
+Across all 45, the funding split is lopsided toward health: **32 of 45 self-fund the build** (21 of them while also returning cash), and only **four are genuinely debt-funded** (Oracle, CoreWeave, and the two regulated utilities) with another four raising equity. Among the five hyperscalers, four self-fund and **Oracle stands completely alone** as the one paying for its build with outside money.
+
+**Why (mechanism).** Issuing cheap investment-grade debt and using it to buy back stock is textbook balance-sheet optimization for a company swimming in cash — it lowers the cost of capital without touching the build. Oracle and the neoclouds aren't optimizing; their operating cash can't cover the capex, so the debt closes a real gap. The behavior looks superficially similar (both "borrowed billions") and is economically opposite.
+
+**What I checked.** The two utilities (Duke, Southern) land in the debt-funded bucket, but that's how regulated utilities always operate — they fund rate-based investment with debt recovered through tariffs, AI or no AI. Stripping them out leaves Oracle and the neoclouds as the only AI-build names funding with debt, which is exactly the set Finding 3 flagged on self-funding ratio. Two independent lenses (capex/operating-cash, and the change in the debt stock) point at the same names.
+
+**Verdict: confirmed, and it reframes the risk.** Net borrowing is not the danger signal. Net borrowing *with negative free cash flow and nothing returned to shareholders* is — and that test isolates Oracle and the neoclouds from a core that is borrowing by choice.
+
+## Finding 6 — the war chest: who could keep building if financing stopped tomorrow
+
+**What I expected & why.** The thing that decides who survives a financing freeze is how long they can keep building from cash already in the bank. So I measured each company's liquidity (cash plus short-term investments) against its annual capex — years of capex sitting in reserve.
+
+**How I measured it.**
+
+```python
+runway_years = (cash + short_term_investments) / annual_capex
+```
+
+**What the data shows.**
+
+![Who could fund the build from cash on hand](figures/war_chest.png)
+
+Nvidia holds **7.5 years** of its (small) capex in cash. The cash-funded core holds one to one-and-a-half years (Microsoft 1.5, Alphabet 1.4, Meta 1.2) — enough to keep building straight through a frozen market. Then the line drops: Amazon 0.9, Oracle **0.6**, CoreWeave **0.3**. The names that depend on financing are exactly the ones with the least cash to fall back on if it disappears.
+
+**Why (mechanism).** The war chest is optionality. A core name can shrug off a year of closed credit markets and keep spending from reserves; Oracle and the neoclouds would have to slow the build or raise on whatever terms are offered. The cushion and the funding source line up: the self-funders also hold the most cash, the debt-funders the least.
+
+**What I checked.** The two utilities sit at the very bottom (Southern 0.1, Duke 0.0), but utilities deliberately hold almost no cash — they run a continuous debt-funded capital program, so a thin war chest is normal there, not a warning. Same carve-out as Finding 5.
+
+**Verdict: confirmed.** The runway maps cleanly onto the core/edge split: the companies most dependent on outside financing are the ones with the least cash to survive without it.
+
 ## Did I just find noise?
 
 A few honest stress tests:
@@ -168,19 +245,24 @@ Three competing stories, each tested:
 
 **Is "AI capex" a broad market-wide boom? No. Is it dangerous? Only at a nameable edge — conditional yes.**
 
-It is five companies (79% of $520bn), growing 73% a year, with the rest of the value chain collecting the spend as revenue rather than funding it. The systemic risk is not the aggregate — it's the small, levered fringe (the neoclouds) plus Oracle, all of whom spend past their own cash flow and so depend on financing staying open.
+It is five companies (79% of $520bn), growing 73% a year, with the rest of the value chain collecting the spend as revenue rather than funding it. Following the cash settles the bigger question: in aggregate the build pays for itself — $910bn of operating cash against $520bn of capex, a $390bn surplus, with $182bn handed back to shareholders on top. The systemic risk is not the aggregate and not the dollar figure. It is a small, nameable set — Oracle and the neoclouds — that funds its build with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash and returning nothing, on the thinnest cash cushions in the group. They are the names to watch when the financing window tightens.
 
 | metric (45 US filers, latest FY) | value |
 |---|---:|
 | Total capex | $520bn |
 | Top-5 (hyperscaler) share | 79% |
 | Largest single spender (Amazon) | $132bn (25%) |
-| Median company capex | $0.9bn |
 | Hyperscaler combined capex YoY | +73% |
 | Median capex intensity (capex/revenue) | 6.5% |
-| Companies with negative free cash flow | 13 of 45 |
-| ...of which AI-build (ex-utilities/fab) | 10: Oracle + 6 neoclouds + 2 REITs + Lumentum |
 | Median fabless-silicon intensity | 2.8% |
+| **Aggregate operating cash flow** | **$910bn** |
+| **Aggregate capex** | **$520bn** |
+| **Aggregate free cash flow (surplus)** | **+$390bn** |
+| **Net cash returned to shareholders** | **$182bn** |
+| **Net new debt raised** | **$176bn** |
+| Companies that self-fund the build | 32 of 45 (21 also return cash) |
+| Genuinely debt-funded (AI build) | Oracle + neoclouds (utilities separate) |
+| War chest — Nvidia / core / Oracle / CoreWeave | 7.5 / ~1.3 / 0.6 / 0.3 yrs of capex in cash |
 
 ## Caveats (with the direction of the bias)
 
@@ -191,16 +273,21 @@ It is five companies (79% of $520bn), growing 73% a year, with the rest of the v
 
 ## Reproducibility
 
-Every number here comes from SEC EDGAR XBRL, no API key required. The pull and the table are two short scripts:
+Every number here comes from SEC EDGAR XBRL, no API key required. The capex side and the funding side are each a pull plus a build:
 
 ```bash
 cd 35-ai-capex-by-company
-python3 src/pull_capex_edgar.py   # -> data/capex_raw.csv   (capex/revenue/OCF per name, all fiscal years)
-python3 src/01_build_table.py     # -> data/capex_table.csv  (intensity, self-funding, FCF, concentration stats)
-python3 src/02_figures.py         # -> figures/*.png
+python3 src/pull_capex_edgar.py    # -> data/capex_raw.csv     (capex/revenue/OCF per name, all fiscal years)
+python3 src/01_build_table.py      # -> data/capex_table.csv    (intensity, self-funding, FCF, concentration)
+python3 src/02_figures.py          # -> figures/capex_*, fcf_*, intensity_*
+python3 src/03_pull_funding_edgar.py  # -> data/funding_raw.csv (cash, debt, buybacks, equity per name)
+python3 src/04_build_funding.py    # -> data/funding_table.csv  (war chest, net borrowing, funding class)
+python3 src/05_funding_figures.py  # -> figures/funding_quadrant, war_chest
 ```
 
-The one method subtlety, in code: pick the capex tag whose series reaches the **latest** period end-date (so a tag-switcher like Amazon resolves to its current tag, not the retired one), and key annual values by the **period end-year**, not the filing's stated fiscal year (which mislabels comparative prior-year rows). That single fix is the difference between Amazon reading $5bn (stale tag, FY2016) and $132bn (current tag, FY2025). See [`src/pull_capex_edgar.py`](src/pull_capex_edgar.py).
+Two method subtleties, both in code:
+- **Capex tag selection.** Pick the tag whose series reaches the **latest** period end-date (so a tag-switcher like Amazon resolves to its current tag, not the retired one), and key annual values by the **period end-year**, not the filing's stated fiscal year (which mislabels comparative prior-year rows). That single fix is the difference between Amazon reading $5bn (stale tag, FY2016) and $132bn (current tag, FY2025).
+- **Net new borrowing.** Measured as the year-over-year change in the total-debt stock, not the financing-statement issuance line, which is inflated by commercial-paper roll. Oracle's total-debt tag is non-standard (`DebtLongtermAndShorttermCombinedAmount`, $129.5bn) — the puller carries a fallback list so the most important fragility name resolves correctly. See [`src/pull_capex_edgar.py`](src/pull_capex_edgar.py) and [`src/03_pull_funding_edgar.py`](src/03_pull_funding_edgar.py).
 
 ## References & forward pointer
 

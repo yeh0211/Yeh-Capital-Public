@@ -1,0 +1,46 @@
+ticker,layer,capex_bn,ocf_bn,fcf_bn,cash_bn,liquidity_bn,runway_years,total_debt_bn,net_borrow_bn,debt_cover_pct,net_return_bn,funding_class
+AMZN,Hyperscaler,131.82,139.51,7.7,86.81,123.03,0.93,68.4,10.76,8.2,0.0,"self-funded, building"
+GOOGL,Hyperscaler,91.45,164.71,73.27,30.71,126.84,1.39,48.54,36.66,40.1,45.71,self-funded + returning cash
+META,Hyperscaler,69.69,115.8,46.11,35.87,81.59,1.17,58.74,29.92,42.9,26.25,self-funded + returning cash
+MSFT,Hyperscaler,64.55,136.16,71.61,30.24,94.56,1.46,43.15,-1.79,-2.8,16.36,self-funded + returning cash
+ORCL,Hyperscaler,55.66,31.98,-23.69,31.29,31.89,0.57,129.54,36.97,66.4,-1.35,debt-funded
+MU,Foundry / memory,15.86,17.52,1.67,9.64,10.31,0.65,14.58,1.18,7.4,-1.36,"self-funded, building"
+INTC,Foundry / memory,14.65,9.7,-4.95,14.27,37.42,2.55,46.59,-3.43,-23.4,-0.92,raising equity
+DUK,Power / cooling,14.02,12.33,-1.69,0.24,0.29,0.02,87.21,6.52,46.5,1.48,debt-funded
+SO,Power / cooling,12.74,9.8,-2.94,1.64,1.64,0.13,71.87,8.38,65.8,-1.62,debt-funded
+CRWV,Neocloud,10.31,3.06,-7.25,3.13,3.16,0.31,21.37,13.45,130.5,0.0,debt-funded
+NVDA,Compute silicon,6.04,102.72,96.68,10.61,45.23,7.49,8.47,0.01,0.2,39.91,self-funded + returning cash
+EQIX,Data-center REIT,4.31,3.91,-0.4,1.73,3.23,0.75,1.5,0.0,0.0,-0.1,mixed / small
+DLR,Data-center REIT,3.18,2.41,-0.77,3.45,3.45,1.08,16.19,2.23,70.1,-0.41,debt-funded
+CEG,Power / cooling,2.95,4.24,1.29,3.64,3.64,1.23,7.34,-1.07,-36.3,0.4,self-funded + returning cash
+DELL,Servers / ODM,2.63,11.19,8.55,11.53,11.53,4.38,31.5,6.94,263.9,6.01,self-funded + returning cash
+HPE,Servers / ODM,2.29,2.92,0.63,5.77,5.77,2.52,21.55,4.08,178.2,0.2,"self-funded, building"
+AMAT,Semicap equipment,2.26,7.96,5.7,7.24,8.57,3.79,5.3,1.98,87.6,4.63,self-funded + returning cash
+GEV,Power / cooling,1.28,4.99,3.71,8.85,8.85,6.91,,,,3.32,self-funded + returning cash
+QCOM,Compute silicon,1.19,14.01,12.82,5.52,10.15,8.53,14.81,0.18,15.1,8.39,self-funded + returning cash
+IBM,Software / apps,1.09,13.19,12.1,13.59,14.19,13.02,61.26,6.32,579.8,1.36,self-funded + returning cash
+WULF,Neocloud,1.06,-0.12,-1.18,3.27,3.27,3.08,3.1,3.1,292.5,0.03,debt-funded
+AMD,Compute silicon,0.97,7.71,6.74,5.54,10.55,10.88,3.22,1.5,154.6,1.32,self-funded + returning cash
+ETN,Power / cooling,0.92,4.47,3.55,0.62,0.8,0.87,9.89,0.74,80.4,1.86,self-funded + returning cash
+CSCO,Networking / optical,0.91,14.19,13.29,8.35,16.11,17.7,24.61,4.5,494.5,5.26,self-funded + returning cash
+NOW,Software / apps,0.87,5.44,4.58,3.73,6.28,7.22,,,,1.77,self-funded + returning cash
+LRCX,Semicap equipment,0.76,6.17,5.41,6.39,8.97,11.8,4.47,-0.5,-65.8,3.42,self-funded + returning cash
+CORZ,Neocloud,0.73,0.28,-0.45,0.31,0.31,0.42,1.06,-0.01,-1.4,0.0,mixed / small
+APLD,Neocloud,0.68,-0.12,-0.8,0.04,0.04,0.06,0.01,0.01,1.5,-0.16,mixed / small
+AVGO,Compute silicon,0.62,27.54,26.91,16.18,16.18,26.1,67.12,-2.73,-440.3,2.23,self-funded + returning cash
+PWR,Power / cooling,0.61,2.23,1.62,0.44,0.44,0.72,5.99,1.83,300.0,0.13,"self-funded, building"
+CRM,Software / apps,0.59,15.0,14.4,7.33,9.56,16.2,14.44,6.01,1018.6,12.6,self-funded + returning cash
+IREN,Neocloud,0.57,0.25,-0.33,0.56,0.56,0.98,,,,,mixed / small
+CIFR,Neocloud,0.49,-0.21,-0.7,0.63,0.8,1.63,2.75,2.75,561.2,-0.11,debt-funded
+COHR,Networking / optical,0.44,0.63,0.19,0.91,0.91,2.07,3.69,-0.41,-93.2,0.0,"self-funded, building"
+MRVL,Compute silicon,0.35,1.75,1.4,2.64,2.64,7.54,3.97,0.04,11.4,2.04,self-funded + returning cash
+KLAC,Semicap equipment,0.34,4.08,3.75,2.08,2.82,8.29,5.88,-0.75,-220.6,2.0,self-funded + returning cash
+LITE,Networking / optical,0.23,0.13,-0.1,0.52,0.88,3.83,2.57,0.07,30.4,0.0,mixed / small
+VRT,Power / cooling,0.22,2.11,1.89,1.73,1.73,7.86,2.91,-0.02,-9.1,0.0,"self-funded, building"
+SMCI,Servers / ODM,0.13,1.66,1.53,5.17,5.17,39.77,0.11,-0.36,-276.9,0.0,"self-funded, building"
+ANET,Networking / optical,0.12,4.37,4.25,1.96,10.74,89.5,0.1,,,1.6,self-funded + returning cash
+SNOW,Software / apps,0.1,1.22,1.12,2.83,4.03,40.3,,,,0.87,self-funded + returning cash
+CRDO,Networking / optical,0.06,0.46,0.41,1.16,1.44,24.0,,,,-0.74,"self-funded, building"
+BE,Power / cooling,0.06,0.11,0.06,2.45,2.45,40.83,2.62,1.49,2483.3,-0.06,"self-funded, building"
+ONTO,Semicap equipment,0.03,0.33,0.3,0.35,0.64,21.33,0.0,-0.01,-33.3,0.08,"self-funded, building"
+PLTR,Software / apps,0.03,2.13,2.1,1.42,7.18,239.33,0.0,-0.2,-666.7,0.07,"self-funded, building"

@@ -313,6 +313,18 @@ The snapshots above are one year. The more revealing view is the trajectory — 
 
 All nine hyperscalers, US (solid) and China (dashed). Two things jump out. First, the US ramp is a wall: Amazon and Alphabet went near-vertical from 2024. Second, the scale gap — **even the largest Chinese cloud spends less than the smallest US hyperscaler.** ByteDance ($22bn) and Alibaba ($18bn) are the biggest Chinese spenders and they sit below Oracle; Baidu barely moves. The Chinese clouds are ramping too, just one order of magnitude down.
 
+### And it isn't slowing — what's been guided for 2026
+
+The actuals above stop at the last fiscal year. The capex *announced this year* for 2026 is a step higher again. Pulling each company's latest 2026 capex guidance (management's own numbers, given on the early-2026 earnings calls) against its most recent actual:
+
+![2026 capex guidance vs latest actual](figures/capex_2026_guidance.png)
+
+The four US hyperscalers alone have guided to roughly **$710bn of capex for 2026** — Amazon ~$200bn, Microsoft ~$190bn, Alphabet ~$185bn, Meta ~$135bn — against ~$383bn actual the year before. Oracle guides its *next* fiscal year (FY2027) to ~$93bn, nearly double again. TSMC ($52–56bn) and Samsung (semiconductor division, ~$40–48bn) step up in lockstep. The wall in the ramp chart has another course of bricks coming.
+
+And then there are the two names everyone asks about — **Apple and Nvidia, the AI giants that don't build.** They sit at the very bottom of the chart and barely move: Apple guides toward ~$14bn (it runs a hybrid model, leaning on third-party cloud and a modest Private Cloud Compute; its much-quoted "$500bn US investment" is mostly suppliers, manufacturing and jobs, not data-center capex), and Nvidia's own capex runs ~$6bn heading to maybe $8–10bn — it is fabless, so its AI footprint shows up in *revenue*, not on its balance sheet. Both are excluded from the 45-name core universe for the same reason: this study counts who *pays for* the build, and these two famously don't — Nvidia sells the shovels, Apple rents them. Shown here as the contrast that proves the point.
+
+*2026 figures are management guidance/estimates, not actuals, so they carry the usual forward-looking caveat; basis is each company's headline guided number (Microsoft and Amazon include finance leases; Samsung is the semiconductor division), which can differ slightly from the cash-capex basis used elsewhere in the study.*
+
 ### The war chest
 
 ![Hyperscaler cash reserves, year by year](figures/cash_reserves.png)
@@ -473,6 +485,7 @@ python3 src/07_build_global.py     # -> data/global_capex.csv + figures/global_*
 python3 src/09_hyperscaler_cash.py # -> data/hyperscaler_cash.csv (multi-year cash reserves)
 python3 src/10_funding_history.py  # -> data/funding_history.csv (5yr capex/debt/equity/cash per US hyperscaler)
 python3 src/11_hyperscaler_charts.py  # -> figures/capex_ramp_all, cash_reserves (all hyperscalers, tickers)
+python3 src/12_guidance_chart.py    # -> figures/capex_2026_guidance.png (2026 guidance vs actual)
 ```
 
 The foreign current-year figures (Findings 7–8) are not a re-runnable pull — they're each from the company's own filing/earnings release, verified against a second source, and stored with full provenance (source URL, currency, FX basis, confidence) in [`data/foreign_capex.csv`](data/foreign_capex.csv). `06_pull_foreign_edgar.py` independently pulls whatever those foreign 20-F filers report directly to EDGAR (lagged a year) as a reproducible cross-check.

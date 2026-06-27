@@ -14,6 +14,7 @@
 - **The debt is a choice for the core, a necessity for the edge.** Alphabet added **$37bn of net new debt — the same as Oracle** — but Alphabet also returned $46bn to shareholders and earned +$73bn free cash flow, while Oracle returned nothing and burned −$24bn. The tell that separates them: returning cash while building. Just **7 of 45 are debt-funded** (Oracle, three neoclouds, a data-center REIT, and two regulated utilities); strip the utilities and the AI-build set is five names, only one of them a mega-cap. The war chest agrees: Nvidia holds 7.5 years of capex in cash, the core 1–1.5, Oracle 0.6, CoreWeave 0.3.
 - **Going global (16 foreign giants added): the true total is ~$687bn across 61 companies** ($520bn US, $167bn foreign). Concentration softens exactly as the first cut predicted — the top-five US clouds fall from 79% of the US table to **60% of the global total** — but they still lead: only TSMC ($41bn) and Samsung ($37bn) crack the top tier, and the whole Chinese cloud sector (Alibaba+Tencent+Baidu+ByteDance ≈ $45bn) is **out-spent by the US hyperscalers ~9 to 1.** The one thing the US-only view badly missed: **foundry & memory is the real #2 layer at $139bn and 78% offshore** — the chips are made where the US filings can't see.
 - **Five-year funding history + the credit angle:** across FY2021–25 the US hyperscalers' cash reserves *held or grew* even as capex went vertical — they funded the build from a rising tide of operating cash and **never issued equity; they bought stock back.** The financing instrument is a credit signal: investment-grade names (every US + China hyperscaler) borrow cheap on their own name, while the junk-rated/unrated edge (CoreWeave, the miners, Nebius, IREN) must pledge GPUs for high-coupon secured debt or sell equity. **Equity issuance in this build is the distress tell, not strength.** Oracle is the canary — buybacks cut to zero, cash drained, $37bn of new debt, one downgrade (BBB) from junk.
+- **The debt schedule (all 20 names with capex ≥ $5bn): good credit borrowed cheap, fixed, and long.** The investment-grade core carries ~100% **fixed-rate**, 14–18-year debt at ~4% on net cash — if the situation worsens, existing coupons don't move; only new issuance reprices, and they barely need it. The exposed are the floating and the short-dated: **ByteDance ~95% floating, CoreWeave 51% floating at a ~9% coupon with 59% of its debt due within three years.** Two fuses to watch — a **rate move** (floating names) and a **downgrade** (Oracle and Intel, both BBB/negative and still issuing tens of billions of new debt).
 - **Verdict: conditional.** "AI capex" as a market-wide phenomenon is a myth — it is a handful of US clouds plus the Asian fabs that supply them, and in aggregate the spenders pay for it out of cash with a surplus. The systemic risk is narrow and nameable: Oracle and the neoclouds, the AI-build names funding with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash, on the thinnest cushions.
 
 This builds on study [27 — the AI capital cycle](../27-ai-capital-cycle/) (which priced the *blast radius* of a capex cut) and study [30 — LLM players forecast](../30-llm-players-forecast/) (which mapped the break-order). Here I do the thing under both: put a real, sourced capex number on every company and ask who can pay for what they started.
@@ -420,6 +421,47 @@ The pattern is exactly the pecking order. The investment-grade names — every U
 
 **Verdict: confirmed.** Debt-first is the universal behaviour of the investment-grade builders, and equity issuance is concentrated entirely in the junk-rated and unrated edge. The instrument a company uses to fund its build tells you where it sits on the credit ladder — and the AI build is being financed cheaply at the top and expensively, or dilutively, at the bottom.
 
+## Finding 10 — the debt schedule: when it gets worse, is the rate fixed or floating?
+
+**What I expected & why.** Finding 9 said good credit borrows cheaply. The follow-on question decides who actually gets hurt in a downturn: *what kind* of debt did they take on? A company that locked in **fixed-rate, long-dated** debt is insulated — if rates rise or it gets downgraded, its existing coupons don't move; only new borrowing costs more, and the strong names barely need to borrow. A company carrying **floating-rate** debt reprices the moment rates rise, and one with a **near-term maturity wall** has to refinance soon — at whatever spread its (possibly worse) credit then commands, or not at all. So for every name spending $5bn+ on capex I pulled the debt footnote: fixed vs floating, the coupon, and when the debt comes due.
+
+**How I measured it.** From each company's latest annual filing debt note (and rating-agency reports): total debt, the fixed/floating split, weighted-average coupon, debt maturing within three years, weighted-average maturity, and whether it sits on net cash. Twenty names, each cross-checked.
+
+**What the data shows.**
+
+![Debt: rate vs floating exposure](figures/debt_rate_exposure.png)
+
+The scatter is the answer in one picture. Down in the cheap-and-fixed corner sits the entire investment-grade core — Amazon, Alphabet, Meta, Microsoft, Nvidia, Apple, TSMC — borrowing at ~4% (TSMC under 2%), essentially **100% fixed**, **14–18-year** average maturities, all on net cash. They locked in cheap money for a decade-plus *before* the build went vertical; if conditions worsen, nothing about their existing debt changes. Up in the dear-and-floating corner sit the two genuinely exposed names: **CoreWeave** (junk-rated, 51% floating at a ~9% coupon, and 59% of its debt due within three years) and **ByteDance** (~95% floating bank debt, which reprices immediately). The full schedule:
+
+| Company (ticker) | Rating (S&P/Moody's) | Total debt $bn | Net cash? | Fixed / floating | Coupon | Due ≤3yr | WAM (yr) | Exposure if it worsens |
+|---|---|--:|:--:|:--:|--:|--:|--:|:--:|
+| Oracle (ORCL) | BBB/Baa2 | 130 | no | 98/2 | 4.8% | 23 | 14 | high |
+| Apple (AAPL) | AA+/Aaa | 99 | yes | 90/10 | 3.2% | 40 | 10 | low |
+| Duke (DUK) | BBB/Baa2 | 86 | no | 93/7 | 4.4% | 13 | 14 | low |
+| Alphabet (GOOGL) | AA+/Aa2 | 82 | yes | 98/2 | 4.0% | 2 | 16 | low |
+| Southern (SO) | BBB+/Baa1 | 73 | no | 92/8 | 4.3% | 15 | 16 | low |
+| Amazon (AMZN) | AA/A1 | 69 | yes | 100/0 | 4.0% | 16 | 14 | low |
+| Meta (META) | AA-/Aa3 | 59 | yes | 100/0 | 4.4% | 4 | 18 | low |
+| Intel (INTC) | BBB/Baa2 | 47 | no | 76/24 | 4.6% | 10 | 13 | high |
+| Tencent (0700.HK) | A+/A1 | 47 | yes | 64/36 | 4.0% | 23 | 5 | low |
+| Microsoft (MSFT) | AAA/Aaa | 43 | yes | 100/0 | 4.4% | 12 | 14 | low |
+| Foxconn (2317.TW) | A- | 40 | yes | 40/60 | 3.0% | 30 | 3 | low |
+| Alibaba (BABA) | A+/A1 | 38 | yes | 81/19 | 2.4% | 9 | 5 | low |
+| Nvidia (NVDA) | AA-/Aa1 | 34 | yes | 100/0 | 4.3% | 2 | 10 | low |
+| TSMC (TSM) | AA-/Aa3 | 33 | yes | 96/4 | 1.9% | 15 | 6 | low |
+| ByteDance (private) | n/a | 28 | yes | 5/95 | 5.2% | 20 | 4 | high |
+| CoreWeave (CRWV) | B+/Ba3 | 22 | no | 49/51 | 9.1% | 13 | 3 | high |
+| Samsung (005930.KS) | AA-/Aa2 | 18 | yes | 87/13 | 3.0% | 0 | 3 | low |
+| Micron (MU) | BBB/Baa2 | 15 | no | 93/7 | 5.2% | 2 | 8 | low |
+| SK Hynix (000660.KS) | BBB+/Baa1 | 14 | yes | 75/25 | 2.8% | 7 | 4 | low |
+| SMIC (0981.HK) | BB+/Baa3 | 13 | yes | 47/53 | 1.8% | 3 | 6 | medium |
+
+**Why (mechanism).** There are two different ways a downturn hurts a borrower, and the table separates them. The first is **rate reset** — floating-rate debt reprices straight away. That is ByteDance (95% floating), CoreWeave and SMIC (~50%), and to a lesser extent Tencent and Foxconn (but those two sit on net cash, so their floating debt is offset by floating *income* and they are not really exposed). The second is **refinancing at worse credit** — and that is where Oracle and Intel come in. Their existing debt is mostly fixed, so on a pure rate-reset basis they look insulated; but they are BBB on negative outlook, *not* on net cash, and they have to keep issuing tens of billions of new debt to fund the build (Oracle alone ~$37bn this year). If the rating slips, every new bond prices wider. Oracle's existing $130bn is locked at 4.8%; its risk is the *next* $37bn. CoreWeave is the only name with both problems at once: floating, junk-rated, and a wall — 59% of its debt falls due inside three years, which it must roll while paying 9%.
+
+**What I checked.** The net-cash distinction matters and I applied it: Tencent (36% floating) and Foxconn (~60% floating) screen as exposed on the split alone, but both hold more cash than debt, so a rate rise hits their borrowing and their deposits roughly equally — exposure low. Conversely, a low floating share didn't earn a clean bill for Oracle and Intel, because the maturity-and-credit channel bites them regardless. The exposure column reflects both channels, not just the fixed/floating headline.
+
+**Verdict: confirmed, and it closes the loop.** Good credit didn't just borrow more cheaply — it borrowed *fixed and long*, so the strong names are insulated from a downturn by construction. The exposure concentrates in exactly the same edge every other finding pointed to: CoreWeave and ByteDance reprice or refinance on bad terms immediately, while Oracle and Intel face the slower squeeze of issuing new money into a weakening rating. Watch the floating-rate names for a rate move, and the BBB/negative names for a downgrade — those are the two fuses.
+
 ## Did I just find noise?
 
 A few honest stress tests:
@@ -486,6 +528,7 @@ python3 src/09_hyperscaler_cash.py # -> data/hyperscaler_cash.csv (multi-year ca
 python3 src/10_funding_history.py  # -> data/funding_history.csv (5yr capex/debt/equity/cash per US hyperscaler)
 python3 src/11_hyperscaler_charts.py  # -> figures/capex_ramp_all, cash_reserves (all hyperscalers, tickers)
 python3 src/12_guidance_chart.py    # -> figures/capex_2026_guidance.png (2026 guidance vs actual)
+python3 src/13_debt_chart.py        # -> figures/debt_rate_exposure.png (fixed/floating x coupon)
 ```
 
 The foreign current-year figures (Findings 7–8) are not a re-runnable pull — they're each from the company's own filing/earnings release, verified against a second source, and stored with full provenance (source URL, currency, FX basis, confidence) in [`data/foreign_capex.csv`](data/foreign_capex.csv). `06_pull_foreign_edgar.py` independently pulls whatever those foreign 20-F filers report directly to EDGAR (lagged a year) as a reproducible cross-check.

@@ -15,6 +15,7 @@
 - **Going global (16 foreign giants added): the true total is ~$687bn across 61 companies** ($520bn US, $167bn foreign). Concentration softens exactly as the first cut predicted — the top-five US clouds fall from 79% of the US table to **60% of the global total** — but they still lead: only TSMC ($41bn) and Samsung ($37bn) crack the top tier, and the whole Chinese cloud sector (Alibaba+Tencent+Baidu+ByteDance ≈ $45bn) is **out-spent by the US hyperscalers ~9 to 1.** The one thing the US-only view badly missed: **foundry & memory is the real #2 layer at $139bn and 78% offshore** — the chips are made where the US filings can't see.
 - **Five-year funding history + the credit angle:** across FY2021–25 the US hyperscalers' cash reserves *held or grew* even as capex went vertical — they funded the build from a rising tide of operating cash and **never issued equity; they bought stock back.** The financing instrument is a credit signal: investment-grade names (every US + China hyperscaler) borrow cheap on their own name, while the junk-rated/unrated edge (CoreWeave, the miners, Nebius, IREN) must pledge GPUs for high-coupon secured debt or sell equity. **Equity issuance in this build is the distress tell, not strength.** Oracle is the canary — buybacks cut to zero, cash drained, $37bn of new debt, one downgrade (BBB) from junk.
 - **The debt schedule (all 20 names with capex ≥ $5bn): good credit borrowed cheap, fixed, and long.** The investment-grade core carries ~100% **fixed-rate**, 14–18-year debt at ~4% on net cash — if the situation worsens, existing coupons don't move; only new issuance reprices, and they barely need it. The exposed are the floating and the short-dated: **ByteDance ~95% floating, CoreWeave 51% floating at a ~9% coupon with 59% of its debt due within three years.** Two fuses to watch — a **rate move** (floating names) and a **downgrade** (Oracle and Intel, both BBB/negative and still issuing tens of billions of new debt).
+- **Where the dollar goes, and who collects it.** Traced down the bill of materials, the capex is **top-heavy, not pyramid-shaped**: accelerator + memory + packaging ≈ 85% of the AI-server dollar, while the "foundation" layers (glass cloth, copper foil, photoresists) are tiny-dollar but absolute bottlenecks (Nittobo ~90% of AI glass cloth, ASML 100% of EUV). And the capex reappears as someone else's cash: chipmaker free cash flow exploded from $16bn (2023) to $96bn (2025) while hyperscaler FCF rolled over — the gap collapsed from +$197bn to +$102bn and **crosses in 2026, the chipmakers' cash flow overtaking the clouds' for the first time.**
 - **Verdict: conditional.** "AI capex" as a market-wide phenomenon is a myth — it is a handful of US clouds plus the Asian fabs that supply them, and in aggregate the spenders pay for it out of cash with a surplus. The systemic risk is narrow and nameable: Oracle and the neoclouds, the AI-build names funding with outside money (debt for Oracle and CoreWeave, equity raises for the smaller neoclouds) while burning cash, on the thinnest cushions.
 
 This builds on study [27 — the AI capital cycle](../27-ai-capital-cycle/) (which priced the *blast radius* of a capex cut) and study [30 — LLM players forecast](../30-llm-players-forecast/) (which mapped the break-order). Here I do the thing under both: put a real, sourced capex number on every company and ask who can pay for what they started.
@@ -468,6 +469,51 @@ The scatter is the answer in one picture. Down in the cheap-and-fixed corner sit
 
 **Verdict: confirmed, and it closes the loop.** Good credit didn't just borrow more cheaply — it borrowed *fixed and long*, so the strong names are insulated from a downturn by construction. The exposure concentrates in exactly the same edge every other finding pointed to: CoreWeave and ByteDance reprice or refinance on bad terms immediately, while Oracle and Intel face the slower squeeze of issuing new money into a weakening rating. Watch the floating-rate names for a rate move, and the BBB/negative names for a downgrade — those are the two fuses.
 
+## Finding 11 — where the capex dollar actually goes (the bill of materials)
+
+**What I expected & why.** Everything so far measures capex *by* company — who spends. The opposite arrow is just as interesting: when a hyperscaler spends a dollar, where does it *go* as it flows down into the physical build? A popular Goldman framing draws it as a pyramid — memory at the apex, then passives and substrates, then raw materials, then equipment as the wide foundation. I wanted to check whether the *dollars* actually flow in that shape, or whether they concentrate.
+
+**How I measured it.** I traced a dollar of AI data-center capex down the stack using published teardown/BOM estimates (Morgan Stanley, SemiAnalysis, Epoch AI): first the data-center split (facility/power vs IT), then the AI-server bill of materials, layer by layer.
+
+**What the data shows.**
+
+![Where the AI capex dollar goes](figures/bom_cascade.png)
+
+A dollar of AI data-center capex is **~60–65% IT** (servers and networking) and ~35–40% facility (the shell, and crucially power and cooling). Inside the server, the dollar is decisively **top-heavy**: the accelerator (GPU/ASIC) is ~51%, **HBM and memory ~27%** (up from ~5–10% a generation ago — the 2026 Rubin-era memory price surge roughly tripled memory's share), and advanced packaging/substrate ~7%. Those three are **~85% of the server**. Everything below — PCBs, MLCC passives, the glass cloth and copper foil and tantalum, the photoresists and wafers at the base — is a **low-single-digit sliver each**.
+
+| Goldman pyramid layer | components | share of the server $ | who captures it | dollar slice |
+|---|---|--:|---|:--:|
+| (apex product) | the accelerator / GPU itself | ~51% | Nvidia, AMD, Broadcom-ASIC | large |
+| 1 — Intelligence | HBM + DRAM + NAND | ~27% | SK Hynix, Micron, Samsung | **large** |
+| 3 — Connectivity | CoWoS packaging, ABF/BT substrates, PCBs | ~8% | TSMC, Ibiden, Unimicron | small (bottleneck) |
+| 2 — Performance | MLCC passives, InP substrates (optics) | <1% (+optics) | Murata, Samsung EM, AXT | tiny (bottleneck) |
+| 4 — Structural | glass cloth, copper foil, tantalum | <0.5% | Nittobo (~90% T-glass), Mitsui | tiny (bottleneck) |
+| 5 — Foundation | wafer-fab equipment, wafers, photoresists | (upstream of the chips) | ASML (100% EUV), AMAT, Lam, SUMCO | tiny direct, monopoly value |
+
+**Why (mechanism).** The pyramid is drawn with a wide base because those layers are the physical *foundation* — and they genuinely are supply bottlenecks: Nittobo makes ~90% of AI-grade glass cloth, Ibiden ~70–80% of GPU substrate (sold out), ASML 100% of EUV. But foundational and large-dollar are different things. In dollar terms the picture is **the opposite of the pyramid** — an inverted one, or a hammer: a huge head at compute-plus-memory and a thin handle of bottleneck materials. A company can be a single-point chokepoint for the entire AI build and still capture well under 1% of the dollar.
+
+**What I checked.** The mix is shifting and I flagged it: the memory share jumped from ~5–10% to ~25–30% in one accelerator generation purely because HBM4 prices spiked, so "compute + memory" stays ~85% but is rebalancing toward memory — which is why the memory makers (Finding 8's offshore foundry/memory layer) are the one lower-pyramid layer that captures *large* dollars and spends heavily itself. The material layers below it do not.
+
+**Verdict: confirmed.** The capex flows *through* every layer of the pyramid — it is a correct dependency map — but **not in the pyramid's shape.** The money concentrates at the top (accelerator + memory + packaging ≈ 85%); the wide base is a set of tiny-dollar, high-criticality bottlenecks. Useful as a *what-breaks-the-chain* map, misleading as a *where-the-money-is* map.
+
+## Finding 12 — the great inversion: spenders vs collectors
+
+**What I expected & why.** Finding 2 said the value chain *monetizes* the build rather than funding it. Pushed to its conclusion, that means the capex the clouds spend should show up, almost dollar-for-dollar, as the chipmakers' cash flow — and as the build accelerates, the cash-flow leadership should pass from the spenders to the sellers. A set of widely-shared Bloomberg/GLJ charts claims exactly this crossover. I checked it against my own filing data.
+
+**How I measured it.** Aggregate free cash flow (operating cash flow minus capex) for the five hyperscalers vs the four big US chipmakers (Nvidia, Broadcom, AMD, Micron), by fiscal year, 2019–2025 from filings, with a 2026 estimate from consensus.
+
+**What the data shows.**
+
+![Spenders vs collectors](figures/spenders_vs_collectors.png)
+
+For years the hyperscalers out-earned the chipmakers handily — combined FCF of $125–246bn against the chip names' $12–49bn. Then the lines bend toward each other fast: chipmaker FCF exploded from **$16bn (2023) to $96bn (2025)** as Nvidia alone began printing ~$60–97bn, while hyperscaler FCF rolled over from $246bn (2024) to $198bn (2025) as capex bit. The gap between them collapsed from **+$197bn (2024) to +$102bn (2025)** — and in 2026 it crosses: as the clouds' aggregate FCF collapses toward zero (consensus has it crossing zero around Q3 2026, with Oracle and Amazon already negative) and chipmaker FCF runs toward ~$250bn-plus (Bloomberg's path is toward ~$1tn by 2027–28), **the sellers' cash flow overtakes the spenders' for the first time.**
+
+**Why (mechanism).** This is Finding 2 taken to its logical end. The hyperscaler capex line and the chipmaker FCF line are the same dollars seen from two ends of the transaction: the clouds book it as capital *spent*, the chip and memory makers book it as cash *collected*. As the build goes vertical, the spenders' free cash flow is consumed by the very capex that becomes the sellers' record cash flow. The "pick-and-shovel" sellers end up richer in cash than the prospectors paying them.
+
+**What I checked.** Two honest caveats. The 2026 point is an estimate (the residual of two ~$700bn numbers, so sensitive — call it "near zero," not a precise figure), and the lines are keyed by each firm's fiscal year, so the crossover timing is approximate. But the *direction* is robust in the actual 2019–2025 data and corroborated independently (Visible Alpha, Evercore, Epoch AI, Bloomberg). It also lines up with Finding 5: the hyperscalers can let FCF go to zero by choice because they still self-fund from operating cash — it is a spending decision, not insolvency.
+
+**Verdict: confirmed.** The capex doesn't vanish — it reappears as someone else's cash flow, and in 2026 the chipmakers' free cash flow overtakes the hyperscalers' for the first time. The clearest possible statement of who pays for the build and who collects it.
+
 ## Did I just find noise?
 
 A few honest stress tests:
@@ -535,6 +581,7 @@ python3 src/10_funding_history.py  # -> data/funding_history.csv (5yr capex/debt
 python3 src/11_hyperscaler_charts.py  # -> figures/capex_ramp_all, cash_reserves (all hyperscalers, tickers)
 python3 src/12_guidance_chart.py    # -> figures/capex_2026_guidance.png (2026 guidance vs actual)
 python3 src/13_debt_chart.py        # -> figures/debt_rate_exposure.png (fixed/floating x coupon)
+python3 src/14_bom_and_inversion.py # -> figures/bom_cascade, spenders_vs_collectors
 ```
 
 The foreign current-year figures (Findings 7–8) are not a re-runnable pull — they're each from the company's own filing/earnings release, verified against a second source, and stored with full provenance (source URL, currency, FX basis, confidence) in [`data/foreign_capex.csv`](data/foreign_capex.csv). `06_pull_foreign_edgar.py` independently pulls whatever those foreign 20-F filers report directly to EDGAR (lagged a year) as a reproducible cross-check.

@@ -1,0 +1,13 @@
+component,gs_layer,share_pct,slice,bottleneck,suppliers
+AI accelerator / GPU,apex product (not in pyramid),51,large,no,NVIDIA / AMD / Broadcom ASIC
+HBM + memory,L1 Memory,27,large,yes,SK Hynix / Micron / Samsung
+Advanced packaging / substrate,L3 Connectivity,7,small,yes,TSMC CoWoS; Ibiden ABF
+Networking / optical,L2 (InP),6,medium,no,Sumitomo / AXT / optical
+Storage / SSD,(memory-adjacent),4,small,no,Samsung / SK Hynix / SanDisk
+CPU,(host),2,small,no,Intel / AMD / Arm
+ODM value-add / chassis,(assembly),2,small,no,Foxconn / Quanta / Wiwynn
+Liquid cooling,(facility-edge),1.5,small,no,Vertiv / Boyd
+PCB / board,L3 Connectivity,1.5,small,yes,Unimicron / AT&S
+Power delivery,(board),1,small,no,MPS / Vicor
+MLCC / passives,L2 Performance,0.5,tiny,yes,Murata / Samsung EM / Yageo
+Materials: glass cloth / copper foil / tantalum,L4 Structural,0.3,tiny,yes,Nittobo / Mitsui / Cabot

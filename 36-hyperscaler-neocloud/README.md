@@ -477,27 +477,31 @@ publishes it, and it turns out to be the number that matters most: the part of t
 β regressed on ~15 months of daily returns versus SPY); recent-IPO betas are noisy, so read them as ranges.
 Private names have no market beta, so the latest funding valuation is shown instead.
 
-| Company | Public/Private | Total debt raised | Cost of debt | Cost of equity | Rating |
-|---|---|---|---|---|---|
-| **Meta** *(benchmark)* | Public | $30bn bond + ~$27bn off-B/S SPV | 4.2–5.75% (SPV 6.6%) | **~10.6%** | Aa3 / AA− |
-| Microsoft *(ref.)* | Public | self-funds | ~4% | ~8.3% | AAA |
-| Amazon *(ref.)* | Public | self-funds | ~4–5% | ~10.3% | IG |
-| **CoreWeave** | Public (CRWV) | ~$14bn (Sep'25) → ~$21bn+ | early loans >10–15%; notes 9.0–9.75%; IG GPU tranche ~5.9% | **~15–17%** | B+ / Ba3 / BB− |
-| **Nebius** | Public (NBIS) | ~$8.5bn convertibles | 1.0–2.75% coupon (dilutive) | **~16–18%** | Unrated |
-| **IREN** | Public (IREN) | ~$3bn+ converts + $3.65bn IG GPU facility | converts ~1%; GPU facility 6.00% (IG) | ~16–21% (est.) | GPU facility A/A(low) |
-| **Applied Digital** | Public (APLD) | ~$7bn notes + $0.83bn conv | notes 6.75–9.25%; conv 2.75% | ~16–21% | HY (~BB) |
-| **Core Scientific** | Public (CORZ) | ~$1bn converts | 0.00% / 3.00% (dilutive) | ~15% | Unrated |
-| **TeraWulf** | Public (WULF) | ~$5.8bn (converts + project) | conv 0–2.75%; project SOFR+1.25–1.75% (Google-backed) | ~18–20% | project: Google-backstopped |
-| **Cipher Mining** | Public (CIFR) | $1.3bn 0% conv + $2bn secured notes | 0% conv; secured HY | ~18.6–23% | Unrated / HY |
-| **Hut 8** | Public (HUT) | $3.25bn + $4.25bn IG project bonds | 6.13–6.19% (IG project bonds) | ~18–22% (est.) | BBB− / Baa2 (project) |
-| Lambda | Private (IPO '26) | ~$1bn Macquarie facility + $1.5bn Nvidia lease-back | GPU-secured (undisc.) | — (~$9bn val) | Unrated |
-| Crusoe | Private | $11.6bn JV debt+equity | project finance ~11% | — (>$10bn val) | Unrated (SPV) |
-| Nscale *(UK)* | Private | $1.4bn GPU DDTL | GPU-secured (undisc.) | — ($14.6bn val) | Unrated |
-| Fluidstack *(UK)* | Private | up to $10bn Macquarie (Google $3.2bn guarantee) | below-standalone (Google-backed) | — (~$18bn val) | Unrated |
-| Together AI | Private | ~none (equity) | n/a | — ($7.5bn val) | Unrated |
-| TensorWave *(AMD)* | Private | ~none (equity) | n/a | — ($1.55bn val) | Unrated |
-| Vultr | Private | ~none (equity) | n/a | — ($3.5bn val) | Unrated |
-| Voltage Park | Private | $0 — debt-free by design | n/a | — | n/a |
+| Company | Public/Private | Total debt raised | Cost of debt | Cost of equity | **FCF (latest FY)** | Rating |
+|---|---|---|---|---|---|---|
+| **Meta** *(benchmark)* | Public | $30bn bond + ~$27bn off-B/S SPV | 4.2–5.75% (SPV 6.6%) | **~10.6%** | **+$46.1bn** | Aa3 / AA− |
+| Microsoft *(ref.)* | Public | self-funds | ~4% | ~8.3% | +$71.6bn | AAA |
+| Nvidia *(ref.)* | Public | net cash | ~4% | ~12.6% | +$96.7bn | A1 / A+ |
+| Amazon *(ref.)* | Public | self-funds | ~4–5% | ~10.3% | +$7.7bn | IG |
+| Oracle *(ref.)* | Public | debt-funded build | ~5.5% (CDS ~198bp) | ~11.2% | **−$23.7bn** | Baa2 / BBB (neg) |
+| **CoreWeave** | Public (CRWV) | ~$14bn (Sep'25) → ~$21bn+ | early loans >10–15%; notes 9.0–9.75%; IG GPU tranche ~5.9% | **~15–17%** | **−$7.3bn** † | B+ / Ba3 / BB− |
+| **Nebius** | Public (NBIS) | ~$8.5bn convertibles | 1.0–2.75% coupon (dilutive) | **~16–18%** | **−$3.7bn** | Unrated |
+| **IREN** | Public (IREN) | ~$3bn+ converts + $3.65bn IG GPU facility | converts ~1%; GPU facility 6.00% (IG) | ~16–21% (est.) | −$0.3bn | GPU facility A/A(low) |
+| **Applied Digital** | Public (APLD) | ~$7bn notes + $0.83bn conv | notes 6.75–9.25%; conv 2.75% | ~16–21% | −$0.8bn | HY (~BB) |
+| **Core Scientific** | Public (CORZ) | ~$1bn converts | 0.00% / 3.00% (dilutive) | ~15% | −$0.5bn | Unrated |
+| **TeraWulf** | Public (WULF) | ~$5.8bn (converts + project) | conv 0–2.75%; project SOFR+1.25–1.75% (Google-backed) | ~18–20% | −$1.2bn | project: Google-backstopped |
+| **Cipher Mining** | Public (CIFR) | $1.3bn 0% conv + $2bn secured notes | 0% conv; secured HY | ~18.6–23% | −$0.7bn | Unrated / HY |
+| **Hut 8** | Public (HUT) | $3.25bn + $4.25bn IG project bonds | 6.13–6.19% (IG project bonds) | ~18–22% (est.) | −$0.5bn | BBB− / Baa2 (project) |
+| Lambda | Private (IPO '26) | ~$1bn Macquarie facility + $1.5bn Nvidia lease-back | GPU-secured (undisc.) | — (~$9bn val) | neg. (private) | Unrated |
+| Crusoe | Private | $11.6bn JV debt+equity | project finance ~11% | — (>$10bn val) | neg. (private) | Unrated (SPV) |
+| Nscale *(UK)* | Private | $1.4bn GPU DDTL | GPU-secured (undisc.) | — ($14.6bn val) | neg. (private) | Unrated |
+| Fluidstack *(UK)* | Private | up to $10bn Macquarie (Google $3.2bn guarantee) | below-standalone (Google-backed) | — (~$18bn val) | neg. (private) | Unrated |
+| Together AI | Private | ~none (equity) | n/a | — ($7.5bn val) | ~breakeven/neg | Unrated |
+| TensorWave *(AMD)* | Private | ~none (equity) | n/a | — ($1.55bn val) | neg. (private) | Unrated |
+| Vultr | Private | ~none (equity) | n/a | — ($3.5bn val) | ~breakeven (bootstrapped) | Unrated |
+| Voltage Park | Private | $0 — debt-free by design | n/a | — | neg. (grant-funded) | n/a |
+
+† *CoreWeave's FCF is the latest full fiscal year (FY2025); the 2026 burn is far larger — Q1 2026 alone was −$4.7bn as capex ramped. FCF = operating cash flow − capex, latest full fiscal year, from SEC filings (fiscal-year ends differ: Microsoft Jun'25, Oracle May'26, most others Dec'25).*
 
 **Table B — the deal map: which big-cap is behind each.** Every neocloud is anchored by a hyperscaler or lab,
 as customer, credit-backstop, or both.
@@ -538,6 +542,15 @@ as customer, credit-backstop, or both.
    buyer into a rival; if the hyperscalers rent out their own surplus instead of buying, the neoclouds lose
    both their demand and the customer-credit that makes their cheap debt possible — a double hit landing on the
    players with 15–23% equity costs and depreciating collateral. Not one more competitor: the anchor walking out.
+6. **Free cash flow sorts the field more cleanly than any other number.** Every hyperscaler funds its own
+   buildout — Meta throws off **+$46bn** of free cash flow a year, Microsoft +$72bn, Nvidia +$97bn — while
+   *every single* pure-play neocloud and miner-convert **burns** cash (CoreWeave −$7bn and worsening, Nebius
+   −$4bn, the rest −$0.3bn to −$1.2bn). The one hyperscaler that also burns, Oracle (**−$24bn**), is the one
+   funding its build with debt — and its CDS duly blew out to a record. So FCF is the single line that splits
+   the field into "builds with its own cash" (the hyperscalers) and "builds with borrowed or rented credit"
+   (everyone else) — and it is the negative-FCF names that a financing refusal breaks first.
+
+![Free cash flow by company: the hyperscalers throw off tens of billions (Nvidia +$97bn, Microsoft +$72bn, Meta +$46bn) while every neocloud and miner-convert burns cash, and Oracle is the one debt-funded hyperscaler in the red at −$24bn.](figures/fig8_fcf.png)
 
 ## Caveats
 

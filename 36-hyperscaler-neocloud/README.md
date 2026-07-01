@@ -465,6 +465,80 @@ an option, not a product; if it never ships, the July-1 repricing unwinds and th
 cheaper *buyer*," not a competitor. All three are live. None of them flips the *sign* of the forecast; they
 bound its magnitude and its timing.
 
+## Appendix — the US neocloud scoreboard (every player vs Meta)
+
+Finding 1 compared Meta to one neocloud. Here is the full US field — every player I could find — with how much
+each borrowed, its cost of debt, and its cost of equity. The cost of equity is my own estimate, because no one
+publishes it, and it turns out to be the number that matters most: the part of the gap that does not close.
+
+![Cost of equity by company: the hyperscalers (Microsoft 8.3%, Amazon 10.3%, Meta 10.6%, Oracle 11.2%) sit below the Meta line while every pure-play neocloud and miner-to-cloud convert sits above it at ~15-20%.](figures/fig7_cost_of_equity.png)
+
+**Table A — cost of capital (Meta = benchmark).** Cost of equity is a CAPM estimate (Ke = 4.3% + β × 4.5%, with
+β regressed on ~15 months of daily returns versus SPY); recent-IPO betas are noisy, so read them as ranges.
+Private names have no market beta, so the latest funding valuation is shown instead.
+
+| Company | Public/Private | Total debt raised | Cost of debt | Cost of equity | Rating |
+|---|---|---|---|---|---|
+| **Meta** *(benchmark)* | Public | $30bn bond + ~$27bn off-B/S SPV | 4.2–5.75% (SPV 6.6%) | **~10.6%** | Aa3 / AA− |
+| Microsoft *(ref.)* | Public | self-funds | ~4% | ~8.3% | AAA |
+| Amazon *(ref.)* | Public | self-funds | ~4–5% | ~10.3% | IG |
+| **CoreWeave** | Public (CRWV) | ~$14bn (Sep'25) → ~$21bn+ | early loans >10–15%; notes 9.0–9.75%; IG GPU tranche ~5.9% | **~15–17%** | B+ / Ba3 / BB− |
+| **Nebius** | Public (NBIS) | ~$8.5bn convertibles | 1.0–2.75% coupon (dilutive) | **~16–18%** | Unrated |
+| **IREN** | Public (IREN) | ~$3bn+ converts + $3.65bn IG GPU facility | converts ~1%; GPU facility 6.00% (IG) | ~16–21% (est.) | GPU facility A/A(low) |
+| **Applied Digital** | Public (APLD) | ~$7bn notes + $0.83bn conv | notes 6.75–9.25%; conv 2.75% | ~16–21% | HY (~BB) |
+| **Core Scientific** | Public (CORZ) | ~$1bn converts | 0.00% / 3.00% (dilutive) | ~15% | Unrated |
+| **TeraWulf** | Public (WULF) | ~$5.8bn (converts + project) | conv 0–2.75%; project SOFR+1.25–1.75% (Google-backed) | ~18–20% | project: Google-backstopped |
+| **Cipher Mining** | Public (CIFR) | $1.3bn 0% conv + $2bn secured notes | 0% conv; secured HY | ~18.6–23% | Unrated / HY |
+| **Hut 8** | Public (HUT) | $3.25bn + $4.25bn IG project bonds | 6.13–6.19% (IG project bonds) | ~18–22% (est.) | BBB− / Baa2 (project) |
+| Lambda | Private (IPO '26) | ~$1bn Macquarie facility + $1.5bn Nvidia lease-back | GPU-secured (undisc.) | — (~$9bn val) | Unrated |
+| Crusoe | Private | $11.6bn JV debt+equity | project finance ~11% | — (>$10bn val) | Unrated (SPV) |
+| Nscale *(UK)* | Private | $1.4bn GPU DDTL | GPU-secured (undisc.) | — ($14.6bn val) | Unrated |
+| Fluidstack *(UK)* | Private | up to $10bn Macquarie (Google $3.2bn guarantee) | below-standalone (Google-backed) | — (~$18bn val) | Unrated |
+| Together AI | Private | ~none (equity) | n/a | — ($7.5bn val) | Unrated |
+| TensorWave *(AMD)* | Private | ~none (equity) | n/a | — ($1.55bn val) | Unrated |
+| Vultr | Private | ~none (equity) | n/a | — ($3.5bn val) | Unrated |
+| Voltage Park | Private | $0 — debt-free by design | n/a | — | n/a |
+
+**Table B — the deal map: which big-cap is behind each.** Every neocloud is anchored by a hyperscaler or lab,
+as customer, credit-backstop, or both.
+
+| Neocloud | Anchor customer(s) & deal size | Nvidia (circular) |
+|---|---|---|
+| CoreWeave | Microsoft 67% of rev; OpenAI ~$22.4bn; Meta ~$35bn; Anthropic; Google | $2bn equity + $6.3bn capacity backstop |
+| Nebius | Microsoft ~$19.4bn; Meta ~$27bn | $2bn (8.3%) |
+| IREN | Microsoft $9.7bn (750MW Childress); Nvidia $3.4bn | GPU supply |
+| Applied Digital | CoreWeave anchor tenant (Ellendale ND, ~$11bn leases); Macquarie $5bn pref | Nvidia *exited* |
+| Core Scientific | CoreWeave ~$10.2bn hosting *(CoreWeave's $9bn buyout rejected Oct'25)* | — |
+| TeraWulf | Fluidstack/Anthropic (~$3.7bn); Google backstop + ~14% stake | — |
+| Cipher Mining | Amazon/AWS $5.5bn (300MW, 15yr); Fluidstack (Google-backed); SoftBank $50M | — |
+| Hut 8 | Fluidstack/Anthropic ~$16.8bn (Google springing-guarantee) | — |
+| Crusoe | OpenAI/Stargate (Abilene); Meta ~1.6GW | Series E + $150M deposit |
+| Nscale | Microsoft ~$14bn (200k chips); OpenAI Stargate Norway | Series B |
+| Lambda | Microsoft multibn; Nvidia $1.5bn lease-back | $1.5bn lease-back |
+
+**What the full field shows.**
+
+1. **Cost of equity is the gap that does not close.** Meta's equity costs ~10.6% (Microsoft 8.3%); every
+   pure-play neocloud and miner-convert costs ~15–23%. The market prices the fragility directly, and no
+   financing structure fixes it.
+2. **The neoclouds have largely closed the *debt* gap — by borrowing against the hyperscalers' balance sheets,
+   not their own.** IREN got investment-grade GPU debt at 6.00% because the Microsoft contract backs it; Hut 8,
+   TeraWulf and Cipher got IG project bonds at ~6.1% because Google springing-guarantees the leases; CoreWeave's
+   IG tranche is 5.9% on pledged customer contracts. They are, in effect, renting Meta's, Google's and
+   Microsoft's credit ratings.
+3. **The "cheap" 0–1% convertibles are equity in disguise.** Nebius, Core Scientific and Cipher fund at
+   near-zero coupons — but that is a bet on the share price, it dilutes, and its true cost is the 15–20% cost of
+   equity above, not the coupon.
+4. **Every player is anchored by a big-cap.** Microsoft is the single biggest anchor (~$60bn of commitments);
+   Meta is the biggest single buyer (~$83bn outbound to CoreWeave, Nebius and Crusoe); Google backstops the
+   entire miner-convert tier through Fluidstack; Amazon anchors Cipher and self-builds with Trainium; Nvidia
+   holds equity in nearly all of them (the circular hub).
+5. **Which is why "the anchor becomes a competitor" is the real risk.** The pure-play model rests on the
+   hyperscalers being customers and credit-backstops at once. Meta pivoting to *sell* compute turns the biggest
+   buyer into a rival; if the hyperscalers rent out their own surplus instead of buying, the neoclouds lose
+   both their demand and the customer-credit that makes their cheap debt possible — a double hit landing on the
+   players with 15–23% equity costs and depreciating collateral. Not one more competitor: the anchor walking out.
+
 ## Caveats
 
 - Private-company economics (SpaceX, xAI, OpenAI, Anthropic) are press reconstructions, directional only.

@@ -27,6 +27,7 @@
 - **The retreat is already on tape.** Copilot token billing, Claude Code's Pro-plan test, Codex API-token pricing and OpenAI's Plus-to-Go forecast all point to bifurcation before a public nerf.
 - **Filings show concentration rising at every tier:** the first-order stress floors run from -8.5% to -33.5% on a 50% capex cut and up to -67% on a single-payer failure; the 2000 control says the chain amplifies from roughly -60% tier-1 to -79% tier-2, with casualties where concentration, leverage and same-cycle collateral overlap.
 - **The radius is 50+ companies, not seven.** The supply-chain graph puts 31 companies at 5%+ of revenue directly from the circle (13 layers) and 50+ across ~19 of 28 layers once the suppliers' suppliers are counted — with the single-buyer shape repeating at every depth (Credo/Amazon 86% at ring 1; Tokyo Ohka and Lasertec via TSMC at ring 2).
+- **The spenders have started becoming landlords — and it healed the circle instead of breaking it (so far).** xAI folded into SpaceX and its Colossus capacity is now rented to Anthropic (~$1.25B/mo) and Google ($920M/mo, 90-day out after Dec 2026); Meta is building "Meta Compute" to sell its old-generation surplus while still renting new capacity. The deals printed at a ~2x premium into a rising rental tape (1-yr H100 +40% Oct-Mar) — no glut yet. The equity market repriced the narrative anyway: the cohort fell 25-45% from highs, and only the Meta announcement hit every neocloud name at once while Meta itself rose 8.8%. Full section below.
 
 ---
 
@@ -311,6 +312,161 @@ Who is JDSU? The single-buyer supplier tier: SK hynix's HBM block, Micron's 17% 
 | SK hynix | HBM block tied to Nvidia roadmap | Not filing-sized | HBM over 30% of DRAM exposed | JDSU-like block | Yes-diminished |
 
 What I watch from here is simple: RPO concentration, the next 10-K concentration footnotes, and the refinancing calendar already flagged in the study. If those move together, the circle is no longer just concentrated — it is transmitting.
+
+---
+
+## The surrender pivot: the spenders start becoming landlords (June-July 2026)
+
+Something happened in the five weeks after this study's last update that the circle
+framework says should matter: two of the biggest capex spenders started selling compute
+instead of only buying it. I wanted to know whether this is the beginning of the supply
+glut that ends every capital cycle — or the circle healing itself. So I re-verified every
+deal against primary filings, rebuilt the rental-price picture, ran an event study on the
+announcement dates with my own price data, and re-scored the neocloud cohort's contract
+protection name by name. Here is the chain, step by step.
+
+The events, dated and sourced first, because the popular retelling gets them wrong:
+
+| Date | What happened | Verified terms |
+|---|---|---|
+| 2026-05-06 | Anthropic rents all of Colossus 1 (>300MW, >220k GPUs) from SpaceX | ~$1.25B/month through May 2029, disclosed 2026-05-20 in the SpaceX S-1; Musk then publicly called it a "180-day lease" (Reuters, 2026-05-28) |
+| 2026-06-05 | Google rents ~110k GPUs of Colossus capacity | $920M/month Oct 2026-Jun 2029 per SpaceX's SEC filing — with a 90-day mutual termination right after 2026-12-31 |
+| 2026-06-22 | Reflection (open-source lab) signs for GB300 capacity | Up to $6.3B (CNBC); same short-dated escape structure |
+| 2026-07-01 | Meta is building "Meta Compute" — a cloud business selling its excess AI compute | Bloomberg report; no pricing, no GA date. Meta simultaneously signed ~1.6GW of *new* rented capacity from Crusoe |
+
+Note what is actually being sold. xAI lost the frontier race (9-10 of 12 co-founders
+gone, Grok behind, the company folded into SpaceX in February) — and its sunk capex did
+not get written off. It became rental supply, absorbed instantly by the winners. At full
+rate the three SpaceX deals annualize to roughly $27.8B of rental revenue against $818M
+of AI-segment revenue in Q1. The failed racer became a landlord at thirteen times the size.
+
+**Finding 1 — the deals price at a premium, and the rental tape never flinched.** If this
+were the start of a glut, new merchant supply should print *below* market and spot prices
+should sag. The opposite happened. Dividing disclosed dollars by disclosed GPUs, Anthropic
+pays roughly $7.78 per GPU-hour for Colossus 1 — about twice a blended market rate for
+the same fleet — and Google's implied ~$11.46 is at-market only if the capacity is
+newest-generation. Meanwhile the one-year H100 contract rate rose almost 40% from October
+2025 ($1.70/hr) to March 2026 ($2.35/hr) with on-demand capacity effectively sold out
+(SemiAnalysis, April 2026), and the public rental indices show no break at any of the
+four announcement dates through July 2. Every gigawatt announced so far is either already
+tenanted or unpriced. The supply shock, as of today, is an announcement, not a print.
+
+**Finding 2 — the equity market repriced the narrative anyway, and told us who it thinks
+loses.** I ran a market-model event study (abnormal returns vs QQQ, betas estimated
+before the first event) on an eight-name neocloud cohort — CoreWeave, Nebius, IREN,
+Applied Digital, Cipher, TeraWulf, Core Scientific, Galaxy — across all five
+announcement dates, daily adjusted closes.
+
+![Event-study abnormal returns of the neocloud cohort across the five surrender-pivot announcements — only Meta Compute produced a uniform negative shock](figures/surrender-event-study.png)
+
+| Event | Day-0 mean CAR | Day-0 share negative | Days 0 to +1 |
+|---|---:|---:|---:|
+| Anthropic-SpaceX announced (05-06) | +1.9% | 25% | -4.8% |
+| Anthropic dollars in the S-1 (05-20) | -1.7% | 75% | +7.3% |
+| Google-SpaceX (06-05) | +2.2% | 25% | +4.0% |
+| Reflection (06-22) | -2.3% | 88% | +4.2% |
+| Meta Compute (07-01) | **-4.7%** | **100%** | **-8.7%** |
+
+The SpaceX rental deals traded as *demand validation* — a landlord finding tenants at a
+premium is bullish for landlords. Meta Compute traded as *supply threat*: every cohort
+name fell (Nebius -17%, CoreWeave -11% over two days), memory fell with them (Micron
+-10%), and Meta itself **rose 8.8%** — the market paying the pivoter for capex discipline
+while charging the rental layer for the competition. One detail I did not expect:
+CoreWeave's 2026 high printed on May 6 — the exact day of the first surrender
+announcement — and the cohort now sits 25-45% below its 2026 highs. The narrative
+repricing is well underway; the fundamental one has not started.
+
+**Finding 3 — when the glut comes, it climbs down a ladder, and it is generational, not
+aggregate.** Work the cost arithmetic per H100-class GPU-hour (capex amortization, power,
+opex, cost of capital; my assumptions stated in the figure). A debt-funded neocloud needs
+roughly $1.46/hr full-cost to stand still. A hyperscaler building at scale needs about
+$1.25. But a *sunk* fleet — a surrendered lab's cluster, Meta's old H100/H200 surplus —
+is cash-positive down to roughly $0.26/hr. That column can underprice every debt-funded
+competitor by 3-5x and still generate cash. It doesn't have to today, because shortage
+lets it print $7-11. The ladder bites when new-generation volume (Blackwell is booked
+into autumn; Rubin delivers a step change in tokens per dollar) demotes the H100 to
+trailing edge — and the study already recorded what happens to trailing-edge rates: the
+A100/V100 tier fell 50-70% in the last generation turn while H100 contracts were rising
+40%. That is the shape of this glut: not "compute is worthless," but *the specific
+vintage that collateralizes the neocloud debt stack gets repriced while the frontier tier
+stays tight*. Two counterweights keep this from being 1999 fiber redux on schedule:
+DRAM/NAND repricing has pushed replacement cost up (a floor under new-build pricing that
+dark fiber never had), and the rental market is really two markets — commodity
+marketplace GPUs around $1.5-2.4 versus managed frontier-scale clusters at $7+ — and the
+new merchant supply enters the managed tier, where the engineering moat is real.
+
+![The cost ladder from sunk-fleet cash floor to the prices 2026 actually prints](figures/surrender-ladder.png)
+
+**Finding 4 — the cohort is not one credit, and the fragility concentrates at exactly two
+nodes.** I re-scored all nine names (the eight above plus Oracle as the transmission
+channel) on contract cover, refinancing wall and free cash flow, from their latest
+filings. The surprise: most of the "neocloud" cohort is now protected project finance.
+Cipher's $11.4B of leases are fully pre-funded with non-recourse notes at 6.1-7.1% and
+no maturity before 2030; Applied Digital carries $31B of base take-or-pay with ~65%
+investment-grade counterparties and its project debt repricing *down* (9.25% to 6.75%);
+TeraWulf's project notes carry a $3.2B Google backstop; Nebius holds $9.3B cash against
+$8.5B of converts due 2029+ with up to ~$44B of Microsoft and Meta commitments. Shorting
+those names on a glut thesis is shorting someone else's investment-grade lease book. The
+fragility lives where concentration, leverage and vintage overlap: **CoreWeave** ($24.9B
+debt of which $7.5B current, a rate ladder from 5.9% to ~15%, -$4.7B quarterly free cash
+flow, 67% of revenue from Microsoft — and a $99.4B backlog whose largest counterparties
+are now building or renting the competing supply) and **Oracle** ($638B RPO roughly half
+concentrated in one cash-negative tenant, $129.5B debt, a self-imposed 2026 debt freeze,
+already -43% from its high). One more tell from the credit market: GPU-collateralized
+lending now prices by *counterparty*, not hardware — the same asset class costs
+SOFR+2.25% with investment-grade offtakers and SOFR+4.50% without. Tenant quality is the
+system's stress variable, and tenant-turned-competitor is precisely what the surrender
+pivot manufactures.
+
+**Finding 5 — the demand-side rumor is backwards: value is migrating TO the labs.** A
+reasonable worry is that enterprises, distrusting the labs with their data and burned by
+oversold pilots, defect to self-hosted open-weight models and take the labs' revenue with
+them. The perception is real and grounded — the NYT-litigation preservation order really
+did compel retention of consumer chats, Gartner really does project ~40% of agentic-AI
+projects cancelled by 2027, and a February 2026 survey has 74% of CIOs regretting at
+least one AI vendor decision. But the revealed behavior went the other way: open-weight
+share of enterprise LLM workloads *fell* from 19% to 11% year over year (Menlo Ventures,
+Dec 2025), defection is lab-to-lab rather than lab-to-open, and Anthropic's run-rate went
+from $9B to $44B+ with inference gross margins moving from 38% to over 70% (SemiAnalysis,
+May 2026). Enterprises grumble and buy more, because workload-level token ROI is
+measurable even where program-level transformation ROI is not. The overselling bill, when
+it lands, lands on the application layer that sold the transformation — not on the labs
+that sell the tokens. So the circle's 2026 mutation is now visible end to end: 2025's
+value pooled in the chip layer, 2026's is pooling in the model layer, and the compute
+middle — the layer everyone could enter — is commoditizing between them.
+
+### What this changes in the study's verdict
+
+The clock does not move yet. A supply revelation needs supply *prints* — a rental-rate
+break, a down-renewal, a failed refinancing — and none has printed; the tape into July
+2026 still says shortage. What the pivot changes is the **mechanism inventory**: the
+circle has a self-healing move nobody priced in 1999 terms (failed capex re-enters as
+tenanted rental supply instead of writing off), the revenue behind the headline backlogs
+is shorter-dated than it looks (90/180-day outs), and the eventual glut has a named shape
+(old-generation vintage vs new) and a named first victim profile (debt-funded,
+H100-collateralized, renewal-exposed, concentrated-tenant). The exposure ladder's rank 5
+sharpens to two nodes: CoreWeave as the leverage node, Oracle as the credit-transmission
+channel.
+
+| Question | Answer |
+|---|---|
+| Is the surrender pivot real? | **Yes** — primary-verified: xAI folded and rented out; Meta opened the business line while still renting new capacity |
+| Does it break the circle today? | **No** — supply absorbed at a ~2x premium into a shortage; rental tape unmoved through Jul 2 |
+| Is "short the neoclouds" the trade? | **No as a class** — most of the cohort is backstopped project finance, 25-45% is already priced, and the names carry +30%-in-5-days squeeze history |
+| Is there a conditional version? | **Yes, 2027-shaped** — the generational glut, watched through the one-year contract rate, Meta Compute's eventual pricing, renewal disclosures, and the CoreWeave/Oracle credit prints |
+| Did enterprise distrust dent the labs? | **No** — perception real, defection false; open-weight enterprise share fell 19% to 11% while lab run-rates tripled |
+
+What to watch, updated: the one-year H100/B200 contract rate against the $1.70 floor;
+Meta Compute's GA pricing; the first on-record neocloud commentary on the pivot (Q2
+calls, August 2026); whether any SpaceX tenant exercises its 90/180-day out; Galaxy's
+December 2026 exchangeables as the cohort's only hard 2026 maturity; and Oracle CDS. If
+two of those flash together, the supply-revelation phase has begun and the clock section
+above needs rewriting.
+
+*Builds on the circle, rental-tape and exposure-ladder sections above; extends [study 30](../30-llm-players-forecast/)'s
+forecast (which called neoclouds-first via financing refusal) and [study 35](../35-ai-capex-by-company/)'s
+funding table (which named the cash-rich core vs the leveraged edge). Next: if the
+triggers light, the follow-up is the credit-phase study.*
 
 ---
 

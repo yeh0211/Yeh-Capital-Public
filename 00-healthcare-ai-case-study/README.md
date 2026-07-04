@@ -1,8 +1,10 @@
-# Healthcare AI: who actually gets paid
+# Healthcare AI — a case study (US + Taiwan)
 
-**The question:** AI is pouring into healthcare on both sides of the Pacific. Across every player I could find in the US and Taiwan, who captures durable value, and who just has a good demo?
+**What this is.** A case study exploring AI in healthcare from end to end: the global trend, the companies and the cases they are actually running, their business models, the players and the value chain that connects them, their moats, the rules in each market, and the market itself. The lens is the US and Taiwan.
 
-**Why it matters:** if you are deciding where a healthcare-AI dollar of your own is safe, the headline "AI is transforming medicine" tells you nothing about *where the money lands*. This study is my attempt to find the layer that keeps the rent.
+**The question that organizes it.** Exploring a whole field can collapse into a list, so I hung the exploration on one question sharp enough to cut through the hype: across every player I could find, who captures durable value, and who just has a good demo?
+
+**Why it matters.** "AI is transforming medicine" is true and tells you almost nothing. This case study is my attempt to actually walk the field — 61 companies, 58 profiled in depth — and find where the value lands.
 
 *By Hsin Cheng Yeh.*
 

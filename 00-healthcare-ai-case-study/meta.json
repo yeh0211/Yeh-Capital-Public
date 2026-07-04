@@ -1,6 +1,6 @@
 {
   "slug": "healthcare-ai",
-  "title": "Healthcare AI: who actually gets paid",
+  "title": "Healthcare AI — a case study (US + Taiwan)",
   "question": "AI is flooding into healthcare. Across every player, US and Taiwan, who captures durable value and who just has a demo?",
   "status": "draft",
   "byline": "Hsin Cheng Yeh",
@@ -11,5 +11,6 @@
     "Taiwan"
   ],
   "builds_on": "internal Ch0-7 briefs + frontier drug-discovery spotlight",
-  "number": 37
+  "type": "case_study",
+  "featured": true
 }

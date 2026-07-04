@@ -1,0 +1,15 @@
+{
+  "slug": "healthcare-ai",
+  "title": "Healthcare AI: who actually gets paid",
+  "question": "AI is flooding into healthcare. Across every player, US and Taiwan, who captures durable value and who just has a demo?",
+  "status": "draft",
+  "byline": "Hsin Cheng Yeh",
+  "method_note": "Industry case study built to a buy-side research method (framework-first, complete-map, candidate-selection-over-generation, reimbursement-rate-of-change-over-TAM). Method-and-findings-only; primary sources read privately.",
+  "universe": 61,
+  "regions": [
+    "US",
+    "Taiwan"
+  ],
+  "builds_on": "internal Ch0-7 briefs + frontier drug-discovery spotlight",
+  "number": 37
+}

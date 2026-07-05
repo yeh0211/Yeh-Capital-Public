@@ -6,11 +6,9 @@ The data pipeline that produces these results is operated privately. This reposi
 
 > All studies are research / backtested. No live capital, no audited track record. Metrics are reported as method, with confidence intervals and out-of-sample tests, not as a return stream.
 
-## Featured case study
+## Featured research
 
-**[Healthcare AI — a case study (US + Taiwan)](00-healthcare-ai-case-study/)** — an end-to-end walk through AI in healthcare: the global trend, the companies and their cases, business models, the players and the value chain, their moats, the rules in each market, and the market itself — 61 named players, 58 profiled in depth in equity-research-note form, with a positioning map of the whole field. The organizing question: who captures durable value, and who just has a good demo? Verdict — value accrues to owners of a scarce, non-commoditizing input (a reimbursement code, an owned clinical asset, a licensed data corpus), not to AI pure-plays; the binding constraint is payment, not technology.
-
-
+**[Healthcare AI research: how the field actually works (US and Taiwan)](00-healthcare-ai-case-study/)** - I spent a while trying to understand healthcare AI from one end to the other: the global trend, the companies and what they actually do, how they make money, who the players are and how they connect, what protects the good ones from being copied, the rules in each market, and how big the thing is. 61 companies, 58 profiled in real depth, written so a non-specialist can follow it. The question I used to hold it together: out of every player I could find, which ones own something that lasts, and which just have a good demo?
 ## Notes
 
 | # | Study | Question | Finding |

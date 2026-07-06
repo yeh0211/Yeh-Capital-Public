@@ -6,6 +6,9 @@ The data pipeline that produces these results is operated privately. This reposi
 
 > All studies are research / backtested. No live capital, no audited track record. Metrics are reported as method, with confidence intervals and out-of-sample tests, not as a return stream.
 
+## Featured research
+
+**[Healthcare AI research: how the field actually works (US and Taiwan)](00-healthcare-ai-case-study/)** - I spent a while trying to understand healthcare AI from one end to the other: the global trend, the companies and what they actually do, how they make money, who the players are and how they connect, what protects the good ones from being copied, the rules in each market, and how big the thing is. 61 companies, 58 profiled in real depth, written so a non-specialist can follow it. The question I used to hold it together: out of every player I could find, which ones own something that lasts, and which just have a good demo?
 ## Notes
 
 | # | Study | Question | Finding |

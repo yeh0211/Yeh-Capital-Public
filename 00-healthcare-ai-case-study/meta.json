@@ -1,0 +1,16 @@
+{
+  "slug": "healthcare-ai",
+  "title": "Healthcare AI research: how the field actually works (US and Taiwan)",
+  "question": "Out of every player in US + Taiwan healthcare AI, which own something that lasts and which just have a good demo?",
+  "status": "draft",
+  "byline": "Hsin Cheng Yeh",
+  "method_note": "Industry case study built to a buy-side research method (framework-first, complete-map, candidate-selection-over-generation, reimbursement-rate-of-change-over-TAM). Method-and-findings-only; primary sources read privately.",
+  "universe": 61,
+  "regions": [
+    "US",
+    "Taiwan"
+  ],
+  "builds_on": "internal Ch0-7 briefs + frontier drug-discovery spotlight",
+  "type": "case_study",
+  "featured": true
+}

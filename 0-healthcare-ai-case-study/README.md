@@ -47,6 +47,51 @@ The universe is **61 companies** across the US and Taiwan, picked so that every 
 
 ---
 
+## How we got here: a healthcare-AI timeline, 2010 to now
+
+![Healthcare AI timeline, 2010 to now](figures/08_timeline.png)
+
+To make sense of where the field sits today, it helps to walk the fifteen years that built it. The short story is that the science kept arriving years ahead of the business, and the thing that decided who made money was almost never the cleverness of the model. It was who got paid.
+
+The early years were the hype years. In 2011 a question-answering machine beat two human champions on television, and by 2015 that same brand had a health division and about $4bn of acquisitions behind it, promising to read cancer like a specialist. It did not work. In 2022 the whole effort was sold for parts at roughly a quarter of what it cost to build. That arc, brilliant demo to quiet sale, turned out to be the pattern the field would keep repeating.
+
+Underneath the noise, two real breakthroughs landed. The first was regulatory: in 2018 the FDA cleared the first AI allowed to diagnose a patient with no doctor in the loop, an eye-screening tool. The second was scientific: between 2018 and 2024, protein-structure prediction went from a strong contest result to a solved 50-year problem to a free public database of 200m-plus structures to a Nobel Prize. That last part matters more than it looks. The breakthrough that was supposed to be a private drug-discovery moat became a commons within about a year, because open copies caught the frontier. The science was a gift to everyone, which is exactly why it was a moat for almost no one.
+
+Then came the money questions, and this is where the field actually gets decided. Getting an insurer to pay for AI is the wall. In 2020 a stroke tool won the first extra Medicare payment for AI; the code-writing plumbing followed in 2021; and by 2024 exactly one heart-imaging tool had graduated all the way to a permanent national billing code. Set that against roughly 1,451 AI devices the FDA has cleared, only 3 of which hold a permanent paid code, and you have the single most important fact in the field: clearance is easy and payment is the gate. The 2025 bill to create a defined AI payment category is the tell. It has to exist because no durable path does yet.
+
+The 2022-23 stretch is when the general-purpose chatbots showed up and clinicians started using them, approved or not, to draft notes and answer questions. That pulled ambient scribes and clinical assistants into the mainstream. But it also set up the trap that is playing out now: in 2026 the dominant records system built its own AI scribe straight into the chart, and the startups that had been renting depth from that system found the landlord had become the competitor.
+
+The deals and listings round it out. Isomorphic, spun out of the protein breakthrough in 2021, signed two pharma partners in 2024 for headline numbers near $3bn, of which only a low-single-digit percent was actually paid upfront, the honest shape of an AI-drug deal. Tempus and Caris took the diagnostics-data model public in 2024 and 2025. And when two of the loudest AI-drug names merged in late 2024, it read as consolidation forced by thin pipelines, not strength. The recurring lesson across all of it: the durable value tends to sit with whoever owns the payment rail, the physical asset, or the data, and that is usually the incumbent, not the AI startup the headlines got excited about.
+
+- **2011-02 -** IBM Watson wins Jeopardy. A question-answering machine beats two human champions and becomes the face of AI in medicine before it ever touched a patient.
+- **2015-04 -** IBM launches Watson Health. IBM stands up a health unit and buys its way in for about $4bn [reported], promising Watson would read oncology like a specialist.
+- **2016-02 -** DeepMind Streams goes live at the Royal Free. An AI-branded kidney-injury alert app ships to a London hospital on a data-sharing deal covering about 1.6m patient records [reported].
+- **2017-07 -** UK regulator rules the Streams data deal broke the law. The privacy regulator finds the hospital handed over patient data unlawfully; no fine, but the first shot across the bow on health-data consent [reported].
+- **2018-04 -** FDA clears IDx-DR, the first autonomous diagnostic AI. De Novo authorization for a tool that reads eyes for diabetic retinopathy with no doctor in the loop, the first AI allowed to diagnose on its own [disclosed].
+- **2018-12 -** AlphaFold wins CASP13. DeepMind's first protein-folding model tops the field's benchmark contest, a strong result that still leaves the problem unsolved.
+- **2020-04 -** Nuance ships Dragon Ambient eXperience (DAX). The ambient-scribe idea, an AI that listens to the visit and writes the note, goes commercial and defines the category doctors would actually adopt [reported].
+- **2020-09 -** Viz.ai wins the first AI add-on payment from Medicare. CMS grants a stroke-triage tool a temporary New Technology Add-on Payment of up to $1,040 per use, the first time a US public payer pays extra for AI [disclosed].
+- **2020-11 -** AlphaFold2 solves protein folding at CASP14. The second model scores about 92 on a 100-point accuracy test [disclosed], and the contest organizers call a 50-year grand-challenge effectively solved.
+- **2021-01 -** FDA publishes its AI/ML Action Plan. The regulator lays out how it will oversee learning software and floats letting devices update under a pre-agreed plan instead of re-filing each change [disclosed].
+- **2021-07 -** The AlphaFold protein-structure database opens. DeepMind and a public genomics lab release structures for a first tranche of proteins for free [disclosed], later scaling past 200m and turning a moat into a commons.
+- **2021-09 -** AMA creates an AI taxonomy for billing codes. The body that writes US procedure codes adds a framework sorting AI into assistive, augmentative, and autonomous, the plumbing before anything gets paid [disclosed].
+- **2021-11 -** Isomorphic Labs is founded. Alphabet spins AlphaFold's drug ambitions into a standalone company, betting the protein breakthrough can be turned into medicines.
+- **2022-06 -** IBM sells Watson Health for parts. The oncology-AI flagship that cost about $4bn to build is sold to a private-equity firm for about $1.07bn [reported] and renamed, closing the Watson-in-medicine story.
+- **2022-11 -** ChatGPT is released. A general-purpose chatbot goes public and, within weeks, clinicians start using it to draft notes and answer questions it was never approved for.
+- **2023-02 -** ChatGPT is shown to nearly pass the US medical licensing exam. A published study puts the model at or near the ~60% passing line across all three exam steps [disclosed], the moment clinical use stopped being hypothetical.
+- **2023-08 -** Babylon Health files for bankruptcy. The AI-symptom-checker unicorn, worth about $2bn at its 2021 SPAC listing [reported], liquidates, the clearest sign that an AI demo is not a business.
+- **2024-01 -** Isomorphic signs Lilly and Novartis for up to ~$3bn. Two pharma deals with about $83m paid upfront against roughly $2.9bn in milestones [disclosed], the template for how AI-drug deals are really structured: cheap staged bets.
+- **2024-01 -** FFR-CT graduates to a permanent national billing code. A heart-blood-flow AI collapses four temporary codes into one permanent Category I code effective this year [disclosed], the rare AI tool with a durable payment path.
+- **2024-05 -** AlphaFold3 is released. The third model extends beyond proteins to how they bind DNA, drugs, and other molecules, moving closer to the chemistry that matters for medicines.
+- **2024-06 -** Tempus AI goes public. The multi-data diagnostics-and-data platform lists on Nasdaq at $37 a share, raising about $410m [disclosed], the first big pure-play healthcare-AI IPO.
+- **2024-10 -** AlphaFold's creators win the Nobel Prize in Chemistry. DeepMind's Hassabis and Jumper share the prize [disclosed], the field's scientific high-water mark, and a reminder the science ran years ahead of the business.
+- **2024-11 -** Recursion completes its merger with Exscientia. Two of the loudest AI-drug names combine in an all-stock deal valuing Exscientia at about $650m [reported], consolidation driven by thin pipelines, not strength.
+- **2025-04 -** The Health Tech Investment Act is introduced. A Senate bill (S.1399) would create a defined Medicare payment category for algorithm-based services with at least five years of separate pay [disclosed]; that it is needed at all is the tell there is no durable AI payment path today.
+- **2025-06 -** Caris Life Sciences goes public. The precision-oncology lab raises about $494m on Nasdaq and pops on day one [disclosed], the second major diagnostics-data IPO in a year.
+- **2026-02 -** Epic ships its own ambient AI scribe into the chart. The dominant records system builds note-writing straight into the workflow at a rumored ~$80 per provider per month [sell-side], and the landlord becomes the competitor to the scribe startups renting its rails.
+
+---
+
 ## What I found
 
 I organized the middle of this around a simple sequence. Size the field. Find the real gate. Map who sits where. Take apart the one sub-sector everyone is excited about. Try to break the moats. Check the rules in each market. Each finding below carries its own reasoning so you can watch it earn its place rather than taking my word for it.
@@ -137,6 +182,41 @@ Phase I is high precisely because it is not testing whether the drug works, only
 *What I checked.* The strongest counter-argument is "the proprietary lab-data flywheel will compound into a real edge over time." Two facts break it. Open, commercially-licensed copies of the frontier structure-prediction models caught up within about a year, at over 1000x lower cost, so owning more proprietary data buys you almost no model advantage exactly where the moat was supposed to be. And the company with the biggest automated-lab flywheel has the field's worst clinical record and cut its three lead programs in 2025 [estimate/disclosed]. The one genuine human proof-of-concept, a single ~71-patient trial in one country from an AI-derived target and molecule, is enough to refute the too-strong claim that "nothing works," but it is nowhere near enough to prove that AI raises the base success rate.
 
 *Verdict.* **Confirmed: AI solved the cheap half of the problem.** The only defensible position here is owning the drug asset yourself plus having a real drug company to distribute it, and even that runs into the same ~40% wall at Phase II as everyone else. The chart is a funnel: the AI spike at Phase I collapsing flat onto the historic ~40% line at Phase II, with two points pinned to the wall, "0 AI drugs approved (2026)" and "1 genuine human proof-of-concept."
+
+## Who funds AI drug discovery, and where the value lands
+
+![AI drug-discovery deals: up-front cash vs the headline number](figures/07_money_flow.png)
+
+If you only read the headlines, you would think the AI drug-discovery companies are getting rich. "Isomorphic Labs signs deals worth nearly $3bn." "Takeda inks $1.7bn AI alliance." "Roche commits up to $12bn to Recursion." The numbers are enormous and they are real. But the headline number and the money that actually changes hands are two very different things, and the gap between them is the whole story of who wins in this field.
+
+Here is the mechanism, in plain terms. When a big drug company (an incumbent - Lilly, Novartis, Sanofi, Takeda, Roche) hires an AI lab, it almost never writes a big check on day one. It writes a small one. The rest of that giant headline is a stack of "milestone" payments, and each milestone only pays out if a specific thing happens later - a molecule gets picked, a trial starts, a trial succeeds, a drug gets approved, a drug hits a sales target. Most of those things never happen, because most drug programs fail. So the headline is not a price. It is the sum of every payment that would be made in the one lucky world where everything goes right.
+
+Look at what the incumbents actually paid upfront, as a share of the headline they announced:
+
+| Deal | Upfront | Headline total | Upfront as share |
+|---|---|---|---|
+| Roche/Genentech - Recursion (2021) | $150m | up to $12bn | 1.2% |
+| Sanofi - Insilico (2022) | $21.5m | up to $1.2bn | 1.8% |
+| Sanofi - Exscientia (2022) | $100m | up to $5.2bn | 1.9% |
+| Novo Nordisk - Valo Health (2023) | $60m | up to $2.76bn | 2.2% |
+| BMS - insitro (2020) | $50m | up to $2bn | 2.5% |
+| Amgen - Generate (2022) | $50m | up to $1.9bn | 2.6% |
+| Lilly - Isomorphic (2024) | $45m | up to $1.745bn | 2.6% |
+| Novartis - Isomorphic (2024) | $37.5m | up to $1.2bn | 3.0% |
+
+The pattern is not subtle. Across the platform deals, the incumbent puts down roughly 1-3 cents of every headline dollar today, and promises the other 97-99 cents only if the science actually works, one gate at a time. The BMS-insitro deal is the tell: an "up to $2bn" partnership that, several years in, had paid out on the order of $25m in early discovery milestones - a little over one percent of the headline. That is not a company betting $2bn on AI. That is a company buying a cheap lottery ticket and letting the market print the $2bn number for it.
+
+Why would an incumbent structure it this way? Because it is buying **optionality**, not a drug. For a rounding error on its R&D budget, a big pharma company gets a call option on an unproven platform: if the AI lab produces something real, the incumbent has already locked up the rights to develop it; if the AI lab produces nothing (the base case, given that the first real efficacy test still fails about 60% of the time), the incumbent walks away having spent almost nothing. Running several of these small bets at once - Takeda alone is running two, with Insilico and Iambic - is exactly how you would play a technology you think *might* work but cannot yet count on. The deal structure is the incumbents telling you, in cash, that they are treating AI discovery as a promising experiment, not a sure thing.
+
+Now the part that matters most: **even in the lucky world where the science works, the value does not land with the AI lab.** Walk the chain of who owns what. The AI company designs a molecule. Then the incumbent runs the clinical trials (Phase I, II, III - which is where 90%-plus of the cost and nearly all the risk sits). The incumbent takes it through the regulator. The incumbent manufactures it. The incumbent's salesforce sells it, and the incumbent's payer relationships get it reimbursed. Read the fine print of these deals and it is explicit: Takeda gets "exclusive worldwide rights to develop, manufacture and commercialize" whatever comes out of the Insilico work; Merck "retains exclusive rights to develop and commercialize" the Variational compounds; AstraZeneca owns the Absci antibody. The AI lab's reward is the small upfront, plus milestone payments it mostly never collects, plus a royalty - a single-digit-to-low-teens slice of sales on a product it does not own, control, or distribute. The molecule, the trial data, the approval, and the customer all belong to the incumbent.
+
+That is the point the whole study keeps landing on. The AI lab is a **paid tool**, not an owner. It is closer to a very sophisticated contract research shop than to a drug company. It gets hired, it does clever work, it gets paid a fee and a thin back-end - and the durable, compounding value (the approved drug, the franchise, the distribution) accrues to the incumbent who owned the expensive, un-automatable half of the business all along.
+
+The two other kinds of money flow in this field tell the same story from different angles. **Acquisitions** are incumbents buying the tool outright rather than renting it: Microsoft paid $19.7bn for Nuance not for a model but for the workflow rail already sitting inside most US hospitals; BioNTech paid ~$680m to fold InstaDeep's AI team into its own pipeline. In both cases a platform or a drug owner absorbed the AI capability into a business that already owned the scarce input. And **compute** deals are the one place the money is not contingent at all - because the supplier does not care whether any drug ever works. When Lilly and NVIDIA commit up to ~$1bn to a joint AI lab, or the Novo Nordisk Foundation funds a supercomputer, or GSK buys a Cerebras system, the chipmaker gets paid for the hardware and the cloud time whether or not a single molecule ever reaches a patient. NVIDIA's $50m stake in Recursion is the neatest illustration: it sells the shovels to the miners, and it also owns a piece of one miner - it wins on the picks either way. The compute layer is the one node in this whole map that collects real, non-contingent cash on every single bet at the table, which is exactly why the study flags it as a separate silicon story rather than a healthcare-AI one.
+
+So the money map, top to bottom: incumbents pay small and contingent, and keep the drug; AI labs collect fees and thin royalties on assets they do not own; chipmakers get paid in full no matter what happens. The headlines are written in the AI labs' names. The value lands on the other two.
+
+---
 
 ### Finding 5 - Run four moats through a break-it test, and only owning the workflow survives
 

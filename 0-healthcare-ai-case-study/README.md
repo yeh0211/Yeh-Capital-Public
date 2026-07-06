@@ -4,7 +4,7 @@
 
 **The question I used to hold it together.** Trying to understand a whole field can turn into a shapeless list of company names. So I hung the whole thing on one question, sharp enough to force real answers: out of every player I could find, which ones own something that lasts, and which ones just have a good demo? That question turned out to teach me most of what I now understand about how the field works.
 
-**Why bother.** "AI is transforming medicine" is true and it tells you almost nothing. I wanted to actually walk the field instead of nodding at the headline. So I looked at 61 companies and profiled 58 of them in real depth, and this document is me explaining what that walk taught me.
+**Why bother.** "AI is transforming medicine" is true and it tells you almost nothing. I wanted to actually walk the field instead of nodding at the headline. So I looked at 94 companies and profiled 94 of them in depth, and this document is me explaining what that walk taught me.
 
 *By Hsin Cheng Yeh.*
 
@@ -43,7 +43,7 @@ I want to be plain about the method up front, because someone whose opinion I tr
 
 One housekeeping note so you know what you are reading. This is a method-and-findings write-up. I read a large stack of company filings, analyst notes, and regulatory records privately, and in the text I refer to them in general terms ("a filing", "an analyst note", "disclosed") rather than by name. I tag each load-bearing number so you know how solid it is: **[disclosed]** means it came from a company or primary source, **[sell-side]** means an analyst or market-research note, **[estimate]** means I derived it, **[reported]** means press, and **[unverified]** means it was cited somewhere but I could not confirm it against a primary source. Where that last case happened, I say so and use the corrected figure.
 
-The universe is **61 companies** across the US and Taiwan, picked so that every layer of the value-chain map has at least one company sitting in it. That is the widest coverage the sources would honestly support, and where the evidence on a name is thin I flag it right there rather than quietly leaving it out.
+The universe is **94 companies** across the US and Taiwan, picked so that every layer of the value-chain map has at least one company sitting in it. That is the widest coverage the sources would honestly support, and where the evidence on a name is thin I flag it right there rather than quietly leaving it out.
 
 ---
 
@@ -247,11 +247,11 @@ Taiwan flips the shape of the gate. It runs a single national insurer, so one co
 
 ![The whole universe on two axes: business quality, moat duration, and market expectation](figures/00_positioning_master.png)
 
-The 61 names are placed so that every layer of the value-chain map has someone standing in it. (A value chain just means the sequence of steps from raw inputs to the final customer, with a different set of companies at each step.) The diagnostics chain runs from reagents and sequencing machines, up through the lab, then the AI that interprets the results, then the clinical workflow, then the resale of de-identified data to drug companies, and finally the insurer who pays. The drug-discovery chain runs in parallel, from identifying a biological target, through generating candidate molecules, picking the best ones, translating them toward humans, and running the clinical trials, with a spine of computing power and AI models underneath the whole thing. The two chains touch at exactly one point worth drawing: selling diagnostics data to drug companies feeds directly into the target-identification step of drug discovery. That is the single connection where a diagnostics company quietly becomes a supplier to drug discovery.
+The companies are placed so that every layer of the value-chain map has someone standing in it. (A value chain just means the sequence of steps from raw inputs to the final customer, with a different set of companies at each step.) The diagnostics chain runs from reagents and sequencing machines, up through the lab, then the AI that interprets the results, then the clinical workflow, then the resale of de-identified data to drug companies, and finally the insurer who pays. The drug-discovery chain runs in parallel, from identifying a biological target, through generating candidate molecules, picking the best ones, translating them toward humans, and running the clinical trials, with a spine of computing power and AI models underneath the whole thing. The two chains touch at exactly one point worth drawing: selling diagnostics data to drug companies feeds directly into the target-identification step of drug discovery. That is the single connection where a diagnostics company quietly becomes a supplier to drug discovery.
 
 Three things the map makes obvious. The crowd is bunched up at generating molecules and at clinical workflow, while the thinnest real occupancy is at pre-clinical translation, which is exactly the unsolved, value-bearing step, and tellingly nobody sells it as a standalone product. I flag that empty spot rather than paper over it. Nineteen names touch the drug-discovery ladder but only one has a genuine human proof-of-concept. And Taiwan is solid across the diagnostics chain but almost entirely missing from every layer of drug discovery. Its one load-bearing node there is computing silicon, which belongs to the semiconductor world, not to any healthcare-AI stock.
 
-The per-company deep profiles live in **[`companies/`](companies/)**, one file per name. Each one reads the company through four lenses (its business model, where it sits in the value chain, who it competes with, and the handful of numbers that actually drive it), plus a verdict on its moat, a bear case, and a read on what the market is expecting. A verdict-at-a-glance table across all 58 is in **[`companies/INDEX.md`](companies/INDEX.md)**. The depth scales to the evidence: the public companies carry real financials, the private ones carry funding and moat-thesis, the Taiwan ones carry whatever the local filings disclose, and I flag where that is thin. The table below is the compact placement, and each row links into the detail.
+The per-company deep profiles live in **[`companies/`](companies/)**, one file per name. Each one reads the company through four lenses (its business model, where it sits in the value chain, who it competes with, and the handful of numbers that actually drive it), plus a verdict on its moat, a bear case, and a read on what the market is expecting. A verdict-at-a-glance table across all 94 is in **[`companies/INDEX.md`](companies/INDEX.md)**. The depth scales to the evidence: the public companies carry real financials, the private ones carry funding and moat-thesis, the Taiwan ones carry whatever the local filings disclose, and I flag where that is thin. The table below is the compact placement, and each row links into the detail.
 
 *Key to the shorthand: DO = drug-owner, P&S = picks-and-shovels (sells tools to everyone else), WF = workflow-software, DP = data-platform, AIS = AI-services, SaMD = regulated software treated as a medical device, INF = infrastructure. Q = how good my evidence is on that specific name, which is not the same as how good the company is.*
 
@@ -319,6 +319,62 @@ The per-company deep profiles live in **[`companies/`](companies/)**, one file p
 | 60 | Foxconn CoDocator 鴻海 | 2317 TT | TW | Pub | medical foundation model | AIS/INF | low |
 | 61 | Hospital AI centres (NTUH / VGHTPE / CGMH) | n/a | TW | Priv | data source / model-build | AIS | med |
 
+### The expansion: incumbents, the rest of the world, and consumer health
+
+The original map above is the US and Taiwan core. This round adds three groups the first pass missed: the big-pharma incumbents that actually fund AI drug discovery, the leading AI-health players outside the US and Taiwan, and the consumer and telehealth names. Full profiles are in [`companies/`](companies/); the one-line reads:
+
+
+**Pharma incumbents - the capex funders**
+
+| Company | Read |
+|---|---|
+| [AbbVie](companies/ABBV.md) | Diversified immunology incumbent that out-ran the Humira cliff via Skyrizi/Rinvoq and serial M&A; uses AI as a cheap internal tool plus a few option-sized deals (BigHat, Caris/ConcertAI) while keeping every asset - AI is immateria |
+| [Amgen](companies/AMGN.md) | Durable diversified biotech that both funds and builds its own AI (owns deCODE data), but keeps value at L9 because it bears Phase-II risk and owns the molecule; equity is a MariTide-obesity and base-durability call, not an AI sto |
+| [AstraZeneca](companies/AZN.md) | Good business, wide franchise/oncology moat - not an AI moat; the incumbent funds the AI, licenses shared oncology models, and now buys the AI outright (Modella) while keeping the drugs, trials, biomarkers, and value. AI is immate |
+| [Bristol Myers Squibb](companies/BMY.md) | Good business, cheaply priced as a patent-cliff pharma not an AI story; the incumbent funds the AI (insitro >$2bn pact, Claude across 30,000 employees) and keeps the drug at L9, but a steep near-term Eliquis/Opdivo/Revlimid cliff  |
+| [Eli Lilly](companies/LLY.md) | The mega-cap incumbent that funds AI drug discovery and keeps the value; AI is a cheap option and efficiency lever, immaterial to a ~$1.15tn valuation built on the GLP-1 franchise, not AI. |
+| [GSK](companies/GSK.md) | Cash-rich incumbent and early AI-in-discovery mover (23andMe 2018, Cerebras 2022, Noetik virtual-cell subscription 2026) that funds the AI and keeps the drugs; AI is immaterial to a ~32.7bn-pound company whose real story is a 2028 |
+| [Johnson & Johnson](companies/JNJ.md) | Diversified incumbent that funds the AI on BOTH chains - drug discovery (Isomorphic, milestone+royalty, keeps the molecules) and surgery (Ottava/Polyphonic, owns the robot + operating-room data) - and keeps the value; at ~$633bn o |
+| [Merck & Co](companies/MRK.md) | Good, durable pharma franchise but the whole equity thesis is Keytruda-cliff succession, not AI; the cleanest incumbent example of the study's core claim - MRK funds the AI (Variational, Mayo, internal GenAI) and keeps the value b |
+| [Novartis](companies/NVS.md) | One of the deepest AI adopters in big pharma - four external AI-discovery deals plus the data42 internal platform - and the cleanest European illustration of the study's rule: the incumbent funds the AI as cheap staged options and |
+| [Novo Nordisk](companies/NVO.md) | GLP-1 mega-cap incumbent that funds AI (Valo milestones), rents its compute (Gefion, owned by its Foundation not itself), and keeps the drugs - but the moat is the eroding metabolic franchise, not AI; stock lives and dies on GLP-1 |
+| [Pfizer](companies/PFE.md) | The cleanest incumbent case: Pfizer rents commoditizing AI models from the frontier labs, embeds them as an opex cost lever inside a $10-11bn R&D line, and keeps all the value at L9 because it owns the reimbursed molecule, the tri |
+| [Roche](companies/RHHBY.md) | The incumbent most like a data platform - already owns Flatiron (outcomes), Foundation Medicine (genomics), and Genentech plus the largest disclosed pharma GPU footprint, but at ~$330bn on CHF 61.5bn revenue it is a pipeline bet,  |
+| [Sanofi](companies/SNY.md) | Loudest "all in on AI" incumbent - 20,000-user internal plai tool plus 5+ external AI-discovery deals - but AI is immaterial to a ~$103bn cap; the real story is Dupixent concentration (~36% of sales) versus the coming patent cliff |
+| [Takeda](companies/TAK.md) | Japan's largest pharma; funds the AI-discovery chain (Insilico ~$600m, Iambic up to $1.7bn) and keeps the assets, with one completed proof point (Schrodinger-designed, Takeda-owned zasocitinib through positive Phase III). AI is im |
+
+**Global AI-native (Europe, China, Korea, Japan, India)**
+
+| Company | Read |
+|---|---|
+| [Airdoc (Beijing Airdoc Technology)](companies/AIRDOC.md) | Clearest listed pure-play on retinal-image AI screening in China with real regulatory firsts and ~73% gross margins, but a sub-scale (~RMB173m) business whose core screen is commoditizing as rivals win the same NMPA Class III clea |
+| [BeiGene (BeOne Medicines)](companies/ONC.md) | Real, cash-generative oncology franchise on a proven discover-develop-commercialize engine, but priced (~68x, ~5x sales) as a diversified global compounder when it is still ~70% one drug (Brukinsa), one year into GAAP profit, and  |
+| [BioNTech](companies/BNTX.md) | Clearest EU AI-native drug play by capability (in-house InstaDeep stack) and best-capitalized name in the AI-drug cohort (~EUR 16.8bn cash, a $1.5bn-upfront partnered BNT327 lead), but today's value rests on the pipeline and the b |
+| [Lunit](companies/LUNIT.md) | Korea AI-imaging champion with real global distribution and a 2027 breakeven path, but the cash core is acquired SaaS (Volpara) in a crowded low-pricing-power screening market and the durable moat leg (SCOPE pharma biomarker) is s |
+| [Niramai Health Analytix](companies/NIRAMAI.md) | Real, clinically validated, FDA-touched radiation-free AI breast screen for the market mammography cannot reach - but a ~$9m-funded, ~74-person company selling a low-ASP screen into grant-funded public-health channels has not show |
+| [Owkin](companies/OWKIN.md) | The EU's Tempus-for-pharma with a real, scarce pharma-access / GDPR-federated-data asset, but a moat that rents rather than owns; a ~$1bn 2021 unicorn mark its own carve-outs (Waiv, Bioptimus) and the commoditizing agentic-softwar |
+| [Oxford Nanopore](companies/ONT.md) | A genuine sole-source nanopore platform monopoly with a real consumable annuity and an AI basecaller welded to the hardware, priced fairly (~5x EV/sales) because the market withholds a software multiple; the moat (~7-10yr of platf |
+| [Ping An Healthcare (Good Doctor)](companies/PAGD.md) | Now-profitable China telehealth/AI-triage platform whose moat is the Ping An insurance channel, not its AI - about 60% of revenue is related-party F-end enablement, priced as a fair de-risked small-cap turnaround with no AI premiu |
+| [Preferred Networks](companies/PFN.md) | Rare full-stack AI national champion, but as a healthcare-AI name it is an unpriced option not a thesis: drug discovery is one undisclosed vertical with no owned pipeline, no pharma economics, no recent financials, and no traded s |
+| [Qure.ai](companies/QURE.md) | Clearest global-south leader in radiology-image AI - scarce distribution (4,500+ sites, 100+ countries), widest FDA-cleared chest-X-ray set, a WHO-cited TB franchise, capital-light per-scan model - but a small (~$23m), still-priva |
+| [Sophia Genetics](companies/SOPH.md) | Real asset-light genomics-SaaS with software-grade margins and a small but genuine decentralized data-network moat; not yet a proven compounder - mid-teens constant-currency growth and live cash burn mean the thesis rests on reach |
+| [Sysmex](companies/SYSMEX.md) | Profitable ~50%-share hematology leader with a durable reagent-annuity moat, cheap on a China/profit reset; the AI + genomics is honest optionality, not the engine - the study's incumbent-diagnostics control case. |
+| [Tempus-China / iCarbonX](companies/ICARBONX.md) | China multi-omics data-platform analogue to Tempus in ambition, opposite in outcome: consumer data flywheel never got fuel (~6,000 tests, ~96 loci, <1,000 paying users), CFIUS force-divested the cross-border PatientsLikeMe leg, ~4 |
+| [United Imaging](companies/UIH.md) | Genuine China #1-tier imaging OEM taking share from GE/Siemens/Philips with native AI in the box, but priced ~45-50x forward as a secular compounder when it is a capital-heavy, procurement-cycle-driven equipment maker whose overse |
+| [Vuno (338220 / KOSDAQ)](companies/VUNO.md) | Rare breakeven medical-AI name, but a single-product, single-country business (DeepCARS ~74% of revenue) riding a reimbursement exception that hits its permanent test around mid-2026, with US FDA entry delayed; ~60% de-rate leaves |
+| [WuXi AppTec (2359 / HKEX)](companies/WUXI.md) | Good, wide-moat, cash-generative picks-and-shovels CRDMO leader (FY2025 continuing-ops +21.4%, TIDES +96%, adj OCF RMB 16.67bn, RMB 58bn backlog) whose AI is an ancillary workflow tool, not the story - but the expectation is un-un |
+
+**Consumer, telehealth and payer AI**
+
+| Company | Read |
+|---|---|
+| [Function Health](companies/FUNCTION.md) | Good brand and a genuinely accumulating data asset, but priced ~$2.5bn (~25x est. run-rate) as a data platform when today it is a fast-growing, thin-margin subscription over a commodity, price-warring lab layer; rich until retenti |
+| [Hims & Hers Health](companies/HIMS.md) | Good, cash-generative subscription brand with a real but rented consumer moat; the AI/data-flywheel that justifies the premium is still narrative, so the expectation is demanding - fair if the flywheel turns and GLP-1 margins norm |
+| [Hinge Health](companies/HNGE.md) | Good business, real moat - but the moat is enterprise payer distribution and the 3,000-client contract book, not the motion AI, which is a margin-funding feature rivals also have; priced full for durable 25-35% compounding that co |
+| [Omada Health](companies/OMDA.md) | Real evidence-and-distribution moat with an early profitability inflection, but growth rides a GLP-1 drug wave its own channel partners could bundle away and the AI is coaching-efficiency tooling not a cleared model - priced full- |
+| [Oscar Health](companies/OSCR.md) | Well-run subscale ACA insurer with genuine AI-driven admin efficiency but no MLR lever and a thin moat, priced full for a durable margin recovery into a subsidy cliff (enhanced PTCs expired 31-Dec-2025, Senate blocked the extensio |
+| [Teladoc Health](companies/TDOC.md) | Scaled, real and cheap at ~0.65x sales, but not a good business today: flat-to-declining revenue, a no-moat D2C half on a marketing treadmill, a shallow enterprise distribution moat eroded by its own visit-based pricing reset, and |
+
 A few names I would not treat as clean healthcare-AI plays, flagged here so nobody mistakes them for one: Genesis Therapeutics, Retro Biosciences, and Latent Labs (all private, thin disclosure), and the four large Taiwan parents (ASUS AICS, Quanta QOCA, Wistron Medical, Foxconn CoDocator) whose healthcare-AI economics are buried inside a much larger business.
 
 ---
@@ -361,7 +417,7 @@ Every one of those is a specific, dated number I can be checked against, which i
 
 ## How this was built
 
-- **Universe:** 61 companies across the US and Taiwan, public and private, picked so every layer of the value-chain map has at least one company in it. Thin-evidence names are flagged inline rather than dropped.
+- **Universe:** 94 companies across the US and Taiwan, public and private, picked so every layer of the value-chain map has at least one company in it. Thin-evidence names are flagged inline rather than dropped.
 - **Sizing method:** each sub-sector sized from the bottom up as a first-pass valuation; the top-down market number is reported only to show the ~20-25x gap against measured spend, then set aside in favor of a rate-of-change number.
 - **Clearance vs payment count:** cleared-device counts use the public regulator's device list, by authorization date, across all classes, for internal consistency; permanent-payment counts come from a public policy analysis of billing codes.
 - **Drug-discovery funnel:** stage-transition base rates from public industry data; AI-molecule transition rates from a published small-sample study; per-stage cost from a published clinical-cost study; deal upfront-percentages computed from disclosed upfront and headline figures.

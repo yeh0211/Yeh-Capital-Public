@@ -60,7 +60,7 @@ def legend(ax):
 
 
 # master — all labeled, de-overlapped
-fig, ax = plt.subplots(figsize=(11.5, 7.6))
+fig, ax = plt.subplots(figsize=(14.5, 9.6))
 base(ax)
 legend(ax)
 xs = [coords(p)[0] for p in pos]
@@ -68,7 +68,7 @@ ys = [coords(p)[1] for p in pos]
 place_labels(ax, xs, ys, [p["key"] for p in pos], fontsize=7.5)
 finish(ax, "The whole universe on two axes",
        "Business quality (color) vs moat duration (x) vs what the market is paying (y)",
-       "Source: this study's 58 company profiles. Positions are the author's read, not advice.")
+       "Source: this study's 94 company profiles. Positions are the author's read, not advice.")
 save(fig, os.path.join(FIG, "00_positioning_master.png"))
 
 # per-company — only the highlighted name is labeled, so no overlap
@@ -78,7 +78,7 @@ for p in pos:
     base(ax, highlight=p["key"])
     legend(ax)
     finish(ax, f"{ascii_name(p['name']) or p['key']} on the map",
-           "Where this name sits vs the other 57 players",
+           "Where this name sits vs the other 93 players",
            "Source: this study. Position is the author's read, not advice.")
     save(fig, os.path.join(FIG, f"co_{p['key']}.png"))
     n += 1

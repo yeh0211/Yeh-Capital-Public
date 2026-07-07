@@ -47,7 +47,7 @@ Top-line scale, with the AI/deal figures kept in proportion so the reader sees h
 | Tempus / Pathos oncology foundation model | AZ joined a $200m data-license + model-development pact (2025); each party keeps a copy of the model - AZ pays into data, keeps the IP use [disclosed] |
 | CSPC Pharmaceutical (China) | $110m upfront, up to $1.62bn development + $3.6bn sales milestones (~$5.3bn ceiling) + single-digit royalties; AI-led oral-drug discovery (Jun-2025) [disclosed] |
 | Algen Biotechnologies | up to $555m; CRISPR + AI immunology target discovery [disclosed] |
-| Modella AI | full acquisition (announced JPM, Jan-2026); digital-pathology / multimodal foundation models brought in-house; terms not fully disclosed [disclosed] |
+| Modella AI | full acquisition (announced sell-side, Jan-2026); digital-pathology / multimodal foundation models brought in-house; terms not fully disclosed [disclosed] |
 
 Scale check: the CSPC ceiling ($5.3bn, almost all contingent and years away) is ~9% of one year's revenue; the upfront cash actually committed ($110m) is ~0.2%. The Tempus/Pathos $200m data pool is ~0.3% of revenue. Even the entire external-AI deal stack committed as real cash is a small fraction of the $13.6bn annual R&D line. AI is a strategic bet financed out of pocket change.
 

@@ -52,10 +52,10 @@ The L5 AI-bioinformatics anchor, back-integrated to L3/L4 (assay + CLIA lab) and
 
 Competition:
 - **Profitable twin, Caris (CAI):** FCF-positive at ~75% GM while TEM is still crossing zero; both guiding ~25% 2026 growth; Caris has an MCED launch TEM lacks. The cleaner expression of the same thesis.
-- **Per-assay category leaders:** Natera (Signatera MRD), Guardant (liquid), Foundation (CGP, most comparable to xT) - TEM is not best-in-class per test.
+- **Per-assay category leaders:** Natera (Signatera MRD), Guardant (liquid), Foundation (CGP, most comparable to xT) - TEM is not best-in-class per test, though the 29-May-2026 tumor-only xT CDx approval makes it the first lab holding CDx approval for both tumor-only and tumor-normal CGP, a regulatory-breadth edge over single-mode rivals [reported].
 - **L7 RWE rivals:** Flatiron, Komodo, Truveta.
 
-Edge: multimodal breadth + the integrated L4→L7 loop (diagnostics feeds data feeds applications) - a data-network moat, not a per-test win and not a reimbursement monopoly. New optionality: AZ/Pathos oncology foundation model, a SoftBank Japan JV (~$191m, 50/50; $95m licensing paid to TEM), an 18% Personalis stake for tumor-informed MRD, and a claimed ~4-5k-GPU compute base.
+Edge: multimodal breadth + the integrated L4→L7 loop (diagnostics feeds data feeds applications) - a data-network moat, not a per-test win and not a reimbursement monopoly. New optionality: AZ/Pathos oncology foundation model, a SoftBank Japan JV (~$191m, 50/50; $95m licensing paid to TEM), an 18% Personalis stake for tumor-informed MRD, a claimed ~4-5k-GPU compute base, and the 29-May-2026 tumor-only xT CDx approval that opens the ADLT-pricing migration for the DNA solid-tumor book (see Recent developments).
 
 ## Moat
 Two moats apply, and they split:
@@ -80,6 +80,21 @@ Falsification watch: (1) Data-leg NRR rolls below ~100% or a marquee pharma cont
 Shares $50.47, market cap ~$9.1bn, 174.5m shares (1-Jun-26). That is ~6.2x EV/2026E sales - down from a ~10x 2025 average, a discount to Guardant/Natera despite similar ~25% top-line. The multiple implies the market is buying the data-platform re-rate - that the 500-PB moat and ~30-40% Data growth compound the mix toward software economics, that ASP inflection self-funds the lab, and that TEM is an AI-drug-discovery beneficiary (the bull $100-120 PTs price ~10-11.5x forward EV/sales; the $35 bear prices ~3.5x on sub-15% CGP growth).
 
 Where the belief looks soft: the monetizable, capital-light slice is small (~25%) and its retention is decelerating; the cash engine is still the toll-paying lab; GAAP FCF is unproven; and a profitable, self-funding peer (Caris) already demonstrates the model at a lower cost of capital. The premium is largely the market paying for a promise the peer has already delivered.
+
+## Recent developments (2025-2026)
+Since the 1-Jun-26 snapshot, four items move the two unresolved variables (ASP conversion and Data-leg retention) and one re-rates the stock:
+
+- **xT CDx tumor-only FDA approval - 29-May-2026 [reported].** FDA approved a tumor-only indication for xT CDx, making Tempus the first lab to hold companion-diagnostic approval for both tumor-only and tumor-normal comprehensive genomic profiling. Management frames this as the gate to migrating the entire DNA solid-tumor portfolio onto FDA-approved assays at ADLT pricing - i.e. the mechanism behind the guided ASP step from ~$1,740 toward >$2,300 [disclosed, prior]. This partially de-risks Core Variable #2: the approval clears the regulatory shelf, but coverage and realized ASP still have to build, so it is a step-up in optionality, not yet a booked rate change. Concurrent product refresh: Next/Hub platform upgrades, Preview, Lens, and the ArteraAI Prostate test (mHSPC) [reported].
+
+- **$400.0m 0% convertible senior notes due 2032 - priced 8-May-2026 [reported].** Upsized from $350m, plus a $60m greenshoe (so up to ~$460m). Zero coupon; conversion ~$69.26/sh (40% premium to the 7-May close); ~$27.2m spent on capped calls to blunt dilution. Proceeds repaid the ~$307.7m secured credit facility, swapping secured for unsecured zero-coupon paper [reported]. Read: capital-structure quality improved (no cash interest, secured debt retired), but this is more convertible leverage on top of the ~$200m/yr SBC - so it eases near-term liquidity without resolving Core Variable #3 (GAAP FCF ahead of dilution).
+
+- **Bristol Myers Squibb collaboration expanded - 14-May-2026 [reported].** Widened to five programs spanning solid-tumor oncology (lung, colon, prostate) and neuroscience (Alzheimer's), run through the Lens analytics platform to lift probability of technical and regulatory success. A new marquee Data-leg contract - but the same lumpy, negotiated shape flagged in Core Variable #1, not recurring seats.
+
+- **Keck Medicine of USC network integration - Apr-2026 [reported].** Multi-year deal embedding Tempus genomic testing, AI tools, and the data platform across a system with 1.5m+ annual patient visits [reported]. Adds clinical volume and outcome-labeled real-world data - a direct feed to the data flywheel rather than a near-term revenue event.
+
+- **Stock re-rated higher [disclosed, price].** ~$60.52 / ~$11bn market cap (6-Jul-2026) vs $50.47 / ~$9.1bn at the 1-Jun snapshot - roughly +20%, on the FDA approval and refinancing. That lifts the forward EV/sales back toward ~7.5x on the FY26 guide, tightening the already full-to-rich expectation: the market is paying more for the same two unproven variables, not less. 52-week range $41.73-$104.32 [reported].
+
+Net: three of the four operating items push the right levers (ASP shelf cleared, a new pharma contract, more data supply), but none yet converts an optionality into a booked rate change - realized ASP, Data-leg NRR back above ~100%, and GAAP FCF are all still pending. The re-rate raises the bar rather than lowering it.
 
 ## Verdict
 Good business, real data-network moat - but priced as a software platform when three-quarters of it is a reimbursement-gated lab, so the expectation is demanding rather than fair until the ~73%-GM data leg proves it can compound (NRR back above ~100%) and GAAP FCF arrives ahead of dilution. Confidence: MEDIUM-HIGH on the facts (segment splits, ASP path, NRR, cash, valuation all disclosed/current); MEDIUM on the verdict, which hinges on two unresolved rate-of-change variables (Data NRR trajectory and reimbursement ASP conversion) that could still break either way.

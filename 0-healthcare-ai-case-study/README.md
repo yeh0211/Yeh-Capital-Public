@@ -1,10 +1,10 @@
-# Healthcare AI research: how the field actually works (US and Taiwan)
+# Healthcare AI research: how the field actually works (US and Taiwan at the core, plus the global players)
 
-**What this is.** I spent a while trying to understand healthcare AI from one end to the other, and this is my write-up of what I found. Not a single application, the whole field: the global trend, the companies and what they actually do day to day, how they make money, who the players are and how they connect to each other, what protects the good ones from being copied, the rules they have to live under, and the size of the thing. I looked hardest at two markets, the US and Taiwan.
+**What this is.** I spent a while trying to understand healthcare AI from one end to the other, and this is my write-up of what I found. Not a single application, the whole field: the global trend, the companies and what they actually do day to day, how they make money, who the players are and how they connect to each other, what protects the good ones from being copied, the rules they have to live under, and the size of the thing. I looked hardest at the US and Taiwan, then added the big pharma incumbents that actually fund the field and the leading AI-health players from Europe, China, Korea, Japan and India, so the picture is global. Ninety-four companies in all.
 
 **The question I used to hold it together.** Trying to understand a whole field can turn into a shapeless list of company names. So I hung the whole thing on one question, sharp enough to force real answers: out of every player I could find, which ones own something that lasts, and which ones just have a good demo? That question turned out to teach me most of what I now understand about how the field works.
 
-**Why bother.** "AI is transforming medicine" is true and it tells you almost nothing. I wanted to actually walk the field instead of nodding at the headline. So I looked at 61 companies and profiled 58 of them in real depth, and this document is me explaining what that walk taught me.
+**Why bother.** "AI is transforming medicine" is true and it tells you almost nothing. I wanted to actually walk the field instead of nodding at the headline. So I looked at 94 companies and profiled 94 of them in depth, and this document is me explaining what that walk taught me.
 
 *By Hsin Cheng Yeh.*
 
@@ -15,6 +15,7 @@
 I went in assuming the value in this field would sit with whoever had the smartest AI models. It does not, and figuring out why became the core of what I learned. Here is the field in a handful of lines, before any of the longer reasoning below.
 
 - The thing that actually matters in healthcare AI is not the model. It is whether a company owns some scarce input that cannot easily be copied. A permanent code that guarantees an insurer will pay them. A physical clinical asset they own outright. A licensed pile of data they can resell. Own one of those and you have a real business. Own a clever model and you have a head start that lasts about a year.
+- The companies that actually pay for AI drug discovery are the old pharma giants (Lilly, Novartis, Merck, Roche and the rest), and they keep the value. When a giant hires an AI lab, it writes a tiny check up front, usually 1-3% of the headline "deal value", and only pays the rest if a drug works. It owns the molecule, the trial, and the approval. The AI lab is a paid tool. So the money the headlines credit to the AI companies mostly lands with the incumbents that funded them.
 - The thing that gates everything is payment, not technology. In the US, roughly **1,451** AI medical devices have been cleared by the FDA, meaning regulators have said they are safe to sell. But only **3** of those hold a permanent, nationally-paid billing code, meaning an insurer is actually obligated to pay for them. Getting the device approved is easy now. Getting anyone to pay for it is the wall.
 - In drug discovery, AI got good at chemistry and is still stuck on biology. AI-designed molecules pass the first clinical stage, the safety test, at **80-90%**. But they pass the second stage, the first real test of whether the drug works, at only about **40%**, the same rate the industry has had for thirty years. As of 2026, zero AI-discovered drugs have been approved.
 - I took the four things people usually call a "moat" in this field and tried to break each one. Only one type survived: owning the workflow itself, which in practice means owning the payment rail, the physical asset, or the data plumbing that everything else plugs into. The rest have a shelf life of about a year.
@@ -43,7 +44,52 @@ I want to be plain about the method up front, because someone whose opinion I tr
 
 One housekeeping note so you know what you are reading. This is a method-and-findings write-up. I read a large stack of company filings, analyst notes, and regulatory records privately, and in the text I refer to them in general terms ("a filing", "an analyst note", "disclosed") rather than by name. I tag each load-bearing number so you know how solid it is: **[disclosed]** means it came from a company or primary source, **[sell-side]** means an analyst or market-research note, **[estimate]** means I derived it, **[reported]** means press, and **[unverified]** means it was cited somewhere but I could not confirm it against a primary source. Where that last case happened, I say so and use the corrected figure.
 
-The universe is **61 companies** across the US and Taiwan, picked so that every layer of the value-chain map has at least one company sitting in it. That is the widest coverage the sources would honestly support, and where the evidence on a name is thin I flag it right there rather than quietly leaving it out.
+The universe is **94 companies** across the US and Taiwan, picked so that every layer of the value-chain map has at least one company sitting in it. That is the widest coverage the sources would honestly support, and where the evidence on a name is thin I flag it right there rather than quietly leaving it out.
+
+---
+
+## How we got here: a healthcare-AI timeline, 2010 to now
+
+![Healthcare AI timeline, 2010 to now](figures/08_timeline.png)
+
+To make sense of where the field sits today, it helps to walk the fifteen years that built it. The short story is that the science kept arriving years ahead of the business, and the thing that decided who made money was almost never the cleverness of the model. It was who got paid.
+
+The early years were the hype years. In 2011 a question-answering machine beat two human champions on television, and by 2015 that same brand had a health division and about $4bn of acquisitions behind it, promising to read cancer like a specialist. It did not work. In 2022 the whole effort was sold for parts at roughly a quarter of what it cost to build. That arc, brilliant demo to quiet sale, turned out to be the pattern the field would keep repeating.
+
+Underneath the noise, two real breakthroughs landed. The first was regulatory: in 2018 the FDA cleared the first AI allowed to diagnose a patient with no doctor in the loop, an eye-screening tool. The second was scientific: between 2018 and 2024, protein-structure prediction went from a strong contest result to a solved 50-year problem to a free public database of 200m-plus structures to a Nobel Prize. That last part matters more than it looks. The breakthrough that was supposed to be a private drug-discovery moat became a commons within about a year, because open copies caught the frontier. The science was a gift to everyone, which is exactly why it was a moat for almost no one.
+
+Then came the money questions, and this is where the field actually gets decided. Getting an insurer to pay for AI is the wall. In 2020 a stroke tool won the first extra Medicare payment for AI; the code-writing plumbing followed in 2021; and by 2024 exactly one heart-imaging tool had graduated all the way to a permanent national billing code. Set that against roughly 1,451 AI devices the FDA has cleared, only 3 of which hold a permanent paid code, and you have the single most important fact in the field: clearance is easy and payment is the gate. The 2025 bill to create a defined AI payment category is the tell. It has to exist because no durable path does yet.
+
+The 2022-23 stretch is when the general-purpose chatbots showed up and clinicians started using them, approved or not, to draft notes and answer questions. That pulled ambient scribes and clinical assistants into the mainstream. But it also set up the trap that is playing out now: in 2026 the dominant records system built its own AI scribe straight into the chart, and the startups that had been renting depth from that system found the landlord had become the competitor.
+
+The deals and listings round it out. Isomorphic, spun out of the protein breakthrough in 2021, signed two pharma partners in 2024 for headline numbers near $3bn, of which only a low-single-digit percent was actually paid upfront, the honest shape of an AI-drug deal. Tempus and Caris took the diagnostics-data model public in 2024 and 2025. And when two of the loudest AI-drug names merged in late 2024, it read as consolidation forced by thin pipelines, not strength. The recurring lesson across all of it: the durable value tends to sit with whoever owns the payment rail, the physical asset, or the data, and that is usually the incumbent, not the AI startup the headlines got excited about.
+
+- **2011-02 -** IBM Watson wins Jeopardy. A question-answering machine beats two human champions and becomes the face of AI in medicine before it ever touched a patient.
+- **2015-04 -** IBM launches Watson Health. IBM stands up a health unit and buys its way in for about $4bn [reported], promising Watson would read oncology like a specialist.
+- **2016-02 -** DeepMind Streams goes live at the Royal Free. An AI-branded kidney-injury alert app ships to a London hospital on a data-sharing deal covering about 1.6m patient records [reported].
+- **2017-07 -** UK regulator rules the Streams data deal broke the law. The privacy regulator finds the hospital handed over patient data unlawfully; no fine, but the first shot across the bow on health-data consent [reported].
+- **2018-04 -** FDA clears IDx-DR, the first autonomous diagnostic AI. De Novo authorization for a tool that reads eyes for diabetic retinopathy with no doctor in the loop, the first AI allowed to diagnose on its own [disclosed].
+- **2018-12 -** AlphaFold wins CASP13. DeepMind's first protein-folding model tops the field's benchmark contest, a strong result that still leaves the problem unsolved.
+- **2020-04 -** Nuance ships Dragon Ambient eXperience (DAX). The ambient-scribe idea, an AI that listens to the visit and writes the note, goes commercial and defines the category doctors would actually adopt [reported].
+- **2020-09 -** Viz.ai wins the first AI add-on payment from Medicare. CMS grants a stroke-triage tool a temporary New Technology Add-on Payment of up to $1,040 per use, the first time a US public payer pays extra for AI [disclosed].
+- **2020-11 -** AlphaFold2 solves protein folding at CASP14. The second model scores about 92 on a 100-point accuracy test [disclosed], and the contest organizers call a 50-year grand-challenge effectively solved.
+- **2021-01 -** FDA publishes its AI/ML Action Plan. The regulator lays out how it will oversee learning software and floats letting devices update under a pre-agreed plan instead of re-filing each change [disclosed].
+- **2021-07 -** The AlphaFold protein-structure database opens. DeepMind and a public genomics lab release structures for a first tranche of proteins for free [disclosed], later scaling past 200m and turning a moat into a commons.
+- **2021-09 -** AMA creates an AI taxonomy for billing codes. The body that writes US procedure codes adds a framework sorting AI into assistive, augmentative, and autonomous, the plumbing before anything gets paid [disclosed].
+- **2021-11 -** Isomorphic Labs is founded. Alphabet spins AlphaFold's drug ambitions into a standalone company, betting the protein breakthrough can be turned into medicines.
+- **2022-06 -** IBM sells Watson Health for parts. The oncology-AI flagship that cost about $4bn to build is sold to a private-equity firm for about $1.07bn [reported] and renamed, closing the Watson-in-medicine story.
+- **2022-11 -** ChatGPT is released. A general-purpose chatbot goes public and, within weeks, clinicians start using it to draft notes and answer questions it was never approved for.
+- **2023-02 -** ChatGPT is shown to nearly pass the US medical licensing exam. A published study puts the model at or near the ~60% passing line across all three exam steps [disclosed], the moment clinical use stopped being hypothetical.
+- **2023-08 -** Babylon Health files for bankruptcy. The AI-symptom-checker unicorn, worth about $2bn at its 2021 SPAC listing [reported], liquidates, the clearest sign that an AI demo is not a business.
+- **2024-01 -** Isomorphic signs Lilly and Novartis for up to ~$3bn. Two pharma deals with about $83m paid upfront against roughly $2.9bn in milestones [disclosed], the template for how AI-drug deals are really structured: cheap staged bets.
+- **2024-01 -** FFR-CT graduates to a permanent national billing code. A heart-blood-flow AI collapses four temporary codes into one permanent Category I code effective this year [disclosed], the rare AI tool with a durable payment path.
+- **2024-05 -** AlphaFold3 is released. The third model extends beyond proteins to how they bind DNA, drugs, and other molecules, moving closer to the chemistry that matters for medicines.
+- **2024-06 -** Tempus AI goes public. The multi-data diagnostics-and-data platform lists on Nasdaq at $37 a share, raising about $410m [disclosed], the first big pure-play healthcare-AI IPO.
+- **2024-10 -** AlphaFold's creators win the Nobel Prize in Chemistry. DeepMind's Hassabis and Jumper share the prize [disclosed], the field's scientific high-water mark, and a reminder the science ran years ahead of the business.
+- **2024-11 -** Recursion completes its merger with Exscientia. Two of the loudest AI-drug names combine in an all-stock deal valuing Exscientia at about $650m [reported], consolidation driven by thin pipelines, not strength.
+- **2025-04 -** The Health Tech Investment Act is introduced. A Senate bill (S.1399) would create a defined Medicare payment category for algorithm-based services with at least five years of separate pay [disclosed]; that it is needed at all is the tell there is no durable AI payment path today.
+- **2025-06 -** Caris Life Sciences goes public. The precision-oncology lab raises about $494m on Nasdaq and pops on day one [disclosed], the second major diagnostics-data IPO in a year.
+- **2026-02 -** Epic ships its own ambient AI scribe into the chart. The dominant records system builds note-writing straight into the workflow at a rumored ~$80 per provider per month [sell-side], and the landlord becomes the competitor to the scribe startups renting its rails.
 
 ---
 
@@ -138,6 +184,41 @@ Phase I is high precisely because it is not testing whether the drug works, only
 
 *Verdict.* **Confirmed: AI solved the cheap half of the problem.** The only defensible position here is owning the drug asset yourself plus having a real drug company to distribute it, and even that runs into the same ~40% wall at Phase II as everyone else. The chart is a funnel: the AI spike at Phase I collapsing flat onto the historic ~40% line at Phase II, with two points pinned to the wall, "0 AI drugs approved (2026)" and "1 genuine human proof-of-concept."
 
+## Who funds AI drug discovery, and where the value lands
+
+![AI drug-discovery deals: up-front cash vs the headline number](figures/07_money_flow.png)
+
+If you only read the headlines, you would think the AI drug-discovery companies are getting rich. "Isomorphic Labs signs deals worth nearly $3bn." "Takeda inks $1.7bn AI alliance." "Roche commits up to $12bn to Recursion." The numbers are enormous and they are real. But the headline number and the money that actually changes hands are two very different things, and the gap between them is the whole story of who wins in this field.
+
+Here is the mechanism, in plain terms. When a big drug company (an incumbent - Lilly, Novartis, Sanofi, Takeda, Roche) hires an AI lab, it almost never writes a big check on day one. It writes a small one. The rest of that giant headline is a stack of "milestone" payments, and each milestone only pays out if a specific thing happens later - a molecule gets picked, a trial starts, a trial succeeds, a drug gets approved, a drug hits a sales target. Most of those things never happen, because most drug programs fail. So the headline is not a price. It is the sum of every payment that would be made in the one lucky world where everything goes right.
+
+Look at what the incumbents actually paid upfront, as a share of the headline they announced:
+
+| Deal | Upfront | Headline total | Upfront as share |
+|---|---|---|---|
+| Roche/Genentech - Recursion (2021) | $150m | up to $12bn | 1.2% |
+| Sanofi - Insilico (2022) | $21.5m | up to $1.2bn | 1.8% |
+| Sanofi - Exscientia (2022) | $100m | up to $5.2bn | 1.9% |
+| Novo Nordisk - Valo Health (2023) | $60m | up to $2.76bn | 2.2% |
+| BMS - insitro (2020) | $50m | up to $2bn | 2.5% |
+| Amgen - Generate (2022) | $50m | up to $1.9bn | 2.6% |
+| Lilly - Isomorphic (2024) | $45m | up to $1.745bn | 2.6% |
+| Novartis - Isomorphic (2024) | $37.5m | up to $1.2bn | 3.0% |
+
+The pattern is not subtle. Across the platform deals, the incumbent puts down roughly 1-3 cents of every headline dollar today, and promises the other 97-99 cents only if the science actually works, one gate at a time. The BMS-insitro deal is the tell: an "up to $2bn" partnership that, several years in, had paid out on the order of $25m in early discovery milestones - a little over one percent of the headline. That is not a company betting $2bn on AI. That is a company buying a cheap lottery ticket and letting the market print the $2bn number for it.
+
+Why would an incumbent structure it this way? Because it is buying **optionality**, not a drug. For a rounding error on its R&D budget, a big pharma company gets a call option on an unproven platform: if the AI lab produces something real, the incumbent has already locked up the rights to develop it; if the AI lab produces nothing (the base case, given that the first real efficacy test still fails about 60% of the time), the incumbent walks away having spent almost nothing. Running several of these small bets at once - Takeda alone is running two, with Insilico and Iambic - is exactly how you would play a technology you think *might* work but cannot yet count on. The deal structure is the incumbents telling you, in cash, that they are treating AI discovery as a promising experiment, not a sure thing.
+
+Now the part that matters most: **even in the lucky world where the science works, the value does not land with the AI lab.** Walk the chain of who owns what. The AI company designs a molecule. Then the incumbent runs the clinical trials (Phase I, II, III - which is where 90%-plus of the cost and nearly all the risk sits). The incumbent takes it through the regulator. The incumbent manufactures it. The incumbent's salesforce sells it, and the incumbent's payer relationships get it reimbursed. Read the fine print of these deals and it is explicit: Takeda gets "exclusive worldwide rights to develop, manufacture and commercialize" whatever comes out of the Insilico work; Merck "retains exclusive rights to develop and commercialize" the Variational compounds; AstraZeneca owns the Absci antibody. The AI lab's reward is the small upfront, plus milestone payments it mostly never collects, plus a royalty - a single-digit-to-low-teens slice of sales on a product it does not own, control, or distribute. The molecule, the trial data, the approval, and the customer all belong to the incumbent.
+
+That is the point the whole study keeps landing on. The AI lab is a **paid tool**, not an owner. It is closer to a very sophisticated contract research shop than to a drug company. It gets hired, it does clever work, it gets paid a fee and a thin back-end - and the durable, compounding value (the approved drug, the franchise, the distribution) accrues to the incumbent who owned the expensive, un-automatable half of the business all along.
+
+The two other kinds of money flow in this field tell the same story from different angles. **Acquisitions** are incumbents buying the tool outright rather than renting it: Microsoft paid $19.7bn for Nuance not for a model but for the workflow rail already sitting inside most US hospitals; BioNTech paid ~$680m to fold InstaDeep's AI team into its own pipeline. In both cases a platform or a drug owner absorbed the AI capability into a business that already owned the scarce input. And **compute** deals are the one place the money is not contingent at all - because the supplier does not care whether any drug ever works. When Lilly and NVIDIA commit up to ~$1bn to a joint AI lab, or the Novo Nordisk Foundation funds a supercomputer, or GSK buys a Cerebras system, the chipmaker gets paid for the hardware and the cloud time whether or not a single molecule ever reaches a patient. NVIDIA's $50m stake in Recursion is the neatest illustration: it sells the shovels to the miners, and it also owns a piece of one miner - it wins on the picks either way. The compute layer is the one node in this whole map that collects real, non-contingent cash on every single bet at the table, which is exactly why the study flags it as a separate silicon story rather than a healthcare-AI one.
+
+So the money map, top to bottom: incumbents pay small and contingent, and keep the drug; AI labs collect fees and thin royalties on assets they do not own; chipmakers get paid in full no matter what happens. The headlines are written in the AI labs' names. The value lands on the other two.
+
+---
+
 ### Finding 5 - Run four moats through a break-it test, and only owning the workflow survives
 
 *What I did.* I took the four moats the market keeps paying up for and tried to kill each one, giving each a verdict and an estimate of how long the advantage actually compounds.
@@ -167,11 +248,11 @@ Taiwan flips the shape of the gate. It runs a single national insurer, so one co
 
 ![The whole universe on two axes: business quality, moat duration, and market expectation](figures/00_positioning_master.png)
 
-The 61 names are placed so that every layer of the value-chain map has someone standing in it. (A value chain just means the sequence of steps from raw inputs to the final customer, with a different set of companies at each step.) The diagnostics chain runs from reagents and sequencing machines, up through the lab, then the AI that interprets the results, then the clinical workflow, then the resale of de-identified data to drug companies, and finally the insurer who pays. The drug-discovery chain runs in parallel, from identifying a biological target, through generating candidate molecules, picking the best ones, translating them toward humans, and running the clinical trials, with a spine of computing power and AI models underneath the whole thing. The two chains touch at exactly one point worth drawing: selling diagnostics data to drug companies feeds directly into the target-identification step of drug discovery. That is the single connection where a diagnostics company quietly becomes a supplier to drug discovery.
+The companies are placed so that every layer of the value-chain map has someone standing in it. (A value chain just means the sequence of steps from raw inputs to the final customer, with a different set of companies at each step.) The diagnostics chain runs from reagents and sequencing machines, up through the lab, then the AI that interprets the results, then the clinical workflow, then the resale of de-identified data to drug companies, and finally the insurer who pays. The drug-discovery chain runs in parallel, from identifying a biological target, through generating candidate molecules, picking the best ones, translating them toward humans, and running the clinical trials, with a spine of computing power and AI models underneath the whole thing. The two chains touch at exactly one point worth drawing: selling diagnostics data to drug companies feeds directly into the target-identification step of drug discovery. That is the single connection where a diagnostics company quietly becomes a supplier to drug discovery.
 
 Three things the map makes obvious. The crowd is bunched up at generating molecules and at clinical workflow, while the thinnest real occupancy is at pre-clinical translation, which is exactly the unsolved, value-bearing step, and tellingly nobody sells it as a standalone product. I flag that empty spot rather than paper over it. Nineteen names touch the drug-discovery ladder but only one has a genuine human proof-of-concept. And Taiwan is solid across the diagnostics chain but almost entirely missing from every layer of drug discovery. Its one load-bearing node there is computing silicon, which belongs to the semiconductor world, not to any healthcare-AI stock.
 
-The per-company deep profiles live in **[`companies/`](companies/)**, one file per name. Each one reads the company through four lenses (its business model, where it sits in the value chain, who it competes with, and the handful of numbers that actually drive it), plus a verdict on its moat, a bear case, and a read on what the market is expecting. A verdict-at-a-glance table across all 58 is in **[`companies/INDEX.md`](companies/INDEX.md)**. The depth scales to the evidence: the public companies carry real financials, the private ones carry funding and moat-thesis, the Taiwan ones carry whatever the local filings disclose, and I flag where that is thin. The table below is the compact placement, and each row links into the detail.
+The per-company deep profiles live in **[`companies/`](companies/)**, one file per name. Each one reads the company through four lenses (its business model, where it sits in the value chain, who it competes with, and the handful of numbers that actually drive it), plus a verdict on its moat, a bear case, and a read on what the market is expecting. A verdict-at-a-glance table across all 94 is in **[`companies/INDEX.md`](companies/INDEX.md)**. The depth scales to the evidence: the public companies carry real financials, the private ones carry funding and moat-thesis, the Taiwan ones carry whatever the local filings disclose, and I flag where that is thin. The table below is the compact placement, and each row links into the detail.
 
 *Key to the shorthand: DO = drug-owner, P&S = picks-and-shovels (sells tools to everyone else), WF = workflow-software, DP = data-platform, AIS = AI-services, SaMD = regulated software treated as a medical device, INF = infrastructure. Q = how good my evidence is on that specific name, which is not the same as how good the company is.*
 
@@ -239,6 +320,62 @@ The per-company deep profiles live in **[`companies/`](companies/)**, one file p
 | 60 | Foxconn CoDocator 鴻海 | 2317 TT | TW | Pub | medical foundation model | AIS/INF | low |
 | 61 | Hospital AI centres (NTUH / VGHTPE / CGMH) | n/a | TW | Priv | data source / model-build | AIS | med |
 
+### The expansion: incumbents, the rest of the world, and consumer health
+
+The original map above is the US and Taiwan core. This round adds three groups the first pass missed: the big-pharma incumbents that actually fund AI drug discovery, the leading AI-health players outside the US and Taiwan, and the consumer and telehealth names. Full profiles are in [`companies/`](companies/); the one-line reads:
+
+
+**Pharma incumbents - the capex funders**
+
+| Company | Read |
+|---|---|
+| [AbbVie](companies/ABBV.md) | Diversified immunology incumbent that out-ran the Humira cliff via Skyrizi/Rinvoq and serial M&A; uses AI as a cheap internal tool plus a few option-sized deals (BigHat, Caris/ConcertAI) while keeping every asset - AI is immateria |
+| [Amgen](companies/AMGN.md) | Durable diversified biotech that both funds and builds its own AI (owns deCODE data), but keeps value at L9 because it bears Phase-II risk and owns the molecule; equity is a MariTide-obesity and base-durability call, not an AI sto |
+| [AstraZeneca](companies/AZN.md) | Good business, wide franchise/oncology moat - not an AI moat; the incumbent funds the AI, licenses shared oncology models, and now buys the AI outright (Modella) while keeping the drugs, trials, biomarkers, and value. AI is immate |
+| [Bristol Myers Squibb](companies/BMY.md) | Good business, cheaply priced as a patent-cliff pharma not an AI story; the incumbent funds the AI (insitro >$2bn pact, Claude across 30,000 employees) and keeps the drug at L9, but a steep near-term Eliquis/Opdivo/Revlimid cliff  |
+| [Eli Lilly](companies/LLY.md) | The mega-cap incumbent that funds AI drug discovery and keeps the value; AI is a cheap option and efficiency lever, immaterial to a ~$1.15tn valuation built on the GLP-1 franchise, not AI. |
+| [GSK](companies/GSK.md) | Cash-rich incumbent and early AI-in-discovery mover (23andMe 2018, Cerebras 2022, Noetik virtual-cell subscription 2026) that funds the AI and keeps the drugs; AI is immaterial to a ~32.7bn-pound company whose real story is a 2028 |
+| [Johnson & Johnson](companies/JNJ.md) | Diversified incumbent that funds the AI on BOTH chains - drug discovery (Isomorphic, milestone+royalty, keeps the molecules) and surgery (Ottava/Polyphonic, owns the robot + operating-room data) - and keeps the value; at ~$633bn o |
+| [Merck & Co](companies/MRK.md) | Good, durable pharma franchise but the whole equity thesis is Keytruda-cliff succession, not AI; the cleanest incumbent example of the study's core claim - MRK funds the AI (Variational, Mayo, internal GenAI) and keeps the value b |
+| [Novartis](companies/NVS.md) | One of the deepest AI adopters in big pharma - four external AI-discovery deals plus the data42 internal platform - and the cleanest European illustration of the study's rule: the incumbent funds the AI as cheap staged options and |
+| [Novo Nordisk](companies/NVO.md) | GLP-1 mega-cap incumbent that funds AI (Valo milestones), rents its compute (Gefion, owned by its Foundation not itself), and keeps the drugs - but the moat is the eroding metabolic franchise, not AI; stock lives and dies on GLP-1 |
+| [Pfizer](companies/PFE.md) | The cleanest incumbent case: Pfizer rents commoditizing AI models from the frontier labs, embeds them as an opex cost lever inside a $10-11bn R&D line, and keeps all the value at L9 because it owns the reimbursed molecule, the tri |
+| [Roche](companies/RHHBY.md) | The incumbent most like a data platform - already owns Flatiron (outcomes), Foundation Medicine (genomics), and Genentech plus the largest disclosed pharma GPU footprint, but at ~$330bn on CHF 61.5bn revenue it is a pipeline bet,  |
+| [Sanofi](companies/SNY.md) | Loudest "all in on AI" incumbent - 20,000-user internal plai tool plus 5+ external AI-discovery deals - but AI is immaterial to a ~$103bn cap; the real story is Dupixent concentration (~36% of sales) versus the coming patent cliff |
+| [Takeda](companies/TAK.md) | Japan's largest pharma; funds the AI-discovery chain (Insilico ~$600m, Iambic up to $1.7bn) and keeps the assets, with one completed proof point (Schrodinger-designed, Takeda-owned zasocitinib through positive Phase III). AI is im |
+
+**Global AI-native (Europe, China, Korea, Japan, India)**
+
+| Company | Read |
+|---|---|
+| [Airdoc (Beijing Airdoc Technology)](companies/AIRDOC.md) | Clearest listed pure-play on retinal-image AI screening in China with real regulatory firsts and ~73% gross margins, but a sub-scale (~RMB173m) business whose core screen is commoditizing as rivals win the same NMPA Class III clea |
+| [BeiGene (BeOne Medicines)](companies/ONC.md) | Real, cash-generative oncology franchise on a proven discover-develop-commercialize engine, but priced (~68x, ~5x sales) as a diversified global compounder when it is still ~70% one drug (Brukinsa), one year into GAAP profit, and  |
+| [BioNTech](companies/BNTX.md) | Clearest EU AI-native drug play by capability (in-house InstaDeep stack) and best-capitalized name in the AI-drug cohort (~EUR 16.8bn cash, a $1.5bn-upfront partnered BNT327 lead), but today's value rests on the pipeline and the b |
+| [Lunit](companies/LUNIT.md) | Korea AI-imaging champion with real global distribution and a 2027 breakeven path, but the cash core is acquired SaaS (Volpara) in a crowded low-pricing-power screening market and the durable moat leg (SCOPE pharma biomarker) is s |
+| [Niramai Health Analytix](companies/NIRAMAI.md) | Real, clinically validated, FDA-touched radiation-free AI breast screen for the market mammography cannot reach - but a ~$9m-funded, ~74-person company selling a low-ASP screen into grant-funded public-health channels has not show |
+| [Owkin](companies/OWKIN.md) | The EU's Tempus-for-pharma with a real, scarce pharma-access / GDPR-federated-data asset, but a moat that rents rather than owns; a ~$1bn 2021 unicorn mark its own carve-outs (Waiv, Bioptimus) and the commoditizing agentic-softwar |
+| [Oxford Nanopore](companies/ONT.md) | A genuine sole-source nanopore platform monopoly with a real consumable annuity and an AI basecaller welded to the hardware, priced fairly (~5x EV/sales) because the market withholds a software multiple; the moat (~7-10yr of platf |
+| [Ping An Healthcare (Good Doctor)](companies/PAGD.md) | Now-profitable China telehealth/AI-triage platform whose moat is the Ping An insurance channel, not its AI - about 60% of revenue is related-party F-end enablement, priced as a fair de-risked small-cap turnaround with no AI premiu |
+| [Preferred Networks](companies/PFN.md) | Rare full-stack AI national champion, but as a healthcare-AI name it is an unpriced option not a thesis: drug discovery is one undisclosed vertical with no owned pipeline, no pharma economics, no recent financials, and no traded s |
+| [Qure.ai](companies/QURE.md) | Clearest global-south leader in radiology-image AI - scarce distribution (4,500+ sites, 100+ countries), widest FDA-cleared chest-X-ray set, a WHO-cited TB franchise, capital-light per-scan model - but a small (~$23m), still-priva |
+| [Sophia Genetics](companies/SOPH.md) | Real asset-light genomics-SaaS with software-grade margins and a small but genuine decentralized data-network moat; not yet a proven compounder - mid-teens constant-currency growth and live cash burn mean the thesis rests on reach |
+| [Sysmex](companies/SYSMEX.md) | Profitable ~50%-share hematology leader with a durable reagent-annuity moat, cheap on a China/profit reset; the AI + genomics is honest optionality, not the engine - the study's incumbent-diagnostics control case. |
+| [Tempus-China / iCarbonX](companies/ICARBONX.md) | China multi-omics data-platform analogue to Tempus in ambition, opposite in outcome: consumer data flywheel never got fuel (~6,000 tests, ~96 loci, <1,000 paying users), CFIUS force-divested the cross-border PatientsLikeMe leg, ~4 |
+| [United Imaging](companies/UIH.md) | Genuine China #1-tier imaging OEM taking share from GE/Siemens/Philips with native AI in the box, but priced ~45-50x forward as a secular compounder when it is a capital-heavy, procurement-cycle-driven equipment maker whose overse |
+| [Vuno (338220 / KOSDAQ)](companies/VUNO.md) | Rare breakeven medical-AI name, but a single-product, single-country business (DeepCARS ~74% of revenue) riding a reimbursement exception that hits its permanent test around mid-2026, with US FDA entry delayed; ~60% de-rate leaves |
+| [WuXi AppTec (2359 / HKEX)](companies/WUXI.md) | Good, wide-moat, cash-generative picks-and-shovels CRDMO leader (FY2025 continuing-ops +21.4%, TIDES +96%, adj OCF RMB 16.67bn, RMB 58bn backlog) whose AI is an ancillary workflow tool, not the story - but the expectation is un-un |
+
+**Consumer, telehealth and payer AI**
+
+| Company | Read |
+|---|---|
+| [Function Health](companies/FUNCTION.md) | Good brand and a genuinely accumulating data asset, but priced ~$2.5bn (~25x est. run-rate) as a data platform when today it is a fast-growing, thin-margin subscription over a commodity, price-warring lab layer; rich until retenti |
+| [Hims & Hers Health](companies/HIMS.md) | Good, cash-generative subscription brand with a real but rented consumer moat; the AI/data-flywheel that justifies the premium is still narrative, so the expectation is demanding - fair if the flywheel turns and GLP-1 margins norm |
+| [Hinge Health](companies/HNGE.md) | Good business, real moat - but the moat is enterprise payer distribution and the 3,000-client contract book, not the motion AI, which is a margin-funding feature rivals also have; priced full for durable 25-35% compounding that co |
+| [Omada Health](companies/OMDA.md) | Real evidence-and-distribution moat with an early profitability inflection, but growth rides a GLP-1 drug wave its own channel partners could bundle away and the AI is coaching-efficiency tooling not a cleared model - priced full- |
+| [Oscar Health](companies/OSCR.md) | Well-run subscale ACA insurer with genuine AI-driven admin efficiency but no MLR lever and a thin moat, priced full for a durable margin recovery into a subsidy cliff (enhanced PTCs expired 31-Dec-2025, Senate blocked the extensio |
+| [Teladoc Health](companies/TDOC.md) | Scaled, real and cheap at ~0.65x sales, but not a good business today: flat-to-declining revenue, a no-moat D2C half on a marketing treadmill, a shallow enterprise distribution moat eroded by its own visit-based pricing reset, and |
+
 A few names I would not treat as clean healthcare-AI plays, flagged here so nobody mistakes them for one: Genesis Therapeutics, Retro Biosciences, and Latent Labs (all private, thin disclosure), and the four large Taiwan parents (ASUS AICS, Quanta QOCA, Wistron Medical, Foxconn CoDocator) whose healthcare-AI economics are buried inside a much larger business.
 
 ---
@@ -281,7 +418,7 @@ Every one of those is a specific, dated number I can be checked against, which i
 
 ## How this was built
 
-- **Universe:** 61 companies across the US and Taiwan, public and private, picked so every layer of the value-chain map has at least one company in it. Thin-evidence names are flagged inline rather than dropped.
+- **Universe:** 94 companies across the US and Taiwan, public and private, picked so every layer of the value-chain map has at least one company in it. Thin-evidence names are flagged inline rather than dropped.
 - **Sizing method:** each sub-sector sized from the bottom up as a first-pass valuation; the top-down market number is reported only to show the ~20-25x gap against measured spend, then set aside in favor of a rate-of-change number.
 - **Clearance vs payment count:** cleared-device counts use the public regulator's device list, by authorization date, across all classes, for internal consistency; permanent-payment counts come from a public policy analysis of billing codes.
 - **Drug-discovery funnel:** stage-transition base rates from public industry data; AI-molecule transition rates from a published small-sample study; per-stage cost from a published clinical-cost study; deal upfront-percentages computed from disclosed upfront and headline figures.

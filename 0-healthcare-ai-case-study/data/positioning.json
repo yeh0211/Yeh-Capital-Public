@@ -1,1 +1,848 @@
-[{"key": "TEM", "name": "Tempus AI", "segment": "dx", "good_business": "conditional", "moat_years": 6, "expectation": 1, "verdict_line": "Real data-network moat, but priced as software when three-quarters is a reimbursement-gated lab — demanding until the 73%-GM data leg compounds (NRR back above 100%) and GAAP FCF beats dilution."}, {"key": "CAI", "name": "Caris Life Sciences", "segment": "dx", "good_business": "yes", "moat_years": 6, "expectation": -1, "verdict_line": "Profitable precision-onco lab (+79%, 65% GM, +$442m net cash) at a Dx-not-software ~5x EV/sales; good business fairly-to-cheaply priced, but the re-rate hinges on one ASP reset holding."}, {"key": "NTRA", "name": "Natera", "segment": "dx", "good_business": "conditional", "moat_years": 6, "expectation": 1, "verdict_line": "Category-leading tumor-informed MRD franchise with a rising ~65% GM and a landed cash inflection, but priced full — the ~15x-sales multiple already assumes the uncontracted Signatera ASP climb to $2,000 and durable CMS coverage both hold, and the coverage/evidence moat (~5-8yr) is capped by budget-neutrality repricing risk."}, {"key": "GH", "name": "Guardant Health", "segment": "dx", "good_business": "conditional", "moat_years": 6, "expectation": 2, "verdict_line": "Good business, richly expected: genuine liquid-biopsy franchise with a real coverage moat, priced at a software-annuity multiple its per-test margins and reimbursement-gated screening TAM have not yet earned."}, {"key": "EXAS", "name": "Exact Sciences", "segment": "dx", "good_business": "yes", "moat_years": 6, "expectation": 1, "verdict_line": "Good business: real code/coverage screening moat plus rare positive FCF, acquired by Abbott at a full but defensible ~7x-sales expectation — the franchise, not the AI, got paid for."}, {"key": "PSNL", "name": "Personalis", "segment": "dx", "good_business": "conditional", "moat_years": 4, "expectation": 2, "verdict_line": "Differentiated MRD tech in a capital-hungry, reimbursement-gated per-test archetype, priced rich (~15x EV/sales) as if the coverage-and-margin crossover is already won when the margin line says it has not begun."}, {"key": "VCYT", "name": "Veracyte", "segment": "dx", "good_business": "yes", "moat_years": 6, "expectation": 1, "verdict_line": "Good business — GAAP-profitable, self-funding, ~76% GM, coverage-moated core — at a full-to-rich expectation that already banks an MRD re-acceleration the guide does not show."}, {"key": "GEHC", "name": "GE HealthCare", "good_business": "yes", "moat_years": 6, "expectation": -1, "segment": "imaging", "verdict_line": "Durable #2 imaging OEM with installed-base lock-in, priced as a low-growth industrial at ~12-13x forward P/E; good business at a fair-to-cheap expectation, but the AI moat is refuted."}, {"key": "BFLY", "name": "Butterfly Network", "segment": "imaging", "good_business": "conditional", "moat_years": 6, "expectation": 2, "verdict_line": "Real, hard-to-copy ultrasound-on-chip (a semiconductor moat, not a healthcare-AI one) bolted to an unproven, one-deal-deep Embedded licensing story, priced at ~16x forward EV/sales as if the platform is already built — good technology, rich expectation."}, {"key": "ABSI", "name": "Absci", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 1, "expectation": 1, "verdict_line": "A real, well-funded AI-antibody call option — not a good business yet, priced on an analyst-assumed 35% coin-flip on one POC, with a data-flywheel moat that is refuted and untested by the flagship."}, {"key": "RXRX", "name": "Recursion", "segment": "drug-discovery", "good_business": "no", "moat_years": 1, "expectation": 1, "verdict_line": "Capital-hungry pre-revenue own-pipeline book; the data flywheel is the sub-sector's clearest refutation, and ~30x milestone-lumpy sales still capitalizes an unproven flywheel-to-drug link."}, {"key": "SDGR", "name": "Schrodinger", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 6, "expectation": 1, "verdict_line": "Good capital-light software moat (~5-8yr) strapped to a de-risked option-value pipeline, priced full on a re-acceleration the last prints (11% growth, 81%->69% GM) haven't earned; net cash is the floor."}, {"key": "CRSP", "name": "CRISPR Therapeutics", "good_business": "conditional", "moat_years": 3, "expectation": 1, "segment": "drug-discovery", "verdict_line": "Strongest survivor of a hard owned-pipeline gene-editing cohort — approved product, ~$2.0bn cash, correctly liver/blood-concentrated pipeline — but ~$2.7bn EV prices in-vivo Phase-II success and a >$1bn Casgevy peak the readouts have not yet earned; a good balance sheet at a full expectation."}, {"key": "BEAM", "name": "Beam Therapeutics", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 2, "expectation": 1, "verdict_line": "Cohort leader with the best AATD human dataset and funding to mid-2029, at a fair-to-slightly-rich binary-option price; good asset optionality, not yet a good business."}, {"key": "NTLA", "name": "Intellia", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 3, "expectation": 1, "verdict_line": "Cohort's clearest clinical winner (first in-vivo Ph3 win), but priced at a full expectation that has already banked lonvo-z approval and pays up-front for a ramp and ATTR share facing unpriced friction."}, {"key": "PRME", "name": "Prime Medicine", "segment": "drug-discovery", "good_business": "no", "moat_years": 2, "expectation": 1, "verdict_line": "Distressed tail of the editing cohort: pre-revenue, cash into 2027 racing 2027 readouts, priced ~$570m EV as a survival option not a franchise."}, {"key": "GBIO", "name": "Generate Biomedicines", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 2, "expectation": 1, "verdict_line": "Single-asset Phase-3 binary priced with a platform-moat premium the audit refutes; expectation looks full ahead of the SOLAIRIA readout that decides everything."}, {"key": "ISM", "name": "Insilico Medicine", "segment": "drug-discovery", "good_business": "no", "moat_years": 2, "expectation": 2, "verdict_line": "Commoditizing AI drug-discovery platform wrapped around one differentiated binary asset (rentosertib) — real human POC, priced at a rich ~50x-shrinking-sales pipeline-optionality expectation, not a franchise."}, {"key": "NVDA", "name": "NVIDIA", "segment": "infra", "good_business": "yes", "moat_years": 4, "expectation": 1, "verdict_line": "Exceptional infra-toll (~75% GM, ~45% FCF margin, CUDA moat) at a fair-to-full expectation; ~30x trailing holds only if margins and capex cycle persist — own as the semis/AI toll, not a healthcare name."}, {"key": "MSFT", "name": "Microsoft", "segment": "workflow-cds", "good_business": "yes", "moat_years": 9, "expectation": 1, "verdict_line": "Good business at a fair-to-full expectation, but NOT a healthcare-AI expression: Dragon Copilot is a durable infra-toll fragment inside an AI-capex bet, immaterial to the multiple."}, {"key": "GOOGL", "name": "Alphabet", "segment": "infra", "good_business": "yes", "moat_years": 9, "expectation": 0, "verdict_line": "Durable L0 platform (decade+ moat, 31.6% margins) at a fair ~27x market multiple, mid-transition to capital-hungry as capex doubles to ~$180bn; healthcare-AI content is free optionality, not a thesis."}, {"key": "AMZN", "name": "Amazon", "good_business": "yes", "moat_years": 7, "expectation": 1, "segment": "infra", "verdict_line": "Durable L0 compute toll (AWS) at a full expectation; risk has shifted from growth to whether the $200bn AI build earns its cost of capital before depreciation compresses the 37.7% margin — the One Medical/HealthScribe healthcare angle is a strategic wedge, not a value driver."}, {"key": "ORCL", "name": "Oracle Health / Cerner", "segment": "infra", "good_business": "conditional", "moat_years": 7, "expectation": 1, "verdict_line": "Durable #2 EHR rail with a real L0 switching-cost moat, but a ~9%-revenue, share-losing, margin-dilutive annuity inside a stock priced entirely on AI-cloud — good business at a fair-to-full expectation, not the reason to own or avoid ORCL."}, {"key": "WAY", "name": "Waystar", "segment": "workflow-cds", "good_business": "yes", "moat_years": 6, "expectation": -1, "verdict_line": "Profitable, capital-light owner of the payer claims-to-cash rail — good business at a fair-to-slightly-cheap expectation if ~112% NRR holds against Epic envelopment."}, {"key": "DOCS", "name": "Doximity", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 6, "expectation": 0, "verdict_line": "Good business (>90% GM, net-cash, ~49% FCF-conversion, verified-physician audience moat) but mis-archetyped as SaaS when it is ad-cyclical, at a fair expectation that still embeds a re-acceleration the FY27 ~+4% guide does not support."}, {"key": "VEEV", "name": "Veeva Systems", "segment": "workflow-cds", "good_business": "yes", "moat_years": 8, "expectation": 1, "verdict_line": "Best-in-study durable owned-workflow / data-licensing compounder — GAAP-profitable, net-cash, ~45% non-GAAP margins, >100% cash conversion — now at a full expectation that prices durability over growth as a finite vertical decelerates to ~12%."}, {"key": "ISOMORPHIC", "name": "Isomorphic Labs", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 2, "expectation": 0, "verdict_line": "Demo-plus frontier drug lab; the only credible moat (owned assets vs risk-bearing pharma) is real but binary and unproven, gated on a ~40% Phase II wall no lab has moved — size for optionality, not conviction."}, {"key": "XAIRA", "name": "Xaira Therapeutics", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 1, "expectation": 0, "verdict_line": "Well-capitalized frontier shot on goal, but demo/optionality not durable value capture: data flywheel is the refuted discovery form, own-pipeline moat gated by the ~40% Phase-II wall with zero human data; priced at a thin ~2.7x on capital."}, {"key": "IAMBIC", "name": "Iambic Therapeutics", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 1, "expectation": 0, "verdict_line": "Demo/optionality: a fast AI discovery platform (~1-year commoditizing moat) wrapped around one early-stage owned HER2 asset gated by an unproven Phase-II efficacy readout."}, {"key": "GENESIS", "name": "Genesis Therapeutics", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 2, "expectation": 0, "verdict_line": "FEATURE-PLUS, not yet a durable value-capturer — grade C+ (conditional), confidence MEDIUM: commercially validated platform whose model commoditizes in ~1yr and whose value sits behind the unmoved ~40% Phase-II wall."}, {"key": "RETRO", "name": "Retro Biosciences", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 1, "expectation": 1, "verdict_line": "Demo/optionality pre-clinical longevity bet, not a durable value-capturer — full expectation on the Altman/OpenAI narrative, with the headline AI edge rented from OpenAI and everything gated on the unchanged ~40% Phase-II wall."}, {"key": "CHAI", "name": "Chai Discovery", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 2, "expectation": 2, "verdict_line": "Best-in-class founders and real pharma access on a commoditizing model layer (its own Chai-1 is the proof); demo/feature with relationship optionality, not yet a durable value-capturer, at a rich private mark — Grade C+."}, {"key": "EVOSCALE", "name": "EvolutionaryScale", "segment": "drug-discovery", "good_business": "no", "moat_years": 1, "expectation": 2, "verdict_line": "World-class protein-AI science on a commoditizing model layer with no owned asset, payment rail, or data-attach moat; standalone company effectively ended ~18mo post-seed in a CZI acqui-hire."}, {"key": "OPENAI-BIO", "name": "OpenAI (life sciences)", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 1, "expectation": 0, "verdict_line": "Durable general-infrastructure toll (L9x, ~5-10yr) wearing a biology skin — but a demo, not a moat, in drug discovery; bio value accrues to the API toll and partner equity, not an owned asset."}, {"key": "ANTHROPIC-BIO", "name": "Anthropic — Claude for Life Sciences", "segment": "infra", "good_business": "conditional", "moat_years": 6, "expectation": 1, "verdict_line": "Durable compute toll at the parent level wearing a life-sciences costume — good business, but healthcare-AI expectation priced onto a frontier-model multiple."}, {"key": "LATENT", "name": "Latent Labs", "segment": "drug-discovery", "good_business": "conditional", "moat_years": 1, "expectation": 0, "verdict_line": "Credible AlphaFold-alumni team and a real lab-validated benchmark, but sitting on the L9b model-IP layer Ch5 dates at ~12 months; picks-and-shovels positioning is right, monetisation unproven, durable moat unbuilt — watch, don't own."}, {"key": "ABRIDGE", "name": "Abridge", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 2, "expectation": 2, "verdict_line": "Conditional durable value-capturer (B-): ~30%-share ambient-scribe leader, capital-light but a feature-not-franchise until the coding/CDI/RCM + licensed-CDS up-stack converts to owned workflow that survives Epic envelopment at price; rich ~50x-ARR pre-envelopment venture mark."}, {"key": "AMBIENCE", "name": "Ambience Healthcare", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 2, "expectation": 2, "verdict_line": "Conditional value-capturer: scribe leg is a rented slot, coding/CDI attach is the durable-shaped survivor — real but unproven at price and under-capitalized vs Epic and Abridge, at a rich ~40x mark. Grade C+, medium confidence."}, {"key": "SUKI", "name": "Suki", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 2, "expectation": 1, "verdict_line": "Credible ambient-scribe with the right platform bet, but a feature sandwiched between a commoditizing LLM and the EHRs — no durable moat banked at a ~$0.4–0.5bn mark."}, {"key": "COMMURE", "name": "Commure (+Athelas)", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 3, "expectation": 1, "verdict_line": "Conditional value-capturer: L8 claims-to-cash rail is a durable moat candidate, L6 scribe already enveloped by Epic — insider-marked, subsidy-flattered roll-up at a full expectation. C+ / speculative."}, {"key": "COHERE-HEALTH", "name": "Cohere Health", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 6, "expectation": 1, "verdict_line": "Conditional durable L8 utilization-management rail on the right side of the moat map, but pricing power is asserted (ARR growth) not proven (NRR-at-price); grade B / B-, full expectation."}, {"key": "ANTERIOR", "name": "Anterior", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 6, "expectation": 0, "verdict_line": "Durable value-capturer, EMERGING — right side of the workflow-ownership moat, but retention-at-price is unproven for a private at this stage."}, {"key": "OPENEVIDENCE", "name": "OpenEvidence", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 4, "expectation": 2, "verdict_line": "Conditional durable value-capturer (B/B-plus): real revenue and 40%-physician distribution with a licensed-corpus + habit moat that clears the scarce-input bar, but the input is rented and the model commoditizes, so at ~80x run-rate the ~$12bn mark already prices near-perfect execution."}, {"key": "HIPPOCRATIC", "name": "Hippocratic AI", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 4, "expectation": 1, "verdict_line": "Category-leading patient-facing voice AI whose only durable moat candidate — the accumulated safety record — is real but unproven on retention-at-price, at a full $3.5bn mark on no disclosed revenue."}, {"key": "AIDOC", "name": "Aidoc", "segment": "imaging", "good_business": "conditional", "moat_years": 2, "expectation": 1, "verdict_line": "Conditional value-capturer, demo-until-proven (C+/B-): real distribution and breadth, but the moat lives entirely in whether aiOS becomes owned orchestration vs a commoditizing model on rented rails."}, {"key": "VIZAI", "name": "Viz.ai", "segment": "imaging", "good_business": "conditional", "moat_years": 6, "expectation": 0, "verdict_line": "Durable value-capturer, narrowly — grade B/conditional-yes: owns an embedded multi-disease coordination workflow plus a life-sciences data-attach, but the algorithm commoditizes and the NTAP is transitional, not a permanent code."}, {"key": "EPIC", "name": "Epic Systems", "segment": "workflow-cds", "good_business": "yes", "moat_years": 9, "expectation": 0, "verdict_line": "Durable decade-plus platform moat — the EHR system-of-record every L6 scribe rents from — but structurally un-investable: no equity, no external capital, private by design."}, {"key": "EVERFORTUNE", "name": "Ever Fortune AI", "segment": "taiwan", "good_business": "conditional", "moat_years": 2, "expectation": 2, "verdict_line": "Best listed TW healthcare-AI pure-play — real loss-to-profit turn, broadest SaMD licence book — but small, ~12% GM, no NHI code, no investable moat, priced ~17x sales on a milestone-gated tech-transfer."}, {"key": "AETHERAI", "name": "aetherAI (雲象科技)", "segment": "imaging", "good_business": "conditional", "moat_years": 4, "expectation": 1, "verdict_line": "Differentiated TW pathology-workflow pure-play with a thin-but-real installed-base moat that routes around the NHI chokepoint, but a loss-making micro-cap whose equity case rests on an unproven US/EU export push against global incumbents."}, {"key": "ACERMED", "name": "Acer Medical", "segment": "imaging", "good_business": "conditional", "moat_years": 2, "expectation": 2, "verdict_line": "Genuine first-mover imaging-triage SaMD with a strong parent, stranded one value-chain layer short of the payment dollar; real-but-not-investable moat and a domestic thesis gated on an NHI reimbursement vote that has not fired, at a rich brand-and-optionality expectation."}, {"key": "AMCAD", "name": "Amcad Biomed", "segment": "taiwan", "good_business": "no", "moat_years": 1, "expectation": 0, "verdict_line": "World-first ultrasound-CAD franchise but a shrinking NT$30m-revenue micro-cap with no company-captured moat — a positioning marker gated on one binary NHI vote, not an investable long."}, {"key": "EBM", "name": "EBM Technologies", "segment": "imaging", "good_business": "conditional", "moat_years": 4, "expectation": 1, "verdict_line": "Watch-only: a sticky but mature, ex-growth domestic PACS incumbent whose imaging-AI aggregation-rail re-rate is plausible but unproven, undisclosed, and contested — a conditionally good business at a full expectation."}, {"key": "HEALTH2SYNC", "name": "Health2Sync", "segment": "workflow-cds", "good_business": "conditional", "moat_years": 3, "expectation": 2, "verdict_line": "Real, differentiated TW chronic-disease DTx/data-platform with genuine ~69% software margins and a growing Japan-export line, but pre-profit, richly/softly priced on 興櫃 (~140-170x sales), hinging on a single unproven 2026 NHI vote; the 1.6M-user data moat is a scale story, not a defensibility story — pharma/Japan-enterprise relationships are the only sticky leg."}, {"key": "ASUS-AICS", "name": "ASUS AICS", "segment": "taiwan", "good_business": "no", "moat_years": 1, "expectation": 0, "verdict_line": "Genuine L7-L8 coding/HIS node with a >NT$10bn parent-funded push, but zero standalone economics inside a NT$180bn/quarter PC-server parent, a state-captured (not company-captured) data moat, and a dead export proof point — not underwriteable as a healthcare-AI position."}, {"key": "QUANTA-QOCA", "name": "Quanta QOCA", "segment": "taiwan", "good_business": "conditional", "moat_years": 2, "expectation": 0, "verdict_line": "Largest-coverage TW medical cloud, but undisclosed, immaterial, and founder-declared non-commercial inside a NT$2.1tn AI-server ODM — a positioning marker, not an investable healthcare-AI pure-play."}, {"key": "WISTRON-MED", "name": "Wistron Medical", "segment": "taiwan", "good_business": "conditional", "moat_years": 0, "expectation": 0, "verdict_line": "Real dialysis-AI business but structurally uncapturable by an equity holder — unlisted, undisclosed, NHI-gated; only vehicle (3231) is an AI-server bet, not a healthcare-AI one."}, {"key": "FOXCONN-HEALTH", "name": "Foxconn Health / CoDoctor (鴻海醫療, 2317 TT)", "segment": "taiwan", "good_business": "no", "moat_years": 0, "expectation": 1, "verdict_line": "Positioning marker, not an investable healthcare-AI pure-play: real deployments (7 medical centres, TFDA-cleared devices, ~US$1.5bn \"Healthy Taiwan\" integrator role) but zero disclosed health economics, no standing NHI payment, and a moat that belongs to the ~NT$3.4tn ICT parent, not the health unit."}, {"key": "TW-HOSPITAL-AI", "name": "Taiwan hospital AI centres", "segment": "taiwan", "good_business": "conditional", "moat_years": 7, "expectation": 0, "verdict_line": "Structural node, not a security — a real, deep, two-sided moat that is state-captured and stranded on non-listed balance sheets; use as the lens for pricing vendors selling INTO it, never as an exposure."}]
+[
+ {
+  "key": "TEM",
+  "name": "Tempus AI",
+  "segment": "dx",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Real data-network moat, but priced as software when three-quarters is a reimbursement-gated lab — demanding until the 73%-GM data leg compounds (NRR back above 100%) and GAAP FCF beats dilution."
+ },
+ {
+  "key": "CAI",
+  "name": "Caris Life Sciences",
+  "segment": "dx",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": -1,
+  "verdict_line": "Profitable precision-onco lab (+79%, 65% GM, +$442m net cash) at a Dx-not-software ~5x EV/sales; good business fairly-to-cheaply priced, but the re-rate hinges on one ASP reset holding."
+ },
+ {
+  "key": "NTRA",
+  "name": "Natera",
+  "segment": "dx",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Category-leading tumor-informed MRD franchise with a rising ~65% GM and a landed cash inflection, but priced full — the ~15x-sales multiple already assumes the uncontracted Signatera ASP climb to $2,000 and durable CMS coverage both hold, and the coverage/evidence moat (~5-8yr) is capped by budget-neutrality repricing risk."
+ },
+ {
+  "key": "GH",
+  "name": "Guardant Health",
+  "segment": "dx",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 2,
+  "verdict_line": "Good business, richly expected: genuine liquid-biopsy franchise with a real coverage moat, priced at a software-annuity multiple its per-test margins and reimbursement-gated screening TAM have not yet earned."
+ },
+ {
+  "key": "EXAS",
+  "name": "Exact Sciences",
+  "segment": "dx",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Good business: real code/coverage screening moat plus rare positive FCF, acquired by Abbott at a full but defensible ~7x-sales expectation — the franchise, not the AI, got paid for."
+ },
+ {
+  "key": "PSNL",
+  "name": "Personalis",
+  "segment": "dx",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 2,
+  "verdict_line": "Differentiated MRD tech in a capital-hungry, reimbursement-gated per-test archetype, priced rich (~15x EV/sales) as if the coverage-and-margin crossover is already won when the margin line says it has not begun."
+ },
+ {
+  "key": "VCYT",
+  "name": "Veracyte",
+  "segment": "dx",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Good business — GAAP-profitable, self-funding, ~76% GM, coverage-moated core — at a full-to-rich expectation that already banks an MRD re-acceleration the guide does not show."
+ },
+ {
+  "key": "GEHC",
+  "name": "GE HealthCare",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": -1,
+  "segment": "imaging",
+  "verdict_line": "Durable #2 imaging OEM with installed-base lock-in, priced as a low-growth industrial at ~12-13x forward P/E; good business at a fair-to-cheap expectation, but the AI moat is refuted."
+ },
+ {
+  "key": "BFLY",
+  "name": "Butterfly Network",
+  "segment": "imaging",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 2,
+  "verdict_line": "Real, hard-to-copy ultrasound-on-chip (a semiconductor moat, not a healthcare-AI one) bolted to an unproven, one-deal-deep Embedded licensing story, priced at ~16x forward EV/sales as if the platform is already built — good technology, rich expectation."
+ },
+ {
+  "key": "ABSI",
+  "name": "Absci",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 1,
+  "verdict_line": "A real, well-funded AI-antibody call option — not a good business yet, priced on an analyst-assumed 35% coin-flip on one POC, with a data-flywheel moat that is refuted and untested by the flagship."
+ },
+ {
+  "key": "RXRX",
+  "name": "Recursion",
+  "segment": "drug-discovery",
+  "good_business": "no",
+  "moat_years": 1,
+  "expectation": 1,
+  "verdict_line": "Capital-hungry pre-revenue own-pipeline book; the data flywheel is the sub-sector's clearest refutation, and ~30x milestone-lumpy sales still capitalizes an unproven flywheel-to-drug link."
+ },
+ {
+  "key": "SDGR",
+  "name": "Schrodinger",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Good capital-light software moat (~5-8yr) strapped to a de-risked option-value pipeline, priced full on a re-acceleration the last prints (11% growth, 81%->69% GM) haven't earned; net cash is the floor."
+ },
+ {
+  "key": "CRSP",
+  "name": "CRISPR Therapeutics",
+  "good_business": "conditional",
+  "moat_years": 3,
+  "expectation": 1,
+  "segment": "drug-discovery",
+  "verdict_line": "Strongest survivor of a hard owned-pipeline gene-editing cohort — approved product, ~$2.0bn cash, correctly liver/blood-concentrated pipeline — but ~$2.7bn EV prices in-vivo Phase-II success and a >$1bn Casgevy peak the readouts have not yet earned; a good balance sheet at a full expectation."
+ },
+ {
+  "key": "BEAM",
+  "name": "Beam Therapeutics",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 1,
+  "verdict_line": "Cohort leader with the best AATD human dataset and funding to mid-2029, at a fair-to-slightly-rich binary-option price; good asset optionality, not yet a good business."
+ },
+ {
+  "key": "NTLA",
+  "name": "Intellia",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 3,
+  "expectation": 1,
+  "verdict_line": "Cohort's clearest clinical winner (first in-vivo Ph3 win), but priced at a full expectation that has already banked lonvo-z approval and pays up-front for a ramp and ATTR share facing unpriced friction."
+ },
+ {
+  "key": "PRME",
+  "name": "Prime Medicine",
+  "segment": "drug-discovery",
+  "good_business": "no",
+  "moat_years": 2,
+  "expectation": 1,
+  "verdict_line": "Distressed tail of the editing cohort: pre-revenue, cash into 2027 racing 2027 readouts, priced ~$570m EV as a survival option not a franchise."
+ },
+ {
+  "key": "GBIO",
+  "name": "Generate Biomedicines",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 1,
+  "verdict_line": "Single-asset Phase-3 binary priced with a platform-moat premium the audit refutes; expectation looks full ahead of the SOLAIRIA readout that decides everything."
+ },
+ {
+  "key": "ISM",
+  "name": "Insilico Medicine",
+  "segment": "drug-discovery",
+  "good_business": "no",
+  "moat_years": 2,
+  "expectation": 2,
+  "verdict_line": "Commoditizing AI drug-discovery platform wrapped around one differentiated binary asset (rentosertib) — real human POC, priced at a rich ~50x-shrinking-sales pipeline-optionality expectation, not a franchise."
+ },
+ {
+  "key": "NVDA",
+  "name": "NVIDIA",
+  "segment": "infra",
+  "good_business": "yes",
+  "moat_years": 4,
+  "expectation": 1,
+  "verdict_line": "Exceptional infra-toll (~75% GM, ~45% FCF margin, CUDA moat) at a fair-to-full expectation; ~30x trailing holds only if margins and capex cycle persist — own as the semis/AI toll, not a healthcare name."
+ },
+ {
+  "key": "MSFT",
+  "name": "Microsoft",
+  "segment": "workflow-cds",
+  "good_business": "yes",
+  "moat_years": 9,
+  "expectation": 1,
+  "verdict_line": "Good business at a fair-to-full expectation, but NOT a healthcare-AI expression: Dragon Copilot is a durable infra-toll fragment inside an AI-capex bet, immaterial to the multiple."
+ },
+ {
+  "key": "GOOGL",
+  "name": "Alphabet",
+  "segment": "infra",
+  "good_business": "yes",
+  "moat_years": 9,
+  "expectation": 0,
+  "verdict_line": "Durable L0 platform (decade+ moat, 31.6% margins) at a fair ~27x market multiple, mid-transition to capital-hungry as capex doubles to ~$180bn; healthcare-AI content is free optionality, not a thesis."
+ },
+ {
+  "key": "AMZN",
+  "name": "Amazon",
+  "good_business": "yes",
+  "moat_years": 7,
+  "expectation": 1,
+  "segment": "infra",
+  "verdict_line": "Durable L0 compute toll (AWS) at a full expectation; risk has shifted from growth to whether the $200bn AI build earns its cost of capital before depreciation compresses the 37.7% margin — the One Medical/HealthScribe healthcare angle is a strategic wedge, not a value driver."
+ },
+ {
+  "key": "ORCL",
+  "name": "Oracle Health / Cerner",
+  "segment": "infra",
+  "good_business": "conditional",
+  "moat_years": 7,
+  "expectation": 1,
+  "verdict_line": "Durable #2 EHR rail with a real L0 switching-cost moat, but a ~9%-revenue, share-losing, margin-dilutive annuity inside a stock priced entirely on AI-cloud — good business at a fair-to-full expectation, not the reason to own or avoid ORCL."
+ },
+ {
+  "key": "WAY",
+  "name": "Waystar",
+  "segment": "workflow-cds",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": -1,
+  "verdict_line": "Profitable, capital-light owner of the payer claims-to-cash rail — good business at a fair-to-slightly-cheap expectation if ~112% NRR holds against Epic envelopment."
+ },
+ {
+  "key": "DOCS",
+  "name": "Doximity",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 0,
+  "verdict_line": "Good business (>90% GM, net-cash, ~49% FCF-conversion, verified-physician audience moat) but mis-archetyped as SaaS when it is ad-cyclical, at a fair expectation that still embeds a re-acceleration the FY27 ~+4% guide does not support."
+ },
+ {
+  "key": "VEEV",
+  "name": "Veeva Systems",
+  "segment": "workflow-cds",
+  "good_business": "yes",
+  "moat_years": 8,
+  "expectation": 1,
+  "verdict_line": "Best-in-study durable owned-workflow / data-licensing compounder — GAAP-profitable, net-cash, ~45% non-GAAP margins, >100% cash conversion — now at a full expectation that prices durability over growth as a finite vertical decelerates to ~12%."
+ },
+ {
+  "key": "ISOMORPHIC",
+  "name": "Isomorphic Labs",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 0,
+  "verdict_line": "Demo-plus frontier drug lab; the only credible moat (owned assets vs risk-bearing pharma) is real but binary and unproven, gated on a ~40% Phase II wall no lab has moved — size for optionality, not conviction."
+ },
+ {
+  "key": "XAIRA",
+  "name": "Xaira Therapeutics",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 0,
+  "verdict_line": "Well-capitalized frontier shot on goal, but demo/optionality not durable value capture: data flywheel is the refuted discovery form, own-pipeline moat gated by the ~40% Phase-II wall with zero human data; priced at a thin ~2.7x on capital."
+ },
+ {
+  "key": "IAMBIC",
+  "name": "Iambic Therapeutics",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 0,
+  "verdict_line": "Demo/optionality: a fast AI discovery platform (~1-year commoditizing moat) wrapped around one early-stage owned HER2 asset gated by an unproven Phase-II efficacy readout."
+ },
+ {
+  "key": "GENESIS",
+  "name": "Genesis Therapeutics",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 0,
+  "verdict_line": "FEATURE-PLUS, not yet a durable value-capturer — grade C+ (conditional), confidence MEDIUM: commercially validated platform whose model commoditizes in ~1yr and whose value sits behind the unmoved ~40% Phase-II wall."
+ },
+ {
+  "key": "RETRO",
+  "name": "Retro Biosciences",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 1,
+  "verdict_line": "Demo/optionality pre-clinical longevity bet, not a durable value-capturer — full expectation on the Altman/OpenAI narrative, with the headline AI edge rented from OpenAI and everything gated on the unchanged ~40% Phase-II wall."
+ },
+ {
+  "key": "CHAI",
+  "name": "Chai Discovery",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 2,
+  "verdict_line": "Best-in-class founders and real pharma access on a commoditizing model layer (its own Chai-1 is the proof); demo/feature with relationship optionality, not yet a durable value-capturer, at a rich private mark — Grade C+."
+ },
+ {
+  "key": "EVOSCALE",
+  "name": "EvolutionaryScale",
+  "segment": "drug-discovery",
+  "good_business": "no",
+  "moat_years": 1,
+  "expectation": 2,
+  "verdict_line": "World-class protein-AI science on a commoditizing model layer with no owned asset, payment rail, or data-attach moat; standalone company effectively ended ~18mo post-seed in a CZI acqui-hire."
+ },
+ {
+  "key": "OPENAI-BIO",
+  "name": "OpenAI (life sciences)",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 0,
+  "verdict_line": "Durable general-infrastructure toll (L9x, ~5-10yr) wearing a biology skin — but a demo, not a moat, in drug discovery; bio value accrues to the API toll and partner equity, not an owned asset."
+ },
+ {
+  "key": "ANTHROPIC-BIO",
+  "name": "Anthropic — Claude for Life Sciences",
+  "segment": "infra",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Durable compute toll at the parent level wearing a life-sciences costume — good business, but healthcare-AI expectation priced onto a frontier-model multiple."
+ },
+ {
+  "key": "LATENT",
+  "name": "Latent Labs",
+  "segment": "drug-discovery",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 0,
+  "verdict_line": "Credible AlphaFold-alumni team and a real lab-validated benchmark, but sitting on the L9b model-IP layer Ch5 dates at ~12 months; picks-and-shovels positioning is right, monetisation unproven, durable moat unbuilt — watch, don't own."
+ },
+ {
+  "key": "ABRIDGE",
+  "name": "Abridge",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 2,
+  "verdict_line": "Conditional durable value-capturer (B-): ~30%-share ambient-scribe leader, capital-light but a feature-not-franchise until the coding/CDI/RCM + licensed-CDS up-stack converts to owned workflow that survives Epic envelopment at price; rich ~50x-ARR pre-envelopment venture mark."
+ },
+ {
+  "key": "AMBIENCE",
+  "name": "Ambience Healthcare",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 2,
+  "verdict_line": "Conditional value-capturer: scribe leg is a rented slot, coding/CDI attach is the durable-shaped survivor — real but unproven at price and under-capitalized vs Epic and Abridge, at a rich ~40x mark. Grade C+, medium confidence."
+ },
+ {
+  "key": "SUKI",
+  "name": "Suki",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 1,
+  "verdict_line": "Credible ambient-scribe with the right platform bet, but a feature sandwiched between a commoditizing LLM and the EHRs — no durable moat banked at a ~$0.4–0.5bn mark."
+ },
+ {
+  "key": "COMMURE",
+  "name": "Commure (+Athelas)",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 3,
+  "expectation": 1,
+  "verdict_line": "Conditional value-capturer: L8 claims-to-cash rail is a durable moat candidate, L6 scribe already enveloped by Epic — insider-marked, subsidy-flattered roll-up at a full expectation. C+ / speculative."
+ },
+ {
+  "key": "COHERE-HEALTH",
+  "name": "Cohere Health",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 1,
+  "verdict_line": "Conditional durable L8 utilization-management rail on the right side of the moat map, but pricing power is asserted (ARR growth) not proven (NRR-at-price); grade B / B-, full expectation."
+ },
+ {
+  "key": "ANTERIOR",
+  "name": "Anterior",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 0,
+  "verdict_line": "Durable value-capturer, EMERGING — right side of the workflow-ownership moat, but retention-at-price is unproven for a private at this stage."
+ },
+ {
+  "key": "OPENEVIDENCE",
+  "name": "OpenEvidence",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 2,
+  "verdict_line": "Conditional durable value-capturer (B/B-plus): real revenue and 40%-physician distribution with a licensed-corpus + habit moat that clears the scarce-input bar, but the input is rented and the model commoditizes, so at ~80x run-rate the ~$12bn mark already prices near-perfect execution."
+ },
+ {
+  "key": "HIPPOCRATIC",
+  "name": "Hippocratic AI",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 1,
+  "verdict_line": "Category-leading patient-facing voice AI whose only durable moat candidate — the accumulated safety record — is real but unproven on retention-at-price, at a full $3.5bn mark on no disclosed revenue."
+ },
+ {
+  "key": "AIDOC",
+  "name": "Aidoc",
+  "segment": "imaging",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 1,
+  "verdict_line": "Conditional value-capturer, demo-until-proven (C+/B-): real distribution and breadth, but the moat lives entirely in whether aiOS becomes owned orchestration vs a commoditizing model on rented rails."
+ },
+ {
+  "key": "VIZAI",
+  "name": "Viz.ai",
+  "segment": "imaging",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 0,
+  "verdict_line": "Durable value-capturer, narrowly — grade B/conditional-yes: owns an embedded multi-disease coordination workflow plus a life-sciences data-attach, but the algorithm commoditizes and the NTAP is transitional, not a permanent code."
+ },
+ {
+  "key": "EPIC",
+  "name": "Epic Systems",
+  "segment": "workflow-cds",
+  "good_business": "yes",
+  "moat_years": 9,
+  "expectation": 0,
+  "verdict_line": "Durable decade-plus platform moat — the EHR system-of-record every L6 scribe rents from — but structurally un-investable: no equity, no external capital, private by design."
+ },
+ {
+  "key": "EVERFORTUNE",
+  "name": "Ever Fortune AI",
+  "segment": "taiwan",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 2,
+  "verdict_line": "Best listed TW healthcare-AI pure-play — real loss-to-profit turn, broadest SaMD licence book — but small, ~12% GM, no NHI code, no investable moat, priced ~17x sales on a milestone-gated tech-transfer."
+ },
+ {
+  "key": "AETHERAI",
+  "name": "aetherAI (雲象科技)",
+  "segment": "imaging",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 1,
+  "verdict_line": "Differentiated TW pathology-workflow pure-play with a thin-but-real installed-base moat that routes around the NHI chokepoint, but a loss-making micro-cap whose equity case rests on an unproven US/EU export push against global incumbents."
+ },
+ {
+  "key": "ACERMED",
+  "name": "Acer Medical",
+  "segment": "imaging",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 2,
+  "verdict_line": "Genuine first-mover imaging-triage SaMD with a strong parent, stranded one value-chain layer short of the payment dollar; real-but-not-investable moat and a domestic thesis gated on an NHI reimbursement vote that has not fired, at a rich brand-and-optionality expectation."
+ },
+ {
+  "key": "AMCAD",
+  "name": "Amcad Biomed",
+  "segment": "taiwan",
+  "good_business": "no",
+  "moat_years": 1,
+  "expectation": 0,
+  "verdict_line": "World-first ultrasound-CAD franchise but a shrinking NT$30m-revenue micro-cap with no company-captured moat — a positioning marker gated on one binary NHI vote, not an investable long."
+ },
+ {
+  "key": "EBM",
+  "name": "EBM Technologies",
+  "segment": "imaging",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 1,
+  "verdict_line": "Watch-only: a sticky but mature, ex-growth domestic PACS incumbent whose imaging-AI aggregation-rail re-rate is plausible but unproven, undisclosed, and contested — a conditionally good business at a full expectation."
+ },
+ {
+  "key": "HEALTH2SYNC",
+  "name": "Health2Sync",
+  "segment": "workflow-cds",
+  "good_business": "conditional",
+  "moat_years": 3,
+  "expectation": 2,
+  "verdict_line": "Real, differentiated TW chronic-disease DTx/data-platform with genuine ~69% software margins and a growing Japan-export line, but pre-profit, richly/softly priced on 興櫃 (~140-170x sales), hinging on a single unproven 2026 NHI vote; the 1.6M-user data moat is a scale story, not a defensibility story — pharma/Japan-enterprise relationships are the only sticky leg."
+ },
+ {
+  "key": "ASUS-AICS",
+  "name": "ASUS AICS",
+  "segment": "taiwan",
+  "good_business": "no",
+  "moat_years": 1,
+  "expectation": 0,
+  "verdict_line": "Genuine L7-L8 coding/HIS node with a >NT$10bn parent-funded push, but zero standalone economics inside a NT$180bn/quarter PC-server parent, a state-captured (not company-captured) data moat, and a dead export proof point — not underwriteable as a healthcare-AI position."
+ },
+ {
+  "key": "QUANTA-QOCA",
+  "name": "Quanta QOCA",
+  "segment": "taiwan",
+  "good_business": "conditional",
+  "moat_years": 2,
+  "expectation": 0,
+  "verdict_line": "Largest-coverage TW medical cloud, but undisclosed, immaterial, and founder-declared non-commercial inside a NT$2.1tn AI-server ODM — a positioning marker, not an investable healthcare-AI pure-play."
+ },
+ {
+  "key": "WISTRON-MED",
+  "name": "Wistron Medical",
+  "segment": "taiwan",
+  "good_business": "conditional",
+  "moat_years": 0,
+  "expectation": 0,
+  "verdict_line": "Real dialysis-AI business but structurally uncapturable by an equity holder — unlisted, undisclosed, NHI-gated; only vehicle (3231) is an AI-server bet, not a healthcare-AI one."
+ },
+ {
+  "key": "FOXCONN-HEALTH",
+  "name": "Foxconn Health / CoDoctor (鴻海醫療, 2317 TT)",
+  "segment": "taiwan",
+  "good_business": "no",
+  "moat_years": 0,
+  "expectation": 1,
+  "verdict_line": "Positioning marker, not an investable healthcare-AI pure-play: real deployments (7 medical centres, TFDA-cleared devices, ~US$1.5bn \"Healthy Taiwan\" integrator role) but zero disclosed health economics, no standing NHI payment, and a moat that belongs to the ~NT$3.4tn ICT parent, not the health unit."
+ },
+ {
+  "key": "TW-HOSPITAL-AI",
+  "name": "Taiwan hospital AI centres",
+  "segment": "taiwan",
+  "good_business": "conditional",
+  "moat_years": 7,
+  "expectation": 0,
+  "verdict_line": "Structural node, not a security — a real, deep, two-sided moat that is state-captured and stranded on non-listed balance sheets; use as the lens for pricing vendors selling INTO it, never as an exposure."
+ },
+ {
+  "key": "LLY",
+  "name": "Eli Lilly",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": 1.0,
+  "verdict_line": "The mega-cap incumbent that funds AI drug discovery and keeps the value; AI is a cheap option and efficiency lever, immaterial to a ~$1.15tn valuation built on the GLP-1 franchise, not AI."
+ },
+ {
+  "key": "MRK",
+  "name": "Merck & Co",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 4,
+  "expectation": 0.0,
+  "verdict_line": "Good, durable pharma franchise but the whole equity thesis is Keytruda-cliff succession, not AI; the cleanest incumbent example of the study's core claim - MRK funds the AI (Variational, Mayo, internal GenAI) and keeps the value because it, not the vendor, bears the clinical risk and owns distribution. AI is a cost-side hedge, never the moat; expectation reads full because the 2028 cliff is priced as more solved than it is."
+ },
+ {
+  "key": "PFE",
+  "name": "Pfizer",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": -1.0,
+  "verdict_line": "The cleanest incumbent case: Pfizer rents commoditizing AI models from the frontier labs, embeds them as an opex cost lever inside a $10-11bn R&D line, and keeps all the value at L9 because it owns the reimbursed molecule, the trial, the approval, the distribution, and the balance sheet the startups lack; a good business priced cheaply (~7% yield) for the patent cliff, not for AI, which does not move the binding Phase II constraint."
+ },
+ {
+  "key": "JNJ",
+  "name": "Johnson & Johnson",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 8,
+  "expectation": 0.0,
+  "verdict_line": "Diversified incumbent that funds the AI on BOTH chains - drug discovery (Isomorphic, milestone+royalty, keeps the molecules) and surgery (Ottava/Polyphonic, owns the robot + operating-room data) - and keeps the value; at ~$633bn on $94bn revenue, AI is a cheap two-front option, immaterial to the P&L; the real story is the patent-cliff-exposed pharma franchise and a contested surgical platform vs Intuitive, not algorithms."
+ },
+ {
+  "key": "ABBV",
+  "name": "AbbVie",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 9,
+  "expectation": 0.0,
+  "verdict_line": "Diversified immunology incumbent that out-ran the Humira cliff via Skyrizi/Rinvoq and serial M&A; uses AI as a cheap internal tool plus a few option-sized deals (BigHat, Caris/ConcertAI) while keeping every asset - AI is immaterial to the ~$460bn valuation and it invests more cautiously than AI-forward peers."
+ },
+ {
+  "key": "AMGN",
+  "name": "Amgen",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": 0.0,
+  "verdict_line": "Durable diversified biotech that both funds and builds its own AI (owns deCODE data), but keeps value at L9 because it bears Phase-II risk and owns the molecule; equity is a MariTide-obesity and base-durability call, not an AI story, and gets near-zero AI premium."
+ },
+ {
+  "key": "BMY",
+  "name": "Bristol Myers Squibb",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": -1.0,
+  "verdict_line": "Good business, cheaply priced as a patent-cliff pharma not an AI story; the incumbent funds the AI (insitro >$2bn pact, Claude across 30,000 employees) and keeps the drug at L9, but a steep near-term Eliquis/Opdivo/Revlimid cliff - not AI - governs the stock, and AI does not move Phase II biology or LOE replacement."
+ },
+ {
+  "key": "NVS",
+  "name": "Novartis",
+  "good_business": "yes",
+  "moat_years": 9,
+  "expectation": 0.0,
+  "segment": "pharma-incumbent",
+  "verdict_line": "One of the deepest AI adopters in big pharma - four external AI-discovery deals plus the data42 internal platform - and the cleanest European illustration of the study's rule: the incumbent funds the AI as cheap staged options and keeps the drugs, trials, and value. At ~$293bn on ~$54.5bn sales, AI is immaterial to the P&L; the real story is pipeline replacing the largest patent cliff in company history. Good business, wide-but-cliff-sensitive franchise moat (not an AI moat)."
+ },
+ {
+  "key": "RHHBY",
+  "name": "Roche",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": 0.0,
+  "segment": "pharma-incumbent",
+  "verdict_line": "The incumbent most like a data platform - already owns Flatiron (outcomes), Foundation Medicine (genomics), and Genentech plus the largest disclosed pharma GPU footprint, but at ~$330bn on CHF 61.5bn revenue it is a pipeline bet, not an AI story; Roche funds the AI, keeps the data and the drugs, and captures the value for well under 1% of R&D."
+ },
+ {
+  "key": "AZN",
+  "name": "AstraZeneca",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": 0.0,
+  "verdict_line": "Good business, wide franchise/oncology moat - not an AI moat; the incumbent funds the AI, licenses shared oncology models, and now buys the AI outright (Modella) while keeping the drugs, trials, biomarkers, and value. AI is immaterial to the ~$292bn valuation, which is priced on the $80bn-by-2030 pipeline, not AI."
+ },
+ {
+  "key": "GSK",
+  "name": "GSK",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 7,
+  "expectation": -1.0,
+  "verdict_line": "Cash-rich incumbent and early AI-in-discovery mover (23andMe 2018, Cerebras 2022, Noetik virtual-cell subscription 2026) that funds the AI and keeps the drugs; AI is immaterial to a ~32.7bn-pound company whose real story is a 2028-29 HIV patent cliff vs pipeline plus M&A backfill. Priced for the cliff, not for AI."
+ },
+ {
+  "key": "SNY",
+  "name": "Sanofi",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 7,
+  "expectation": 0.0,
+  "verdict_line": "Loudest \"all in on AI\" incumbent - 20,000-user internal plai tool plus 5+ external AI-discovery deals - but AI is immaterial to a ~$103bn cap; the real story is Dupixent concentration (~36% of sales) versus the coming patent cliff, with AI a cheap staged-option efficiency bet the incumbent funds while keeping the drugs, trials, and value."
+ },
+ {
+  "key": "NVO",
+  "name": "Novo Nordisk",
+  "segment": "pharma-incumbent",
+  "good_business": "yes",
+  "moat_years": 8,
+  "expectation": 0.0,
+  "verdict_line": "GLP-1 mega-cap incumbent that funds AI (Valo milestones), rents its compute (Gefion, owned by its Foundation not itself), and keeps the drugs - but the moat is the eroding metabolic franchise, not AI; stock lives and dies on GLP-1 vs Lilly, and AI is an immaterial cheap option."
+ },
+ {
+  "key": "TAK",
+  "name": "Takeda",
+  "segment": "pharma-incumbent",
+  "good_business": "conditional",
+  "moat_years": 7,
+  "expectation": -1.0,
+  "verdict_line": "Japan's largest pharma; funds the AI-discovery chain (Insilico ~$600m, Iambic up to $1.7bn) and keeps the assets, with one completed proof point (Schrodinger-designed, Takeda-owned zasocitinib through positive Phase III). AI is immaterial to a ~JPY 4.5tn base; the real story is a franchise moat being spent down through a VYVANSE/ENTYVIO patent cliff, so the stock reads fair-to-cheap on the pipeline, not on AI."
+ },
+ {
+  "key": "BNTX",
+  "name": "BioNTech",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 0.0,
+  "verdict_line": "Clearest EU AI-native drug play by capability (in-house InstaDeep stack) and best-capitalized name in the AI-drug cohort (~EUR 16.8bn cash, a $1.5bn-upfront partnered BNT327 lead), but today's value rests on the pipeline and the balance sheet, not the AI - a real cost-saver, not a proven clinical moat; priced net of cash the pipeline EV is modest, so a fair-to-full pipeline-and-capital-allocation bet dressed in AI clothing."
+ },
+ {
+  "key": "SOPH",
+  "name": "Sophia Genetics",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 0.0,
+  "verdict_line": "Real asset-light genomics-SaaS with software-grade margins and a small but genuine decentralized data-network moat; not yet a proven compounder - mid-teens constant-currency growth and live cash burn mean the thesis rests on reaching breakeven before dilution."
+ },
+ {
+  "key": "OWKIN",
+  "name": "Owkin",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 1.0,
+  "segment": "global-ai",
+  "verdict_line": "The EU's Tempus-for-pharma with a real, scarce pharma-access / GDPR-federated-data asset, but a moat that rents rather than owns; a ~$1bn 2021 unicorn mark its own carve-outs (Waiv, Bioptimus) and the commoditizing agentic-software layer no longer clearly support - size for pharma-distribution optionality, not a durable software annuity.</verdict_line>\n</invoke>\n"
+ },
+ {
+  "key": "ONT",
+  "name": "Oxford Nanopore",
+  "good_business": "conditional",
+  "moat_years": 8,
+  "expectation": 0.0,
+  "segment": "global-ai",
+  "verdict_line": "A genuine sole-source nanopore platform monopoly with a real consumable annuity and an AI basecaller welded to the hardware, priced fairly (~5x EV/sales) because the market withholds a software multiple; the moat (~7-10yr of platform IP) is real but the risk is financial - still pre-profit, burning ~GBP 100m/yr against ~GBP 303m cash, with adjusted-EBITDA breakeven only promised for FY27 and self-funding for FY28."
+ },
+ {
+  "key": "UIH",
+  "name": "United Imaging",
+  "segment": "global-ai",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": 1.0,
+  "verdict_line": "Genuine China #1-tier imaging OEM taking share from GE/Siemens/Philips with native AI in the box, but priced ~45-50x forward as a secular compounder when it is a capital-heavy, procurement-cycle-driven equipment maker whose overseas growth engine faces a China-medtech geopolitical cap; good business, demanding expectation, AI is a differentiator not yet a moat."
+ },
+ {
+  "key": "AIRDOC",
+  "name": "Airdoc (Beijing Airdoc Technology)",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 0.0,
+  "verdict_line": "Clearest listed pure-play on retinal-image AI screening in China with real regulatory firsts and ~73% gross margins, but a sub-scale (~RMB173m) business whose core screen is commoditizing as rivals win the same NMPA Class III clearance; the re-rate rests on an early diagnostic-therapeutic loop and a thin, cost-cut-driven 2025 turn to profit. Conditional value-capturer at a fair-to-full expectation."
+ },
+ {
+  "key": "PAGD",
+  "name": "Ping An Healthcare (Good Doctor)",
+  "good_business": "conditional",
+  "moat_years": 5,
+  "expectation": 0.0,
+  "segment": "global-ai",
+  "verdict_line": "Now-profitable China telehealth/AI-triage platform whose moat is the Ping An insurance channel, not its AI - about 60% of revenue is related-party F-end enablement, priced as a fair de-risked small-cap turnaround with no AI premium."
+ },
+ {
+  "key": "WUXI",
+  "name": "WuXi AppTec (2359 / HKEX)",
+  "good_business": "yes",
+  "moat_years": 10,
+  "expectation": -1.0,
+  "segment": "global-ai",
+  "verdict_line": "Good, wide-moat, cash-generative picks-and-shovels CRDMO leader (FY2025 continuing-ops +21.4%, TIDES +96%, adj OCF RMB 16.67bn, RMB 58bn backlog) whose AI is an ancillary workflow tool, not the story - but the expectation is un-underwritable: >60% of revenue is US, the BIOSECURE Act is now law and WuXi is on the DOD 1260H list with a live June-2026 federal lawsuit, so the equity is a single binary political bet layered on a strong operating base. Confidence HIGH on facts, LOW on verdict."
+ },
+ {
+  "key": "ONC",
+  "name": "BeiGene (BeOne Medicines)",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 2.0,
+  "verdict_line": "Real, cash-generative oncology franchise on a proven discover-develop-commercialize engine, but priced (~68x, ~5x sales) as a diversified global compounder when it is still ~70% one drug (Brukinsa), one year into GAAP profit, and carrying a BIOSECURE geopolitics discount; the \"AI-native discovery\" label is unsupported and should be dropped from the thesis."
+ },
+ {
+  "key": "LUNIT",
+  "name": "Lunit",
+  "good_business": "conditional",
+  "moat_years": 3,
+  "expectation": 1.0,
+  "segment": "global-ai",
+  "verdict_line": "Korea AI-imaging champion with real global distribution and a 2027 breakeven path, but the cash core is acquired SaaS (Volpara) in a crowded low-pricing-power screening market and the durable moat leg (SCOPE pharma biomarker) is still small, lumpy and not US-cleared; priced full for a software re-rate the mix has not yet proven."
+ },
+ {
+  "key": "VUNO",
+  "name": "Vuno (338220 / KOSDAQ)",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": -1.0,
+  "verdict_line": "Rare breakeven medical-AI name, but a single-product, single-country business (DeepCARS ~74% of revenue) riding a reimbursement exception that hits its permanent test around mid-2026, with US FDA entry delayed; ~60% de-rate leaves it fair-to-cheap on the middle case but event-driven and binary."
+ },
+ {
+  "key": "SYSMEX",
+  "name": "Sysmex",
+  "good_business": "yes",
+  "moat_years": 12,
+  "expectation": -1.0,
+  "segment": "global-ai",
+  "verdict_line": "Profitable ~50%-share hematology leader with a durable reagent-annuity moat, cheap on a China/profit reset; the AI + genomics is honest optionality, not the engine - the study's incumbent-diagnostics control case."
+ },
+ {
+  "key": "PFN",
+  "name": "Preferred Networks",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 0.0,
+  "verdict_line": "Rare full-stack AI national champion, but as a healthcare-AI name it is an unpriced option not a thesis: drug discovery is one undisclosed vertical with no owned pipeline, no pharma economics, no recent financials, and no traded stub, priced fair-to-cheap after a deliberate 50%+ down-round on a sovereign-AI silicon bet."
+ },
+ {
+  "key": "QURE",
+  "name": "Qure.ai",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 1.0,
+  "verdict_line": "Clearest global-south leader in radiology-image AI - scarce distribution (4,500+ sites, 100+ countries), widest FDA-cleared chest-X-ray set, a WHO-cited TB franchise, capital-light per-scan model - but a small (~$23m), still-private business whose core screen is commoditizing and whose re-rate rests on converting a $1-5 screen plus one marquee pharma deal (AstraZeneca) into a durable higher-value clinical annuity; conditional value-capturer at a fair-to-full expectation."
+ },
+ {
+  "key": "NIRAMAI",
+  "name": "Niramai Health Analytix",
+  "segment": "global-ai",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 0.0,
+  "verdict_line": "Real, clinically validated, FDA-touched radiation-free AI breast screen for the market mammography cannot reach - but a ~$9m-funded, ~74-person company selling a low-ASP screen into grant-funded public-health channels has not shown it converts validation into recurring priced demand; high-conviction on the science, low on the return, and unpriceable from outside (private, redacted)."
+ },
+ {
+  "key": "ICARBONX",
+  "name": "Tempus-China / iCarbonX",
+  "segment": "global-ai",
+  "good_business": "no",
+  "moat_years": 0,
+  "expectation": 0.0,
+  "verdict_line": "China multi-omics data-platform analogue to Tempus in ambition, opposite in outcome: consumer data flywheel never got fuel (~6,000 tests, ~96 loci, <1,000 paying users), CFIUS force-divested the cross-border PatientsLikeMe leg, ~40% staff cut in a 2019-2020 cash crisis, and the ~$1bn+ 2016 unicorn mark is a decade-stale private valuation never re-tested; not a demonstrable value-capturer, and the 2021-2026 record is a disclosure blank."
+ },
+ {
+  "key": "HIMS",
+  "name": "Hims & Hers Health",
+  "segment": "consumer-telehealth",
+  "good_business": "yes",
+  "moat_years": 4,
+  "expectation": 2.0,
+  "verdict_line": "Good, cash-generative subscription brand with a real but rented consumer moat; the AI/data-flywheel that justifies the premium is still narrative, so the expectation is demanding - fair if the flywheel turns and GLP-1 margins normalize, rich if either fails."
+ },
+ {
+  "key": "TDOC",
+  "name": "Teladoc Health",
+  "good_business": "no",
+  "moat_years": 3,
+  "expectation": 0.65,
+  "segment": "consumer-telehealth",
+  "verdict_line": "Scaled, real and cheap at ~0.65x sales, but not a good business today: flat-to-declining revenue, a no-moat D2C half on a marketing treadmill, a shallow enterprise distribution moat eroded by its own visit-based pricing reset, and AI that is operational glue not a defensible product; the multiple fairly prices stagnation, and the equity only works if both segments inflect and cash converts ahead of the 2027 convertible wall."
+ },
+ {
+  "key": "HNGE",
+  "name": "Hinge Health",
+  "segment": "consumer-telehealth",
+  "good_business": "yes",
+  "moat_years": 6,
+  "expectation": 1.0,
+  "verdict_line": "Good business, real moat - but the moat is enterprise payer distribution and the 3,000-client contract book, not the motion AI, which is a margin-funding feature rivals also have; priced full for durable 25-35% compounding that competition and an unproven engagement-yield ramp can erode."
+ },
+ {
+  "key": "OMDA",
+  "name": "Omada Health",
+  "segment": "consumer-telehealth",
+  "good_business": "conditional",
+  "moat_years": 6,
+  "expectation": 1.0,
+  "verdict_line": "Real evidence-and-distribution moat with an early profitability inflection, but growth rides a GLP-1 drug wave its own channel partners could bundle away and the AI is coaching-efficiency tooling not a cleared model - priced full-not-cheap at ~4x forward sales."
+ },
+ {
+  "key": "OSCR",
+  "name": "Oscar Health",
+  "segment": "consumer-telehealth",
+  "good_business": "conditional",
+  "moat_years": 1,
+  "expectation": 0.8,
+  "verdict_line": "Well-run subscale ACA insurer with genuine AI-driven admin efficiency but no MLR lever and a thin moat, priced full for a durable margin recovery into a subsidy cliff (enhanced PTCs expired 31-Dec-2025, Senate blocked the extension) - the expectation is demanding rather than fair."
+ },
+ {
+  "key": "FUNCTION",
+  "name": "Function Health",
+  "segment": "consumer-telehealth",
+  "good_business": "conditional",
+  "moat_years": 4,
+  "expectation": 0.35,
+  "verdict_line": "Good brand and a genuinely accumulating data asset, but priced ~$2.5bn (~25x est. run-rate) as a data platform when today it is a fast-growing, thin-margin subscription over a commodity, price-warring lab layer; rich until retention proves out and the AI becomes a real capability."
+ }
+]

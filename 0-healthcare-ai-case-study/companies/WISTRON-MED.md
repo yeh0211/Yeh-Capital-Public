@@ -49,7 +49,7 @@ Medical subsidiary is unlisted; standalone revenue / margin / profitability are 
 | Parent 2026 EPS (sell-side est.) | ~NT$14.3-14.6 | estimate: sell-side, unverified |
 | Parent Q1'26 gross margin | ~5.2% (thin, contract-mfg) | reported |
 
-Hospital / clinic deployments (role, not financials): Taipei Veterans General (北榮) built a real-time dialysis-AI risk-prediction system (targets ~95% accuracy, ~200 dynamic physiological/machine inputs) [reported: VGHTPE / CIO Taiwan]; a clinic-market push via BestShape cloud (partnered with 台大智活 / NTU iNSIGHT, design-thinking co-creation) [disclosed: NTU]; a 產學 MOU with Taipei Medical University (北醫) to deploy self-developed devices [reported: UDN 2024]. These are pilots/deployments, not disclosed revenue.
+Hospital / clinic deployments (role, not financials): Taipei Veterans General (北榮) built a real-time dialysis-AI risk-prediction system (targets ~95% accuracy, ~200 dynamic physiological/machine inputs) [reported: VGHTPE / CIO Taiwan]; a clinic-market push via BestShape cloud (partnered with 台大智活 / NTU iNSIGHT, design-thinking co-creation) [disclosed: NTU]; a 產學 MOU with Taipei Medical University (北醫) to deploy self-developed devices [reported: UDN 2024]. These are pilots/deployments, not disclosed revenue. As of 2025 the product now has a peer-reviewed multi-year clinical readout at a second medical centre (Mackay Memorial), summarized in Recent developments below - which upgrades the clinical evidence from "pilot" to "published outcome study" but still does not attach a disclosed revenue figure or an NHI point value.
 
 ## Value-chain position and competition
 
@@ -60,7 +60,7 @@ Position (Ch2 layers):
 What flows: patient physiological data (in) → ODM-built devices and an AI risk-alert + care-coordination layer (out) → hospital systems. It is a hardware + workflow enabler, not an assay owner (no L3/L4) and not a drug/data-licensing play (no L7/L9).
 
 Competition:
-- **vs TW listed pure-plays:** unlike Ever Fortune (6841), aetherAI (7803), Acer Medical (6857), Amcad (4188) - directly tradable SaMD licence-accumulators - Wistron Medical gives no clean exposure (buried in 3231). On the dialysis-AI product itself, competition is thin domestically (北榮's in-house build is a partner-not-rival; the category is niche).
+- **vs TW listed pure-plays:** unlike Ever Fortune (6841), aetherAI (7803), Acer Medical (6857), Amcad (4188) - directly tradable SaMD licence-accumulators - Wistron Medical gives no clean exposure (buried in 3231). On the dialysis-AI product itself, competition is thin domestically (北榮's in-house build is a partner-not-rival; the category is niche). By 2025 the moat-within-the-niche has actually widened on evidence and channel, not price: two published/multi-site medical-centre deployments (北榮; Mackay Memorial, 213,071 sessions / 18,141 patients over four years [reported: Clinical Kidney Journal 2025-10-28]) plus a first move off the hospital and into the clinic chain (沁葉/Qinye with Maya, targeting ~50 clinics in five years). No listed TW pure-play is contesting the intradialytic-hypotension prediction category head-on - which is a real product edge, just not one an equity holder can capture through 3231.
 - **vs parent-buried peers:** closest analog to ASUS AICS (2357), Quanta QOCA (2382), Foxconn CoDocator (2317) - all four are ICT giants folding a medtech/AI-services arm into an undisclosed segment. Wistron's differentiator is device OEM/ODM manufacturing depth + a specific dialysis clinical product, vs Quanta's cloud/compute or ASUS's coding/RCM tilt.
 - **vs US players selling into TW:** the hardware/ODM leg competes on cost against global contract manufacturers, not against US healthcare-AI names. On the dialysis clinical side, Edwards (Acumen HPI) is the incumbent that already holds the standing NHI 特材 payment for hypotension-prediction - so a US player has, if anything, the reimbursement beachhead Wistron lacks. That is a competitive disadvantage worth naming.
 
@@ -77,7 +77,7 @@ Verdict: the TW-data-access story is real-but-not-investable - the classic Taiwa
 ## Core variables
 
 1. **NHI reimbursement decision on the dialysis / hypotension-prediction AI.** Does it clear the 共同擬訂會議 gate and earn a 特材 point value (Edwards-HPI-style), or stay hospital-budget software forever? This is the binary that would convert it from a project to a product. Status: no evidence of clearance [unverified].
-2. **Hospital/clinic contract wins beyond pilots.** BestShape moving from 北榮/北醫/台大智活 co-creation into paid multi-site clinic rollout at disclosed scale. Pilots ≠ revenue.
+2. **Hospital/clinic contract wins beyond pilots.** BestShape moving from 北榮/北醫/台大智活 co-creation into paid multi-site clinic rollout at disclosed scale. Pilots ≠ revenue. Update: the 2025 沁葉/Qinye clinic-chain deal (with Maya, ~50 clinics over five years - see Recent developments) is the first concrete step off the hospital and into the clinic channel, but the economics per clinic remain [unverified] and no per-seat or subscription price is disclosed, so this reads as channel progress, not yet quantified revenue.
 3. **Export ability beyond Taiwan.** The device-OEM/ODM leg is inherently global; the question is whether the AI care product can travel (it faces a fresh regulatory + reimbursement gate in every market - US CMS wall, EU AI-Act/MDR tax). Absent export, TAM is capped by a single-payer, global-budget (~7% GDP) system.
 
 Excluded as noise: parent AI-server cyclicality (dominates the tradable P&L and completely swamps any medical signal); TFDA SaMD re-registration friction on model updates.
@@ -93,6 +93,24 @@ Excluded as noise: parent AI-server cyclicality (dominates the tradable P&L and 
 ## The expectation read
 
 There is no separate medical multiple to read - the medical arm carries zero disclosed value inside 3231, and the market is not pricing a healthcare-AI option in the stock. What the current 3231 valuation implies is an AI-server / rack-integration belief (FY2025 ~NT$2.19tn, +108% YoY, EPS NT$9.04; 2026 sell-side ~NT$3.1-3.7tn revenue, EPS ~NT$14.3-14.6 [estimate, unverified]) on a ~5.2% gross-margin structure. Any upside from the medical arm is an unpriced, un-modelable free option - and the soft spot is that the two events that would give it value (a standing NHI 特材 code; paid multi-site rollout) both lack evidence today.
+
+## Recent developments (2025-2026)
+
+The 2025-2026 flow is real product and clinical progress on the operating business, with zero change to the investability conclusion - the medical arm is still unlisted and undisclosed inside 3231. Ordered newest-relevant first:
+
+- **Peer-reviewed four-year clinical outcome study (2025-10-28).** BestShape's intradialytic-hypotension prediction AI got a multi-year published readout in Clinical Kidney Journal: 213,071 hemodialysis sessions across 18,141 patients at Mackay Memorial Hospital (Taipei + Tamshui), BestShape group 152,792 sessions vs control 60,279. Mean monthly IDH rate declined from 27% (2019) to 21% (2023), P<.001; in-dialysis CPR events fell from 8 to 3 per month; post-dialysis falls from 21 to 7; staff satisfaction 86/100; false-negative rate held below 5%; reported annual cost saving USD $115,658; mortality showed no significant difference (8.2% vs 9.3%, P=.260) [reported: Clinical Kidney Journal 18(11), 2025-10-28]. This is the single biggest evidence upgrade in the file - it moves the dialysis product from "pilot with a ~95% accuracy target" to a published, controlled, multi-year outcome study at a second medical centre. It still does not create an NHI point value or a disclosed medical P&L.
+
+- **Clinic-chain channel entry via Qinye (沁葉) with Maya (2025).** Wistron Medical + Maya International introduced a "medical-centre-grade" intelligent hemodialysis system into the clinic chain, starting with a Taoyuan location and a second planned in New Taipei City; the chain is guided to open ~50 dialysis clinics over five years [reported: company / taiwan-healthcare.org]. This is the first concrete move off the hospital and into the higher-volume clinic market. Per-clinic economics and any software price are [unverified].
+
+- **Taipei Medical University (北醫) hemodialysis-AI collaboration (2025-03-04).** BestShape VS (mmWave non-contact vitals) deployed across Shuang Ho, TMU Hospital, Wan Fang, and New Citizens hospitals; over 1,600 patient records analyzed to build a preliminary AI model for predicting hypotension, cramps, and over-dehydration, with a stated roadmap toward heart-failure risk and home monitoring [reported: cnyes / UDN 2025-03]. Turns the earlier 北醫 MOU into an active multi-hospital trial.
+
+- **Adjacent contactless-care expansion - postpartum / newborns (2025-03-21).** The same BestShape VS + BestShape Care contactless stack was deployed at Shingyue (璽悅) postpartum care centres; company states the technology has monitored over 8,500 newborns, logging 34,000+ physiological measurements/day and flagging respiratory anomalies roughly 4 hours before fever onset [reported: cnyes 2025-03-21]. Evidence that the L1 sensing + L5-L6 workflow platform is being reused beyond dialysis into zero-contact ward monitoring.
+
+- **Exoskeleton / mobility line (2025-12-04, Taiwan Medical Technology Expo).** With A.S.O (阿瘦) and German Bionic, Wistron Medical showed the Exia care/logistics exoskeleton and iKneego sports version; the underlying Keeogo mobility platform is cited as deployed in 46 Taiwan care facilities and used in 16 countries [reported: TechNews 2025-12-04]. Confirms the "medical-device + AI-services" breadth beyond the dialysis flagship; not material to the healthcare-AI investability read.
+
+- **Care-model research signal (2026).** A tripartite "medical staff + AI agents + robots" hemodialysis care-model study appeared in Clinical and Experimental Nephrology (DOI 10.1007/s10157-026-02903-z) [reported: Springer 2026], consistent with the BestShape direction; the article is paywalled so specific outcome figures are [unverified] here.
+
+Net: the operating business got materially stronger in 2025 (a real published outcome study, a clinic-chain channel, a second clinical domain) - but none of these events is a disclosed medical revenue line, an NHI 特材 code, or a separately tradable equity, so the investability verdict is unchanged.
 
 ## Verdict
 
